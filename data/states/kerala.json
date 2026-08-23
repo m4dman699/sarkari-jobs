@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-22T14:07:32.911Z",
+  "total": 8,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9xdWVzdGlvbi1wYXBlci1kZXNjcmlwdGl2ZS1leGFt",
+      "title": "Question paper for Descriptive Examinations",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://www.keralapsc.gov.in/question-paper-descriptive-exam",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9ub3RpZmljYXRpb25z",
+      "title": "Notifications",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://www.keralapsc.gov.in/notifications",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9leGFtaW5hdGlvbnM",
+      "title": "Exam Schedule",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://www.keralapsc.gov.in/examinations",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9wc2Mua2VyYWxhLmdvdi5pbi9zdGF0dXMv",
+      "title": "Status of Posts",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://psc.kerala.gov.in/status/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9wc2MtZXhhbWluYXRpb24tdXBkYXRlcw",
+      "title": "PSC Examination updates",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://www.keralapsc.gov.in/psc-examination-updates",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9zaXRlcy9kZWZhdWx0L2ZpbGVzL2lubGluZS1maWxlcy9zY3JvbGxpbmctZGF0ZSUyMGNoYW5nZS5wZGY",
+      "title": "OMR Exam/ Online Exam - date change (Cat.No.187/25 , 188/25 , 451-453/25 & 629/25)",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://www.keralapsc.gov.in/sites/default/files/inline-files/scrolling-date%20change.pdf",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj1HWEdnRThoNnQ0MA",
+      "title": "Online Examination Video",
+      "source": "Kerala PSC",
+      "category": "State PSC",
+      "state": "Kerala",
+      "link": "https://www.youtube.com/watch?v=GXGgE8h6t40",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9wcm9mb3JtYS1yZXBvcnRpbmctdmFjYW5jaWVz",
+      "title": "Reporting Vacancies",
+      "source": "Kerala PSC",
+      "category": "UPSC",
+      "state": "Kerala",
+      "link": "https://www.keralapsc.gov.in/proforma-reporting-vacancies",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}

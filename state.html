@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State Government Jobs — SarkariJobs+</title>
+  <meta name="description" content="Government job notifications, exam dates and closing deadlines for your state.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="tricolor-strip"></div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-flag"></span>
+        Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#map">States</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="index.html#jobs">Latest Jobs</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-primary">🔔 Get Alerts Free</button>
+    </div>
+  </header>
+
+  <section class="detail-hero">
+    <div class="detail-hero-bg" id="hero-bg" aria-hidden="true"></div>
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+    <div class="container">
+      <a class="crumb" href="index.html">← Back to all states</a>
+      <h1 id="state-title">Loading…</h1>
+      <span class="psc-pill" id="state-psc"></span>
+      <p class="desc" id="state-desc"></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="jobs-heading">Notifications</h2>
+        <div class="line"></div>
+        <p>Sorted by application deadline — newest first</p>
+      </div>
+      <div class="jobs-grid" id="state-jobs-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-bottom container">
+      © 2026 SarkariJobs+ · Information aggregated from official government portals. Always verify on the official website before applying.
+    </div>
+    <div class="foot-strip"></div>
+  </footer>
+
+  <script src="js/states-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/state-page.js"></script>
+</body>
+</html>

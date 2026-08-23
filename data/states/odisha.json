@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-08-22T14:07:32.911Z",
+  "total": 4,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9vcHNjZWNoYXlhbi5pbi8",
+      "title": "Apply Online",
+      "source": "OPSC",
+      "category": "State PSC",
+      "state": "Odisha",
+      "link": "https://opscechayan.in/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9aVF2eThPTloxWGVDeXhGWmFZMlNmQT09",
+      "title": "Notifications",
+      "source": "OPSC",
+      "category": "State PSC",
+      "state": "Odisha",
+      "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=iQvy8ONZ1XeCyxFZaY2SfA==",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9TjVuLzQ4cktvajFzTkdadHFhdDUxdz09",
+      "title": "Recruitment Calendar",
+      "source": "OPSC",
+      "category": "State PSC",
+      "state": "Odisha",
+      "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=N5n/48rKoj1sNGZtqat51w==",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9NWI5SFNOcGxqMkpEVWFmUCtrN3JyZz09",
+      "title": "Examination Syllabus",
+      "source": "OPSC",
+      "category": "State PSC",
+      "state": "Odisha",
+      "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=5b9HSNplj2JDUafP+k7rrg==",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}

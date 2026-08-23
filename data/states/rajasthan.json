@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-08-22T14:07:32.911Z",
+  "total": 6,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vZXhhbWRhc2hib2FyZA",
+      "title": "Exam Dashboard",
+      "source": "RPSC",
+      "category": "State PSC",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/examdashboard",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vYWR2ZXJ0aXNlbWVudHM",
+      "title": "Recruitment Advertisements",
+      "source": "RPSC",
+      "category": "State PSC",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/advertisements",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vcHJvcG9zZWRleGFtZGF0ZQ",
+      "title": "Proposed Examination Dates",
+      "source": "RPSC",
+      "category": "State PSC",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/proposedexamdate",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vY2JydA",
+      "title": "Computer Based Recruitment Test (CBRT)",
+      "source": "RPSC",
+      "category": "State PSC",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/cbrt",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vYXBwbHlvbmxpbmU",
+      "title": "OTR/Apply Online (Recruitment Portal)",
+      "source": "RPSC",
+      "category": "State PSC",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/applyonline",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vZm9ydGhjb21pbmdleGFtaW5hdGlvbnM",
+      "title": "Tentative Exam Calendar",
+      "source": "RPSC",
+      "category": "State PSC",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}

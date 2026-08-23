@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-22T14:07:32.911Z",
+  "total": 5,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9icHNjLmJpaGFyLmdvdi5pbi9leGFtLWNhbGVuZGFyLw",
+      "title": "Exam Calendar",
+      "source": "BPSC",
+      "category": "State PSC",
+      "state": "Bihar",
+      "link": "https://bpsc.bihar.gov.in/exam-calendar/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9icHNjLmJpaGFyLmdvdi5pbi93cC1jb250ZW50L3VwbG9hZHMvQlBTQ19jb250ZW50L05vdGljZXMvUmVnYXJkaW5nX3Bvc3Rwb25lXzcybmRfQlBTQ19CUFNDLTIwMjYwNzIwLXU3NjhseC5wZGY",
+      "title": "Important Notice :- Regarding Postponement of 72nd CCE (Preliminary) Competitive Examination.",
+      "source": "BPSC",
+      "category": "State PSC",
+      "state": "Bihar",
+      "link": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Regarding_postpone_72nd_BPSC_BPSC-20260720-u768lx.pdf",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9icHNjLmJpaGFyLmdvdi5pbi93cC1jb250ZW50L3VwbG9hZHMvQlBTQ19jb250ZW50L05vdGljZXMvSW1wb3J0YW50LU5vdGljZS1jdW0tRXhhbWluYXRpb24tUHJvZ3JhbS0zM3JkLUJKU0UtUHJlLUV4YW0uLTEyMjAyNl9CUFNDLTIwMjYwNTEzLWl0ejI3di5wZGY",
+      "title": "Important Notice-cum-Examination Program: 33rd Bihar Judicial Services (Preliminary) Competitive Examination. (Advt. No. 12/2026)",
+      "source": "BPSC",
+      "category": "Judiciary",
+      "state": "Bihar",
+      "link": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-cum-Examination-Program-33rd-BJSE-Pre-Exam.-122026_BPSC-20260513-itz27v.pdf",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9icHNjLmJpaGFyLmdvdi5pbi93cC1jb250ZW50L3VwbG9hZHMvQlBTQ19jb250ZW50L05vdGljZXMvSW1wb3J0YW50LU5vdGljZS1EYXRlLW9mLTAxMjAyNi1TdGVub2dyYXBoZXItQlBTQy1FeGFtX0JQU0MtMjAyNjA0MjAtemozZXl4LnBkZg",
+      "title": "Important Notice: Date of Commencement of Examination for the Post of Stenographer in Bihar Public Service Commission, Patna. (Advt. No. 01/2026)",
+      "source": "BPSC",
+      "category": "State PSC",
+      "state": "Bihar",
+      "link": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-Date-of-012026-Stenographer-BPSC-Exam_BPSC-20260420-zj3eyx.pdf",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9icHNjLmJpaGFyLmdvdi5pbi93cC1jb250ZW50L3VwbG9hZHMvQlBTQ19jb250ZW50L05vdGljZXMvS2FhZ2F6XzIwMjYwNTAyXzE2MDYzOTg3NzE3OF9CUFNDLTIwMjYwNTAyLXpqbW41MS5wZGY",
+      "title": "Important Notice: Regarding Introduction of 5th Answer Option ‘E’ in MCQ based examinations to be conducted by BPSC.",
+      "source": "BPSC",
+      "category": "State PSC",
+      "state": "Bihar",
+      "link": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Kaagaz_20260502_160639877178_BPSC-20260502-zjmn51.pdf",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}
