@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-24T03:06:34.357Z",
+  "total": 5,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9vbmV0aW1lcmVnbi5oYXJ5YW5hLmdvdi5pbi9oc3Nj",
+      "title": "Apply for CET Group D-05/2026",
+      "source": "HPSC/HSSC",
+      "category": "Railways",
+      "state": "Haryana",
+      "link": "https://onetimeregn.haryana.gov.in/hssc",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9hZHYwNjIwMjYuaHJ5c3NjLmNvbS8",
+      "title": "Apply for Advt no. 06/2026",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "https://adv062026.hryssc.com/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cDovL2hzc2MuZ292LmluLyM",
+      "title": "Apply for Job",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "http://hssc.gov.in/#",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9ub3RpZmljYXRpb25z",
+      "title": "Notifications",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in/notifications",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9hcHBseU9ubGluZQ",
+      "title": "Apply Online",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in/applyOnline",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}

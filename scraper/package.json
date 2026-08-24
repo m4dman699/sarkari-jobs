@@ -1,0 +1,13 @@
+{
+  "name": "sarkari-jobs-scraper",
+  "version": "1.0.0",
+  "description": "Free automated scraper for Indian government job notifications",
+  "type": "commonjs",
+  "main": "scrape.js",
+  "scripts": {
+    "scrape": "node scrape.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-22T14:07:32.911Z",
+  "total": 5,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24",
+      "title": "Notifications",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/notification",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi8",
+      "title": "Submit all Marksheets and Pass Certificates while applying for OTR.",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvZXhhbXM",
+      "title": "Exams View and Apply Exams. Open",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/applicant/exams",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
+      "title": "OTR Apply OTR. Open",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/applicant/otr",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9zZXJ2aWNlcy9tYXJrc2hlZXQvbHRkLWV4YW0",
+      "title": "Limited Dept. Exam Marksheet",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}

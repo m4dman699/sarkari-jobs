@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Jobs — SarkariJobs+</title>
+  <meta name="description" content="Government job notifications by category — UPSC, SSC, Banking, Railways and more.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="tricolor-strip"></div>
+
+  <header>
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-flag"></span>
+        Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#map">States</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="index.html#jobs">Latest Jobs</a></li>
+        </ul>
+      </nav>
+      <button class="btn btn-primary">🔔 Get Alerts Free</button>
+    </div>
+  </header>
+
+  <section class="detail-hero">
+    <div class="container">
+      <a class="crumb" href="index.html">← Back to all categories</a>
+      <h1 id="cat-title">Loading…</h1>
+      <p class="desc" id="cat-desc"></p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="jobs-heading">Notifications</h2>
+        <div class="line"></div>
+        <p>Sorted by application deadline — newest first</p>
+      </div>
+      <div class="jobs-grid" id="cat-jobs-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-bottom container">
+      © 2026 SarkariJobs+ · Information aggregated from official government portals. Always verify on the official website before applying.
+    </div>
+    <div class="foot-strip"></div>
+  </footer>
+
+  <script src="js/states-data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    function renderCategoryPage() {
+      // hash-based routing (survives clean-URL redirects); fall back to ?c=
+      const name = (window.location.hash.slice(1) ||
+        new URLSearchParams(window.location.search).get('c') || '').toLowerCase();
+      const cat = CATEGORIES.find(c => c.name.toLowerCase() === name);
+
+      if (!cat) {
+        document.getElementById('cat-title').textContent = 'Category not found';
+        return;
+      }
+
+      document.title = `${cat.name} Government Jobs 2026 — Notifications & Deadlines | SarkariJobs+`;
+      document.getElementById('cat-title').textContent = `${cat.icon} ${cat.name} Jobs`;
+      document.getElementById('cat-desc').textContent = cat.desc + ' — live notifications with form closing dates and exam schedules.';
+
+      const render = jobs => {
+        // NEVER fill with other categories — aspirants get misled. Honest empty state instead.
+        const own = jobs.filter(j => (j.category || '').toLowerCase() === cat.name.toLowerCase());
+        const headingEl = document.getElementById('jobs-heading');
+        if (!own.length) {
+          headingEl.textContent = `${cat.name} — No live notifications right now`;
+          document.getElementById('cat-jobs-grid').innerHTML =
+            `<p style="color:var(--text-grey); text-align:center; grid-column:1/-1;">
+               New ${cat.name} notifications are tracked daily and will appear here automatically.<br>
+               Meanwhile, check <a href="index.html#jobs" style="color:var(--saffron-dark); font-weight:700;">Closing Soon</a> across all categories.</p>`;
+          return;
+        }
+        headingEl.textContent = `🔥 ${cat.name} — Closing Soon`;
+        const dated = own.filter(j => j.lastDate).sort((a,b) => String(a.lastDate).localeCompare(String(b.lastDate)));
+        const undated = own.filter(j => !j.lastDate);
+        document.getElementById('cat-jobs-grid').innerHTML =
+          [...dated, ...undated].map(jobCardHTML).join('');
+      };
+
+      fetch('data/jobs.json')
+        .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
+        .then(p => render(p.jobs))
+        .catch(() => render(SAMPLE_JOBS.map(s => ({
+          title: s.title, category: s.cat, state: s.state,
+          lastDate: s.close, examDate: s.exam === 'TBA' ? null : s.exam,
+          link: '#', source: 'Sample'
+        }))));
+    }
+    document.addEventListener('DOMContentLoaded', renderCategoryPage);
+  </script>
+</body>
+</html>

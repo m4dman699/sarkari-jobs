@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-08-22T14:07:32.911Z",
+  "total": 4,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvTkVXU0NIRU1FRVhBTUlOQVRJT05fMjAyNS5wZGY",
+      "title": "Scheme of Examinations for all Posts other than Junior Scale Officer/ Dy.S.P.",
+      "source": "Goa PSC",
+      "category": "State PSC",
+      "state": "Goa",
+      "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/07/NEWSCHEMEEXAMINATION_2025.pdf",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvU0NBTl8yMDI1MTEyMV8xNzE2MzM4NDIucGRm",
+      "title": "Shortlisting For Medical, Dental and Allied Subject Posts",
+      "source": "Goa PSC",
+      "category": "State PSC",
+      "state": "Goa",
+      "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/11/SCAN_20251121_171633842.pdf",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ydGlvbmxpbmUuZ29hLmdvdi5pbi8",
+      "title": "APPLY RTI ONILINE",
+      "source": "Goa PSC",
+      "category": "State PSC",
+      "state": "Goa",
+      "link": "https://rtionline.goa.gov.in/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9jYmVzLmdvYS5nb3YuaW4v",
+      "title": "Apply Online",
+      "source": "Goa PSC",
+      "category": "State PSC",
+      "state": "Goa",
+      "link": "https://cbes.goa.gov.in/",
+      "openDate": null,
+      "lastDate": null
+    }
+  ]
+}
