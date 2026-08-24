@@ -1,21 +1,41 @@
 {
-  "generatedAt": "2026-08-22T14:07:32.911Z",
-  "total": 269,
+  "generatedAt": "2026-08-24T03:06:34.357Z",
+  "total": 168,
   "errors": [
     {
       "source": "UPSC",
       "url": "https://upsc.gov.in/whats-new",
-      "error": "HTTP 403"
+      "error": "The operation was aborted"
     },
     {
-      "source": "IBPS",
-      "url": "https://www.ibps.in/",
-      "error": "getaddrinfo ENOTFOUND www.ibps.in"
+      "source": "RRB",
+      "url": "https://www.rrbcdg.gov.in/",
+      "error": "connect ECONNREFUSED 203.176.113.43:443"
+    },
+    {
+      "source": "Indian Army",
+      "url": "https://joinindianarmy.nic.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "Indian Navy",
+      "url": "https://www.joinindiannavy.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "Indian Air Force",
+      "url": "https://indianairforce.nic.in/",
+      "error": "The operation was aborted"
     },
     {
       "source": "KVS",
       "url": "https://kvs.gov.in/",
       "error": "The operation was aborted"
+    },
+    {
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": ""
     },
     {
       "source": "CBSE/CTET",
@@ -25,7 +45,7 @@
     {
       "source": "NTPC",
       "url": "https://careers.ntpc.co.in/",
-      "error": "connect ECONNREFUSED 167.86.39.96:80"
+      "error": "HTTP 403"
     },
     {
       "source": "SAIL",
@@ -43,6 +63,16 @@
       "error": "read ECONNRESET"
     },
     {
+      "source": "Sarkari Result",
+      "url": "https://www.sarkariresult.com/latest-jobs/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "RRB Apply Portal",
+      "url": "https://www.rrbapply.gov.in/",
+      "error": "HTTP 404"
+    },
+    {
       "source": "UPPSC",
       "url": "https://psc.up.gov.in/en/whats-new",
       "error": "getaddrinfo ENOTFOUND psc.up.gov.in"
@@ -58,6 +88,16 @@
       "error": "The operation was aborted"
     },
     {
+      "source": "RPSC",
+      "url": "https://rpsc.rajasthan.gov.in/",
+      "error": ""
+    },
+    {
+      "source": "TNPSC",
+      "url": "https://www.tnpsc.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
       "source": "KPSC",
       "url": "https://kpsc.kar.nic.in/",
       "error": "Parse Error: Invalid header token"
@@ -65,7 +105,12 @@
     {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
-      "error": "getaddrinfo ENOTFOUND gpsc.gujarat.gov.in"
+      "error": ""
+    },
+    {
+      "source": "APPSC",
+      "url": "https://psc.ap.gov.in/",
+      "error": "The operation was aborted"
     },
     {
       "source": "TSPSC",
@@ -78,9 +123,34 @@
       "error": "read ECONNRESET"
     },
     {
+      "source": "HPSC/HSSC",
+      "url": "http://hpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "CGPSC",
+      "url": "https://psc.cg.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
       "source": "UKPSC",
       "url": "https://ukpsc.gov.in/",
-      "error": "getaddrinfo ENOTFOUND ukpsc.gov.in"
+      "error": "getaddrinfo EAI_AGAIN ukpsc.gov.in"
+    },
+    {
+      "source": "PPSC",
+      "url": "https://ppsc.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "APSC",
+      "url": "https://apsc.nic.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "Goa PSC",
+      "url": "https://gpsc.goa.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "MPSC Meghalaya",
@@ -88,8 +158,28 @@
       "error": "getaddrinfo ENOTFOUND mpsc.nic.in"
     },
     {
+      "source": "Mizoram PSC",
+      "url": "https://mpsc.mizoram.gov.in/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "NPSC",
+      "url": "https://npsc.nagaland.gov.in/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "SPSC Sikkim",
       "url": "https://spscskm.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "TPSC",
+      "url": "http://tpsc.tripura.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "DSSSB",
+      "url": "https://dsssb.delhi.gov.in/",
       "error": "The operation was aborted"
     },
     {
@@ -106,6 +196,11 @@
       "source": "WB Police",
       "url": "https://wbpolice.gov.in/",
       "error": "read ECONNRESET"
+    },
+    {
+      "source": "TNUSRB",
+      "url": "https://www.tnusrb.tn.gov.in/",
+      "error": "The operation was aborted"
     }
   ],
   "jobs": [
@@ -130,22 +225,152 @@
       "lastDate": null
     },
     {
-      "id": "aHR0cHM6Ly93d3cuam9pbmluZGlhbm5hdnkuZ292LmluL2VuL3BhZ2UvaW5zdHJ1Y3Rpb25zLWZvci13cml0dGVuLWV4YW1pbmF0aW9uLmh0bWw",
-      "title": "Instructions for Written Exam",
-      "source": "Indian Navy",
-      "category": "Defence",
+      "id": "aHR0cHM6Ly93d3cuaWJwcy5pbi9pbmRleC5waHAvY2xlcmljYWwtY2FkcmUteHZpLw",
+      "title": "Apply Online for Common Recruitment Process under CRP-CSA-XVI",
+      "source": "IBPS",
+      "category": "Banking",
       "state": "All India",
-      "link": "https://www.joinindiannavy.gov.in/en/page/instructions-for-written-examination.html",
+      "link": "https://www.ibps.in/index.php/clerical-cadre-xvi/",
       "openDate": null,
       "lastDate": null
     },
     {
-      "id": "aHR0cHM6Ly93d3cuam9pbmluZGlhbm5hdnkuZ292LmluL2VuL2FjY291bnQvZWxpZ2liaWxpdHlsaXN0",
-      "title": "Apply Online",
-      "source": "Indian Navy",
-      "category": "Defence",
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vaWlmY2xqdWwyNi8",
+      "title": "IIFCL Direct Recruitment for the Post AGM (Grade ‘C’ Officer) Registration From 19-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
       "state": "All India",
-      "link": "https://www.joinindiannavy.gov.in/en/account/eligibilitylist",
+      "link": "https://ibpsreg.ibps.in/iifcljul26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vYm9ianVsMjYv",
+      "title": "BOB Recruitment of Local Bank Officer Registration From 18-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/bobjul26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vbmJsanVsMjYv",
+      "title": "NBL Notification For The Posts Of Specialist Officers Registration From 15-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/nbljul26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vaW9jbGp1bjI2Lw",
+      "title": "IOCL Recruitment of Executives Registration From 14-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/iocljun26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vc2JpamFqdWwyNi8",
+      "title": "SBI Recruitment of Junior Associates Registration From 11-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/sbijajul26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vZ3BjYm1heTI2Lw",
+      "title": "GPCB Recruitment of Clerk Registration From 10-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/gpcbmay26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vYWFpb2N0MjUv",
+      "title": "AAI Recruitment of Managers and Junior Executives Registration From 08-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/aaioct25/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vYWlpbXNqdWwyNi8",
+      "title": "AIIMS Recruitment to Various Group-A Non-Faculty Posts Registration From 08-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/aiimsjul26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vaW9ianVsMjYv",
+      "title": "IOB Recruitment of Local Bank Officer in JMGS - I Registration From 08-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/iobjul26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vcmNmbXRmZWIyNi8",
+      "title": "RCF Recruitment of Management Trainees Registration From 08-Aug-2025",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/rcfmtfeb26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vc2JpamFzcmRqbDI2Lw",
+      "title": "SBI Recruitment of Junior Associates (Customer Support & Sales) Registration From 07-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/sbijasrdjl26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9pYnBzcmVnLmlicHMuaW4vcnJ2dW5sanVuMjYv",
+      "title": "RRVUN Common Recruitment of Junior Engineers-I & Junior Accountant and Junior Assistant/Commercial Assistant-II Registration From 05-Aug-2026",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://ibpsreg.ibps.in/rrvunljun26/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaWJwcy5pbi9pbmRleC5waHAvcmVjcnVpdG1lbnQv",
+      "title": "RECRUITMENT EXAMS",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://www.ibps.in/index.php/recruitment/",
+      "openDate": null,
+      "lastDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuaWJwcy5pbi9pbmRleC5waHAvc2VydmljZXM",
+      "title": "Personnel Selection Services for Recruitment, Promotion and Placement",
+      "source": "IBPS",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://www.ibps.in/index.php/services",
       "openDate": null,
       "lastDate": null
     },
@@ -640,66 +865,6 @@
       "lastDate": null
     },
     {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vZXhhbWRhc2hib2FyZA",
-      "title": "Exam Dashboard",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/examdashboard",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vYWR2ZXJ0aXNlbWVudHM",
-      "title": "Recruitment Advertisements",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/advertisements",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vcHJvcG9zZWRleGFtZGF0ZQ",
-      "title": "Proposed Examination Dates",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/proposedexamdate",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vY2JydA",
-      "title": "Computer Based Recruitment Test (CBRT)",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/cbrt",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vYXBwbHlvbmxpbmU",
-      "title": "OTR/Apply Online (Recruitment Portal)",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/applyonline",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vZm9ydGhjb21pbmdleGFtaW5hdGlvbnM",
-      "title": "Tentative Exam Calendar",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
       "id": "aHR0cDovL3d3dy50bnBzYy5nb3YuaW4vaW5zdHJ1Y3Rpb25zJTIwdG8lMjBjYW5kaWF0ZXMucGRm",
       "title": "How To Apply",
       "source": "TNPSC",
@@ -797,56 +962,6 @@
       "state": "Kerala",
       "link": "https://www.keralapsc.gov.in/proforma-reporting-vacancies",
       "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL2VuLXVzL0V4YW1pbmF0aW9uL0V4YW0tU2NoZWR1bGU",
-      "title": "Exam Schedule",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/en-us/Examination/Exam-Schedule",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL2VuLXVzL0V4YW1pbmF0aW9uL1NjaGVtZS1QYXR0ZXJuLW9mLUV4YW0",
-      "title": "Scheme & Pattern of Exam",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/en-us/Examination/Scheme-Pattern-of-Exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL1BvcnRhbHMvMC9Bbm5fU2NoX1BhdHRlcm5fU3lsbGFidXNfTWFuYV9QZXJzb19hZHZ0XzAxXzIwMjZfMTNfMDhfMjAyNi5wZGY",
-      "title": "Announcement dated 13.08.2026 regarding Scheme and Pattern of examination & Syllabus for the posts of Manager (Personnel) (Group-A) in Haryana State Warehousing Corporation (Advt. ",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/Portals/0/Ann_Sch_Pattern_Syllabus_Mana_Perso_advt_01_2026_13_08_2026.pdf",
-      "openDate": "2026-08-13",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL1BvcnRhbHMvMC9Bbm5fU2NoX1BhdHRlcm5fU3lsbGFidXNfQXNzaXN0YW50X0RpcmVjdG9yX0FkdnRfMjZfMjAyMl8xMl8wOF8yMDI2LnBkZg",
-      "title": "Announcement dated 12.08.2026 regarding Scheme and Pattern of examination & Syllabus for the posts of Assistant Director Industrial Safety and Health in Labour Department, Haryana ",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/Portals/0/Ann_Sch_Pattern_Syllabus_Assistant_Director_Advt_26_2022_12_08_2026.pdf",
-      "openDate": "2026-08-12",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL1BvcnRhbHMvMC9Sb2xsd2lzZV9JbnRfTWFya3NfUEdUX0NTXzAxXzA4XzIwMjYucGRm",
-      "title": "Roll No. wise marks dated 01.08.2026 of all interviewed candidates for the posts of Post Graduate Teachers (PGTs) in the subject of Computer Science for ROH Cadre & Mewat Cadre (Ad",
-      "source": "HPSC/HSSC",
-      "category": "Teaching",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/Portals/0/Rollwise_Int_Marks_PGT_CS_01_08_2026.pdf",
-      "openDate": "2026-08-01",
       "lastDate": null
     },
     {
@@ -1130,16 +1245,6 @@
       "lastDate": null
     },
     {
-      "id": "aHR0cHM6Ly9wc2MuY2cuZ292LmluL05vdGlmaWNhdGlvbnMucGhw",
-      "title": "Notifications",
-      "source": "CGPSC",
-      "category": "State PSC",
-      "state": "Chhattisgarh",
-      "link": "https://psc.cg.gov.in/Notifications.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
       "id": "aHR0cHM6Ly9vcHNjZWNoYXlhbi5pbi8",
       "title": "Apply Online",
       "source": "OPSC",
@@ -1176,176 +1281,6 @@
       "category": "State PSC",
       "state": "Odisha",
       "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=5b9HSNplj2JDUafP+k7rrg==",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9wcHNjLmdvdi5pbi9pbmRleC5hc3B4P3BhZ2U9MTQ4NiZ0YWJpZD00MyZ0YWJsaW5raWQ9NDUyNiZ0YWJsaW5reWVzPTE",
-      "title": "LATEST NOTIFICATIONS",
-      "source": "PPSC",
-      "category": "State PSC",
-      "state": "Punjab",
-      "link": "https://ppsc.gov.in/index.aspx?page=1486&tabid=43&tablinkid=4526&tablinkyes=1",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9jY2UuaHRtbA",
-      "title": "Scheme of Examination",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/cce.html",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi8j",
-      "title": "Direct Recruitment",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/#",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9kcl9zY2hlbWUucGhwI2RyX3NjaGVtZQ",
-      "title": "Scheme of Examination",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/dr_scheme.php#dr_scheme",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9hZHZ0XzIwMjYucGhwI2FkdmVydGlzZW1lbnQ",
-      "title": "Recruitment Advertisements",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/advt_2026.php#advertisement",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZmljYXRpb25zXzIwMjYucGhwI25vdGlmaWNhdGlvbnM",
-      "title": "Notifications",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notifications_2026.php#notifications",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L0Fzc3RfRGlyZWN0b3JfQ290dGFnZV9JbnRlcnZpZXdfTm90aWZpXzA2XzIwMjUucGRm",
-      "title": "Notification regarding Interview/Viva-voce: Assistant Director of Cottage Industries and its equivalent posts under Industries & Commerce Department (Advt. No.06/2025 dated 11.02.2",
-      "source": "APSC",
-      "category": "UPSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/Asst_Director_Cottage_Interview_Notifi_06_2025.pdf",
-      "openDate": "2025-02-11",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjcmVjcnVpdG1lbnQuaW4v",
-      "title": "Click here to apply for the Combined Competitive (Main) Examination, 2025",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apscrecruitment.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L0d1aWRlbGluZXNfQ0NFLU1BSU4tMjAyNS5wZGY",
-      "title": "HOW TO APPLY",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/Guidelines_CCE-MAIN-2025.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L0NDRV9NYWluXzIwMjVfTm90aWZpXzAxXzIwMjYucGRm",
-      "title": "NOTIFICATION REGARDING COMBINED COMPETITIVE (MAIN) EXAMINATION, 2025",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/CCE_Main_2025_Notifi_01_2026.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9zdGF0dXNfYXBwXzIwMjYvNDhQU0NfRS05XzIwMjUtMjYucGRm",
-      "title": "Additional list of Candidate(s) for Departmental (Promotional) Examination for AFS Junior Grade-II (F&AO/TO), Finanace (Esst.-B) Department [Advt. No. 35/2025 dated 29-12-2025]",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/status_app_2026/48PSC_E-9_2025-26.pdf",
-      "openDate": "2025-12-29",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L0dyYWRlX0lWX0FwcG9pbnRtZW50X09yZGVyLnBkZg",
-      "title": "Notification regarding appointment of Grade-IV in Assam Public Service Commission (Advt. No. 30/2025 dtd. 08-09-2025)",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/Grade_IV_Appointment_Order.pdf",
-      "openDate": "2025-09-08",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L1JBX0FkdnRfMjhfMjAyNV9TY3JlZW5UZXN0X05vdGlmaWNhdGlvbi5wZGY",
-      "title": "Notification regarding Screening Test (OMR Based) for the post of Research Assistant, Finance (Budget) Department (Advt. No. 28/2025 dtd. 30-08-2025)",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/RA_Advt_28_2025_ScreenTest_Notification.pdf",
-      "openDate": "2025-08-30",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L0Rpc3RfTXVzZXVtX09mZmljZXJfU2NyZWVuaW5nX1Rlc3RfTm90aWZpXzM0XzIwMjUucGRm",
-      "title": "Notification regarding Screening Test (OMR Based) for recruitment to the post of District Museum Officer Grade-I (Gazetted), Indigenous and Tribal Faith and Culture Department (Adv",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/Dist_Museum_Officer_Screening_Test_Notifi_34_2025.pdf",
-      "openDate": "2025-12-16",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L25vdGlmXzMxLTIwMjVfMS5wZGY",
-      "title": "Notification regarding Screening Test (OMR Based) for recruitment to the post of Assistant Engineer (Civil/Mechanical/Chemical) under Public Health Engineering Department, Assam (A",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/notif_31-2025_1.pdf",
-      "openDate": "2025-09-09",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L0FGU19EZXBhcnRtZW50YWxfRXhhbV9Ob3RpZmlfMzVfMjAyNS5wZGY",
-      "title": "Notification regarding Departmental (Promotional) Examination for the post(s) of AFS Junior Grade-II (F&AO/TO) under Finance (Estt.-B) Deptt. (Advt. No. 35/2025, dtd. 29-12-2025)",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/notif_2026/AFS_Departmental_Exam_Notifi_35_2025.pdf",
-      "openDate": "2025-12-29",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9kZXB0X2V4YW0ucGhwI2RlcHRfbGFuZA",
-      "title": "Departmental Examinations",
-      "source": "APSC",
-      "category": "State PSC",
-      "state": "Assam",
-      "link": "https://apsc.nic.in/dept_exam.php#dept_land",
       "openDate": null,
       "lastDate": null
     },
@@ -1840,46 +1775,6 @@
       "lastDate": null
     },
     {
-      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvTkVXU0NIRU1FRVhBTUlOQVRJT05fMjAyNS5wZGY",
-      "title": "Scheme of Examinations for all Posts other than Junior Scale Officer/ Dy.S.P.",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/07/NEWSCHEMEEXAMINATION_2025.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvU0NBTl8yMDI1MTEyMV8xNzE2MzM4NDIucGRm",
-      "title": "Shortlisting For Medical, Dental and Allied Subject Posts",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/11/SCAN_20251121_171633842.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ydGlvbmxpbmUuZ29hLmdvdi5pbi8",
-      "title": "APPLY RTI ONILINE",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://rtionline.goa.gov.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9jYmVzLmdvYS5nb3YuaW4v",
-      "title": "Apply Online",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://cbes.goa.gov.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA1MjcxOTQ4MC5wZGY",
       "title": "Schedule of Interview for Recruitment to Various Posts under the Directorate of Handloom & Textiles, Manipur. Updated: 27/05/2026",
       "source": "MPSC Manipur",
@@ -1970,696 +1865,6 @@
       "lastDate": null
     },
     {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvc2NyZWVuaW5nLW5vdGlmaWNhdGlvbg",
-      "title": "Screening Notification G",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/screening-notification",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvbm90aWZpY2F0aW9uLWc",
-      "title": "Notifications",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/notification-g",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvc2NyZWVuaW5nLW5vdGlmaWNhdGlvbi1uZw",
-      "title": "Screening Notifications NG",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/screening-notification-ng",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvc2NoZWR1bGUtb2YtZXhhbWluYXRpb24tbmc",
-      "title": "Schedule of Examinations NG",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/schedule-of-examination-ng",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvbm90aWZpY2NhdGlvbi1uZw",
-      "title": "Notifications NG",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/notificcation-ng",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLW5vdGlmaWNhdGlvbi1nLTIwMjUtMjAyNg",
-      "title": "LDE Notifications 2025-2026",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-notification-g-2025-2026",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLW5vdGlmaWNhdGlvbi0yMDI2LTIwMjc",
-      "title": "LDE Notification 2026-2027",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-notification-2026-2027",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvZGVwYXJ0bWVudGFsLW5vdGlmaWNhdGlvbjE2NTExMjU1ODE",
-      "title": "Departmental Notification",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/departmental-notification1651125581",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbWxwLW5vdGlmaWNhdGlvbg",
-      "title": "MLP Notification",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/mlp-notification",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvdGVudGF0aXZlLXNjaGVkdWxlLTBmLWV4YW1pbmF0aW9uLTIwMTgtMjAxOS0yMDE5LTIwMjA",
-      "title": "Schedule of Examinations G",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/tentative-schedule-0f-examination-2018-2019-2019-2020",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXNjaGVkdWxlLW9mLWV4YW1pbmF0aW9uLW5n",
-      "title": "LDE Schedule of Examinations",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-schedule-of-examination-ng",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvc2NoZWR1bGUtb2YtZXhhbWluYXRpb24tZGVwdGxsZw",
-      "title": "Schedule of Examinations Deptll",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/schedule-of-examination-deptllg",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvaW5kdWN0aW9u",
-      "title": "Induction Notifications",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/induction",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvZGlyZWN0LXJlY3J1aXRtZW50LWc",
-      "title": "Direct Recruitment",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/direct-recruitment-g",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLTIwMjAtMjAyMQ",
-      "title": "LDE Notification",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-2020-2021",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvc2NoZWR1bGUtb2YtZXhhbWluYXRpb25z",
-      "title": "Schedule of Examinations",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/schedule-of-examinations",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL2NhdGVnb3J5L25vdGlmaWNhdGlvbnM",
-      "title": "OM / Notifications",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/category/notifications",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24",
-      "title": "Notifications",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/notification",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi8",
-      "title": "Submit all Marksheets and Pass Certificates while applying for OTR.",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvZXhhbXM",
-      "title": "Exams View and Apply Exams. Open",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/applicant/exams",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
-      "title": "OTR Apply OTR. Open",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/applicant/otr",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9zZXJ2aWNlcy9tYXJrc2hlZXQvbHRkLWV4YW0",
-      "title": "Limited Dept. Exam Marksheet",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vZGlyZWN0LXJlY3J1aXRtZW50",
-      "title": "Advertisement (Direct Recruitment)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/direct-recruitment",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vZGVwYXJ0bWVudGFsLWV4YW0",
-      "title": "Departmental Examination",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/departmental-exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vZm9ydGhjb21pbmctZXhhbWluYXRpb25z",
-      "title": "Forthcoming Examinations",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/forthcoming-examinations",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vb25saW5lLXJlY3J1aXRtZW50LWFwcGxpY2F0aW9uLW9yYQ",
-      "title": "Online Recruitment Application (ORA)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/online-recruitment-application-ora",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vcHJvZ3JhbW1lcy1leGFtcy1pbnRlcnZpZXdz",
-      "title": "Programmes of Exams & Interviews",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/programmes-exams-interviews",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vbm90aWZpY2F0aW9ucw",
-      "title": "Notifications",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/notifications",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vZXhhbS1wcm9ncmFt",
-      "title": "Exam Program",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/exam-program",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9DdXRfb2ZmX01pc2NfJTIxOF8yMDI1XzIxMDgyNi5wZGY",
-      "title": "Summary of Preliminary Examination for recruitment to the Miscellaneous Posts(Advt. No.-18/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Cut_off_Misc_%218_2025_210826.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9SZWNvbV9BZ3JpXzIxMDgyNi5wZGY",
-      "title": "Recommendation list for recruitment to the post of Agriculture Officer, TAFS, Grade-I (Advt. No-21/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Recom_Agri_210826.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9BVE9fMjEwODI2LnBkZg",
-      "title": "Notification regarding breakup of marks for the post of Assistant Tourist Officer (Advt. No-01/2026)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_ATO_210826.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9BQU9fMDMwODI2LnBkZg",
-      "title": "Notification regarding Departmental Examination of in-service Assistant Audit/Accounts Officers, Grade-V,Nov,2026.",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_AAO_030826.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9BdWRpdG9yXzAzMDgyNi5wZGY",
-      "title": "Notification regarding Departmental Examination of in-service Auditors under Grade-VI,Nov,2026.",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_Auditor_030826.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy8yMDI2LTA4L1Byb2dfQVBfUGh5X0VkdV8ybmRfUGhhc2VfMzEwNzI2LnBkZg",
-      "title": "Revised Programme for Interview/Personality Test for recruitment to the post of Assistant Professor(Pol. Science) (Advt. No-05/2025)(2nd Phase)",
-      "source": "TPSC",
-      "category": "Teaching",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/2026-08/Prog_AP_Phy_Edu_2nd_Phase_310726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9FbGlnaWJfQVBfMm5kX1BoYXNlXzJfMzEwNzI2LnBkZg",
-      "title": "Eligible list for Interview/Personality Test for recruitment to the post of Assistant Professor(Education, Bengali & Pol. Science), (Advt. No-05/2025)(2nd Phase)",
-      "source": "TPSC",
-      "category": "Teaching",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Eligib_AP_2nd_Phase_2_310726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9FbGlnaWJfQVBfMm5kX1BoYXNlXzFfMzEwNzI2LnBkZg",
-      "title": "Eligible list for Interview/Personality Test for recruitment to the post of Assistant Professor (Advt. No-05/2025)(2nd Phase)",
-      "source": "TPSC",
-      "category": "Teaching",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Eligib_AP_2nd_Phase_1_310726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy8yMDI2LTA3L1Byb2dfSW50dl9BRl8ybmRfUGhhc2VfMzAwNzI2LnBkZg",
-      "title": "Programme for Interview/Personality Test for recruitment to the post of Assistant Professor(Advt. No-05/2025)(2nd Phase)",
-      "source": "TPSC",
-      "category": "Teaching",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/2026-07/Prog_Intv_AF_2nd_Phase_300726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy8yMDI2LTA3L1Byb2dfUEEtSUlfMjgwNzI2LnBkZg",
-      "title": "Programme of the preliminary examination for recruitment to the post of Personal Assistant (PA-II)(Advt. No.-25/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/2026-07/Prog_PA-II_280726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9BbGxlZ2F0aW9uX1RQU0NfMjcwNzI2LnBkZg",
-      "title": "Notification regarding clarification of incorrect and incomplete report published in local newspapers.",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_Allegation_TPSC_270726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy8yMDI2LTA3L1Byb2dfRlNPXzI3MDcyNi5wZGY",
-      "title": "Programme of the written examination for recruitment to the post of Food Safety Officer (Advt. No.-23/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/2026-07/Prog_FSO_270726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy8yMDI2LTA3L1Byb2dfTU8lMjhEZW50YWwlMjlfMjcwNzI2LnBkZg",
-      "title": "Programme of the written examination for recruitment to the post of Medical Officer (Dental) (Advt. No.-26/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/2026-07/Prog_MO%28Dental%29_270726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9BUF8ybmRfMjQwNzI2LnBkZg",
-      "title": "Notification regarding for Interview/Personality Test for recruitment to the post of Assistant Professor (Advt. No-05/2025)(2nd Phase)",
-      "source": "TPSC",
-      "category": "Teaching",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_AP_2nd_240726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9GU09fTU9fMDEwNzI2LnBkZg",
-      "title": "Notification regarding revised written exam. for the post of Food Safety Officer (Advt. No-23/2025) & Medical Officer (Advt. No-26/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_FSO_MO_010726.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9UZW50X0V4YW1fMjIwNjI2LnBkZg",
-      "title": "Notification regarding tentative schedule of examinations of various recruitment process under TPSC",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Tent_Exam_220626.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9Ob3RpZl9ESUVUXzE1MDYyNi5wZGY",
-      "title": "Notification regarding written examination for recruitment to the post of Lecturer (Physics), DIET(Advt. No-15/2025)",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Notif_DIET_150626.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9UZW50X0V4YW1fMTMwMjI2LnBkZg",
-      "title": "Notification regarding tentative revised schedule of examinations of various recruitment process under TPSC",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Tent_Exam_130226.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9UZW50dl9FeGFtXzAyMTIyNS5wZGY",
-      "title": "Notification regarding tentative schedule of written/preliminary examination of various recruitment process under TPSC",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/sites/default/files/Tentv_Exam_021225.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vbm90aWZpY2F0aW9uLXJlZ2FyZGluZy1pbnRyb2R1Y2Utb25saW5lLWNoYWxsZW5nZS1tYW5hZ2VtZW50LXN5c3RlbS1vbXItYW5zd2VyLXNoZWV0",
-      "title": "Notification regarding introduce of Online Challenge Management System on OMR Answer Sheet.",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/notification-regarding-introduce-online-challenge-management-system-omr-answer-sheet",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vbm90aWZpY2F0aW9uLXJlZ2FyZGluZy1zY29yZS1zdW1tYXJ5LXZhcmlvdXMtcmVjcnVpdG1lbnQtcHJvY2Vzcy11bmRlci10cHNj",
-      "title": "Notification regarding Score Summary of the various recruitment process under TPSC",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/notification-regarding-score-summary-various-recruitment-process-under-tpsc",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3Rwc2MudHJpcHVyYS5nb3YuaW4vbm90aWZpY2F0aW9uLXJlZ2FyZGluZy1pbnF1aXJpZXMtcmVwcmVzZW50YXRpb25zLWFib3V0LWVsaWdpYmlsaXR5LWNyaXRlcmlhLXJlY3J1aXRtZW50LXZhcmlvdXMtMA",
-      "title": "Notification regarding inquiries & representations about eligibility criteria for recruitment to the various posts .",
-      "source": "TPSC",
-      "category": "UPSC",
-      "state": "Tripura",
-      "link": "http://tpsc.tripura.gov.in/notification-regarding-inquiries-representations-about-eligibility-criteria-recruitment-various-0",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvbmV3LWV4YW1pbmF0aW9uLWFuZC1pbnRlcnZpZXctc2NoZW1l",
-      "title": "New Examination and Interview Scheme",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/new-examination-and-interview-scheme",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2ItdmFjYW5jaWVz",
-      "title": "Current Vacancies",
-      "source": "DSSSB",
-      "category": "UPSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb-vacancies",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vbm90aWNlLW9mLWV4YW0",
-      "title": "Notice of Exam and Circulars",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/notice-of-exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvYWxsLW9tcy1yZWxhdGVkLWNvbWJpbmVkLWV4YW0",
-      "title": "All OMs Related to Combined Exam",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/all-oms-related-combined-exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2Ivc3lsbGFidXMtY29tYmluZWQtZXhhbWluYXRpb24",
-      "title": "Syllabus of Combined Examination",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/syllabus-combined-examination",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvcmVjcnVpdG1lbnQtcnVsZXMtY29tYmluZWQtZXhhbQ",
-      "title": "Recruitment Rules of Combined Exam",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/recruitment-rules-combined-exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvaW5zdHJ1Y3Rpb25zLWV4YW0tZnVuY3Rpb25hcnk",
-      "title": "Instructions to Exam Functionaries",
-      "source": "DSSSB",
-      "category": "UPSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/instructions-exam-functionary",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvYW5uZXh1cmVzLWkteGktZXhhbS1mdW5jdGlvbmFyaWVz",
-      "title": "Annexures (I to XI) for Exam Functionaries",
-      "source": "DSSSB",
-      "category": "UPSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/annexures-i-xi-exam-functionaries",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvcmVwb3J0LXBlcmZvcm1hcy1leGFtLWZ1bmN0aW9uYXJpZXM",
-      "title": "Report Performas for Exam Functionaries",
-      "source": "DSSSB",
-      "category": "UPSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/report-performas-exam-functionaries",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZG9pdC90YWItY29udGVudC9xdWVzdGlvbi1iYW5rLW9ubGluZS1leGFtLTIwMjU",
-      "title": "Question Bank Online Exam 2025",
-      "source": "DSSSB",
-      "category": "Banking",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/doit/tab-content/question-bank-online-exam-2025",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvYXJjaGl2ZWQtdmFjYW5jaWVz",
-      "title": "Old Vacancies",
-      "source": "DSSSB",
-      "category": "UPSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/archived-vacancies",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vcmVjcnVpdG1lbnQ",
-      "title": "Recruitments",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/recruitment",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vdG9kYXlzLWV4YW0",
-      "title": "Today's Exam",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/todays-exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9jZG4uZGlnaWFsbS5jb20vRUZvcm1zL2NvbmZpZ3VyZWRIdG1sLzEyNTgvMTAxMzIzL2xvZ2luLmh0bWw",
-      "title": "Objection link for the DSSSB various examination.",
-      "source": "DSSSB",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": "https://cdn.digialm.com/EForms/configuredHtml/1258/101323/login.html",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
-      "title": "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-032026-various-posts-post-code-2126-4526-closing-date-0",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vI25vdGlmaWNhdGlvbnM",
-      "title": "Notifications",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/#notifications",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYm9ubGluZS5uaWMuaW4v",
-      "title": "Apply Online",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssbonline.nic.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuZGlnaWFsbS5jb20vL09ubGluZUFzc2Vzc21lbnQvaW5kZXguaHRtbD8xMjU4QEBNMzc",
-      "title": "LINK FOR ONLINE EXAM MOCK TEST",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://www.digialm.com//OnlineAssessment/index.html?1258@@M37",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
       "id": "aHR0cHM6Ly91cHBicGIuZ292LmluL0hvbWUvRGlyZWN0UmVjcnVpdG1lbnQ",
       "title": "Direct Recruitment",
       "source": "UP Police (UPPRPB)",
@@ -2676,126 +1881,6 @@
       "category": "Police",
       "state": "Uttar Pradesh",
       "link": "https://uppbpb.gov.in/Home/Manual",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi8j",
-      "title": "Tamil Nadu Uniformed Services Recruitment Board",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/#",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9yZWNydWl0bWVudC10bnVzcmIucGhw",
-      "title": "Recruitment Process",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/recruitment-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9qcl9yZWNydWl0LXRudXNyYi5waHA",
-      "title": "Joint Recruitment (SIs & SOs)",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/jr_recruit-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9jb21tb25yZWNydWl0bWVudC10bnVzcmIucGhw",
-      "title": "Common Recruitment",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/commonrecruitment-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9hcmNoaXZlc3JlY3J1aXRtZW50cy10bnVzcmIucGhw",
-      "title": "Previous Recruitments",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/archivesrecruitments-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL05vdGlmaWNhdGlvbl9DUl8yMDI1LnBkZg",
-      "title": "Notification - 2/2025",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/Notification_CR_2025.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly90bnVzcmIuY3IuMjAyNS51Y2FuYXBwbHkuY29tL2xvZ2lu",
-      "title": "Written exam marks and status of candidates who are not eligible for CV-PMT-ET-PET",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://tnusrb.cr.2025.ucanapply.com/login",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL1NJKFRLLCUyMEFSKSUyMDIwMjUlMjBOb3RpZmljYXRpb25fbi5wZGY",
-      "title": "Notification - 1/2025",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/SI(TK,%20AR)%202025%20Notification_n.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL0FkZGVuZHVtX3RvX05vdGlmaWNhdGlvbl9TSTIwMjUucGRm",
-      "title": "Addendum to Notification",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/Addendum_to_Notification_SI2025.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL1NJMjAyNV9NQUlOX0ZJTkFMX0FOU1dFUl9LRVkucGRm",
-      "title": "Main written examination",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/SI2025_MAIN_FINAL_ANSWER_KEY.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly90cmIudG4uZ292LmluLw",
-      "title": "Tamil Nadu Teachers Recruitment Board (TN TRB)",
-      "source": "TNUSRB",
-      "category": "Teaching",
-      "state": "Tamil Nadu",
-      "link": "https://trb.tn.gov.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cucnJiY2hlbm5haS5nb3YuaW4v",
-      "title": "Railway Recruitment Board (RRB), Chennai",
-      "source": "TNUSRB",
-      "category": "Railways",
-      "state": "Tamil Nadu",
-      "link": "https://www.rrbchennai.gov.in/",
       "openDate": null,
       "lastDate": null
     }

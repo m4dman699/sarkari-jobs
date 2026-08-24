@@ -1,57 +1,7 @@
 {
-  "generatedAt": "2026-08-22T14:07:32.911Z",
-  "total": 10,
+  "generatedAt": "2026-08-24T03:06:34.357Z",
+  "total": 5,
   "jobs": [
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL2VuLXVzL0V4YW1pbmF0aW9uL0V4YW0tU2NoZWR1bGU",
-      "title": "Exam Schedule",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/en-us/Examination/Exam-Schedule",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL2VuLXVzL0V4YW1pbmF0aW9uL1NjaGVtZS1QYXR0ZXJuLW9mLUV4YW0",
-      "title": "Scheme & Pattern of Exam",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/en-us/Examination/Scheme-Pattern-of-Exam",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL1BvcnRhbHMvMC9Bbm5fU2NoX1BhdHRlcm5fU3lsbGFidXNfTWFuYV9QZXJzb19hZHZ0XzAxXzIwMjZfMTNfMDhfMjAyNi5wZGY",
-      "title": "Announcement dated 13.08.2026 regarding Scheme and Pattern of examination & Syllabus for the posts of Manager (Personnel) (Group-A) in Haryana State Warehousing Corporation (Advt. ",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/Portals/0/Ann_Sch_Pattern_Syllabus_Mana_Perso_advt_01_2026_13_08_2026.pdf",
-      "openDate": "2026-08-13",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL1BvcnRhbHMvMC9Bbm5fU2NoX1BhdHRlcm5fU3lsbGFidXNfQXNzaXN0YW50X0RpcmVjdG9yX0FkdnRfMjZfMjAyMl8xMl8wOF8yMDI2LnBkZg",
-      "title": "Announcement dated 12.08.2026 regarding Scheme and Pattern of examination & Syllabus for the posts of Assistant Director Industrial Safety and Health in Labour Department, Haryana ",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/Portals/0/Ann_Sch_Pattern_Syllabus_Assistant_Director_Advt_26_2022_12_08_2026.pdf",
-      "openDate": "2026-08-12",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL2hwc2MuZ292LmluL1BvcnRhbHMvMC9Sb2xsd2lzZV9JbnRfTWFya3NfUEdUX0NTXzAxXzA4XzIwMjYucGRm",
-      "title": "Roll No. wise marks dated 01.08.2026 of all interviewed candidates for the posts of Post Graduate Teachers (PGTs) in the subject of Computer Science for ROH Cadre & Mewat Cadre (Ad",
-      "source": "HPSC/HSSC",
-      "category": "Teaching",
-      "state": "Haryana",
-      "link": "http://hpsc.gov.in/Portals/0/Rollwise_Int_Marks_PGT_CS_01_08_2026.pdf",
-      "openDate": "2026-08-01",
-      "lastDate": null
-    },
     {
       "id": "aHR0cHM6Ly9vbmV0aW1lcmVnbi5oYXJ5YW5hLmdvdi5pbi9oc3Nj",
       "title": "Apply for CET Group D-05/2026",

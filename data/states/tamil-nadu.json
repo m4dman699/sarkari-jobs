@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-22T14:07:32.911Z",
-  "total": 14,
+  "generatedAt": "2026-08-24T03:06:34.357Z",
+  "total": 2,
   "jobs": [
     {
       "id": "aHR0cDovL3d3dy50bnBzYy5nb3YuaW4vaW5zdHJ1Y3Rpb25zJTIwdG8lMjBjYW5kaWF0ZXMucGRm",
@@ -19,126 +19,6 @@
       "category": "State PSC",
       "state": "Tamil Nadu",
       "link": "http://www.tnpscexams.net/documents/Rescheduled.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi8j",
-      "title": "Tamil Nadu Uniformed Services Recruitment Board",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/#",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9yZWNydWl0bWVudC10bnVzcmIucGhw",
-      "title": "Recruitment Process",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/recruitment-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9qcl9yZWNydWl0LXRudXNyYi5waHA",
-      "title": "Joint Recruitment (SIs & SOs)",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/jr_recruit-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9jb21tb25yZWNydWl0bWVudC10bnVzcmIucGhw",
-      "title": "Common Recruitment",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/commonrecruitment-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9hcmNoaXZlc3JlY3J1aXRtZW50cy10bnVzcmIucGhw",
-      "title": "Previous Recruitments",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/archivesrecruitments-tnusrb.php",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL05vdGlmaWNhdGlvbl9DUl8yMDI1LnBkZg",
-      "title": "Notification - 2/2025",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/Notification_CR_2025.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly90bnVzcmIuY3IuMjAyNS51Y2FuYXBwbHkuY29tL2xvZ2lu",
-      "title": "Written exam marks and status of candidates who are not eligible for CV-PMT-ET-PET",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://tnusrb.cr.2025.ucanapply.com/login",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL1NJKFRLLCUyMEFSKSUyMDIwMjUlMjBOb3RpZmljYXRpb25fbi5wZGY",
-      "title": "Notification - 1/2025",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/SI(TK,%20AR)%202025%20Notification_n.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL0FkZGVuZHVtX3RvX05vdGlmaWNhdGlvbl9TSTIwMjUucGRm",
-      "title": "Addendum to Notification",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/Addendum_to_Notification_SI2025.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9wZGZzL1NJMjAyNV9NQUlOX0ZJTkFMX0FOU1dFUl9LRVkucGRm",
-      "title": "Main written examination",
-      "source": "TNUSRB",
-      "category": "Police",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnusrb.tn.gov.in/pdfs/SI2025_MAIN_FINAL_ANSWER_KEY.pdf",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly90cmIudG4uZ292LmluLw",
-      "title": "Tamil Nadu Teachers Recruitment Board (TN TRB)",
-      "source": "TNUSRB",
-      "category": "Teaching",
-      "state": "Tamil Nadu",
-      "link": "https://trb.tn.gov.in/",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cucnJiY2hlbm5haS5nb3YuaW4v",
-      "title": "Railway Recruitment Board (RRB), Chennai",
-      "source": "TNUSRB",
-      "category": "Railways",
-      "state": "Tamil Nadu",
-      "link": "https://www.rrbchennai.gov.in/",
       "openDate": null,
       "lastDate": null
     }
