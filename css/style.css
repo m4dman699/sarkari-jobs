@@ -777,6 +777,18 @@ footer { background: var(--bg-dark); color: #aebadb; padding: 58px 0 0; }
   .ticker { gap: 24px; font-size: .82rem; }
 }
 
+/* Official career-source links and announcement detail guides */
+.source-section { background: linear-gradient(135deg, #f7f9fc, #fff); border-top: 1px solid #e5eaf2; border-bottom: 1px solid #e5eaf2; }
+.source-layout { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 28px; }
+.source-layout h2 { margin: 5px 0 10px; color: var(--bg-dark); }
+.source-layout p { max-width: 760px; line-height: 1.65; color: #4a5670; }
+.source-eyebrow { color: #b56a08; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; }
+.source-note { font-size: .88rem; }
+.source-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.announcement-guide { display: inline-block; margin-top: 9px; color: #174b9b; font-weight: 800; text-decoration: none; }
+.announcement-guide:hover { text-decoration: underline; }
+@media (max-width: 720px) { .source-layout { grid-template-columns: 1fr; } .source-actions { align-items: stretch; } }
+
 /* ---------- Detail pages (state.html / category.html) ---------- */
 .detail-hero {
   background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-2) 100%);

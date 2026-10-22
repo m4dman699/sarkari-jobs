@@ -127,5 +127,48 @@
     "publishedDate": "2026-10-20",
     "resultDate": "2026-10-19",
     "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
+  },
+  {
+    "id": "upsc-cds-ii-2026-written-result",
+    "type": "result",
+    "title": "UPSC CDS II Written Result 2026 — 8,956 Qualified for SSB",
+    "source": "Union Public Service Commission (UPSC)",
+    "organization": "Union Public Service Commission (UPSC)",
+    "category": "UPSC",
+    "state": "All India",
+    "link": "https://upsc.gov.in/sites/default/files/WR-CDSE-II-2026-Engl-19102026.pdf",
+    "publishedDate": "2026-10-19",
+    "resultDate": "2026-10-19",
+    "detail": "Official UPSC press note dated 19 Oct 2026. It lists 8,956 roll numbers qualified for SSB interview; this is the written-stage result.",
+    "detailPage": "upsc-cds-2-2026/",
+    "discoveredVia": "https://sarkariresult.com.cm/upsc-cds-2-2026/"
+  },
+  {
+    "id": "upsc-cds-ii-2026-admit-card",
+    "type": "admit-card",
+    "title": "UPSC CDS II Admit Card 2026",
+    "source": "Union Public Service Commission (UPSC)",
+    "organization": "Union Public Service Commission (UPSC)",
+    "category": "UPSC",
+    "state": "All India",
+    "link": "https://upsconline.nic.in/",
+    "publishedDate": "2026-09-03",
+    "examDate": "2026-09-13",
+    "detail": "The UPSC examination record lists the e-admit card as available from 3 Sep 2026. The written exam was held on 13 Sep 2026.",
+    "detailPage": "upsc-cds-2-2026/",
+    "discoveredVia": "https://sarkariresult.com.cm/upsc-cds-2-2026/"
+  },
+  {
+    "id": "upsc-cds-ii-2026-provisional-answer-key",
+    "type": "result",
+    "title": "UPSC CDS II Provisional Answer Key 2026",
+    "source": "Union Public Service Commission (UPSC)",
+    "organization": "Union Public Service Commission (UPSC)",
+    "category": "UPSC",
+    "state": "All India",
+    "link": "https://www.upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Provisional%20Answer%20Key",
+    "detail": "UPSC lists provisional keys for English, General Knowledge and Elementary Mathematics.",
+    "detailPage": "upsc-cds-2-2026/",
+    "discoveredVia": "https://sarkariresult.com.cm/upsc-cds-2-2026/"
   }
 ]

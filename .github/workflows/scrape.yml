@@ -68,6 +68,7 @@ jobs:
           mkdir -p .deploy-site
           cp index.html category.html state.html robots.txt sitemap.xml .deploy-site/
           cp -R assets css js data .deploy-site/
+          cp -R upsc-cds-2-2026 .deploy-site/
           git rev-parse HEAD > .deploy-site/deployment-version.txt
       - name: Deploy website and refreshed feed to Hostinger
         timeout-minutes: 4

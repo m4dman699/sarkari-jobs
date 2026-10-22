@@ -401,7 +401,13 @@ const CENTRAL_SOURCES = [
     name: 'UPSC',
     category: 'UPSC',
     state: 'All India',
-    urls: ['https://www.upsc.gov.in/', 'https://upsc.gov.in/whats-new']
+    urls: ['https://www.upsc.gov.in/', 'https://upsc.gov.in/whats-new', 'https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026']
+  },
+  {
+    name: 'National Career Service (government-sector jobs)',
+    category: 'Central',
+    state: 'All India',
+    urls: ['https://ncs.gov.in/job-listing?isGovernmentJob=true']
   },
   {
     name: 'IBPS',

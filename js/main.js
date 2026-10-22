@@ -258,6 +258,7 @@ function announcementCardHTML(item) {
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
              href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${item.publisher ? `Details on ${escapeHTML(cleanText(item.publisher))}` : 'Open official link'} ↗</a>`
         : '<span class="link-unavailable">Source link unavailable</span>'}
+      ${item.detailPage ? `<a class="announcement-guide" href="${escapeHTML(item.detailPage)}">Read the full guide →</a>` : ''}
     </article>`;
 }
 
