@@ -183,16 +183,28 @@ function renderCategories(jobs = []) {
 }
 
 // ---------- Countdown helper ----------
-function daysUntil(dateStr) {
+function parseFeedDate(dateStr) {
   if (!dateStr || dateStr === 'TBA') return null;
-  const d = new Date(dateStr);
-  if (isNaN(d)) return null;
-  return Math.ceil((d.setHours(23,59,59,999) - Date.now()) / 86400000);
+  const dateOnly = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
+  const date = dateOnly
+    ? new Date(Number(dateOnly[1]), Number(dateOnly[2]) - 1, Number(dateOnly[3]), 12)
+    : new Date(dateStr);
+  return isNaN(date) ? null : date;
+}
+
+function daysUntil(dateStr) {
+  const d = parseFeedDate(dateStr);
+  if (!d) return null;
+  const today = new Date();
+  const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+  const targetUTC = Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+  return Math.round((targetUTC - todayUTC) / 86400000);
 }
 function countdownBadge(d) {
   const n = daysUntil(d);
   if (n === null) return '<span class="countdown cd-ok">TBA</span>';
   if (n < 0)   return '<span class="countdown cd-crit">Closed</span>';
+  if (n === 0) return '<span class="countdown cd-crit">Closes today ⏰</span>';
   if (n <= 7)  return `<span class="countdown cd-crit">${n}d left ⏰</span>`;
   if (n <= 21) return `<span class="countdown cd-warn">${n}d left</span>`;
   return `<span class="countdown cd-ok">${n}d left</span>`;
@@ -200,8 +212,8 @@ function countdownBadge(d) {
 
 function fmtDate(d, opts = { day: 'numeric', month: 'short', year: 'numeric' }) {
   if (!d) return 'TBA';
-  const dt = new Date(d);
-  return isNaN(dt) ? d : dt.toLocaleDateString('en-IN', opts);
+  const dt = parseFeedDate(d);
+  return dt ? dt.toLocaleDateString('en-IN', opts) : d;
 }
 
 function portalMarkHTML(item) {
