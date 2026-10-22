@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
-const { fetchPage, extractJobs, SOURCES, STATE_SOURCES, classifyJob, isStale } = require('./sources');
+const { fetchPage, extractJobs, extractMeghalayaJobs, extractEmploymentNewsJobs, extractISROJobs, extractPuducherryJobs, SOURCES, STATE_SOURCES, classifyJob, isStale, isGenericJobTitle } = require('./sources');
 
 const OUT = path.join(__dirname, '..', 'data', 'jobs.json');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -29,7 +29,15 @@ async function main() {
         process.stdout.write(`→ ${src.name} [${url}] ... `);
         const html = await fetchPage(url);
         const $ = cheerio.load(html);
-        const announcements = extractJobs($, url, src.name, src.category, src.state);
+        const parser = {
+          meghalaya: extractMeghalayaJobs,
+          'employment-news': extractEmploymentNewsJobs,
+          isro: extractISROJobs,
+          puducherry: extractPuducherryJobs
+        }[src.slug];
+        const announcements = parser
+          ? parser($, url, src.name, src.category, src.state)
+          : extractJobs($, url, src.name, src.category, src.state);
         all.push(...announcements);
         announcementsBySource.set(src.name, (announcementsBySource.get(src.name) || 0) + announcements.length);
         console.log(`${announcements.length} links`);
@@ -76,7 +84,8 @@ async function main() {
       item.link && !/\/undefined(?:$|[?#])|\/#(?:$|[?#])|megrecruitment\.nic\.in/i.test(item.link) &&
       !/\{\{.*\}\}|\brti\b|right to information|reporting vacancies/i.test(item.title || '') &&
       !/^(?:notifications?|what'?s new|latest news|announcements?|recruitment|results?|admit cards?)$/i.test(item.title || '') &&
-      !isStale(item.title || '', item.lastDate) &&
+      !isStale(item.title || '', item.lastDate, item.publishedDate) &&
+      !isGenericJobTitle(item.title || '') &&
       !ids.has(item.id)
     );
     unique.push(...retained);
@@ -89,6 +98,11 @@ async function main() {
     jobsGeneratedAt: freshJobs ? generatedAt : (previous?.jobsGeneratedAt || previous?.generatedAt || null),
     partial: errors.length > 0 || !freshJobs,
     total: unique.length,
+    quality: {
+      jobsMissingPublicationDate: unique.filter(item => item.type === 'job' && !item.publishedDate && !item.openDate).length,
+      jobsMissingClosingDate: unique.filter(item => item.type === 'job' && !item.lastDate).length,
+      genericNavigationItems: unique.filter(item => isGenericJobTitle(item.title)).length
+    },
     errors,
     jobs: unique
   };
@@ -109,6 +123,7 @@ async function main() {
   }
 
   console.log(`\n✅ ${unique.length} unique announcements saved → data/jobs.json`);
+  console.log(`ℹ️  Job date gaps: ${payload.quality.jobsMissingPublicationDate} missing issue/open date; ${payload.quality.jobsMissingClosingDate} missing closing date.`);
   console.log(`✅ ${stateFileCount} per-state files saved → data/states/*.json`);
   if (errors.length) console.log(`⚠️  ${errors.length} source errors (see errors field in JSON)`);
 }

@@ -22,6 +22,16 @@ function fillGrid(list) {
   grid.innerHTML = sortByDeadline(list).map(jobCardHTML).join('');
 }
 
+function setFeedStatus(generatedAt, count) {
+  const status = document.getElementById('jobs-feed-status');
+  if (!status) return;
+  const updated = generatedAt ? new Date(generatedAt) : null;
+  const date = updated && !Number.isNaN(updated.getTime())
+    ? updated.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })
+    : 'date unavailable';
+  status.textContent = `${count} listings · feed refreshed ${date}`;
+}
+
 function renderStatePage() {
   // hash-based routing (survives clean-URL redirects); fall back to ?s=
   const slug = window.location.hash.slice(1) ||
@@ -60,17 +70,18 @@ function renderStatePage() {
       document.getElementById('jobs-heading').textContent = `${s.name} notifications`;
       const stateJobs = (p.jobs || []).filter(job => !job.type || job.type === 'job');
       if (stateJobs.length) {
+        setFeedStatus(p.generatedAt, stateJobs.length);
         fillGrid(stateJobs);
         return;
       }
       return fetch('data/jobs.json')
         .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
-        .then(feed => filterMainFeed(feed.jobs || [], s.name));
+        .then(feed => filterMainFeed(feed.jobs || [], s.name, feed.generatedAt));
     })
     .catch(() =>
       fetch('data/jobs.json')
         .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
-        .then(p => filterMainFeed(p.jobs || [], s.name))
+        .then(p => filterMainFeed(p.jobs || [], s.name, p.generatedAt))
         .catch(() => {
           document.getElementById('jobs-heading').textContent = 'Notifications unavailable';
           fillGrid([]);
@@ -78,11 +89,12 @@ function renderStatePage() {
     );
 }
 
-function filterMainFeed(jobs, s) {
+function filterMainFeed(jobs, s, generatedAt) {
   const own = jobs.filter(j => (!j.type || j.type === 'job') &&
     j.state && j.state.toLowerCase().includes(s.name.toLowerCase()));
   if (own.length) {
     document.getElementById('jobs-heading').textContent = `${s.name} notifications`;
+    setFeedStatus(generatedAt, own.length);
     fillGrid(own);
     return;
   }
@@ -90,6 +102,7 @@ function filterMainFeed(jobs, s) {
   const national = jobs.filter(j => (!j.type || j.type === 'job') && /all india|central/i.test(j.state || ''));
   document.getElementById('jobs-heading').textContent =
     'Central notifications open to ' + s.name + ' candidates';
+  setFeedStatus(generatedAt, national.slice(0, 6).length);
   fillGrid(national.slice(0, 6));
 }
 

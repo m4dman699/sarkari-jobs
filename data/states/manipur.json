@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 4,
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 3,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
@@ -13,7 +13,7 @@
       "openDate": null,
       "lastDate": null,
       "examDate": null,
-      "publishedDate": null
+      "publishedDate": "2026-10-08"
     },
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZV9ub3RpZmljYXRpb25fVVNfTF8yMDI2LnBkZg",
@@ -26,7 +26,7 @@
       "openDate": null,
       "lastDate": null,
       "examDate": null,
-      "publishedDate": null
+      "publishedDate": "2026-10-07"
     },
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MTUxNTI1MC5wZGY",
@@ -39,20 +39,7 @@
       "openDate": null,
       "lastDate": null,
       "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vUmVjcnVpdG1lbnRfQWR2ZXJ0aXNlbWVudC5odG1s",
-      "type": "job",
-      "title": "Recruitment Advertisements",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/Recruitment_Advertisement.html",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
+      "publishedDate": "2026-09-15"
     }
   ]
 }

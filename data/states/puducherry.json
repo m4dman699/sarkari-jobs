@@ -1,5 +1,58 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 4,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9waWhtY3QxODA4MjAyNnJlYy5wZGY",
+      "type": "job",
+      "title": "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
+      "source": "Government of Puducherry",
+      "category": "State PSC",
+      "state": "Puducherry",
+      "link": "https://py.gov.in/sites/default/files/pihmct18082026rec.pdf",
+      "openDate": null,
+      "lastDate": "2026-10-25",
+      "examDate": null,
+      "publishedDate": "2026-08-18"
+    },
+    {
+      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdHUwMTEwMjAyNi5wZGY",
+      "type": "job",
+      "title": "Higher & Technical Education - Advertisement - Appointment of Vice-Chancellor of Puducherry Technological University",
+      "source": "Government of Puducherry",
+      "category": "Teaching",
+      "state": "Puducherry",
+      "link": "https://py.gov.in/sites/default/files/ptu01102026.pdf",
+      "openDate": null,
+      "lastDate": "2026-10-31",
+      "examDate": null,
+      "publishedDate": "2026-10-06"
+    },
+    {
+      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wcmQxMDA5MjAyNnJlYy5wZGY",
+      "type": "job",
+      "title": "Planning & Research - Filling up the post of Joint Director - Group-A (Gazetted / Non-Ministerial) in Level-10 of Pay Matrix on deputation basis - Reg.",
+      "source": "Government of Puducherry",
+      "category": "State PSC",
+      "state": "Puducherry",
+      "link": "https://py.gov.in/sites/default/files/prd10092026rec.pdf",
+      "openDate": null,
+      "lastDate": "2026-11-11",
+      "examDate": null,
+      "publishedDate": "2026-09-10"
+    },
+    {
+      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wd2QxMjEwMjAyNnJlYy5wZGY",
+      "type": "job",
+      "title": "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
+      "source": "Government of Puducherry",
+      "category": "State PSC",
+      "state": "Puducherry",
+      "link": "https://py.gov.in/sites/default/files/pwd12102026rec.pdf",
+      "openDate": null,
+      "lastDate": "2026-11-22",
+      "examDate": null,
+      "publishedDate": "2026-10-12"
+    }
+  ]
 }

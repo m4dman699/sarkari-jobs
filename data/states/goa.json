@@ -1,45 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 3,
-  "jobs": [
-    {
-      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvTkVXU0NIRU1FRVhBTUlOQVRJT05fMjAyNS5wZGY",
-      "type": "job",
-      "title": "Scheme of Examinations for all Posts other than Junior Scale Officer/ Dy.S.P.",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/07/NEWSCHEMEEXAMINATION_2025.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvU0NBTl8yMDI1MTEyMV8xNzE2MzM4NDIucGRm",
-      "type": "job",
-      "title": "Shortlisting For Medical, Dental and Allied Subject Posts",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/11/SCAN_20251121_171633842.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vYWR2ZXJ0aXNlbWVudHMv",
-      "type": "job",
-      "title": "Advertisements",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://gpsc.goa.gov.in/advertisements/",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    }
-  ]
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 0,
+  "jobs": []
 }

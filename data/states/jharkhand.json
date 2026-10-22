@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 18,
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 17,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9QcmVzc19SZWxlYXNlX2RhdGVkXzE4XzEyXzIwMjUucGRm",
-      "type": "job",
-      "title": "Press Release regarding Email ID for general queries recruitment & legal matters uploaded Date 18-12-2025",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/data/Press_Release_dated_18_12_2025.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2025-12-18"
-    },
     {
       "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
       "type": "job",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 4,
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 2,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbU5LZnFYbW9TVW5rckZlL3dVVVBQZA",
@@ -23,32 +23,6 @@
       "category": "State PSC",
       "state": "Uttar Pradesh",
       "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBicGIuZ292LmluL0hvbWUvRGlyZWN0UmVjcnVpdG1lbnQ",
-      "type": "job",
-      "title": "Direct Recruitment",
-      "source": "UP Police (UPPRPB)",
-      "category": "Police",
-      "state": "Uttar Pradesh",
-      "link": "https://uppbpb.gov.in/Home/DirectRecruitment",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBicGIuZ292LmluL0hvbWUvTWFudWFs",
-      "type": "job",
-      "title": "Recruitment Rules",
-      "source": "UP Police (UPPRPB)",
-      "category": "Police",
-      "state": "Uttar Pradesh",
-      "link": "https://uppbpb.gov.in/Home/Manual",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

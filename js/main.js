@@ -220,10 +220,9 @@ function jobCardHTML(j) {
         <span class="tag">📍 ${escapeHTML(cleanText(j.state))}</span>
         <span class="tag">🔗 ${escapeHTML(cleanText(j.source))}</span>
       </div>
-      <div class="dates">
-        <span>Form closes: <b>${escapeHTML(fmtDate(close))}</b></span>
-        ${countdownBadge(close)}
-      </div>
+      ${close ? `<div class="dates"><span>Form closes: <b>${escapeHTML(fmtDate(close))}</b></span>${countdownBadge(close)}</div>`
+        : '<div class="dates"><span>Application deadline: <b>Check official notice</b></span></div>'}
+      ${j.publishedDate ? `<div class="dates"><span>Posted: <b>${escapeHTML(fmtDate(j.publishedDate))}</b></span></div>` : ''}
       ${exam ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(exam))}</b></span></div>` : ''}
       ${link
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"

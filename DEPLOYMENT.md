@@ -1,6 +1,8 @@
 # Automatic Hostinger publishing
 
-The site is static HTML/CSS/JavaScript. The GitHub Actions workflow scrapes the government portals daily at 02:23 UTC (07:53 India time), commits refreshed feed data, and uploads the site and `data/` over SFTP. A separate workflow uploads committed site changes to Hostinger after a push to `main`.
+The site is static HTML/CSS/JavaScript. GitHub Actions runs one scraper pass per day at 02:17 UTC (07:47 India time), commits refreshed feed data, and uploads the site and `data/` over SFTP. The scraper visits each configured portal once per run, then exits. A separate workflow uploads manually committed site changes to Hostinger after a push to `main`.
+
+The Desktop checkout is synced from `origin/main` once daily at 08:45 India time by the Windows Scheduled Task **SarkariJobsPlus GitHub Sync**. The task fast-forwards only when the checkout is clean; it skips and logs a message if there are uncommitted local changes. Review `%LOCALAPPDATA%\SarkariJobsPlus\sync.log` for sync status. Local edits still follow the normal path: edit on Desktop, commit and push to GitHub `main`, then the deploy workflow publishes that revision to Hostinger.
 
 ## One-time setup
 
@@ -15,6 +17,10 @@ The site is static HTML/CSS/JavaScript. The GitHub Actions workflow scrapes the 
 Optional: create a GA4 web data stream, then add its `G-...` Measurement ID as the repository secret `GA4_MEASUREMENT_ID`. Both deploy workflows inject it at publish time, so visits and page views appear in Analytics **Realtime** without committing the ID to the source tree. Leave this secret unset until the GA4 property exists.
 
 The uploader only writes the site's HTML pages, `robots.txt`, `sitemap.xml`, and the `assets/`, `css/`, `js/`, and `data/` directories. It does not delete remote files, preserving Hostinger-managed files such as `default.php`.
+
+## Recruitment date and source policy
+
+The scraper reads recruiting authorities' own portals and official notices first. It has dedicated date-field readers for the Ministry of Information and Broadcasting's Employment News table and ISRO's Current Opportunities table. The dates come from the fields explicitly labelled issue/opening and last date; dates are not inferred from unrelated page text. Other recruitment sources use the official listing row/card around each notice. If a portal does not expose a deadline in its public listing, the card tells candidates to check the official notice instead of inventing a date. Third-party job sites are useful for discovering notices and comparing presentation, but dates and links must be checked against the recruiting body or its notice before publishing.
 
 ## Audience analytics and Google Search
 

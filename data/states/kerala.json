@@ -1,19 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 1,
-  "jobs": [
-    {
-      "id": "aHR0cHM6Ly9wc2Mua2VyYWxhLmdvdi5pbi9zdGF0dXMv",
-      "type": "job",
-      "title": "Status of Posts",
-      "source": "Kerala PSC",
-      "category": "State PSC",
-      "state": "Kerala",
-      "link": "https://psc.kerala.gov.in/status/",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    }
-  ]
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 0,
+  "jobs": []
 }

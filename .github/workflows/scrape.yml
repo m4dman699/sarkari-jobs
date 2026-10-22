@@ -2,7 +2,7 @@ name: Refresh government job feed
 
 on:
   schedule:
-    - cron: '23 2 * * *'
+    - cron: '17 2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -82,3 +82,13 @@ jobs:
           ignore: |
             *.log
           delete: 'false'
+      - name: Verify Hostinger received the refreshed feed
+        run: |
+          expected=$(node -p "require('./data/jobs.json').generatedAt")
+          for attempt in {1..6}; do
+            actual=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/data/jobs.json?generated=$expected" | jq -r '.generatedAt' || true)
+            if [ "$actual" = "$expected" ]; then echo "Hostinger is serving feed generated at $expected"; exit 0; fi
+            sleep 5
+          done
+          echo 'Hostinger did not serve the refreshed data/jobs.json after upload.'
+          exit 1

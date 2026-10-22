@@ -102,10 +102,10 @@ function findDates(text) {
       const before = text.slice(Math.max(0, m.index - 45), m.index);
       const after = text.slice(m.index + m[0].length, m.index + m[0].length + 30);
       let kind = 'other';
-      if (/last|close|end|due|till|upto/i.test(before + ' ' + after)) kind = 'close';
+      if (/last|clos(?:e|ing)|end|due|till|up\s*to|deadline|submission/i.test(before + ' ' + after)) kind = 'close';
       else if (/start|open|from|begin|apply/i.test(before + ' ' + after)) kind = 'open';
       else if (/exam|test|written|interview/i.test(before + ' ' + after)) kind = 'exam';
-      else if (/result|declared|published|released|issued|uploaded/i.test(before + ' ' + after)) kind = 'published';
+      else if (/result|declared|published|released|issued|uploaded|dated|date of issue|new updated/i.test(before + ' ' + after)) kind = 'published';
       out.push({ iso, kind });
     }
     }
@@ -113,11 +113,23 @@ function findDates(text) {
   return out;
 }
 
+function parseDate(text, order = 'dmy') {
+  const match = String(text || '').match(/(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})/);
+  if (match) {
+    const [, first, second, year] = match;
+    const day = order === 'mdy' ? second : first;
+    const month = order === 'mdy' ? first : second;
+    return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+  }
+  const found = findDates(text).find(date => date.kind === 'other' || date.kind === 'published');
+  return found?.iso || null;
+}
+
 const JOB_TITLE_HINTS = /(notification|recruit|vacanc|apply\s*(online)?|online\s*form|posts|jobs|bharti|career|advertisement|apprentice|engagement|fellowship)/i;
-const UPDATE_TITLE_HINTS = /(admit\s*card|call\s*letter|hall\s*ticket|e-admit|\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list)/i;
-const GENERIC_JOB_LINK = /^(apply(?: online| now)?|jobs?(?: through ncs)?|careers?|recruitments?|click here|read more|view (?:all|details)|download)$/i;
+const UPDATE_TITLE_HINTS = /(admit\s*card|call\s*letter|hall\s*ticket|e-admit|\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list|shortlist(?:ing)?)/i;
+const GENERIC_JOB_LINK = /^(?:apply(?: online| now)?|jobs?(?: through ncs)?|careers?|recruitments?|recruitment (?:advertisements?|calendar|rules)|advertisements?(?: \d{4}[-–]\d{4}(?: ng)?)?|current (?:vacancies|advertisements?)|old vacancies|old results|latest results?|written results?|recruitment calendar|advertisement calendar|otr\s*\/\s*apply online(?: \(recruitment portal\))?|online recruitment application(?: \(ora\))?|exams? view and apply exams?\.? open|notifications? browse and view all the notifications issued\. open|(?:screening |lde |departmental |mlp |induction )?notifications?(?: (?:ng|lde|departmental|20\d{2}[-–]20\d{2}))?|web advertisement|new advertisement policy|career article|government of india,? ministry of railways railway recruitment board|welcome to the new website of railway recruitment boards\.?|status of posts|how to apply(?: & pay)?|processing fees to unblock call letter|download call letter|download hallticket|download hall ticket|download admit card|apply for advt no\.? \d+\/\d{4}|direct recruitment|advertisement \(direct recruitment\)|screening notification(?: [a-z])?|click here|read more|view (?:all|details)|download)$/i;
 const GENERIC_ANNOUNCEMENT = /^(notifications?|what'?s new|latest news|announcements?|recruitment|results?|admit cards?)$/i;
-const JUNK_HINTS   = /(tender|faq|contact|login|privacy|disclaimer|archive|final\s*marks|answer\s*key|interview\s*schedule|rejection|withdrawn|corrigendum|order\b|\brti\b|right to information|reporting vacancies)/i;
+const JUNK_HINTS   = /(tender|faq|contact|login|privacy|disclaimer|archive|final\s*marks|answer\s*key|interview\s*schedule|rejection|withdrawn|corrigendum|order\b|\brti\b|right to information|reporting vacancies|press release regarding email|email id for general queries|cancelled|canceled|use of calculator)/i;
 const TRUSTED_RECRUITMENT_HOSTS = ['digialm.com', 'hryssc.com', 'tnpsconline.com', 'tnpscexams.in', 'opscechayan.in'];
 
 function isOfficialPortalLink(link) {
@@ -130,11 +142,11 @@ function isOfficialPortalLink(link) {
 
 function classifyAnnouncement(title) {
   if (/admit\s*card|call\s*letter|hall\s*ticket|e-admit/i.test(title)) return 'admit-card';
-  if (/\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list/i.test(title)) return 'result';
+  if (/\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list|eligible\s*list|recommendation\s*list|shortlist(?:ing)?|(?:exam|interview)\s*(?:schedule|programme|program)|programme\s+of\s+(?:main|interview)|summary of written examination|document submission|recruitment rules|scheme of examination|computer based recruitment test|interview.{0,50}(?:personality|test)|roll no\.?\s*wise marks/i.test(title)) return 'result';
   return 'job';
 }
 
-function isStale(title, lastDate) {
+function isStale(title, lastDate, publishedDate) {
   // Old-year references inside the title (e.g. "Notification No.27/2017") = dead post
   const yearHit = title.match(/\b20(0\d|1\d|2[0-4])\b/);
   if (yearHit && parseInt(yearHit[0], 10) <= 2024) return true;
@@ -145,7 +157,17 @@ function isStale(title, lastDate) {
     const d = new Date(lastDate);
     if (!isNaN(d) && d.getTime() < Date.now() - 2 * 86400000) return true;
   }
+  // A job with no published deadline should not stay listed indefinitely;
+  // after 120 days it is likely stale and cannot be confirmed open from this feed.
+  if (!lastDate && publishedDate) {
+    const published = new Date(`${publishedDate}T00:00:00Z`);
+    if (!isNaN(published) && published.getTime() < Date.now() - 120 * 86400000) return true;
+  }
   return false;
+}
+
+function isGenericJobTitle(title) {
+  return GENERIC_JOB_LINK.test(String(title || '').replace(/\s+/g, ' ').trim());
 }
 
 /**
@@ -159,11 +181,11 @@ function extractJobs($, baseUrl, sourceName, category, state) {
     const title = ($el.text() || '').replace(/\s+/g, ' ').trim();
     const href = $el.attr('href');
     if (!title || title.length < 5 || title.length > 220) return;
-    if (GENERIC_ANNOUNCEMENT.test(title) || /\{\{.*\}\}/.test(title)) return;
+    if (GENERIC_ANNOUNCEMENT.test(title) || isGenericJobTitle(title) || /\{\{.*\}\}/.test(title)) return;
     if (JUNK_HINTS.test(title)) return;
     const type = classifyAnnouncement(title);
     if (type === 'job' && !JOB_TITLE_HINTS.test(title)) return;
-    if (type === 'job' && GENERIC_JOB_LINK.test(title)) return;
+    if (type === 'job' && isGenericJobTitle(title)) return;
     if (type !== 'job' && !UPDATE_TITLE_HINTS.test(title)) return;
     if (!href || /^\s*(?:#|javascript:|mailto:|tel:)/i.test(href) || /(?:undefined|null)$/i.test(href.trim())) return;
 
@@ -188,7 +210,9 @@ function extractJobs($, baseUrl, sourceName, category, state) {
     if (!/^https?:/.test(link) || !isOfficialPortalLink(link)) return;
 
     // Row context = closest tr/li/div text, for date proximity search
-    const contextEl = $el.closest('tr').length ? $el.closest('tr') : ($el.closest('li').length ? $el.closest('li') : $el.parent());
+    const contextEl = $el.closest('tr, article, .views-row, .card, .job-listing, .item, li').length
+      ? $el.closest('tr, article, .views-row, .card, .job-listing, .item, li')
+      : $el.parent();
     const context = contextEl.text() || '';
     const dateTimes = contextEl.find('time[datetime]').map((__, time) => `${$(time).text()} ${$(time).attr('datetime')}`).get().join(' ');
     const found = findDates(`${context} ${dateTimes}`);
@@ -220,7 +244,143 @@ function extractJobs($, baseUrl, sourceName, category, state) {
     });
   });
   // quality gate: drop stale/dead notifications
-  return jobs.filter(j => j.type !== 'job' || !isStale(j.title, j.lastDate));
+  return jobs.filter(j => j.type !== 'job' || !isStale(j.title, j.lastDate, j.publishedDate));
+}
+
+/** MPSC's advertisement index is a table of dated notices, not individual job links.
+ * Extract actual post names from each current-year advertisement row and retain
+ * its issue date and PDF link instead of treating portal navigation as jobs.
+ */
+function extractMeghalayaJobs($, baseUrl, sourceName = 'MPSC Meghalaya', category = 'State PSC', state = 'Meghalaya') {
+  const jobs = [];
+  const verifiedDeadlines = {
+    'No.1/2026': '2026-04-17',
+    'No.2/2026': '2026-05-08',
+    'No.3/2026': '2026-06-25'
+  };
+  const cutoff = new Date(`${new Date().getUTCFullYear()}-01-01T00:00:00Z`);
+
+  $('tr').each((_, row) => {
+    const $row = $(row);
+    const cells = $row.children('td');
+    if (cells.length < 3) return;
+    const adNumber = cells.eq(0).text().replace(/\s+/g, ' ').trim();
+    if (!/^No\.\s*\d+\/20\d{2}$/i.test(adNumber)) return;
+
+    const link = cells.eq(1).find('a[href]').first();
+    if (!link.length) return;
+    const href = link.attr('href');
+    if (!href || !/(?:^|\/)advt\/[^?#]+\.pdf(?:[?#]|$)/i.test(href)) return;
+    const url = new URL(href, baseUrl).href;
+
+    const issueMatch = cells.eq(2).text().match(/(\d{1,2})-(\d{1,2})-(\d{4})/);
+    if (!issueMatch) return;
+    const publishedDate = `${issueMatch[3]}-${issueMatch[2].padStart(2, '0')}-${issueMatch[1].padStart(2, '0')}`;
+    if (new Date(`${publishedDate}T00:00:00Z`) < cutoff) return;
+
+    const postNames = link.find('ol li').map((__, item) => $(item).text().replace(/\s+/g, ' ').trim()).get().filter(Boolean);
+    if (!postNames.length) {
+      const text = link.text().replace(/\s+/g, ' ').trim();
+      if (!/applications are invited/i.test(text)) return;
+      postNames.push(text.replace(/^.*?recruitment to the post\(s\) mentioned below\s*:?\s*/i, '').slice(0, 180));
+    }
+
+    for (const postName of postNames) {
+      const title = `${adNumber} — ${postName}`;
+      jobs.push({
+        id: Buffer.from(`${url}#${postName}`).toString('base64url'),
+        type: 'job',
+        title,
+        source: sourceName,
+        category,
+        state,
+        link: url,
+        openDate: publishedDate,
+        lastDate: verifiedDeadlines[adNumber] || null,
+        examDate: null,
+        publishedDate
+      });
+    }
+  });
+  return jobs;
+}
+
+/** Employment News publishes issue and last dates in an official Ministry of I&B table. */
+function extractEmploymentNewsJobs($, baseUrl, sourceName = 'Employment News (Govt of India)', category = 'Central', state = 'All India') {
+  const jobs = [];
+  $('tr').each((_, row) => {
+    const cells = $(row).children('td');
+    if (cells.length < 5) return;
+    const issuedText = cells.eq(0).text().replace(/\s+/g, ' ').trim();
+    const organisation = cells.eq(1).text().replace(/\s+/g, ' ').trim();
+    const post = cells.eq(2).text().replace(/\s+/g, ' ').trim();
+    const method = cells.eq(3).text().replace(/\s+/g, ' ').trim();
+    const lastText = cells.eq(4).text().replace(/\s+/g, ' ').trim();
+    // Values in the Ministry table are DD/MM/YYYY (including dates such as 31/08/2026,
+    // despite the issue-date header's inconsistent MM/DD label).
+    const publishedDate = parseDate(issuedText, 'dmy');
+    const lastDate = parseDate(lastText, 'dmy');
+    if (!publishedDate || !organisation || !post || !lastDate || !/recruit|deput|contract|engage/i.test(method)) return;
+    const title = `${organisation} — ${post}`;
+    jobs.push({
+      id: Buffer.from(`${baseUrl}#${publishedDate}#${title}`).toString('base64url'),
+      type: 'job', title: title.slice(0, 180), source: sourceName, category, state,
+      link: baseUrl, openDate: null, lastDate, examDate: null, publishedDate
+    });
+  });
+  return jobs.filter(job => !isStale(job.title, job.lastDate, job.publishedDate));
+}
+
+/** ISRO exposes a first-party opportunities table with opening and submission dates. */
+function extractISROJobs($, baseUrl, sourceName = 'ISRO', category = 'PSU', state = 'All India') {
+  const jobs = [];
+  $('.row.list').each((_, row) => {
+    const columns = $(row).children('.subthemed-grid-col').toArray();
+    // ISRO renders six direct cells per opportunity; chunking them avoids merging
+    // neighboring listings into a single title/date, even in archived tabs.
+    for (let index = 0; index + 5 < columns.length; index += 6) {
+      const $cells = columns.slice(index, index + 6).map(cell => $(cell));
+      const field = selector => $cells.map(item => item.find(selector)).find(item => item.length);
+      const title = field('.post')?.text().replace(/\s+/g, ' ').trim();
+      const adNumber = field('.advtNum')?.text().replace(/\s+/g, ' ').trim();
+      const openDate = parseDate(field('.opendate')?.text());
+      const lastDate = parseDate(field('.closedate')?.text());
+      const details = $cells.flatMap(item => item.find('a[href]').toArray()).map(anchor => $(anchor).attr('href')).find(Boolean);
+      if (!title || !lastDate || !details) continue;
+      let link;
+      try { link = new URL(details, baseUrl).href; } catch { continue; }
+      jobs.push({
+        id: Buffer.from(link).toString('base64url'), type: 'job',
+        title: `${adNumber ? `${adNumber} — ` : ''}${title}`.slice(0, 180),
+        source: sourceName, category, state, link,
+        openDate, lastDate, examDate: null, publishedDate: openDate
+      });
+    }
+  });
+  return jobs.filter(job => !isStale(job.title, job.lastDate, job.publishedDate));
+}
+
+/** Puducherry's official recruitment index publishes both dates and notification PDFs. */
+function extractPuducherryJobs($, baseUrl, sourceName = 'Government of Puducherry', category = 'State PSC', state = 'Puducherry') {
+  const jobs = [];
+  $('li.views-row').each((_, row) => {
+    const $row = $(row);
+    const title = $row.find('.views-field-title').text().replace(/\s+/g, ' ').trim();
+    const publishedDate = $row.find('.views-field-field-important-notice-date [content]').attr('content')?.slice(0, 10)
+      || parseDate($row.find('.views-field-field-important-notice-date').text());
+    const lastDate = $row.find('.views-field-field-expiry-date [content]').attr('content')?.slice(0, 10)
+      || parseDate($row.find('.views-field-field-expiry-date').text());
+    const href = $row.find('.views-field-field-upload-pdf a[href]').first().attr('href');
+    if (!title || !publishedDate || !lastDate || !href) return;
+    let link;
+    try { link = new URL(href, baseUrl).href; } catch { return; }
+    jobs.push({
+      id: Buffer.from(link).toString('base64url'), type: 'job',
+      title: title.slice(0, 180), source: sourceName, category, state, link,
+      openDate: null, lastDate, examDate: null, publishedDate
+    });
+  });
+  return jobs.filter(job => !isStale(job.title, job.lastDate, job.publishedDate));
 }
 
 const CENTRAL_SOURCES = [
@@ -228,6 +388,7 @@ const CENTRAL_SOURCES = [
     name: 'Employment News (Govt of India)',
     category: 'Central',
     state: 'All India',
+    slug: 'employment-news',
     urls: ['https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All']
   },
   {
@@ -265,7 +426,7 @@ const CENTRAL_SOURCES = [
   // ---- PSU ----
   { name: 'NTPC',             category: 'PSU', state: 'All India', urls: ['https://careers.ntpc.co.in/'] },
   { name: 'SAIL',             category: 'PSU', state: 'All India', urls: ['https://sail.co.in/web/careers'] },
-  { name: 'ISRO',             category: 'PSU', state: 'All India', urls: ['https://www.isro.gov.in/Careers.html'] },
+  { slug: 'isro', name: 'ISRO', category: 'PSU', state: 'All India', urls: ['https://www.isro.gov.in/CurrentOpportunities.html'] },
   // ---- Judiciary ----
   { name: 'Supreme Court of India', category: 'Judiciary', state: 'All India', urls: ['https://www.sci.gov.in/recruitments/'] },
   { name: 'Calcutta High Court', category: 'Judiciary', state: 'West Bengal', urls: ['https://www.calcuttahighcourt.gov.in/'] },
@@ -287,7 +448,7 @@ const STATE_SOURCES = [
   { slug: 'maharashtra',     name: 'MPSC',        category: 'State PSC', state: 'Maharashtra',       urls: ['https://mpsc.gov.in/'] },
   { slug: 'gujarat',         name: 'GPSC',        category: 'State PSC', state: 'Gujarat',           urls: ['https://gpsc.gujarat.gov.in/'] },
   { slug: 'andhra-pradesh',  name: 'APPSC',       category: 'State PSC', state: 'Andhra Pradesh',    urls: ['https://psc.ap.gov.in/'] },
-  { slug: 'telangana',       name: 'TSPSC',       category: 'State PSC', state: 'Telangana',         urls: ['https://www.tspsc.gov.in/'] },
+  { slug: 'telangana',       name: 'TGPSC',       category: 'State PSC', state: 'Telangana',         urls: ['https://www.tgpsc.gov.in/'] },
   { slug: 'himachal-pradesh',name: 'HPPSC',       category: 'State PSC', state: 'Himachal Pradesh',  urls: ['https://hppsc.hp.gov.in/'] },
   { slug: 'haryana',         name: 'HPSC/HSSC',   category: 'State PSC', state: 'Haryana',           urls: ['https://hpsc.gov.in/', 'https://hssc.gov.in/'] },
   { slug: 'jharkhand',       name: 'JPSC',        category: 'State PSC', state: 'Jharkhand',         urls: ['https://www.jpsc.gov.in/'] },
@@ -299,13 +460,13 @@ const STATE_SOURCES = [
   { slug: 'jammu-kashmir',   name: 'JKPSC',       category: 'State PSC', state: 'Jammu & Kashmir',   urls: ['https://jkpsc.nic.in/'] },
   { slug: 'goa',             name: 'Goa PSC',     category: 'State PSC', state: 'Goa',               urls: ['https://gpsc.goa.gov.in/'] },
   { slug: 'manipur',         name: 'MPSC Manipur',category: 'State PSC', state: 'Manipur',           urls: ['https://mpscmanipur.gov.in/'] },
-  { slug: 'meghalaya',       name: 'MPSC Meghalaya',category:'State PSC',state: 'Meghalaya',        urls: ['https://mpsc.meghalaya.gov.in/notifications.html', 'https://mpsc.meghalaya.gov.in/advertisements.html'] },
+  { slug: 'meghalaya',       name: 'MPSC Meghalaya',category:'State PSC',state: 'Meghalaya',        urls: ['https://mpsc.meghalaya.gov.in/advertisements.html'] },
   { slug: 'mizoram',         name: 'Mizoram PSC', category: 'State PSC', state: 'Mizoram',           urls: ['https://mpsc.mizoram.gov.in/'] },
   { slug: 'nagaland',        name: 'NPSC',        category: 'State PSC', state: 'Nagaland',          urls: ['https://npsc.nagaland.gov.in/'] },
   { slug: 'sikkim',          name: 'SPSC Sikkim', category: 'State PSC', state: 'Sikkim',            urls: ['https://spscskm.gov.in/'] },
   { slug: 'tripura',         name: 'TPSC',        category: 'State PSC', state: 'Tripura',           urls: ['https://tpsc.tripura.gov.in/'] },
   { slug: 'delhi',           name: 'DSSSB',       category: 'State PSC', state: 'Delhi',             urls: ['https://dsssb.delhi.gov.in/'] },
-  { slug: 'puducherry',      name: 'PPPSC/Puducherry', category: 'State PSC', state: 'Puducherry', urls: ['https://recruitment.puducherry.gov.in/'] },
+  { slug: 'puducherry',      name: 'Government of Puducherry', category: 'State PSC', state: 'Puducherry', urls: ['https://www.py.gov.in/recruitment'] },
   // ---- State Police boards (category: Police) ----
   { slug: 'uttar-pradesh',   name: 'UP Police (UPPRPB)', category: 'Police', state: 'Uttar Pradesh', urls: ['https://uppbpb.gov.in/'] },
   { slug: 'bihar',           name: 'CSBC (Bihar Police)', category: 'Police', state: 'Bihar',        urls: ['https://csbc.bih.nic.in/'] },
@@ -341,4 +502,4 @@ function classifyJob(job) {
 
 const SOURCES = [...CENTRAL_SOURCES, ...STATE_SOURCES];
 
-module.exports = { fetchPage, extractJobs, SOURCES, STATE_SOURCES, CENTRAL_SOURCES, classifyJob, isOfficialPortalLink, isStale };
+module.exports = { fetchPage, findDates, extractJobs, extractMeghalayaJobs, extractEmploymentNewsJobs, extractISROJobs, extractPuducherryJobs, SOURCES, STATE_SOURCES, CENTRAL_SOURCES, classifyJob, isOfficialPortalLink, isGenericJobTitle, isStale };

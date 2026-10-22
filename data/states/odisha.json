@@ -1,32 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:35:55.683Z",
-  "total": 2,
-  "jobs": [
-    {
-      "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9TWVOR0thdTQyQjlWWDRObjZvWmZYQT09",
-      "type": "job",
-      "title": "Advertisements",
-      "source": "OPSC",
-      "category": "State PSC",
-      "state": "Odisha",
-      "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=MeNGKau42B9VX4Nn6oZfXA==",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9TjVuLzQ4cktvajFzTkdadHFhdDUxdz09",
-      "type": "job",
-      "title": "Recruitment Calendar",
-      "source": "OPSC",
-      "category": "State PSC",
-      "state": "Odisha",
-      "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=N5n/48rKoj1sNGZtqat51w==",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    }
-  ]
+  "generatedAt": "2026-10-22T11:54:18.292Z",
+  "total": 0,
+  "jobs": []
 }
