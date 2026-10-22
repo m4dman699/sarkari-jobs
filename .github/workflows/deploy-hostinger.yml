@@ -17,7 +17,7 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     env:
-      SFTP_REMOTE_DIR: public_html
+      SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
     steps:
       - name: Check out website
         uses: actions/checkout@v4
@@ -50,16 +50,13 @@ jobs:
           password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
           port: 65002
           uploads: |
-            ./index.html => ${{ env.SFTP_REMOTE_DIR }}/index.html
-            ./category.html => ${{ env.SFTP_REMOTE_DIR }}/category.html
-            ./state.html => ${{ env.SFTP_REMOTE_DIR }}/state.html
-            ./robots.txt => ${{ env.SFTP_REMOTE_DIR }}/robots.txt
-            ./sitemap.xml => ${{ env.SFTP_REMOTE_DIR }}/sitemap.xml
-            ./deployment-version.txt => ${{ env.SFTP_REMOTE_DIR }}/deployment-version.txt
-            ./assets/ => ${{ env.SFTP_REMOTE_DIR }}/assets/
-            ./css/ => ${{ env.SFTP_REMOTE_DIR }}/css/
-            ./js/ => ${{ env.SFTP_REMOTE_DIR }}/js/
-            ./data/ => ${{ env.SFTP_REMOTE_DIR }}/data/
+            ./ => ${{ env.SFTP_REMOTE_DIR }}/
+          ignore: |
+            .git/**
+            .github/**
+            scraper/**
+            .gitignore
+            DEPLOYMENT.md
           delete: 'false'
       - name: Verify public site received this commit
         env:
