@@ -16,6 +16,8 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -47,7 +49,6 @@ jobs:
           SFTP_HOST: ${{ secrets.HOSTINGER_SFTP_HOST }}
           SFTP_USER: ${{ secrets.HOSTINGER_SFTP_USER }}
           SFTP_PASSWORD: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
-          SFTP_REMOTE_DIR: ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}
         run: |
           for key in SFTP_HOST SFTP_USER SFTP_PASSWORD SFTP_REMOTE_DIR; do
             if [ -z "${!key}" ]; then echo "Missing deployment setting for $key. Add the matching HOSTINGER_* GitHub Actions secret."; exit 1; fi
@@ -62,7 +63,14 @@ jobs:
           fi
       - name: Update sitemap page modification dates
         run: sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
+      - name: Prepare public website bundle
+        run: |
+          mkdir -p .deploy-site
+          cp index.html category.html state.html robots.txt sitemap.xml .deploy-site/
+          cp -R assets css js data .deploy-site/
+          git rev-parse HEAD > .deploy-site/deployment-version.txt
       - name: Deploy website and refreshed feed to Hostinger
+        timeout-minutes: 4
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}
@@ -70,25 +78,19 @@ jobs:
           password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
           port: 65002
           uploads: |
-            ./index.html => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/index.html
-            ./category.html => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/category.html
-            ./state.html => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/state.html
-            ./robots.txt => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/robots.txt
-            ./sitemap.xml => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/sitemap.xml
-            ./assets/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/assets/
-            ./css/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/css/
-            ./js/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/js/
-            ./data/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/data/
+            ./.deploy-site/ => ${{ env.SFTP_REMOTE_DIR }}/
           ignore: |
             *.log
           delete: 'false'
       - name: Verify Hostinger received the refreshed feed
         run: |
           expected=$(node -p "require('./data/jobs.json').generatedAt")
+          expected_sha=$(cat .deploy-site/deployment-version.txt)
           for attempt in {1..6}; do
             actual=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/data/jobs.json?generated=$expected" | jq -r '.generatedAt' || true)
-            if [ "$actual" = "$expected" ]; then echo "Hostinger is serving feed generated at $expected"; exit 0; fi
+            live_sha=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$expected_sha" || true)
+            if [ "$actual" = "$expected" ] && [ "$live_sha" = "$expected_sha" ]; then echo "Hostinger is serving feed generated at $expected from commit $expected_sha"; exit 0; fi
             sleep 5
           done
-          echo 'Hostinger did not serve the refreshed data/jobs.json after upload.'
+          echo 'Hostinger did not serve the current feed and deployment marker after upload.'
           exit 1
