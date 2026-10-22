@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-22T13:43:08.885Z",
   "jobsGeneratedAt": "2026-10-22T13:10:27.276Z",
   "partial": true,
-  "total": 315,
+  "total": 314,
   "quality": {
     "jobsMissingPublicationDate": 50,
     "jobsMissingClosingDate": 64,
@@ -3772,17 +3772,6 @@
       "id": "competitor-sarkariresult-aHR0cHM6Ly9zYXJrYXJpcmVzdWx0LmNvbS5jbS8",
       "type": "admit-card",
       "title": "Sarkari Result™",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Admit cards",
-      "state": "See linked notice",
-      "link": null,
-      "discoveredVia": "https://sarkariresult.com.cm/ADMIT-CARD/"
-    },
-    {
-      "id": "competitor-sarkariresult-zYXJrYXJpcmVzdWx0LmNvbS5jbS9wcml2YWN5LXBvbGljeS8",
-      "type": "admit-card",
-      "title": "Privacy Policy",
       "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
       "publisher": "SarkariResult.com.cm",
       "category": "Admit cards",

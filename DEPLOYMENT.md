@@ -14,7 +14,7 @@ The Desktop checkout is synced from `origin/main` once daily at 08:45 India time
    - `HOSTINGER_SFTP_REMOTE_DIR` — the full remote path to this domain's `public_html` folder.
 3. Run **Actions → Refresh government job feed → Run workflow** once to scrape and publish immediately. Future scheduled runs scrape and publish automatically; pushes to `main` publish site edits.
 
-Optional: create a GA4 web data stream, then add its `G-...` Measurement ID as the repository secret `GA4_MEASUREMENT_ID`. Both deploy workflows inject it at publish time, so visits and page views appear in Analytics **Realtime** without committing the ID to the source tree. Leave this secret unset until the GA4 property exists.
+Google Analytics 4 is connected for `https://sarkarijobsplus.com`. Its public `G-...` Measurement ID is stored in `js/analytics-config.js`; it is not a password or API secret. The optional `GA4_MEASUREMENT_ID` Actions secret can override the file value during deployment, but it is not required.
 
 The uploader only writes the site's HTML pages, `robots.txt`, `sitemap.xml`, and the `assets/`, `css/`, `js/`, and `data/` directories. It does not delete remote files, preserving Hostinger-managed files such as `default.php`.
 
@@ -24,6 +24,10 @@ The scraper reads recruiting authorities' own portals and official notices first
 
 ## Audience analytics and Google Search
 
-The pages have a GA4 tag loader, disabled until a Measurement ID is configured. In Google Analytics, create a GA4 property and web data stream for `https://sarkarijobsplus.com`, then add its `G-...` Measurement ID as the `GA4_MEASUREMENT_ID` GitHub secret. Run a deploy and check **Reports → Realtime** in Analytics to confirm visits are arriving. Google documents the Measurement ID and tag setup in its [GA4 tag guide](https://support.google.com/analytics/answer/9311124).
+The pages load GA4 using the configured public Measurement ID. Listing detail pages also include the analytics loader. Check **Reports → Realtime** in Analytics to confirm visits are arriving. Google documents the Measurement ID and tag setup in its [GA4 tag guide](https://support.google.com/analytics/answer/9311124).
 
-For Google indexing, add a **Domain** property for `sarkarijobsplus.com` in Search Console and verify ownership by adding its TXT record in Hostinger DNS. Once verified, submit `https://sarkarijobsplus.com/sitemap.xml` in Search Console's **Sitemaps** report and use URL Inspection to request a crawl of the homepage. The `robots.txt` file already points crawlers to the sitemap. Google says sitemap submission and crawl requests help discovery but do not guarantee indexing or ranking; allow time for crawling.
+For Google indexing, the `sarkarijobsplus.com` **Domain** property is verified through the Hostinger DNS TXT record and `https://sarkarijobsplus.com/sitemap.xml` is submitted successfully. Keep the verification record in DNS. The homepage is indexed. Search Console last reported 319 discovered pages before the four new trust pages and listing cleanup in this update; resubmit or allow Google to reread the updated sitemap. Google says sitemap submission and crawl requests help discovery but do not guarantee indexing or ranking; allow time for crawling.
+
+## Publisher readiness
+
+The website includes About, Contact, Privacy, and Editorial/Sourcing pages linked from its footers. The privacy policy describes current GA4 use and says advertising is not enabled yet; update it before serving any advertising. The feed and generated detail pages exclude third-party navigation pages such as privacy policies so they cannot be shown as job listings. Ad approval is determined by Google and is not guaranteed; review pages for original, accurate explanations and official source links before applying.

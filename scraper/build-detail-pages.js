@@ -37,6 +37,13 @@ function listingType(item) {
   return 'Job notification';
 }
 
+function isNonRecruitmentPage(item) {
+  const title = String(item?.title || '').replace(/\s+/g, ' ').trim().toLowerCase();
+  const url = String(item?.sourceListingUrl || item?.discoveredVia || item?.link || '');
+  return /^(?:privacy policy|about(?: us)?|contact(?: us)?|disclaimer|terms(?: and conditions)?|sitemap|advertise(?: with us)?|faq)$/.test(title)
+    || /\/(?:privacy-policy|about-us|contact-us|disclaimer|terms-and-conditions|sitemap)(?:\/|$)/i.test(url);
+}
+
 function summaryFor(item, kind) {
   const organization = escapeHTML(item.organization || 'the recruiting authority');
   if (item.type === 'job') {
@@ -70,7 +77,7 @@ fs.mkdirSync(output, { recursive: true });
 
 const urls = [];
 for (const item of payload.jobs || []) {
-  if (!item?.title || !item.id) continue;
+  if (!item?.title || !item.id || isNonRecruitmentPage(item)) continue;
   const slug = slugFor(item);
   const directory = path.join(output, slug);
   fs.mkdirSync(directory, { recursive: true });
@@ -112,7 +119,7 @@ for (const item of payload.jobs || []) {
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title}. Verify eligibility and instructions in the official recruitment notice.">
-<link rel="canonical" href="${canonical}"><link rel="stylesheet" href="../../css/style.css">
+<link rel="canonical" href="${canonical}"><script src="../../js/analytics-config.js"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css">
 <style>body{background:#f4f7fb;color:#182235;font:16px/1.65 system-ui,sans-serif;margin:0}.detail-wrap{max-width:920px;margin:2rem auto;padding:1.25rem}.detail-card{background:#fff;border:1px solid #d9e1ee;border-radius:16px;padding:clamp(1.25rem,4vw,2.5rem);box-shadow:0 8px 28px #1527470d}.crumbs{font-size:.9rem;margin-bottom:1.4rem}.eyebrow{color:#415b83;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}.detail-card h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;margin:.35rem 0 1rem}.summary{font-size:1.05rem;color:#35445b}.facts{width:100%;border-collapse:collapse;margin:1.5rem 0}.facts th,.facts td{border-bottom:1px solid #e5eaf2;padding:.8rem;text-align:left;vertical-align:top}.facts th{width:35%;color:#42516a}.buttons{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.2rem 0}.button{display:inline-flex;padding:.75rem 1rem;background:#173c8f;color:white!important;border-radius:9px;text-decoration:none;font-weight:700}.button.secondary{background:#edf2fb;color:#173c8f!important}.notice{font-size:.9rem;color:#46556d;background:#f3f6fb;padding:1rem;border-radius:10px}.back{display:inline-block;margin-top:1.2rem}.disclaimer{font-size:.85rem;color:#58667a;border-top:1px solid #e5eaf2;padding-top:1rem;margin-top:1.5rem}</style></head>
 <body><main class="detail-wrap"><nav class="crumbs"><a href="../../">Home</a> / ${escapeHTML(kind)}</nav><article class="detail-card">
 <div class="eyebrow">${escapeHTML(kind)} · ${escapeHTML(item.category || 'Government recruitment')}</div><h1>${title}</h1>
@@ -125,7 +132,7 @@ ${row('Page wording and layout', 'Original SarkariJobs+ summary')}</tbody></tabl
 <div class="buttons">${links || '<span class="notice">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>'}</div>
 <p class="notice">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
 <p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+. Source facts remain attributed and are not represented as exclusive or licensed from the source site.</p>
-<a class="back" href="../../">← Back to SarkariJobs+</a></article></main></body></html>`;
+<a class="back" href="../../">← Back to SarkariJobs+</a><nav class="back" aria-label="Site information"><a href="../../about.html">About</a> · <a href="../../editorial-policy.html">Editorial policy</a> · <a href="../../privacy.html">Privacy</a> · <a href="../../contact.html">Contact</a></nav></article></main></body></html>`;
   fs.writeFileSync(path.join(directory, 'index.html'), html);
   urls.push(`<url><loc>${canonical}</loc>${item.publishedDate ? `<lastmod>${escapeHTML(item.publishedDate)}</lastmod>` : ''}</url>`);
 }
@@ -134,4 +141,10 @@ const sitemapPath = path.join(ROOT, 'sitemap.xml');
 let sitemap = fs.readFileSync(sitemapPath, 'utf8').replace(/\s*<url>\s*<loc>https:\/\/sarkarijobsplus\.com\/job-details\/[^<]+<\/loc>[\s\S]*?<\/url>/g, '');
 sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}\n</urlset>`);
 fs.writeFileSync(sitemapPath, sitemap);
+
+// A previous feed imported a third-party privacy-policy page as an admit card.
+// Redirect its retired URL to the real first-party policy page after deployment.
+const retiredPrivacyPage = path.join(output, 'privacy-policy-1f1c4eba');
+fs.mkdirSync(retiredPrivacyPage, { recursive: true });
+fs.writeFileSync(path.join(retiredPrivacyPage, 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><link rel="canonical" href="https://sarkarijobsplus.com/privacy.html"><meta http-equiv="refresh" content="0;url=../../privacy.html"><title>Privacy policy | SarkariJobs+</title></head><body><p>This page has moved to our <a href="../../privacy.html">privacy policy</a>.</p></body></html>`);
 console.log(`Generated ${urls.length} individual detail pages and updated sitemap.xml.`);

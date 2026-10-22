@@ -53,7 +53,7 @@ jobs:
       - name: Stage public website files
         run: |
           mkdir -p .deploy-site
-          cp index.html category.html state.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
+          cp index.html category.html state.html about.html editorial-policy.html privacy.html contact.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
           cp -R assets css js data .deploy-site/
           cp -R upsc-cds-2-2026 .deploy-site/
           mkdir -p .deploy-shard-a

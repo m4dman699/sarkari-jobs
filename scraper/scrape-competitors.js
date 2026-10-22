@@ -60,6 +60,12 @@ function normalizeTitle(value) {
   return String(value || '').replace(/\s+/g, ' ').trim().toLowerCase().replace(/[^a-z0-9]+/g, ' ');
 }
 
+function isNonRecruitmentPage(title, url = '') {
+  const normalized = normalizeTitle(title);
+  return /^(?:privacy policy|about(?: us)?|contact(?: us)?|disclaimer|terms(?: and conditions)?|sitemap|advertise(?: with us)?|faq)$/.test(normalized)
+    || /\/(?:privacy-policy|about-us|contact-us|disclaimer|terms-and-conditions|sitemap)(?:\/|$)/i.test(url);
+}
+
 function plain(value) {
   return String(value || '').replace(/\s+/g, ' ').replace(/\u00a0/g, ' ').trim();
 }
@@ -141,6 +147,7 @@ async function fetchHTML(url) {
 
 async function main() {
   const payload = JSON.parse(fs.readFileSync(FEED, 'utf8'));
+  payload.jobs = (payload.jobs || []).filter(item => !isNonRecruitmentPage(item.title, item.sourceListingUrl || item.discoveredVia || item.link || ''));
   const cache = fs.existsSync(DETAIL_CACHE) ? JSON.parse(fs.readFileSync(DETAIL_CACHE, 'utf8')) : {};
   for (const entry of Object.values(cache)) {
     if (entry?.details?.detail) {
@@ -162,7 +169,7 @@ async function main() {
       $('a[href]').each((_, node) => {
         const link = new URL($(node).attr('href'), section.url);
         const title = $(node).text().replace(/\s+/g, ' ').trim();
-        if (link.origin !== SOURCE || !title || title.length < 12 || /^\/(?:LATEST-JOBS|ADMIT-CARD|RESULT)\/?$/i.test(link.pathname)) return;
+        if (link.origin !== SOURCE || !title || title.length < 12 || /^\/(?:LATEST-JOBS|ADMIT-CARD|RESULT)\/?$/i.test(link.pathname) || isNonRecruitmentPage(title, link.pathname)) return;
         const context = $(node).closest('li').text().replace(/\s+/g, ' ').trim() || $(node).parent().text().replace(/\s+/g, ' ').trim();
         const lastDate = section.type === 'job' ? parseDate(`${title} ${context}`) : null;
         if (section.type === 'job' && (!lastDate || new Date(`${lastDate}T23:59:59Z`) < now)) return;
@@ -266,4 +273,4 @@ async function main() {
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
 
-module.exports = { enrichListing, parseDate, extractMilestones, normalizeTitle };
+module.exports = { enrichListing, parseDate, extractMilestones, normalizeTitle, isNonRecruitmentPage };
