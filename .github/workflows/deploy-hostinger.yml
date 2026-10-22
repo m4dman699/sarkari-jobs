@@ -10,13 +10,13 @@ permissions:
 
 concurrency:
   group: deploy-hostinger
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
       DEPLOY_SHA: ${{ github.sha }}
@@ -40,13 +40,12 @@ jobs:
             if [[ ! "$GA4_ID" =~ ^G-[A-Z0-9]+$ ]]; then echo 'GA4_MEASUREMENT_ID must look like G-XXXXXXXXXX.'; exit 1; fi
             sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
           fi
-      - name: Prepare deployment revision marker
-        run: echo "$DEPLOY_SHA" > deployment-version.txt
-      - name: Update sitemap page modification dates
-        run: sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
-      - name: Upload site root over SFTP (attempt 1)
-        id: upload_1
-        continue-on-error: true
+      - name: Prepare deployment revision marker and sitemap
+        run: |
+          echo "$DEPLOY_SHA" > deployment-version.txt
+          sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
+      - name: Upload only public site files over SFTP
+        timeout-minutes: 4
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}
@@ -54,89 +53,26 @@ jobs:
           password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
           port: 65002
           uploads: |
-            ./ => ${{ env.SFTP_REMOTE_DIR }}/
+            ./index.html => ${{ env.SFTP_REMOTE_DIR }}/index.html
+            ./category.html => ${{ env.SFTP_REMOTE_DIR }}/category.html
+            ./state.html => ${{ env.SFTP_REMOTE_DIR }}/state.html
+            ./robots.txt => ${{ env.SFTP_REMOTE_DIR }}/robots.txt
+            ./sitemap.xml => ${{ env.SFTP_REMOTE_DIR }}/sitemap.xml
+            ./deployment-version.txt => ${{ env.SFTP_REMOTE_DIR }}/deployment-version.txt
+            ./assets/ => ${{ env.SFTP_REMOTE_DIR }}/assets/
+            ./css/ => ${{ env.SFTP_REMOTE_DIR }}/css/
+            ./js/ => ${{ env.SFTP_REMOTE_DIR }}/js/
+            ./data/ => ${{ env.SFTP_REMOTE_DIR }}/data/
           ignore: |
-            .git/**
-            .github/**
-            scraper/**
-            .gitignore
-            DEPLOYMENT.md
+            *.log
           delete: 'false'
-      - name: Verify public deployment (attempt 1)
-        id: verify_1
-        continue-on-error: true
+      - name: Verify public deployment
+        timeout-minutes: 2
         run: |
           for attempt in {1..6}; do
             live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
             if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
             sleep 5
           done
-          echo 'Public site does not serve this commit yet.'
-          exit 1
-      - name: Upload site root over SFTP (attempt 2)
-        id: upload_2
-        if: steps.verify_1.outcome == 'failure'
-        continue-on-error: true
-        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
-        with:
-          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
-          username: ${{ secrets.HOSTINGER_SFTP_USER }}
-          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
-          port: 65002
-          uploads: |
-            ./ => ${{ env.SFTP_REMOTE_DIR }}/
-          ignore: |
-            .git/**
-            .github/**
-            scraper/**
-            .gitignore
-            DEPLOYMENT.md
-          delete: 'false'
-      - name: Verify public deployment (attempt 2)
-        id: verify_2
-        if: steps.verify_1.outcome == 'failure'
-        continue-on-error: true
-        run: |
-          for attempt in {1..6}; do
-            live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
-            if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
-            sleep 5
-          done
-          echo 'Public site does not serve this commit yet.'
-          exit 1
-      - name: Upload site root over SFTP (attempt 3)
-        id: upload_3
-        if: steps.verify_2.outcome == 'failure'
-        continue-on-error: true
-        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
-        with:
-          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
-          username: ${{ secrets.HOSTINGER_SFTP_USER }}
-          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
-          port: 65002
-          uploads: |
-            ./ => ${{ env.SFTP_REMOTE_DIR }}/
-          ignore: |
-            .git/**
-            .github/**
-            scraper/**
-            .gitignore
-            DEPLOYMENT.md
-          delete: 'false'
-      - name: Verify public deployment (attempt 3)
-        id: verify_3
-        if: steps.verify_2.outcome == 'failure'
-        continue-on-error: true
-        run: |
-          for attempt in {1..6}; do
-            live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
-            if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
-            sleep 5
-          done
-          echo 'Public site does not serve this commit yet.'
-          exit 1
-      - name: Fail if the public site did not receive this commit
-        if: steps.verify_1.outcome != 'success' && steps.verify_2.outcome != 'success' && steps.verify_3.outcome != 'success'
-        run: |
-          echo 'All SFTP attempts failed to publish the current commit to the public domain.'
+          echo 'Public site does not serve this commit after the SFTP upload.'
           exit 1
