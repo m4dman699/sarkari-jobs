@@ -173,13 +173,33 @@ function renderCategories(jobs = []) {
   });
   grid.innerHTML = CATEGORIES.map(c => `
     <a class="cat-card" href="category.html#${encodeURIComponent(c.name.toLowerCase())}">
-      <div class="ico">${escapeHTML(c.icon)}</div>
+      <div class="ico">${categoryIconHTML(c.name)}</div>
       <h3>${escapeHTML(c.name)}</h3>
       <p>${escapeHTML(c.desc)}</p>
       <span class="count">${counts.get(c.name.toLowerCase()) || 0} in feed</span>
     </a>`).join('');
   const categoryCount = document.getElementById('category-count');
   if (categoryCount) categoryCount.textContent = String(CATEGORIES.length);
+}
+
+// Categories are themes rather than organizations, so use a consistent line-icon set.
+const CATEGORY_ICON_PATHS = {
+  UPSC: '<path d="M4 21h16M6 18h12M7 10v8m5-8v8m5-8v8M3 8l9-5 9 5v2H3z"/>',
+  SSC: '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5h6M8 10l1.5 1.5L12 9m2 2h3M8 16l1.5 1.5L12 15m2 2h3"/>',
+  Banking: '<path d="M3 9h18L12 4 3 9zm2 2v7m4-7v7m6-7v7m4-7v7M3 21h18M2 18h20"/>',
+  Railways: '<path d="M7 3h10a3 3 0 0 1 3 3v10a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V6a3 3 0 0 1 3-3zM4 12h16M8 7h.01M16 7h.01M8 16h8M8 20l-2 2m10-2 2 2"/>',
+  Defence: '<path d="M12 3 20 6v5c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6l8-3zM9 12l2 2 4-4"/>',
+  Police: '<path d="M12 3 19 6v5c0 4.7-3 8-7 10-4-2-7-5.3-7-10V6l7-3z"/><path d="m12 7 1.1 2.3 2.5.4-1.8 1.8.4 2.5-2.2-1.2-2.2 1.2.4-2.5-1.8-1.8 2.5-.4L12 7z"/>',
+  Teaching: '<path d="m2 9 10-5 10 5-10 5L2 9zM6 11v5c3.5 3 8.5 3 12 0v-5M22 9v6"/>',
+  PSU: '<path d="M3 21V9h6v4h5V7h7v14H3zM6 12h1m-1 4h1m4 1h1m5-7h1m-1 4h1m-1 4h1M5 5h5V3"/>',
+  Judiciary: '<path d="M12 4v16m-7 0h14M5 7h14M7 7l-4 7h8L7 7zm10 0-4 7h8l-4-7zM8 4h8"/>',
+  'State PSC': '<path d="M4 21h16M6 18h12M7 10v8m5-8v8m5-8v8M3 8l9-5 9 5v2H3z"/><path d="M19 3v3m-1.5-1.5h3"/>',
+  Central: '<path d="M3 21h18M5 18h14M7 10v8m5-8v8m5-8v8M3 8l9-5 9 5v2H3z"/><circle cx="12" cy="6.5" r="1"/>'
+};
+
+function categoryIconHTML(name) {
+  const drawing = CATEGORY_ICON_PATHS[name] || CATEGORY_ICON_PATHS.Central;
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${drawing}</svg>`;
 }
 
 // ---------- Countdown helper ----------
@@ -216,21 +236,48 @@ function fmtDate(d, opts = { day: 'numeric', month: 'short', year: 'numeric' }) 
   return dt ? dt.toLocaleDateString('en-IN', opts) : d;
 }
 
+const PORTAL_LOGOS = {
+  'rpsc.rajasthan.gov.in': 'rpsc.png',
+  'hpsc.gov.in': 'hpsc.png',
+  'tpsc.tripura.gov.in': 'tpsc-emblem.png',
+  'gpsc.gujarat.gov.in': 'gpsc.png',
+  'uppsc.up.nic.in': 'uppsc-official.png',
+  'mppsc.mp.gov.in': 'mppsc.png',
+  'mppsc.mponline.gov.in': 'mppsc.png',
+  'ssc.gov.in': 'ssc.webp',
+  'dsssb.delhi.gov.in': 'dsssb.png',
+  'rrb.indianrailways.gov.in': 'railways.png',
+  'indianrailways.gov.in': 'railways.png',
+  'hssc.gov.in': 'hssc.png',
+  'mpscmanipur.gov.in': 'manipur-mpsc.ico',
+  'www.sci.gov.in': 'supreme-court.ico',
+  'sci.gov.in': 'supreme-court.ico'
+};
+
+const PORTAL_FAVICONS = {
+  'www.jpsc.gov.in': 'https://www.jpsc.gov.in/favicon.ico',
+  'jpsc.gov.in': 'https://www.jpsc.gov.in/favicon.ico'
+};
+
 function portalMarkHTML(item) {
   const name = cleanText(item.organization || item.source || item.title);
   const words = name.match(/[A-Za-z0-9]+/g) || [];
-  const initials = (words.length > 1
+  const acronym = name.match(/\b[A-Z]{2,6}\b/)?.[0];
+  const parentheticalAcronym = name.match(/\(([A-Z]{2,6})\)/)?.[1];
+  const initials = (parentheticalAcronym || acronym || (words.length > 1
     ? words.slice(0, 2).map(word => word[0]).join('')
-    : (words[0] || 'GO').slice(0, 2)).toUpperCase();
+    : (words[0] || 'GO').slice(0, 2))).toUpperCase();
   const officialLink = officialURL(item.publisher ? item.officialLink : item.link);
-  let favicon = '';
+  let host = '';
   if (officialLink) {
     try {
-      const host = new URL(officialLink).hostname;
-      favicon = `https://${host}/favicon.ico`;
+      host = new URL(officialLink).hostname.toLowerCase();
     } catch (_) {}
   }
-  return `<span class="portal-mark" aria-hidden="true">${favicon ? `<img src="${escapeHTML(favicon)}" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">` : ''}<span class="portal-monogram">${escapeHTML(initials || 'GO')}</span></span>`;
+  const logo = PORTAL_LOGOS[host]
+    ? `assets/portal-logos/${PORTAL_LOGOS[host]}`
+    : (PORTAL_FAVICONS[host] || (host ? `https://${host}/favicon.ico` : ''));
+  return `<span class="portal-mark" aria-hidden="true">${logo ? `<img src="${escapeHTML(logo)}" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">` : ''}<span class="portal-monogram">${escapeHTML(initials || 'GO')}</span></span>`;
 }
 
 // ---------- Render job cards ----------
