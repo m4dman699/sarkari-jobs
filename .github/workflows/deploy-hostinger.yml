@@ -16,8 +16,10 @@ jobs:
   deploy:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
+      DEPLOY_SHA: ${{ github.sha }}
     steps:
       - name: Check out website
         uses: actions/checkout@v4
@@ -28,7 +30,7 @@ jobs:
           SFTP_PASSWORD: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
         run: |
           for key in SFTP_HOST SFTP_USER SFTP_PASSWORD SFTP_REMOTE_DIR; do
-            if [ -z "${!key}" ]; then echo "Missing deployment setting for $key. Add the matching HOSTINGER_* GitHub Actions secret."; exit 1; fi
+            if [ -z "${!key}" ]; then echo "Missing deployment setting for $key."; exit 1; fi
           done
       - name: Configure Google Analytics when a Measurement ID is available
         env:
@@ -39,10 +41,12 @@ jobs:
             sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
           fi
       - name: Prepare deployment revision marker
-        run: echo "$GITHUB_SHA" > deployment-version.txt
+        run: echo "$DEPLOY_SHA" > deployment-version.txt
       - name: Update sitemap page modification dates
         run: sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
-      - name: Upload site files over SFTP
+      - name: Upload site root over SFTP (attempt 1)
+        id: upload_1
+        continue-on-error: true
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}
@@ -58,14 +62,81 @@ jobs:
             .gitignore
             DEPLOYMENT.md
           delete: 'false'
-      - name: Verify public site received this commit
-        env:
-          DEPLOY_SHA: ${{ github.sha }}
+      - name: Verify public deployment (attempt 1)
+        id: verify_1
+        continue-on-error: true
         run: |
-          for attempt in {1..12}; do
+          for attempt in {1..6}; do
             live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
             if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
             sleep 5
           done
-          echo 'Deployment upload completed, but the public site did not serve this commit marker.'
+          echo 'Public site does not serve this commit yet.'
+          exit 1
+      - name: Upload site root over SFTP (attempt 2)
+        id: upload_2
+        if: steps.verify_1.outcome == 'failure'
+        continue-on-error: true
+        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
+        with:
+          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
+          username: ${{ secrets.HOSTINGER_SFTP_USER }}
+          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
+          port: 65002
+          uploads: |
+            ./ => ${{ env.SFTP_REMOTE_DIR }}/
+          ignore: |
+            .git/**
+            .github/**
+            scraper/**
+            .gitignore
+            DEPLOYMENT.md
+          delete: 'false'
+      - name: Verify public deployment (attempt 2)
+        id: verify_2
+        if: steps.verify_1.outcome == 'failure'
+        continue-on-error: true
+        run: |
+          for attempt in {1..6}; do
+            live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
+            if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
+            sleep 5
+          done
+          echo 'Public site does not serve this commit yet.'
+          exit 1
+      - name: Upload site root over SFTP (attempt 3)
+        id: upload_3
+        if: steps.verify_2.outcome == 'failure'
+        continue-on-error: true
+        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
+        with:
+          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
+          username: ${{ secrets.HOSTINGER_SFTP_USER }}
+          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
+          port: 65002
+          uploads: |
+            ./ => ${{ env.SFTP_REMOTE_DIR }}/
+          ignore: |
+            .git/**
+            .github/**
+            scraper/**
+            .gitignore
+            DEPLOYMENT.md
+          delete: 'false'
+      - name: Verify public deployment (attempt 3)
+        id: verify_3
+        if: steps.verify_2.outcome == 'failure'
+        continue-on-error: true
+        run: |
+          for attempt in {1..6}; do
+            live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
+            if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
+            sleep 5
+          done
+          echo 'Public site does not serve this commit yet.'
+          exit 1
+      - name: Fail if the public site did not receive this commit
+        if: steps.verify_1.outcome != 'success' && steps.verify_2.outcome != 'success' && steps.verify_3.outcome != 'success'
+        run: |
+          echo 'All SFTP attempts failed to publish the current commit to the public domain.'
           exit 1
