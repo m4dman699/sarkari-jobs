@@ -1,96 +1,97 @@
 {
-  "generatedAt": "2026-08-24T03:06:34.357Z",
-  "total": 9,
+  "generatedAt": "2026-10-22T07:47:49.221Z",
+  "total": 7,
   "jobs": [
     {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA1MjcxOTQ4MC5wZGY",
-      "title": "Schedule of Interview for Recruitment to Various Posts under the Directorate of Handloom & Textiles, Manipur. Updated: 27/05/2026",
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTcxOTA4MC5wZGY",
+      "type": "job",
+      "title": "Notification",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26052719480.pdf",
-      "openDate": "2026-05-27",
-      "lastDate": null
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26101719080.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA1MjAxNjU2MC5wZGY",
-      "title": "Notification for postponement of interview for direct recruitment of various posts in the Directorate of Handloom & Textiles, Manipur. Updated: 20/05/2026",
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
+      "type": "job",
+      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26052016560.pdf",
-      "openDate": "2026-05-20",
-      "lastDate": null
+      "link": "https://mpscmanipur.gov.in/files/AE_Exam%20Schedule.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA1MTgxNDA4MC5wZGY",
-      "title": "Deferment of examination for recruitment to the posts of Research Assistant in Planning Department. Updated: 18/05/2026",
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZV9ub3RpZmljYXRpb25fVVNfTF8yMDI2LnBkZg",
+      "type": "job",
+      "title": "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26051814080.pdf",
-      "openDate": "2026-05-18",
-      "lastDate": null
+      "link": "https://mpscmanipur.gov.in/files/Reschedule_notification_US_L_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA1MTUxNTI2MC5wZGY",
-      "title": "Deferment of examination for recruitment to the posts of Under Secretary (Law) and Law Officer. Updated: 15/05/2026",
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MjUxNzE3MC5wZGY",
+      "type": "job",
+      "title": "Notification",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26051515260.pdf",
-      "openDate": "2026-05-15",
-      "lastDate": null
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26092517170.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTm90aWZpY2F0aW9uX1VuZGVyX1NlY3lfTGF3X09mZmljZXJfQWRtaXRfY2FyZC5wZGY",
-      "title": "Under Secretary (Law) and Law Officer Recruitment – Examination Schedule Updated: 08/05/2026",
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MjMxNzAyMC5wZGY",
+      "type": "job",
+      "title": "Notification",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/Notification_Under_Secy_Law_Officer_Admit_card.pdf",
-      "openDate": "2026-05-08",
-      "lastDate": null
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26092317020.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzZWFyY2hfQXNzdF9ub3RpZmljYXRpb25fQWRtaXRfY2FyZC5wZGY",
-      "title": "Planning Department Research Assistant Recruitment – Examination Schedule Updated: 08/05/2026",
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MTUxNTI1MC5wZGY",
+      "type": "job",
+      "title": "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/Research_Asst_notification_Admit_card.pdf",
-      "openDate": "2026-05-08",
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA0MzAxOTQxMC5wZGY",
-      "title": "Examination schedule for recruitment of various posts in the Directorate of Trade, Commerce & Industries, Manipur. Updated: 30/04/2026",
-      "source": "MPSC Manipur",
-      "category": "UPSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26043019410.pdf",
-      "openDate": "2026-04-30",
-      "lastDate": null
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vUmVjcnVpdG1lbnRfQWR2ZXJ0aXNlbWVudC5odG1s",
+      "type": "job",
       "title": "Recruitment Advertisements",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
       "link": "https://mpscmanipur.gov.in/Recruitment_Advertisement.html",
       "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9lbXBzY29ubGluZS5nb3YuaW4v",
-      "title": "Apply Online",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://empsconline.gov.in/",
-      "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     }
   ]
 }

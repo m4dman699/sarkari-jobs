@@ -1,66 +1,45 @@
 {
-  "generatedAt": "2026-08-22T14:07:32.911Z",
-  "total": 6,
+  "generatedAt": "2026-10-22T07:47:49.221Z",
+  "total": 3,
   "jobs": [
     {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vZXhhbWRhc2hib2FyZA",
-      "title": "Exam Dashboard",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/examdashboard",
-      "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vYWR2ZXJ0aXNlbWVudHM",
+      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vdmlld2NvbW1vbj9TbGljZT1SQQ",
+      "type": "job",
       "title": "Recruitment Advertisements",
       "source": "RPSC",
       "category": "State PSC",
       "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/advertisements",
+      "link": "https://rpsc.rajasthan.gov.in/viewcommon?Slice=RA",
       "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vcHJvcG9zZWRleGFtZGF0ZQ",
-      "title": "Proposed Examination Dates",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/proposedexamdate",
-      "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vY2JydA",
+      "type": "job",
       "title": "Computer Based Recruitment Test (CBRT)",
       "source": "RPSC",
       "category": "State PSC",
       "state": "Rajasthan",
       "link": "https://rpsc.rajasthan.gov.in/cbrt",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vYXBwbHlvbmxpbmU",
+      "type": "job",
       "title": "OTR/Apply Online (Recruitment Portal)",
       "source": "RPSC",
       "category": "State PSC",
       "state": "Rajasthan",
       "link": "https://rpsc.rajasthan.gov.in/applyonline",
       "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ycHNjLnJhamFzdGhhbi5nb3YuaW4vZm9ydGhjb21pbmdleGFtaW5hdGlvbnM",
-      "title": "Tentative Exam Calendar",
-      "source": "RPSC",
-      "category": "State PSC",
-      "state": "Rajasthan",
-      "link": "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
-      "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     }
   ]
 }

@@ -9,9 +9,27 @@ function cleanText(s) {
     .trim();
 }
 
+function escapeHTML(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[char]);
+}
+
+function officialURL(value) {
+  try {
+    const url = new URL(String(value || ''));
+    return ['http:', 'https:'].includes(url.protocol) ? url.href : null;
+  } catch (_) {
+    return null;
+  }
+}
+
 // ---------- Inline India map: viewBox + hover tooltip + click + Delhi inset ----------
 function wireState(el, data, tip) {
   el.classList.add('state-path');
+  el.setAttribute('role', 'link');
+  el.setAttribute('tabindex', '0');
+  el.setAttribute('aria-label', `${data.name} — ${data.psc} — open job listings`);
   const showTip = e => {
     tip.innerHTML = `<b>📍 ${data.name}</b><small>${data.psc}</small>`;
     tip.style.left = Math.min(e.clientX + 18, window.innerWidth - 230) + 'px';
@@ -23,6 +41,12 @@ function wireState(el, data, tip) {
   el.addEventListener('mouseleave', () => tip.classList.remove('show'));
   el.addEventListener('click', () => {
     window.location.href = `state.html#${data.slug}`;
+  });
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      el.click();
+    }
   });
 }
 
@@ -138,16 +162,24 @@ function initMap() {
 }
 
 // ---------- Render category cards ----------
-function renderCategories() {
+function renderCategories(jobs = []) {
   const grid = document.getElementById('cat-grid');
   if (!grid) return;
+  const counts = new Map();
+  jobs.forEach(job => {
+    if (job.type && job.type !== 'job') return;
+    const name = String(job.category || '').toLowerCase();
+    counts.set(name, (counts.get(name) || 0) + 1);
+  });
   grid.innerHTML = CATEGORIES.map(c => `
     <a class="cat-card" href="category.html#${encodeURIComponent(c.name.toLowerCase())}">
-      <div class="ico">${c.icon}</div>
-      <h3>${c.name}</h3>
-      <p>${c.desc}</p>
-      <span class="count">${c.count}</span>
+      <div class="ico">${escapeHTML(c.icon)}</div>
+      <h3>${escapeHTML(c.name)}</h3>
+      <p>${escapeHTML(c.desc)}</p>
+      <span class="count">${counts.get(c.name.toLowerCase()) || 0} in feed</span>
     </a>`).join('');
+  const categoryCount = document.getElementById('category-count');
+  if (categoryCount) categoryCount.textContent = String(CATEGORIES.length);
 }
 
 // ---------- Countdown helper ----------
@@ -179,76 +211,219 @@ function jobCardHTML(j) {
   const n = daysUntil(close);
   const cls = n !== null && n >= 0 && n <= 7 ? 'crit'
             : n !== null && n >= 0 && n <= 21 ? 'warn' : '';
+  const link = officialURL(j.link);
   return `
     <article class="job-card ${cls}">
-      <h3>${cleanText(j.title)}</h3>
+      <h3>${escapeHTML(cleanText(j.title))}</h3>
       <div class="job-meta">
-        <span class="tag saff">${cleanText(j.category)}</span>
-        <span class="tag">📍 ${cleanText(j.state)}</span>
-        <span class="tag">🔗 ${cleanText(j.source)}</span>
+        <span class="tag saff">${escapeHTML(cleanText(j.category))}</span>
+        <span class="tag">📍 ${escapeHTML(cleanText(j.state))}</span>
+        <span class="tag">🔗 ${escapeHTML(cleanText(j.source))}</span>
       </div>
       <div class="dates">
-        <span>Form closes: <b>${fmtDate(close)}</b></span>
+        <span>Form closes: <b>${escapeHTML(fmtDate(close))}</b></span>
         ${countdownBadge(close)}
       </div>
-      ${exam ? `<div class="dates"><span>Exam date: <b>${fmtDate(exam)}</b></span></div>` : ''}
-      <a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
-         href="${j.link}" target="_blank" rel="noopener nofollow">View official notification ↗</a>
+      ${exam ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(exam))}</b></span></div>` : ''}
+      ${link
+        ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
+             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">Open source link ↗</a>`
+        : '<span class="link-unavailable" aria-label="Source link unavailable">Source link unavailable</span>'}
     </article>`;
+}
+
+function announcementCardHTML(item) {
+  if (!item.type || item.type === 'job') return jobCardHTML(item);
+  const isAdmitCard = item.type === 'admit-card';
+  const heading = isAdmitCard ? 'Admit card / hall ticket' : 'Result / merit list';
+  const link = officialURL(item.link);
+  return `
+    <article class="job-card announcement-card ${isAdmitCard ? 'admit-card' : 'result-card'}">
+      <span class="tag saff">${heading}</span>
+      <h3>${escapeHTML(cleanText(item.title))}</h3>
+      <div class="job-meta">
+        <span class="tag">${escapeHTML(cleanText(item.category))}</span>
+        <span class="tag">📍 ${escapeHTML(cleanText(item.state))}</span>
+        <span class="tag">🔗 ${escapeHTML(cleanText(item.source))}</span>
+      </div>
+      ${item.publishedDate ? `<div class="dates"><span>Published: <b>${escapeHTML(fmtDate(item.publishedDate))}</b></span></div>` : ''}
+      ${item.examDate ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(item.examDate))}</b></span></div>` : ''}
+      ${link
+        ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
+             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">Open official link ↗</a>`
+        : '<span class="link-unavailable">Source link unavailable</span>'}
+    </article>`;
+}
+
+function renderAnnouncementSections(items, generatedAt, partial = false) {
+  [
+    { type: 'result', grid: 'results-grid', status: 'results-status', empty: 'No result links were found in the latest scrape.' },
+    { type: 'admit-card', grid: 'admit-cards-grid', status: 'admit-cards-status', empty: 'No admit-card links were found in the latest scrape.' }
+  ].forEach(section => {
+    const matching = items.filter(item => item.type === section.type)
+      .sort((a, b) => String(b.publishedDate || '').localeCompare(String(a.publishedDate || '')));
+    const grid = document.getElementById(section.grid);
+    const status = document.getElementById(section.status);
+    if (status) status.textContent = matching.length
+      ? `${matching.length} official links · ${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
+      : section.empty;
+    if (grid) grid.innerHTML = matching.length
+      ? matching.slice(0, 12).map(announcementCardHTML).join('')
+      : `<p class="jobs-message">${escapeHTML(section.empty)} Check the relevant official board for updates.</p>`;
+  });
 }
 
 function renderJobList(list, gridId) {
   const grid = document.getElementById(gridId);
   if (!grid) return;
-  grid.innerHTML = list.map(jobCardHTML).join('');
+  grid.innerHTML = list.map(announcementCardHTML).join('');
 }
 
-const SAMPLE_JOBS_MAPPED = () => SAMPLE_JOBS.map(s => ({
-  title: s.title, category: s.cat, state: s.state,
-  lastDate: s.close, examDate: s.exam === 'TBA' ? null : s.exam,
-  link: '#', source: 'Official'
-}));
+let allJobs = [];
+let searchQuery = '';
+let showAllJobs = false;
 
-// "Closing Soon" must always show REAL countdowns:
-// dated jobs (live + curated samples) sorted by deadline first,
-// undated live notifications only used as filler if slots remain.
-function mergeClosingSoon(liveJobs) {
-  const keyOf = j => cleanText(j.title).toLowerCase().slice(0, 40);
-  const seen = new Set();
-  const out = [];
-  const push = list => list.forEach(j => {
-    const k = keyOf(j);
-    if (seen.has(k)) return;
-    seen.add(k);
-    out.push(j);
+function setJobsMessage(message) {
+  const grid = document.getElementById('jobs-grid');
+  if (grid) grid.innerHTML = `<p class="jobs-message">${escapeHTML(message)}</p>`;
+}
+
+function feedUpdatedLabel(payload) {
+  const generated = Date.parse(payload.generatedAt || '');
+  if (!Number.isFinite(generated)) return 'Feed update time unavailable.';
+  const date = new Date(generated);
+  const ageDays = Math.floor((Date.now() - generated) / 86400000);
+  const updated = date.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
+  return ageDays > 1
+    ? `Feed last updated ${updated}; the data may be out of date.`
+    : `Feed updated ${updated}.`;
+}
+
+function matchingJobs(query) {
+  const q = query.toLocaleLowerCase();
+  return allJobs.filter(job => [job.title, job.category, job.state, job.source]
+    .some(value => String(value || '').toLocaleLowerCase().includes(q)));
+}
+
+function displayJobs() {
+  const grid = document.getElementById('jobs-grid');
+  const heading = document.getElementById('jobs-heading');
+  const more = document.getElementById('show-all-jobs');
+  const status = document.getElementById('search-status');
+  if (!grid) return;
+
+  const query = searchQuery.trim();
+  const jobItems = allJobs.filter(job => !job.type || job.type === 'job');
+  let visible;
+  if (query) {
+    visible = matchingJobs(query);
+    if (heading) heading.textContent = `Search results for “${query}”`;
+    if (status) status.textContent = `${visible.length} matching notifications.`;
+  } else {
+    const validDated = jobItems.filter(job => {
+      const days = daysUntil(job.lastDate);
+      return days !== null && days >= 0;
+    }).sort((a, b) => String(a.lastDate).localeCompare(String(b.lastDate)));
+    const undated = jobItems.filter(job => !job.lastDate || daysUntil(job.lastDate) === null);
+    const expired = jobItems.filter(job => daysUntil(job.lastDate) !== null && daysUntil(job.lastDate) < 0)
+      .sort((a, b) => String(b.lastDate).localeCompare(String(a.lastDate)));
+    const available = [...validDated, ...undated];
+    visible = showAllJobs ? [...available, ...expired] : available.slice(0, 9);
+    if (heading) heading.textContent = showAllJobs ? 'All available notifications' : 'Available notifications';
+    if (status) status.textContent = `${jobItems.length} job notifications in the current feed.`;
+  }
+
+  if (more) {
+    more.hidden = Boolean(query) || showAllJobs || jobItems.length <= 9;
+    more.textContent = `Show all ${jobItems.length.toLocaleString('en-IN')} job notifications →`;
+  }
+
+  if (!visible.length) {
+    setJobsMessage(query ? 'No notifications match that search.' : 'No notifications are available in the feed.');
+    return;
+  }
+  renderJobList(visible, 'jobs-grid');
+}
+
+function initSearch() {
+  const form = document.getElementById('job-search-form');
+  const input = document.getElementById('job-search');
+  if (!form || !input) return;
+  const search = () => {
+    searchQuery = input.value.trim();
+    showAllJobs = false;
+    displayJobs();
+    document.getElementById('jobs')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    search();
   });
-
-  const liveDated = liveJobs
-    .filter(j => j.lastDate && !isNaN(new Date(j.lastDate)))
-    .sort((a,b) => String(a.lastDate).localeCompare(String(b.lastDate)));
-  push(liveDated);
-  push(SAMPLE_JOBS_MAPPED());
-
-  const liveUndated = liveJobs.filter(j => !j.lastDate);
-  const remaining = Math.max(0, 9 - out.length);
-  push(liveUndated.slice(0, remaining));
-  return out.slice(0, 9);
+  input.addEventListener('input', () => {
+    if (!input.value.trim() && searchQuery) {
+      searchQuery = '';
+      showAllJobs = false;
+      displayJobs();
+    }
+  });
+  document.getElementById('show-all-jobs')?.addEventListener('click', () => {
+    showAllJobs = true;
+    displayJobs();
+  });
 }
 
 function renderJobs() {
   fetch('data/jobs.json')
-    .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
-    .then(payload => renderJobList(mergeClosingSoon(payload.jobs || []), 'jobs-grid'))
-    .catch(() => renderJobList(mergeClosingSoon([]), 'jobs-grid'));
+    .then(response => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
+    .then(payload => {
+      allJobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+      const jobCount = allJobs.filter(item => !item.type || item.type === 'job').length;
+      const countEl = document.getElementById('feed-job-count');
+      if (countEl) countEl.textContent = jobCount.toLocaleString('en-IN');
+      const status = document.getElementById('jobs-status');
+      if (status) status.textContent = `${jobCount.toLocaleString('en-IN')} jobs · ${allJobs.length - jobCount} results/admit cards · ${feedUpdatedLabel({ generatedAt: payload.jobsGeneratedAt || payload.generatedAt })}${payload.partial ? ' Some portals could not be reached this run.' : ''}`;
+      renderCategories(allJobs);
+      displayJobs();
+      renderAnnouncementSections(allJobs, payload.generatedAt, payload.partial);
+      renderTicker(allJobs, payload.jobsGeneratedAt || payload.generatedAt);
+    })
+    .catch(() => {
+      const countEl = document.getElementById('feed-job-count');
+      if (countEl) countEl.textContent = '—';
+      const status = document.getElementById('jobs-status');
+      if (status) status.textContent = 'The notifications feed could not be loaded.';
+      setJobsMessage('Could not load notifications. Please try again later.');
+      renderCategories([]);
+      renderAnnouncementSections([], null);
+      const more = document.getElementById('show-all-jobs');
+      if (more) more.hidden = true;
+    });
 }
 
 // ---------- Ticker ----------
-function renderTicker() {
+function renderTicker(jobs = [], generatedAt) {
   const t = document.getElementById('ticker');
   if (!t) return;
-  const items = SAMPLE_JOBS.map(j =>
-    `<span>🔴 <b>${j.title.split('—')[0].trim()}</b> closes ${fmtDate(j.close, { day: 'numeric', month: 'short' })} · Apply now</span>`
+  const wrap = document.getElementById('ticker-wrap');
+  const generated = Date.parse(generatedAt || '');
+  const now = Date.now();
+  const fresh = Number.isFinite(generated) && generated <= now && now - generated < 86400000;
+  if (!fresh) {
+    if (wrap) wrap.hidden = true;
+    t.innerHTML = '';
+    return;
+  }
+  const items = jobs.filter(job => (!job.type || job.type === 'job') && (() => {
+    const days = daysUntil(job.lastDate);
+    return days !== null && days >= 0 && days <= 21;
+  })()).slice(0, 6).map(job =>
+    `<span>⏰ <b>${escapeHTML(cleanText(job.title))}</b> closes ${escapeHTML(fmtDate(job.lastDate, { day: 'numeric', month: 'short' }))}</span>`
   ).join('');
+  if (wrap) wrap.hidden = !items;
+  if (!items) {
+    t.innerHTML = '';
+    return;
+  }
   // duplicate for seamless loop
   t.innerHTML = items + items;
 }
@@ -271,9 +446,9 @@ function animateCounts() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initSearch();
   initMap();
-  renderCategories();
+  renderCategories([]);
   renderJobs();
-  renderTicker();
   animateCounts();
 });

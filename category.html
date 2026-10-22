@@ -21,10 +21,10 @@
         <ul>
           <li><a href="index.html#map">States</a></li>
           <li><a href="index.html#categories">Categories</a></li>
-          <li><a href="index.html#jobs">Latest Jobs</a></li>
+          <li><a href="index.html#jobs">Notifications</a></li>
         </ul>
       </nav>
-      <button class="btn btn-primary">🔔 Get Alerts Free</button>
+      <a class="btn btn-primary" href="index.html#jobs">Browse jobs</a>
     </div>
   </header>
 
@@ -41,7 +41,7 @@
       <div class="section-head">
         <h2 id="jobs-heading">Notifications</h2>
         <div class="line"></div>
-        <p>Sorted by application deadline — newest first</p>
+        <p>Dates and source links are shown when supplied in the feed.</p>
       </div>
       <div class="jobs-grid" id="cat-jobs-grid"></div>
     </div>
@@ -49,7 +49,7 @@
 
   <footer>
     <div class="foot-bottom container">
-      © 2026 SarkariJobs+ · Information aggregated from official government portals. Always verify on the official website before applying.
+      © 2026 SarkariJobs+ · Verify every notice on the relevant official government website before applying.
     </div>
     <div class="foot-strip"></div>
   </footer>
@@ -59,8 +59,11 @@
   <script>
     function renderCategoryPage() {
       // hash-based routing (survives clean-URL redirects); fall back to ?c=
-      const name = (window.location.hash.slice(1) ||
-        new URLSearchParams(window.location.search).get('c') || '').toLowerCase();
+      const encodedName = window.location.hash.slice(1) ||
+        new URLSearchParams(window.location.search).get('c') || '';
+      let name;
+      try { name = decodeURIComponent(encodedName).toLowerCase(); }
+      catch (_) { name = ''; }
       const cat = CATEGORIES.find(c => c.name.toLowerCase() === name);
 
       if (!cat) {
@@ -70,35 +73,39 @@
 
       document.title = `${cat.name} Government Jobs 2026 — Notifications & Deadlines | SarkariJobs+`;
       document.getElementById('cat-title').textContent = `${cat.icon} ${cat.name} Jobs`;
-      document.getElementById('cat-desc').textContent = cat.desc + ' — live notifications with form closing dates and exam schedules.';
+      document.getElementById('cat-desc').textContent = cat.desc + ' — notifications with dates when supplied and source links.';
 
       const render = jobs => {
         // NEVER fill with other categories — aspirants get misled. Honest empty state instead.
-        const own = jobs.filter(j => (j.category || '').toLowerCase() === cat.name.toLowerCase());
+        const own = jobs.filter(j => (!j.type || j.type === 'job') &&
+          (j.category || '').toLowerCase() === cat.name.toLowerCase());
         const headingEl = document.getElementById('jobs-heading');
         if (!own.length) {
-          headingEl.textContent = `${cat.name} — No live notifications right now`;
+          headingEl.textContent = `${cat.name} — No notifications in the current feed`;
           document.getElementById('cat-jobs-grid').innerHTML =
             `<p style="color:var(--text-grey); text-align:center; grid-column:1/-1;">
-               New ${cat.name} notifications are tracked daily and will appear here automatically.<br>
-               Meanwhile, check <a href="index.html#jobs" style="color:var(--saffron-dark); font-weight:700;">Closing Soon</a> across all categories.</p>`;
+               There are no matching notifications in the available feed right now.<br>
+               Meanwhile, check <a href="index.html#jobs" style="color:var(--saffron-dark); font-weight:700;">all notifications</a> across all categories.</p>`;
           return;
         }
-        headingEl.textContent = `🔥 ${cat.name} — Closing Soon`;
-        const dated = own.filter(j => j.lastDate).sort((a,b) => String(a.lastDate).localeCompare(String(b.lastDate)));
-        const undated = own.filter(j => !j.lastDate);
+        headingEl.textContent = `${cat.name} notifications`;
+        const dated = own.filter(j => daysUntil(j.lastDate) !== null && daysUntil(j.lastDate) >= 0)
+          .sort((a,b) => String(a.lastDate).localeCompare(String(b.lastDate)));
+        const undated = own.filter(j => daysUntil(j.lastDate) === null);
+        const expired = own.filter(j => daysUntil(j.lastDate) !== null && daysUntil(j.lastDate) < 0)
+          .sort((a,b) => String(b.lastDate).localeCompare(String(a.lastDate)));
         document.getElementById('cat-jobs-grid').innerHTML =
-          [...dated, ...undated].map(jobCardHTML).join('');
+          [...dated, ...undated, ...expired].map(jobCardHTML).join('');
       };
 
       fetch('data/jobs.json')
         .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
         .then(p => render(p.jobs))
-        .catch(() => render(SAMPLE_JOBS.map(s => ({
-          title: s.title, category: s.cat, state: s.state,
-          lastDate: s.close, examDate: s.exam === 'TBA' ? null : s.exam,
-          link: '#', source: 'Sample'
-        }))));
+        .catch(() => {
+          document.getElementById('jobs-heading').textContent = `${cat.name} notifications unavailable`;
+          document.getElementById('cat-jobs-grid').innerHTML =
+            '<p style="color:var(--text-grey); text-align:center; grid-column:1/-1;">The notifications feed could not be loaded.</p>';
+        });
     }
     document.addEventListener('DOMContentLoaded', renderCategoryPage);
   </script>

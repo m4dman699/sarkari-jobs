@@ -1,56 +1,97 @@
 {
-  "generatedAt": "2026-08-22T14:07:32.911Z",
-  "total": 5,
+  "generatedAt": "2026-10-22T07:47:49.221Z",
+  "total": 7,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24",
+      "type": "job",
       "title": "Notifications",
       "source": "NPSC",
       "category": "State PSC",
       "state": "Nagaland",
       "link": "https://npsc.nagaland.gov.in/notification",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi8",
+      "type": "job",
       "title": "Submit all Marksheets and Pass Certificates while applying for OTR.",
       "source": "NPSC",
       "category": "State PSC",
       "state": "Nagaland",
       "link": "https://npsc.nagaland.gov.in/",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MDMyMDk5NDk2OTg0",
+      "type": "job",
+      "title": "Notification NO.NPSC.ADVT-1/04(VOL-1) dt. 25.09.2026 (CTSE 2026 Microbiology Exam cancelled )",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/notification/179032099496984",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc4OTk4MTQ4NzM1NjYw",
+      "type": "job",
+      "title": "Notification NO.NPSC.ADVT-1/04(VOL-1) dt. 21.09.2026 (CTSE 2026 Use of Calculator)",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/notification/178998148735660",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvZXhhbXM",
+      "type": "job",
       "title": "Exams View and Apply Exams. Open",
       "source": "NPSC",
       "category": "State PSC",
       "state": "Nagaland",
       "link": "https://npsc.nagaland.gov.in/applicant/exams",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
-      "title": "OTR Apply OTR. Open",
+      "type": "job",
+      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "source": "NPSC",
       "category": "State PSC",
       "state": "Nagaland",
       "link": "https://npsc.nagaland.gov.in/applicant/otr",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9zZXJ2aWNlcy9tYXJrc2hlZXQvbHRkLWV4YW0",
-      "title": "Limited Dept. Exam Marksheet",
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hZHZlcnRpc2VtZW50",
+      "type": "job",
+      "title": "Advertisement",
       "source": "NPSC",
       "category": "State PSC",
       "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/services/marksheet/ltd-exam",
+      "link": "https://npsc.nagaland.gov.in/advertisement",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     }
   ]
 }

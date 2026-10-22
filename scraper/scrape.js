@@ -13,27 +13,32 @@ const { fetchPage, extractJobs, SOURCES, STATE_SOURCES, classifyJob } = require(
 
 const OUT = path.join(__dirname, '..', 'data', 'jobs.json');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const CONCURRENCY = 4;
 
 async function main() {
   const all = [];
   const errors = [];
 
-  for (const src of SOURCES) {
-    for (const url of src.urls) {
+  const tasks = SOURCES.flatMap(src => src.urls.map(url => ({ src, url })));
+  let nextTask = 0;
+  async function worker() {
+    while (nextTask < tasks.length) {
+      const { src, url } = tasks[nextTask++];
       try {
         process.stdout.write(`→ ${src.name} [${url}] ... `);
         const html = await fetchPage(url);
         const $ = cheerio.load(html);
-        const jobs = extractJobs($, url, src.name, src.category, src.state);
-        all.push(...jobs);
-        console.log(`${jobs.length} jobs`);
+        const announcements = extractJobs($, url, src.name, src.category, src.state);
+        all.push(...announcements);
+        console.log(`${announcements.length} links`);
       } catch (err) {
         console.log(`FAILED (${err.message})`);
         errors.push({ source: src.name, url, error: err.message });
       }
-      await sleep(1500); // be polite to govt servers
+      await sleep(1200); // keep each worker's request rate modest
     }
   }
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
   // Deduplicate by id (link hash), keep first; classify generic categories
   const seen = new Set();
@@ -48,8 +53,26 @@ async function main() {
 
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
 
+  let previous = null;
+  try { previous = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch { /* first run */ }
+  if (unique.length === 0) {
+    console.error('\nNo official announcements were extracted; keeping the existing feed unchanged.');
+    process.exitCode = 1;
+    return;
+  }
+  const freshJobs = unique.some(item => !item.type || item.type === 'job');
+  if (!freshJobs && Array.isArray(previous?.jobs)) {
+    const priorJobs = previous.jobs.filter(item => !item.type || item.type === 'job');
+    const ids = new Set(unique.map(item => item.id));
+    unique.push(...priorJobs.filter(item => !ids.has(item.id)));
+    console.warn(`No new job links found; preserved ${priorJobs.length} jobs from the last successful job scrape.`);
+  }
+
+  const generatedAt = new Date().toISOString();
   const payload = {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
+    jobsGeneratedAt: freshJobs ? generatedAt : (previous?.jobsGeneratedAt || previous?.generatedAt || null),
+    partial: errors.length > 0 || !freshJobs,
     total: unique.length,
     errors,
     jobs: unique
@@ -60,17 +83,17 @@ async function main() {
   const statesDir = path.join(__dirname, '..', 'data', 'states');
   fs.mkdirSync(statesDir, { recursive: true });
   let stateFileCount = 0;
-  for (const src of STATE_SOURCES) {
-    const own = unique.filter(j => j.state === src.state);
-    if (!own.length) continue;
+  for (const slug of new Set(STATE_SOURCES.map(src => src.slug))) {
+    const stateName = STATE_SOURCES.find(src => src.slug === slug)?.state;
+    const own = unique.filter(j => j.state === stateName && (!j.type || j.type === 'job'));
     fs.writeFileSync(
-      path.join(statesDir, `${src.slug}.json`),
+      path.join(statesDir, `${slug}.json`),
       JSON.stringify({ generatedAt: payload.generatedAt, total: own.length, jobs: own }, null, 2)
     );
     stateFileCount++;
   }
 
-  console.log(`\n✅ ${unique.length} unique jobs saved → data/jobs.json`);
+  console.log(`\n✅ ${unique.length} unique announcements saved → data/jobs.json`);
   console.log(`✅ ${stateFileCount} per-state files saved → data/states/*.json`);
   if (errors.length) console.log(`⚠️  ${errors.length} source errors (see errors field in JSON)`);
 }

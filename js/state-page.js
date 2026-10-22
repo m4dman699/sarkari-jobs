@@ -4,22 +4,19 @@ function slugToKey(slug) {
   return Object.keys(STATES).find(k => STATES[k].slug === slug);
 }
 
-const toSampleJobs = () => SAMPLE_JOBS.map(j => ({
-  title: j.title, category: j.cat, state: j.state,
-  lastDate: j.close, examDate: j.exam === 'TBA' ? null : j.exam,
-  link: '#', source: 'Sample'
-}));
-
 function sortByDeadline(list) {
-  const dated = list.filter(j => j.lastDate).sort((a,b) => String(a.lastDate).localeCompare(String(b.lastDate)));
-  const undated = list.filter(j => !j.lastDate);
-  return [...dated, ...undated];
+  const upcoming = list.filter(j => daysUntil(j.lastDate) !== null && daysUntil(j.lastDate) >= 0)
+    .sort((a,b) => String(a.lastDate).localeCompare(String(b.lastDate)));
+  const undated = list.filter(j => daysUntil(j.lastDate) === null);
+  const expired = list.filter(j => daysUntil(j.lastDate) !== null && daysUntil(j.lastDate) < 0)
+    .sort((a,b) => String(b.lastDate).localeCompare(String(a.lastDate)));
+  return [...upcoming, ...undated, ...expired];
 }
 
 function fillGrid(list) {
   const grid = document.getElementById('state-jobs-grid');
   if (!list.length) {
-    grid.innerHTML = '<p style="color:var(--text-grey)">No notifications right now — new ones are tracked daily.</p>';
+    grid.innerHTML = '<p class="jobs-message">No matching notifications are available in the feed right now.</p>';
     return;
   }
   grid.innerHTML = sortByDeadline(list).map(jobCardHTML).join('');
@@ -43,7 +40,7 @@ function renderStatePage() {
   document.getElementById('state-title').textContent = `${s.name} Government Jobs`;
   document.getElementById('state-psc').textContent = `🏛️ ${s.psc}`;
   document.getElementById('state-desc').textContent = s.desc ||
-    `Every ${s.psc} and state-level recruitment — PSC exams, police, teaching, courts and PSU openings — with live form deadlines, exam dates and direct official links.`;
+    `Recruitment notifications from ${s.psc} and state-level boards, with available form deadlines, exam dates and official links.`;
 
   // Hero image if generated art exists for this state (assets/states/<slug>.png);
   // otherwise the animated tricolor gradient stays as the hero.
@@ -60,26 +57,37 @@ function renderStatePage() {
   fetch(`data/states/${s.slug}.json`)
     .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
     .then(p => {
-      document.getElementById('jobs-heading').textContent = `🔥 ${s.name} — Closing Soon`;
-      fillGrid(p.jobs || []);
+      document.getElementById('jobs-heading').textContent = `${s.name} notifications`;
+      const stateJobs = (p.jobs || []).filter(job => !job.type || job.type === 'job');
+      if (stateJobs.length) {
+        fillGrid(stateJobs);
+        return;
+      }
+      return fetch('data/jobs.json')
+        .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
+        .then(feed => filterMainFeed(feed.jobs || [], s.name));
     })
     .catch(() =>
       fetch('data/jobs.json')
         .then(r => (r.ok ? r.json() : Promise.reject(r.status)))
         .then(p => filterMainFeed(p.jobs || [], s.name))
-        .catch(() => filterMainFeed(toSampleJobs(), s.name))
+        .catch(() => {
+          document.getElementById('jobs-heading').textContent = 'Notifications unavailable';
+          fillGrid([]);
+        })
     );
 }
 
 function filterMainFeed(jobs, s) {
-  const own = jobs.filter(j => j.state && j.state.toLowerCase().includes(s.name.toLowerCase()));
+  const own = jobs.filter(j => (!j.type || j.type === 'job') &&
+    j.state && j.state.toLowerCase().includes(s.name.toLowerCase()));
   if (own.length) {
-    document.getElementById('jobs-heading').textContent = `🔥 ${s.name} — Closing Soon`;
+    document.getElementById('jobs-heading').textContent = `${s.name} notifications`;
     fillGrid(own);
     return;
   }
   // Honest fallback: only central/all-India posts, clearly labelled
-  const national = jobs.filter(j => /all india|central/i.test(j.state || ''));
+  const national = jobs.filter(j => (!j.type || j.type === 'job') && /all india|central/i.test(j.state || ''));
   document.getElementById('jobs-heading').textContent =
     'Central notifications open to ' + s.name + ' candidates';
   fillGrid(national.slice(0, 6));

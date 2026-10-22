@@ -1,27 +1,24 @@
 /**
  * Source adapters — one per government portal.
- * Each adapter returns normalized job objects:
- * { id, title, source, category, state, link, postedDate, lastDate }
+ * Each adapter returns normalized announcements:
+ * { id, type, title, source, category, state, link, openDate, lastDate, examDate }
  *
  * Design: keyword-scoring instead of brittle CSS selectors,
  * so layouts can change without breaking everything.
  */
 
 const https = require('https');
-const http = require('http');
 
-const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36 SarkariJobsPlusBot/1.0 (+https://github.com/yourname/sarkari-jobs)';
+const UA = 'Mozilla/5.0 (compatible; SarkariJobsPlusBot/1.0; +https://github.com/m4dman699/sarkari-jobs)';
+const MAX_REDIRECTS = 5;
+const MAX_RESPONSE_BYTES = 10 * 1024 * 1024;
 
-// Many Indian govt portals run ancient TLS / self-signed certs.
-// A permissive agent fixes "fetch failed" without disabling verification globally.
-const laxAgent = new https.Agent({
-  rejectUnauthorized: false,
-  minVersion: 'TLSv1',
-  ciphers: 'DEFAULT@SECLEVEL=0',
-  keepAlive: false
-});
-
-async function fetchPage(url, timeoutMs = 20000) {
+async function fetchPage(url, timeoutMs = 12000, redirects = 0) {
+  const parsed = new URL(url);
+  if (parsed.protocol === 'http:') parsed.protocol = 'https:';
+  if (parsed.protocol !== 'https:') throw new Error('Unsupported URL protocol');
+  url = parsed.href;
+  if (redirects > MAX_REDIRECTS) throw new Error('Too many redirects');
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
   const opts = {
@@ -33,20 +30,27 @@ async function fetchPage(url, timeoutMs = 20000) {
     signal: ctrl.signal
   };
   try {
-    const mod = url.startsWith('https') ? https : http;
-    if (url.startsWith('https')) opts.agent = laxAgent;
+    const mod = https;
     return await new Promise((resolve, reject) => {
       const req = mod.get(url, opts, res => {
         if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
           res.resume();
-          return resolve(fetchPage(new URL(res.headers.location, url).href, timeoutMs));
+          return resolve(fetchPage(new URL(res.headers.location, url).href, timeoutMs, redirects + 1));
         }
         if (res.statusCode !== 200) {
           res.resume();
           return reject(new Error(`HTTP ${res.statusCode}`));
         }
         const chunks = [];
-        res.on('data', c => chunks.push(c));
+        let bytes = 0;
+        res.on('data', c => {
+          bytes += c.length;
+          if (bytes > MAX_RESPONSE_BYTES) {
+            req.destroy(new Error('Response exceeds 10 MB limit'));
+            return;
+          }
+          chunks.push(c);
+        });
         res.on('end', () => {
           const buf = Buffer.concat(chunks);
           // Many govt sites serve ISO-8859-1 / windows-1252 — respect their charset
@@ -66,6 +70,7 @@ async function fetchPage(url, timeoutMs = 20000) {
         });
       });
       req.on('error', reject);
+      ctrl.signal.addEventListener('abort', () => req.destroy(new Error('Request timed out')), { once: true });
       req.setTimeout(timeoutMs, () => req.destroy(new Error('timeout')));
     });
   } finally {
@@ -90,14 +95,33 @@ function findDates(text) {
       let kind = 'other';
       if (/last|close|end|due|till|upto/i.test(before + ' ' + after)) kind = 'close';
       else if (/start|open|from|begin|apply/i.test(before + ' ' + after)) kind = 'open';
+      else if (/exam|test|written|interview/i.test(before + ' ' + after)) kind = 'exam';
+      else if (/result|declared|published|released|issued|uploaded/i.test(before + ' ' + after)) kind = 'published';
       out.push({ iso, kind });
     }
   }
   return out;
 }
 
-const TITLE_HINTS = /(notification|recruit|vacanc|apply\s*(online)?|online\s*form|exam|posts|jobs|bharti|admit)/i;
-const JUNK_HINTS   = /(tender|faq|contact|login|privacy|disclaimer|archive|admit\s*card|call\s*letter|hall\s*ticket|final\s*marks|answer\s*key|interview\s*schedule|\bresults?\b|rejection|withdrawn|corrigendum|order\b)/i;
+const JOB_TITLE_HINTS = /(notification|recruit|vacanc|apply\s*(online)?|online\s*form|posts|jobs|bharti|career|advertisement|apprentice|engagement|fellowship)/i;
+const UPDATE_TITLE_HINTS = /(admit\s*card|call\s*letter|hall\s*ticket|e-admit|\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list)/i;
+const GENERIC_JOB_LINK = /^(apply(?: online| now)?|jobs?(?: through ncs)?|careers?|recruitments?|click here|read more|view (?:all|details)|download)$/i;
+const JUNK_HINTS   = /(tender|faq|contact|login|privacy|disclaimer|archive|final\s*marks|answer\s*key|interview\s*schedule|rejection|withdrawn|corrigendum|order\b)/i;
+const TRUSTED_RECRUITMENT_HOSTS = ['digialm.com', 'hryssc.com', 'tnpsconline.com', 'tnpscexams.in', 'opscechayan.in'];
+
+function isOfficialPortalLink(link) {
+  let hostname;
+  try { hostname = new URL(link).hostname.toLowerCase().replace(/\.$/, ''); }
+  catch { return false; }
+  if (/\.(gov\.in|nic\.in|mil\.in|gov)$/.test(hostname)) return true;
+  return TRUSTED_RECRUITMENT_HOSTS.some(domain => hostname === domain || hostname.endsWith(`.${domain}`));
+}
+
+function classifyAnnouncement(title) {
+  if (/admit\s*card|call\s*letter|hall\s*ticket|e-admit/i.test(title)) return 'admit-card';
+  if (/\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list/i.test(title)) return 'result';
+  return 'job';
+}
 
 function isStale(title, lastDate) {
   // Old-year references inside the title (e.g. "Notification No.27/2017") = dead post
@@ -121,43 +145,53 @@ function extractJobs($, baseUrl, sourceName, category, state) {
     const $el = $(el);
     const title = ($el.text() || '').replace(/\s+/g, ' ').trim();
     const href = $el.attr('href');
-    if (!title || title.length < 12 || title.length > 220) return;
-    if (!TITLE_HINTS.test(title) || JUNK_HINTS.test(title)) return;
+    if (!title || title.length < 5 || title.length > 220) return;
+    if (JUNK_HINTS.test(title)) return;
+    const type = classifyAnnouncement(title);
+    if (type === 'job' && !JOB_TITLE_HINTS.test(title)) return;
+    if (type === 'job' && GENERIC_JOB_LINK.test(title)) return;
+    if (type !== 'job' && !UPDATE_TITLE_HINTS.test(title)) return;
+    if (/^\s*#/.test(href || '')) return;
 
     let link;
     try {
-      link = new URL(href, baseUrl).href;
+      const target = new URL(href, baseUrl);
+      if (target.protocol === 'http:') target.protocol = 'https:';
+      link = target.href;
     } catch { return; }
-    if (!/^https?:/.test(link)) return;
+    if (!/^https?:/.test(link) || !isOfficialPortalLink(link)) return;
 
     // Row context = closest tr/li/div text, for date proximity search
     const context = ($el.closest('tr').text() || $el.closest('li').text() || $el.parent().text() || '');
     const found = findDates(context);
 
     // classify: keyword-tagged dates win, else earliest=open latest=close
-    let openDate = null, lastDate = null;
+    let openDate = null, lastDate = null, examDate = null, publishedDate = null;
     const taggedOpen = found.filter(d => d.kind === 'open').map(d => d.iso);
     const taggedClose = found.filter(d => d.kind === 'close').map(d => d.iso);
+    const taggedExam = found.filter(d => d.kind === 'exam').map(d => d.iso);
+    const taggedPublished = found.filter(d => d.kind === 'published').map(d => d.iso);
     if (taggedClose.length) lastDate = taggedClose.sort()[0];
     if (taggedOpen.length) openDate = taggedOpen.sort()[0];
-    const rest = found.map(d => d.iso).sort();
-    if (!lastDate && rest.length > 1) lastDate = rest[rest.length - 1];
-    if (!openDate && rest.length) openDate = rest[0];
-    if (openDate && lastDate && openDate > lastDate) [openDate, lastDate] = [lastDate, openDate];
+    if (taggedExam.length) examDate = taggedExam.sort()[0];
+    if (taggedPublished.length) publishedDate = taggedPublished.sort().at(-1);
 
     jobs.push({
       id: Buffer.from(link).toString('base64url'),
+      type,
       title: title.slice(0, 180),
       source: sourceName,
       category,
       state,
       link,
       openDate: openDate || null,
-      lastDate: lastDate || null
+      lastDate: type === 'job' ? (lastDate || null) : null,
+      examDate: examDate || null,
+      publishedDate: publishedDate || null
     });
   });
   // quality gate: drop stale/dead notifications
-  return jobs.filter(j => !isStale(j.title, j.lastDate));
+  return jobs.filter(j => j.type !== 'job' || !isStale(j.title, j.lastDate));
 }
 
 const CENTRAL_SOURCES = [
@@ -177,7 +211,7 @@ const CENTRAL_SOURCES = [
     name: 'UPSC',
     category: 'UPSC',
     state: 'All India',
-    urls: ['https://upsc.gov.in/whats-new']
+    urls: ['https://www.upsc.gov.in/', 'https://upsc.gov.in/whats-new']
   },
   {
     name: 'IBPS',
@@ -186,10 +220,10 @@ const CENTRAL_SOURCES = [
     urls: ['https://www.ibps.in/']
   },
   {
-    name: 'RRB',
+    name: 'Railway Recruitment Boards',
     category: 'Railways',
     state: 'All India',
-    urls: ['https://www.rrbcdg.gov.in/']
+    urls: ['https://rrb.indianrailways.gov.in/']
   },
   // ---- Defence ----
   { name: 'Indian Army',      category: 'Defence', state: 'All India', urls: ['https://joinindianarmy.nic.in/'] },
@@ -204,30 +238,29 @@ const CENTRAL_SOURCES = [
   { name: 'SAIL',             category: 'PSU', state: 'All India', urls: ['https://sail.co.in/web/careers'] },
   { name: 'ISRO',             category: 'PSU', state: 'All India', urls: ['https://www.isro.gov.in/Careers.html'] },
   // ---- Judiciary ----
-  { name: 'eCourts',          category: 'Judiciary', state: 'All India', urls: ['https://ecourts.gov.in/recruitments'] },
+  { name: 'Supreme Court of India', category: 'Judiciary', state: 'All India', urls: ['https://www.sci.gov.in/recruitments/'] },
   { name: 'Calcutta High Court', category: 'Judiciary', state: 'West Bengal', urls: ['https://www.calcuttahighcourt.gov.in/'] },
-  // ---- High-yield discovery (links point to official boards; classifier sorts categories) ----
-  { name: 'Sarkari Result',   category: 'Central', state: 'All India', urls: ['https://www.sarkariresult.com/latest-jobs/'] },
-  { name: 'RRB Apply Portal', category: 'Railways', state: 'All India', urls: ['https://www.rrbapply.gov.in/'] }
+  // NIC's official e-Pariksha portal carries recruitment notices and exam updates.
+  { name: 'NIC e-Pariksha', category: 'Central', state: 'All India', urls: ['https://pariksha.nic.in/'] }
 ];
 
 // One entry per State PSC / recruitment board — scraped daily.
 // The generic keyword parser handles any layout; failures are logged, never fatal.
 const STATE_SOURCES = [
-  { slug: 'uttar-pradesh',   name: 'UPPSC',       category: 'State PSC', state: 'Uttar Pradesh',     urls: ['https://uppsc.up.nic.in/', 'https://psc.up.gov.in/en/whats-new'] },
+  { slug: 'uttar-pradesh',   name: 'UPPSC',       category: 'State PSC', state: 'Uttar Pradesh',     urls: ['https://uppsc.up.nic.in/'] },
   { slug: 'bihar',           name: 'BPSC',        category: 'State PSC', state: 'Bihar',             urls: ['https://bpsc.bihar.gov.in/', 'https://www.bpsc.bih.nic.in/'] },
   { slug: 'west-bengal',     name: 'WBPSC',       category: 'State PSC', state: 'West Bengal',       urls: ['https://wbpsc.gov.in/'] },
   { slug: 'madhya-pradesh',  name: 'MPPSC',       category: 'State PSC', state: 'Madhya Pradesh',    urls: ['https://mppsc.mp.gov.in/'] },
   { slug: 'rajasthan',       name: 'RPSC',        category: 'State PSC', state: 'Rajasthan',         urls: ['https://rpsc.rajasthan.gov.in/'] },
-  { slug: 'tamil-nadu',      name: 'TNPSC',       category: 'State PSC', state: 'Tamil Nadu',        urls: ['https://www.tnpsc.gov.in/', 'http://www.tnpscexams.net/'] },
+  { slug: 'tamil-nadu',      name: 'TNPSC',       category: 'State PSC', state: 'Tamil Nadu',        urls: ['https://www.tnpsc.gov.in/'] },
   { slug: 'karnataka',       name: 'KPSC',        category: 'State PSC', state: 'Karnataka',         urls: ['https://kpsc.kar.nic.in/'] },
   { slug: 'kerala',          name: 'Kerala PSC',  category: 'State PSC', state: 'Kerala',            urls: ['https://www.keralapsc.gov.in/'] },
-  { slug: 'maharashtra',     name: 'MPSC',        category: 'State PSC', state: 'Maharashtra',       urls: ['https://mpsc.gov.in/', 'https://mpsc.gov.in/en/node/whats-new'] },
+  { slug: 'maharashtra',     name: 'MPSC',        category: 'State PSC', state: 'Maharashtra',       urls: ['https://mpsc.gov.in/'] },
   { slug: 'gujarat',         name: 'GPSC',        category: 'State PSC', state: 'Gujarat',           urls: ['https://gpsc.gujarat.gov.in/'] },
   { slug: 'andhra-pradesh',  name: 'APPSC',       category: 'State PSC', state: 'Andhra Pradesh',    urls: ['https://psc.ap.gov.in/'] },
   { slug: 'telangana',       name: 'TSPSC',       category: 'State PSC', state: 'Telangana',         urls: ['https://www.tspsc.gov.in/'] },
   { slug: 'himachal-pradesh',name: 'HPPSC',       category: 'State PSC', state: 'Himachal Pradesh',  urls: ['https://hppsc.hp.gov.in/'] },
-  { slug: 'haryana',         name: 'HPSC/HSSC',   category: 'State PSC', state: 'Haryana',           urls: ['http://hpsc.gov.in/', 'http://hssc.gov.in/'] },
+  { slug: 'haryana',         name: 'HPSC/HSSC',   category: 'State PSC', state: 'Haryana',           urls: ['https://hpsc.gov.in/', 'https://hssc.gov.in/'] },
   { slug: 'jharkhand',       name: 'JPSC',        category: 'State PSC', state: 'Jharkhand',         urls: ['https://www.jpsc.gov.in/'] },
   { slug: 'chhattisgarh',    name: 'CGPSC',       category: 'State PSC', state: 'Chhattisgarh',      urls: ['https://psc.cg.gov.in/'] },
   { slug: 'odisha',          name: 'OPSC',        category: 'State PSC', state: 'Odisha',            urls: ['https://www.opsc.gov.in/'] },
@@ -237,11 +270,11 @@ const STATE_SOURCES = [
   { slug: 'jammu-kashmir',   name: 'JKPSC',       category: 'State PSC', state: 'Jammu & Kashmir',   urls: ['https://jkpsc.nic.in/'] },
   { slug: 'goa',             name: 'Goa PSC',     category: 'State PSC', state: 'Goa',               urls: ['https://gpsc.goa.gov.in/'] },
   { slug: 'manipur',         name: 'MPSC Manipur',category: 'State PSC', state: 'Manipur',           urls: ['https://mpscmanipur.gov.in/'] },
-  { slug: 'meghalaya',       name: 'MPSC Meghalaya',category:'State PSC',state: 'Meghalaya',        urls: ['http://mpsc.nic.in/'] },
+  { slug: 'meghalaya',       name: 'MPSC Meghalaya',category:'State PSC',state: 'Meghalaya',        urls: ['https://mpsc.meghalaya.gov.in/'] },
   { slug: 'mizoram',         name: 'Mizoram PSC', category: 'State PSC', state: 'Mizoram',           urls: ['https://mpsc.mizoram.gov.in/'] },
   { slug: 'nagaland',        name: 'NPSC',        category: 'State PSC', state: 'Nagaland',          urls: ['https://npsc.nagaland.gov.in/'] },
   { slug: 'sikkim',          name: 'SPSC Sikkim', category: 'State PSC', state: 'Sikkim',            urls: ['https://spscskm.gov.in/'] },
-  { slug: 'tripura',         name: 'TPSC',        category: 'State PSC', state: 'Tripura',           urls: ['http://tpsc.tripura.gov.in/'] },
+  { slug: 'tripura',         name: 'TPSC',        category: 'State PSC', state: 'Tripura',           urls: ['https://tpsc.tripura.gov.in/'] },
   { slug: 'delhi',           name: 'DSSSB',       category: 'State PSC', state: 'Delhi',             urls: ['https://dsssb.delhi.gov.in/'] },
   { slug: 'puducherry',      name: 'PPPSC/Puducherry', category: 'State PSC', state: 'Puducherry', urls: ['https://recruitment.puducherry.gov.in/'] },
   // ---- State Police boards (category: Police) ----
@@ -279,4 +312,4 @@ function classifyJob(job) {
 
 const SOURCES = [...CENTRAL_SOURCES, ...STATE_SOURCES];
 
-module.exports = { fetchPage, extractJobs, SOURCES, STATE_SOURCES, CENTRAL_SOURCES, classifyJob };
+module.exports = { fetchPage, extractJobs, SOURCES, STATE_SOURCES, CENTRAL_SOURCES, classifyJob, isOfficialPortalLink };

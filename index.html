@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SarkariJobs+ — Government Jobs, Exam Dates & Alerts for Every Indian State</title>
-  <meta name="description" content="Never miss a government job deadline. Track exam dates, form closing dates and results across all 28 Indian states. Personalised alerts on Telegram.">
+  <title>SarkariJobs+ — Government Job Notifications & Official Links</title>
+  <meta name="description" content="Browse government job notifications, application dates and source links from Indian states and union territories.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,13 +23,12 @@
         <ul>
           <li><a href="#map">States</a></li>
           <li><a href="#categories">Categories</a></li>
-          <li><a href="#jobs">Latest Jobs</a></li>
-          <li><a href="#">Results</a></li>
-          <li><a href="#">Admit Cards</a></li>
-          <li><a href="#">Calendar</a></li>
+          <li><a href="#jobs">Notifications</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#admit-cards">Admit cards</a></li>
         </ul>
       </nav>
-      <button class="btn btn-primary">🔔 Get Alerts Free</button>
+      <a class="btn btn-primary" href="#jobs">Browse jobs</a>
     </div>
   </header>
 
@@ -41,33 +40,31 @@
     <div class="orb orb-3" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div>
-        <span class="hero-badge reveal d1">🇮🇳 All 28 States · Central · PSU Jobs</span>
+        <span class="hero-badge reveal d1">🇮🇳 All States &amp; UTs · Central · PSU Jobs</span>
         <h1 class="reveal d2">Never Miss a<br><span class="grad">Sarkari Deadline</span> Again</h1>
         <p class="sub reveal d3">
-          Form closing dates, exam dates, admit cards &amp; results — tracked for you
-          across every state and category. Personal alerts straight to Telegram.
+          Browse government job notifications, application dates and source links
+          across states, union territories and central categories.
         </p>
-        <form class="search-bar reveal d4" onsubmit="return false">
-          <input type="text" placeholder="Search: SSC CGL, Bihar Police, RRB NTPC…" aria-label="Search government jobs">
-          <button class="btn btn-primary">Search</button>
+        <form class="search-bar reveal d4" id="job-search-form" role="search">
+          <input type="search" id="job-search" name="q" placeholder="Search: SSC CGL, Bihar Police, RRB NTPC…" aria-label="Search government jobs" autocomplete="off">
+          <button class="btn btn-primary" type="submit">Search</button>
         </form>
+        <p class="sr-only" id="search-status" aria-live="polite"></p>
         <div class="hero-stats reveal d5">
-          <div class="stat"><b data-count="2400">0</b><span>Live notifications</span></div>
-          <div class="stat"><b data-count="36">0</b><span>States &amp; UTs covered</span></div>
-          <div class="stat"><b data-count="10">0</b><span>Job categories</span></div>
+          <div class="stat"><b id="feed-job-count">—</b><span>Notifications in feed</span></div>
+          <div class="stat"><b data-count="36">0</b><span>States &amp; UTs listed</span></div>
+          <div class="stat"><b id="category-count">0</b><span>Job categories</span></div>
         </div>
       </div>
       <div class="flag-stage reveal d3">
         <div class="wave-flag" role="img" aria-label="3D waving Indian flag"></div>
-        <div class="float-chip fc-1">🔴 <b>BPSC 71st</b> closes in 5d</div>
-        <div class="float-chip fc-2">✅ RRB NTPC — exam date out</div>
-        <div class="float-chip fc-3">🔔 <b>+36</b> new alerts today</div>
       </div>
     </div>
   </section>
 
   <!-- ============ DEADLINE TICKER ============ -->
-  <div class="ticker-wrap">
+  <div class="ticker-wrap" id="ticker-wrap" hidden>
     <span class="ticker-label">⏰ CLOSING SOON</span>
     <div class="ticker" id="ticker"></div>
   </div>
@@ -87,8 +84,8 @@
   <!-- ============ 3D INDIA MAP ============ -->
   <section class="block map-section" id="map">
     <div class="container map-layout">
-      <div id="india-map" aria-label="Interactive India map — click a state">
-<svg role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><linearGradient id="triGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF9933"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#138808"/></linearGradient></defs>
+      <div id="india-map" role="group" aria-label="Interactive India map — choose a state">
+<svg role="group" aria-label="India map; each state opens its job listings" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><linearGradient id="triGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FF9933"/><stop offset="50%" stop-color="#ffffff"/><stop offset="100%" stop-color="#138808"/></linearGradient></defs>
 	<defs>
 		<style type="text/css">
 			.land
@@ -148,7 +145,7 @@
         <p>
           Hover any state to see its Public Service Commission.
           Click to open that state's full board — PSC exams, police,
-          teaching, courts — with live deadlines for each notification.
+          teaching, courts — with the dates available in each notification.
         </p>
         <div class="popular-states">
           <a class="pill" href="state.html#uttar-pradesh">Uttar Pradesh</a>
@@ -163,18 +160,40 @@
     </div>
   </section>
 
-  <!-- ============ LATEST JOBS ============ -->
+  <!-- ============ NOTIFICATIONS ============ -->
   <section class="block" id="jobs">
     <div class="container">
       <div class="section-head">
-        <h2>🔥 Closing Soon</h2>
+        <h2 id="jobs-heading">Available notifications</h2>
         <div class="line"></div>
-        <p>Sorted by application deadline — never lose another form date</p>
+        <p id="jobs-status">Loading notifications…</p>
       </div>
       <div class="jobs-grid" id="jobs-grid"></div>
       <div style="text-align:center; margin-top:36px;">
-        <a class="btn btn-outline" href="#">View all 2,400+ notifications →</a>
+        <button class="btn btn-outline" id="show-all-jobs" type="button" hidden>Show all notifications →</button>
       </div>
+    </div>
+  </section>
+
+  <section class="block announcement-section" id="results">
+    <div class="container">
+      <div class="section-head">
+        <h2>Latest Results</h2>
+        <div class="line"></div>
+        <p id="results-status">Loading official result links…</p>
+      </div>
+      <div class="jobs-grid" id="results-grid"></div>
+    </div>
+  </section>
+
+  <section class="block announcement-section" id="admit-cards">
+    <div class="container">
+      <div class="section-head">
+        <h2>Admit Cards</h2>
+        <div class="line"></div>
+        <p id="admit-cards-status">Loading official admit-card links…</p>
+      </div>
+      <div class="jobs-grid" id="admit-cards-grid"></div>
     </div>
   </section>
 
@@ -182,41 +201,38 @@
   <footer>
     <div class="container foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="#" style="color:#fff">
+        <a class="logo" href="index.html" style="color:#fff">
           <span class="logo-flag"></span>
           Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:#7ee27e">+</span>
         </a>
-        <p>India's smartest government job tracker. Deadlines, exam dates and results — personalised for your state and qualification.</p>
+        <p>Government job notifications in one place, with source links and dates when available.</p>
       </div>
       <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="#">All Jobs</a></li>
-          <li><a href="#">Results</a></li>
-          <li><a href="#">Admit Cards</a></li>
-          <li><a href="#">Answer Keys</a></li>
+          <li><a href="#jobs">All Jobs</a></li>
+          <li><a href="#results">Latest Results</a></li>
+          <li><a href="#admit-cards">Admit Cards</a></li>
+          <li><a href="#categories">Browse Categories</a></li>
+          <li><a href="#map">Browse States</a></li>
         </ul>
       </div>
       <div>
         <h4>Top States</h4>
         <ul>
-          <li><a href="#">Uttar Pradesh</a></li>
-          <li><a href="#">Bihar</a></li>
-          <li><a href="#">West Bengal</a></li>
-          <li><a href="#">Rajasthan</a></li>
+          <li><a href="state.html#uttar-pradesh">Uttar Pradesh</a></li>
+          <li><a href="state.html#bihar">Bihar</a></li>
+          <li><a href="state.html#west-bengal">West Bengal</a></li>
+          <li><a href="state.html#rajasthan">Rajasthan</a></li>
         </ul>
       </div>
       <div>
         <h4>Alerts</h4>
-        <ul>
-          <li><a href="#">Telegram Bot</a></li>
-          <li><a href="#">WhatsApp (soon)</a></li>
-          <li><a href="#">Email Digest</a></li>
-        </ul>
+        <p class="foot-note">Job alerts are not available yet. Verify every notice on the relevant official board before applying.</p>
       </div>
     </div>
     <div class="foot-bottom container">
-      © 2026 SarkariJobs+ · Information aggregated from official government portals. Always verify on the official website before applying.
+      © 2026 SarkariJobs+ · Verify every notice on the relevant official government website before applying.
     </div>
     <div class="foot-strip"></div>
   </footer>

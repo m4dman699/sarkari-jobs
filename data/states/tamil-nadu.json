@@ -1,26 +1,19 @@
 {
-  "generatedAt": "2026-08-24T03:06:34.357Z",
-  "total": 2,
+  "generatedAt": "2026-10-22T07:47:49.221Z",
+  "total": 1,
   "jobs": [
     {
-      "id": "aHR0cDovL3d3dy50bnBzYy5nb3YuaW4vaW5zdHJ1Y3Rpb25zJTIwdG8lMjBjYW5kaWF0ZXMucGRm",
-      "title": "How To Apply",
+      "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL3NlY3VyZT9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
+      "type": "job",
+      "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
       "source": "TNPSC",
       "category": "State PSC",
       "state": "Tamil Nadu",
-      "link": "http://www.tnpsc.gov.in/instructions%20to%20candiates.pdf",
+      "link": "https://apply.tnpscexams.in/secure?app_id=UElZMDAwMDAwMQ==",
       "openDate": null,
-      "lastDate": null
-    },
-    {
-      "id": "aHR0cDovL3d3dy50bnBzY2V4YW1zLm5ldC9kb2N1bWVudHMvUmVzY2hlZHVsZWQucGRm",
-      "title": "Re-Schedule of Four Examination Dates",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "http://www.tnpscexams.net/documents/Rescheduled.pdf",
-      "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     }
   ]
 }

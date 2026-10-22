@@ -314,6 +314,17 @@ nav a:hover::after { width: 100%; }
   background: transparent;
 }
 .search-bar .btn { border-radius: 10px; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 .hero-stats {
   display: flex;
@@ -424,6 +435,7 @@ nav a:hover::after { width: 100%; }
   display: flex;
   align-items: center;
 }
+.ticker-wrap[hidden] { display: none; }
 .ticker-label {
   flex-shrink: 0;
   background: var(--saffron);
@@ -528,6 +540,13 @@ section.block { padding: 78px 0; }
   transform-box: fill-box;
   transform-origin: center;
   filter: drop-shadow(0 8px 12px rgba(6,3,141,.35));
+}
+#india-map path.state-path:focus-visible,
+.map-inset .inset-focus:focus-visible {
+  outline: none;
+  filter: drop-shadow(0 0 5px var(--navy));
+  stroke: var(--navy);
+  stroke-width: 2;
 }
 
 /* Magnified lens insets for tiny states/UTs (Delhi, Sikkim) */
@@ -650,8 +669,23 @@ section.block { padding: 78px 0; }
   flex-direction: column;
   gap: 10px;
 }
+.jobs-message {
+  grid-column: 1 / -1;
+  color: var(--text-grey);
+  text-align: center;
+  padding: 20px;
+}
+.link-unavailable {
+  display: block;
+  margin-top: 10px;
+  color: var(--text-grey);
+  font-size: .85rem;
+  text-align: center;
+}
 .job-card.warn { border-left-color: var(--saffron); }
 .job-card.crit { border-left-color: #e5484d; }
+.result-card { border-left-color: #3778c2; }
+.admit-card { border-left-color: #805ad5; }
 .job-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .job-card h3 {
   font-size: 1.02rem;
@@ -705,6 +739,7 @@ footer { background: var(--bg-dark); color: #aebadb; padding: 58px 0 0; }
 .foot-grid li { margin-bottom: 10px; font-size: .89rem; }
 .foot-grid a:hover { color: var(--saffron); }
 .foot-brand p { line-height: 1.7; font-size: .9rem; max-width: 320px; margin-top: 10px; }
+.foot-note { font-size: .89rem; line-height: 1.6; max-width: 250px; }
 .foot-bottom {
   border-top: 1px solid rgba(255,255,255,.09);
   padding: 20px 0;
@@ -724,7 +759,11 @@ footer { background: var(--bg-dark); color: #aebadb; padding: 58px 0 0; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
-  nav ul { display: none; }
+  .nav-wrap { height: auto; min-height: 72px; flex-wrap: wrap; padding: 12px 0; gap: 10px; }
+  nav { order: 3; width: 100%; overflow-x: auto; }
+  nav ul { display: flex; justify-content: center; gap: 18px; white-space: nowrap; }
+  nav a { font-size: .85rem; }
+  .nav-wrap > .btn { padding: 9px 14px; font-size: .85rem; }
   .jobs-grid { grid-template-columns: 1fr; }
   .cat-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
   .ticker-label { margin-left: 8px; }

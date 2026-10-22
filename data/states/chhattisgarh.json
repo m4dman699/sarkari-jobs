@@ -1,16 +1,32 @@
 {
-  "generatedAt": "2026-08-22T14:07:32.911Z",
-  "total": 1,
+  "generatedAt": "2026-10-22T07:47:49.221Z",
+  "total": 2,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9wc2MuY2cuZ292LmluL05vdGlmaWNhdGlvbnMucGhw",
+      "type": "job",
       "title": "Notifications",
       "source": "CGPSC",
       "category": "State PSC",
       "state": "Chhattisgarh",
       "link": "https://psc.cg.gov.in/Notifications.php",
       "openDate": null,
-      "lastDate": null
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9wc2MuY2cuZ292LmluL0FkdmVydGlzZW1lbnQucGhw",
+      "type": "job",
+      "title": "Advertisement",
+      "source": "CGPSC",
+      "category": "State PSC",
+      "state": "Chhattisgarh",
+      "link": "https://psc.cg.gov.in/Advertisement.php",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     }
   ]
 }

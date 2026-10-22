@@ -76,26 +76,15 @@ const STATES = {
 };
 
 const CATEGORIES = [
-  { icon: "🏛️", name: "UPSC",      desc: "IAS, IPS, CDS, NDA, CAPF, Civil Services", count: "42 live" },
-  { icon: "📋", name: "SSC",       desc: "CGL, CHSL, MTS, GD Constable, JE", count: "68 live" },
-  { icon: "🏦", name: "Banking",   desc: "IBPS PO/Clerk, SBI PO, RBI Grade B", count: "31 live" },
-  { icon: "🚆", name: "Railways",  desc: "RRB NTPC, Group D, ALP, JE, Technician", count: "55 live" },
-  { icon: "🛡️", name: "Defence",   desc: "Army, Navy, Air Force recruitment", count: "24 live" },
-  { icon: "👮", name: "Police",    desc: "State SI, Constable, CAPF", count: "47 live" },
-  { icon: "🎓", name: "Teaching",  desc: "CTET, State TET, KVS, NVS", count: "29 live" },
-  { icon: "🏭", name: "PSU",       desc: "NTPC, ONGC, SAIL, ISRO, DRDO via GATE", count: "38 live" },
-  { icon: "⚖️", name: "Judiciary", desc: "District Courts, High Court staff", count: "12 live" },
-  { icon: "🗺️", name: "State PSC", desc: "All 28 State Civil Services exams", count: "73 live" }
-];
-
-const SAMPLE_JOBS = [
-  { title: "SSC Combined Graduate Level (CGL) 2026 — 18,724 Posts", cat: "SSC", state: "All India", close: "2026-09-04", exam: "2026-11-14" },
-  { title: "IBPS PO / Management Trainee XVI — 5,208 Posts",        cat: "Banking", state: "All India", close: "2026-08-28", exam: "2026-10-05" },
-  { title: "RRB NTPC Graduate Level CEN 06/2026 — 11,558 Posts",    cat: "Railways", state: "All India", close: "2026-09-12", exam: "2026-12-20" },
-  { title: "UPPSC PCS 2026 — 220 Posts",                            cat: "State PSC", state: "Uttar Pradesh", close: "2026-09-02", exam: "2026-10-26" },
-  { title: "WBPSC Clerkship 2026 — 5,798 Posts",                    cat: "State PSC", state: "West Bengal", close: "2026-09-09", exam: "TBA" },
-  { title: "SSC GD Constable 2026 — 39,481 Posts",                  cat: "SSC", state: "All India", close: "2026-09-30", exam: "2027-01-15" },
-  { title: "Bihar BPSC 71st Combined Competitive — 1,299 Posts",    cat: "State PSC", state: "Bihar", close: "2026-08-27", exam: "2026-10-11" },
-  { title: "TNPSC Group II Interview Posts — 3,643 Posts",          cat: "State PSC", state: "Tamil Nadu", close: "2026-09-19", exam: "2026-12-06" },
-  { title: "KVS Teaching & Non-Teaching — 14,136 Posts",            cat: "Teaching", state: "All India", close: "2026-09-25", exam: "2026-12-13" }
+  { icon: "🏛️", name: "UPSC",      desc: "IAS, IPS, CDS, NDA, CAPF, Civil Services" },
+  { icon: "📋", name: "SSC",       desc: "CGL, CHSL, MTS, GD Constable, JE" },
+  { icon: "🏦", name: "Banking",   desc: "IBPS PO/Clerk, SBI PO, RBI Grade B" },
+  { icon: "🚆", name: "Railways",  desc: "RRB NTPC, Group D, ALP, JE, Technician" },
+  { icon: "🛡️", name: "Defence",   desc: "Army, Navy, Air Force recruitment" },
+  { icon: "👮", name: "Police",    desc: "State SI, Constable, CAPF" },
+  { icon: "🎓", name: "Teaching",  desc: "CTET, State TET, KVS, NVS" },
+  { icon: "🏭", name: "PSU",       desc: "NTPC, ONGC, SAIL, ISRO, DRDO via GATE" },
+  { icon: "⚖️", name: "Judiciary", desc: "District Courts, High Court staff" },
+  { icon: "🗺️", name: "State PSC", desc: "All 28 State Civil Services exams" },
+  { icon: "🏢", name: "Central",   desc: "Central government and national recruitment notices" }
 ];
