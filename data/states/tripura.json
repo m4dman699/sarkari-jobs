@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 22,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 21,
   "jobs": [
     {
       "id": "aHR0cHM6Ly90cHNjLnRyaXB1cmEuZ292LmluL2RpcmVjdC1yZWNydWl0bWVudA",
@@ -23,19 +23,6 @@
       "category": "State PSC",
       "state": "Tripura",
       "link": "https://tpsc.tripura.gov.in/online-recruitment-application-ora",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly90cHNjLnRyaXB1cmEuZ292LmluL25vdGlmaWNhdGlvbnM",
-      "type": "job",
-      "title": "Notifications",
-      "source": "TPSC",
-      "category": "State PSC",
-      "state": "Tripura",
-      "link": "https://tpsc.tripura.gov.in/notifications",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

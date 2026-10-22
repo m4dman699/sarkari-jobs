@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 5,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 4,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbU5LZnFYbW9TVW5rckZlL3dVVVBQZA",
@@ -16,22 +16,9 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vIw",
-      "type": "job",
-      "title": "{{'Recruitment_HM' | translate }}",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/#",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
       "type": "job",
-      "title": "{{'OnlineNotifications_HM' | translate }}",
+      "title": "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
       "source": "UPPSC",
       "category": "State PSC",
       "state": "Uttar Pradesh",

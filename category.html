@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Category Jobs — SarkariJobs+</title>
   <meta name="description" content="Government job notifications by category — UPSC, SSC, Banking, Railways and more.">
+  <link rel="canonical" href="https://sarkarijobsplus.com/category.html">
+  <script src="js/analytics-config.js"></script>
+  <script src="js/analytics.js" defer></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -49,7 +52,7 @@
 
   <footer>
     <div class="foot-bottom container">
-      © 2026 SarkariJobs+ · Verify every notice on the relevant official government website before applying.
+      © <span data-current-year></span> SarkariJobs+ · Verify every notice on the relevant official government website before applying.
     </div>
     <div class="foot-strip"></div>
   </footer>
@@ -71,7 +74,7 @@
         return;
       }
 
-      document.title = `${cat.name} Government Jobs 2026 — Notifications & Deadlines | SarkariJobs+`;
+      document.title = `${cat.name} Government Jobs ${new Date().getFullYear()} — Notifications & Deadlines | SarkariJobs+`;
       document.getElementById('cat-title').textContent = `${cat.icon} ${cat.name} Jobs`;
       document.getElementById('cat-desc').textContent = cat.desc + ' — notifications with dates when supplied and source links.';
 

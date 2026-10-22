@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 7,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 6,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5YS5nb3YuaW4vc3RhZ2VzX29mX3JlY3J1aXRtZW50Lmh0bWw",
@@ -23,19 +23,6 @@
       "category": "State PSC",
       "state": "Meghalaya",
       "link": "https://mpsc.meghalaya.gov.in/advertisements.html",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5YS5nb3YuaW4vdW5kZWZpbmVk",
-      "type": "job",
-      "title": "Notifications",
-      "source": "MPSC Meghalaya",
-      "category": "State PSC",
-      "state": "Meghalaya",
-      "link": "https://mpsc.meghalaya.gov.in/undefined",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -83,7 +70,7 @@
     {
       "id": "aHR0cHM6Ly9tcHNjLm1lZ2hhbGF5YS5nb3YuaW4vbm90aWZ5L05vdGljZTE5TWF5MjAyNWEucGRm",
       "type": "job",
-      "title": "Notice This is for General Information of candidates that MPSC site's technical issues have been resolved, and restored. Candidates wishing to access Online Recruitment Application",
+      "title": "NOTICE This is for General Information of candidates that MPSC site's technical issues have been resolved, and restored. Candidates wishing to access Online Recruitment Application",
       "source": "MPSC Meghalaya",
       "category": "State PSC",
       "state": "Meghalaya",

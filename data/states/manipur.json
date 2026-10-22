@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 7,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 4,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTcxOTA4MC5wZGY",
-      "type": "job",
-      "title": "Notification",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26101719080.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
       "type": "job",
@@ -36,32 +23,6 @@
       "category": "State PSC",
       "state": "Manipur",
       "link": "https://mpscmanipur.gov.in/files/Reschedule_notification_US_L_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MjUxNzE3MC5wZGY",
-      "type": "job",
-      "title": "Notification",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26092517170.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-09-25",
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MjMxNzAyMC5wZGY",
-      "type": "job",
-      "title": "Notification",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26092317020.pdf",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 17,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 16,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWR2ZXJ0aXNlbWVudC1nLTIwMjUtMjAyNg",
@@ -49,19 +49,6 @@
       "category": "State PSC",
       "state": "Mizoram",
       "link": "https://mpsc.mizoram.gov.in/page/screening-notification",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2Uvbm90aWZpY2F0aW9uLWc",
-      "type": "job",
-      "title": "Notifications",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/notification-g",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

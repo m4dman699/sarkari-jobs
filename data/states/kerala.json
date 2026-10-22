@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 3,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 1,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9pbmRleC5waHAvbm90aWZpY2F0aW9ucw",
-      "type": "job",
-      "title": "Notifications",
-      "source": "Kerala PSC",
-      "category": "State PSC",
-      "state": "Kerala",
-      "link": "https://www.keralapsc.gov.in/index.php/notifications",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
     {
       "id": "aHR0cHM6Ly9wc2Mua2VyYWxhLmdvdi5pbi9zdGF0dXMv",
       "type": "job",
@@ -23,19 +10,6 @@
       "category": "State PSC",
       "state": "Kerala",
       "link": "https://psc.kerala.gov.in/status/",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cua2VyYWxhcHNjLmdvdi5pbi9wcm9mb3JtYS1yZXBvcnRpbmctdmFjYW5jaWVz",
-      "type": "job",
-      "title": "Reporting Vacancies",
-      "source": "Kerala PSC",
-      "category": "UPSC",
-      "state": "Kerala",
-      "link": "https://www.keralapsc.gov.in/proforma-reporting-vacancies",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

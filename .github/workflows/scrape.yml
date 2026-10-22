@@ -42,3 +42,43 @@ jobs:
             git commit -m 'Refresh government jobs feed'
             git push
           fi
+      - name: Check Hostinger deployment settings
+        env:
+          SFTP_HOST: ${{ secrets.HOSTINGER_SFTP_HOST }}
+          SFTP_USER: ${{ secrets.HOSTINGER_SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
+          SFTP_REMOTE_DIR: ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}
+        run: |
+          for key in SFTP_HOST SFTP_USER SFTP_PASSWORD SFTP_REMOTE_DIR; do
+            if [ -z "${!key}" ]; then echo "Missing deployment setting for $key. Add the matching HOSTINGER_* GitHub Actions secret."; exit 1; fi
+          done
+      - name: Configure Google Analytics when a Measurement ID is available
+        env:
+          GA4_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
+        run: |
+          if [ -n "$GA4_ID" ]; then
+            if [[ ! "$GA4_ID" =~ ^G-[A-Z0-9]+$ ]]; then echo 'GA4_MEASUREMENT_ID must look like G-XXXXXXXXXX.'; exit 1; fi
+            sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
+          fi
+      - name: Update sitemap page modification dates
+        run: sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
+      - name: Deploy website and refreshed feed to Hostinger
+        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
+        with:
+          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
+          username: ${{ secrets.HOSTINGER_SFTP_USER }}
+          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
+          port: 65002
+          uploads: |
+            ./index.html => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/index.html
+            ./category.html => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/category.html
+            ./state.html => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/state.html
+            ./robots.txt => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/robots.txt
+            ./sitemap.xml => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/sitemap.xml
+            ./assets/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/assets/
+            ./css/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/css/
+            ./js/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/js/
+            ./data/ => ${{ secrets.HOSTINGER_SFTP_REMOTE_DIR }}/data/
+          ignore: |
+            *.log
+          delete: 'false'

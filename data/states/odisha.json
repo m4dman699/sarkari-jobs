@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 3,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 2,
   "jobs": [
     {
       "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9TWVOR0thdTQyQjlWWDRObjZvWmZYQT09",
@@ -10,19 +10,6 @@
       "category": "State PSC",
       "state": "Odisha",
       "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=MeNGKau42B9VX4Nn6oZfXA==",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cub3BzYy5nb3YuaW4vUGFnZXMvVmlld19Db250ZW50LmFzcHg_aWQ9aVF2eThPTloxWGVDeXhGWmFZMlNmQT09",
-      "type": "job",
-      "title": "Notifications",
-      "source": "OPSC",
-      "category": "State PSC",
-      "state": "Odisha",
-      "link": "https://www.opsc.gov.in/Pages/View_Content.aspx?id=iQvy8ONZ1XeCyxFZaY2SfA==",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

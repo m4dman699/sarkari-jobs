@@ -36,7 +36,7 @@ function renderStatePage() {
   }
 
   const s = STATES[key];
-  document.title = `${s.name} Government Jobs 2026 — ${s.psc} Notifications | SarkariJobs+`;
+  document.title = `${s.name} Government Jobs ${new Date().getFullYear()} — ${s.psc} Notifications | SarkariJobs+`;
   document.getElementById('state-title').textContent = `${s.name} Government Jobs`;
   document.getElementById('state-psc').textContent = `🏛️ ${s.psc}`;
   document.getElementById('state-desc').textContent = s.desc ||

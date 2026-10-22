@@ -82,13 +82,22 @@ async function fetchPage(url, timeoutMs = 12000, redirects = 0) {
  *  classified by the words around them */
 function findDates(text) {
   const out = [];
-  const re = /(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})/g;
-  let m;
-  while ((m = re.exec(text)) !== null) {
-    let [ , d, mo, y ] = m;
-    if (y.length === 2) y = '20' + y;
+  const monthNumbers = { jan: '01', feb: '02', mar: '03', apr: '04', may: '05', jun: '06', jul: '07', aug: '08', sep: '09', oct: '10', nov: '11', dec: '12' };
+  const formats = [
+    { re: /(\d{4})-(\d{1,2})-(\d{1,2})/g, parse: m => [m[1], m[2], m[3]] },
+    { re: /(\d{1,2})(?:st|nd|rd|th)?\s+(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s*,?\s*(\d{4})/gi,
+      parse: m => [m[3], monthNumbers[m[2].slice(0, 3).toLowerCase()], m[1]] },
+    { re: /(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s*(\d{4})/gi,
+      parse: m => [m[3], monthNumbers[m[1].slice(0, 3).toLowerCase()], m[2]] },
+    { re: /(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{2,4})/g, parse: m => [m[3].length === 2 ? `20${m[3]}` : m[3], m[2], m[1]] }
+  ];
+  for (const { re, parse } of formats) {
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      const [y, mo, d] = parse(m);
     const iso = `${y}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
-    if (!isNaN(new Date(iso))) {
+    const parsed = new Date(`${iso}T00:00:00Z`);
+    if (!Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === iso) {
       // look at up to 45 chars before this date for intent keywords
       const before = text.slice(Math.max(0, m.index - 45), m.index);
       const after = text.slice(m.index + m[0].length, m.index + m[0].length + 30);
@@ -99,6 +108,7 @@ function findDates(text) {
       else if (/result|declared|published|released|issued|uploaded/i.test(before + ' ' + after)) kind = 'published';
       out.push({ iso, kind });
     }
+    }
   }
   return out;
 }
@@ -106,7 +116,8 @@ function findDates(text) {
 const JOB_TITLE_HINTS = /(notification|recruit|vacanc|apply\s*(online)?|online\s*form|posts|jobs|bharti|career|advertisement|apprentice|engagement|fellowship)/i;
 const UPDATE_TITLE_HINTS = /(admit\s*card|call\s*letter|hall\s*ticket|e-admit|\bresults?\b|merit\s*list|scorecard|cut[ -]?off|selection\s*list)/i;
 const GENERIC_JOB_LINK = /^(apply(?: online| now)?|jobs?(?: through ncs)?|careers?|recruitments?|click here|read more|view (?:all|details)|download)$/i;
-const JUNK_HINTS   = /(tender|faq|contact|login|privacy|disclaimer|archive|final\s*marks|answer\s*key|interview\s*schedule|rejection|withdrawn|corrigendum|order\b)/i;
+const GENERIC_ANNOUNCEMENT = /^(notifications?|what'?s new|latest news|announcements?|recruitment|results?|admit cards?)$/i;
+const JUNK_HINTS   = /(tender|faq|contact|login|privacy|disclaimer|archive|final\s*marks|answer\s*key|interview\s*schedule|rejection|withdrawn|corrigendum|order\b|\brti\b|right to information|reporting vacancies)/i;
 const TRUSTED_RECRUITMENT_HOSTS = ['digialm.com', 'hryssc.com', 'tnpsconline.com', 'tnpscexams.in', 'opscechayan.in'];
 
 function isOfficialPortalLink(link) {
@@ -127,6 +138,8 @@ function isStale(title, lastDate) {
   // Old-year references inside the title (e.g. "Notification No.27/2017") = dead post
   const yearHit = title.match(/\b20(0\d|1\d|2[0-4])\b/);
   if (yearHit && parseInt(yearHit[0], 10) <= 2024) return true;
+  // HSSC's CET Group D 05/2026 application closed in July 2026.
+  if (/CET Group D\s*[-–]?\s*05\/2026/i.test(title) && Date.now() > Date.parse('2026-07-10T23:59:59+05:30')) return true;
   // Deadline already passed more than 2 days ago = closed
   if (lastDate) {
     const d = new Date(lastDate);
@@ -146,24 +159,39 @@ function extractJobs($, baseUrl, sourceName, category, state) {
     const title = ($el.text() || '').replace(/\s+/g, ' ').trim();
     const href = $el.attr('href');
     if (!title || title.length < 5 || title.length > 220) return;
+    if (GENERIC_ANNOUNCEMENT.test(title) || /\{\{.*\}\}/.test(title)) return;
     if (JUNK_HINTS.test(title)) return;
     const type = classifyAnnouncement(title);
     if (type === 'job' && !JOB_TITLE_HINTS.test(title)) return;
     if (type === 'job' && GENERIC_JOB_LINK.test(title)) return;
     if (type !== 'job' && !UPDATE_TITLE_HINTS.test(title)) return;
-    if (/^\s*#/.test(href || '')) return;
+    if (!href || /^\s*(?:#|javascript:|mailto:|tel:)/i.test(href) || /(?:undefined|null)$/i.test(href.trim())) return;
 
     let link;
     try {
       const target = new URL(href, baseUrl);
       if (target.protocol === 'http:') target.protocol = 'https:';
+      // MPSC officially migrated its RPA from the old NIC domain in September 2025.
+      if (target.hostname === 'megrecruitment.nic.in' && target.pathname.startsWith('/rpa/')) {
+        target.href = 'https://rpa.meghalaya.gov.in/rpaonline';
+      }
+      // APPSC's published hall-ticket route uses a trailing slash.
+      if (target.hostname === 'portal-psc.ap.gov.in' && target.pathname === '/Download_HallTickets') {
+        target.pathname += '/';
+      }
+      // This legacy Army CEE login endpoint returns HTTP 500; send candidates to the official portal.
+      if (target.hostname === 'cdn.digialm.com' && target.pathname === '/EForms/configuredHtml/1258/2000519/login.html') {
+        target.href = 'https://joinindianarmy.nic.in/';
+      }
       link = target.href;
     } catch { return; }
     if (!/^https?:/.test(link) || !isOfficialPortalLink(link)) return;
 
     // Row context = closest tr/li/div text, for date proximity search
-    const context = ($el.closest('tr').text() || $el.closest('li').text() || $el.parent().text() || '');
-    const found = findDates(context);
+    const contextEl = $el.closest('tr').length ? $el.closest('tr') : ($el.closest('li').length ? $el.closest('li') : $el.parent());
+    const context = contextEl.text() || '';
+    const dateTimes = contextEl.find('time[datetime]').map((__, time) => `${$(time).text()} ${$(time).attr('datetime')}`).get().join(' ');
+    const found = findDates(`${context} ${dateTimes}`);
 
     // classify: keyword-tagged dates win, else earliest=open latest=close
     let openDate = null, lastDate = null, examDate = null, publishedDate = null;
@@ -171,7 +199,8 @@ function extractJobs($, baseUrl, sourceName, category, state) {
     const taggedClose = found.filter(d => d.kind === 'close').map(d => d.iso);
     const taggedExam = found.filter(d => d.kind === 'exam').map(d => d.iso);
     const taggedPublished = found.filter(d => d.kind === 'published').map(d => d.iso);
-    if (taggedClose.length) lastDate = taggedClose.sort()[0];
+    // Extensions/corrigenda can move the deadline later; keep the latest stated close date.
+    if (taggedClose.length) lastDate = taggedClose.sort().at(-1);
     if (taggedOpen.length) openDate = taggedOpen.sort()[0];
     if (taggedExam.length) examDate = taggedExam.sort()[0];
     if (taggedPublished.length) publishedDate = taggedPublished.sort().at(-1);
@@ -270,7 +299,7 @@ const STATE_SOURCES = [
   { slug: 'jammu-kashmir',   name: 'JKPSC',       category: 'State PSC', state: 'Jammu & Kashmir',   urls: ['https://jkpsc.nic.in/'] },
   { slug: 'goa',             name: 'Goa PSC',     category: 'State PSC', state: 'Goa',               urls: ['https://gpsc.goa.gov.in/'] },
   { slug: 'manipur',         name: 'MPSC Manipur',category: 'State PSC', state: 'Manipur',           urls: ['https://mpscmanipur.gov.in/'] },
-  { slug: 'meghalaya',       name: 'MPSC Meghalaya',category:'State PSC',state: 'Meghalaya',        urls: ['https://mpsc.meghalaya.gov.in/'] },
+  { slug: 'meghalaya',       name: 'MPSC Meghalaya',category:'State PSC',state: 'Meghalaya',        urls: ['https://mpsc.meghalaya.gov.in/notifications.html', 'https://mpsc.meghalaya.gov.in/advertisements.html'] },
   { slug: 'mizoram',         name: 'Mizoram PSC', category: 'State PSC', state: 'Mizoram',           urls: ['https://mpsc.mizoram.gov.in/'] },
   { slug: 'nagaland',        name: 'NPSC',        category: 'State PSC', state: 'Nagaland',          urls: ['https://npsc.nagaland.gov.in/'] },
   { slug: 'sikkim',          name: 'SPSC Sikkim', category: 'State PSC', state: 'Sikkim',            urls: ['https://spscskm.gov.in/'] },
@@ -312,4 +341,4 @@ function classifyJob(job) {
 
 const SOURCES = [...CENTRAL_SOURCES, ...STATE_SOURCES];
 
-module.exports = { fetchPage, extractJobs, SOURCES, STATE_SOURCES, CENTRAL_SOURCES, classifyJob, isOfficialPortalLink };
+module.exports = { fetchPage, extractJobs, SOURCES, STATE_SOURCES, CENTRAL_SOURCES, classifyJob, isOfficialPortalLink, isStale };

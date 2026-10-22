@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
-const { fetchPage, extractJobs, SOURCES, STATE_SOURCES, classifyJob } = require('./sources');
+const { fetchPage, extractJobs, SOURCES, STATE_SOURCES, classifyJob, isStale } = require('./sources');
 
 const OUT = path.join(__dirname, '..', 'data', 'jobs.json');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -18,6 +18,7 @@ const CONCURRENCY = 4;
 async function main() {
   const all = [];
   const errors = [];
+  const announcementsBySource = new Map();
 
   const tasks = SOURCES.flatMap(src => src.urls.map(url => ({ src, url })));
   let nextTask = 0;
@@ -30,6 +31,7 @@ async function main() {
         const $ = cheerio.load(html);
         const announcements = extractJobs($, url, src.name, src.category, src.state);
         all.push(...announcements);
+        announcementsBySource.set(src.name, (announcementsBySource.get(src.name) || 0) + announcements.length);
         console.log(`${announcements.length} links`);
       } catch (err) {
         console.log(`FAILED (${err.message})`);
@@ -61,11 +63,24 @@ async function main() {
     return;
   }
   const freshJobs = unique.some(item => !item.type || item.type === 'job');
-  if (!freshJobs && Array.isArray(previous?.jobs)) {
-    const priorJobs = previous.jobs.filter(item => !item.type || item.type === 'job');
+  if (Array.isArray(previous?.jobs)) {
+    // A portal returning no matching announcements often means its page layout changed.
+    // Keep that portal's last known records until a later scrape can replace them.
+    const uncertainSources = new Set(errors.map(error => error.source));
+    for (const source of SOURCES.map(item => item.name)) {
+      if (!announcementsBySource.get(source)) uncertainSources.add(source);
+    }
     const ids = new Set(unique.map(item => item.id));
-    unique.push(...priorJobs.filter(item => !ids.has(item.id)));
-    console.warn(`No new job links found; preserved ${priorJobs.length} jobs from the last successful job scrape.`);
+    const retained = previous.jobs.filter(item =>
+      uncertainSources.has(item.source) &&
+      item.link && !/\/undefined(?:$|[?#])|\/#(?:$|[?#])|megrecruitment\.nic\.in/i.test(item.link) &&
+      !/\{\{.*\}\}|\brti\b|right to information|reporting vacancies/i.test(item.title || '') &&
+      !/^(?:notifications?|what'?s new|latest news|announcements?|recruitment|results?|admit cards?)$/i.test(item.title || '') &&
+      !isStale(item.title || '', item.lastDate) &&
+      !ids.has(item.id)
+    );
+    unique.push(...retained);
+    if (retained.length) console.warn(`Preserved ${retained.length} prior records from sources that failed or returned no matches.`);
   }
 
   const generatedAt = new Date().toISOString();

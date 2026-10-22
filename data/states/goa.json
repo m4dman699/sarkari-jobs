@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-22T07:47:49.221Z",
-  "total": 4,
+  "generatedAt": "2026-10-22T10:35:55.683Z",
+  "total": 3,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9ncHNjLmdvYS5nb3YuaW4vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvTkVXU0NIRU1FRVhBTUlOQVRJT05fMjAyNS5wZGY",
@@ -36,19 +36,6 @@
       "category": "State PSC",
       "state": "Goa",
       "link": "https://gpsc.goa.gov.in/advertisements/",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ydGlvbmxpbmUuZ29hLmdvdi5pbi8",
-      "type": "job",
-      "title": "APPLY RTI ONILINE",
-      "source": "Goa PSC",
-      "category": "State PSC",
-      "state": "Goa",
-      "link": "https://rtionline.goa.gov.in/",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
