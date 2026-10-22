@@ -18,14 +18,14 @@ concurrency:
 jobs:
   deploy:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
       DEPLOY_SHA: ${{ github.sha }}
     steps:
       - name: Check out website
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Check Hostinger deployment settings
         env:
           SFTP_HOST: ${{ secrets.HOSTINGER_SFTP_HOST }}
@@ -78,13 +78,13 @@ jobs:
 
   deploy-detail-shard-b:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
     steps:
       - name: Check out website
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Build individual listing pages
         working-directory: scraper
         run: npm ci && npm run build:details
@@ -120,7 +120,7 @@ jobs:
 
   verify-public-deployment:
     needs: [deploy, deploy-detail-shard-b]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 3
     env:
       DEPLOY_SHA: ${{ github.sha }}
