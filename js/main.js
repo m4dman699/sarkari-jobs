@@ -231,6 +231,7 @@ function jobCardHTML(j) {
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
              href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${j.publisher ? `Details on ${escapeHTML(cleanText(j.publisher))}` : 'Open source link'} ↗</a>`
         : '<span class="link-unavailable" aria-label="Source link unavailable">Source link unavailable</span>'}
+      <a class="announcement-guide" href="job-details/${detailSlug(j)}/">View job details →</a>
     </article>`;
 }
 
@@ -239,6 +240,7 @@ function announcementCardHTML(item) {
   const isAdmitCard = item.type === 'admit-card';
   const heading = isAdmitCard ? 'Admit card / hall ticket' : 'Result / merit list';
   const link = officialURL(item.link);
+  const guidePath = item.detailPage || `job-details/${detailSlug(item)}/`;
   return `
     <article class="job-card announcement-card ${isAdmitCard ? 'admit-card' : 'result-card'}">
       <span class="tag saff">${heading}</span>
@@ -258,8 +260,20 @@ function announcementCardHTML(item) {
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
              href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${item.publisher ? `Details on ${escapeHTML(cleanText(item.publisher))}` : 'Open official link'} ↗</a>`
         : '<span class="link-unavailable">Source link unavailable</span>'}
-      ${item.detailPage ? `<a class="announcement-guide" href="${escapeHTML(item.detailPage)}">Read the full guide →</a>` : ''}
+      <a class="announcement-guide" href="${escapeHTML(guidePath)}">Read the full details →</a>
     </article>`;
+}
+
+function detailSlug(item) {
+  const title = String(item.title || 'listing').toLowerCase()
+    .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 54) || 'listing';
+  let hash = 2166136261;
+  for (const char of String(item.id || item.link || item.title)) {
+    hash ^= char.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return `${title}-${(hash >>> 0).toString(16).padStart(8, '0')}`;
 }
 
 function renderAnnouncementSections(items, generatedAt, partial = false) {

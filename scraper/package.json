@@ -5,7 +5,9 @@
   "type": "commonjs",
   "main": "scrape.js",
   "scripts": {
-    "scrape": "node scrape.js"
+    "scrape": "node scrape.js",
+    "scrape:competitors": "node scrape-competitors.js",
+    "build:details": "node build-detail-pages.js"
   },
   "dependencies": {
     "cheerio": "1.0.0"

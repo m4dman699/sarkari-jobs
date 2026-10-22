@@ -33,11 +33,17 @@ jobs:
       - name: Scrape official recruitment portals
         working-directory: scraper
         run: npm run scrape
+      - name: Fill feed gaps from competitor listing indexes
+        working-directory: scraper
+        run: npm run scrape:competitors
+      - name: Build individual listing pages
+        working-directory: scraper
+        run: npm run build:details
       - name: Publish refreshed feed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/jobs.json data/states
+          git add data/jobs.json data/states job-details sitemap.xml scraper/competitor-detail-cache.json
           if git diff --cached --quiet; then
             echo 'The scraped feed has no changes.'
           else
@@ -69,6 +75,7 @@ jobs:
           cp index.html category.html state.html robots.txt sitemap.xml .deploy-site/
           cp -R assets css js data .deploy-site/
           cp -R upsc-cds-2-2026 .deploy-site/
+          cp -R job-details .deploy-site/
           git rev-parse HEAD > .deploy-site/deployment-version.txt
       - name: Deploy website and refreshed feed to Hostinger
         timeout-minutes: 4
