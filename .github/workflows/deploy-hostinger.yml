@@ -17,7 +17,7 @@ jobs:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     env:
-      SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
+      SFTP_REMOTE_DIR: public_html
     steps:
       - name: Check out website
         uses: actions/checkout@v4
@@ -38,6 +38,8 @@ jobs:
             if [[ ! "$GA4_ID" =~ ^G-[A-Z0-9]+$ ]]; then echo 'GA4_MEASUREMENT_ID must look like G-XXXXXXXXXX.'; exit 1; fi
             sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
           fi
+      - name: Prepare deployment revision marker
+        run: echo "$GITHUB_SHA" > deployment-version.txt
       - name: Update sitemap page modification dates
         run: sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
       - name: Upload site files over SFTP
@@ -53,8 +55,20 @@ jobs:
             ./state.html => ${{ env.SFTP_REMOTE_DIR }}/state.html
             ./robots.txt => ${{ env.SFTP_REMOTE_DIR }}/robots.txt
             ./sitemap.xml => ${{ env.SFTP_REMOTE_DIR }}/sitemap.xml
+            ./deployment-version.txt => ${{ env.SFTP_REMOTE_DIR }}/deployment-version.txt
             ./assets/ => ${{ env.SFTP_REMOTE_DIR }}/assets/
             ./css/ => ${{ env.SFTP_REMOTE_DIR }}/css/
             ./js/ => ${{ env.SFTP_REMOTE_DIR }}/js/
             ./data/ => ${{ env.SFTP_REMOTE_DIR }}/data/
           delete: 'false'
+      - name: Verify public site received this commit
+        env:
+          DEPLOY_SHA: ${{ github.sha }}
+        run: |
+          for attempt in {1..12}; do
+            live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
+            if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
+            sleep 5
+          done
+          echo 'Deployment upload completed, but the public site did not serve this commit marker.'
+          exit 1
