@@ -204,6 +204,23 @@ function fmtDate(d, opts = { day: 'numeric', month: 'short', year: 'numeric' }) 
   return isNaN(dt) ? d : dt.toLocaleDateString('en-IN', opts);
 }
 
+function portalMarkHTML(item) {
+  const name = cleanText(item.organization || item.source || item.title);
+  const words = name.match(/[A-Za-z0-9]+/g) || [];
+  const initials = (words.length > 1
+    ? words.slice(0, 2).map(word => word[0]).join('')
+    : (words[0] || 'GO').slice(0, 2)).toUpperCase();
+  const officialLink = officialURL(item.publisher ? item.officialLink : item.link);
+  let favicon = '';
+  if (officialLink) {
+    try {
+      const host = new URL(officialLink).hostname;
+      favicon = `https://${host}/favicon.ico`;
+    } catch (_) {}
+  }
+  return `<span class="portal-mark" aria-hidden="true">${favicon ? `<img src="${escapeHTML(favicon)}" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">` : ''}<span class="portal-monogram">${escapeHTML(initials || 'GO')}</span></span>`;
+}
+
 // ---------- Render job cards ----------
 function jobCardHTML(j) {
   const close = j.lastDate || null;
@@ -214,7 +231,7 @@ function jobCardHTML(j) {
   const link = officialURL(j.publisher ? j.officialLink : j.link);
   return `
     <article class="job-card ${cls}">
-      <h3>${escapeHTML(cleanText(j.title))}</h3>
+      <div class="job-card-heading">${portalMarkHTML(j)}<h3>${escapeHTML(cleanText(j.title))}</h3></div>
       <div class="job-meta">
         <span class="tag saff">${escapeHTML(cleanText(j.category))}</span>
         <span class="tag">📍 ${escapeHTML(cleanText(j.state))}</span>
@@ -244,7 +261,7 @@ function announcementCardHTML(item) {
   return `
     <article class="job-card announcement-card ${isAdmitCard ? 'admit-card' : 'result-card'}">
       <span class="tag saff">${heading}</span>
-      <h3>${escapeHTML(cleanText(item.title))}</h3>
+      <div class="job-card-heading">${portalMarkHTML(item)}<h3>${escapeHTML(cleanText(item.title))}</h3></div>
       <div class="job-meta">
         <span class="tag">${escapeHTML(cleanText(item.category))}</span>
         <span class="tag">📍 ${escapeHTML(cleanText(item.state))}</span>
