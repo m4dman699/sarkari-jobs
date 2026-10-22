@@ -53,7 +53,11 @@ jobs:
           cp index.html category.html state.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
           cp -R assets css js data .deploy-site/
           cp -R upsc-cds-2-2026 .deploy-site/
-          cp -R job-details .deploy-site/
+          mkdir -p .deploy-shard-a
+          mapfile -t detail_dirs < <(find job-details -mindepth 1 -maxdepth 1 -type d | sort)
+          for index in "${!detail_dirs[@]}"; do
+            if (( index % 2 == 0 )); then cp -R "${detail_dirs[$index]}" .deploy-shard-a/; fi
+          done
       - name: Upload only public site files over SFTP
         timeout-minutes: 15
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
@@ -64,16 +68,74 @@ jobs:
           port: 65002
           uploads: |
             ./.deploy-site/ => ${{ env.SFTP_REMOTE_DIR }}/
+            ./.deploy-shard-a/ => ${{ env.SFTP_REMOTE_DIR }}/job-details/
           ignore: |
             *.log
           delete: 'false'
-      - name: Verify public deployment
-        timeout-minutes: 2
+
+  deploy-detail-shard-b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+      - name: Build individual listing pages
+        working-directory: scraper
+        run: npm ci && npm run build:details
+      - name: Stage second half of detail pages
+        run: |
+          mkdir -p .deploy-shard-b
+          mapfile -t detail_dirs < <(find job-details -mindepth 1 -maxdepth 1 -type d | sort)
+          for index in "${!detail_dirs[@]}"; do
+            if (( index % 2 == 1 )); then cp -R "${detail_dirs[$index]}" .deploy-shard-b/; fi
+          done
+      - name: Check Hostinger deployment settings
+        env:
+          SFTP_HOST: ${{ secrets.HOSTINGER_SFTP_HOST }}
+          SFTP_USER: ${{ secrets.HOSTINGER_SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
+        run: |
+          for key in SFTP_HOST SFTP_USER SFTP_PASSWORD SFTP_REMOTE_DIR; do
+            if [ -z "${!key}" ]; then echo "Missing deployment setting for $key."; exit 1; fi
+          done
+      - name: Upload second half of detail pages over SFTP
+        timeout-minutes: 15
+        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
+        with:
+          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
+          username: ${{ secrets.HOSTINGER_SFTP_USER }}
+          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
+          port: 65002
+          uploads: |
+            ./.deploy-shard-b/ => ${{ env.SFTP_REMOTE_DIR }}/job-details/
+          ignore: |
+            *.log
+          delete: 'false'
+
+  verify-public-deployment:
+    needs: [deploy, deploy-detail-shard-b]
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      DEPLOY_SHA: ${{ github.sha }}
+    steps:
+      - name: Check Hostinger revision and listing pages
         run: |
           for attempt in {1..6}; do
             live=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$DEPLOY_SHA" || true)
-            if [ "$live" = "$DEPLOY_SHA" ]; then echo "Public site is serving $DEPLOY_SHA"; exit 0; fi
+            if [ "$live" = "$DEPLOY_SHA" ]; then break; fi
             sleep 5
           done
-          echo 'Public site does not serve this commit after the SFTP upload.'
-          exit 1
+          if [ "$live" != "$DEPLOY_SHA" ]; then echo 'Public site does not serve this commit after upload.'; exit 1; fi
+          feed=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' 'https://sarkarijobsplus.com/data/jobs.json?verify='"$DEPLOY_SHA")
+          total=$(echo "$feed" | jq -r '.total')
+          if [ "$total" -lt 300 ]; then echo "Unexpected live feed size: $total"; exit 1; fi
+          for page in \
+            'job-details/ssc-10-2-chsl-2025-final-result-out-a54e5177/index.html' \
+            'job-details/ssc-mts-havaldar-final-result-2026-out-1c084548/index.html'; do
+            body=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$page?verify=$DEPLOY_SHA")
+            if ! echo "$body" | grep -q 'Original SarkariJobs+'; then echo "Missing original detail page content: $page"; exit 1; fi
+          done
+          echo "Hostinger serves $DEPLOY_SHA, $total feed records, and both new result pages."
