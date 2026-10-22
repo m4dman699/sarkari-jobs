@@ -52,9 +52,30 @@ async function main() {
 
   // Deduplicate by id (link hash), keep first; classify generic categories
   const seen = new Set();
-  const unique = all
+  let unique = all
     .map(classifyJob)
     .filter(j => !seen.has(j.id) && seen.add(j.id));
+
+  // Keep the public job feed focused on applications that are still open.
+  unique = unique.filter(item => item.type !== 'job' || !isStale(item.title, item.lastDate, item.publishedDate));
+
+  // Curated competitor links survive daily scrapes when government portals
+  // are blocked or their page layouts change.
+  const curatedPath = path.join(__dirname, 'competitor-listings.json');
+  try {
+    const curated = JSON.parse(fs.readFileSync(curatedPath, 'utf8'));
+    if (Array.isArray(curated)) {
+      const byId = new Map(unique.map(item => [item.id, item]));
+      for (const item of curated) {
+        if (item?.id && item?.link && (item.type !== 'job' || !isStale(item.title, item.lastDate, item.publishedDate))) {
+          byId.set(item.id, item);
+        }
+      }
+      unique = [...byId.values()];
+    }
+  } catch (err) {
+    if (err.code !== 'ENOENT') console.warn(`Could not read ${curatedPath}: ${err.message}`);
+  }
 
   // Sort: soonest closing first (undated sink to bottom)
   unique.sort((a, b) =>

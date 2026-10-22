@@ -218,15 +218,18 @@ function jobCardHTML(j) {
       <div class="job-meta">
         <span class="tag saff">${escapeHTML(cleanText(j.category))}</span>
         <span class="tag">📍 ${escapeHTML(cleanText(j.state))}</span>
-        <span class="tag">🔗 ${escapeHTML(cleanText(j.source))}</span>
+        ${j.publisher
+          ? `<span class="tag">🔗 From ${escapeHTML(cleanText(j.publisher))}</span><span class="tag">🏢 ${escapeHTML(cleanText(j.organization || j.source))}</span>`
+          : `<span class="tag">🔗 ${escapeHTML(cleanText(j.source))}</span>`}
       </div>
+      ${j.openDate ? `<div class="dates"><span>Applications open: <b>${escapeHTML(fmtDate(j.openDate))}</b></span></div>` : ''}
       ${close ? `<div class="dates"><span>Form closes: <b>${escapeHTML(fmtDate(close))}</b></span>${countdownBadge(close)}</div>`
         : '<div class="dates"><span>Application deadline: <b>Check official notice</b></span></div>'}
       ${j.publishedDate ? `<div class="dates"><span>Posted: <b>${escapeHTML(fmtDate(j.publishedDate))}</b></span></div>` : ''}
       ${exam ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(exam))}</b></span></div>` : ''}
       ${link
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
-             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">Open source link ↗</a>`
+             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${j.publisher ? `Details on ${escapeHTML(cleanText(j.publisher))}` : 'Open source link'} ↗</a>`
         : '<span class="link-unavailable" aria-label="Source link unavailable">Source link unavailable</span>'}
     </article>`;
 }
@@ -243,13 +246,17 @@ function announcementCardHTML(item) {
       <div class="job-meta">
         <span class="tag">${escapeHTML(cleanText(item.category))}</span>
         <span class="tag">📍 ${escapeHTML(cleanText(item.state))}</span>
-        <span class="tag">🔗 ${escapeHTML(cleanText(item.source))}</span>
+        ${item.publisher
+          ? `<span class="tag">🔗 From ${escapeHTML(cleanText(item.publisher))}</span><span class="tag">🏢 ${escapeHTML(cleanText(item.organization || item.source))}</span>`
+          : `<span class="tag">🔗 ${escapeHTML(cleanText(item.source))}</span>`}
       </div>
       ${item.publishedDate ? `<div class="dates"><span>Published: <b>${escapeHTML(fmtDate(item.publishedDate))}</b></span></div>` : ''}
+      ${item.resultDate ? `<div class="dates"><span>Result declared: <b>${escapeHTML(fmtDate(item.resultDate))}</b></span></div>` : ''}
       ${item.examDate ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(item.examDate))}</b></span></div>` : ''}
+      ${item.detail ? `<p class="announcement-detail">${escapeHTML(cleanText(item.detail))}</p>` : ''}
       ${link
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
-             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">Open official link ↗</a>`
+             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${item.publisher ? `Details on ${escapeHTML(cleanText(item.publisher))}` : 'Open official link'} ↗</a>`
         : '<span class="link-unavailable">Source link unavailable</span>'}
     </article>`;
 }
@@ -264,7 +271,7 @@ function renderAnnouncementSections(items, generatedAt, partial = false) {
     const grid = document.getElementById(section.grid);
     const status = document.getElementById(section.status);
     if (status) status.textContent = matching.length
-      ? `${matching.length} official links · ${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
+      ? `${matching.length} listings · ${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
       : section.empty;
     if (grid) grid.innerHTML = matching.length
       ? matching.slice(0, 12).map(announcementCardHTML).join('')
