@@ -16,8 +16,6 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    env:
-      SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -50,55 +48,3 @@ jobs:
             git commit -m 'Refresh government jobs feed'
             git push
           fi
-      - name: Check Hostinger deployment settings
-        env:
-          SFTP_HOST: ${{ secrets.HOSTINGER_SFTP_HOST }}
-          SFTP_USER: ${{ secrets.HOSTINGER_SFTP_USER }}
-          SFTP_PASSWORD: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
-        run: |
-          for key in SFTP_HOST SFTP_USER SFTP_PASSWORD SFTP_REMOTE_DIR; do
-            if [ -z "${!key}" ]; then echo "Missing deployment setting for $key. Add the matching HOSTINGER_* GitHub Actions secret."; exit 1; fi
-          done
-      - name: Configure Google Analytics when a Measurement ID is available
-        env:
-          GA4_ID: ${{ secrets.GA4_MEASUREMENT_ID }}
-        run: |
-          if [ -n "$GA4_ID" ]; then
-            if [[ ! "$GA4_ID" =~ ^G-[A-Z0-9]+$ ]]; then echo 'GA4_MEASUREMENT_ID must look like G-XXXXXXXXXX.'; exit 1; fi
-            sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
-          fi
-      - name: Update sitemap page modification dates
-        run: sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
-      - name: Prepare public website bundle
-        run: |
-          mkdir -p .deploy-site
-          cp index.html category.html state.html robots.txt sitemap.xml .deploy-site/
-          cp -R assets css js data .deploy-site/
-          cp -R upsc-cds-2-2026 .deploy-site/
-          cp -R job-details .deploy-site/
-          git rev-parse HEAD > .deploy-site/deployment-version.txt
-      - name: Deploy website and refreshed feed to Hostinger
-        timeout-minutes: 15
-        uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
-        with:
-          server: ${{ secrets.HOSTINGER_SFTP_HOST }}
-          username: ${{ secrets.HOSTINGER_SFTP_USER }}
-          password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
-          port: 65002
-          uploads: |
-            ./.deploy-site/ => ${{ env.SFTP_REMOTE_DIR }}/
-          ignore: |
-            *.log
-          delete: 'false'
-      - name: Verify Hostinger received the refreshed feed
-        run: |
-          expected=$(node -p "require('./data/jobs.json').generatedAt")
-          expected_sha=$(cat .deploy-site/deployment-version.txt)
-          for attempt in {1..6}; do
-            actual=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/data/jobs.json?generated=$expected" | jq -r '.generatedAt' || true)
-            live_sha=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/deployment-version.txt?sha=$expected_sha" || true)
-            if [ "$actual" = "$expected" ] && [ "$live_sha" = "$expected_sha" ]; then echo "Hostinger is serving feed generated at $expected from commit $expected_sha"; exit 0; fi
-            sleep 5
-          done
-          echo 'Hostinger did not serve the current feed and deployment marker after upload.'
-          exit 1
