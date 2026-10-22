@@ -84,7 +84,7 @@
     }
   },
   "https://sarkariresult.com.cm/hpsc-fso-2026/": {
-    "attemptedAt": "2026-10-22T13:24:01.790Z",
+    "attemptedAt": "2026-10-22T13:24:01.79Z",
     "details": {
       "publishedDate": "2026-10-21",
       "openDate": "2026-10-22",
@@ -96,7 +96,7 @@
     }
   },
   "https://sarkariresult.com.cm/rajasthan-safai-karmchari-2026/": {
-    "attemptedAt": "2026-10-22T13:24:01.800Z",
+    "attemptedAt": "2026-10-22T13:24:01.8Z",
     "details": {
       "publishedDate": "2026-10-20",
       "openDate": "2026-08-15",
@@ -145,7 +145,7 @@
     }
   },
   "https://sarkariresult.com.cm/up-anganwadi-bharti-2026/": {
-    "attemptedAt": "2026-10-22T13:24:01.900Z",
+    "attemptedAt": "2026-10-22T13:24:01.9Z",
     "details": {
       "publishedDate": "2026-10-20",
       "applicationFee": "There is no application fee for any candidate.",
@@ -203,7 +203,7 @@
     }
   },
   "https://sarkariresult.com.cm/upsssc-regional-youth-welfare-officer-2026/": {
-    "attemptedAt": "2026-10-22T13:24:01.990Z",
+    "attemptedAt": "2026-10-22T13:24:01.99Z",
     "details": {
       "publishedDate": "2026-10-15",
       "openDate": "2026-10-16",
@@ -215,7 +215,7 @@
     }
   },
   "https://sarkariresult.com.cm/dsssb-sweeper-chowkidar-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.060Z",
+    "attemptedAt": "2026-10-22T13:24:02.06Z",
     "details": {
       "publishedDate": "2026-10-20",
       "openDate": "2026-10-13",
@@ -263,7 +263,7 @@
     }
   },
   "https://sarkariresult.com.cm/cwc-assistant-manager-junior-executive-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.130Z",
+    "attemptedAt": "2026-10-22T13:24:02.13Z",
     "details": {
       "publishedDate": "2026-10-18",
       "openDate": "2026-10-17",
@@ -352,7 +352,7 @@
     }
   },
   "https://sarkariresult.com.cm/": {
-    "attemptedAt": "2026-10-22T13:24:02.310Z",
+    "attemptedAt": "2026-10-22T13:24:02.31Z",
     "details": {}
   },
   "https://sarkariresult.com.cm/privacy-policy/": {
@@ -624,253 +624,2247 @@
     }
   },
   "https://sarkariresult.com.cm/haryana-hpsc-hcs-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.871Z",
+    "attemptedAt": "2026-10-22T13:43:08.292Z",
     "details": {
-      "publishedDate": "2026-10-16",
+      "organization": "Haryana Public Service Commission (HPSC)",
+      "publishedDate": "2026-10-17",
       "vacancies": "102",
       "examDate": "2026-04-26",
       "eligibility": "HPSC Civil Services Candidates must have a Bachelor’s degree from any recognized university in India. Experience requirements, if any, should be checked in the official notification.",
       "applicationFee": "For DESM (Haryana – UR Category): ₹1000/ For DESM (Haryana – Reserved Categories): ₹250/- For DSC / OSC / BC-A / BC-B (NCL) / ESM / EWS / Women (Haryana): ₹250/- For PH : ₹ 00/- For All Other Candidates: ₹1000/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobi",
-      "officialLink": "https://hpsc.gov.in/en-us/",
-      "organization": "Haryana Public Service Commission (HPSC)"
+      "officialLink": "https://hpsc.gov.in/Portals/0/HCS_ALLOCATION_17_10_26.pdf",
+      "officialLinks": [
+        {
+          "url": "https://hpsc.gov.in/en-us/",
+          "label": "Haryana Public Service Commission (HPSC),"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/HCS_ALLOCATION_17_10_26.pdf",
+          "label": "Download Final Result Click Here"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/Rollwise_Int_Marks_HCS_08_10_2026.pdf",
+          "label": "Download Candidates Marks Click Here"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/Ann_Sch_Int_Rollwise_HCS_21_09_2026.pdf",
+          "label": "Download Interview Schedule (Roll No. Wise) Click Here"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/Ann_Sch_Int_HCS_2025_18_09_2026.pdf",
+          "label": "Check Interview Date Notice Click Here"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/Mains_Result_HCS_17_09_2026.pdf",
+          "label": "Download Mains Result Click Here"
+        },
+        {
+          "url": "https://regn.hpsc.gov.in/hcs26/site/login",
+          "label": "Download Mains Admit Card Click Here"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/Ann_Admitcard_HCS_Mains_12_06_2026.pdf",
+          "label": "Check Mains Admit Card Notice Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-17",
+          "dateText": "October 17, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-02-06",
+          "dateText": "06 February 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-02-26",
+          "dateText": "26 February 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-02-26",
+          "dateText": "26 February 2026"
+        },
+        {
+          "label": "Pre Exam Date",
+          "date": "2026-04-26",
+          "dateText": "26 April 2026"
+        },
+        {
+          "label": "Pre Admit Card",
+          "date": "2026-04-20",
+          "dateText": "20 April 2026"
+        },
+        {
+          "label": "Pre Answer Key",
+          "date": "2026-04-28",
+          "dateText": "28 April 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-05-03",
+          "dateText": "03 May 2026"
+        },
+        {
+          "label": "Revised Result",
+          "date": "2026-06-01",
+          "dateText": "01 June 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-06-29",
+          "dateText": "27 – 29 June 2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-06-22",
+          "dateText": "22 June 2026"
+        },
+        {
+          "label": "Result Declare Date",
+          "date": "2026-09-17",
+          "dateText": "17 September 2026"
+        },
+        {
+          "label": "Interview Date",
+          "date": "2026-10-08",
+          "dateText": "03 – 08 October 2026"
+        },
+        {
+          "label": "Final Result",
+          "date": "2026-10-17",
+          "dateText": "17 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-17"
     }
   },
   "https://sarkariresult.com.cm/upsc-geo-scientist-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.888Z",
+    "attemptedAt": "2026-10-22T13:43:08.317Z",
     "details": {
-      "publishedDate": "2026-10-16",
+      "organization": "Union Public Service Commission (UPSC)",
+      "publishedDate": "2026-10-17",
       "vacancies": "85",
       "examDate": "2026-02-08",
       "eligibility": "Geologist Group A (Cat-I) Passed / Appearing Master Degree Geological Science or Geology or Applied Geology or Geo-Exploration or Mineral Exploration or Engineering Geology or Marine Geology or Earth Science or Any Other Equivalent Degree",
       "applicationFee": "For General / OBC : Rs. 200/- For SC / ST Candidates : Rs. 00/- For PH / Female Candidates : Rs. 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://upsc.gov.in/",
-      "organization": "Union Public Service Commission (UPSC)"
+      "officialLink": "https://www.upsc.gov.in/sites/default/files/FR-CGeoScnstM-2026-Engl-16102026.pdf",
+      "notificationLink": "https://upsc.gov.in/sites/default/files/Notif-CGeoScnstPre-26-Engl.pdf",
+      "officialLinks": [
+        {
+          "url": "https://upsc.gov.in/",
+          "label": "Union Public Service Commission (UPSC),"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/FR-CGeoScnstM-2026-Engl-16102026.pdf",
+          "label": "Download Final Result Click Here"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/WR-NameList-CGeoSntstMain-2026-Engl-200726.pdf",
+          "label": "Download Mains Result Click Here"
+        },
+        {
+          "url": "https://upsconline.nic.in/login",
+          "label": "Download Admit Card Click Here"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/PressNoteGeolM-26-Engl-120626.pdf",
+          "label": "Check Mains Exam | Admit Card Date Notice Click Here"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/CGSPE_2026_WR_Roll_Name_Eng_02032026.pdf",
+          "label": "Download Pre Result Click Here"
+        },
+        {
+          "url": "https://upsconline.nic.in/",
+          "label": "Download Pre Admit Card Click Here"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/NoticeCGSEP-e-AdmitCard-2026-Engl-300126.pdf",
+          "label": "Check Pre Admit Card Notice Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-17",
+          "dateText": "October 17, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-09-03",
+          "dateText": "03 September 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-09-23",
+          "dateText": "23 September 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-09-23",
+          "dateText": "23 September 2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-02-08",
+          "dateText": "08 February 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-01-30",
+          "dateText": "30 January 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-03-02",
+          "dateText": "02 March 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-06-21",
+          "dateText": "20 – 21 June 2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-06-12",
+          "dateText": "12 June 2026"
+        },
+        {
+          "label": "Mains Result",
+          "date": "2026-07-20",
+          "dateText": "20 July 2026"
+        },
+        {
+          "label": "Final Result",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-16"
     }
   },
   "https://sarkariresult.com.cm/rrb-section-controller-03-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.893Z",
+    "attemptedAt": "2026-10-22T13:43:08.331Z",
     "details": {
-      "publishedDate": "2026-10-15",
+      "organization": "Railway Recruitment Board (RRB)",
+      "publishedDate": "2026-10-16",
       "vacancies": "119",
       "eligibility": "RRB Section Controller Candidates must be a Graduate in any discipline from a recognized university.",
       "applicationFee": "For General / OBC / EWS : ₹ 500/- For SC / ST / EBC : ₹ 250/- For All Category female : ₹ 250/- After Appearing in CBT-I Exam UR / OBC / EWS Fee Refund : Rs. 400/- SC / ST / PH & Female Refund : Rs. 250/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wall",
-      "officialLink": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281",
-      "organization": "Railway Recruitment Board (RRB)"
+      "officialLink": "https://rrb.digialm.com/EForms/configuredHtml/33128/102721/lM441ZzlGKrNhupJK6/login.html",
+      "notificationLink": "https://rrb.indianrailways.gov.in/-/image/1784023647659FINAL_CEN_03_2026_SECTION_CONTROLLER.pdf/examsDocuments",
+      "officialLinks": [
+        {
+          "url": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281",
+          "label": "Railway Recruitment Board (RRB),"
+        },
+        {
+          "url": "https://rrb.digialm.com/EForms/configuredHtml/33128/102721/lM441ZzlGKrNhupJK6/login.html",
+          "label": "Download Answer Key Click Here"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1792070657420English_CEN_03_2026_Section_Controller_Objection_Tracker_notice_15.10.2026.pdf/examsDocuments",
+          "label": "Check Answer Key Notice Click Here"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/landing",
+          "label": "Download Application Status Click Here"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1789552281962ENG_HINDI_NOTICE_SC_03_2026.pdf/examsDocuments",
+          "label": "Check Application Status Notice Click Here"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1789113322014Section_Controller_CBT_Tentitive_Notice_CEN_03_2026.pdf/examsDocuments",
+          "label": "Check Exam Date Notice Click Here"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/",
+          "label": "Apply Online Link Click Here"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1784023647659FINAL_CEN_03_2026_SECTION_CONTROLLER.pdf/examsDocuments",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-16",
+          "dateText": "October 16, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-07-15",
+          "dateText": "15 July 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-08-14",
+          "dateText": "14 August 2026 (23:59 PM)"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-08-16",
+          "dateText": "16 August 2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-08-26",
+          "dateText": "17 – 26 August 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-10-13",
+          "dateText": "12 – 13 October 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-10-02",
+          "dateText": "02 October 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-10-08",
+          "dateText": "08 October 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026 Available Now"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/rrb-technician-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.953Z",
+    "attemptedAt": "2026-10-22T13:43:08.388Z",
     "details": {
-      "publishedDate": "2026-10-14",
+      "organization": "Railway Recruitment Board RRB Railway",
+      "publishedDate": "2026-10-15",
       "vacancies": "6557",
       "eligibility": "Railway RRB Technician 6557 Candidates must have a BE/B.Tech, Engineering Diploma, or B.Sc. in Engineering. For Technician Gr-III (Open Line, Workshop & PUs), candidates must have passed Class 10th with an ITI certificate in the relevant trade or Class 12th with PCM subjects.",
       "applicationFee": "For General, EWS, OBC : ₹ 500/- For SC, ST, PH : ₹ 250/- For All Category Female : ₹ 250/- Correction Charge : ₹ 250/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://indianrailways.gov.in/",
-      "organization": "Railway Recruitment Board RRB Railway"
+      "officialLink": "https://rrb.digialm.com/EForms/loginAction.do?subAction=ViewLoginPage&formId=102593&orgId=33128",
+      "notificationLink": "https://www.rrbthiruvananthapuram.gov.in/assets/pdf/Detailed_CEN_02_20262.pdf",
+      "officialLinks": [
+        {
+          "url": "https://indianrailways.gov.in/",
+          "label": "Railway Recruitment Board RRB Railway,"
+        },
+        {
+          "url": "https://rrb.digialm.com/EForms/loginAction.do?subAction=ViewLoginPage&formId=102593&orgId=33128",
+          "label": "Download Answer Key Grade-I | Grade-III"
+        },
+        {
+          "url": "https://rrb.digialm.com/EForms/loginAction.do?subAction=ViewLoginPage&formId=102594&orgId=33128",
+          "label": "Download Answer Key Grade-I | Grade-III"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1792060256462Notice_on_viewing_of_obj_tracker_Tech_Grade-I_Signal.pdf/examsDocuments",
+          "label": "Check Answer Key Notice Grade-I | Grade-III"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1792060491825Notice_on_viewing_of_obj_tracker__Tech_Grade_III.pdf/examsDocuments",
+          "label": "Check Answer Key Notice Grade-I | Grade-III"
+        },
+        {
+          "url": "https://rrb.digialm.com//EForms/configuredHtml/33128/102594/meI2OsGJezsPvhZrvT/login.html",
+          "label": "Download Admit Card Click Here"
+        },
+        {
+          "url": "https://rrb.digialm.com//EForms/loginAction.do?subAction=ViewLoginPage&formId=102593&ERRORCODE=ecUWwoXOjuEPOpWN0xg5jgcUrU%2BFKxjp7KODJfEaeTRrkJtOLDX0f98mfGz1Q6n%2FGI9aihjkos4H%0Ak3c%2BOpEjeO5m%2F8b7luKnGN4xfJO%2Fpig%3D&orgId=33128",
+          "label": "Download Grade-I Exam City Details Click Here"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1790508076412Notice_regarding_city_intimation_and_help_desk_link_dated_27_09.pdf/examsDocuments",
+          "label": "Check Exam City Notice Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-15",
+          "dateText": "October 15, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-06-30",
+          "dateText": "30 June 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-07-29",
+          "dateText": "29 July 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-07-29",
+          "dateText": "29 July 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-10-09",
+          "dateText": "06 – 09 October 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-10-02",
+          "dateText": "02 October 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026 Available Now"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/rbi-officer-grade-b-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.945Z",
+    "attemptedAt": "2026-10-22T13:43:08.404Z",
     "details": {
-      "publishedDate": "2026-10-14",
+      "organization": "Reserve Bank of India (RBI)",
+      "publishedDate": "2026-10-15",
       "vacancies": "60",
       "examDate": "2026-06-13",
       "eligibility": "Grade ‘B’ (DR) – General Cadre Candidates must have either a Bachelor’s Degree in any stream with a minimum of 60% marks (relaxation to 50% marks for SC/ST/PH candidates), OR a Master’s Degree in any subject with at least 55% marks (for SC/ST/PH candidates, only pass marks are required).",
       "applicationFee": "For General, OBC, EWS : ₹ 850/- For SC / ST, PH : ₹ 100/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "organization": "Reserve Bank of India (RBI)"
+      "officialLink": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RollNumbers15102026.pdf",
+      "notificationLink": "https://rbidocs.rbi.org.in/rdocs/Content/PDFs/DEPR29042026BE94DEA85E3C4753A82B191EB6A795ED.PDF",
+      "officialLinks": [
+        {
+          "url": "https://www.rbi.org.in/",
+          "label": "Reserve Bank of India (RBI)"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RollNumbers15102026.pdf",
+          "label": "Download General Final Result Click Here"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/Content/PDFs/RESULT15102026FFE91770379D5466D905BD808E7B4AED7.PDF",
+          "label": "Check Final Result Notice Click Here"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/02DISPLAYROLL25082026.pdf",
+          "label": "Download Phase-II Result (DEPR) Click Here"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/DISPLAYPRT22082026.pdf",
+          "label": "Download Phase-II Result (General) Click Here"
+        },
+        {
+          "url": "https://opportunities.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=5113",
+          "label": "Download Phase-II Admit Card Click Here"
+        },
+        {
+          "url": "https://www.rbi.org.in/scripts/Result_Officers_Grade_B_General_DR_PY_2026.aspx",
+          "label": "Download Marks Click Here"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/WEBROLL30062026.pdf",
+          "label": "Download DEPR Result Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-15",
+          "dateText": "October 15, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-04-29",
+          "dateText": "29 April 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-05-20",
+          "dateText": "20 May 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-05-20",
+          "dateText": "20 May 2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-05-26",
+          "dateText": "25 – 26 May 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-07-15",
+          "dateText": "15 July 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-08-25",
+          "dateText": "25 August 2026 Updated"
+        }
+      ],
+      "resultDate": "2026-08-25"
     }
   },
   "https://sarkariresult.com.cm/sbi-po-2026/": {
-    "attemptedAt": "2026-10-22T13:24:02.958Z",
+    "attemptedAt": "2026-10-22T13:43:08.42Z",
     "details": {
-      "publishedDate": "2026-10-14",
+      "organization": "State Bank of India (SBI)",
+      "publishedDate": "2026-10-15",
       "vacancies": "1500",
       "examDate": "2026-08-02",
       "eligibility": "SBI Probationary Officer PO Candidates must have passed or be appearing in the final year of a Bachelor’s Degree in any stream from a recognized university in India.",
       "applicationFee": "For General, OBC, EWS : ₹ 750/- For SC / ST, PH : ₹ 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "organization": "State Bank of India (SBI)"
+      "officialLink": "https://ibpsreg.ibps.in/sbipojun26/oecla_aug26/login.php?appid=9ffa4307ae3a0ea80932c577bade9718",
+      "officialLinks": [
+        {
+          "url": "https://sbi.co.in/",
+          "label": "State Bank of India (SBI),"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/sbipojun26/oecla_aug26/login.php?appid=9ffa4307ae3a0ea80932c577bade9718",
+          "label": "Download Mains Admit Card Click Here"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/sbipojun26/oecla_jul26/login.php?appid=37197c13b10b90a86bb3b522106262c9",
+          "label": "Download Pre Admit Card Click Here"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/sbipojun26/",
+          "label": "Apply Online Link Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-15",
+          "dateText": "October 15, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-06-18",
+          "dateText": "18 June 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-07-08",
+          "dateText": "08 July 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-07-08",
+          "dateText": "08 July 2026"
+        },
+        {
+          "label": "Pre Exam Training PET",
+          "date": "2026-07-17",
+          "dateText": "17 July 2026"
+        },
+        {
+          "label": "Pre Exam Date",
+          "date": "2026-08-02",
+          "dateText": "02 August 2026"
+        },
+        {
+          "label": "Pre Admit Card",
+          "date": "2026-07-22",
+          "dateText": "22 July 2026"
+        },
+        {
+          "label": "Pre Result",
+          "date": "2026-08-28",
+          "dateText": "28 August 2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-09-02",
+          "dateText": "02 September 2026"
+        },
+        {
+          "label": "Mains Result",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026 Available Now"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/up-police-constable-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.016Z",
+    "attemptedAt": "2026-10-22T13:43:08.463Z",
     "details": {
-      "publishedDate": "2026-10-13",
+      "organization": "Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB)",
+      "publishedDate": "2026-10-14",
       "vacancies": "32,679",
       "eligibility": "UP Police Constable Candidates must have passed 12th (Intermediate) from a recognized board in India.",
       "applicationFee": "For General/ EWS/ OBC : ₹ 500/- For SC / ST: ₹ 400/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://uppbpb.gov.in/Home/Index",
-      "organization": "Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB)"
+      "officialLink": "https://uppbpb.gov.in/FilesUploaded/Notice/const%2014%20Oct%202026c0201978-124f-4557-9c66-e162a881cb82.pdf",
+      "notificationLink": "https://uppbpb.gov.in/FilesUploaded/Notice/CONSTABLE-VIGYAPTIc7be0cc8-3365-471e-9237-447c528d341a.pdf",
+      "officialLinks": [
+        {
+          "url": "https://uppbpb.gov.in/Home/Index",
+          "label": "Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB),"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/const%2014%20Oct%202026c0201978-124f-4557-9c66-e162a881cb82.pdf",
+          "label": "Check Final Result Notice Click Here"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/IMG_0001%20(2)9fee29e8-3f95-4e0f-b3d9-361939b7f366.pdf",
+          "label": "Check PET Re-Schedule Notice Click Here"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/72006142970352-f7c6-493f-8cce-53044d2db864.pdf",
+          "label": "Check PET Admit Card Notice Click Here"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/72006016e1ebae-500c-4578-98d2-0e511181b7a7.pdf",
+          "label": "Check PET Schedule Notice Click Here"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/DVPST%20DATE%20AND%20INSTRUCTION8728d36f-f7fc-479f-98b7-8d59b3466acf.pdf",
+          "label": "Check DV / PST Admit Card Notice Click Here"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/cons%20obje%2020%20Jun%202026a5c643c6-6312-43ec-b49e-67cd7dd06b10.pdf",
+          "label": "Check Answer Key Notice Click Here"
+        },
+        {
+          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/Admit_Card_Notice87f30fd6-7c68-4405-bc0a-3891a2d80533.pdf",
+          "label": "Check Admit Card Notice Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-14",
+          "dateText": "October 14, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-12-31",
+          "dateText": "31 December 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-01-30",
+          "dateText": "30 January 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-01-30",
+          "dateText": "30 January 2026"
+        },
+        {
+          "label": "Adjustment of Deposited Fee Date",
+          "date": "2026-02-02",
+          "dateText": "02 February 2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-02-03",
+          "dateText": "31 January – 03 February 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-06-10",
+          "dateText": "08, 09, 10 June 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-06-01",
+          "dateText": "01 June 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-06-04",
+          "dateText": "04 June 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-06-20",
+          "dateText": "20 June 2026"
+        },
+        {
+          "label": "Final Answer Key",
+          "date": "2026-07-31",
+          "dateText": "31 July 2026"
+        },
+        {
+          "label": "Result Declared Date",
+          "date": "2026-07-31",
+          "dateText": "31 July 2026"
+        },
+        {
+          "label": "DV / PST Date",
+          "date": "2026-08-17",
+          "dateText": "17 August 2026"
+        },
+        {
+          "label": "DV / PST Admit Card",
+          "date": "2026-08-10",
+          "dateText": "10 August 2026"
+        },
+        {
+          "label": "PET Date",
+          "date": "2026-10-08",
+          "dateText": "08 October 2026"
+        },
+        {
+          "label": "PET Admit Card",
+          "date": "2026-09-24",
+          "dateText": "24 September 2026"
+        },
+        {
+          "label": "Final Result",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-14"
     }
   },
   "https://sarkariresult.com.cm/upsc-nda-2-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.028Z",
+    "attemptedAt": "2026-10-22T13:43:08.495Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Union Public Service Commission UPSC",
+      "publishedDate": "2026-10-13",
       "vacancies": "394",
       "examDate": "2026-09-13",
       "eligibility": "For Army Wing: Must have passed or be appearing in 10+2 (any stream) from a recognized board in India. For Air Force & Naval Wing: Must have passed or be appearing in 10+2 with Physics, Chemistry and Mathematics as subjects. For more details read the official notification before applying.",
       "applicationFee": "General, OBC : ₹ 100/- SC / ST / All Female : ₹ 0/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://upsc.gov.in/whats-new",
-      "organization": "Union Public Service Commission UPSC"
+      "officialLink": "https://www.upsc.gov.in/sites/default/files/WR-NDA-NA-II-2026-Engl-13102026.pdf",
+      "notificationLink": "https://upsc.gov.in/sites/default/files/Notif-NDA-II-2026-Engl-200526.pdf",
+      "officialLinks": [
+        {
+          "url": "https://upsc.gov.in/whats-new",
+          "label": "Union Public Service Commission UPSC,"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/WR-NDA-NA-II-2026-Engl-13102026.pdf",
+          "label": "Download (Name Wise) Result Click Here"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/WR-RollList-Engl-NDA-II-2026-091026.pdf",
+          "label": "Download Result Click Here"
+        },
+        {
+          "url": "https://www.upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Provisional%20Answer%20Key",
+          "label": "Download Answer Key Click Here"
+        },
+        {
+          "url": "https://upsconline.nic.in/candidate/realms/candidate-portal/protocol/openid-connect/auth?client_id=account&redirect_uri=https%3A%2F%2Fupsconline.nic.in%2Fcandidate%2Frealms%2Fcandidate-portal%2Faccount%2Flogin-redirect&state=0%2F85987e89-6c14-5a82-c08f-814bd8bfd002&response_type=code&scope=openid",
+          "label": "Download Admit Card Click Here"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/TimeTable-NDA-%20NA-Exam-II-2026-Engl-120826.pdf",
+          "label": "Check Exam Schedule Notice Click Here"
+        },
+        {
+          "url": "https://upsconline.nic.in/",
+          "label": "Apply Online Link Click Here"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/Notif-NDA-II-2026-Engl-200526.pdf",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-05-20",
+          "dateText": "20 May 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-06-11",
+          "dateText": "11 June 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-06-11",
+          "dateText": "11 June 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-09-13",
+          "dateText": "13 September 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-09-03",
+          "dateText": "03 September 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-09-16",
+          "dateText": "16 September 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-09",
+          "dateText": "09 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-09"
     }
   },
   "https://sarkariresult.com.cm/ssb-hc-ministerial-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.022Z",
+    "attemptedAt": "2026-10-22T13:43:08.474Z",
     "details": {
-      "publishedDate": "2026-10-13",
+      "organization": "Sashastra Seema Bal (SSB)",
+      "publishedDate": "2026-10-14",
       "vacancies": "115",
       "examDate": "2026-01-28",
       "eligibility": "SSB HC (Ministerial) Candidates must have passed 12th (Intermediate) from a recognized board and should possess typing proficiency with a minimum speed of 35 words per minute in English or 30 words per minute in Hindi.",
       "applicationFee": "For General, EWS, OBC : ₹ 100/- For SC, ST, ESM : ₹ 00/- For All Female : ₹ 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://ssb.gov.in/",
-      "organization": "Sashastra Seema Bal (SSB)"
+      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/1258/101413/login.html",
+      "officialLinks": [
+        {
+          "url": "https://ssb.gov.in/",
+          "label": "Sashastra Seema Bal (SSB),"
+        },
+        {
+          "url": "https://cdn.digialm.com//EForms/configuredHtml/1258/101413/login.html",
+          "label": "Download Result Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-14",
+          "dateText": "October 14, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2021-07-24",
+          "dateText": "24 July 2021"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2021-08-22",
+          "dateText": "22 August 2021"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2021-08-22",
+          "dateText": "22 August 2021"
+        },
+        {
+          "label": "PET/PST Exam Date",
+          "date": "2026-01-28",
+          "dateText": "28 January 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-01-13",
+          "dateText": "13 January 2026"
+        },
+        {
+          "label": "PET / PST Date",
+          "date": "2026-02-09",
+          "dateText": "09 February 2026 (Remaining Candidates)"
+        },
+        {
+          "label": "PET / PST Admit Card",
+          "date": "2026-02-04",
+          "dateText": "04 February 2026"
+        },
+        {
+          "label": "Written Exam Date",
+          "date": "2026-07-07",
+          "dateText": "07 July 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-07-03",
+          "dateText": "03 July 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-07-09",
+          "dateText": "09 July 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-14"
     }
   },
   "https://sarkariresult.com.cm/rpsc-2nd-grade-teacher-2025/": {
-    "attemptedAt": "2026-10-22T13:24:03.082Z",
+    "attemptedAt": "2026-10-22T13:43:08.533Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Rajasthan Public Service Commission (RPSC)",
+      "publishedDate": "2026-10-13",
       "eligibility": "Subject ",
       "applicationFee": "For General, Other State : ₹ 600/- For SC / ST, OBC / BC : ₹ 400/- For Correction Charge : ₹ 500/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://rpsc.rajasthan.gov.in/news",
-      "organization": "Rajasthan Public Service Commission (RPSC)"
+      "officialLink": "https://rpsc.rajasthan.gov.in/results",
+      "notificationLink": "https://rpsc.rajasthan.gov.in/Static/RecruitmentAdvertisements/ED4F69C3BFA14F9BBACDC0077554C90D.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rpsc.rajasthan.gov.in/news",
+          "label": "Rajasthan Public Service Commission (RPSC),"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/results",
+          "label": "Download Result Click Here"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/answerkeys",
+          "label": "Download Model Answer Key Click Here"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/BF32802E-05EF-483B-A100-054EC5622C63.pdf",
+          "label": "Check Vacancy Increased Notice Click Here"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/quespapers",
+          "label": "Check Question Paper Click Here"
+        },
+        {
+          "url": "https://sso.rajasthan.gov.in/",
+          "label": "Download Admit Card Click Here"
+        },
+        {
+          "url": "https://sso.rajasthan.gov.in/signin",
+          "label": "Download Exam City Details Click Here"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/RecruitmentAdvertisements/5CBBBF65B06F46049C822F3732EF1442.pdf",
+          "label": "Check Vacancy Increased Notice Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Notification Date",
+          "date": "2025-07-17",
+          "dateText": "17 July 2025"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-08-19",
+          "dateText": "19 August 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-09-17",
+          "dateText": "17 September 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-09-17",
+          "dateText": "17 September 2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-07-18",
+          "dateText": "12 – 18 July 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-07-09",
+          "dateText": "09 July 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-07-28",
+          "dateText": "28 July 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-13"
     }
   },
   "https://sarkariresult.com.cm/india-post-gds-july-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.110Z",
+    "attemptedAt": "2026-10-22T13:43:08.574Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Department of Post, India Post",
+      "publishedDate": "2026-10-13",
       "vacancies": "23,757",
       "eligibility": "Gramin Dak Sewak GDS 2026 Candidates Must Have Passed Class 10 with Mathematics and English and must know the local language. Check the official notification for details.",
       "applicationFee": "For General / OBC : ₹ 100/- For SC / ST / PH : ₹ 0/- For All Category Female : ₹ 0/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://indiapostgdsonline.gov.in/",
-      "organization": "Department of Post, India Post"
+      "officialLink": "https://www.indiapost.gov.in/gdsonlineengagement",
+      "notificationLink": "https://indiapost.gov.in/gdsonlineengagement/pdf/Annexure-Ia.pdf",
+      "officialLinks": [
+        {
+          "url": "https://indiapostgdsonline.gov.in/",
+          "label": "Department of Post, India Post"
+        },
+        {
+          "url": "https://www.indiapost.gov.in/gdsonlineengagement",
+          "label": "Download 1st Merit List Click Here"
+        },
+        {
+          "url": "https://gdsrect.indiapost.gov.in/gdscandidate",
+          "label": "Online Correction Link Click Here"
+        },
+        {
+          "url": "https://app.indiapost.gov.in/gdscandidate",
+          "label": "Apply Online Link Click Here"
+        },
+        {
+          "url": "https://app.indiapost.gov.in/gdscandidate/registration",
+          "label": "Online Registration Form Click Here"
+        },
+        {
+          "url": "https://indiapost.gov.in/gdsonlineengagement/pdf/Annexure-Ia.pdf",
+          "label": "Check Circle Wise Notification Click Here"
+        },
+        {
+          "url": "https://www.indiapost.gov.in/gdsonlineengagement/pdf/descriptive-notification.pdf",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Form Registration Start Date",
+          "date": "2026-08-31",
+          "dateText": "31 August 2026"
+        },
+        {
+          "label": "Form Registration Last Date",
+          "date": "2026-09-19",
+          "dateText": "19 September 2026"
+        },
+        {
+          "label": "Form Submission Start Date",
+          "date": "2026-09-02",
+          "dateText": "02 September 2026"
+        },
+        {
+          "label": "Form Submission Last Date",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-09-24",
+          "dateText": "23 – 24 September 2026"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/ssc-gd-constable-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.104Z",
+    "attemptedAt": "2026-10-22T13:43:08.55Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Staff Selection Commission (SSC)",
+      "publishedDate": "2026-10-13",
       "vacancies": "25,487",
       "eligibility": "Candidates should have passed 10th class or equivalent from a recognized Board. All candidates must read the official information completely before applying.",
       "applicationFee": "For General, EWS, OBC : Rs. 100/- For SC, ST : 0/- For All Female Candidates : 0/- Correction Charge For First Time : Rs. 200/- For Second Time : Rs. 500/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://ssc.gov.in/",
-      "organization": "Staff Selection Commission (SSC)"
+      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST2_12102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "Staff Selection Commission (SSC)"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST2_12102026.pdf",
+          "label": "Download Result List-I | List-II | List-III | List-IV"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_12102026.pdf",
+          "label": "Download Cutoff Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "Download Answer Key Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_ctgd_22052026.pdf",
+          "label": "Check Exam Date Change Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/GD_26_NOTICE_19042026.pdf",
+          "label": "Download Exam Date Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/CTGD_2026_Notice_11042026.pdf",
+          "label": "Check Exam Date Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_17022026.pdf",
+          "label": "Check Exam Postponed Notice Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-12-01",
+          "dateText": "01 December 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-12-31",
+          "dateText": "31 December 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-01-01",
+          "dateText": "01 January 2026"
+        },
+        {
+          "label": "Correction Form",
+          "date": "2026-01-13",
+          "dateText": "10 – 13 January 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-05-30",
+          "dateText": "27 April – 30 May 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-04-19",
+          "dateText": "19 April 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-04-24",
+          "dateText": "24 April 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-06-15",
+          "dateText": "15 June 2026"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/dsssb-primary-teacher-prt-recruitment-2025-last-date/": {
-    "attemptedAt": "2026-10-22T13:24:03.141Z",
+    "attemptedAt": "2026-10-22T13:43:08.6Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Delhi Subordinate Services Selection Board (DSSSB)",
+      "publishedDate": "2026-10-13",
       "vacancies": "1180",
       "eligibility": "Check  Details….Candidates must have Senior Secondary (10+2) with at least 50% marks along with a 2-year Diploma in Elementary Education (D.El.Ed.), OR 10+2 with 45% marks and a 2-year D.El.Ed. as per NCTE 2002 norms, OR 10+2 with 50% marks and a 4-year B.El.Ed., OR 10+2 with 50% marks and a 2-year Diploma in Special Education, OR Graduation with a 2-year Diploma in Elementary Education. In addition, candidates must have qualified CTET (Paper I) conducted by CBSE and must have studied Hindi/Urdu",
       "applicationFee": "For General, OBC, EWS : ₹ 100/- For SC / ST, PH, Women : ₹ 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://dsssb.delhi.gov.in/home/Delhi-Subordinate-Services-Selection-Board",
-      "organization": "Delhi Subordinate Services Selection Board (DSSSB)"
+      "officialLink": "https://dsssbonline.nic.in/",
+      "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_no_05-2025_asstt_teacher_primary_1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://dsssb.delhi.gov.in/home/Delhi-Subordinate-Services-Selection-Board",
+          "label": "Delhi Subordinate Services Selection Board (DSSSB),"
+        },
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Download Result Click Here"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/universal-tab/382.pdf",
+          "label": "Download Cutoff Marks Click Here"
+        },
+        {
+          "url": "https://cdn.digialm.com//EForms/configuredHtml/1258/97829/login.html",
+          "label": "Download Admit Card Click Here"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_no_05-2025_asstt_teacher_primary_1.pdf",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-09-17",
+          "dateText": "17 September 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-10-16",
+          "dateText": "16 October 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-10-16",
+          "dateText": "16 October 2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-04-10",
+          "dateText": "16-23 Feb, 26 & 31 March and 03, 10 April 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-02-13",
+          "dateText": "13 February 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-13"
     }
   },
   "https://sarkariresult.com.cm/upessc-principal-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.167Z",
+    "attemptedAt": "2026-10-22T13:43:08.621Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Uttar Pradesh Education Service Selection Commission UPESSC",
+      "publishedDate": "2026-10-13",
       "vacancies": "111",
       "examDate": "2026-09-24",
       "eligibility": "UPESSC Principal 111 Candidates must have a Ph.D. Degree with 15 years experience. Check the official notification for full details.",
       "applicationFee": "For General, EWS, OBC : ₹ 3000/- For SC, ST, PH : ₹ 3000/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://upessc.up.gov.in/",
-      "organization": "Uttar Pradesh Education Service Selection Commission UPESSC"
+      "officialLink": "https://www.upessc.up.gov.in/Notice/2d4f-d0f9-41e1-41ea-24d2.pdf",
+      "notificationLink": "https://upessc.up.gov.in/Notice/3e23-9b4f-4145-8397-89fe.pdf",
+      "officialLinks": [
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Uttar Pradesh Education Service Selection Commission UPESSC,"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/2d4f-d0f9-41e1-41ea-24d2.pdf",
+          "label": "Download Result Click Here"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/3903-d5fc-41cf-eb33-6d2d.pdf",
+          "label": "Check Result Notice Click Here"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/6d11-84f1-45db-c3a5-6f3c.pdf",
+          "label": "Check Answer Key Notice Click Here"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/1a3a-9dad-47aa-e942-3da5.pdf",
+          "label": "Check Admit Card Notice Click Here"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/3e23-9b4f-4145-8397-89fe.pdf",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-07-21",
+          "dateText": "21 July 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-08-20",
+          "dateText": "20 August 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-08-20",
+          "dateText": "20 August 2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-09-24",
+          "dateText": "24 September 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-09-14",
+          "dateText": "14 September 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-09-26",
+          "dateText": "26 September 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-12",
+          "dateText": "12 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-12"
     }
   },
   "https://sarkariresult.com.cm/upsssc-cane-supervisor-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.189Z",
+    "attemptedAt": "2026-10-22T13:43:08.648Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+      "publishedDate": "2026-10-13",
       "openDate": "2026-07-07",
       "vacancies": "1182",
       "eligibility": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the Eligibility Result on its official website for the recruitment of Cane Supervisor posts. This recruitment is for 1182 posts. The UPSSSC application form has started on 07 July 2026, and candidates can apply until 28 July 2026. The minimum age required is 21 years, while the maximum age limit is 40 years as on 01 July 2026. Candidates are advised to check the complete details for the UPSSSC Cane Supervisor Recruitme",
       "applicationFee": "For General, OBC, EWS : ₹ 25/- For SC / ST : ₹ 25/- For PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://upsssc.gov.in/",
-      "organization": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)"
+      "officialLink": "https://upsssc.gov.in/Online_App/Results.aspx?ID=167&Result_Type=P&Exam_Code=5&Advt_Code=575&Dept_Code=610&Post_Code=1&OnlyIntview=No",
+      "notificationLink": "https://upsssc.gov.in//ViewPdf.aspx?G/yeFT+5YAm8RlpyrTdvA4RFSeQvuw+5fq0YpRjOkSQ=",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)"
+        },
+        {
+          "url": "https://upsssc.gov.in/Online_App/Results.aspx?ID=167&Result_Type=P&Exam_Code=5&Advt_Code=575&Dept_Code=610&Post_Code=1&OnlyIntview=No",
+          "label": "Download Eligibility Result Click Here"
+        },
+        {
+          "url": "https://upsssc.gov.in/ViewPdf.aspx?uwPx94r7m1xpoMoRdZu/bTPJQBwGIsy0OzbpkXyai0c=",
+          "label": "Check Eligibility Result Notice Click Here"
+        },
+        {
+          "url": "https://upsssc.gov.in//AllNotifications.aspx",
+          "label": "Apply Online Click Here"
+        },
+        {
+          "url": "https://upsssc.gov.in//ViewPdf.aspx?G/yeFT+5YAm8RlpyrTdvA4RFSeQvuw+5fq0YpRjOkSQ=",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-07-07",
+          "dateText": "07 July 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-07-28",
+          "dateText": "28 July 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-07-28",
+          "dateText": "28 July 2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-08-04",
+          "dateText": "04 August 2026"
+        },
+        {
+          "label": "Eligibility Result",
+          "date": "2026-10-12",
+          "dateText": "12 October 2026 Available Now"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/upsssc-moharir-2022/": {
-    "attemptedAt": "2026-10-22T13:24:03.203Z",
+    "attemptedAt": "2026-10-22T13:43:08.666Z",
     "details": {
-      "publishedDate": "2026-10-12",
+      "organization": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)",
+      "publishedDate": "2026-10-13",
       "openDate": "2022-10-29",
       "vacancies": "92",
       "eligibility": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the Eligibility Result on its official website for the recruitment of Moharir posts. This recruitment is for 92 posts. The UPSSSC application form has started on 29 October 2022, and candidates can apply until 18 November 2022. The minimum age required is 18 years, while the maximum age limit is 40 years as on 01 July 2022. Candidates are advised to check the complete details for the UPSSSC Moharir Recruitment 2022 pro",
       "applicationFee": "For General, OBC, EWS : ₹ 25/- For SC / ST : ₹ 25/- For PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://upsssc.gov.in/",
-      "organization": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)"
+      "officialLink": "https://upsssc.gov.in/Online_App/Results.aspx?ID=168&Result_Type=P&Exam_Code=5&Advt_Code=544&Dept_Code=512&Post_Code=1&OnlyIntview=No",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Uttar Pradesh Subordinate Services Selection Commission (UPSSSC)"
+        },
+        {
+          "url": "https://upsssc.gov.in/Online_App/Results.aspx?ID=168&Result_Type=P&Exam_Code=5&Advt_Code=544&Dept_Code=512&Post_Code=1&OnlyIntview=No",
+          "label": "Download Eligibility Result Click Here"
+        },
+        {
+          "url": "https://upsssc.gov.in/ViewPdf.aspx?uwPx94r7m1wVUV3eFxhsGcTHoxSxGV9WjTrXuseBVT8=",
+          "label": "Check Eligibility Result Notice Click Here"
+        },
+        {
+          "url": "https://upsssc.gov.in//AllNotifications.aspx",
+          "label": "Apply Online Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-13",
+          "dateText": "October 13, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2022-10-29",
+          "dateText": "29 October 2022"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2022-11-18",
+          "dateText": "18 November 2022"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2022-11-18",
+          "dateText": "18 November 2022"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2022-11-25",
+          "dateText": "25 November 2022"
+        },
+        {
+          "label": "Eligibility Result",
+          "date": "2026-10-12",
+          "dateText": "12 October 2026 Available Now"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/aiims-norcet-11th-nursing-officer-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.229Z",
+    "attemptedAt": "2026-10-22T13:43:08.69Z",
     "details": {
-      "publishedDate": "2026-10-09",
+      "organization": "All India Institute of Medical Sciences (AIIMS), New Delhi",
+      "publishedDate": "2026-10-10",
       "vacancies": "2218",
       "examDate": "2026-09-12",
       "eligibility": "Nursing Officer AIIMS Candidates must have B.Sc. Nursing or a Diploma in General Nursing & Midwifery with 2 years of experience in a 50-bed hospital and registration with the State/Nursing Council. Check the official notification for full details.",
       "applicationFee": "For General, OBC : ₹ 3000/- For SC / ST, EWS : ₹ 2400/– For PwD : ₹ 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "organization": "All India Institute of Medical Sciences (AIIMS), New Delhi"
+      "officialLink": "https://aiimsexams.ac.in/result/6a6350f7e5a81c4267f4ff04",
+      "notificationLink": "https://rrpdocuments.aiimsexams.ac.in/1784895678667-599501489.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVRUVRLXWMSLVSAP7%2F20260724%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260724T131521Z&X-Amz-Expires=18000&X-Amz-Signature=0c0d4b3cb7b3a3c7df331bf9c5c405143e5179d24744492fac5dd06dd6a1c2d1&X-Amz-SignedHeaders=host&response-content-type=application%2Fpdf",
+      "officialLinks": [
+        {
+          "url": "https://aiimsexams.ac.in/result/6a6350f7e5a81c4267f4ff04",
+          "label": "Download Stage-II Result"
+        },
+        {
+          "url": "https://www.aiimsexams.ac.in/",
+          "label": "All India Institute of Medical Sciences (AIIMS), New Delhi,"
+        },
+        {
+          "url": "https://aiimsexams.ac.in/advertisement/6a6350f7e5a81c4267f4ff04",
+          "label": "Download Stage-II Admit Card Click Here"
+        },
+        {
+          "url": "https://www.aiimsexams.ac.in/advertisement/6a6350f7e5a81c4267f4ff04",
+          "label": "Apply Online Link Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-10",
+          "dateText": "October 10, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-07-24",
+          "dateText": "24 July 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-08-13",
+          "dateText": "13 August 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-08-13",
+          "dateText": "13 August 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-09-03",
+          "dateText": "03 September 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-09-09",
+          "dateText": "09 September 2026"
+        },
+        {
+          "label": "Result Declared Date",
+          "date": "2026-09-18",
+          "dateText": "18 September 2026"
+        }
+      ],
+      "resultDate": "2026-09-18"
     }
   },
   "https://sarkariresult.com.cm/bihar-police-csbc-constable-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.255Z",
+    "attemptedAt": "2026-10-22T13:43:08.724Z",
     "details": {
-      "publishedDate": "2026-10-08",
+      "organization": "Central Selection Board of Constable (CSBC)",
+      "publishedDate": "2026-10-09",
       "vacancies": "83",
       "examDate": "2026-06-24",
       "eligibility": "Bihar Police CSBC Constable 83 Posts Candidates must have a 10+2 Intermediate from any recognized university in India. For more details, please read the official notification.",
       "applicationFee": "For All Category Candidates : ₹ 100/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://csbc.bihar.gov.in/",
-      "organization": "Central Selection Board of Constable (CSBC)"
+      "officialLink": "https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf",
+      "notificationLink": "https://csbc.bihar.gov.in/Advt/Advt-01-2026-Special%20Branch%20Constable.pdf",
+      "officialLinks": [
+        {
+          "url": "https://csbc.bihar.gov.in/",
+          "label": "Central Selection Board of Constable (CSBC),"
+        },
+        {
+          "url": "https://csbc.bihar.gov.in/Advt/Results-01-2026-Final-09-10-2026.pdf",
+          "label": "Download Final Result Click Here"
+        },
+        {
+          "url": "https://csbc.bihar.gov.in/Advt/Notice-01-2026-PST%20&%20DV-29-08-2026.pdf",
+          "label": "Check DV / PST Admit Card Notice Click Here"
+        },
+        {
+          "url": "https://csbc.bihar.gov.in/Advt/Results-01-2026-PST-18-08-2026.pdf",
+          "label": "Download Result Click Here"
+        },
+        {
+          "url": "https://csbc.bihar.gov.in/Advt/Notice-01-2026-e-AdmitCard&Exam-20-05-2026.pdf",
+          "label": "Check Exam / Admit Card Date Notice Click Here"
+        },
+        {
+          "url": "https://csbc.bihar.gov.in/Advt/Advt-01-2026-Special%20Branch%20Constable.pdf",
+          "label": "Check Official Notification Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-09",
+          "dateText": "October 9, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-02-06",
+          "dateText": "06 February 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-03-05",
+          "dateText": "05 March 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-03-05",
+          "dateText": "05 March 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-06-24",
+          "dateText": "24 June 2026"
+        },
+        {
+          "label": "Exam City",
+          "date": "2026-06-11",
+          "dateText": "11 June 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-06-18",
+          "dateText": "18 June 2026"
+        },
+        {
+          "label": "Result Declared Date",
+          "date": "2026-08-18",
+          "dateText": "18 August 2026"
+        },
+        {
+          "label": "PST/ DV Exam Date",
+          "date": "2026-09-12",
+          "dateText": "12 September 2026"
+        },
+        {
+          "label": "PST/ DV Admit Card",
+          "date": "2026-09-05",
+          "dateText": "05 September 2026"
+        },
+        {
+          "label": "Final Result",
+          "date": "2026-10-09",
+          "dateText": "09 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-09"
     }
   },
   "https://sarkariresult.com.cm/ssc-selection-phase-14-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.263Z",
+    "attemptedAt": "2026-10-22T13:43:08.732Z",
     "details": {
-      "publishedDate": "2026-10-08",
+      "organization": "Staff Selection Commission (SSC)",
+      "publishedDate": "2026-10-09",
       "vacancies": "3003",
       "eligibility": "Various Selection Post Phase-13 (XIII) 3003 Posts Matric Level : Candidates Must Have Passed Class 10th (High School) Exam from Recognized Board. Intermediate Level : Candidates Must Have Passed Class 12th (Intermediate) Exam from Recognized Board. Graduate Level : Candidates Having Bachelor Degree in any Stream from Recognized University in India.",
       "applicationFee": "For General/ OBC/ EWS : ₹ 100/- For SC/ ST/ Female : ₹ 0/- For PH Candidates : ₹ 0/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://ssc.gov.in/",
-      "organization": "Staff Selection Commission (SSC)"
+      "officialLink": "https://ssc.gov.in/login",
+      "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "Staff Selection Commission (SSC)"
+        },
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "Download Answer Key Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_rhq.pdf",
+          "label": "Check Answer Key Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_for_selectionpost_08092026.pdf",
+          "label": "Check Exam City Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/important_notice_21082026.pdf",
+          "label": "Check Exam Date Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/candidate-portal/one-time-registration/home-page",
+          "label": "Apply Online Link Registration | Login"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_RHQ_2026_phase_xiv.pdf",
+          "label": "Download Official Notification Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/rhq-selection-post/rhq-post-details",
+          "label": "Region / Post Wise Vacancy Details Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-09",
+          "dateText": "October 9, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-04-13",
+          "dateText": "13 April 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-05-04",
+          "dateText": "04 May 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-05-05",
+          "dateText": "05 May 2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-05-13",
+          "dateText": "11 – 13 May 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-09-26",
+          "dateText": "16 – 26 September 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-09-08",
+          "dateText": "08 September 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-09-14",
+          "dateText": "14 September 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-10-09",
+          "dateText": "09 October 2026 Available Now"
+        }
+      ]
     }
   },
   "https://sarkariresult.com.cm/ongc-geologists-and-engineers-e1-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.287Z",
+    "attemptedAt": "2026-10-22T13:43:08.754Z",
     "details": {
-      "publishedDate": "2026-10-07",
+      "organization": "Oil and Natural Gas Corporation (ONGC)",
+      "publishedDate": "2026-10-08",
       "vacancies": "52",
       "examDate": "2026-09-06",
       "eligibility": "Petroleum Engineering Candidates must have a Bachelor’s degree in Petroleum Engineering or Applied Petroleum Engineering with a minimum of 60% marks from a recognized university or institution.",
       "applicationFee": "For General, OBC, EWS : ₹ 1000/- For SC, ST, PWD : ₹ 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "organization": "Oil and Natural Gas Corporation (ONGC)"
+      "officialLink": "https://www.ongcindia.com/web/eng/news-update?assetEntry=86767062&assetClassPK=86767057",
+      "notificationLink": "https://www.ongcindia.com/web/eng/news-update?assetEntry=84777603&assetClassPK=84777498",
+      "officialLinks": [
+        {
+          "url": "https://ongcindia.com/",
+          "label": "Oil and Natural Gas Corporation (ONGC)"
+        },
+        {
+          "url": "https://www.ongcindia.com/web/eng/news-update?assetEntry=86767062&assetClassPK=86767057",
+          "label": "Download Result Click Here"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ongcjul26/intcla_oct26/login.php?appid=9fbc48c03d568af85a09030c6808b493",
+          "label": "Download Interview Letter Click Here"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ongcjul26/oecla_aug26/login.php?appid=745cec56006c5633e94bac152fe2ac80",
+          "label": "Download Admit Card Click Here"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ongcjul26/",
+          "label": "Apply Online Link Click Here"
+        },
+        {
+          "url": "https://www.ongcindia.com/web/eng/detail?assetEntry=84777603&assetClassPK=84777498",
+          "label": "Download Certificate Format Click Here"
+        },
+        {
+          "url": "https://www.ongcindia.com/web/eng/news-update?assetEntry=84777603&assetClassPK=84777498",
+          "label": "Check Official Notification Click Here"
+        },
+        {
+          "url": "https://ongcindia.com/web/eng",
+          "label": "ONGC Official Website Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-08",
+          "dateText": "October 8, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-07-17",
+          "dateText": "17 July 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-07-31",
+          "dateText": "31 July 2026"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2026-07-31",
+          "dateText": "31 July 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-09-06",
+          "dateText": "06 September 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-08",
+          "dateText": "08 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-08"
     }
   },
   "https://sarkariresult.com.cm/ssc-stenographer-c-d-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.321Z",
+    "attemptedAt": "2026-10-22T13:43:08.8Z",
     "details": {
-      "publishedDate": "2026-10-06",
+      "organization": "Staff Selection Commission (SSC)",
+      "publishedDate": "2026-10-07",
       "vacancies": "1590",
       "eligibility": "Stenographer Grade C 230 Candidates who have passed the 10+2 (Intermediate) examination from any recognized board in India are eligible to apply. As part of the selection process, transcription is required with a time limit of 40 minutes for English and 55 minutes for Hindi.",
       "applicationFee": "For General/ OBC/ EWS : ₹ 100/- For SC/ ST/ Female : ₹ 0/- For PH Candidates : ₹ 0/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://ssc.gov.in/",
-      "organization": "Staff Selection Commission (SSC)"
+      "officialLink": "https://ssc.gov.in/login",
+      "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_steno_2025.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "Staff Selection Commission (SSC),"
+        },
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "Download Marks Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Final_Marks_Writeup_07102026.pdf",
+          "label": "Check Marks Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/STENO_RESULT_25082026.pdf",
+          "label": "Download Final Result Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Final_Result_Write_up_25082026.pdf",
+          "label": "Check Cutoff Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/roll_31072026.pdf",
+          "label": "Download Revised FRTA Result Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_31072026.pdf",
+          "label": "Download Revised FRTA Cutoff Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/ROLL.pdf",
+          "label": "Download FRTA Result Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-07",
+          "dateText": "October 7, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-06-05",
+          "dateText": "05 June 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-06-26",
+          "dateText": "26 June 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-06-26",
+          "dateText": "26 June 2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2025-08-08",
+          "dateText": "06-08 August 2025"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2025-07-31",
+          "dateText": "31 July 2025"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2025-08-04",
+          "dateText": "04 August 2025"
+        },
+        {
+          "label": "Result Date",
+          "date": "2025-11-28",
+          "dateText": "28 November 2025"
+        },
+        {
+          "label": "Skill Test Date",
+          "date": "2026-01-29",
+          "dateText": "28, 29 January 2026"
+        },
+        {
+          "label": "Skill Test Exam City Details",
+          "date": "2026-01-20",
+          "dateText": "20 January 2026"
+        },
+        {
+          "label": "Final Result",
+          "date": "2026-08-25",
+          "dateText": "25 August 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-08-25"
     }
   },
   "https://sarkariresult.com.cm/uppsc-lt-grade-assistant-teacher-2026/": {
-    "attemptedAt": "2026-10-22T13:24:03.346Z",
+    "attemptedAt": "2026-10-22T13:43:08.811Z",
     "details": {
-      "publishedDate": "2026-10-06",
+      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
+      "publishedDate": "2026-10-07",
       "vacancies": "7466",
       "examDate": "2025-12-06",
       "eligibility": "Assistant Teacher (Male-Female) Hindi Candidates must have a graduation degree with Hindi as a subject and must have studied Sanskrit at the intermediate level or passed the Uttar Madhyama exam from UP Sanskrit Shiksha Parishad. They must also have a B.Ed. degree from an institute recognized by NCTE in India.",
       "applicationFee": "For General / EWS/ OBC : ₹ 125/- SC/ ST Candidates : ₹ 65/- EX-Service Candidates : ₹ 65/- PH Candidates: ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://uppsc.up.nic.in/",
-      "organization": "Uttar Pradesh Public Service Commission (UPPSC)"
+      "officialLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmbO3OUZentgl8x4Q85hp/w",
+      "notificationLink": "https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=743&flag=H&FID=891",
+      "officialLinks": [
+        {
+          "url": "https://uppsc.up.nic.in/",
+          "label": "Uttar Pradesh Public Service Commission (UPPSC)"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmbO3OUZentgl8x4Q85hp/w",
+          "label": "Download Mains Result Sanskrit"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkgOS6AWCvRlaQU/XuVjHTM",
+          "label": "Download Mains Result Commerce | Agriculture / Horticulture"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnkXpw1EK07zC",
+          "label": "Download Mains Result Commerce | Agriculture / Horticulture"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/CandidatePages/AdmitCard/AdmitCard_New.aspx?/8bFzGHgwwTFMai3JQ+K3Bs0O6859Z9AS8bETbXQJjhNiKVH/IJoMSChX5fc6nRwZEYvGPZM/Ea1Yc5hVcTDZjyzLb54Rq2kqdU+1V1eRmrD2MukCUkiGnm3C+pa1KN9SsARAvElRPPHMWb1AQ/pfA==",
+          "label": "Download Mains Admit Card Click Here"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den5mpgVQnK5yB",
+          "label": "Check Computer Science Admit Card Notice Click Here"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBaglAQaJlk9zBXvikcfA3fKqC",
+          "label": "Check Music Mains Admit Card Notice Click Here"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=#no-back",
+          "label": "Apply Online (Computer Mains) Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-07",
+          "dateText": "October 7, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-07-28",
+          "dateText": "28 July 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-08-28",
+          "dateText": "28 August 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-08-28",
+          "dateText": "28 August 2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2025-12-06",
+          "dateText": "06 December 2025 – 25 January 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2025-11-26",
+          "dateText": "26 November 2025"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-01-28",
+          "dateText": "28 January 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-02-05",
+          "dateText": "05 February 2026"
+        },
+        {
+          "label": "Computer Exam Date",
+          "date": "2026-04-05",
+          "dateText": "05 April 2026"
+        },
+        {
+          "label": "Computer Admit Card",
+          "date": "2026-03-26",
+          "dateText": "26 March 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-04-02",
+          "dateText": "02 April 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-04-17",
+          "dateText": "17 April 2026"
+        },
+        {
+          "label": "Mains Exam Date (Comm. / Sanskrit)",
+          "date": "2026-04-23",
+          "dateText": "23 April 2026"
+        },
+        {
+          "label": "Mains Exam Date Sociology, Physical Education, Music, Hindi",
+          "date": "2026-07-11",
+          "dateText": "11 July 2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-07-07",
+          "dateText": "07 July 2026"
+        },
+        {
+          "label": "Mains Exam Date (Math, Home Science, Agri/ Horti, Science)",
+          "date": "2026-05-18",
+          "dateText": "16, 17, 18 May 2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-05-12",
+          "dateText": "12 May 2026"
+        },
+        {
+          "label": "Bio / Urdu / Art Mains Exam Date",
+          "date": "2026-06-13",
+          "dateText": "13 June 2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-06-06",
+          "dateText": "06 June 2026"
+        },
+        {
+          "label": "Computer Mains Form Start Date",
+          "date": "2026-06-23",
+          "dateText": "23 June 2026"
+        },
+        {
+          "label": "Computer Mains Form Last Date",
+          "date": "2026-07-07",
+          "dateText": "07 July 2026"
+        },
+        {
+          "label": "Computer Mains Exam Date",
+          "date": "2026-08-16",
+          "dateText": "16 August 2026"
+        },
+        {
+          "label": "Computer Mains Admit Card",
+          "date": "2026-08-11",
+          "dateText": "11 August 2026"
+        }
+      ],
+      "resultDate": "2026-02-05"
+    }
+  },
+  "https://sarkariresult.com.cm/ssc-chsl-2026/": {
+    "attemptedAt": "2026-10-22T13:43:08.82Z",
+    "details": {
+      "organization": "Staff Selection Commission (SSC)",
+      "publishedDate": "2026-10-07",
+      "vacancies": "3522",
+      "examDate": "2026-04-10",
+      "eligibility": "LDC & PA/ SA Candidates must have passed the 12th class (also known as Intermediate) examination from any recognized board in India to be eligible for the post.",
+      "applicationFee": "For General/ OBC/ EWS : ₹ 100/- For SC/ ST/ Female : ₹ 0/- For PH Candidates : ₹ 0/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
+      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/List_07102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "Staff Selection Commission (SSC)"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/List_07102026.pdf",
+          "label": "Download Final Result Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/writeup_final_chsl_2025_07102026.pdf",
+          "label": "Download Final Cutoff Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/ROLL_17082026.pdf",
+          "label": "Download FRTA Result Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/FRTA_CHSLE_2025_17082026.pdf",
+          "label": "Check Cutoff Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "Online Option Form Link Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_22062026.pdf",
+          "label": "Check Date Extend Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/option_preference_form_19062026.pdf",
+          "label": "Download Sample Option Form Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-07",
+          "dateText": "October 7, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-06-23",
+          "dateText": "23 June 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-07-18",
+          "dateText": "18 July 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-07-19",
+          "dateText": "19 July 2025"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2025-07-26",
+          "dateText": "25-26 July 2025"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2025-11-09",
+          "dateText": "09 November 2025"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2025-12-08",
+          "dateText": "08 December 2025"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-02-27",
+          "dateText": "27 February 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-04-20",
+          "dateText": "20 April 2026"
+        }
+      ],
+      "resultDate": "2026-02-27"
+    }
+  },
+  "https://sarkariresult.com.cm/ssc-mts-havaldar-2026/": {
+    "attemptedAt": "2026-10-22T13:43:08.876Z",
+    "details": {
+      "organization": "Staff Selection Commission (SSC)",
+      "publishedDate": "2026-10-07",
+      "vacancies": "7948",
+      "eligibility": "Multi Tasking Staff MTS 6810 Candidates Must Have Passed Class 10 from any recognized board.",
+      "applicationFee": "For General/ OBC/ EWS : ₹ 100/- For SC/ ST/ Female : ₹ 0/- For PH Candidates : ₹ 0/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
+      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/result_07102026.pdf",
+      "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "Staff Selection Commission (SSC),"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/result_07102026.pdf",
+          "label": "Download Final Result Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_07102026.pdf",
+          "label": "Check Final Result Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_20082026.pdf",
+          "label": "Check PET / PST Exam Date Notice Click Here"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/List1_03082026.pdf",
+          "label": "Download Result List-I | List-II | List-III"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/List2_03082026.pdf",
+          "label": "Download Result List-I | List-II | List-III"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/List3_03082026.pdf",
+          "label": "Download Result List-I | List-II | List-III"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_mts_03082026.pdf",
+          "label": "Check Cutoff Click Here"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-07",
+          "dateText": "October 7, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2025-06-26",
+          "dateText": "26 June 2025"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2025-07-24",
+          "dateText": "24 July 2025"
+        },
+        {
+          "label": "Last Date For Fee Payment",
+          "date": "2025-07-25",
+          "dateText": "25 July 2025"
+        },
+        {
+          "label": "Online Correction",
+          "date": "2025-07-31",
+          "dateText": "29-31 July 2025"
+        },
+        {
+          "label": "New Correction Date",
+          "date": "2025-08-06",
+          "dateText": "04 – 06 August 2025"
+        },
+        {
+          "label": "Exam Start Date",
+          "date": "2026-02-04",
+          "dateText": "04 February 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-01-30",
+          "dateText": "30 January 2026"
+        },
+        {
+          "label": "Admit Card",
+          "date": "2026-02-02",
+          "dateText": "02 February 2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-03-03",
+          "dateText": "03 March 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-08-03",
+          "dateText": "03 August 2026"
+        },
+        {
+          "label": "PET / PST Exam Date",
+          "date": "2026-08-31",
+          "dateText": "24 – 31 August 2026"
+        },
+        {
+          "label": "Final Result",
+          "date": "2026-10-07",
+          "dateText": "07 October 2026 Available Now"
+        }
+      ],
+      "resultDate": "2026-10-07"
     }
   }
 }

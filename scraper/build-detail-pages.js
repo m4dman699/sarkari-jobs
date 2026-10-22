@@ -38,21 +38,20 @@ function listingType(item) {
 }
 
 function summaryFor(item, kind) {
-  if (item.publisher) {
-    const organization = item.organization || item.title;
-    if (item.type === 'job') {
-      const facts = [
-        item.vacancies ? `${item.vacancies} vacancies are listed` : '',
-        item.openDate ? `applications opened ${date(item.openDate)}` : '',
-        item.lastDate ? `the listed deadline is ${date(item.lastDate)}` : ''
-      ].filter(Boolean).join('; ');
-      return `${escapeHTML(organization)} recruitment: ${escapeHTML(facts || 'see the official recruitment notice for current dates and vacancy details')}.`;
-    }
-    return `${escapeHTML(item.title)} is listed for ${escapeHTML(organization)}. Use the official link below to confirm the current update and instructions.`;
+  const organization = escapeHTML(item.organization || 'the recruiting authority');
+  if (item.type === 'job') {
+    const facts = [
+      item.vacancies ? `${escapeHTML(item.vacancies)} vacancies are listed` : '',
+      item.openDate ? `applications opened ${date(item.openDate)}` : '',
+      item.lastDate ? `the listed deadline is ${date(item.lastDate)}` : ''
+    ].filter(Boolean).join('; ');
+    return `${organization} recruitment${facts ? `: ${facts}` : ''}. Check the authority notice for the complete post-wise requirements and application instructions.`;
   }
-  return item.detail
-    ? escapeHTML(item.detail)
-    : `The source record does not include a detailed description. Check the recruiting authority's official notice for complete eligibility and selection information.`;
+  if (item.type === 'admit-card') {
+    return `${escapeHTML(item.title)} is an examination update from ${organization}. Confirm the exam schedule and candidate instructions on the authority portal before downloading.`;
+  }
+  const updateDate = item.resultDate || item.publishedDate;
+  return `${escapeHTML(item.title)} is a result or examination update from ${organization}${updateDate ? `, listed ${date(updateDate)}` : ''}. Use the authority link to confirm the latest notice and access the result or answer key.`;
 }
 
 function applicationStatus(item) {
@@ -89,13 +88,26 @@ for (const item of payload.jobs || []) {
   const typeDateRows = item.type === 'admit-card'
     ? row('Admit card listed', date(item.publishedDate))
     : item.type === 'result'
-      ? row('Update published', date(item.publishedDate))
+      ? `${row('Update published', date(item.publishedDate))}${item.resultDate ? row('Result date', date(item.resultDate)) : ''}`
       : [row('Applications open', date(item.openDate)), row('Application deadline', date(item.lastDate))].join('\n');
+  const milestones = (item.milestones || []).filter(entry => entry?.label && entry?.dateText)
+    .map(entry => row(entry.label, escapeHTML(entry.dateText))).join('\n');
+  const trustedLinks = Array.isArray(item.officialLinks) ? item.officialLinks : [];
   const officialLink = item.officialLink || (item.publisher ? '' : item.link);
-  const links = [
-    officialLink ? `<a class="button" href="${escapeHTML(officialLink)}" rel="noopener noreferrer" target="_blank">Open official recruitment link ↗</a>` : '',
-    item.notificationLink ? `<a class="button secondary" href="${escapeHTML(item.notificationLink)}" rel="noopener noreferrer" target="_blank">Official notification ↗</a>` : '',
-  ].filter(Boolean).join('\n');
+  if (officialLink && !trustedLinks.some(entry => entry.url === officialLink)) {
+    trustedLinks.unshift({ url: officialLink, label: 'Official recruitment portal' });
+  }
+  if (item.notificationLink && !trustedLinks.some(entry => entry.url === item.notificationLink)) {
+    trustedLinks.push({ url: item.notificationLink, label: 'Official notification' });
+  }
+  const links = trustedLinks.slice(0, 5).map((entry, index) => {
+    if (!/^https:\/\//i.test(entry.url || '')) return '';
+    const generic = /^(click here|here|official recruitment portal)$/i.test(entry.label || '');
+    const label = generic
+      ? (index === 0 && item.type === 'result' ? 'Official result / update portal' : index === 0 && item.type === 'admit-card' ? 'Official admit-card portal' : index === 0 ? 'Official recruitment portal' : 'Official notice or update')
+      : `Official ${entry.label}`;
+    return `<a class="button${index ? ' secondary' : ''}" href="${escapeHTML(entry.url)}" rel="noopener noreferrer" target="_blank">${escapeHTML(label)} ↗</a>`;
+  }).filter(Boolean).join('\n');
   const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,11 +119,12 @@ for (const item of payload.jobs || []) {
 <p><strong>Recruiting organization:</strong> ${escapeHTML(item.organization || item.source || 'See source notice')}<br><strong>Location:</strong> ${escapeHTML(item.state || 'See notice')}</p>
 ${verifiedSummary}<h2>Key details</h2><table class="facts"><tbody>
 ${row('Listing type', escapeHTML(kind))}${row('Published / listed', date(item.publishedDate))}${typeDateRows}
-${extraRows}${applicationStatus(item) ? row('Closing status', applicationStatus(item)) : ''}
-${row('Source attribution', escapeHTML(item.publisher ? `${item.publisher} listing; facts summarized by SarkariJobs+` : item.source || 'Not stated'))}</tbody></table>
+${extraRows}${milestones}${applicationStatus(item) ? row('Closing status', applicationStatus(item)) : ''}
+${row('Fact source', escapeHTML(item.factSource || item.publisher || item.source || 'Not stated'))}${item.factCheckedAt ? row('Source checked', date(item.factCheckedAt)) : ''}
+${row('Page wording and layout', 'Original SarkariJobs+ summary')}</tbody></table>
 <div class="buttons">${links || '<span class="notice">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>'}</div>
-<p class="notice">This page is an original summary of public listing facts. Confirm dates, eligibility, vacancies, fees, and application instructions in the recruiting authority’s latest notice before acting. Details not stated by the source are left blank rather than inferred.</p>
-<p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority.</p>
+<p class="notice">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
+<p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+. Source facts remain attributed and are not represented as exclusive or licensed from the source site.</p>
 <a class="back" href="../../">← Back to SarkariJobs+</a></article></main></body></html>`;
   fs.writeFileSync(path.join(directory, 'index.html'), html);
   urls.push(`<url><loc>${canonical}</loc>${item.publishedDate ? `<lastmod>${escapeHTML(item.publishedDate)}</lastmod>` : ''}</url>`);
