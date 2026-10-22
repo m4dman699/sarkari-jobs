@@ -44,6 +44,11 @@ jobs:
         run: |
           echo "$DEPLOY_SHA" > deployment-version.txt
           sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
+      - name: Stage public website files
+        run: |
+          mkdir -p .deploy-site
+          cp index.html category.html state.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
+          cp -R assets css js data .deploy-site/
       - name: Upload only public site files over SFTP
         timeout-minutes: 4
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
@@ -53,16 +58,7 @@ jobs:
           password: ${{ secrets.HOSTINGER_SFTP_PASSWORD }}
           port: 65002
           uploads: |
-            ./index.html => ${{ env.SFTP_REMOTE_DIR }}/index.html
-            ./category.html => ${{ env.SFTP_REMOTE_DIR }}/category.html
-            ./state.html => ${{ env.SFTP_REMOTE_DIR }}/state.html
-            ./robots.txt => ${{ env.SFTP_REMOTE_DIR }}/robots.txt
-            ./sitemap.xml => ${{ env.SFTP_REMOTE_DIR }}/sitemap.xml
-            ./deployment-version.txt => ${{ env.SFTP_REMOTE_DIR }}/deployment-version.txt
-            ./assets/ => ${{ env.SFTP_REMOTE_DIR }}/assets/
-            ./css/ => ${{ env.SFTP_REMOTE_DIR }}/css/
-            ./js/ => ${{ env.SFTP_REMOTE_DIR }}/js/
-            ./data/ => ${{ env.SFTP_REMOTE_DIR }}/data/
+            ./.deploy-site/ => ${{ env.SFTP_REMOTE_DIR }}/
           ignore: |
             *.log
           delete: 'false'
