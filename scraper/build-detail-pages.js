@@ -37,6 +37,24 @@ function listingType(item) {
   return 'Job notification';
 }
 
+function summaryFor(item, kind) {
+  if (item.publisher) {
+    const organization = item.organization || item.title;
+    if (item.type === 'job') {
+      const facts = [
+        item.vacancies ? `${item.vacancies} vacancies are listed` : '',
+        item.openDate ? `applications opened ${date(item.openDate)}` : '',
+        item.lastDate ? `the listed deadline is ${date(item.lastDate)}` : ''
+      ].filter(Boolean).join('; ');
+      return `${escapeHTML(organization)} recruitment: ${escapeHTML(facts || 'see the official recruitment notice for current dates and vacancy details')}.`;
+    }
+    return `${escapeHTML(item.title)} is listed for ${escapeHTML(organization)}. Use the official link below to confirm the current update and instructions.`;
+  }
+  return item.detail
+    ? escapeHTML(item.detail)
+    : `The source record does not include a detailed description. Check the recruiting authority's official notice for complete eligibility and selection information.`;
+}
+
 function applicationStatus(item) {
   if (item.type !== 'job' || !item.lastDate) return null;
   const close = new Date(`${item.lastDate}T23:59:59Z`);
@@ -59,14 +77,12 @@ for (const item of payload.jobs || []) {
   fs.mkdirSync(directory, { recursive: true });
   const title = escapeHTML(item.title);
   const kind = listingType(item);
-  const verifiedSummary = item.detail
-    ? `<p class="summary">${escapeHTML(item.detail)}</p>`
-    : '<p class="summary">The source record does not include a detailed description. Check the linked notice or recruiting authority for complete eligibility and selection information.</p>';
+  const verifiedSummary = `<p class="summary">${summaryFor(item, kind)}</p>`;
   const extraRows = [
     item.vacancies ? row('Vacancies', escapeHTML(item.vacancies)) : '',
     item.ageLimit ? row('Age limit', escapeHTML(item.ageLimit)) : '',
     item.eligibility ? row('Eligibility', escapeHTML(item.eligibility)) : '',
-    item.applicationFee ? row('Application fee', escapeHTML(item.applicationFee)) : '',
+    item.applicationFee ? row('Application fee', escapeHTML(item.applicationFee.split(/payment mode/i)[0].trim())) : '',
     item.examDate ? row('Exam date', date(item.examDate)) : '',
     item.resultDate ? row('Result date', date(item.resultDate)) : ''
   ].filter(Boolean).join('\n');
@@ -76,11 +92,9 @@ for (const item of payload.jobs || []) {
       ? row('Update published', date(item.publishedDate))
       : [row('Applications open', date(item.openDate)), row('Application deadline', date(item.lastDate))].join('\n');
   const officialLink = item.officialLink || (item.publisher ? '' : item.link);
-  const sourceLink = item.publisher ? item.link : item.discoveredVia || '';
   const links = [
     officialLink ? `<a class="button" href="${escapeHTML(officialLink)}" rel="noopener noreferrer" target="_blank">Open official recruitment link ↗</a>` : '',
     item.notificationLink ? `<a class="button secondary" href="${escapeHTML(item.notificationLink)}" rel="noopener noreferrer" target="_blank">Official notification ↗</a>` : '',
-    sourceLink ? `<a class="button secondary" href="${escapeHTML(sourceLink)}" rel="noopener noreferrer" target="_blank">View source listing ↗</a>` : ''
   ].filter(Boolean).join('\n');
   const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
   const html = `<!doctype html>
@@ -94,9 +108,9 @@ for (const item of payload.jobs || []) {
 ${verifiedSummary}<h2>Key details</h2><table class="facts"><tbody>
 ${row('Listing type', escapeHTML(kind))}${row('Published / listed', date(item.publishedDate))}${typeDateRows}
 ${extraRows}${applicationStatus(item) ? row('Closing status', applicationStatus(item)) : ''}
-${row('Source', escapeHTML(item.publisher || item.source || 'Not stated'))}</tbody></table>
+${row('Source attribution', escapeHTML(item.publisher ? `${item.publisher} listing; facts summarized by SarkariJobs+` : item.source || 'Not stated'))}</tbody></table>
 <div class="buttons">${links || '<span class="notice">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>'}</div>
-<p class="notice">Dates and summaries are reproduced from the linked listing/feed record. Confirm dates, eligibility, vacancies, fees, and application instructions in the recruiting authority’s latest notice before acting. Details not stated by the source are left blank rather than inferred.</p>
+<p class="notice">This page is an original summary of public listing facts. Confirm dates, eligibility, vacancies, fees, and application instructions in the recruiting authority’s latest notice before acting. Details not stated by the source are left blank rather than inferred.</p>
 <p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority.</p>
 <a class="back" href="../../">← Back to SarkariJobs+</a></article></main></body></html>`;
   fs.writeFileSync(path.join(directory, 'index.html'), html);

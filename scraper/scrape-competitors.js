@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const cheerio = require('cheerio');
 
 const ROOT = path.join(__dirname, '..');
@@ -33,6 +34,7 @@ async function enrichListing(item) {
   const body = plain($('main').text() || $('article').text() || $('body').text());
   const intro = $('h1').first().nextAll('p').filter((_, node) => plain($(node).text()).length > 70).first();
   const summary = plain(intro.text()).slice(0, 420);
+  const orgMatch = summary.match(/^(.{2,110}?)(?:,?\s+has released|,?\s+invites|,?\s+has invited|,?\s+has published|,?\s+has announced|,?\s+is recruiting)/i);
   const dateMatch = body.match(/Post\s*Date\s*:\s*([A-Za-z]+\s+\d{1,2},?\s+20\d{2})/i);
   const publishedDate = dateMatch ? new Date(dateMatch[1]).toISOString().slice(0, 10) : null;
   const openMatch = body.match(/application form has started on\s+(\d{1,2}\s+[A-Za-z]+\s+20\d{2})/i);
@@ -63,7 +65,7 @@ async function enrichListing(item) {
   const preferred = official.find(link => /apply|application|official website|notification|advertisement/i.test(link.label)) || official[0];
   const notification = official.find(link => /notification|advertisement/i.test(link.label));
   return {
-    ...(summary ? { detail: summary } : {}),
+    ...(orgMatch ? { organization: orgMatch[1].replace(/[,:;\s]+$/, '') } : {}),
     ...(publishedDate ? { publishedDate } : {}),
     ...(openDate ? { openDate } : {}),
     ...(ageMatch ? { ageLimit: `${ageMatch[1]}–${ageMatch[2]} years` } : {}),
@@ -88,6 +90,13 @@ async function fetchHTML(url) {
 async function main() {
   const payload = JSON.parse(fs.readFileSync(FEED, 'utf8'));
   const cache = fs.existsSync(DETAIL_CACHE) ? JSON.parse(fs.readFileSync(DETAIL_CACHE, 'utf8')) : {};
+  for (const entry of Object.values(cache)) {
+    if (entry?.details?.detail) {
+      const match = entry.details.detail.match(/^(.{2,110}?)(?:,?\s+has released|,?\s+invites|,?\s+has invited|,?\s+has published|,?\s+has announced|,?\s+is recruiting)/i);
+      if (match && !entry.details.organization) entry.details.organization = match[1].replace(/[,:;\s]+$/, '');
+      delete entry.details.detail;
+    }
+  }
   const byId = new Map((payload.jobs || []).map(item => [item.id, item]));
   const byTitle = new Map((payload.jobs || []).map(item => [normalizeTitle(item.title), item]));
   let imported = 0;
@@ -112,13 +121,20 @@ async function main() {
       const unique = candidates.filter(item => !seen.has(item.link) && seen.add(item.link)).slice(0, section.max);
       for (const item of unique) {
         if (section.type === 'result' && /\bCDS\b/i.test(item.title)) continue;
-        const id = `competitor-sarkariresult-${Buffer.from(item.link).toString('base64url').slice(-48)}`;
+        const id = `competitor-sarkariresult-${crypto.createHash('sha256').update(item.link).digest('hex').slice(0, 16)}`;
         const existing = byId.get(id) || byTitle.get(normalizeTitle(item.title));
         if (existing) {
-          if (item.lastDate && !existing.lastDate) existing.lastDate = item.lastDate;
+          if (item.lastDate) existing.lastDate = item.lastDate;
           if (!existing.discoveredVia) existing.discoveredVia = section.url;
           if (existing.publisher !== 'SarkariResult.com.cm') continue;
-          Object.assign(existing, cache[item.link]?.details || {});
+          existing.sourceListingUrl ||= item.link;
+          const cachedDetails = cache[item.link]?.details || {};
+          if (!existing.organization && cachedDetails.detail) {
+            const match = cachedDetails.detail.match(/^(.{2,110}?)(?:,?\s+has released|,?\s+invites|,?\s+has invited|,?\s+has published|,?\s+has announced|,?\s+is recruiting)/i);
+            if (match) existing.organization = match[1].replace(/[,:;\s]+$/, '');
+          }
+          Object.assign(existing, cachedDetails);
+          delete existing.detail;
           existing.link = item.link;
           continue;
         }
@@ -130,10 +146,19 @@ async function main() {
           publisher: 'SarkariResult.com.cm',
           category: section.type === 'job' ? 'Government jobs' : section.type === 'admit-card' ? 'Admit cards' : 'Results',
           state: 'See linked notice',
-          link: item.link,
+          link: null,
+          sourceListingUrl: item.link,
           ...(item.lastDate ? { lastDate: item.lastDate } : {}),
           discoveredVia: section.url
         };
+        const cachedDetails = cache[item.link]?.details || {};
+        Object.assign(listing, cachedDetails);
+        if (cachedDetails.detail && !listing.organization) {
+          const match = cachedDetails.detail.match(/^(.{2,110}?)(?:,?\s+has released|,?\s+invites|,?\s+has invited|,?\s+has published|,?\s+has announced|,?\s+is recruiting)/i);
+          if (match) listing.organization = match[1].replace(/[,:;\s]+$/, '');
+        }
+        delete listing.detail;
+        listing.link = listing.officialLink || null;
         byId.set(id, listing);
         imported++;
       }
@@ -145,18 +170,21 @@ async function main() {
   }
 
   const candidates = [...byId.values()].filter(item =>
-    item.publisher === 'SarkariResult.com.cm' && !cache[item.link]
+    item.publisher === 'SarkariResult.com.cm' && item.sourceListingUrl && !cache[item.sourceListingUrl]
   );
   let next = 0;
   async function detailWorker() {
     while (next < candidates.length) {
       const item = candidates[next++];
       try {
-        cache[item.link] = { attemptedAt: new Date().toISOString(), details: await enrichListing(item) };
-        Object.assign(item, cache[item.link].details);
+      cache[item.sourceListingUrl] = { attemptedAt: new Date().toISOString(), details: await enrichListing({ ...item, link: item.sourceListingUrl }) };
+      Object.assign(item, cache[item.sourceListingUrl].details);
       } catch (error) {
-        cache[item.link] = { attemptedAt: new Date().toISOString(), error: error.message, details: {} };
+      cache[item.sourceListingUrl] = { attemptedAt: new Date().toISOString(), error: error.message, details: {} };
       }
+    item.link = item.officialLink || null;
+    delete item.sourceListingUrl;
+    delete item.detail;
     }
   }
   await Promise.all(Array.from({ length: 3 }, detailWorker));
@@ -165,6 +193,11 @@ async function main() {
   // Keep the competitor scrape focused on the broad feed; the existing CDS guide is a page template.
   for (const [id, item] of byId) {
     if (item.publisher === 'SarkariResult.com.cm' && /\bCDS\b/i.test(item.title || '')) byId.delete(id);
+    else if (item.publisher === 'SarkariResult.com.cm') {
+      if (!item.officialLink && item.link && !/\.gov\.in$|\.nic\.in$/i.test(new URL(item.link).hostname)) item.link = null;
+      delete item.sourceListingUrl;
+      delete item.detail;
+    }
   }
 
   if (imported || candidates.length) {

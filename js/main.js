@@ -211,7 +211,7 @@ function jobCardHTML(j) {
   const n = daysUntil(close);
   const cls = n !== null && n >= 0 && n <= 7 ? 'crit'
             : n !== null && n >= 0 && n <= 21 ? 'warn' : '';
-  const link = officialURL(j.link);
+  const link = officialURL(j.publisher ? j.officialLink : j.link);
   return `
     <article class="job-card ${cls}">
       <h3>${escapeHTML(cleanText(j.title))}</h3>
@@ -229,8 +229,8 @@ function jobCardHTML(j) {
       ${exam ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(exam))}</b></span></div>` : ''}
       ${link
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
-             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${j.publisher ? `Details on ${escapeHTML(cleanText(j.publisher))}` : 'Open source link'} ↗</a>`
-        : '<span class="link-unavailable" aria-label="Source link unavailable">Source link unavailable</span>'}
+             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">Open official recruitment link ↗</a>`
+        : '<span class="link-unavailable" aria-label="Official link unavailable">Official link not available yet</span>'}
       <a class="announcement-guide" href="job-details/${detailSlug(j)}/">View job details →</a>
     </article>`;
 }
@@ -239,7 +239,7 @@ function announcementCardHTML(item) {
   if (!item.type || item.type === 'job') return jobCardHTML(item);
   const isAdmitCard = item.type === 'admit-card';
   const heading = isAdmitCard ? 'Admit card / hall ticket' : 'Result / merit list';
-  const link = officialURL(item.link);
+  const link = officialURL(item.publisher ? item.officialLink : item.link);
   const guidePath = item.detailPage || `job-details/${detailSlug(item)}/`;
   return `
     <article class="job-card announcement-card ${isAdmitCard ? 'admit-card' : 'result-card'}">
@@ -255,11 +255,11 @@ function announcementCardHTML(item) {
       ${item.publishedDate ? `<div class="dates"><span>Published: <b>${escapeHTML(fmtDate(item.publishedDate))}</b></span></div>` : ''}
       ${item.resultDate ? `<div class="dates"><span>Result declared: <b>${escapeHTML(fmtDate(item.resultDate))}</b></span></div>` : ''}
       ${item.examDate ? `<div class="dates"><span>Exam date: <b>${escapeHTML(fmtDate(item.examDate))}</b></span></div>` : ''}
-      ${item.detail ? `<p class="announcement-detail">${escapeHTML(cleanText(item.detail))}</p>` : ''}
+      ${item.detail && !item.publisher ? `<p class="announcement-detail">${escapeHTML(cleanText(item.detail))}</p>` : ''}
       ${link
         ? `<a class="btn btn-outline" style="margin-top:10px; text-align:center; font-size:.85rem;"
-             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">${item.publisher ? `Details on ${escapeHTML(cleanText(item.publisher))}` : 'Open official link'} ↗</a>`
-        : '<span class="link-unavailable">Source link unavailable</span>'}
+             href="${escapeHTML(link)}" target="_blank" rel="noopener nofollow">Open official link ↗</a>`
+        : '<span class="link-unavailable">Official link not available yet</span>'}
       <a class="announcement-guide" href="${escapeHTML(guidePath)}">Read the full details →</a>
     </article>`;
 }
