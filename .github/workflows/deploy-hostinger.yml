@@ -16,7 +16,7 @@ jobs:
   deploy:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 20
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
       DEPLOY_SHA: ${{ github.sha }}
@@ -55,7 +55,7 @@ jobs:
           cp -R upsc-cds-2-2026 .deploy-site/
           cp -R job-details .deploy-site/
       - name: Upload only public site files over SFTP
-        timeout-minutes: 4
+        timeout-minutes: 15
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}

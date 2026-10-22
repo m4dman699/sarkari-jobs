@@ -78,7 +78,7 @@ jobs:
           cp -R job-details .deploy-site/
           git rev-parse HEAD > .deploy-site/deployment-version.txt
       - name: Deploy website and refreshed feed to Hostinger
-        timeout-minutes: 4
+        timeout-minutes: 15
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}
