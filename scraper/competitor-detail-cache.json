@@ -21031,5 +21031,357 @@
         }
       ]
     }
+  },
+  "https://www.freejobalert.com/articles/bhel-artisan-recruitment-2026-3073301": {
+    "attemptedAt": "2026-10-23T06:57:02.064Z",
+    "parser": "v2",
+    "details": {
+      "organization": "BHEL Artisan",
+      "publishedDate": "2026-10-22",
+      "openDate": "2026-10-21",
+      "lastDate": "2026-11-18",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "660",
+      "ageLimit": "Maximum 27 Years for General/EWS as of 1 October 2026; relaxations applicable",
+      "eligibility": "Class 10 + NTC/ITI + NAC in the respective trade",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026, 10:00 AM"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026, 11:45 PM"
+        },
+        {
+          "label": "Tentative Examination Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026, 10:00 AM"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026, 11:45 PM"
+        },
+        {
+          "label": "Qualification and Age Cut-off Date",
+          "date": "2026-10-01",
+          "dateText": "1 October 2026"
+        },
+        {
+          "label": "Tentative Computer Based Examination Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        }
+      ],
+      "officialLink": "https://careers.bhel.in/index.jsp",
+      "officialLinks": [
+        {
+          "url": "https://careers.bhel.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://careers.bhel.in/index.jsp",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.bhel.com",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nicl-assistant-mains-admit-card-2026-3075196": {
+    "attemptedAt": "2026-10-23T06:57:02.103Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Insurance Company Limited (NICL)",
+      "publishedDate": "2026-10-23",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-30",
+      "resultDate": null,
+      "admitCardDate": "2026-10-22",
+      "interviewDate": null,
+      "vacancies": "500",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Prelims Exam",
+          "date": "2026-08-27",
+          "dateText": "27 August 2026"
+        },
+        {
+          "label": "Mains Admit Card Release",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Mains Exam",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Phase 1: Preliminary Exam",
+          "date": "2026-08-27",
+          "dateText": "Held on 27 August 2026"
+        },
+        {
+          "label": "Phase 2: Mains Exam",
+          "date": "2026-10-30",
+          "dateText": "200 marks, online, on 30 October 2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/nicljul26/oecla_sep26/login.php?appid=1005dd3fef2776d12dc0eb1dd2d5c320",
+      "officialLinks": [
+        {
+          "url": "https://nationalinsurance.nic.co.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/nicljul26/oecla_sep26/login.php?appid=1005dd3fef2776d12dc0eb1dd2d5c320",
+          "label": "NICL Assistant Mains Admit Card 2026 Download"
+        },
+        {
+          "url": "https://nationalinsurance.nic.co.in/",
+          "label": "NICL Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/hpsc-ada-final-result-2026-3075110": {
+    "attemptedAt": "2026-10-23T06:57:02.163Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Haryana Public Service Commission (HPSC), Panchkula",
+      "publishedDate": "2026-10-22",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-10-22",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Date",
+          "date": "2026-10-22",
+          "dateText": "22/10/2026"
+        },
+        {
+          "label": "Final Result Declared",
+          "date": "2026-10-22",
+          "dateText": "22/10/2026"
+        },
+        {
+          "label": "Date on Result Notice",
+          "date": "2026-10-22",
+          "dateText": "22/10/2026"
+        }
+      ],
+      "officialLink": "https://hpsc.gov.in/Portals/0/Final_Result_ADA_22_10_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://hpsc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://hpsc.gov.in/Portals/0/Final_Result_ADA_22_10_2026.pdf",
+          "label": "HPSC ADA Final Result PDF (22/10/2026)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ssc-cgl-tier-1-admit-card-2026-3069812": {
+    "attemptedAt": "2026-10-23T06:57:02.193Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SSC CGL",
+      "publishedDate": "2026-10-23",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-30",
+      "resultDate": null,
+      "admitCardDate": "2026-10-16",
+      "interviewDate": null,
+      "vacancies": "10,731",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Latest Available Admit Cards",
+          "date": "2026-10-16",
+          "dateText": "For Exams up to 16 October 2026"
+        },
+        {
+          "label": "16 October Exam Admit Card Release",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-10-30",
+          "dateText": "30 September to 30 October 2026"
+        },
+        {
+          "label": "Admit Card Release Started",
+          "date": "2026-09-27",
+          "dateText": "27 September 2026"
+        },
+        {
+          "label": "Latest Admit Card Update",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026 for 16 October Exam"
+        },
+        {
+          "label": "Tier 1 Exam Dates",
+          "date": "2026-10-30",
+          "dateText": "30 September to 30 October 2026"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in/login",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "Official Admit Card Login"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ibps-so-score-card-2026-3075047": {
+    "attemptedAt": "2026-10-23T06:57:02.213Z",
+    "parser": "v2",
+    "details": {
+      "organization": "IBPS SO",
+      "publishedDate": "2026-10-22",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-01",
+      "resultDate": "2026-10-22",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Prelims Examination Date",
+          "date": "2026-08-29",
+          "dateText": "29 August 2026"
+        },
+        {
+          "label": "Scorecard Release Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Preliminary Exam Date",
+          "date": "2026-08-29",
+          "dateText": "29 August 2026"
+        },
+        {
+          "label": "Prelims Result Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Prelims Score Card Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "IBPS SO Preliminary Examination",
+          "date": "2026-08-29",
+          "dateText": "29 August 2026"
+        },
+        {
+          "label": "IBPS SO Prelims Result",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "IBPS SO Prelims Scorecard",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "IBPS SO Mains Examination",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Preliminary Examination",
+          "date": "2026-08-29",
+          "dateText": "29 August 2026"
+        },
+        {
+          "label": "Prelims Result",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Prelims Scorecard",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Main Examination",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/crpspxvimy26/lscda_oct26/downloadstart.php",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/crpspxvimy26/lscda_oct26/downloadstart.php",
+          "label": "Direct Scorecard Link"
+        },
+        {
+          "url": "https://www.ibps.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.ibps.in/index.php/crp-updates/",
+          "label": "IBPS SO Result and Recruitment Updates"
+        }
+      ]
+    }
   }
 }
