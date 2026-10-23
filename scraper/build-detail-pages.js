@@ -267,13 +267,23 @@ for (const item of payload.jobs || []) {
   ].filter(Boolean).join('');
   const kindId = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
   const ribbonCls = kindId === 'admit' ? ' d-ribbon--admit' : kindId === 'result' ? ' d-ribbon--result' : '';
+  // Breadcrumb structured data mirroring the visible d-crumbs navigation.
+  const breadcrumbLd = `<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sarkarijobsplus.com/' },
+      { '@type': 'ListItem', position: 2, name: `${kind} listings`, item: `https://sarkarijobsplus.com/${item.type === 'result' ? 'results' : item.type === 'admit-card' ? 'admit-cards' : 'category'}.html` },
+      { '@type': 'ListItem', position: 3, name: String(item.title || '') }
+    ]
+  }).replace(/</g, '\\u003c')}</script>`;
   const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title} listed by ${escapeHTML(names.base)}. Verify eligibility and instructions in the official recruitment notice.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(names.base)} — ${escapeHTML(kind)}: key dates and the official link."><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${faqLd}<script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d2">
+<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d2">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
