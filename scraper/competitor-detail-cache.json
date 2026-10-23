@@ -21031,5 +21031,139 @@
         }
       ]
     }
+  },
+  "https://www.freejobalert.com/articles/nicl-assistant-mains-admit-card-2026-3075196": {
+    "attemptedAt": "2026-10-23T07:11:52.608Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Insurance Company Limited (NICL)",
+      "publishedDate": "2026-10-23",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-30",
+      "resultDate": null,
+      "admitCardDate": "2026-10-22",
+      "interviewDate": null,
+      "vacancies": "500",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Prelims Exam",
+          "date": "2026-08-27",
+          "dateText": "27 August 2026"
+        },
+        {
+          "label": "Mains Admit Card Release",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Mains Exam",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Phase 1: Preliminary Exam",
+          "date": "2026-08-27",
+          "dateText": "Held on 27 August 2026"
+        },
+        {
+          "label": "Phase 2: Mains Exam",
+          "date": "2026-10-30",
+          "dateText": "200 marks, online, on 30 October 2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/nicljul26/oecla_sep26/login.php?appid=1005dd3fef2776d12dc0eb1dd2d5c320",
+      "officialLinks": [
+        {
+          "url": "https://nationalinsurance.nic.co.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/nicljul26/oecla_sep26/login.php?appid=1005dd3fef2776d12dc0eb1dd2d5c320",
+          "label": "NICL Assistant Mains Admit Card 2026 Download"
+        },
+        {
+          "url": "https://nationalinsurance.nic.co.in/",
+          "label": "NICL Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/sbi-j-a-clerk-august26/": {
+    "attemptedAt": "2026-10-23T07:11:52.885Z",
+    "parser": "v2",
+    "details": {
+      "organization": "State Bank of India SBI",
+      "publishedDate": "2026-09-21",
+      "openDate": "2026-08-11",
+      "lastDate": "2026-08-31",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": "2026-09-21",
+      "interviewDate": null,
+      "vacancies": "9124",
+      "ageLimit": "20–28 years",
+      "eligibility": "Passed / Appearing Bachelor Degree in Any Stream in Any Recognized University in India. More Eligibility Details Read the Notification",
+      "applicationFee": "General / EWS / OBC : 750/- SC / ST / PH : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026 | 12:30 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-08-31",
+          "dateText": "31/08/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-08-31",
+          "dateText": "31/08/2026"
+        },
+        {
+          "label": "to 27 September 2026 Admit Card Available",
+          "date": "2026-09-21",
+          "dateText": "21/09/2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/sbijajul26/oecla_sep26/login.php?appid=24c6ba07c29762dbe2586e1f533198ec",
+      "notificationLink": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/sbijajul26/oecla_sep26/login.php?appid=24c6ba07c29762dbe2586e1f533198ec",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/sbijajul26/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://sbi.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers/ja-studymat-reg-202627",
+          "label": "PRE Trainee Exam Latter"
+        }
+      ]
+    }
   }
 }

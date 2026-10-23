@@ -114,7 +114,9 @@ async function main() {
       item.link && !/\/undefined(?:$|[?#])|\/#(?:$|[?#])|megrecruitment\.nic\.in/i.test(item.link) &&
       !/\{\{.*\}\}|\brti\b|right to information|reporting vacancies/i.test(item.title || '') &&
       !/^(?:notifications?|what'?s new|latest news|announcements?|recruitment|results?|admit cards?)$/i.test(item.title || '') &&
-      !isStale(item.title || '', item.lastDate, item.publishedDate) &&
+      // Admit cards and results stay relevant long after applications closed,
+      // so staleness by closing date applies to jobs only (same rule as above).
+      (item.type !== 'job' || !isStale(item.title || '', item.lastDate, item.publishedDate)) &&
       !isGenericJobTitle(item.title || '') &&
       !ids.has(item.id)
     );

@@ -1,5 +1,61 @@
 {
-  "generatedAt": "2026-10-23T05:53:51.565Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-10-23T07:11:41.548Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-sarkariresult-ba5f0306fa3888fc",
+      "type": "job",
+      "title": "Bihar BTSC Food Safety Extension Officer Online form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Bihar",
+      "link": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/bihar-btsc-food-safety-officer-sep26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "lastDate": "2026-10-24",
+      "organization": "Bihar Technical Service Commission (BTSC)",
+      "publishedDate": "2026-09-25",
+      "openDate": "2026-09-25",
+      "vacancies": "105",
+      "ageLimit": "21–37 years",
+      "eligibility": "Bachelor Degree in Food Technology / Dairy Technology / Bio Technology / Oil Technology Agricultural Science / Veterinary Science / Bio Chemistry / Microbiology OR Post Graduate in Chemistry from a Recognized University in India. More Eligibility Details Read the Notification",
+      "applicationFee": "General / BC/ Other State : 100/- SC / ST / PH : 100/- Female Candidate (Bihar Dom.) : 100/-",
+      "notificationLink": "https://btsc.pariksha.nic.in/OuterPages/View_Enclosure.aspx?ID=5099&flag=H&FID=7500",
+      "officialLinks": [
+        {
+          "url": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://btsc.pariksha.nic.in/OuterPages/View_Enclosure.aspx?ID=5099&flag=H&FID=7500",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://btsc.bihar.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-09-25",
+          "dateText": "25 September 2026 | 05:45 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-10-24",
+          "dateText": "24/10/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-10-24",
+          "dateText": "24/10/2026"
+        }
+      ]
+    }
+  ]
 }

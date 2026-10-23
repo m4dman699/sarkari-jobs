@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T05:53:51.565Z",
-  "total": 2,
+  "generatedAt": "2026-10-23T07:11:41.548Z",
+  "total": 4,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
@@ -27,6 +27,110 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-sarkariresult-fba65ccc4f19f877",
+      "type": "job",
+      "title": "Delhi DSSSB Various Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://dsssbonline.nic.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/dsssb-various-post-oct26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "lastDate": "2026-11-04",
+      "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
+      "publishedDate": "2026-10-19",
+      "openDate": "2026-10-06",
+      "vacancies": "641",
+      "ageLimit": "18–27 years",
+      "eligibility": "Graduate with speed of not less than 110 words per minute in Shorthand and 40 words per minute in typewriting.",
+      "applicationFee": "General / OBC / EWS : 100/- SC / ST / PH : 0/- Female Candidate : 0/-",
+      "officialLinks": [
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://dsssbonline.nic.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-19",
+          "dateText": "19 October 2026 | 06:06 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-afc99b508677d55a",
+      "type": "job",
+      "title": "Delhi DSSSB Sweeper, Safai Karamchari, Chowkidar Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://dsssbonline.nic.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/delhi-dsssb-advt-no-05-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "lastDate": "2026-11-11",
+      "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
+      "publishedDate": "2026-10-13",
+      "openDate": "2026-10-13",
+      "ageLimit": "18–27 years",
+      "eligibility": "Class 10th Matriculation Exam Passed or equivalent from a recognized board.",
+      "applicationFee": "General / OBC / EWS : 100/- SC / ST / PH : 0/- Female Candidate : 0/-",
+      "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026_1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026_1.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://dsssbonline.nic.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026 | 04:59 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-11",
+          "dateText": "11/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-11",
+          "dateText": "11/11/2026"
+        }
+      ]
     }
   ]
 }

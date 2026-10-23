@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T05:53:51.565Z",
-  "total": 2,
+  "generatedAt": "2026-10-23T07:11:41.548Z",
+  "total": 5,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbU5LZnFYbW9TVW5rckZlL3dVVVBQZA",
@@ -16,6 +16,124 @@
       "publishedDate": null
     },
     {
+      "id": "competitor-sarkariresult-ec628ee5a2ab4d67",
+      "type": "job",
+      "title": "UPESSC UP Primary Teacher Online Form 2026 for 12405 Post",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://apply.upessc.org/register",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-primary-teacher-05-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "lastDate": "2026-10-28",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-09-16",
+      "openDate": "2026-09-16",
+      "vacancies": "12405",
+      "ageLimit": "21–40 years",
+      "eligibility": "Post Name General OBC EWS SC ST Total UPEESSC UP Primary Teacher Eligibility Assistant Teacher in Urban Area Primary Schools 4746 3069 1116 2379 198 11508 Bachelor Degree in Any Stream with DELED (BTC) / BLEd. For More Details Read the Notification. Assistant Teacher – Affiliated Primary (Non-Government Aided School) 378 164 07 348 0 897 Bachelor Degree in Any Stream with DELED (BTC) Class I to V Primary TET Exam Passed. For More Details Read the Notification. UP Primary Teacher Online Form 2026",
+      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
+      "officialLinks": [
+        {
+          "url": "https://apply.upessc.org/register",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/40d4-f371-4c8d-139c-599c.pdf",
+          "label": "Download Date Extended Notice"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UP_Primary_Teacher_I_V_Syllabus_2026%20(1).pdf",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/register",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-09-16",
+          "dateText": "16 September 2026 | 09:49 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-10-28",
+          "dateText": "28/10/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-10-28",
+          "dateText": "28/10/2026"
+        },
+        {
+          "label": "Last Date Correction",
+          "date": "2026-10-31",
+          "dateText": "31/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-686b7d89d37a2f88",
+      "type": "job",
+      "title": "UPSSSC Physical Instructor & Other Post Online Form 2026 for 412 Post",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://upsssc.gov.in/AllNotifications.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-23-exam-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "lastDate": "2026-11-06",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+      "publishedDate": "2026-10-21",
+      "openDate": "2026-10-16",
+      "vacancies": "412",
+      "ageLimit": "21–40 years",
+      "eligibility": "UPSSSC PET 2025 PET Score Card Bachelor Degree in Any Stream from any Recognized Board / Institute in India. Height Male : 167.7 CMS (ST Candidate : 160 CMS) Height Female : 152 CMS (ST : 147 CMS) Chest : 78-8 CMS to 83.8 CMS) More Details Read the Notification.",
+      "applicationFee": "General (UR) / OBC / EWS : 25/- SC / ST : 25/- PH (Divyang) : 25/-",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/AllNotifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in/AllNotifications.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026 | 07:05 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-06",
+          "dateText": "06/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-06",
+          "dateText": "06/11/2026"
+        },
+        {
+          "label": "Form Correction Last Date",
+          "date": "2026-11-13",
+          "dateText": "13/11/2026"
+        }
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
       "type": "job",
       "title": "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
@@ -27,6 +145,76 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-sarkariresult-355cf57529ef0867",
+      "type": "job",
+      "title": "Uttar Pradesh UP Anganwadi Kasganj Worker Bharti Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://upanganwadibharti.in/workernew/users/registration.php",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-anganwadi-worker/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "organization": "Uttar Pradesh District Program Officer",
+      "publishedDate": "2026-10-21",
+      "ageLimit": "18–35 years",
+      "eligibility": "Only for Female Candidates. Passed 10+2 Intermediate Exam in Any Recognized Board in India. Candidate must be a resident of the said Village/Ward/Nyaya Panchayat from where she will apply.",
+      "applicationFee": "General / OBC / EWS : 0/- SC / ST : 0/- No Application Fees for the All Candidates.",
+      "notificationLink": "https://upanganwadibharti.in/",
+      "officialLinks": [
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1791979147_52412659.pdf",
+          "label": "Kasganj"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1791371812_936656e4.pdf",
+          "label": "Moradabad"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1789130301_94035e97.pdf",
+          "label": "Gonda"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1790765630_c3e6e85e.pdf",
+          "label": "Kaushambi"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1790140236_75c62955.pdf",
+          "label": "Hathras"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1789370936_d7a780cb.pdf",
+          "label": "Gorakhpur"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1788958383_41995cb1.pdf",
+          "label": "Jalaun"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1788845526_43e2a414.pdf",
+          "label": "Gautam buddha Nagar"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1788779086_51bd336d.pdf",
+          "label": "Amethi"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1788441669_4a5e701d.pdf",
+          "label": "Amroha"
+        }
+      ],
+      "officialLink": "https://upanganwadibharti.in/workernew/users/registration.php",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026 | 08:00 PM"
+        }
+      ]
     }
   ]
 }
