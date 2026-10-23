@@ -1,9 +1,22 @@
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const payload = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'jobs.json'), 'utf8'));
 const output = path.join(ROOT, 'job-details');
+
+// Change-aware sitemap dates: page-hashes.json stores the content hash and the
+// date each detail page last actually changed, so <lastmod> reports real page
+// updates instead of treating every rebuild as a change (Google stops trusting
+// lastmod values that do not match the page's real modification history).
+const lastmodStatePath = path.join(__dirname, 'page-hashes.json');
+let lastmodState = {};
+try { lastmodState = JSON.parse(fs.readFileSync(lastmodStatePath, 'utf8')); } catch { }
+const nextLastmodState = {};
+const feedDate = String(payload.generatedAt || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
+const sitemapPath = path.join(ROOT, 'sitemap.xml');
+const rawSitemap = fs.readFileSync(sitemapPath, 'utf8');
 
 function escapeHTML(value = '') {
   return String(value).replace(/[&<>"']/g, char => ({
@@ -134,13 +147,47 @@ ${row('Page wording and layout', 'Original SarkariJobs+ summary')}</tbody></tabl
 <p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+. Source facts remain attributed and are not represented as exclusive or licensed from the source site.</p>
 <a class="back" href="../../">← Back to SarkariJobs+</a><nav class="back" aria-label="Site information"><a href="../../about.html">About</a> · <a href="../../editorial-policy.html">Editorial policy</a> · <a href="../../privacy.html">Privacy</a> · <a href="../../contact.html">Contact</a></nav></article></main></body></html>`;
   fs.writeFileSync(path.join(directory, 'index.html'), html);
-  urls.push(`<url><loc>${canonical}</loc>${item.publishedDate ? `<lastmod>${escapeHTML(item.publishedDate)}</lastmod>` : ''}</url>`);
+  // Change-aware lastmod: an identical rebuild keeps the page's previous date;
+  // a page whose content moved (new milestone, refreshed detail) is stamped
+  // with this feed's date. New pages use the listing date on first build.
+  const pageHash = crypto.createHash('sha1').update(html).digest('hex');
+  const prevState = lastmodState[slug];
+  let lastmod;
+  if (prevState && prevState.hash === pageHash) lastmod = prevState.lastmod || null;
+  else if (prevState) lastmod = feedDate;
+  else if (rawSitemap.includes(`/job-details/${slug}/`)) lastmod = item.publishedDate || null;
+  else lastmod = feedDate;
+  nextLastmodState[slug] = { hash: pageHash, lastmod };
+  urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
 }
 
-const sitemapPath = path.join(ROOT, 'sitemap.xml');
-let sitemap = fs.readFileSync(sitemapPath, 'utf8').replace(/\s*<url>\s*<loc>https:\/\/sarkarijobsplus\.com\/job-details\/[^<]+<\/loc>[\s\S]*?<\/url>/g, '');
+// The client-rendered shell pages below re-render this committed feed in the
+// browser, so the date they materially changed equals the feed's build date.
+// No deploy-time sitemap rewriting is needed anymore: this makes the deployed
+// sitemap byte-identical to the committed one.
+const shellUrls = [
+  'https://sarkarijobsplus.com/',
+  'https://sarkarijobsplus.com/category.html',
+  'https://sarkarijobsplus.com/state.html',
+  'https://sarkarijobsplus.com/results.html',
+  'https://sarkarijobsplus.com/admit-cards.html',
+  'https://sarkarijobsplus.com/upsc-cds-2-2026/'
+];
+const sitemapRescape = value => value.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&');
+let sitemap = rawSitemap.replace(/\s*<url>\s*<loc>https:\/\/sarkarijobsplus\.com\/job-details\/[^<]+<\/loc>[\s\S]*?<\/url>/g, '');
+for (const loc of shellUrls) {
+  const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
+  if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, `<url><loc>${loc}</loc><lastmod>${feedDate}</lastmod></url>`);
+}
 sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}\n</urlset>`);
-fs.writeFileSync(sitemapPath, sitemap);
+
+// Canonical serialization independent of the previous file's formatting:
+// every <url> block on its own compact line, so repeated builds are
+// byte-stable and the deployed file equals the committed one.
+const opening = rawSitemap.slice(0, rawSitemap.indexOf('<url>')).replace(/\s+$/, '\n');
+const blocks = sitemap.match(/<url>[\s\S]*?<\/url>/g) || [];
+fs.writeFileSync(sitemapPath, `${opening}${blocks.join('\n')}\n</urlset>\n`);
+fs.writeFileSync(lastmodStatePath, JSON.stringify(nextLastmodState, null, 2) + '\n');
 
 // A previous feed imported a third-party privacy-policy page as an admit card.
 // Redirect its retired URL to the real first-party policy page after deployment.

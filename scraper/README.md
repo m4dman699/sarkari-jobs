@@ -13,7 +13,10 @@ The daily GitHub Actions workflow `.github/workflows/scrape.yml` runs at 02:17 U
    (jobs, admit cards, results). One record is kept per listing URL; its type is refined from the newest exam-stage milestone on the linked
    page, and the `.sarkariresult.com.cm` copycat is only used as merge-upgrade input. Stale or undated competitor jobs are removed, and
    `competitor-gap-report.json` records what changed and which gaps remain.
-3. `npm run build:details` generates individual listing pages and updates the sitemap.
+3. `npm run build:details` generates individual listing pages and updates the sitemap. Sitemap `<lastmod>` dates are change-aware: `scraper/page-hashes.json`
+   stores the content hash and the date each page last actually changed, so an identical rebuild keeps its date and only pages whose content moved get a new
+   date. Client-rendered shell pages (home, category, state, results, admit cards, landing pages) carry the feed's `generatedAt` date. The deploy workflow
+   therefore no longer rewrites `lastmod` at upload time, and the deployed sitemap stays byte-identical to the committed one.
 4. GitHub Actions commits changed feed/page files to `main`. That push starts the Hostinger deployment workflow.
 
 ## Running locally

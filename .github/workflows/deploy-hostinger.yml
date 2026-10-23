@@ -43,10 +43,9 @@ jobs:
             if [[ ! "$GA4_ID" =~ ^G-[A-Z0-9]+$ ]]; then echo 'GA4_MEASUREMENT_ID must look like G-XXXXXXXXXX.'; exit 1; fi
             sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
           fi
-      - name: Prepare deployment revision marker and sitemap
+      - name: Prepare deployment revision marker
         run: |
           echo "$DEPLOY_SHA" > deployment-version.txt
-          sed -i -E "s#<lastmod>[^<]*</lastmod>#<lastmod>$(date -u +%F)</lastmod>#g" sitemap.xml
       - name: Build individual listing pages
         working-directory: scraper
         run: npm ci && npm run build:details

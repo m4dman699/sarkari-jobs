@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/jobs.json data/states job-details sitemap.xml scraper/competitor-detail-cache.json scraper/competitor-gap-report.json
+          git add data/jobs.json data/states job-details sitemap.xml scraper/competitor-detail-cache.json scraper/competitor-gap-report.json scraper/page-hashes.json
           if git diff --cached --quiet; then
             echo 'The scraped feed has no changes.'
           else
