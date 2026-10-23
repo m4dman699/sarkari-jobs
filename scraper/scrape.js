@@ -22,12 +22,24 @@ async function main() {
 
   const tasks = SOURCES.flatMap(src => src.urls.map(url => ({ src, url })));
   let nextTask = 0;
+  async function fetchWithRetry(url, attempts = 3) {
+    let lastError;
+    for (let attempt = 0; attempt < attempts; attempt++) {
+      try {
+        return await fetchPage(url);
+      } catch (err) {
+        lastError = err;
+        if (attempt < attempts - 1) await sleep(2000 * (attempt + 1));
+      }
+    }
+    throw lastError;
+  }
   async function worker() {
     while (nextTask < tasks.length) {
       const { src, url } = tasks[nextTask++];
       try {
         process.stdout.write(`→ ${src.name} [${url}] ... `);
-        const html = await fetchPage(url);
+        const html = await fetchWithRetry(url);
         const $ = cheerio.load(html);
         const parser = {
           meghalaya: extractMeghalayaJobs,

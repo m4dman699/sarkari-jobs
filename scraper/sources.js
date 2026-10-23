@@ -8,12 +8,21 @@
  */
 
 const https = require('https');
+const crypto = require('crypto');
 
 const UA = 'Mozilla/5.0 (compatible; SarkariJobsPlusBot/1.0; +https://github.com/m4dman699/sarkari-jobs)';
 const MAX_REDIRECTS = 5;
 const MAX_RESPONSE_BYTES = 10 * 1024 * 1024;
+// Many government portals use outdated TLS stacks/certificates. Keep scraping
+// resilient by tolerating legacy renegotiation and expired/misconfigured certs.
+const HTTPS_AGENT = new https.Agent({
+  keepAlive: false,
+  rejectUnauthorized: false,
+  minVersion: 'TLSv1',
+  secureOptions: (crypto.constants && crypto.constants.SSL_OP_LEGACY_SERVER_CONNECT) || 0
+});
 
-async function fetchPage(url, timeoutMs = 12000, redirects = 0) {
+async function fetchPage(url, timeoutMs = 20000, redirects = 0) {
   const parsed = new URL(url);
   if (parsed.protocol === 'http:') parsed.protocol = 'https:';
   if (parsed.protocol !== 'https:') throw new Error('Unsupported URL protocol');
@@ -22,6 +31,7 @@ async function fetchPage(url, timeoutMs = 12000, redirects = 0) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
   const opts = {
+    agent: HTTPS_AGENT,
     headers: {
       'User-Agent': UA,
       'Accept-Language': 'en-IN,en;q=0.9',
