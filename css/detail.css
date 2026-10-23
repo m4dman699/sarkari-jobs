@@ -54,8 +54,18 @@
   color: #b9c6e2;
   margin-bottom: 16px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 4px;
+}
+.d-crumbs .d-sep {
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  border-top: 2px solid #7f92b8;
+  border-right: 2px solid #7f92b8;
+  transform: rotate(45deg);
 }
 .d-crumbs a { color: #d3ddf3; font-weight: 600; }
 .d-crumbs a:hover { color: var(--saffron); }
@@ -203,17 +213,6 @@
 
 /* ---------- Timeline ---------- */
 .d-timeline { position: relative; padding-left: 18px; display: grid; gap: 10px; }
-.d-timeline::before {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: linear-gradient(180deg, var(--saffron), var(--green));
-  border-radius: 2px;
-  opacity: .5;
-}
 .d-mile {
   position: relative;
   background: #fff;
@@ -222,6 +221,31 @@
   padding: 11px 16px;
   box-shadow: 0 3px 12px rgba(10, 17, 40, .05);
 }
+.d-mile::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2.5px solid var(--saffron);
+  z-index: 1;
+}
+/* connector runs dot-centre to the next card's dot; the next card's white
+   background clips the tail, so alignment stays exact at any card height */
+.d-mile::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  bottom: -29px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--saffron), var(--green));
+  opacity: .45;
+}
+.d-mile:last-child::after { display: none; }
 .d-mile::before {
   content: '';
   position: absolute;
@@ -337,9 +361,18 @@
   transition: transform .25s, box-shadow .25s, border-color .25s;
 }
 .d-disc:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(10, 17, 40, .1); border-color: var(--saffron); }
-.d-disc span { flex: 1; }
-.d-disc::after { content: '↗'; color: var(--saffron); font-weight: 800; }
-.d-disc--icon { font-size: 1.2rem; }
+.d-disc--icon { flex: 0 0 auto; font-size: 1.25rem; line-height: 1; }
+.d-disc--label { flex: 1 1 auto; min-width: 0; }
+.d-disc--arrow {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-top: 2.5px solid var(--saffron);
+  border-right: 2.5px solid var(--saffron);
+  transform: rotate(45deg);
+  transition: transform .25s;
+}
+.d-disc:hover .d-disc--arrow { transform: rotate(45deg) translate(2px, -2px); }
 
 /* ---------- Footer reuse (style.css handles colors) ---------- */
 .d-foot p.disclaimer-text { font-size: .82rem; line-height: 1.7; max-width: 640px; margin-top: 10px; }
