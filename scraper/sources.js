@@ -167,7 +167,8 @@ function isStale(title, lastDate, publishedDate) {
 }
 
 function isGenericJobTitle(title) {
-  return GENERIC_JOB_LINK.test(String(title || '').replace(/\s+/g, ' ').trim());
+  const normalized = String(title || '').replace(/\s+/g, ' ').trim();
+  return GENERIC_JOB_LINK.test(normalized) || /^(?:classified jobs|find (?:domestic|international) jobs(?: e migrate)?|advisories for international jobseekers?|jobs in (?:health|government) sector|jobs for (?:differently abled|ex servicemen)|find career center|post new jobs|recruitment agencies(?:\/international employer)?|career schemes|sarkariresult(?:\.com(?:\.cm)?)?)$/i.test(normalized);
 }
 
 /**

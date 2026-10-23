@@ -74,7 +74,7 @@ async function main() {
           byId.set(item.id, item);
         }
       }
-      unique = [...byId.values()];
+      unique = [...byId.values()].filter(item => !isGenericJobTitle(item.title));
     }
   } catch (err) {
     if (err.code !== 'ENOENT') console.warn(`Could not read ${curatedPath}: ${err.message}`);

@@ -62,7 +62,7 @@ function normalizeTitle(value) {
 
 function isNonRecruitmentPage(title, url = '') {
   const normalized = normalizeTitle(title);
-  return /^(?:privacy policy|about(?: us)?|contact(?: us)?|disclaimer|terms(?: and conditions)?|sitemap|advertise(?: with us)?|faq)$/.test(normalized)
+  return /^(?:privacy policy|about(?: us)?|contact(?: us)?|disclaimer|terms(?: and conditions)?|sitemap|advertise(?: with us)?|faq|sarkari ?result(?: com(?: cm)?)?|classified jobs|find (?:domestic|international) jobs(?: e migrate)?|advisories for international jobseekers?|jobs in (?:health|government) sector|jobs for (?:differently abled|ex servicemen)|find career center|post new jobs|recruitment agencies(?: international employer)?|career schemes)$/.test(normalized)
     || /\/(?:privacy-policy|about-us|contact-us|disclaimer|terms-and-conditions|sitemap)(?:\/|$)/i.test(url);
 }
 
