@@ -382,7 +382,23 @@ for (const loc of shellUrls) {
   const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
   if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, `<url><loc>${loc}</loc><lastmod>${feedDate}</lastmod></url>`);
 }
-sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}\n</urlset>`);
+// First-party static prose pages (About, Content/Editorial policy, Privacy,
+// Contact) join the sitemap under their own change-aware keys in
+// page-hashes.json, so <lastmod> moves only when the page content actually
+// changes — not on every feed-build day. Existing blocks for these URLs are
+// dropped first so repeated builds stay single-copy and byte-stable.
+const staticPageBlocks = [];
+for (const rel of ['about.html', 'editorial-policy.html', 'privacy.html', 'contact.html']) {
+  const fileHash = crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, rel)).toString('utf8').replace(/\r\n/g, '\n')).digest('hex');
+  const prevState = lastmodState[`page:${rel}`];
+  const lastmod = prevState && prevState.hash === fileHash ? (prevState.lastmod || null) : feedDate;
+  nextLastmodState[`page:${rel}`] = { hash: fileHash, lastmod };
+  const loc = `https://sarkarijobsplus.com/${rel}`;
+  const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
+  if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, '');
+  if (lastmod) staticPageBlocks.push(`<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`);
+}
+sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}${staticPageBlocks.length ? '\n' + staticPageBlocks.join('\n') : ''}\n</urlset>`);
 
 // Canonical serialization independent of the previous file's formatting:
 // every <url> block on its own compact line, so repeated builds are

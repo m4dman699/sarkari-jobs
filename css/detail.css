@@ -378,6 +378,55 @@
 .d-foot p.disclaimer-text { font-size: .82rem; line-height: 1.7; max-width: 640px; margin-top: 10px; }
 .d-foot .foot-grid a { color: #aebadb; }
 
+/* ============================================================
+   Static prose pages — About, Content/Editorial policy,
+   Privacy, Contact. Same theme shell as the detail pages.
+   ============================================================ */
+.d-page-note { color: var(--text-grey); font-size: .88rem; }
+
+.d-prose {
+  background: #fff;
+  border: 1px solid var(--d-line);
+  border-radius: 18px;
+  padding: clamp(18px, 3.5vw, 30px);
+  box-shadow: 0 4px 16px rgba(10, 17, 40, .05);
+}
+.d-prose h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.08rem;
+  margin: 22px 0 10px;
+  color: var(--text-dark);
+}
+.d-prose h2::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 4px;
+  height: 17px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--saffron) 33%, #fff 33% 66%, var(--green) 66%);
+}
+.d-prose h2:first-of-type { margin-top: 6px; }
+.d-prose p { color: #2e3d56; line-height: 1.75; font-size: .98rem; margin: 0 0 12px; }
+.d-prose ul, .d-prose ol { margin: 0 0 12px; padding-left: 22px; display: grid; gap: 7px; }
+.d-prose ul li { list-style: disc; color: #2e3d56; line-height: 1.7; font-size: .96rem; }
+.d-prose ol li { color: #2e3d56; line-height: 1.7; font-size: .96rem; }
+.d-prose strong { color: var(--text-dark); }
+
+/* highlighted textual links inside prose */
+.d-prose a {
+  color: #a35a06;
+  font-weight: 700;
+  border-bottom: 2px solid #ffd9a3;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.d-prose a:hover { color: var(--saffron-dark); border-color: var(--saffron); background: #fff7ee; }
+.d-prose a.external::after { content: ' ↗'; font-weight: 800; }
+
+.d-prose .d-caution, .d-prose .d-banner { margin: 14px 0 4px; }
+.d-prose .d-facts { margin-top: 6px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 720px) {
   .d-main { padding: 16px 10px 24px; }

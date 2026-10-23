@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://sarkarijobsplus.com/about.html</loc></url>
-<url><loc>https://sarkarijobsplus.com/editorial-policy.html</loc></url>
-<url><loc>https://sarkarijobsplus.com/privacy.html</loc></url>
-<url><loc>https://sarkarijobsplus.com/contact.html</loc></url>
 <url><loc>https://sarkarijobsplus.com/</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://sarkarijobsplus.com/category.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://sarkarijobsplus.com/state.html</loc><lastmod>2026-10-23</lastmod></url>
@@ -495,4 +491,8 @@
 <url><loc>https://sarkarijobsplus.com/job-details/upsssc-stenographer-2023-skill-test-admit-card-5c39c131/</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://sarkarijobsplus.com/job-details/upsssc-moharir-2022-eligibility-result-2026-for-92-pos-f1a40481/</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://sarkarijobsplus.com/job-details/nicl-assistant-mains-admit-card-2026-ecbde8d0/</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://sarkarijobsplus.com/about.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://sarkarijobsplus.com/editorial-policy.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://sarkarijobsplus.com/privacy.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://sarkarijobsplus.com/contact.html</loc><lastmod>2026-10-23</lastmod></url>
 </urlset>

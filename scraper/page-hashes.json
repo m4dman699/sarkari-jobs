@@ -1938,5 +1938,21 @@
   "nicl-assistant-mains-admit-card-2026-ecbde8d0": {
     "hash": "21bf3f998664951e487913d571573605ad5cffec",
     "lastmod": "2026-10-23"
+  },
+  "page:about.html": {
+    "hash": "328fa4537af8e1ae98bfebf1fe20eb2e485b58cf",
+    "lastmod": "2026-10-23"
+  },
+  "page:editorial-policy.html": {
+    "hash": "5224947aabc8f8c2e936dc69abbe9d9a70319283",
+    "lastmod": "2026-10-23"
+  },
+  "page:privacy.html": {
+    "hash": "10d3721f31fc4726b05eac7d92d1abe1d2e2bfd8",
+    "lastmod": "2026-10-23"
+  },
+  "page:contact.html": {
+    "hash": "6b6e863ac0ca1e403d200dfe0df05badfbd52dcc",
+    "lastmod": "2026-10-23"
   }
 }
