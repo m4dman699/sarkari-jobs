@@ -14,32 +14,23 @@ const { fetchPage, extractJobs, extractMeghalayaJobs, extractEmploymentNewsJobs,
 const OUT = path.join(__dirname, '..', 'data', 'jobs.json');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const CONCURRENCY = 4;
+const REQUEST_GAP_MS = 400;
 
 async function main() {
+  const startedAt = Date.now();
   const all = [];
   const errors = [];
   const announcementsBySource = new Map();
 
   const tasks = SOURCES.flatMap(src => src.urls.map(url => ({ src, url })));
+  console.log(`Starting one-pass scrape: ${tasks.length} official source pages, ${CONCURRENCY} workers, 6.5s request timeout, retries disabled.`);
   let nextTask = 0;
-  async function fetchWithRetry(url, attempts = 3) {
-    let lastError;
-    for (let attempt = 0; attempt < attempts; attempt++) {
-      try {
-        return await fetchPage(url);
-      } catch (err) {
-        lastError = err;
-        if (attempt < attempts - 1) await sleep(2000 * (attempt + 1));
-      }
-    }
-    throw lastError;
-  }
   async function worker() {
     while (nextTask < tasks.length) {
       const { src, url } = tasks[nextTask++];
       try {
         process.stdout.write(`→ ${src.name} [${url}] ... `);
-        const html = await fetchWithRetry(url);
+        const html = await fetchPage(url);
         const $ = cheerio.load(html);
         const parser = {
           meghalaya: extractMeghalayaJobs,
@@ -57,7 +48,7 @@ async function main() {
         console.log(`FAILED (${err.message})`);
         errors.push({ source: src.name, url, error: err.message });
       }
-      await sleep(1200); // keep each worker's request rate modest
+      await sleep(REQUEST_GAP_MS); // avoid hammering successive sources
     }
   }
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
@@ -159,6 +150,7 @@ async function main() {
   console.log(`ℹ️  Job date gaps: ${payload.quality.jobsMissingPublicationDate} missing issue/open date; ${payload.quality.jobsMissingClosingDate} missing closing date.`);
   console.log(`✅ ${stateFileCount} per-state files saved → data/states/*.json`);
   if (errors.length) console.log(`⚠️  ${errors.length} source errors (see errors field in JSON)`);
+  console.log(`Finished in ${Math.round((Date.now() - startedAt) / 1000)}s.`);
 }
 
 main().catch(e => { console.error('Fatal:', e); process.exit(1); });

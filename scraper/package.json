@@ -4,6 +4,9 @@
   "description": "Free automated scraper for Indian government job notifications",
   "type": "commonjs",
   "main": "scrape.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "scrape": "node scrape.js",
     "scrape:competitors": "node scrape-competitors.js",

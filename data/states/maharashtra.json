@@ -1,5 +1,21 @@
 {
-  "generatedAt": "2026-10-22T11:54:18.292Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-10-23T05:53:21.010Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-freejobalert-rbi-mumbai-pharmacist-2026",
+      "type": "job",
+      "title": "RBI Mumbai Pharmacist Recruitment 2026 — 22 Posts",
+      "source": "Reserve Bank of India, Mumbai Office",
+      "organization": "Reserve Bank of India, Mumbai Office",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "Maharashtra",
+      "link": "https://www.freejobalert.com/articles/rbi-mumbai-pharmacist-recruitment-2026-3073857",
+      "openDate": null,
+      "lastDate": "2026-11-03",
+      "publishedDate": "2026-10-15",
+      "detail": "22 contract Pharmacist positions. Applications must reach RBI Mumbai by 3 Nov 2026 at 5:00 PM."
+    }
+  ]
 }
