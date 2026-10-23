@@ -14,7 +14,9 @@ The daily GitHub Actions workflow `.github/workflows/scrape.yml` runs at 02:17 U
    page, and the `.sarkariresult.com.cm` copycat is only used as merge-upgrade input. Stale or undated competitor jobs are removed, and
    `competitor-gap-report.json` records what changed and which gaps remain.
 3. `npm run build:details` generates individual listing pages and updates the sitemap. Each page carries an original SarkariJobs+ explainer ("How to use this page",
-   a payment-safe caution) plus fact-based FAQs with FAQPage schema, all written from the record's own facts — never republished notice text. Sitemap `<lastmod>`
+   a payment-safe caution) plus fact-based FAQs with FAQPage schema, all written from the record's own facts — never republished notice text. Pages use the
+   shared site theme (header, footer, tricolor tokens from `css/style.css`) through `css/detail.css`, with fact tiles, a status banner (open / closing soon /
+   closed, result out, hall ticket out) and a timeline when a record has milestones. Sitemap `<lastmod>`
    dates are change-aware: `scraper/page-hashes.json` stores the content hash and the date each page last actually changed, so an identical rebuild keeps its date
    and only pages whose content moved get a new date. Client-rendered shell pages (home, category, state, results, admit cards, landing pages) carry the feed's
    `generatedAt` date. The deploy workflow therefore no longer rewrites `lastmod` at upload time, and the deployed sitemap stays byte-identical to the committed one.

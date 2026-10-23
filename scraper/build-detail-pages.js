@@ -160,15 +160,38 @@ function summaryFor(item, kind) {
   return `${escapeHTML(item.title)} is a result or examination update from ${organization}${updateDate ? `, listed ${date(updateDate)}` : ''}. Use the authority link to confirm the latest notice and access the result or answer key.`;
 }
 
-function applicationStatus(item) {
+function urgency(item) {
   if (item.type !== 'job' || !item.lastDate) return null;
   const close = new Date(`${item.lastDate}T23:59:59Z`);
-  const status = close >= new Date() ? 'Application window closes' : 'Listed closing date has passed';
-  return `${status}: <strong>${date(item.lastDate)}</strong>`;
+  if (close < new Date()) return 'passed';
+  return (close - new Date()) <= 604800000 ? 'soon' : 'open';
 }
 
-function row(label, value) {
-  return `<tr><th scope="row">${escapeHTML(label)}</th><td>${value}</td></tr>`;
+function deadlinePill(state) {
+  if (state === 'passed') return '<span class="countdown cd-crit">Closed</span>';
+  if (state === 'soon') return '<span class="countdown cd-warn">Closing soon</span>';
+  return '<span class="countdown cd-ok">Open</span>';
+}
+
+// Status banner summarising what the reader must act on. Facts only —
+// never invents a date that is not on the record.
+function bannerFor(item, kind, state) {
+  if (kind === 'Job notification') {
+    if (!item.lastDate) return null;
+    const closing = date(item.lastDate);
+    if (state === 'passed') return { cls: 'd-banner--crit', icon: '⛔', text: `The listed closing date has passed — applications are closed as per this record. Reconfirm on the official portal before relying on it.` };
+    if (state === 'soon') return { cls: 'd-banner--warn', icon: '⏳', text: `Application window is closing — the listed deadline is <strong>${closing}</strong>. Complete the form and fee before it ends.` };
+    return { cls: 'd-banner--ok', icon: '🟢', text: `Applications are open — the listed deadline is <strong>${closing}</strong>. Read the official notice before you apply.` };
+  }
+  if (kind === 'Admit card') {
+    const exam = item.examDate ? ` The listed exam date is <strong>${date(item.examDate)}</strong>.` : '';
+    return { cls: 'd-banner--info', icon: '🎫', text: `Admit card / hall ticket is available on the official portal linked below.${exam}` };
+  }
+  return { cls: 'd-banner--info', icon: '✅', text: `Result / update declared on the authority portal${item.resultDate ? ` — listed result date <strong>${date(item.resultDate)}</strong>` : ''}.` };
+}
+
+function factTile(label, value, cls = '') {
+  return `<div class="d-fact${cls ? ' ' + cls : ''}"><dt>${escapeHTML(label)}</dt><dd>${value}</dd></div>`;
 }
 
 fs.rmSync(output, { recursive: true, force: true });
@@ -182,29 +205,41 @@ for (const item of payload.jobs || []) {
   fs.mkdirSync(directory, { recursive: true });
   const title = escapeHTML(item.title);
   const kind = listingType(item);
-  const verifiedSummary = `<p class="summary">${summaryFor(item, kind)}</p>`;
+  const verifiedSummary = `<p class="d-lead">${summaryFor(item, kind)}</p>`;
   const names = orgNames(item);
   const guide = guideFor(item, kind, names, slug);
   const faq = faqFor(item, kind, names);
-  const faqHtml = faq.map(entry => `<h3>${escapeHTML(entry.q)}</h3><p>${escapeHTML(entry.a)}</p>`).join('');
+  const faqHtml = faq.map((entry, index) => `<details class="d-faq-item"${index === 0 ? ' open' : ''}><summary>${escapeHTML(entry.q)}</summary><p>${escapeHTML(entry.a)}</p></details>`).join('');
   const faqLd = faq.length >= 2
     ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(entry => ({ '@type': 'Question', name: entry.q, acceptedAnswer: { '@type': 'Answer', text: entry.a } })) }).replace(/</g, '\\u003c')}</script>`
     : '';
-  const extraRows = [
-    item.vacancies ? row('Vacancies', escapeHTML(item.vacancies)) : '',
-    item.ageLimit ? row('Age limit', escapeHTML(item.ageLimit)) : '',
-    item.eligibility ? row('Eligibility', escapeHTML(item.eligibility)) : '',
-    item.applicationFee ? row('Application fee', escapeHTML(item.applicationFee.split(/payment mode/i)[0].trim())) : '',
-    item.examDate ? row('Exam date', date(item.examDate)) : '',
-    item.resultDate ? row('Result date', date(item.resultDate)) : ''
+  const urgencyState = urgency(item);
+  const banner = bannerFor(item, kind, urgencyState);
+  const bannerHtml = banner ? `<div class="d-banner ${banner.cls}"><span>${banner.icon}</span><p>${banner.text}</p></div>` : '';
+  const keyFacts = [
+    item.openDate ? factTile('Applications open', date(item.openDate)) : '',
+    item.lastDate ? factTile('Apply before', date(item.lastDate) + ' ' + deadlinePill(urgencyState), urgencyState === 'passed' ? 'd-fact--deadline d-fact--closed' : 'd-fact--deadline') : '',
+    item.examDate ? factTile('Exam date', date(item.examDate), 'd-fact--exam') : '',
+    item.resultDate ? factTile('Result date', date(item.resultDate), 'd-fact--result') : '',
+    item.vacancies ? factTile('Vacancies', escapeHTML(item.vacancies), 'd-fact--vac') : '',
+    item.ageLimit ? factTile('Age limit', escapeHTML(item.ageLimit)) : '',
+    item.eligibility ? factTile('Eligibility', escapeHTML(item.eligibility)) : '',
+    item.applicationFee ? factTile('Application fee', escapeHTML(item.applicationFee.split(/payment mode/i)[0].trim())) : ''
   ].filter(Boolean).join('\n');
-  const typeDateRows = item.type === 'admit-card'
-    ? row('Admit card listed', date(item.publishedDate))
-    : item.type === 'result'
-      ? `${row('Update published', date(item.publishedDate))}${item.resultDate ? row('Result date', date(item.resultDate)) : ''}`
-      : [row('Applications open', date(item.openDate)), row('Application deadline', date(item.lastDate))].join('\n');
+  const listedDateFact = item.type === 'job'
+    ? ''
+    : factTile(kind === 'Admit card' ? 'Admit card listed' : 'Update published', date(item.publishedDate), 'd-fact--mini');
+  const attrFacts = [
+    factTile('Listing type', escapeHTML(kind), 'd-fact--mini'),
+    listedDateFact,
+    factTile('Fact source', escapeHTML(item.factSource || item.publisher || item.source || 'Not stated'), 'd-fact--mini'),
+    item.factCheckedAt ? factTile('Source checked', date(item.factCheckedAt), 'd-fact--mini') : '',
+    factTile('Page wording and layout', 'Original SarkariJobs+ summary', 'd-fact--mini')
+  ].filter(Boolean).join('\n');
   const milestones = (item.milestones || []).filter(entry => entry?.label && entry?.dateText)
-    .map(entry => row(entry.label, escapeHTML(entry.dateText))).join('\n');
+    .map(entry => `<div class="d-mile"><b>${escapeHTML(entry.label)}</b><em>${escapeHTML(entry.dateText)}</em></div>`).join('');
+  const milestoneSection = milestones
+    ? `<h2 class="d-section-title">Timeline of dates</h2><div class="d-timeline">${milestones}</div>` : '';
   const trustedLinks = Array.isArray(item.officialLinks) ? item.officialLinks : [];
   const officialLink = item.officialLink || (item.publisher ? '' : item.link);
   if (officialLink && !trustedLinks.some(entry => entry.url === officialLink)) {
@@ -217,29 +252,103 @@ for (const item of payload.jobs || []) {
     if (!/^https:\/\//i.test(entry.url || '')) return '';
     const generic = /^(click here|here|official recruitment portal)$/i.test(entry.label || '');
     const label = generic
-      ? (index === 0 && item.type === 'result' ? 'Official result / update portal' : index === 0 && item.type === 'admit-card' ? 'Official admit-card portal' : index === 0 ? 'Official recruitment portal' : 'Official notice or update')
-      : `Official ${entry.label}`;
-    return `<a class="button${index ? ' secondary' : ''}" href="${escapeHTML(entry.url)}" rel="noopener noreferrer" target="_blank">${escapeHTML(label)} ↗</a>`;
+      ? (index === 0 && item.type === 'result' ? 'Open official result page' : index === 0 && item.type === 'admit-card' ? 'Download official admit card' : index === 0 ? 'Open official recruitment portal' : 'Official notice or update')
+      : `Official ${escapeHTML(entry.label)}`;
+    return `<a class="btn${index ? ' btn-outline' : ' btn-primary'}" href="${escapeHTML(entry.url)}" rel="noopener noreferrer" target="_blank">${label} ↗</a>`;
   }).filter(Boolean).join('\n');
+  const ctaRow = links
+    ? `<div class="d-cta">${links}</div>`
+    : '<span class="d-nonelink">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>';
+  const chips = [
+    `<span class="d-chip">🏢 ${escapeHTML(item.organization || 'Recruiting authority named in the notice')}</span>`,
+    item.category ? `<span class="d-chip">🗂 ${escapeHTML(item.category)}</span>` : '',
+    `<span class="d-chip">📍 ${escapeHTML(item.state || 'Location: see notice')}</span>`,
+    item.publishedDate ? `<span class="d-chip">🗓 Listed ${date(item.publishedDate)}</span>` : ''
+  ].filter(Boolean).join('');
+  const kindId = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
+  const ribbonCls = kindId === 'admit' ? ' d-ribbon--admit' : kindId === 'result' ? ' d-ribbon--result' : '';
   const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title} listed by ${escapeHTML(names.base)}. Verify eligibility and instructions in the official recruitment notice.">
-<link rel="canonical" href="${canonical}">${faqLd}<script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css">
-<style>body{background:#f4f7fb;color:#182235;font:16px/1.65 system-ui,sans-serif;margin:0}.detail-wrap{max-width:920px;margin:2rem auto;padding:1.25rem}.detail-card{background:#fff;border:1px solid #d9e1ee;border-radius:16px;padding:clamp(1.25rem,4vw,2.5rem);box-shadow:0 8px 28px #1527470d}.crumbs{font-size:.9rem;margin-bottom:1.4rem}.eyebrow{color:#415b83;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}.detail-card h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;margin:.35rem 0 1rem}.summary{font-size:1.05rem;color:#35445b}.facts{width:100%;border-collapse:collapse;margin:1.5rem 0}.facts th,.facts td{border-bottom:1px solid #e5eaf2;padding:.8rem;text-align:left;vertical-align:top}.facts th{width:35%;color:#42516a}.buttons{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.2rem 0}.button{display:inline-flex;padding:.75rem 1rem;background:#173c8f;color:white!important;border-radius:9px;text-decoration:none;font-weight:700}.button.secondary{background:#edf2fb;color:#173c8f!important}.notice{font-size:.9rem;color:#46556d;background:#f3f6fb;padding:1rem;border-radius:10px}.back{display:inline-block;margin-top:1.2rem}.disclaimer{font-size:.85rem;color:#58667a;border-top:1px solid #e5eaf2;padding-top:1rem;margin-top:1.5rem}</style></head>
-<body><main class="detail-wrap"><nav class="crumbs"><a href="../../">Home</a> / ${escapeHTML(kind)}</nav><article class="detail-card">
-<div class="eyebrow">${escapeHTML(kind)} · ${escapeHTML(item.category || 'Government recruitment')}</div><h1>${title}</h1>
-<p><strong>Recruiting organization:</strong> ${escapeHTML(item.organization || item.source || 'See source notice')}<br><strong>Location:</strong> ${escapeHTML(item.state || 'See notice')}</p>
-${verifiedSummary}<h2>Key details</h2><table class="facts"><tbody>
-${row('Listing type', escapeHTML(kind))}${row('Published / listed', date(item.publishedDate))}${typeDateRows}
-${extraRows}${milestones}${applicationStatus(item) ? row('Closing status', applicationStatus(item)) : ''}
-${row('Fact source', escapeHTML(item.factSource || item.publisher || item.source || 'Not stated'))}${item.factCheckedAt ? row('Source checked', date(item.factCheckedAt)) : ''}
-${row('Page wording and layout', 'Original SarkariJobs+ summary')}</tbody></table>
-<div class="buttons">${links || '<span class="notice">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>'}</div>
-<h2>How to use this page</h2><p>${escapeHTML(guide.lead)}</p><p class="notice">${escapeHTML(guide.caution)}</p><h2>Frequently asked questions</h2>${faqHtml}
-<p class="notice">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
-<p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+. Source facts remain attributed and are not represented as exclusive or licensed from the source site.</p>
-<a class="back" href="../../">← Back to SarkariJobs+</a><nav class="back" aria-label="Site information"><a href="../../about.html">About</a> · <a href="../../editorial-policy.html">Editorial policy</a> · <a href="../../privacy.html">Privacy</a> · <a href="../../contact.html">Contact</a></nav></article></main></body></html>`;
+<meta name="theme-color" content="#0a1128">
+<meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(names.base)} — ${escapeHTML(kind)}: key dates and the official link."><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
+<link rel="canonical" href="${canonical}">${faqLd}<script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="tricolor-strip"></div>
+<header><div class="container nav-wrap">
+<a class="logo" href="../../"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
+<nav><ul>
+<li><a href="../../category.html">Notifications</a></li>
+<li><a href="../../results.html">Results</a></li>
+<li><a href="../../admit-cards.html">Admit cards</a></li>
+<li><a href="../../state.html">States</a></li>
+</ul></nav>
+<a class="btn btn-primary" href="../../results.html" style="padding:9px 18px;font-size:.88rem">Latest results</a>
+</div></header>
+<main class="d-main">
+<section class="d-hero">
+<nav class="d-crumbs" aria-label="Breadcrumb"><a href="../../">Home</a> › <a href="../../${item.type === 'result' ? 'results.html' : item.type === 'admit-card' ? 'admit-cards.html' : 'category.html'}">${escapeHTML(kind)} listings</a></nav>
+<span class="d-ribbon${ribbonCls}">${escapeHTML(kind)}</span>
+<h1>${title}</h1>
+<div class="d-chiprow">${chips}</div>
+${ctaRow}
+</section>
+${bannerHtml}
+${verifiedSummary}
+<article>
+<h2 class="d-section-title">Key details</h2>
+<dl class="d-facts">
+${keyFacts}
+</dl>
+${milestoneSection}
+</article>
+<section class="d-guide">
+<h2>How to use this page</h2>
+<p class="d-glead">${escapeHTML(guide.lead)}</p>
+<div class="d-caution"><span>⚠️</span><p>${escapeHTML(guide.caution)}</p></div>
+</section>
+<section class="d-faq">
+<h2>Frequently asked questions</h2>
+${faqHtml}
+</section>
+<section class="d-attrib">
+<h2>Source attribution</h2>
+<dl class="d-facts">${attrFacts}</dl>
+<p class="d-attrib-note">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
+</section>
+<nav class="d-discover" aria-label="Explore the site">
+<a class="d-disc" href="../../category.html"><span class="d-disc--icon">🔔</span><span>Browse notifications</span></a>
+<a class="d-disc" href="../../results.html"><span class="d-disc--icon">🏆</span><span>Latest results</span></a>
+<a class="d-disc" href="../../admit-cards.html"><span class="d-disc--icon">🎫</span><span>Admit cards</span></a>
+<a class="d-disc" href="../../state.html"><span class="d-disc--icon">🗺️</span><span>State-wise jobs</span></a>
+</nav>
+</main>
+<footer class="d-foot"><div class="container foot-grid">
+<div class="foot-brand"><a class="logo" href="../../" style="color:#fff"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
+<p class="foot-note">Independent tracker for government job notifications, results and admit cards across India — always linking the recruiting authority's own portal.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="../../category.html">Notifications</a></li>
+<li><a href="../../results.html">Results</a></li>
+<li><a href="../../admit-cards.html">Admit cards</a></li>
+<li><a href="../../state.html">State-wise</a></li>
+</ul></div>
+<div><h4>Information</h4><ul>
+<li><a href="../../about.html">About SarkariJobs+</a></li>
+<li><a href="../../editorial-policy.html">Editorial policy</a></li>
+<li><a href="../../privacy.html">Privacy policy</a></li>
+<li><a href="../../contact.html">Contact us</a></li>
+</ul></div>
+<div><h4>This page</h4><ul>
+<li><a href="../../">← Back to SarkariJobs+</a></li>
+</ul></div>
+</div>
+<p style="font-size:.82rem;line-height:1.7;max-width:640px;margin:0 auto;padding:0 0 18px;">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+. Source facts remain attributed and are not represented as exclusive or licensed from the source site.</p>
+<div class="foot-strip"></div>
+</footer>
+</body></html>`;
   fs.writeFileSync(path.join(directory, 'index.html'), html);
   // Change-aware lastmod: an identical rebuild keeps the page's previous date;
   // a page whose content moved (new milestone, refreshed detail) is stamped
