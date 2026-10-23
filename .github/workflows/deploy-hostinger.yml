@@ -124,6 +124,8 @@ jobs:
     env:
       DEPLOY_SHA: ${{ github.sha }}
     steps:
+      - name: Check out website
+        uses: actions/checkout@v5
       - name: Check Hostinger revision and listing pages
         run: |
           for attempt in {1..6}; do
@@ -135,14 +137,18 @@ jobs:
           feed=$(curl --fail --silent --show-error --max-time 10 -H 'Cache-Control: no-cache' 'https://sarkarijobsplus.com/data/jobs.json?verify='"$DEPLOY_SHA")
           total=$(echo "$feed" | jq -r '.total')
           if [ "$total" -lt 300 ]; then echo "Unexpected live feed size: $total"; exit 1; fi
-          for page in \
-            'job-details/ssc-10-2-chsl-2025-final-result-out-a54e5177/index.html' \
-            'job-details/ssc-mts-havaldar-final-result-2026-out-1c084548/index.html'; do
-            body=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$page?verify=$DEPLOY_SHA")
-            if ! echo "$body" | grep -q 'Original SarkariJobs+'; then echo "Missing original detail page content: $page"; exit 1; fi
+          for f in sitemap.xml data/jobs.json; do
+            live=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$f?verify=$DEPLOY_SHA" | sha256sum | cut -d' ' -f1)
+            want=$(sha256sum "$f" | cut -d' ' -f1)
+            if [ "$live" != "$want" ]; then echo "Live $f does not match this commit."; exit 1; fi
+          done
+          for page in $(ls -d job-details/*/ | sort | grep -v 'privacy-policy-1f1c4eba' | sed -n '1p;$p'); do
+            page=${page%/}
+            body=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$page/index.html?verify=$DEPLOY_SHA")
+            if ! echo "$body" | grep -q 'How to use this page'; then echo "Stale or missing detail page: $page"; exit 1; fi
           done
           for page in results.html admit-cards.html; do
             body=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$page?verify=$DEPLOY_SHA")
             if ! echo "$body" | grep -q 'data-announcement-type'; then echo "Missing all-listings page: $page"; exit 1; fi
           done
-          echo "Hostinger serves $DEPLOY_SHA, $total feed records, and both new result pages."
+          echo "Hostinger serves $DEPLOY_SHA byte-identical artifacts, $total feed records, and enriched detail pages on both shards."
