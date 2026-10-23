@@ -183,9 +183,10 @@ sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}\n</urlset>`);
 
 // Canonical serialization independent of the previous file's formatting:
 // every <url> block on its own compact line, so repeated builds are
-// byte-stable and the deployed file equals the committed one.
-const opening = rawSitemap.slice(0, rawSitemap.indexOf('<url>')).replace(/\s+$/, '\n');
-const blocks = sitemap.match(/<url>[\s\S]*?<\/url>/g) || [];
+// byte-stable and the deployed file equals the committed one. Stray CR bytes
+// from CRLF checkouts are dropped so every line ends uniformly in LF.
+const opening = rawSitemap.slice(0, rawSitemap.indexOf('<url>')).replace(/\s+$/, '\n').replace(/\r/g, '');
+const blocks = (sitemap.replace(/\r/g, '').match(/<url>[\s\S]*?<\/url>/g) || []);
 fs.writeFileSync(sitemapPath, `${opening}${blocks.join('\n')}\n</urlset>\n`);
 fs.writeFileSync(lastmodStatePath, JSON.stringify(nextLastmodState, null, 2) + '\n');
 
