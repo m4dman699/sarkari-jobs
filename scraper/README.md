@@ -27,7 +27,7 @@ npm run scrape:competitors
 npm run build:details
 ```
 
-`npm run scrape` only covers official sources; it is not the complete scheduled refresh. The script runs one request per official source page, with four workers and a 6.5-second request timeout. Failed or blocked sources are recorded in `data/jobs.json`; the script preserves prior listings for uncertain sources. Do not automatically rerun the whole scrape after a shell/tool timeout: first check whether `node scrape.js` is still running and inspect the log/output. The GitHub Actions job has a 20-minute limit and is the preferred place to run the full scheduled refresh.
+`npm run scrape` only covers official sources; it is not the complete scheduled refresh. The script runs one request per official source page, with four workers and a 6.5-second request timeout. Failed or blocked sources are recorded in `data/jobs.json`; the script preserves prior listings for uncertain sources, and records filled from competitor listings (those carrying a `publisher`) survive rebuilds so enrichment is never lost. Do not automatically rerun the whole scrape after a shell/tool timeout: first check whether `node scrape.js` is still running and inspect the log/output. The GitHub Actions job has a 20-minute limit and is the preferred place to run the full scheduled refresh.
 
 ## Publish
 

@@ -64,6 +64,8 @@ async function main() {
 
   // Curated competitor links survive daily scrapes when government portals
   // are blocked or their page layouts change.
+  // Competitor-published records already in the feed are also re-retained in
+  // the pass below, so previously enriched records are not lost on a rebuild.
   const curatedPath = path.join(__dirname, 'competitor-listings.json');
   try {
     const curated = JSON.parse(fs.readFileSync(curatedPath, 'utf8'));
@@ -104,7 +106,11 @@ async function main() {
     }
     const ids = new Set(unique.map(item => item.id));
     const retained = previous.jobs.filter(item =>
-      uncertainSources.has(item.source) &&
+      // Official records survive only while their source is uncertain; records
+      // filled in from competitor listings (they carry a publisher) survive
+      // every rebuild so enrichment is not lost when a portal or competitor
+      // index is unreachable on a given day.
+      (uncertainSources.has(item.source) || item.publisher) &&
       item.link && !/\/undefined(?:$|[?#])|\/#(?:$|[?#])|megrecruitment\.nic\.in/i.test(item.link) &&
       !/\{\{.*\}\}|\brti\b|right to information|reporting vacancies/i.test(item.title || '') &&
       !/^(?:notifications?|what'?s new|latest news|announcements?|recruitment|results?|admit cards?)$/i.test(item.title || '') &&
