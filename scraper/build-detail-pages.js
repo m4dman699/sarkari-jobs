@@ -57,6 +57,92 @@ function isNonRecruitmentPage(item) {
     || /\/(?:privacy-policy|about-us|contact-us|disclaimer|terms-and-conditions|sitemap)(?:\/|$)/i.test(url);
 }
 
+// Original editorial layer for detail pages. SarkariJobs+ wording only — the
+// facts come from this record; the guidance sentences are written for this
+// site and never paraphrase the source page. Each page's content answers the
+// reader's real next questions so the listing is more than public-domain data.
+const KIND_URL_PHRASE = {
+  'Job notification': 'recruitment notice',
+  'Admit card': 'admit card release',
+  'Result / recruitment update': 'result update'
+};
+
+function seedOf(text) {
+  let hash = 2166136261;
+  for (const char of String(text)) {
+    hash ^= char.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function orgNames(item) {
+  const raw = String(item.organization || (item.publisher ? '' : item.source) || '').trim();
+  let base = raw;
+  let short = '';
+  const matched = raw.match(/^(.*?)\s*\(([^()]{1,12})\)\s*$/);
+  if (matched) { base = matched[1].trim(); short = matched[2].trim(); }
+  else if (raw.length > 16 && raw.split(/\s+/).length >= 2) { short = raw.split(/\s+/).pop(); }
+  if (!base) { base = 'the exam authority'; short = 'the authority'; }
+  else if (!short) { short = 'the authority'; }
+  return { base, short };
+}
+
+function statePhrase(item) {
+  const state = String(item.state || '').trim();
+  return /^(see\b|not stated|n\/a)/i.test(state) || !state ? '' : state;
+}
+
+function guideFor(item, kind, names, slug) {
+  const { base, short } = names;
+  const state = statePhrase(item);
+  const phrase = KIND_URL_PHRASE[kind];
+  const regional = state ? ` covering candidates in ${state}` : '';
+  const pick = seedOf('guide:' + slug) % 3;
+  if (kind === 'Job notification') {
+    const leads = [
+      `This is a ${phrase} from ${base}${regional ? `, and it addresses candidates in ${state}` : ''}. The facts table collects only the details stated in the public notice, so eligibility, post-wise conditions and fee amounts should still be confirmed in the notification before applying.`,
+      `${base} has published this opening${regional ? ` for candidates in ${state}` : ''}. This page points to the correct application portal and lists the dates exactly as stated in the notice; treat the notification itself as the only binding source of requirements.`,
+      `Candidates who intend to apply should start from the official portal linked above and read the complete notification there. This page is a summary aid — it does not republish the full notice text, and the source is credited in every row above.`
+    ];
+    return { lead: leads[pick], caution: `Apply only through the portal linked above, and be cautious of anyone claiming to sell or fast-track a government application — ${short} processes candidates only through its own channels.` };
+  }
+  if (kind === 'Admit card') {
+    const leads = [
+      `This page tracks the ${phrase} for ${base}${regional}. Hall tickets are issued only by the exam authority, so download from the portal linked above and check every printed detail before the exam day.`,
+      `${base} has released these call letters${regional}. Keep a printed copy with a valid photo ID ready for the exam, because entry depends on the details printed on the card, not on any forwarded copy or text message.`,
+      `If you applied for this exam, verify your slot and centre on the official hall ticket from the authority portal. Any discrepancy in the printed details should be reported to ${short} well before the exam date.`
+    ];
+    return { lead: leads[pick], caution: `Never share registration numbers, passwords or date of birth with third parties promising to download a hall ticket for you — carry the official printout instead.` };
+  }
+  const leads = [
+    `This ${phrase} comes from ${base}${regional}; the linked document is the authority's own result page or PDF, not a rewritten copy. Roll number lists and marks, where issued, are read directly there.`,
+    `Practical use: open the official link above and search your roll or registration number in the published list. This page only records that this result stage is out and credits where it was first published.`,
+    `Read this as a pointer, not the result itself: the authority document linked above holds the final roll number list or marks login. Any claim without an official document behind it should not be trusted.`
+  ];
+  return { lead: leads[pick], caution: `Results are free public documents. Treat messages or calls that "confirm your result" for a payment as fraud and verify solely on the authority's portal.` };
+}
+
+function faqFor(item, kind, names) {
+  const { base, short } = names;
+  const list = [];
+  if (kind === 'Job notification') {
+    list.push({ q: 'Where should I apply for this opening?', a: `${base} handles applications directly through its official portal. Use the source links section above to open the right page, and never pay an agent to process an application on your behalf.` });
+    if (item.lastDate) list.push({ q: 'What is the application deadline?', a: `The listing records ${date(item.lastDate)} as the closing date. Confirm it on the official portal before paying any fee — authorities occasionally extend deadlines by notice.` });
+    if (item.vacancies) list.push({ q: 'How many vacancies are advertised?', a: `${item.vacancies} vacancies are indicated for this recruitment. Post-wise distribution and reservation details should be confirmed from the official notification itself.` });
+    if (item.examDate) list.push({ q: 'When is the examination scheduled?', a: `The listing notes the exam date as ${date(item.examDate)}. Any schedule change would be published by ${short} first and reflected on its portal.` });
+  } else if (kind === 'Admit card') {
+    list.push({ q: 'How do I download the admit card?', a: `Open ${short}'s official portal from the links section above and sign in with your registration or roll number and date of birth, exactly as used during the application.` });
+    list.push({ q: 'What should I check on it?', a: `Confirm the printed name, photograph, exam date and shift, centre address and category. Report any mismatch to ${short} through its official contact channels before the exam day.` });
+    if (item.examDate) list.push({ q: 'When is the examination?', a: `The listing records the exam date as ${date(item.examDate)}. Reach the centre per the shift stated on the admit card, not on any third-party website.` });
+  } else {
+    list.push({ q: 'How do I check this result?', a: `Use the official result link in the links section above — it opens either ${short}'s result page or the published PDF — and search for your roll or registration number.` });
+    if (item.resultDate) list.push({ q: 'When was the result declared?', a: `The listing records the result date as ${date(item.resultDate)}. If the link stops working, check the authority's results section, where documents are sometimes rearranged.` });
+    list.push({ q: 'What happens for shortlisted candidates?', a: `The next stage, whether document verification or the following round, is notified by ${short} on its portal. Rely on that notice for dates rather than forwarded screenshots.` });
+  }
+  return list;
+}
+
 function summaryFor(item, kind) {
   const organization = escapeHTML(item.organization || 'the recruiting authority');
   if (item.type === 'job') {
@@ -97,6 +183,13 @@ for (const item of payload.jobs || []) {
   const title = escapeHTML(item.title);
   const kind = listingType(item);
   const verifiedSummary = `<p class="summary">${summaryFor(item, kind)}</p>`;
+  const names = orgNames(item);
+  const guide = guideFor(item, kind, names, slug);
+  const faq = faqFor(item, kind, names);
+  const faqHtml = faq.map(entry => `<h3>${escapeHTML(entry.q)}</h3><p>${escapeHTML(entry.a)}</p>`).join('');
+  const faqLd = faq.length >= 2
+    ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(entry => ({ '@type': 'Question', name: entry.q, acceptedAnswer: { '@type': 'Answer', text: entry.a } })) }).replace(/</g, '\\u003c')}</script>`
+    : '';
   const extraRows = [
     item.vacancies ? row('Vacancies', escapeHTML(item.vacancies)) : '',
     item.ageLimit ? row('Age limit', escapeHTML(item.ageLimit)) : '',
@@ -131,8 +224,8 @@ for (const item of payload.jobs || []) {
   const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title}. Verify eligibility and instructions in the official recruitment notice.">
-<link rel="canonical" href="${canonical}"><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css">
+<title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title} listed by ${escapeHTML(names.base)}. Verify eligibility and instructions in the official recruitment notice.">
+<link rel="canonical" href="${canonical}">${faqLd}<script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css">
 <style>body{background:#f4f7fb;color:#182235;font:16px/1.65 system-ui,sans-serif;margin:0}.detail-wrap{max-width:920px;margin:2rem auto;padding:1.25rem}.detail-card{background:#fff;border:1px solid #d9e1ee;border-radius:16px;padding:clamp(1.25rem,4vw,2.5rem);box-shadow:0 8px 28px #1527470d}.crumbs{font-size:.9rem;margin-bottom:1.4rem}.eyebrow{color:#415b83;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem}.detail-card h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;margin:.35rem 0 1rem}.summary{font-size:1.05rem;color:#35445b}.facts{width:100%;border-collapse:collapse;margin:1.5rem 0}.facts th,.facts td{border-bottom:1px solid #e5eaf2;padding:.8rem;text-align:left;vertical-align:top}.facts th{width:35%;color:#42516a}.buttons{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.2rem 0}.button{display:inline-flex;padding:.75rem 1rem;background:#173c8f;color:white!important;border-radius:9px;text-decoration:none;font-weight:700}.button.secondary{background:#edf2fb;color:#173c8f!important}.notice{font-size:.9rem;color:#46556d;background:#f3f6fb;padding:1rem;border-radius:10px}.back{display:inline-block;margin-top:1.2rem}.disclaimer{font-size:.85rem;color:#58667a;border-top:1px solid #e5eaf2;padding-top:1rem;margin-top:1.5rem}</style></head>
 <body><main class="detail-wrap"><nav class="crumbs"><a href="../../">Home</a> / ${escapeHTML(kind)}</nav><article class="detail-card">
 <div class="eyebrow">${escapeHTML(kind)} · ${escapeHTML(item.category || 'Government recruitment')}</div><h1>${title}</h1>
@@ -143,6 +236,7 @@ ${extraRows}${milestones}${applicationStatus(item) ? row('Closing status', appli
 ${row('Fact source', escapeHTML(item.factSource || item.publisher || item.source || 'Not stated'))}${item.factCheckedAt ? row('Source checked', date(item.factCheckedAt)) : ''}
 ${row('Page wording and layout', 'Original SarkariJobs+ summary')}</tbody></table>
 <div class="buttons">${links || '<span class="notice">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>'}</div>
+<h2>How to use this page</h2><p>${escapeHTML(guide.lead)}</p><p class="notice">${escapeHTML(guide.caution)}</p><h2>Frequently asked questions</h2>${faqHtml}
 <p class="notice">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
 <p class="disclaimer">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+. Source facts remain attributed and are not represented as exclusive or licensed from the source site.</p>
 <a class="back" href="../../">← Back to SarkariJobs+</a><nav class="back" aria-label="Site information"><a href="../../about.html">About</a> · <a href="../../editorial-policy.html">Editorial policy</a> · <a href="../../privacy.html">Privacy</a> · <a href="../../contact.html">Contact</a></nav></article></main></body></html>`;
