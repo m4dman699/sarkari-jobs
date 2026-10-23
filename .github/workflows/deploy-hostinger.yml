@@ -53,7 +53,7 @@ jobs:
       - name: Stage public website files
         run: |
           mkdir -p .deploy-site
-          cp index.html category.html state.html about.html editorial-policy.html privacy.html contact.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
+          cp index.html category.html state.html results.html admit-cards.html about.html editorial-policy.html privacy.html contact.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
           cp -R assets css js data .deploy-site/
           cp -R upsc-cds-2-2026 .deploy-site/
           mkdir -p .deploy-shard-a
@@ -141,5 +141,9 @@ jobs:
             'job-details/ssc-mts-havaldar-final-result-2026-out-1c084548/index.html'; do
             body=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$page?verify=$DEPLOY_SHA")
             if ! echo "$body" | grep -q 'Original SarkariJobs+'; then echo "Missing original detail page content: $page"; exit 1; fi
+          done
+          for page in results.html admit-cards.html; do
+            body=$(curl --fail --silent --show-error --max-time 15 -H 'Cache-Control: no-cache' "https://sarkarijobsplus.com/$page?verify=$DEPLOY_SHA")
+            if ! echo "$body" | grep -q 'data-announcement-type'; then echo "Missing all-listings page: $page"; exit 1; fi
           done
           echo "Hostinger serves $DEPLOY_SHA, $total feed records, and both new result pages."

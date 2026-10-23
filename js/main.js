@@ -352,7 +352,16 @@ function detailSlug(item) {
   return `${title}-${(hash >>> 0).toString(16).padStart(8, '0')}`;
 }
 
+let allAnnouncementItems = [];
+let visibleAnnouncementCount = 12;
+let announcementPageType = '';
+let announcementPageGeneratedAt = '';
+let announcementPagePartial = false;
+
 function renderAnnouncementSections(items, generatedAt, partial = false) {
+  announcementPageType = document.body.dataset.announcementType || '';
+  announcementPageGeneratedAt = generatedAt;
+  announcementPagePartial = partial;
   [
     { type: 'result', grid: 'results-grid', status: 'results-status', empty: 'No result links were found in the latest scrape.' },
     { type: 'admit-card', grid: 'admit-cards-grid', status: 'admit-cards-status', empty: 'No admit-card links were found in the latest scrape.' }
@@ -361,13 +370,37 @@ function renderAnnouncementSections(items, generatedAt, partial = false) {
       .sort((a, b) => String(b.publishedDate || '').localeCompare(String(a.publishedDate || '')));
     const grid = document.getElementById(section.grid);
     const status = document.getElementById(section.status);
+    const isFullListingPage = announcementPageType === section.type;
+    const listingLimit = isFullListingPage ? 24 : 12;
+    if (isFullListingPage) {
+      allAnnouncementItems = matching;
+      visibleAnnouncementCount = listingLimit;
+    }
     if (status) status.textContent = matching.length
-      ? `${matching.length} listings · ${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
+      ? `${isFullListingPage ? `Showing ${Math.min(visibleAnnouncementCount, matching.length)} of ${matching.length} listings · ` : `${matching.length} listings · `}${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
       : section.empty;
     if (grid) grid.innerHTML = matching.length
-      ? matching.slice(0, 12).map(announcementCardHTML).join('')
+      ? matching.slice(0, listingLimit).map(announcementCardHTML).join('')
       : `<p class="jobs-message">${escapeHTML(section.empty)} Check the relevant official board for updates.</p>`;
+    if (isFullListingPage) {
+      const more = document.getElementById('show-more-announcements');
+      if (more) more.hidden = matching.length <= listingLimit;
+    }
   });
+}
+
+function showMoreAnnouncements() {
+  const section = announcementPageType === 'result'
+    ? { grid: 'results-grid', status: 'results-status' }
+    : { grid: 'admit-cards-grid', status: 'admit-cards-status' };
+  const grid = document.getElementById(section.grid);
+  if (!grid || !announcementPageType) return;
+  visibleAnnouncementCount = Math.min(visibleAnnouncementCount + 24, allAnnouncementItems.length);
+  grid.innerHTML = allAnnouncementItems.slice(0, visibleAnnouncementCount).map(announcementCardHTML).join('');
+  const status = document.getElementById(section.status);
+  if (status) status.textContent = `Showing ${visibleAnnouncementCount} of ${allAnnouncementItems.length} listings · ${feedUpdatedLabel({ generatedAt: announcementPageGeneratedAt })}${announcementPagePartial ? ' Some portals could not be reached.' : ''}`;
+  const more = document.getElementById('show-more-announcements');
+  if (more) more.hidden = visibleAnnouncementCount >= allAnnouncementItems.length;
 }
 
 function renderJobList(list, gridId) {
@@ -549,4 +582,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCategories([]);
   renderJobs();
   animateCounts();
+  document.getElementById('show-more-announcements')?.addEventListener('click', showMoreAnnouncements);
 });

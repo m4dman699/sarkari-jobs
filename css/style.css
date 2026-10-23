@@ -815,6 +815,8 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
 @media (prefers-reduced-motion: reduce) { .source-photo-tile img, .source-photo-badge > span { animation: none; } .source-cta { transition: none; } }
 .announcement-guide { display: inline-block; margin-top: 9px; color: #174b9b; font-weight: 800; text-decoration: none; }
 .announcement-guide:hover { text-decoration: underline; }
+.announcement-more { display: flex; justify-content: center; gap: 12px; margin-top: 28px; }
+.announcement-page-more { display: flex; justify-content: center; margin-top: 28px; }
 @media (max-width: 900px) { .source-bento { grid-template-rows: repeat(2, minmax(190px, auto)); } .source-photo-tile { grid-column: span 6; min-height: 410px; } .source-bento-card { grid-column: span 6; padding: 22px; } }
 @media (max-width: 640px) { section.block.source-section { padding: 52px 0; } .source-heading { margin-bottom: 20px; } .source-bento { grid-template-columns: 1fr; grid-template-rows: auto; gap: 12px; } .source-photo-tile, .source-bento-card { grid-column: 1; grid-row: auto; } .source-photo-tile { min-height: 285px; } .source-bento-card { min-height: 0; padding: 23px; } .source-bento-card p { font-size: .9rem; } .source-cta { align-self: stretch; justify-content: center; } }
 
