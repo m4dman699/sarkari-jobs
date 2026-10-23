@@ -9,7 +9,10 @@ Use Node.js 20 or newer. `package.json` and `package-lock.json` pin the scraper'
 The daily GitHub Actions workflow `.github/workflows/scrape.yml` runs at 02:17 UTC (07:47 India time). It performs these steps in order:
 
 1. `npm run scrape` reads official recruitment portals and writes `../data/jobs.json` plus state feeds.
-2. `npm run scrape:competitors` adds eligible listings from configured competitor index pages.
+2. `npm run scrape:competitors` fills information and listing gaps from the long-running competitor indexes SarkariResult.com and FreeJobAlert.com
+   (jobs, admit cards, results). One record is kept per listing URL; its type is refined from the newest exam-stage milestone on the linked
+   page, and the `.sarkariresult.com.cm` copycat is only used as merge-upgrade input. Stale or undated competitor jobs are removed, and
+   `competitor-gap-report.json` records what changed and which gaps remain.
 3. `npm run build:details` generates individual listing pages and updates the sitemap.
 4. GitHub Actions commits changed feed/page files to `main`. That push starts the Hostinger deployment workflow.
 
