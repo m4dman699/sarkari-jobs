@@ -22062,5 +22062,42 @@
         }
       ]
     }
+  },
+  "https://www.freejobalert.com/articles/bank-of-baroda-so-admit-card-2026-3075584": {
+    "attemptedAt": "2026-10-24T07:20:01.945Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Bank of Baroda",
+      "publishedDate": "2026-10-24",
+      "openDate": "2026-08-06",
+      "lastDate": "2026-08-26",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "206",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last date to apply and pay fee",
+          "date": "2026-08-26",
+          "dateText": "26 August 2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/bobdoct26/oecla_oct26/login.php?appid=f45182b711dcad2d160e2b9de0f01c64",
+      "notificationLink": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-08/Advertisement-Regular-06-08-2026-05-34.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/bobdoct26/oecla_oct26/login.php?appid=f45182b711dcad2d160e2b9de0f01c64",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-08/Advertisement-Regular-06-08-2026-05-34.pdf",
+          "label": "Official Notification"
+        }
+      ]
+    }
   }
 }

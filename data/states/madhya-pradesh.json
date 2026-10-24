@@ -1,59 +1,7 @@
 {
-  "generatedAt": "2026-10-24T04:44:34.957Z",
+  "generatedAt": "2026-10-24T07:20:00.762Z",
   "total": 5,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA4XzEwXzIwMjYucGRm",
-      "type": "job",
-      "title": "Recruitment Advertisement for Law Officer Exam 2026 (Jail Department - Government of Madhya Pradesh) (Advt. No./13/2026), Dated 08/10/2026",
-      "source": "MPPSC",
-      "category": "State PSC",
-      "state": "Madhya Pradesh",
-      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Law_Officer_Exam_2026_Dated_08_10_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-08"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfQXNzaXN0YW50X0RpcmVjdG9yXzIwMjZfRGF0ZWRfMDZfMDdfMjAyNi5wZGY",
-      "type": "job",
-      "title": "Recruitment Advertisement for Assistant Director 2026, Department of Higher Education, Government of Madhya Pradesh (Advt. No. 12/2026), Dated 06/07/2026",
-      "source": "MPPSC",
-      "category": "Teaching",
-      "state": "Madhya Pradesh",
-      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_2026_Dated_06_07_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-07-06"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfQXNzaXN0YW50X0RpcmVjdG9yX0Zpc2hlcmllc18yMDI2X0RhdGVkXzA2XzA3XzIwMjYucGRm",
-      "type": "job",
-      "title": "Recruitment Advertisement for Assistant Director Fisheries 2026, Department of Fishermen Welfare and Fisheries Development Government of Madhya Pradesh (Advt. No. 11/2026), Dated 0",
-      "source": "MPPSC",
-      "category": "UPSC",
-      "state": "Madhya Pradesh",
-      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_Fisheries_2026_Dated_06_07_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-07-06"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfSW50ZXJuYWxfQWNjb3VudHNfRXhhbWluZXJfT2ZmaWNlcl9fMjAyNl9EYXRlZF8xMF8wNF8yMDI2LnBkZg",
-      "type": "job",
-      "title": "Recruitment Advertisement for Internal Accounts Examiner Officer Exam 2026 (Advt. No./10/2026), Dated 10/04/2026",
-      "source": "MPPSC",
-      "category": "State PSC",
-      "state": "Madhya Pradesh",
-      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Internal_Accounts_Examiner_Officer__2026_Dated_10_04_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-04-10",
-      "publishedDate": null
-    },
     {
       "id": "competitor-sarkariresult-92e2d0c8893afb1d",
       "type": "job",
@@ -113,6 +61,58 @@
           "dateText": "30/10/2026"
         }
       ]
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA4XzEwXzIwMjYucGRm",
+      "type": "job",
+      "title": "Recruitment Advertisement for Law Officer Exam 2026 (Jail Department - Government of Madhya Pradesh) (Advt. No./13/2026), Dated 08/10/2026",
+      "source": "MPPSC",
+      "category": "State PSC",
+      "state": "Madhya Pradesh",
+      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Law_Officer_Exam_2026_Dated_08_10_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-08"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfQXNzaXN0YW50X0RpcmVjdG9yXzIwMjZfRGF0ZWRfMDZfMDdfMjAyNi5wZGY",
+      "type": "job",
+      "title": "Recruitment Advertisement for Assistant Director 2026, Department of Higher Education, Government of Madhya Pradesh (Advt. No. 12/2026), Dated 06/07/2026",
+      "source": "MPPSC",
+      "category": "Teaching",
+      "state": "Madhya Pradesh",
+      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_2026_Dated_06_07_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-07-06"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfQXNzaXN0YW50X0RpcmVjdG9yX0Zpc2hlcmllc18yMDI2X0RhdGVkXzA2XzA3XzIwMjYucGRm",
+      "type": "job",
+      "title": "Recruitment Advertisement for Assistant Director Fisheries 2026, Department of Fishermen Welfare and Fisheries Development Government of Madhya Pradesh (Advt. No. 11/2026), Dated 0",
+      "source": "MPPSC",
+      "category": "UPSC",
+      "state": "Madhya Pradesh",
+      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_Fisheries_2026_Dated_06_07_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-07-06"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfSW50ZXJuYWxfQWNjb3VudHNfRXhhbWluZXJfT2ZmaWNlcl9fMjAyNl9EYXRlZF8xMF8wNF8yMDI2LnBkZg",
+      "type": "job",
+      "title": "Recruitment Advertisement for Internal Accounts Examiner Officer Exam 2026 (Advt. No./10/2026), Dated 10/04/2026",
+      "source": "MPPSC",
+      "category": "State PSC",
+      "state": "Madhya Pradesh",
+      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Internal_Accounts_Examiner_Officer__2026_Dated_10_04_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-04-10",
+      "publishedDate": null
     }
   ]
 }

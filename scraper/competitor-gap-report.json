@@ -1,52 +1,52 @@
 {
-  "generatedAt": "2026-10-24T04:44:57.984Z",
-  "durationSeconds": 16,
+  "generatedAt": "2026-10-24T07:20:01.957Z",
+  "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 514,
-    "jobs": 132,
-    "admitCards": 95,
-    "results": 287,
-    "jobsMissingPublicationDate": 59,
-    "jobsMissingClosingDate": 77,
-    "jobsMissingOrganization": 82,
-    "jobsMissingVacancies": 92,
-    "jobsMissingEligibility": 85,
-    "jobsMissingApplicationFee": 86,
+    "total": 525,
+    "jobs": 138,
+    "admitCards": 99,
+    "results": 288,
+    "jobsMissingPublicationDate": 58,
+    "jobsMissingClosingDate": 75,
+    "jobsMissingOrganization": 81,
+    "jobsMissingVacancies": 94,
+    "jobsMissingEligibility": 84,
+    "jobsMissingApplicationFee": 85,
     "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 20,
+    "admitCardsMissingPublishedDate": 18,
     "resultsMissingPublishedDate": 45,
     "resultsMissingResultDate": 161
   },
   "after": {
-    "total": 525,
-    "jobs": 138,
-    "admitCards": 99,
+    "total": 524,
+    "jobs": 136,
+    "admitCards": 100,
     "results": 288,
     "jobsMissingPublicationDate": 56,
     "jobsMissingClosingDate": 73,
     "jobsMissingOrganization": 79,
     "jobsMissingVacancies": 92,
-    "jobsMissingEligibility": 81,
-    "jobsMissingApplicationFee": 82,
+    "jobsMissingEligibility": 82,
+    "jobsMissingApplicationFee": 83,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 18,
     "resultsMissingPublishedDate": 45,
     "resultsMissingResultDate": 161
   },
   "imported": {
-    "job": 7,
-    "admit-card": 5,
-    "result": 1
+    "job": 0,
+    "admit-card": 1,
+    "result": 0
   },
-  "matchedExisting": 183,
-  "filledItems": 64,
+  "matchedExisting": 23,
+  "filledItems": 0,
   "removedStale": 0,
   "removedUncertain": 0,
-  "skippedClosed": 231,
+  "skippedClosed": 0,
   "removedNavigation": 2,
   "removalLog": [
     {
@@ -63,16 +63,17 @@
     }
   ],
   "detailPages": {
-    "targets": 127,
-    "fetched": 126,
-    "cacheHits": 1
+    "targets": 5,
+    "fetched": 1,
+    "cacheHits": 4
   },
   "remainingGaps": {
     "jobsMissingDate": [
       "DETAILS OF POSTS FOR ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SE..",
+      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "AVR (Apprentice)",
       "Online application for AVR (SSR), AVR (MR) and SSR (Med) for INET 26 is live from 14 Mar 26. Download advertisements. (Closed)",
-      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
       "Recruitment Advertisement for Internal Accounts Examiner Officer Exam 2026 (Advt. No./10/2026), Dated 10/04/2026",
       "இணையவழியில் விண்ணப்பிக்க Apply online",
       "Exam Syllabus (Prelim) - 47/2026-27 (Safety Officer, Class-2 Gujarat Maritime Board(Special Recruitment Drive))",
@@ -87,13 +88,16 @@
       "Important Notice for Dates of Preliminary Examinaton of the Advertisements Published by Commission",
       "Apply for Consent Form and Deposit",
       "How to Apply and Pay",
-      "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
-      "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026"
+      "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)"
     ],
     "jobsMissingClosingDate": [
+      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
+      "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
+      "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
+      "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "AVR (Apprentice)",
       "Online application for AVR (SSR), AVR (MR) and SSR (Med) for INET 26 is live from 14 Mar 26. Download advertisements. (Closed)",
-      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
       "Recruitment Advertisement for Law Officer Exam 2026 (Jail Department - Government of Madhya Pradesh) (Advt. No./13/2026), Dated 08/10/2026",
       "Recruitment Advertisement for Assistant Director 2026, Department of Higher Education, Government of Madhya Pradesh (Advt. No. 12/2026), Dated 06/07/2026",
       "Recruitment Advertisement for Assistant Director Fisheries 2026, Department of Fishermen Welfare and Fisheries Development Government of Madhya Pradesh (Advt. No. 11/2026), Dated 0",
@@ -106,11 +110,7 @@
       "Advertisement - 36/2026-27 Important Notice Regarding Scribe and Compensatory Time exam on 31-10-2026 (ICT Officer, Class-2, (VARIOUS MUNICIPALITIES))",
       "Important Notice Regarding Date of Common General Studies Preliminary Exam of 34 Advertisement",
       "Important Notice Regarding the Re-Opening of a Previously Published Advertisement as Part of the Recruitment Process Simplification",
-      "Newspaper Format Advertisement for Online Advertisements for Advt. No. 7/2026-27 to 21/2026-27 starting from 05.05.2026 13:00 to 19.05.2026 23:59.",
-      "IMPORTANT NOTICE REGARDING MARKS OF THE GENERAL STUDIES / RELATED SUBJECT EXAMINATION TO BE PASSED TO THE COMMON ADVERTISEMENTS WHERE CONSENT DEPOSIT IS REQUIRED",
-      "Upcoming Advertisements to be published in the year 2026 by Gujarat Public Service Commission",
-      "Important Notice for Dates of Preliminary Examinaton of the Advertisements Published by Commission",
-      "Newspaper Format Advertisement for Online Advertisements from Advt. No. 111/2025-26 to 133/2025-26 starting from 31.01.2026 13:00 to 16.02.2026 23:59"
+      "Newspaper Format Advertisement for Online Advertisements for Advt. No. 7/2026-27 to 21/2026-27 starting from 05.05.2026 13:00 to 19.05.2026 23:59."
     ],
     "jobsMissingOrganization": [
       "DETAILS OF POSTS FOR ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SE..",
@@ -121,21 +121,20 @@
       "Planning & Research - Filling up the post of Joint Director - Group-A (Gazetted / Non-Ministerial) in Level-10 of Pay Matrix on deputation basis - Reg.",
       "URSC:04:2026 — Recruitment to the posts of Technician - B/ Heavy Vehicle Driver - A/ Light Vehicle Driver - A/ Staff Car Driver- A",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
+      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
+      "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
+      "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
+      "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "AVR (Apprentice)",
       "Online application for AVR (SSR), AVR (MR) and SSR (Med) for INET 26 is live from 14 Mar 26. Download advertisements. (Closed)",
-      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
       "Recruitment Advertisement for Law Officer Exam 2026 (Jail Department - Government of Madhya Pradesh) (Advt. No./13/2026), Dated 08/10/2026",
       "Recruitment Advertisement for Assistant Director 2026, Department of Higher Education, Government of Madhya Pradesh (Advt. No. 12/2026), Dated 06/07/2026",
       "Recruitment Advertisement for Assistant Director Fisheries 2026, Department of Fishermen Welfare and Fisheries Development Government of Madhya Pradesh (Advt. No. 11/2026), Dated 0",
       "Recruitment Advertisement for Internal Accounts Examiner Officer Exam 2026 (Advt. No./10/2026), Dated 10/04/2026",
-      "இணையவழியில் விண்ணப்பிக்க Apply online",
-      "Exam Syllabus (Prelim) - 47/2026-27 (Safety Officer, Class-2 Gujarat Maritime Board(Special Recruitment Drive))",
-      "Exam Syllabus (Prelim) - 43/2026-27 (Engineer Surveyor, Class-1, Gujarat Maritime Board(Special Recruitment Drive))",
-      "Exam Syllabus (Prelim) - 42/2026-27 (Marine Engineer, Class-1, Gujarat Maritime Board(Special Recruitment Drive))",
-      "Advertisement - 118/2025-26 Important Notice regarding the Counselling Procedure (Additional City Engineer (Civil), Class-1, (New Municipal Corporations))"
+      "இணையவழியில் விண்ணப்பிக்க Apply online"
     ],
     "jobsMissingVacancies": [
-      "Agniveer Apprentice",
       "DETAILS OF POSTS FOR ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SE..",
       "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
       "NTA UGC NET December 2026 Online Form",
@@ -151,12 +150,29 @@
       "Planning & Research - Filling up the post of Joint Director - Group-A (Gazetted / Non-Ministerial) in Level-10 of Pay Matrix on deputation basis - Reg.",
       "Delhi DSSSB Sweeper, Safai Karamchari, Chowkidar Post Online Form 2026",
       "URSC:04:2026 — Recruitment to the posts of Technician - B/ Heavy Vehicle Driver - A/ Light Vehicle Driver - A/ Staff Car Driver- A",
+      "CWC Assistant Manager and Junior Executive Recruitment 2026 — 327 Posts",
       "Supreme Court of India Senior Personal Assistant Online Form 2026",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
-      "AVR (Apprentice)"
+      "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN)."
     ],
     "jobsMissingOfficialLink": []
   },
-  "errors": []
+  "errors": [
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/latestjob/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/admitcard/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/result/",
+      "error": "HTTP 403"
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T04:44:34.957Z",
-  "total": 5,
+  "generatedAt": "2026-10-24T07:20:00.762Z",
+  "total": 10,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbU5LZnFYbW9TVW5rckZlL3dVVVBQZA",
@@ -92,6 +92,54 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-b14d92cb6738e837",
+      "type": "job",
+      "title": "UP Rampur ECCE Educator Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-ecce-educator-rampur-oct26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-24",
+      "lastDate": "2026-10-30",
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-23",
+      "openDate": "2026-10-22",
+      "ageLimit": "21–40 years",
+      "eligibility": "Graduation in BA Arts, B.Sc, Home Science with FOOD AND NUTRITION from a recognized university Graduate in Science, B.Sc, Home Science from a recognized university Nursery Teacher Training (NTT) – All Subjects Diploma in Early Childhood Education – All Subjects",
+      "applicationFee": "for the All Candidates. UP",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Rampur_23102026.pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://rampur.nic.in/hi/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026 | 08:50 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-686b7d89d37a2f88",
       "type": "job",
       "title": "UPSSSC Physical Instructor & Other Post Online Form 2026 for 412 Post",
@@ -143,6 +191,232 @@
           "label": "Form Correction Last Date",
           "date": "2026-11-13",
           "dateText": "13/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-5819b013a3ca2882",
+      "type": "job",
+      "title": "UP ECCE Educator Fatehpur Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-ecce-educator-fatehpur-oct26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-24",
+      "lastDate": "2026-11-07",
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-23",
+      "openDate": "2026-10-22",
+      "ageLimit": "21–40 years",
+      "eligibility": "Graduation from a recognized university with minimum 50% marks and Home Science as a major subject OR 2 Years Diploma in DPSE. 5% marks relaxation in minimum marks for reserved categories.",
+      "applicationFee": "for the All Candidates.",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Fatehpur_23102026.pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026 | 09:50 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-07",
+          "dateText": "07/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-52e3e1e350d0d2f7",
+      "type": "job",
+      "title": "UPESSC UP Headmaster Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://apply.upessc.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-headmaster-09-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-24",
+      "lastDate": "2026-11-22",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-10-23",
+      "openDate": "2026-10-23",
+      "examDate": "2027-01-07",
+      "vacancies": "1172",
+      "ageLimit": "30–62 years",
+      "eligibility": "Post Name Total Post UPESS UP Headmaster Eligibility 2026 Headmaster (Balak) 1037 Master Degree with Minimum 50% Marks. B.Ed / B.PED Exam Passed 4 Year Experience. Headmaster (Balika) 135",
+      "applicationFee": "General / OBC / EWS: 1500/- SC / ST : 1500/- PH (Divyang) : 1500/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/UPESSC_Head_Master_Notification_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://apply.upessc.org/",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPESSC_Head_Master_Notification_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026 | 09:33 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-11-22",
+          "dateText": "22/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-22",
+          "dateText": "22/11/2026"
+        },
+        {
+          "label": "Last Date Correction",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        },
+        {
+          "label": "UPESSC Headmaster 2026 Exam Date",
+          "date": "2027-01-07",
+          "dateText": "07/01/2027"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-5f851aa971f1ad65",
+      "type": "job",
+      "title": "UPESSC UP TGT Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://apply.upessc.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-tgt-07-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-24",
+      "lastDate": "2026-11-23",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-10-23",
+      "openDate": "2026-10-24",
+      "vacancies": "17735",
+      "ageLimit": "21–62 years",
+      "eligibility": "Post Name General EWS OBC SC ST Total UPESS UP TGT Eligibility 2026 Trained Graduate Teacher TGT (Balak) 6057 2660 4069 3394 13 16193 Bachelor / Master Degree with Related Subject. B.Ed Exam Passed Class 6-8 TET Exam Passed For Subject Wise Eligibility Details Read the Notification. Trained Graduate Teacher TGT (Balika) 647 222 369 304 0 1542 UP TGT Teacher Online Form 2026 : Subject Wise Vacancy Details Subject Name Varg General EWS OBC SC ST Total Hindi Balak 961 477 566 531 04 2539 Balika 115",
+      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/UPESSC_TGT_NOtification_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://apply.upessc.org/",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPESSC_TGT_NOtification_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPESSC_TGT_Subject_Wise_Eligibility_2026.pdf",
+          "label": "Subject Wise Eligibility Details"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026 | 09:00 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Last Date Correction",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-d6af6007e2b7128e",
+      "type": "job",
+      "title": "UP ECCE Educator Kanpur Nagar Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-ecce-educator-kanpur-oct26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-24",
+      "lastDate": "2026-11-30",
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-23",
+      "openDate": "2026-10-22",
+      "ageLimit": "18–40 years",
+      "eligibility": "Graduation from a recognized university with minimum 50% marks and Home Science as a major subject OR 2 Years Diploma in DPSE. 5% marks relaxation in minimum marks for reserved categories.",
+      "applicationFee": "for the All Candidates.",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Kanpur_23102026.pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026 | 09:40 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
         }
       ]
     },
