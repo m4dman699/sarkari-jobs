@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-24T07:20:01.957Z",
-  "jobsGeneratedAt": "2026-10-24T07:20:00.762Z",
+  "generatedAt": "2026-10-25T07:37:38.644Z",
+  "jobsGeneratedAt": "2026-10-25T07:37:37.479Z",
   "partial": true,
-  "total": 524,
+  "total": 522,
   "quality": {
-    "jobsMissingPublicationDate": 56,
+    "jobsMissingPublicationDate": 55,
     "jobsMissingClosingDate": 73,
     "genericNavigationItems": 0
   },
@@ -17,16 +17,16 @@
     {
       "source": "IBPS",
       "url": "https://www.ibps.in/",
-      "error": "write EPROTO 804C4D950E7F0000:error:0A0000F4:SSL routines:ssl3_read_bytes:unexpected message:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1538:\n"
+      "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "Employment News (Govt of India)",
+      "url": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "error": "timeout"
     },
     {
       "source": "UPSC",
       "url": "https://upsc.gov.in/whats-new",
-      "error": "timeout"
-    },
-    {
-      "source": "Indian Army",
-      "url": "https://joinindianarmy.nic.in/",
       "error": "timeout"
     },
     {
@@ -35,9 +35,9 @@
       "error": "The operation was aborted"
     },
     {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": ""
+      "source": "Indian Army",
+      "url": "https://joinindianarmy.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "Indian Navy",
@@ -50,19 +50,19 @@
       "error": "HTTP 403"
     },
     {
+      "source": "Indian Air Force",
+      "url": "https://indianairforce.nic.in/",
+      "error": "timeout"
+    },
+    {
       "source": "NTPC",
       "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
     },
     {
-      "source": "SAIL",
-      "url": "https://sail.co.in/web/careers",
-      "error": "unable to verify the first certificate"
-    },
-    {
-      "source": "Indian Air Force",
-      "url": "https://indianairforce.nic.in/",
-      "error": "timeout"
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": ""
     },
     {
       "source": "Supreme Court of India",
@@ -72,6 +72,11 @@
     {
       "source": "BPSC",
       "url": "https://bpsc.bihar.gov.in/",
+      "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "SAIL",
+      "url": "https://sail.co.in/web/careers",
       "error": "unable to verify the first certificate"
     },
     {
@@ -90,8 +95,8 @@
       "error": "timeout"
     },
     {
-      "source": "MPPSC",
-      "url": "https://mppsc.mp.gov.in/",
+      "source": "WBPSC",
+      "url": "https://wbpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -100,8 +105,8 @@
       "error": "Parse Error: Invalid header token"
     },
     {
-      "source": "WBPSC",
-      "url": "https://wbpsc.gov.in/",
+      "source": "MPPSC",
+      "url": "https://mppsc.mp.gov.in/",
       "error": "timeout"
     },
     {
@@ -110,24 +115,19 @@
       "error": ""
     },
     {
-      "source": "TNPSC",
-      "url": "https://www.tnpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "TGPSC",
       "url": "https://www.tgpsc.gov.in/",
       "error": "HTTP 403"
     },
     {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO 804C4D950E7F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "source": "TNPSC",
+      "url": "https://www.tnpsc.gov.in/",
+      "error": "timeout"
     },
     {
-      "source": "Kerala PSC",
-      "url": "https://www.keralapsc.gov.in/",
-      "error": "timeout"
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO 80EC872A187F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
@@ -137,11 +137,6 @@
     {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "JPSC",
-      "url": "https://www.jpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -160,14 +155,14 @@
       "error": "HTTP 403"
     },
     {
-      "source": "APSC",
-      "url": "https://apsc.nic.in/",
+      "source": "PPSC",
+      "url": "https://ppsc.gov.in/",
       "error": "timeout"
     },
     {
-      "source": "PPSC",
-      "url": "https://ppsc.gov.in/",
-      "error": "The operation was aborted"
+      "source": "APSC",
+      "url": "https://apsc.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "JKPSC",
@@ -180,11 +175,6 @@
       "error": "timeout"
     },
     {
-      "source": "Mizoram PSC",
-      "url": "https://mpsc.mizoram.gov.in/",
-      "error": "The operation was aborted"
-    },
-    {
       "source": "TPSC",
       "url": "https://tpsc.tripura.gov.in/",
       "error": "timeout"
@@ -195,14 +185,14 @@
       "error": "timeout"
     },
     {
-      "source": "CSBC (Bihar Police)",
-      "url": "https://csbc.bih.nic.in/",
-      "error": "timeout"
-    },
-    {
       "source": "Government of Puducherry",
       "url": "https://www.py.gov.in/recruitment",
       "error": "The operation was aborted"
+    },
+    {
+      "source": "CSBC (Bihar Police)",
+      "url": "https://csbc.bih.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "WB Police",
@@ -13894,127 +13884,6 @@
       ]
     },
     {
-      "id": "competitor-sarkariresult-a8ba5e4910836afe",
-      "type": "job",
-      "title": "Bihar BTSC Touring Veterinary Officer Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://btsc.bihar.gov.in/",
-      "lastDate": "2026-10-23",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "publishedDate": "2026-10-21",
-      "openDate": "2026-09-24",
-      "ageLimit": "21–42 years",
-      "vacancies": "787",
-      "eligibility": "Touring Veterinary Officer Candidates must have a B.V.Sc. or B.V.Sc. & A.H. degree in the relevant subject from a recognized university approved by the Veterinary Council of India (VCI). For more details, read the official notification carefully.",
-      "applicationFee": "All Candidates : Rs. 100/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://btsc.bihar.gov.in/",
-      "organization": "Bihar Technical Service Commission (BTSC)",
-      "notificationLink": "https://jobjhalak.com/wp-content/uploads/2026/09/BTSC-Touring-Veterinary-Officer-Notification-2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://btsc.pariksha.nic.in/Agencies.aspx?KZhCrm9B4QPkl0gO2rAMuw==",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://jobjhalak.com/wp-content/uploads/2026/09/BTSC-Touring-Veterinary-Officer-Notification-2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://btsc.bihar.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-09-25",
-          "dateText": "25 September 2026 | 06:20 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-23",
-          "dateText": "23/10/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-10-23",
-          "dateText": "23/10/2026"
-        }
-      ],
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/btsc-touring-veterinary-sep26/"
-    },
-    {
-      "id": "competitor-sarkariresult-940f2c174a28d828",
-      "type": "job",
-      "title": "Bihar BTSC Fishery Extension Officer Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://btsc.bihar.gov.in/",
-      "lastDate": "2026-10-23",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "publishedDate": "2026-10-21",
-      "openDate": "2026-09-24",
-      "ageLimit": "21–42 years",
-      "vacancies": "231",
-      "eligibility": "Fishery Extension Officer Candidates must have 4 Years Bachelor’s degree in Fisheries Science / B.F.Sc. or related fields from a College under an Agricultural University recognized by ICAR New Delhi. For more details, read the official notification carefully.",
-      "applicationFee": "All Candidates : Rs. 100/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://btsc.bihar.gov.in/",
-      "organization": "Bihar Technical Service Commission (BTSC)",
-      "notificationLink": "https://btsc.bihar.gov.in/sites/default/files/Advertisement/28_2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://btsc.bihar.gov.in/sites/default/files/Advertisement/28_2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://btsc.bihar.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-09-24",
-          "dateText": "24 September 2026 | 06:40 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-23",
-          "dateText": "23/10/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-10-23",
-          "dateText": "23/10/2026"
-        }
-      ],
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/btsc-fishery-extension-officer-sept26/"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbU5LZnFYbW9TVW5rckZlL3dVVVBQZA",
-      "type": "job",
-      "title": "DETAILS OF POSTS FOR ADVT. NO. A-1/E-1/2025, COMBINED STATE/UPPER SUBORDINATE SE..",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmNKfqXmoSUnkrFe/wUUPPd",
-      "openDate": null,
-      "lastDate": "2026-10-24",
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "competitor-sarkariresult-ba5f0306fa3888fc",
       "type": "job",
       "title": "Bihar BTSC Food Safety Extension Officer Online form 2026",
@@ -16774,6 +16643,227 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
+      "type": "job",
+      "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/data/Notice.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-07-29",
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDU",
+      "type": "job",
+      "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13045",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDM",
+      "type": "job",
+      "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13043",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDI",
+      "type": "job",
+      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13042",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDE",
+      "type": "job",
+      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13041",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDA",
+      "type": "job",
+      "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13040",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzk",
+      "type": "job",
+      "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13039",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzg",
+      "type": "job",
+      "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13038",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzc",
+      "type": "job",
+      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13037",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzY",
+      "type": "job",
+      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13036",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzU",
+      "type": "job",
+      "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13035",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzM",
+      "type": "job",
+      "title": "Recruitment of Director Advt.No.-07/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13033",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzI",
+      "type": "job",
+      "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13032",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzE",
+      "type": "job",
+      "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13031",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzA",
+      "type": "job",
+      "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13030",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjk",
+      "type": "job",
+      "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13029",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjg",
+      "type": "job",
+      "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13028",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTQxNTI0MC5wZGY",
       "type": "admit-card",
       "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
@@ -16833,6 +16923,292 @@
       "category": "State PSC",
       "state": "Manipur",
       "link": "https://mpscmanipur.gov.in/final-results.html",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWRtaXQtY2FyZC1kaXJlY3QtcmVjcnVpdG1lbnQ",
+      "type": "admit-card",
+      "title": "Admit Card - Direct Recruitment",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/admit-card-direct-recruitment",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjAtMjAyMQ",
+      "type": "result",
+      "title": "Results 2020 - 2021",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-2020-2021",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjItMjAyMw",
+      "type": "result",
+      "title": "Results 2022-2023",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-2022-2023",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjMtMjAyNA",
+      "type": "result",
+      "title": "Results 2023-2024",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-2023-2024",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjQtMjAyNQ",
+      "type": "result",
+      "title": "Results 2024-2025",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-2024-2025",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LWctMjAyNS0yMDI2",
+      "type": "result",
+      "title": "Results 2025-2026",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-g-2025-2026",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjYtMjAyNw",
+      "type": "result",
+      "title": "Results 2026-2027",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-2026-2027",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LW5n",
+      "type": "result",
+      "title": "Results NG 2024-2025",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-ng",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LW5nLTIwMjUtMjAyNg",
+      "type": "result",
+      "title": "Results NG 2025-2027",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-ng-2025-2026",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLWFkbWl0LWNhcmQ",
+      "type": "admit-card",
+      "title": "LDE Admit Card",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/lde-admit-card",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXJlc3VsdC0yMDIyLTIwMjM",
+      "type": "result",
+      "title": "LDE Results 2022-2025",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/lde-result-2022-2023",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXJlc3VsdC0yMDI0LTIwMjU",
+      "type": "result",
+      "title": "LDE Results 2024-2026",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/lde-result-2024-2025",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWRtaXQtY2FyZC1kZXBhcnRtZW50YWw",
+      "type": "admit-card",
+      "title": "Admit Card - Departmental",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/admit-card-departmental",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvMjAyMS0yMDIzLWRlcGFydG1lbnRhbC1yZXN1bHQ",
+      "type": "result",
+      "title": "Departmental Result",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/2021-2023-departmental-result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbWxwLXJlc3VsdHM",
+      "type": "result",
+      "title": "MLP Results",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/mlp-results",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvaW5kdWN0aW9uLXJlc3VsdA",
+      "type": "result",
+      "title": "Induction Results",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/induction-result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LW5nMTc0Mzc2NDIwOQ",
+      "type": "result",
+      "title": "Results NG",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/result-ng1743764209",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXJlc3VsdA",
+      "type": "result",
+      "title": "LDE Results",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/page/lde-result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL2NhdGVnb3J5L25vdGlmaWNhdGlvbnM",
+      "type": "job",
+      "title": "OM / Notifications",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/category/notifications",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvcmVzdWx0LW9mLWxkZS1mb3ItcHJvbW90aW9uLXRvLWhlYWx0aC1zdXBlcnZpc29yLXVuZGVyLWhmdy1kZXB0",
+      "type": "result",
+      "title": "Result of LDE for promotion to Health Supervisor under H&FW Dept",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/post/result-of-lde-for-promotion-to-health-supervisor-under-hfw-dept",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3Qvbm90aWZpY2F0aW9uLWZvci1ncm91cC1ibmctcGVyc29uYWwtaW50ZXJ2aWV3LW1hcmtz",
+      "type": "job",
+      "title": "Notification for Group B(NG) Personal Interview Marks",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/post/notification-for-group-bng-personal-interview-marks",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvZmluYWwtcmVzdWx0LW9mLXJlc2VhcmNoLWludmVzdGlnYXRvci11bmRlci1hcnQtY3VsdHVyZS1kZXB0dC0yMDI2",
+      "type": "result",
+      "title": "Final Result of Research Investigator under Art & Culture Deptt., 2026",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/post/final-result-of-research-investigator-under-art-culture-deptt-2026",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -18703,227 +19079,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
-      "type": "job",
-      "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/data/Notice.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-07-29",
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDU",
-      "type": "job",
-      "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13045",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDM",
-      "type": "job",
-      "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13043",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDI",
-      "type": "job",
-      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13042",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDE",
-      "type": "job",
-      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13041",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDA",
-      "type": "job",
-      "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13040",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzk",
-      "type": "job",
-      "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13039",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzg",
-      "type": "job",
-      "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13038",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzc",
-      "type": "job",
-      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13037",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzY",
-      "type": "job",
-      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13036",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzU",
-      "type": "job",
-      "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13035",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzM",
-      "type": "job",
-      "title": "Recruitment of Director Advt.No.-07/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13033",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzI",
-      "type": "job",
-      "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13032",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzE",
-      "type": "job",
-      "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13031",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzA",
-      "type": "job",
-      "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13030",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjk",
-      "type": "job",
-      "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13029",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjg",
-      "type": "job",
-      "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13028",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly9yZWduLmhwc2MuZ292LmluLw",
       "type": "job",
       "title": "Click here to apply online for Advt. No. 25 of 2026 - Food Safety Officer (Group-B) in Food and Drugs Administration Department, Haryana",
@@ -19347,292 +19502,6 @@
       "category": "State PSC",
       "state": "Goa",
       "link": "https://gpsc.goa.gov.in/wp-content/uploads/2025/11/SCAN_20251121_171633842.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWRtaXQtY2FyZC1kaXJlY3QtcmVjcnVpdG1lbnQ",
-      "type": "admit-card",
-      "title": "Admit Card - Direct Recruitment",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/admit-card-direct-recruitment",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjAtMjAyMQ",
-      "type": "result",
-      "title": "Results 2020 - 2021",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-2020-2021",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjItMjAyMw",
-      "type": "result",
-      "title": "Results 2022-2023",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-2022-2023",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjMtMjAyNA",
-      "type": "result",
-      "title": "Results 2023-2024",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-2023-2024",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjQtMjAyNQ",
-      "type": "result",
-      "title": "Results 2024-2025",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-2024-2025",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LWctMjAyNS0yMDI2",
-      "type": "result",
-      "title": "Results 2025-2026",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-g-2025-2026",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LTIwMjYtMjAyNw",
-      "type": "result",
-      "title": "Results 2026-2027",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-2026-2027",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LW5n",
-      "type": "result",
-      "title": "Results NG 2024-2025",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-ng",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LW5nLTIwMjUtMjAyNg",
-      "type": "result",
-      "title": "Results NG 2025-2027",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-ng-2025-2026",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLWFkbWl0LWNhcmQ",
-      "type": "admit-card",
-      "title": "LDE Admit Card",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-admit-card",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXJlc3VsdC0yMDIyLTIwMjM",
-      "type": "result",
-      "title": "LDE Results 2022-2025",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-result-2022-2023",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXJlc3VsdC0yMDI0LTIwMjU",
-      "type": "result",
-      "title": "LDE Results 2024-2026",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-result-2024-2025",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWRtaXQtY2FyZC1kZXBhcnRtZW50YWw",
-      "type": "admit-card",
-      "title": "Admit Card - Departmental",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/admit-card-departmental",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvMjAyMS0yMDIzLWRlcGFydG1lbnRhbC1yZXN1bHQ",
-      "type": "result",
-      "title": "Departmental Result",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/2021-2023-departmental-result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbWxwLXJlc3VsdHM",
-      "type": "result",
-      "title": "MLP Results",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/mlp-results",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvaW5kdWN0aW9uLXJlc3VsdA",
-      "type": "result",
-      "title": "Induction Results",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/induction-result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvcmVzdWx0LW5nMTc0Mzc2NDIwOQ",
-      "type": "result",
-      "title": "Results NG",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/result-ng1743764209",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvbGRlLXJlc3VsdA",
-      "type": "result",
-      "title": "LDE Results",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/page/lde-result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL2NhdGVnb3J5L25vdGlmaWNhdGlvbnM",
-      "type": "job",
-      "title": "OM / Notifications",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/category/notifications",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvcmVzdWx0LW9mLWxkZS1mb3ItcHJvbW90aW9uLXRvLWhlYWx0aC1zdXBlcnZpc29yLXVuZGVyLWhmdy1kZXB0",
-      "type": "result",
-      "title": "Result of LDE for promotion to Health Supervisor under H&FW Dept",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/post/result-of-lde-for-promotion-to-health-supervisor-under-hfw-dept",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3Qvbm90aWZpY2F0aW9uLWZvci1ncm91cC1ibmctcGVyc29uYWwtaW50ZXJ2aWV3LW1hcmtz",
-      "type": "job",
-      "title": "Notification for Group B(NG) Personal Interview Marks",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/post/notification-for-group-bng-personal-interview-marks",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvZmluYWwtcmVzdWx0LW9mLXJlc2VhcmNoLWludmVzdGlnYXRvci11bmRlci1hcnQtY3VsdHVyZS1kZXB0dC0yMDI2",
-      "type": "result",
-      "title": "Final Result of Research Investigator under Art & Culture Deptt., 2026",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/post/final-result-of-research-investigator-under-art-culture-deptt-2026",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -24222,6 +24091,69 @@
           "label": "Written Examination",
           "date": "2026-02-18",
           "dateText": "18 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-7b4b4c8d5ce6829d",
+      "type": "admit-card",
+      "title": "Union Bank of India GBO & SO Admit Card 2026 OUT",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://ibpsreg.ibps.in/ubijul26/oecla_aug26/login.php?appid=e86e69203d8c7f71a2897baeeb2fcd5c",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/union-bank-of-india-gbo-and-so-admit-card-2026-3075603",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-25",
+      "organization": "Union Bank of India SO",
+      "publishedDate": "2026-10-24",
+      "examDate": "2026-10-31",
+      "officialLinks": [
+        {
+          "url": "https://www.unionbankofindia.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ubijul26/oecla_aug26/login.php?appid=e86e69203d8c7f71a2897baeeb2fcd5c",
+          "label": "Download GBO & SO Admit Card 2026"
+        },
+        {
+          "url": "https://www.unionbankofindia.bank.in/pdf/notice-for-online-assessment-on-professional-knowledge.pdf",
+          "label": "Official Exam Notice PDF"
+        },
+        {
+          "url": "https://www.unionbankofindia.bank.in/en/common/recruitment",
+          "label": "Official Recruitment Page"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/ubijul26/oecla_aug26/login.php?appid=e86e69203d8c7f71a2897baeeb2fcd5c",
+      "milestones": [
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-07-20",
+          "dateText": "20 July 2026"
+        },
+        {
+          "label": "Examination Notice Date",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026"
+        },
+        {
+          "label": "Admit Card Released",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        },
+        {
+          "label": "SO / GBO Admit Card Released",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
         }
       ]
     }

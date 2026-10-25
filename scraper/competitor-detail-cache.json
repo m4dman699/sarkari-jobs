@@ -4725,7 +4725,7 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-24T04:44:50.945Z",
+    "attemptedAt": "2026-10-25T07:37:38.605Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
@@ -7876,7 +7876,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-station-master-recruitment-2026-3074679": {
-    "attemptedAt": "2026-10-24T04:44:48.650Z",
+    "attemptedAt": "2026-10-25T07:37:38.553Z",
     "parser": "v2",
     "details": {
       "organization": "Railway Recruitment Board (RRB), Across India",
@@ -8148,7 +8148,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-isolated-categories-recruitment-2026-cen-09-2026-apply-online-for-195-posts-3074732": {
-    "attemptedAt": "2026-10-24T04:44:48.737Z",
+    "attemptedAt": "2026-10-25T07:37:38.636Z",
     "parser": "v2",
     "details": {
       "organization": "Railway Recruitment Boards (RRBs), Ministry of Railways, Government of India",
@@ -20771,7 +20771,7 @@
     }
   },
   "https://www.freejobalert.com/articles/fcri-jre-result-2026-3075045": {
-    "attemptedAt": "2026-10-24T04:44:50.840Z",
+    "attemptedAt": "2026-10-25T07:37:38.572Z",
     "parser": "v2",
     "details": {
       "organization": "FCRI JRE",
@@ -22096,6 +22096,70 @@
         {
           "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-08/Advertisement-Regular-06-08-2026-05-34.pdf",
           "label": "Official Notification"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/union-bank-of-india-gbo-and-so-admit-card-2026-3075603": {
+    "attemptedAt": "2026-10-25T07:37:38.627Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Union Bank of India SO",
+      "publishedDate": "2026-10-24",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-31",
+      "resultDate": null,
+      "admitCardDate": "2026-10-24",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-07-20",
+          "dateText": "20 July 2026"
+        },
+        {
+          "label": "Examination Notice Date",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026"
+        },
+        {
+          "label": "Admit Card Released",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        },
+        {
+          "label": "SO / GBO Admit Card Released",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/ubijul26/oecla_aug26/login.php?appid=e86e69203d8c7f71a2897baeeb2fcd5c",
+      "officialLinks": [
+        {
+          "url": "https://www.unionbankofindia.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ubijul26/oecla_aug26/login.php?appid=e86e69203d8c7f71a2897baeeb2fcd5c",
+          "label": "Download GBO & SO Admit Card 2026"
+        },
+        {
+          "url": "https://www.unionbankofindia.bank.in/pdf/notice-for-online-assessment-on-professional-knowledge.pdf",
+          "label": "Official Exam Notice PDF"
+        },
+        {
+          "url": "https://www.unionbankofindia.bank.in/en/common/recruitment",
+          "label": "Official Recruitment Page"
         }
       ]
     }
