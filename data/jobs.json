@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-25T07:37:38.644Z",
-  "jobsGeneratedAt": "2026-10-25T07:37:37.479Z",
+  "generatedAt": "2026-10-26T07:50:41.566Z",
+  "jobsGeneratedAt": "2026-10-26T07:50:39.825Z",
   "partial": true,
-  "total": 522,
+  "total": 524,
   "quality": {
     "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 73,
+    "jobsMissingClosingDate": 75,
     "genericNavigationItems": 0
   },
   "errors": [
@@ -17,7 +17,7 @@
     {
       "source": "IBPS",
       "url": "https://www.ibps.in/",
-      "error": "unable to verify the first certificate"
+      "error": "write EPROTO 804CABA8B87F0000:error:0A0000F4:SSL routines:ssl3_read_bytes:unexpected message:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1538:\n"
     },
     {
       "source": "Employment News (Govt of India)",
@@ -60,23 +60,23 @@
       "error": "HTTP 403"
     },
     {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": ""
-    },
-    {
       "source": "Supreme Court of India",
       "url": "https://www.sci.gov.in/recruitments/",
       "error": "HTTP 403"
     },
     {
-      "source": "BPSC",
-      "url": "https://bpsc.bihar.gov.in/",
+      "source": "SAIL",
+      "url": "https://sail.co.in/web/careers",
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "SAIL",
-      "url": "https://sail.co.in/web/careers",
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "BPSC",
+      "url": "https://bpsc.bihar.gov.in/",
       "error": "unable to verify the first certificate"
     },
     {
@@ -97,6 +97,11 @@
     {
       "source": "WBPSC",
       "url": "https://wbpsc.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "MPPSC",
+      "url": "https://mppsc.mp.gov.in/",
       "error": "timeout"
     },
     {
@@ -105,19 +110,9 @@
       "error": "Parse Error: Invalid header token"
     },
     {
-      "source": "MPPSC",
-      "url": "https://mppsc.mp.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
       "error": ""
-    },
-    {
-      "source": "TGPSC",
-      "url": "https://www.tgpsc.gov.in/",
-      "error": "HTTP 403"
     },
     {
       "source": "TNPSC",
@@ -125,13 +120,18 @@
       "error": "timeout"
     },
     {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO 80EC872A187F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "source": "TGPSC",
+      "url": "https://www.tgpsc.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "APPSC",
       "url": "https://psc.ap.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
       "error": "timeout"
     },
     {
@@ -147,17 +147,17 @@
     {
       "source": "UKPSC",
       "url": "https://ukpsc.gov.in/",
-      "error": "getaddrinfo EAI_AGAIN ukpsc.gov.in"
-    },
-    {
-      "source": "Goa PSC",
-      "url": "https://gpsc.goa.gov.in/",
-      "error": "HTTP 403"
+      "error": "timeout"
     },
     {
       "source": "PPSC",
       "url": "https://ppsc.gov.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Goa PSC",
+      "url": "https://gpsc.goa.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "APSC",
@@ -202,12 +202,12 @@
     {
       "source": "Rajasthan Police",
       "url": "https://police.rajasthan.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "TNUSRB",
       "url": "https://www.tnusrb.tn.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "Competitor: SarkariResult.com",
@@ -13884,61 +13884,6 @@
       ]
     },
     {
-      "id": "competitor-sarkariresult-ba5f0306fa3888fc",
-      "type": "job",
-      "title": "Bihar BTSC Food Safety Extension Officer Online form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Bihar",
-      "link": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/bihar-btsc-food-safety-officer-sep26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-10-24",
-      "organization": "Bihar Technical Service Commission (BTSC)",
-      "publishedDate": "2026-09-25",
-      "openDate": "2026-09-25",
-      "vacancies": "105",
-      "ageLimit": "21–37 years",
-      "eligibility": "Bachelor Degree in Food Technology / Dairy Technology / Bio Technology / Oil Technology Agricultural Science / Veterinary Science / Bio Chemistry / Microbiology OR Post Graduate in Chemistry from a Recognized University in India. More Eligibility Details Read the Notification",
-      "applicationFee": "General / BC/ Other State : 100/- SC / ST / PH : 100/- Female Candidate (Bihar Dom.) : 100/-",
-      "notificationLink": "https://btsc.pariksha.nic.in/OuterPages/View_Enclosure.aspx?ID=5099&flag=H&FID=7500",
-      "officialLinks": [
-        {
-          "url": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://btsc.pariksha.nic.in/OuterPages/View_Enclosure.aspx?ID=5099&flag=H&FID=7500",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://btsc.bihar.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://btsc.pariksha.nic.in/Online_App/Notifications.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-09-25",
-          "dateText": "25 September 2026 | 05:45 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-24",
-          "dateText": "24/10/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-10-24",
-          "dateText": "24/10/2026"
-        }
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9waWhtY3QxODA4MjAyNnJlYy5wZGY",
       "type": "job",
       "title": "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
@@ -14942,6 +14887,43 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-e283c81cc962a5c5",
+      "type": "job",
+      "title": "DSSSB 641 Peon, PA and More Posts Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": null,
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-26",
+      "organization": "DSSSB Delhi District Courts",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-06",
+      "lastDate": "2026-11-04",
+      "vacancies": "641",
+      "eligibility": "04 November 2026 (closing date of application)",
+      "milestones": [
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-11-04",
+          "dateText": "04 November 2026, 11:00 PM"
+        },
+        {
+          "label": "Age Reckoning Date",
+          "date": "2026-06-01",
+          "dateText": "01 June 2026"
+        },
+        {
+          "label": "Qualification/Experience Cut-off (Crucial) Date",
+          "date": "2026-11-04",
+          "dateText": "04 November 2026 (closing date of application)"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-39ab9feb07d7d2ba",
       "type": "job",
       "title": "RRB NTPC Graduate Level Online Form 2026 (3548 Posts)",
@@ -14972,6 +14954,18 @@
         {
           "url": "https://doc.sarkariresults.org.in/RRB_NTPC_Zone_Wise_Vacancy_CEN_062026.pdf",
           "label": "Download Zone Wise Vacancy"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/",
+          "label": "RRB NTPC Graduate Apply Online"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_06_2026_NTPC_G.pdf",
+          "label": "RRB NTPC Graduate CEN 06/2026 Notification PDF"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Unified RRB Official Website"
         }
       ],
       "milestones": [
@@ -14990,7 +14984,8 @@
           "date": "2026-11-08",
           "dateText": "08/11/2026"
         }
-      ]
+      ],
+      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_06_2026_NTPC_G.pdf"
     },
     {
       "id": "competitor-sarkariresult-d30e8522f4ee6823",
@@ -15421,7 +15416,93 @@
       "eligibility": "Commercial Cum Ticket Clerk 10+2 Intermediate Exam From Any Recognized Board in India. General / OBC / EWS : 50% Marks. SC / ST / PH : Pass Only",
       "applicationFee": "For General / OBC / EWS : ₹ 500/- For SC / ST / EBC : ₹ 250/- For All Category female : ₹ 250/- Fee Refund : General / OBC : Rs. 400/- will be refunded and Other candidates : Rs. 250/- will be refunded to the bank account after appearing in Stage I Exam. Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit ",
       "officialLink": "https://www.rrbapply.gov.in/#/auth/landing",
-      "organization": "Railway Recruitment Board (RRB)"
+      "organization": "Railway Recruitment Board (RRB)",
+      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/home",
+          "label": "Apply Online / Recruitment Portal"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
+          "label": "Detailed Notification CEN 07/2026"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/landing",
+          "label": "RRB-wise Vacancy Details"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Indicative Notification Date",
+          "date": "2026-09-26",
+          "dateText": "26 September 2026"
+        },
+        {
+          "label": "Qualification Cut-off Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2027-01-01",
+          "dateText": "01 January 2027"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026 (11:59 PM)"
+        },
+        {
+          "label": "Application Fee Payment Last Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Application Modification Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Application Modification Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Modification Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Modification Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        }
+      ]
     },
     {
       "id": "competitor-sarkariresult-b8b198fcb07c3b87",
@@ -16552,6 +16633,19 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
+      "type": "job",
+      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
+      "source": "UPPSC",
+      "category": "State PSC",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvQWR2ZXJ0aXNtZW50d2lzZV9Eb3dubG9hZERvY3VtZW50LmFzcHg_aW5wdHBybXRyPWFj",
       "type": "admit-card",
       "title": "CLICK HERE TO DOWNLOAD ADMIT CARD FOR ADVT. NO.- D-6/E-1/2025, VETTING OFFICER (SCREENING) EXAMINATION-2025 ,DEPT NO. S-02/09 (EXAM DATED - 26/10/2026).",
@@ -16565,22 +16659,9 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
-      "type": "job",
-      "title": "CLICK HERE TO APPLY FOR Advt. Number-D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTTAR PRADESH / INSPECTOR OF DRUGS,S-06/04 (REOPEN).",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbXpOSklSVktuRFJ6VEh6L2pmNFpRbQ",
       "type": "admit-card",
-      "title": "06 Nov 2026 NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2023, LECTURERS UNDER UTTAR PRADESH AYUSH (AYURVEDA) DEPARTMENT",
+      "title": "06 Nov 2026 NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2023, LECTURER GOVT. AYURVEDA DEGREE COLLEGE AND HOSPITAL (SCREENING) .....",
       "source": "UPPSC",
       "category": "State PSC",
       "state": "Uttar Pradesh",
@@ -16929,6 +17010,19 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
+      "type": "job",
+      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/applicant/otr",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWRtaXQtY2FyZC1kaXJlY3QtcmVjcnVpdG1lbnQ",
       "type": "admit-card",
       "title": "Admit Card - Direct Recruitment",
@@ -17209,19 +17303,6 @@
       "category": "State PSC",
       "state": "Mizoram",
       "link": "https://mpsc.mizoram.gov.in/post/final-result-of-research-investigator-under-art-culture-deptt-2026",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
-      "type": "job",
-      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/applicant/otr",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -19517,8 +19598,36 @@
       "link": "https://tpsc.tripura.gov.in/",
       "openDate": null,
       "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
+      "examDate": "2026-11-02",
+      "publishedDate": "2026-10-26",
+      "organization": "Artificial Limbs Manufacturing Corporation of India (ALIMCO)",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/alidoct26/oecla_oct26/login.php?appid=83c52f360d180af67841951c4d077057",
+          "label": "ALIMCO Various Posts Admit Card 2026"
+        },
+        {
+          "url": "https://alimco.in/WriteReadData/Recruitment_Document/AD3F01-January-2026-Online-Test-Admit-Card1/Admit%20CArd.pdf",
+          "label": "ALIMCO Various Post Admit Card Notice"
+        },
+        {
+          "url": "https://alimco.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/alidoct26/oecla_oct26/login.php?appid=83c52f360d180af67841951c4d077057",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-10-20",
+          "dateText": "20 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026 (Monday)"
+        }
+      ]
     },
     {
       "id": "aHR0cHM6Ly90cHNjLnRyaXB1cmEuZ292LmluL2N1dC1vZmYtbWFya3M",
@@ -24154,6 +24263,92 @@
           "label": "SO / GBO Admit Card Released",
           "date": "2026-10-24",
           "dateText": "24 October 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-7a2509a977db601f",
+      "type": "job",
+      "title": "UCO Bank 530 Apprentice Recruitment 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "See linked notice",
+      "link": null,
+      "sourceListingUrl": "https://www.freejobalert.com/articles/uco-bank-apprentice-recruitment-2026-apply-online-for-530-posts-3073302",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-26",
+      "organization": "UCO Bank, HRM Department, Head Office, Kolkata",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-14",
+      "vacancies": "530",
+      "eligibility": "1 October 2026",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Online Entrance Examination",
+          "date": "2026-11-07",
+          "dateText": "7 November 2026, 11:00 AM"
+        },
+        {
+          "label": "Age and Eligibility Reckoning Date",
+          "date": "2026-10-01",
+          "dateText": "1 October 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-31d03a22d8c415f6",
+      "type": "job",
+      "title": "CRPF 521 Sports Quota Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Defence",
+      "state": "All India",
+      "link": null,
+      "sourceListingUrl": "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-26",
+      "organization": "Directorate General, Central Reserve Police Force (CRPF), Ministry of Home Affairs",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-12",
+      "vacancies": "521",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-09-17",
+          "dateText": "17 September 2026"
+        },
+        {
+          "label": "Online Application & Fee Payment Last Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026, 23:59 hrs"
+        },
+        {
+          "label": "Crucial Date for Category Status (SC/ST/OBC/EWS)",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026 (closing date of online application)"
+        },
+        {
+          "label": "Cut-off Date",
+          "date": "2026-08-01",
+          "dateText": "1 August 2026"
+        },
+        {
+          "label": "Date of Birth Range",
+          "date": "2003-08-02",
+          "dateText": "Not before 2 August 2003 and not after 1 August 2008"
         }
       ]
     }

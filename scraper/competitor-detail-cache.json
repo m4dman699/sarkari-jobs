@@ -4725,11 +4725,11 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-25T07:37:38.605Z",
+    "attemptedAt": "2026-10-26T07:50:41.394Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
-      "publishedDate": "2026-10-22",
+      "publishedDate": "2026-10-26",
       "openDate": "2026-10-17",
       "lastDate": "2026-11-15",
       "examDate": null,
@@ -7876,11 +7876,11 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-station-master-recruitment-2026-3074679": {
-    "attemptedAt": "2026-10-25T07:37:38.553Z",
+    "attemptedAt": "2026-10-26T07:50:41.282Z",
     "parser": "v2",
     "details": {
       "organization": "Railway Recruitment Board (RRB), Across India",
-      "publishedDate": "2026-10-22",
+      "publishedDate": "2026-10-26",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -20771,7 +20771,7 @@
     }
   },
   "https://www.freejobalert.com/articles/fcri-jre-result-2026-3075045": {
-    "attemptedAt": "2026-10-25T07:37:38.572Z",
+    "attemptedAt": "2026-10-26T07:50:41.248Z",
     "parser": "v2",
     "details": {
       "organization": "FCRI JRE",
@@ -22162,6 +22162,340 @@
           "label": "Official Recruitment Page"
         }
       ]
+    }
+  },
+  "https://www.freejobalert.com/articles/alimco-various-posts-admit-card-2026-3075708": {
+    "attemptedAt": "2026-10-26T07:50:41.313Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Artificial Limbs Manufacturing Corporation of India (ALIMCO)",
+      "publishedDate": "2026-10-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-02",
+      "resultDate": null,
+      "admitCardDate": "2026-10-20",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-10-20",
+          "dateText": "20 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026 (Monday)"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/alidoct26/oecla_oct26/login.php?appid=83c52f360d180af67841951c4d077057",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/alidoct26/oecla_oct26/login.php?appid=83c52f360d180af67841951c4d077057",
+          "label": "ALIMCO Various Posts Admit Card 2026"
+        },
+        {
+          "url": "https://alimco.in/WriteReadData/Recruitment_Document/AD3F01-January-2026-Online-Test-Admit-Card1/Admit%20CArd.pdf",
+          "label": "ALIMCO Various Post Admit Card Notice"
+        },
+        {
+          "url": "https://alimco.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rrb-ntpc-graduate-recruitment-062026-notification-apply-online-for-3-477-posts-3068511": {
+    "attemptedAt": "2026-10-26T07:50:41.353Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RRB NTPC Graduate",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-08",
+      "lastDate": "2026-11-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,548",
+      "ageLimit": "18 to 33 years as on 01 January 2027",
+      "eligibility": "Degree from a recognized University or equivalent",
+      "applicationFee": "08 November 2026",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-08",
+          "dateText": "08 October 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-11-06",
+          "dateText": "06 November 2026, 11:59 PM"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-08",
+          "dateText": "08 October 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-06",
+          "dateText": "06 November 2026, 11:59 PM"
+        },
+        {
+          "label": "Last Date for Application Fee Payment",
+          "date": "2026-11-08",
+          "dateText": "08 November 2026"
+        }
+      ],
+      "officialLink": "https://www.rrbapply.gov.in/",
+      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_06_2026_NTPC_G.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.rrbapply.gov.in/",
+          "label": "RRB NTPC Graduate Apply Online"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_06_2026_NTPC_G.pdf",
+          "label": "RRB NTPC Graduate CEN 06/2026 Notification PDF"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Unified RRB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/uco-bank-apprentice-recruitment-2026-apply-online-for-530-posts-3073302": {
+    "attemptedAt": "2026-10-26T07:50:41.427Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UCO Bank, HRM Department, Head Office, Kolkata",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-14",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "530",
+      "ageLimit": "",
+      "eligibility": "1 October 2026",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Online Entrance Examination",
+          "date": "2026-11-07",
+          "dateText": "7 November 2026, 11:00 AM"
+        },
+        {
+          "label": "Age and Eligibility Reckoning Date",
+          "date": "2026-10-01",
+          "dateText": "1 October 2026"
+        }
+      ],
+      "officialLinks": []
+    }
+  },
+  "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
+    "attemptedAt": "2026-10-26T07:50:41.469Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RRB NTPC UG",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-15",
+      "lastDate": "2026-11-13",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": ",",
+      "ageLimit": "",
+      "eligibility": "Age Limit 18–30 Years",
+      "applicationFee": "Rs. 500",
+      "milestones": [
+        {
+          "label": "Indicative Notification Date",
+          "date": "2026-09-26",
+          "dateText": "26 September 2026"
+        },
+        {
+          "label": "Qualification Cut-off Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2027-01-01",
+          "dateText": "01 January 2027"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026 (11:59 PM)"
+        },
+        {
+          "label": "Application Fee Payment Last Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Application Modification Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Application Modification Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Modification Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Modification Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        }
+      ],
+      "officialLink": "https://www.rrbapply.gov.in/#/auth/home",
+      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/home",
+          "label": "Apply Online / Recruitment Portal"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
+          "label": "Detailed Notification CEN 07/2026"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/landing",
+          "label": "RRB-wise Vacancy Details"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579": {
+    "attemptedAt": "2026-10-26T07:50:41.511Z",
+    "parser": "v2",
+    "details": {
+      "organization": "DSSSB Delhi District Courts",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-06",
+      "lastDate": "2026-11-04",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "641",
+      "ageLimit": "",
+      "eligibility": "04 November 2026 (closing date of application)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-11-04",
+          "dateText": "04 November 2026, 11:00 PM"
+        },
+        {
+          "label": "Age Reckoning Date",
+          "date": "2026-06-01",
+          "dateText": "01 June 2026"
+        },
+        {
+          "label": "Qualification/Experience Cut-off (Crucial) Date",
+          "date": "2026-11-04",
+          "dateText": "04 November 2026 (closing date of application)"
+        }
+      ],
+      "officialLinks": []
+    }
+  },
+  "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927": {
+    "attemptedAt": "2026-10-26T07:50:41.550Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Directorate General, Central Reserve Police Force (CRPF), Ministry of Home Affairs",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-12",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "521",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-09-17",
+          "dateText": "17 September 2026"
+        },
+        {
+          "label": "Online Application & Fee Payment Last Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026, 23:59 hrs"
+        },
+        {
+          "label": "Crucial Date for Category Status (SC/ST/OBC/EWS)",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026 (closing date of online application)"
+        },
+        {
+          "label": "Cut-off Date",
+          "date": "2026-08-01",
+          "dateText": "1 August 2026"
+        },
+        {
+          "label": "Date of Birth Range",
+          "date": "2003-08-02",
+          "dateText": "Not before 2 August 2003 and not after 1 August 2008"
+        }
+      ],
+      "officialLinks": []
     }
   }
 }
