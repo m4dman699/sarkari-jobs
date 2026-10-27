@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-10-26T07:50:39.825Z",
-  "total": 4,
+  "generatedAt": "2026-10-27T07:55:36.708Z",
+  "total": 3,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9waWhtY3QxODA4MjAyNnJlYy5wZGY",
-      "type": "job",
-      "title": "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
-      "source": "Government of Puducherry",
-      "category": "State PSC",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/pihmct18082026rec.pdf",
-      "openDate": null,
-      "lastDate": "2026-10-25",
-      "examDate": null,
-      "publishedDate": "2026-08-18"
-    },
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdHUwMTEwMjAyNi5wZGY",
       "type": "job",

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-26T07:50:41.566Z",
-  "jobsGeneratedAt": "2026-10-26T07:50:39.825Z",
+  "generatedAt": "2026-10-27T07:55:38.125Z",
+  "jobsGeneratedAt": "2026-10-27T07:55:36.708Z",
   "partial": true,
-  "total": 524,
+  "total": 525,
   "quality": {
     "jobsMissingPublicationDate": 55,
     "jobsMissingClosingDate": 75,
@@ -17,7 +17,7 @@
     {
       "source": "IBPS",
       "url": "https://www.ibps.in/",
-      "error": "write EPROTO 804CABA8B87F0000:error:0A0000F4:SSL routines:ssl3_read_bytes:unexpected message:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1538:\n"
+      "error": "unable to verify the first certificate"
     },
     {
       "source": "Employment News (Govt of India)",
@@ -45,23 +45,18 @@
       "error": "timeout"
     },
     {
-      "source": "CBSE/CTET",
-      "url": "https://www.cbse.gov.in/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "Indian Air Force",
       "url": "https://indianairforce.nic.in/",
       "error": "timeout"
     },
     {
-      "source": "NTPC",
-      "url": "https://careers.ntpc.co.in/",
+      "source": "CBSE/CTET",
+      "url": "https://www.cbse.gov.in/",
       "error": "HTTP 403"
     },
     {
-      "source": "Supreme Court of India",
-      "url": "https://www.sci.gov.in/recruitments/",
+      "source": "NTPC",
+      "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
     },
     {
@@ -75,6 +70,16 @@
       "error": "timeout"
     },
     {
+      "source": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/recruitments/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "NIC e-Pariksha",
+      "url": "https://pariksha.nic.in/",
+      "error": "unable to verify the first certificate"
+    },
+    {
       "source": "BPSC",
       "url": "https://bpsc.bihar.gov.in/",
       "error": "unable to verify the first certificate"
@@ -82,7 +87,7 @@
     {
       "source": "Calcutta High Court",
       "url": "https://www.calcuttahighcourt.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "RPSC",
@@ -95,13 +100,13 @@
       "error": "timeout"
     },
     {
-      "source": "WBPSC",
-      "url": "https://wbpsc.gov.in/",
-      "error": "The operation was aborted"
-    },
-    {
       "source": "MPPSC",
       "url": "https://mppsc.mp.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "WBPSC",
+      "url": "https://wbpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -125,13 +130,13 @@
       "error": "HTTP 403"
     },
     {
-      "source": "APPSC",
-      "url": "https://psc.ap.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO 803C69222E7F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+    },
+    {
+      "source": "APPSC",
+      "url": "https://psc.ap.gov.in/",
       "error": "timeout"
     },
     {
@@ -147,7 +152,7 @@
     {
       "source": "UKPSC",
       "url": "https://ukpsc.gov.in/",
-      "error": "timeout"
+      "error": "getaddrinfo EAI_AGAIN ukpsc.gov.in"
     },
     {
       "source": "PPSC",
@@ -180,6 +185,11 @@
       "error": "timeout"
     },
     {
+      "source": "NPSC",
+      "url": "https://npsc.nagaland.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
       "source": "DSSSB",
       "url": "https://dsssb.delhi.gov.in/",
       "error": "timeout"
@@ -192,7 +202,7 @@
     {
       "source": "CSBC (Bihar Police)",
       "url": "https://csbc.bih.nic.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "WB Police",
@@ -202,12 +212,12 @@
     {
       "source": "Rajasthan Police",
       "url": "https://police.rajasthan.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "TNUSRB",
       "url": "https://www.tnusrb.tn.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "Competitor: SarkariResult.com",
@@ -13815,6 +13825,64 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-d85da2d846280d42",
+      "type": "admit-card",
+      "title": "NTPC Assistant Officer Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://ibtexamination.com/secuAdmitcard/AdmitCard04_NTPC/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ntpc-assistant-officer-admit-card-2026-3075787",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-27",
+      "organization": "NTPC Limited (National Thermal Power Corporation)",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-09-21",
+      "lastDate": "2026-10-05",
+      "examDate": "2026-11-01",
+      "vacancies": "15",
+      "officialLinks": [
+        {
+          "url": "https://ibtexamination.com/secuAdmitcard/AdmitCard04_NTPC/",
+          "label": "Download NTPC Assistant Officer Admit Card 2026"
+        },
+        {
+          "url": "https://careers.ntpc.co.in/recruitment/",
+          "label": "NTPC Careers Portal"
+        }
+      ],
+      "officialLink": "https://ibtexamination.com/secuAdmitcard/AdmitCard04_NTPC/",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026"
+        },
+        {
+          "label": "CBT Exam Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Notification Released",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-10-05",
+          "dateText": "5 October 2026 (11:59 PM)"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-32aaa07c845f6e00",
       "type": "admit-card",
       "title": "SSC 10+2 CHSL Tier I Exam Date 2026",
@@ -13882,19 +13950,6 @@
           "dateText": "30/11/2026"
         }
       ]
-    },
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9waWhtY3QxODA4MjAyNnJlYy5wZGY",
-      "type": "job",
-      "title": "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
-      "source": "Government of Puducherry",
-      "category": "State PSC",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/pihmct18082026rec.pdf",
-      "openDate": null,
-      "lastDate": "2026-10-25",
-      "examDate": null,
-      "publishedDate": "2026-08-18"
     },
     {
       "id": "competitor-sarkariresult-d0a7a71477a8f5bc",
@@ -14883,43 +14938,6 @@
           "label": "Pay Exam Fee Last Date",
           "date": "2026-11-04",
           "dateText": "04/11/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-freejobalert-e283c81cc962a5c5",
-      "type": "job",
-      "title": "DSSSB 641 Peon, PA and More Posts Online Form 2026",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": null,
-      "sourceListingUrl": "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-26",
-      "organization": "DSSSB Delhi District Courts",
-      "publishedDate": "2026-10-26",
-      "openDate": "2026-10-06",
-      "lastDate": "2026-11-04",
-      "vacancies": "641",
-      "eligibility": "04 November 2026 (closing date of application)",
-      "milestones": [
-        {
-          "label": "Online Application Last Date",
-          "date": "2026-11-04",
-          "dateText": "04 November 2026, 11:00 PM"
-        },
-        {
-          "label": "Age Reckoning Date",
-          "date": "2026-06-01",
-          "dateText": "01 June 2026"
-        },
-        {
-          "label": "Qualification/Experience Cut-off (Crucial) Date",
-          "date": "2026-11-04",
-          "dateText": "04 November 2026 (closing date of application)"
         }
       ]
     },
@@ -16646,19 +16664,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvQWR2ZXJ0aXNtZW50d2lzZV9Eb3dubG9hZERvY3VtZW50LmFzcHg_aW5wdHBybXRyPWFj",
-      "type": "admit-card",
-      "title": "CLICK HERE TO DOWNLOAD ADMIT CARD FOR ADVT. NO.- D-6/E-1/2025, VETTING OFFICER (SCREENING) EXAMINATION-2025 ,DEPT NO. S-02/09 (EXAM DATED - 26/10/2026).",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-10-26",
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbXpOSklSVktuRFJ6VEh6L2pmNFpRbQ",
       "type": "admit-card",
       "title": "06 Nov 2026 NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2023, LECTURER GOVT. AYURVEDA DEGREE COLLEGE AND HOSPITAL (SCREENING) .....",
@@ -17010,19 +17015,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
-      "type": "job",
-      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/applicant/otr",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3BhZ2UvYWRtaXQtY2FyZC1kaXJlY3QtcmVjcnVpdG1lbnQ",
       "type": "admit-card",
       "title": "Admit Card - Direct Recruitment",
@@ -17270,6 +17262,60 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvZmluYWwtcmVzdWx0LW9mLXRvdXJpc3Qtb2ZmaWNlci11bmRlci10b3VyaXNtLWRlcHR0LTIwMjY",
+      "type": "result",
+      "title": "Final Result of Tourist Officer under Tourism Deptt., 2026",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/post/final-result-of-tourist-officer-under-tourism-deptt-2026",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3Qvbm90aWZpY2F0aW9uLTctb2YtMjAyNi0yNy1hZG1pdC1jYXJkLWRvd25sb2Fk",
+      "type": "admit-card",
+      "title": "Notification 7 of 2026-27-Admit Card download",
+      "source": "Mizoram PSC",
+      "category": "State PSC",
+      "state": "Mizoram",
+      "link": "https://mpsc.mizoram.gov.in/post/notification-7-of-2026-27-admit-card-download",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-02",
+      "publishedDate": "2026-10-26",
+      "organization": "Artificial Limbs Manufacturing Corporation of India (ALIMCO)",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/alidoct26/oecla_oct26/login.php?appid=83c52f360d180af67841951c4d077057",
+          "label": "ALIMCO Various Posts Admit Card 2026"
+        },
+        {
+          "url": "https://alimco.in/WriteReadData/Recruitment_Document/AD3F01-January-2026-Online-Test-Admit-Card1/Admit%20CArd.pdf",
+          "label": "ALIMCO Various Post Admit Card Notice"
+        },
+        {
+          "url": "https://alimco.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/alidoct26/oecla_oct26/login.php?appid=83c52f360d180af67841951c4d077057",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-10-20",
+          "dateText": "20 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026 (Monday)"
+        }
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvcmVzdWx0LW9mLWxkZS1mb3ItcHJvbW90aW9uLXRvLWhlYWx0aC1zdXBlcnZpc29yLXVuZGVyLWhmdy1kZXB0",
       "type": "result",
       "title": "Result of LDE for promotion to Health Supervisor under H&FW Dept",
@@ -17290,19 +17336,6 @@
       "category": "State PSC",
       "state": "Mizoram",
       "link": "https://mpsc.mizoram.gov.in/post/notification-for-group-bng-personal-interview-marks",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3QvZmluYWwtcmVzdWx0LW9mLXJlc2VhcmNoLWludmVzdGlnYXRvci11bmRlci1hcnQtY3VsdHVyZS1kZXB0dC0yMDI2",
-      "type": "result",
-      "title": "Final Result of Research Investigator under Art & Culture Deptt., 2026",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/post/final-result-of-research-investigator-under-art-culture-deptt-2026",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -17391,6 +17424,19 @@
       "publishedDate": "2026-10-20",
       "resultDate": "2026-10-19",
       "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
+      "type": "job",
+      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/applicant/otr",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9qb2luaW5kaWFuYXJteS5uaWMuaW4v",
@@ -24278,7 +24324,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/uco-bank-apprentice-recruitment-2026-apply-online-for-530-posts-3073302",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-26",
+      "factCheckedAt": "2026-10-27",
       "organization": "UCO Bank, HRM Department, Head Office, Kolkata",
       "publishedDate": "2026-10-26",
       "openDate": "2026-10-14",
@@ -24319,7 +24365,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-26",
+      "factCheckedAt": "2026-10-27",
       "organization": "Directorate General, Central Reserve Police Force (CRPF), Ministry of Home Affairs",
       "publishedDate": "2026-10-26",
       "openDate": "2026-10-12",
@@ -24349,6 +24395,122 @@
           "label": "Date of Birth Range",
           "date": "2003-08-02",
           "dateText": "Not before 2 August 2003 and not after 1 August 2008"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-b008f0aa2c94ebbd",
+      "type": "admit-card",
+      "title": "DSSSB DEO, Assistant and More Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Delhi",
+      "link": "https://cdn.digialm.com/EForms/configuredHtml/1258/102404/login.html",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dsssb-deo-assistant-and-more-admit-card-2026-3075741",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-27",
+      "organization": "Delhi Subordinate Services Selection Board (DSSSB)",
+      "publishedDate": "2026-10-26",
+      "examDate": "2026-12-05",
+      "officialLinks": [
+        {
+          "url": "https://cdn.digialm.com/EForms/configuredHtml/1258/102404/login.html",
+          "label": "DSSSB Admit Card 2026 - DEO, Assistant, TGT and Other Posts"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "DSSSB Official Website"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/102404/login.html",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-12-05",
+          "dateText": "27 October to 5 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-3279b8ebf6bc6bff",
+      "type": "result",
+      "title": "KEA KSET Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "Karnataka",
+      "link": "https://kearecruitment.karnataka.gov.in/resrecruitment/kset2026result.aspx",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/kea-kset-result-2026-3075727",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-27",
+      "organization": "KEA KSET",
+      "publishedDate": "2026-10-26",
+      "examDate": "2026-10-11",
+      "resultDate": "2026-10-26",
+      "eligibility": "Eligibility for Assistant Professor",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://kearecruitment.karnataka.gov.in/resrecruitment/kset2026result.aspx",
+          "label": "KSET Result 2026 (Provisional Score List)"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "KEA Official Website"
+        }
+      ],
+      "officialLink": "https://kearecruitment.karnataka.gov.in/resrecruitment/kset2026result.aspx",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Result Date and Time",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026, 10:30 AM"
+        },
+        {
+          "label": "KSET 2026 Exam",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Provisional Answer Key Released",
+          "date": "2026-10-12",
+          "dateText": "12 October 2026"
+        },
+        {
+          "label": "Last Date for Answer Key Objections",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026, 10:30 AM"
+        },
+        {
+          "label": "Revised Answer Key Published",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026"
+        },
+        {
+          "label": "Provisional Result Notice",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Provisional Score List Released",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026, 10:30 AM"
         }
       ]
     }

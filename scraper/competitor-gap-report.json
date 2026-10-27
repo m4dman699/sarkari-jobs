@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-10-26T07:50:41.566Z",
+  "generatedAt": "2026-10-27T07:55:38.125Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 523,
-    "jobs": 134,
+    "total": 522,
+    "jobs": 133,
     "admitCards": 101,
     "results": 288,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 75,
-    "jobsMissingOrganization": 80,
-    "jobsMissingVacancies": 93,
-    "jobsMissingEligibility": 83,
-    "jobsMissingApplicationFee": 84,
-    "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 18,
-    "resultsMissingPublishedDate": 45,
-    "resultsMissingResultDate": 161
-  },
-  "after": {
-    "total": 524,
-    "jobs": 135,
-    "admitCards": 101,
-    "results": 288,
-    "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 75,
-    "jobsMissingOrganization": 78,
-    "jobsMissingVacancies": 91,
+    "jobsMissingOrganization": 79,
+    "jobsMissingVacancies": 92,
     "jobsMissingEligibility": 82,
-    "jobsMissingApplicationFee": 85,
-    "jobsMissingOfficialLink": 3,
+    "jobsMissingApplicationFee": 83,
+    "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 17,
     "resultsMissingPublishedDate": 45,
     "resultsMissingResultDate": 161
   },
-  "imported": {
-    "job": 3,
-    "admit-card": 0,
-    "result": 0
+  "after": {
+    "total": 525,
+    "jobs": 133,
+    "admitCards": 103,
+    "results": 289,
+    "jobsMissingPublicationDate": 55,
+    "jobsMissingClosingDate": 75,
+    "jobsMissingOrganization": 77,
+    "jobsMissingVacancies": 90,
+    "jobsMissingEligibility": 81,
+    "jobsMissingApplicationFee": 83,
+    "jobsMissingOfficialLink": 2,
+    "admitCardsMissingPublishedDate": 16,
+    "resultsMissingPublishedDate": 45,
+    "resultsMissingResultDate": 161
   },
-  "matchedExisting": 23,
-  "filledItems": 3,
+  "imported": {
+    "job": 2,
+    "admit-card": 2,
+    "result": 1
+  },
+  "matchedExisting": 20,
+  "filledItems": 1,
   "removedStale": 0,
   "removedUncertain": 0,
   "skippedClosed": 0,
@@ -87,8 +87,8 @@
       "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
       "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
       "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "OM / Notifications"
+      "OM / Notifications",
+      "Notification for Group B(NG) Personal Interview Marks"
     ],
     "jobsMissingClosingDate": [
       "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
@@ -113,7 +113,6 @@
       "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government "
     ],
     "jobsMissingOrganization": [
-      "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
       "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES — EXECUTIVE DIRECTOR",
       "Higher & Technical Education - Advertisement - Appointment of Vice-Chancellor of Puducherry Technological University",
       "HSFC:02:RMT:2026 — Recruitment to the post of Medical Officer - SD",
@@ -132,10 +131,10 @@
       "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
       "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
       "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
-      "Recruitment of Director Advt.No.-07/2025"
+      "Recruitment of Director Advt.No.-07/2025",
+      "Recruitment of Boiler Inspector Advt.No.-02/2025"
     ],
     "jobsMissingVacancies": [
-      "PIHMCT - Engagement of Assistant Lecturer on Contractual basis",
       "NTA UGC NET December 2026 Online Form",
       "Army TGC 145 Online Form 2026 for July 2027 Batch",
       "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES — EXECUTIVE DIRECTOR",
@@ -154,10 +153,10 @@
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
       "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
-      "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)"
+      "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+      "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026"
     ],
     "jobsMissingOfficialLink": [
-      "DSSSB 641 Peon, PA and More Posts Online Form 2026",
       "UCO Bank 530 Apprentice Recruitment 2026",
       "CRPF 521 Sports Quota Online Form 2026"
     ]

@@ -4725,7 +4725,7 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-26T07:50:41.394Z",
+    "attemptedAt": "2026-10-27T07:55:38.027Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
@@ -22165,7 +22165,7 @@
     }
   },
   "https://www.freejobalert.com/articles/alimco-various-posts-admit-card-2026-3075708": {
-    "attemptedAt": "2026-10-26T07:50:41.313Z",
+    "attemptedAt": "2026-10-27T07:55:37.894Z",
     "parser": "v2",
     "details": {
       "organization": "Artificial Limbs Manufacturing Corporation of India (ALIMCO)",
@@ -22210,7 +22210,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-graduate-recruitment-062026-notification-apply-online-for-3-477-posts-3068511": {
-    "attemptedAt": "2026-10-26T07:50:41.353Z",
+    "attemptedAt": "2026-10-27T07:55:37.962Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC Graduate",
@@ -22271,7 +22271,7 @@
     }
   },
   "https://www.freejobalert.com/articles/uco-bank-apprentice-recruitment-2026-apply-online-for-530-posts-3073302": {
-    "attemptedAt": "2026-10-26T07:50:41.427Z",
+    "attemptedAt": "2026-10-27T07:55:37.937Z",
     "parser": "v2",
     "details": {
       "organization": "UCO Bank, HRM Department, Head Office, Kolkata",
@@ -22312,7 +22312,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-10-26T07:50:41.469Z",
+    "attemptedAt": "2026-10-27T07:55:37.997Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -22453,7 +22453,7 @@
     }
   },
   "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927": {
-    "attemptedAt": "2026-10-26T07:50:41.550Z",
+    "attemptedAt": "2026-10-27T07:55:38.068Z",
     "parser": "v2",
     "details": {
       "organization": "Directorate General, Central Reserve Police Force (CRPF), Ministry of Home Affairs",
@@ -22496,6 +22496,178 @@
         }
       ],
       "officialLinks": []
+    }
+  },
+  "https://www.freejobalert.com/articles/kea-kset-result-2026-3075727": {
+    "attemptedAt": "2026-10-27T07:55:38.093Z",
+    "parser": "v2",
+    "details": {
+      "organization": "KEA KSET",
+      "publishedDate": "2026-10-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-11",
+      "resultDate": "2026-10-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Eligibility for Assistant Professor",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Result Date and Time",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026, 10:30 AM"
+        },
+        {
+          "label": "KSET 2026 Exam",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Provisional Answer Key Released",
+          "date": "2026-10-12",
+          "dateText": "12 October 2026"
+        },
+        {
+          "label": "Last Date for Answer Key Objections",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026, 10:30 AM"
+        },
+        {
+          "label": "Revised Answer Key Published",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026"
+        },
+        {
+          "label": "Provisional Result Notice",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Provisional Score List Released",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026, 10:30 AM"
+        }
+      ],
+      "officialLink": "https://kearecruitment.karnataka.gov.in/resrecruitment/kset2026result.aspx",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://kearecruitment.karnataka.gov.in/resrecruitment/kset2026result.aspx",
+          "label": "KSET Result 2026 (Provisional Score List)"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "KEA Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ntpc-assistant-officer-admit-card-2026-3075787": {
+    "attemptedAt": "2026-10-27T07:55:38.105Z",
+    "parser": "v2",
+    "details": {
+      "organization": "NTPC Limited (National Thermal Power Corporation)",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-09-21",
+      "lastDate": "2026-10-05",
+      "examDate": "2026-11-01",
+      "resultDate": null,
+      "admitCardDate": "2026-10-26",
+      "interviewDate": null,
+      "vacancies": "15",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026"
+        },
+        {
+          "label": "CBT Exam Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Notification Released",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-10-05",
+          "dateText": "5 October 2026 (11:59 PM)"
+        }
+      ],
+      "officialLink": "https://ibtexamination.com/secuAdmitcard/AdmitCard04_NTPC/",
+      "officialLinks": [
+        {
+          "url": "https://ibtexamination.com/secuAdmitcard/AdmitCard04_NTPC/",
+          "label": "Download NTPC Assistant Officer Admit Card 2026"
+        },
+        {
+          "url": "https://careers.ntpc.co.in/recruitment/",
+          "label": "NTPC Careers Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dsssb-deo-assistant-and-more-admit-card-2026-3075741": {
+    "attemptedAt": "2026-10-27T07:55:38.121Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Delhi Subordinate Services Selection Board (DSSSB)",
+      "publishedDate": "2026-10-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-12-05",
+      "resultDate": null,
+      "admitCardDate": "2026-10-24",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-12-05",
+          "dateText": "27 October to 5 December 2026"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/102404/login.html",
+      "officialLinks": [
+        {
+          "url": "https://cdn.digialm.com/EForms/configuredHtml/1258/102404/login.html",
+          "label": "DSSSB Admit Card 2026 - DEO, Assistant, TGT and Other Posts"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "DSSSB Official Website"
+        }
+      ]
     }
   }
 }
