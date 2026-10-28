@@ -4725,11 +4725,11 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-27T07:55:38.027Z",
+    "attemptedAt": "2026-10-28T08:36:42.026Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
-      "publishedDate": "2026-10-26",
+      "publishedDate": "2026-10-27",
       "openDate": "2026-10-17",
       "lastDate": "2026-11-15",
       "examDate": null,
@@ -22210,7 +22210,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-graduate-recruitment-062026-notification-apply-online-for-3-477-posts-3068511": {
-    "attemptedAt": "2026-10-27T07:55:37.962Z",
+    "attemptedAt": "2026-10-28T08:36:42.078Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC Graduate",
@@ -22312,7 +22312,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-10-27T07:55:37.997Z",
+    "attemptedAt": "2026-10-28T08:36:42.132Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -22666,6 +22666,500 @@
         {
           "url": "https://dsssb.delhi.gov.in/",
           "label": "DSSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/cg-swami-atmanand-school-admit-card-2026-3076075": {
+    "attemptedAt": "2026-10-28T08:36:42.059Z",
+    "parser": "v2",
+    "details": {
+      "organization": "CG Swami Atmanand School",
+      "publishedDate": "2026-10-27",
+      "openDate": "2026-10-01",
+      "lastDate": "2026-10-21",
+      "examDate": "2026-10-31",
+      "resultDate": null,
+      "admitCardDate": "2026-10-26",
+      "interviewDate": null,
+      "vacancies": "1,812",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        },
+        {
+          "label": "Admit Card Date",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026"
+        },
+        {
+          "label": "CBT Exam Date",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-01",
+          "dateText": "1 October 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Admit Card Released",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026"
+        },
+        {
+          "label": "CBT Examination Date",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        },
+        {
+          "label": "Exam Date Confirmed by Portal",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        }
+      ],
+      "officialLink": "https://cgdpi26.onlineregistrationform.org/CGDPI/",
+      "officialLinks": [
+        {
+          "url": "https://cgdpi26.onlineregistrationform.org/CGDPI/",
+          "label": "Download Link"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/bel-probationary-engineer-recruitment-2026-3076214": {
+    "attemptedAt": "2026-10-28T08:36:42.099Z",
+    "parser": "v2",
+    "details": {
+      "organization": "BEL Probationary Engineer",
+      "publishedDate": "2026-10-27",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "350",
+      "ageLimit": "25 years for Unreserved/EWS candidates as on 01.10.2026",
+      "eligibility": "B.E / B.Tech / B.Sc (4 Years) Engineering Graduate in the listed Electronics or Mechanical disciplines (First class; Pass class for SC/ST/PwBD)",
+      "applicationFee": "Rs. 1180/- (Rs 1000/- + GST) for GEN/EWS/OBC (NCL); SC/ST/PwBD/ESM exempted",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026"
+        },
+        {
+          "label": "Application Dates",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026 (02:00 PM) to 18.11.2026 (11:59 PM)"
+        },
+        {
+          "label": "Date of advertisement",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026"
+        },
+        {
+          "label": "Opening date for online registration of application",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026 (02:00 PM)"
+        },
+        {
+          "label": "Last date of submission of online application with fee",
+          "date": "2026-11-18",
+          "dateText": "18.11.2026 (11:59 PM)"
+        }
+      ],
+      "officialLink": "https://bel-india.in",
+      "notificationLink": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bel-india.in",
+          "label": "Apply Online for BEL Probationary Engineer 2026"
+        },
+        {
+          "url": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
+          "label": "BEL Probationary Engineer Notification PDF (Advt No. 17556/HR/All-India/2026)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/jkssb-junior-laboratory-technician-and-more-result-2026-3076385": {
+    "attemptedAt": "2026-10-28T08:36:42.149Z",
+    "parser": "v2",
+    "details": {
+      "organization": "JKSSB",
+      "publishedDate": "2026-10-28",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-14",
+      "resultDate": "2026-10-27",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        },
+        {
+          "label": "Junior Health Inspector written exam",
+          "date": "2026-10-06",
+          "dateText": "06 October 2026"
+        },
+        {
+          "label": "Technician G-II written exam",
+          "date": "2026-10-07",
+          "dateText": "07 October 2026"
+        },
+        {
+          "label": "Female MPHW / Male Multipurpose Health Worker written exam",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Junior Laboratory Technician written exam",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Result/Scoresheet release",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        },
+        {
+          "label": "Check Result Here",
+          "date": "2026-10-27",
+          "dateText": "Official JKSSB result, 27 October 2026"
+        }
+      ],
+      "officialLink": "https://jkssb.nic.in/Pdf/result1_27102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://jkssb.nic.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/result1_27102026.pdf",
+          "label": "Check Result Here"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/result2_27102026.pdf",
+          "label": "Check Result Here"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/result3_27102026.pdf",
+          "label": "Check Result Here"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/result4_27102026.pdf",
+          "label": "Check Result Here"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/bpsc-aso-mains-result-2026-released-3076293": {
+    "attemptedAt": "2026-10-28T08:36:42.165Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Bihar Public Service Commission (BPSC)",
+      "publishedDate": "2026-10-28",
+      "openDate": "2025-05-29",
+      "lastDate": "2026-01-31",
+      "examDate": "2026-02-27",
+      "resultDate": "2026-10-27",
+      "admitCardDate": "2026-02-20",
+      "interviewDate": null,
+      "vacancies": "41",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "Age Limit (As on 1 August 2025) Category",
+      "milestones": [
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-02-27",
+          "dateText": "27 February 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        },
+        {
+          "label": "Online application and fee payment last date",
+          "date": "2025-06-23",
+          "dateText": "23 June 2025"
+        },
+        {
+          "label": "Preliminary exam admit card",
+          "date": "2025-09-04",
+          "dateText": "4 September 2025"
+        },
+        {
+          "label": "Preliminary exam date",
+          "date": "2025-09-10",
+          "dateText": "10 September 2025"
+        },
+        {
+          "label": "Preliminary provisional answer key",
+          "date": "2025-09-18",
+          "dateText": "18 September 2025"
+        },
+        {
+          "label": "Preliminary final answer key",
+          "date": "2025-11-01",
+          "dateText": "1 November 2025"
+        },
+        {
+          "label": "Preliminary result",
+          "date": "2025-12-23",
+          "dateText": "23 December 2025"
+        },
+        {
+          "label": "Mains application last date",
+          "date": "2026-01-31",
+          "dateText": "31 January 2026"
+        },
+        {
+          "label": "Mains admit card",
+          "date": "2026-02-20",
+          "dateText": "20 February 2026"
+        },
+        {
+          "label": "Mains final answer key",
+          "date": "2026-04-06",
+          "dateText": "6 April 2026"
+        },
+        {
+          "label": "Provisional list of candidates called for DV",
+          "date": "2026-08-10",
+          "dateText": "10 August 2026"
+        },
+        {
+          "label": "Final result (Mains result)",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        }
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-372025-ASO-BPSC-Main-Competitive-Examination_BPSC-20261027-pd94j7.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-372025-ASO-BPSC-Main-Competitive-Examination_BPSC-20261027-pd94j7.pdf",
+          "label": "Download Mains Result (Final Result) PDF"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "BPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rssb-jail-prahari-final-result-2026-3076308": {
+    "attemptedAt": "2026-10-28T08:36:42.182Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RSSB Jail Prahari Final",
+      "publishedDate": "2026-10-28",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2025-04-12",
+      "resultDate": "2026-10-27",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "968",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Original Final Result",
+          "date": "2026-05-05",
+          "dateText": "5 May 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2025-04-12",
+          "dateText": "12 April 2025"
+        },
+        {
+          "label": "Document Verification",
+          "date": "2026-03-06",
+          "dateText": "23 February to 6 March 2026"
+        },
+        {
+          "label": "Original Final Result and Cut Off",
+          "date": "2026-05-05",
+          "dateText": "5 May 2026"
+        },
+        {
+          "label": "Non-Joiner Final Recommendation and Merit Lists",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/storage/result_item/1793125321.pdf",
+          "label": "Final Recommendation and Cut Off Marks"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/upsssc-stenographer-skill-test-result-2026-3076292": {
+    "attemptedAt": "2026-10-28T08:36:42.196Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UPSSSC Stenographer Skill Test",
+      "publishedDate": "2026-10-28",
+      "openDate": "2023-10-17",
+      "lastDate": "2023-11-06",
+      "examDate": "2026-07-22",
+      "resultDate": "2026-10-27",
+      "admitCardDate": "2026-08-25",
+      "interviewDate": null,
+      "vacancies": "1,557",
+      "ageLimit": "",
+      "eligibility": "upsssc.gov.in",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2023-11-06",
+          "dateText": "6 November 2023 25 January 2025"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2025-11-16",
+          "dateText": "16 November 2025 20 January 2026"
+        },
+        {
+          "label": "Written Examination Result",
+          "date": "2026-07-22",
+          "dateText": "22 July 2026 22 July 2026"
+        },
+        {
+          "label": "Skill Test Admit Card",
+          "date": "2026-08-25",
+          "dateText": "25 August 2026 25 August 2026"
+        },
+        {
+          "label": "Skill Test Result",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026 27 October 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in/ViewPdf.aspx?EnBiDam5l0HVSQl05dMHcAMjiB0yJem9ux0kHQ/HBhI=",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/ViewPdf.aspx?EnBiDam5l0HVSQl05dMHcAMjiB0yJem9ux0kHQ/HBhI=",
+          "label": "Stenographer Skill Test Result - 09-Exam/2023"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/cgssb-fwln26-result-2026-3076179": {
+    "attemptedAt": "2026-10-28T08:36:42.208Z",
+    "parser": "v2",
+    "details": {
+      "organization": "CGSSB FWLN26",
+      "publishedDate": "2026-10-27",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-20",
+      "resultDate": "2026-10-27",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-09-20",
+          "dateText": "20 September 2026"
+        },
+        {
+          "label": "Final Answer Key and Result Date",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        },
+        {
+          "label": "FWLN26 Written Exam",
+          "date": "2026-09-20",
+          "dateText": "20 September 2026"
+        },
+        {
+          "label": "Final Answer Key Declared",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        },
+        {
+          "label": "Result Declared",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026"
+        }
+      ],
+      "officialLink": "https://vyapamcg.cgstate.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://vyapamcg.cgstate.gov.in",
+          "label": "CGSSB Official Website (Vyapam CG)"
+        },
+        {
+          "url": "https://cgssb.cgstate.gov.in",
+          "label": "CGSSB Official Website"
+        },
+        {
+          "url": "https://vyapamcg.cgstate.gov.in/uploads/pdfs/8f69e438-c402-43b5-9284-871cb5036840_4244.pdf",
+          "label": "Official Notice (PDF)"
         }
       ]
     }

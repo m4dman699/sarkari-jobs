@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-27T07:55:38.125Z",
+  "generatedAt": "2026-10-28T08:36:42.212Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 522,
-    "jobs": 133,
-    "admitCards": 101,
-    "results": 288,
+    "total": 525,
+    "jobs": 132,
+    "admitCards": 103,
+    "results": 290,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 75,
     "jobsMissingOrganization": 79,
@@ -17,33 +17,33 @@
     "jobsMissingEligibility": 82,
     "jobsMissingApplicationFee": 83,
     "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 17,
-    "resultsMissingPublishedDate": 45,
-    "resultsMissingResultDate": 161
-  },
-  "after": {
-    "total": 525,
-    "jobs": 133,
-    "admitCards": 103,
-    "results": 289,
-    "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 75,
-    "jobsMissingOrganization": 77,
-    "jobsMissingVacancies": 90,
-    "jobsMissingEligibility": 81,
-    "jobsMissingApplicationFee": 83,
-    "jobsMissingOfficialLink": 2,
     "admitCardsMissingPublishedDate": 16,
     "resultsMissingPublishedDate": 45,
-    "resultsMissingResultDate": 161
+    "resultsMissingResultDate": 162
+  },
+  "after": {
+    "total": 530,
+    "jobs": 131,
+    "admitCards": 104,
+    "results": 295,
+    "jobsMissingPublicationDate": 55,
+    "jobsMissingClosingDate": 74,
+    "jobsMissingOrganization": 77,
+    "jobsMissingVacancies": 90,
+    "jobsMissingEligibility": 80,
+    "jobsMissingApplicationFee": 81,
+    "jobsMissingOfficialLink": 0,
+    "admitCardsMissingPublishedDate": 16,
+    "resultsMissingPublishedDate": 45,
+    "resultsMissingResultDate": 162
   },
   "imported": {
-    "job": 2,
-    "admit-card": 2,
-    "result": 1
+    "job": 1,
+    "admit-card": 1,
+    "result": 5
   },
-  "matchedExisting": 20,
-  "filledItems": 1,
+  "matchedExisting": 15,
+  "filledItems": 0,
   "removedStale": 0,
   "removedUncertain": 0,
   "skippedClosed": 0,
@@ -63,8 +63,8 @@
     }
   ],
   "detailPages": {
-    "targets": 9,
-    "fetched": 9,
+    "targets": 10,
+    "fetched": 10,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -87,8 +87,8 @@
       "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
       "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
       "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "OM / Notifications",
-      "Notification for Group B(NG) Personal Interview Marks"
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "OM / Notifications"
     ],
     "jobsMissingClosingDate": [
       "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
@@ -156,10 +156,7 @@
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026"
     ],
-    "jobsMissingOfficialLink": [
-      "UCO Bank 530 Apprentice Recruitment 2026",
-      "CRPF 521 Sports Quota Online Form 2026"
-    ]
+    "jobsMissingOfficialLink": []
   },
   "errors": [
     {
