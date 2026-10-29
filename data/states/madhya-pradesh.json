@@ -1,67 +1,7 @@
 {
-  "generatedAt": "2026-10-28T08:36:40.873Z",
-  "total": 5,
+  "generatedAt": "2026-10-29T08:31:32.838Z",
+  "total": 4,
   "jobs": [
-    {
-      "id": "competitor-sarkariresult-92e2d0c8893afb1d",
-      "type": "job",
-      "title": "MP High Court MPHC Stenographer Grade II Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Judiciary",
-      "state": "Madhya Pradesh",
-      "link": "https://cdn.digialm.com//EForms/configuredHtml/772/102013/XBWXcJ6Tz6lMMGMcqK/Registration.html",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/mphc-stenographer-grade-ii-666-exam/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-10-27",
-      "organization": "High Court of Madhya Pradesh (MPHC)",
-      "publishedDate": "2026-10-07",
-      "openDate": "2026-10-06",
-      "vacancies": "418",
-      "ageLimit": "18–40 years",
-      "eligibility": "Bachelor Degree in any Stream Passed from any Recognized University in India. MP C.P.C.T. Score card. Hindi shorthand exam passed with speed of 100 W.P.M. from Board/Institution recognized by M.P. Government. 1 Year Diploma in Computer Application from Institution recognized by M.P. Government More Details Read the Notification.",
-      "applicationFee": "General / Other State : 943.40/- OBC / EWS / SC / ST / PH : 743.40/-",
-      "notificationLink": "https://portal.mphc.gov.in/PDF/web_pdf/RE/Advertisement%20of%20Steno-II,%20III,%20III%20and%20AG-III%20EK-2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://cdn.digialm.com//EForms/configuredHtml/772/102013/XBWXcJ6Tz6lMMGMcqK/Registration.html",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://portal.mphc.gov.in/PDF/web_pdf/RE/Advertisement%20of%20Steno-II,%20III,%20III%20and%20AG-III%20EK-2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://portal.mphc.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/772/102013/XBWXcJ6Tz6lMMGMcqK/Registration.html",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-07",
-          "dateText": "07 October 2026 | 09:20 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-27",
-          "dateText": "27/10/2026"
-        },
-        {
-          "label": "upto 05 PM Pay Exam Fee Last Date",
-          "date": "2026-10-27",
-          "dateText": "27/10/2026"
-        },
-        {
-          "label": "Correction Date",
-          "date": "2026-10-30",
-          "dateText": "30/10/2026"
-        }
-      ]
-    },
     {
       "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA4XzEwXzIwMjYucGRm",
       "type": "job",

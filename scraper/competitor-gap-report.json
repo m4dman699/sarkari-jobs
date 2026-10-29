@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-10-28T08:36:42.212Z",
+  "generatedAt": "2026-10-29T08:31:34.275Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 525,
+    "total": 530,
     "jobs": 132,
-    "admitCards": 103,
-    "results": 290,
+    "admitCards": 104,
+    "results": 294,
     "jobsMissingPublicationDate": 57,
-    "jobsMissingClosingDate": 75,
-    "jobsMissingOrganization": 79,
-    "jobsMissingVacancies": 92,
-    "jobsMissingEligibility": 82,
-    "jobsMissingApplicationFee": 83,
+    "jobsMissingClosingDate": 77,
+    "jobsMissingOrganization": 80,
+    "jobsMissingVacancies": 93,
+    "jobsMissingEligibility": 83,
+    "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 16,
-    "resultsMissingPublishedDate": 45,
-    "resultsMissingResultDate": 162
+    "resultsMissingPublishedDate": 43,
+    "resultsMissingResultDate": 161
   },
   "after": {
-    "total": 530,
-    "jobs": 131,
+    "total": 533,
+    "jobs": 130,
     "admitCards": 104,
-    "results": 295,
+    "results": 299,
     "jobsMissingPublicationDate": 55,
     "jobsMissingClosingDate": 74,
-    "jobsMissingOrganization": 77,
-    "jobsMissingVacancies": 90,
-    "jobsMissingEligibility": 80,
-    "jobsMissingApplicationFee": 81,
+    "jobsMissingOrganization": 78,
+    "jobsMissingVacancies": 91,
+    "jobsMissingEligibility": 81,
+    "jobsMissingApplicationFee": 82,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 16,
-    "resultsMissingPublishedDate": 45,
+    "resultsMissingPublishedDate": 43,
     "resultsMissingResultDate": 162
   },
   "imported": {
-    "job": 1,
-    "admit-card": 1,
+    "job": 0,
+    "admit-card": 0,
     "result": 5
   },
-  "matchedExisting": 15,
-  "filledItems": 0,
+  "matchedExisting": 20,
+  "filledItems": 1,
   "removedStale": 0,
   "removedUncertain": 0,
   "skippedClosed": 0,
@@ -63,8 +63,8 @@
     }
   ],
   "detailPages": {
-    "targets": 10,
-    "fetched": 10,
+    "targets": 9,
+    "fetched": 9,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -88,7 +88,7 @@
       "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
       "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
       "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "OM / Notifications"
+      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026"
     ],
     "jobsMissingClosingDate": [
       "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",

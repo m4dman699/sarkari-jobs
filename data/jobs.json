@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-28T08:36:42.212Z",
-  "jobsGeneratedAt": "2026-10-28T08:36:40.873Z",
+  "generatedAt": "2026-10-29T08:31:34.275Z",
+  "jobsGeneratedAt": "2026-10-29T08:31:32.838Z",
   "partial": true,
-  "total": 530,
+  "total": 533,
   "quality": {
     "jobsMissingPublicationDate": 55,
     "jobsMissingClosingDate": 74,
@@ -27,16 +27,11 @@
     {
       "source": "Railway Recruitment Boards",
       "url": "https://rrb.indianrailways.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "Indian Army",
       "url": "https://joinindianarmy.nic.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "Indian Navy",
-      "url": "https://www.joinindiannavy.gov.in/",
       "error": "timeout"
     },
     {
@@ -45,19 +40,19 @@
       "error": ""
     },
     {
+      "source": "Indian Navy",
+      "url": "https://www.joinindiannavy.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "CBSE/CTET",
       "url": "https://www.cbse.gov.in/",
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "source": "NTPC",
       "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
-    },
-    {
-      "source": "Indian Air Force",
-      "url": "https://indianairforce.nic.in/",
-      "error": "timeout"
     },
     {
       "source": "SAIL",
@@ -70,18 +65,23 @@
       "error": "HTTP 403"
     },
     {
+      "source": "Indian Air Force",
+      "url": "https://indianairforce.nic.in/",
+      "error": "timeout"
+    },
+    {
       "source": "NIC e-Pariksha",
       "url": "https://pariksha.nic.in/",
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "Calcutta High Court",
-      "url": "https://www.calcuttahighcourt.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "BPSC",
       "url": "https://bpsc.bihar.gov.in/",
+      "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "Calcutta High Court",
+      "url": "https://www.calcuttahighcourt.gov.in/",
       "error": "timeout"
     },
     {
@@ -105,14 +105,9 @@
       "error": "timeout"
     },
     {
-      "source": "TNPSC",
-      "url": "https://www.tnpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "KPSC",
       "url": "https://kpsc.kar.nic.in/",
-      "error": "timeout"
+      "error": "Parse Error: Invalid header token"
     },
     {
       "source": "GPSC",
@@ -120,19 +115,19 @@
       "error": ""
     },
     {
+      "source": "TNPSC",
+      "url": "https://www.tnpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "TGPSC",
       "url": "https://www.tgpsc.gov.in/",
       "error": "HTTP 403"
     },
     {
-      "source": "Kerala PSC",
-      "url": "https://www.keralapsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO 800C6C325B7F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "error": "write EPROTO 80DC8BF6C17F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
@@ -162,7 +157,7 @@
     {
       "source": "PPSC",
       "url": "https://ppsc.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "APSC",
@@ -182,11 +177,6 @@
     {
       "source": "SPSC Sikkim",
       "url": "https://spscskm.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "DSSSB",
-      "url": "https://dsssb.delhi.gov.in/",
       "error": "timeout"
     },
     {
@@ -14205,120 +14195,6 @@
       ]
     },
     {
-      "id": "competitor-sarkariresult-92e2d0c8893afb1d",
-      "type": "job",
-      "title": "MP High Court MPHC Stenographer Grade II Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Judiciary",
-      "state": "Madhya Pradesh",
-      "link": "https://cdn.digialm.com//EForms/configuredHtml/772/102013/XBWXcJ6Tz6lMMGMcqK/Registration.html",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/mphc-stenographer-grade-ii-666-exam/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-10-27",
-      "organization": "High Court of Madhya Pradesh (MPHC)",
-      "publishedDate": "2026-10-07",
-      "openDate": "2026-10-06",
-      "vacancies": "418",
-      "ageLimit": "18–40 years",
-      "eligibility": "Bachelor Degree in any Stream Passed from any Recognized University in India. MP C.P.C.T. Score card. Hindi shorthand exam passed with speed of 100 W.P.M. from Board/Institution recognized by M.P. Government. 1 Year Diploma in Computer Application from Institution recognized by M.P. Government More Details Read the Notification.",
-      "applicationFee": "General / Other State : 943.40/- OBC / EWS / SC / ST / PH : 743.40/-",
-      "notificationLink": "https://portal.mphc.gov.in/PDF/web_pdf/RE/Advertisement%20of%20Steno-II,%20III,%20III%20and%20AG-III%20EK-2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://cdn.digialm.com//EForms/configuredHtml/772/102013/XBWXcJ6Tz6lMMGMcqK/Registration.html",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://portal.mphc.gov.in/PDF/web_pdf/RE/Advertisement%20of%20Steno-II,%20III,%20III%20and%20AG-III%20EK-2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://portal.mphc.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/772/102013/XBWXcJ6Tz6lMMGMcqK/Registration.html",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-07",
-          "dateText": "07 October 2026 | 09:20 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-27",
-          "dateText": "27/10/2026"
-        },
-        {
-          "label": "upto 05 PM Pay Exam Fee Last Date",
-          "date": "2026-10-27",
-          "dateText": "27/10/2026"
-        },
-        {
-          "label": "Correction Date",
-          "date": "2026-10-30",
-          "dateText": "30/10/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-sarkariresult-9e52b9f388367d81",
-      "type": "job",
-      "title": "ITBP Head Constable Online Form 2026 for 37 Post",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Defence",
-      "state": "All India",
-      "link": "https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/itbp-head-constable-motor-mechanic/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-10-27",
-      "organization": "ITBP Head Constable Motor Mechanic & Education & Stress Counsellor",
-      "publishedDate": "2026-09-28",
-      "openDate": "2026-08-28",
-      "vacancies": "37",
-      "eligibility": "Degree from a recognized University or equivalent with Psychology as a subject OR Degree from a recognized University with Bachelor of Education or Bachelor of Teaching or equivalent. Age Limit : 20-25 Years. More Eligibility Details Read the Notification.",
-      "applicationFee": "Gen / OBC / EWS : 100/- SC / ST / Exs : 0/- All Category Female : 0/-",
-      "notificationLink": "https://doc.sarkariresults.org.in/359.pdf",
-      "officialLinks": [
-        {
-          "url": "https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/359.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://recruitment.itbpolice.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://recruitment.itbpolice.nic.in/applicant-profile-details/applicant-login",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-09-28",
-          "dateText": "28 September 2026 | 08:50 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-27",
-          "dateText": "27/10/2026"
-        },
-        {
-          "label": "Last Date Fee Payment",
-          "date": "2026-10-27",
-          "dateText": "27/10/2026"
-        }
-      ]
-    },
-    {
       "id": "competitor-sarkariresult-0dcd28330735c200",
       "type": "job",
       "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts)",
@@ -16005,6 +15881,72 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/bhel-artisan-various-trade-oct26/"
     },
     {
+      "id": "competitor-freejobalert-b5372e62d76edd21",
+      "type": "job",
+      "title": "BEL 350 Probationary Engineer Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "PSU",
+      "state": "See linked notice",
+      "link": "https://bel-india.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/bel-probationary-engineer-recruitment-2026-3076214",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-28",
+      "organization": "BEL Probationary Engineer",
+      "publishedDate": "2026-10-27",
+      "vacancies": "350",
+      "ageLimit": "25 years for Unreserved/EWS candidates as on 01.10.2026",
+      "eligibility": "B.E / B.Tech / B.Sc (4 Years) Engineering Graduate in the listed Electronics or Mechanical disciplines (First class; Pass class for SC/ST/PwBD)",
+      "applicationFee": "Rs. 1180/- (Rs 1000/- + GST) for GEN/EWS/OBC (NCL); SC/ST/PwBD/ESM exempted",
+      "notificationLink": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bel-india.in",
+          "label": "Apply Online for BEL Probationary Engineer 2026"
+        },
+        {
+          "url": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
+          "label": "BEL Probationary Engineer Notification PDF (Advt No. 17556/HR/All-India/2026)"
+        },
+        {
+          "url": "https://bel-india.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://bel-india.in",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026"
+        },
+        {
+          "label": "Application Dates",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026 (02:00 PM) to 18.11.2026 (11:59 PM)"
+        },
+        {
+          "label": "Date of advertisement",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026"
+        },
+        {
+          "label": "Opening date for online registration of application",
+          "date": "2026-10-28",
+          "dateText": "28.10.2026 (02:00 PM)"
+        },
+        {
+          "label": "Last date of submission of online application with fee",
+          "date": "2026-11-18",
+          "dateText": "18.11.2026 (11:59 PM)"
+        }
+      ],
+      "openDate": "2026-10-28",
+      "lastDate": "2026-11-18",
+      "examDate": "2026-12-22"
+    },
+    {
       "id": "competitor-sarkariresult-9eb04641a72a4bf0",
       "type": "job",
       "title": "Supreme Court of India Senior Personal Assistant Online Form 2026",
@@ -16803,32 +16745,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbnI0dUFUdTdsVlMrS2RuN2JBTnJDKw",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnr4uATu7lVS+Kdn7bANrC+",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbnI0dUFUdTdsVlM5Sm05WEJBYVpXaQ",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnr4uATu7lVS9Jm9XBAaZWi",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
       "type": "job",
       "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
@@ -17115,6 +17031,19 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMjgxNjU2MC5wZGY",
+      "type": "result",
+      "title": "Final results for recruitment to the post of Research Assistant in Planning Department on contractual basis. New Updated: 28/10/2026",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26102816560.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-28"
+    },
+    {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTQxNTI0MC5wZGY",
       "type": "admit-card",
       "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
@@ -17180,6 +17109,19 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MzE5MTQ4NTIyMzQy",
+      "type": "job",
+      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": "2026-10-26"
+    },
+    {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
       "type": "result",
       "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
@@ -17189,7 +17131,7 @@
       "link": "https://npsc.nagaland.gov.in/results/179302304373058",
       "openDate": null,
       "lastDate": null,
-      "examDate": "2026-09-17",
+      "examDate": "2026-09-25",
       "publishedDate": "2026-10-26"
     },
     {
@@ -17200,6 +17142,71 @@
       "category": "State PSC",
       "state": "Nagaland",
       "link": "https://npsc.nagaland.gov.in/applicant/otr",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZG9pdC90YWItY29udGVudC9vbGQtcmVzdWx0",
+      "type": "result",
+      "title": "Old Result",
+      "source": "DSSSB",
+      "category": "State PSC",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/doit/tab-content/old-result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9jZG4uZGlnaWFsbS5jb20vL0VGb3Jtcy9jb25maWd1cmVkSHRtbC8xMjU4LzEwMjk0NC85ZGxtWUwwejRXRnNmc1U2ek0vbG9naW4uaHRtbA",
+      "type": "admit-card",
+      "title": "Download e-Admit card for the DSSSB Exam scheduled from 27 Oct to 05 Dec 2026",
+      "source": "DSSSB",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://cdn.digialm.com//EForms/configuredHtml/1258/102944/9dlmYL0z4WFsfsU6zM/login.html",
+      "openDate": "2026-12-05",
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9EU1NTQi9jaXJjdWxhcnMtb3JkZXJzL3RlbnRhdGl2ZV9zY2hlZHVsZV9mb3JfcmVzdWx0LnBkZg",
+      "type": "result",
+      "title": "Tentative Schedule for declaration of Results of DSSSB Examinations",
+      "source": "DSSSB",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/tentative_schedule_for_result.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
+      "type": "job",
+      "title": "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
+      "source": "DSSSB",
+      "category": "State PSC",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-032026-various-posts-post-code-2126-4526-closing-date-0",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2ItdmFjYW5jaWVz",
+      "type": "job",
+      "title": "Vacancy Advertised",
+      "source": "DSSSB",
+      "category": "State PSC",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/dsssb-vacancies",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -20056,71 +20063,6 @@
       "category": "UPSC",
       "state": "Tripura",
       "link": "https://tpsc.tripura.gov.in/notification-regarding-inquiries-representations-about-eligibility-criteria-recruitment-various-0",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZG9pdC90YWItY29udGVudC9vbGQtcmVzdWx0",
-      "type": "result",
-      "title": "Old Result",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/doit/tab-content/old-result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9EU1NTQi9jaXJjdWxhcnMtb3JkZXJzL3RlbnRhdGl2ZV9zY2hlZHVsZV9mb3JfcmVzdWx0LnBkZg",
-      "type": "result",
-      "title": "Tentative Schedule for declaration of Results of DSSSB Examinations",
-      "source": "DSSSB",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/tentative_schedule_for_result.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9jZG4uZGlnaWFsbS5jb20vRUZvcm1zL2NvbmZpZ3VyZWRIdG1sLzEyNTgvMTAyNDA0L2xvZ2luLmh0bWw",
-      "type": "admit-card",
-      "title": "Download e-Admit card for the DSSSB Exam scheduled from 21 Sept to 24 Oct 2026",
-      "source": "DSSSB",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": "https://cdn.digialm.com/EForms/configuredHtml/1258/102404/login.html",
-      "openDate": "2026-10-24",
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
-      "type": "job",
-      "title": "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-032026-various-posts-post-code-2126-4526-closing-date-0",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2ItdmFjYW5jaWVz",
-      "type": "job",
-      "title": "Vacancy Advertised",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb-vacancies",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -24620,65 +24562,6 @@
       ]
     },
     {
-      "id": "competitor-freejobalert-b5372e62d76edd21",
-      "type": "job",
-      "title": "BEL 350 Probationary Engineer Online Form 2026",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "PSU",
-      "state": "See linked notice",
-      "link": "https://bel-india.in",
-      "sourceListingUrl": "https://www.freejobalert.com/articles/bel-probationary-engineer-recruitment-2026-3076214",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-28",
-      "organization": "BEL Probationary Engineer",
-      "publishedDate": "2026-10-27",
-      "vacancies": "350",
-      "ageLimit": "25 years for Unreserved/EWS candidates as on 01.10.2026",
-      "eligibility": "B.E / B.Tech / B.Sc (4 Years) Engineering Graduate in the listed Electronics or Mechanical disciplines (First class; Pass class for SC/ST/PwBD)",
-      "applicationFee": "Rs. 1180/- (Rs 1000/- + GST) for GEN/EWS/OBC (NCL); SC/ST/PwBD/ESM exempted",
-      "notificationLink": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
-      "officialLinks": [
-        {
-          "url": "https://bel-india.in",
-          "label": "Apply Online for BEL Probationary Engineer 2026"
-        },
-        {
-          "url": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
-          "label": "BEL Probationary Engineer Notification PDF (Advt No. 17556/HR/All-India/2026)"
-        }
-      ],
-      "officialLink": "https://bel-india.in",
-      "milestones": [
-        {
-          "label": "Notification Date",
-          "date": "2026-10-28",
-          "dateText": "28.10.2026"
-        },
-        {
-          "label": "Application Dates",
-          "date": "2026-10-28",
-          "dateText": "28.10.2026 (02:00 PM) to 18.11.2026 (11:59 PM)"
-        },
-        {
-          "label": "Date of advertisement",
-          "date": "2026-10-28",
-          "dateText": "28.10.2026"
-        },
-        {
-          "label": "Opening date for online registration of application",
-          "date": "2026-10-28",
-          "dateText": "28.10.2026 (02:00 PM)"
-        },
-        {
-          "label": "Last date of submission of online application with fee",
-          "date": "2026-11-18",
-          "dateText": "18.11.2026 (11:59 PM)"
-        }
-      ]
-    },
-    {
       "id": "competitor-freejobalert-423fbc27043a369d",
       "type": "result",
       "title": "JKSSB Junior Laboratory Technician and More Result 2026",
@@ -24870,6 +24753,272 @@
           "label": "Result Declared",
           "date": "2026-10-27",
           "dateText": "27 October 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-45ed1f397fba2688",
+      "type": "result",
+      "title": "RSSB BCI SCI Result 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://rssb.rajasthan.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rssb-bci-sci-result-2026-3076787",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-29",
+      "organization": "RSSB BCI SCI",
+      "publishedDate": "2026-10-29",
+      "examDate": "2026-08-23",
+      "resultDate": "2026-11-04",
+      "vacancies": "3,951",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/",
+      "milestones": [
+        {
+          "label": "BCI Exam Date",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "SCI Exam Date",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Provisional Answer Key Date",
+          "date": "2026-09-18",
+          "dateText": "18 September 2026"
+        },
+        {
+          "label": "Expected Result Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-08-19",
+          "dateText": "19 August 2026"
+        },
+        {
+          "label": "BCI Written Examination",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "SCI Written Examination",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Provisional Answer Key Released",
+          "date": "2026-09-18",
+          "dateText": "18 September 2026"
+        },
+        {
+          "label": "BCI SCI Result Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026 (Expected)"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-2d3214204acf29e3",
+      "type": "result",
+      "title": "JKSSB Driver Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://jkssb.nic.in/Pdf/Result_28102026.pdf",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/jkssb-driver-result-2026-released-3076658",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-29",
+      "organization": "JKSSB Driver",
+      "publishedDate": "2026-10-29",
+      "examDate": "2026-10-18",
+      "resultDate": "2026-10-28",
+      "officialLinks": [
+        {
+          "url": "https://jkssb.nic.in/Pdf/Result_28102026.pdf",
+          "label": "JKSSB Driver, Driver-II and Driver Grade-II Result 2026"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/Final_answerkey_28102026.pdf",
+          "label": "JKSSB Driver Final Answer Key 2026"
+        },
+        {
+          "url": "https://jkssb.nic.in/",
+          "label": "JKSSB Official Website"
+        },
+        {
+          "url": "https://jkssb.nic.in/Results.html",
+          "label": "JKSSB Results Page"
+        }
+      ],
+      "officialLink": "https://jkssb.nic.in/Pdf/Result_28102026.pdf",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-10-18",
+          "dateText": "18 October 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        },
+        {
+          "label": "Final Answer Key",
+          "date": "2026-10-28",
+          "dateText": "Released on 28 October 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-08ec4e644a6ed467",
+      "type": "result",
+      "title": "RPSC Ayurved Lecturer Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in/viewcommon?Slice=RL",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rpsc-lecturer-result-2026-3076079",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-29",
+      "organization": "RPSC Ayurved Lecturer",
+      "publishedDate": "2026-10-28",
+      "resultDate": "2026-10-28",
+      "officialLinks": [
+        {
+          "url": "https://rpsc.rajasthan.gov.in/viewcommon?Slice=RL",
+          "label": "RPSC Ayurved Lecturer Main Merit List 2026"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/",
+          "label": "RPSC Ayurved Lecturer Final Answer Key 2026"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/Result/29C9A8DE1CCA460FA8DA0F862F483FEC.pdf",
+          "label": "Kayachikitsa"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/Result/DC1EF1D976A44DDE83C434A5F49683C3.pdf",
+          "label": "Prasooti Tantra and Stree Roga"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/news",
+          "label": "Main Merit List 2026"
+        }
+      ],
+      "officialLink": "https://rpsc.rajasthan.gov.in/viewcommon?Slice=RL",
+      "milestones": [
+        {
+          "label": "Examination Date",
+          "date": "2026-01-12",
+          "dateText": "12 January 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-b92d8d1486444ab7",
+      "type": "result",
+      "title": "HSSC CET Group C Final Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-81a619850014/result",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/hssc-cet-group-c-final-result-2026-3076486",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-29",
+      "organization": "Haryana Staff Selection Commission (HSSC)",
+      "publishedDate": "2026-10-28",
+      "resultDate": "2026-10-23",
+      "officialLinks": [
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-81a619850014/result",
+          "label": "HSSC Group-25 Revised Result Corrigendum 2026 (28 October)"
+        },
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-6827b6770011/result",
+          "label": "HSSC Group-25 Final Result 2026 (23 October)"
+        },
+        {
+          "url": "https://cet2025groupc.hryssc.com/",
+          "label": "Haryana CET Group C 2025 Score Card"
+        },
+        {
+          "url": "https://hssc.gov.in/result",
+          "label": "HSSC Official Results Page"
+        },
+        {
+          "url": "https://hssc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-81a619850014/result",
+      "milestones": [
+        {
+          "label": "Original Final Result Date",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026"
+        },
+        {
+          "label": "Revised Corrigendum Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-57b8c1e2bb47f753",
+      "type": "result",
+      "title": "AVNL Executive Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://avnl.co.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/avnl-executive-result-2026-3076458",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-29",
+      "organization": "Armoured Vehicles Nigam Limited (AVNL)",
+      "publishedDate": "2026-10-28",
+      "examDate": "2026-09-10",
+      "officialLinks": [
+        {
+          "url": "https://avnl.co.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://avnl.co.in/files/careers-vacancies-document/06ExecuitveShortlistSummary.pdf",
+          "label": "Download Shortlist Notice PDF"
+        }
+      ],
+      "officialLink": "https://avnl.co.in",
+      "milestones": [
+        {
+          "label": "CBT Date",
+          "date": "2026-09-10",
+          "dateText": "10/09/2026"
         }
       ]
     }

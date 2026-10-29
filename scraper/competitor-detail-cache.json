@@ -4725,7 +4725,7 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-28T08:36:42.026Z",
+    "attemptedAt": "2026-10-29T08:31:34.270Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
@@ -22210,7 +22210,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-graduate-recruitment-062026-notification-apply-online-for-3-477-posts-3068511": {
-    "attemptedAt": "2026-10-28T08:36:42.078Z",
+    "attemptedAt": "2026-10-29T08:31:34.150Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC Graduate",
@@ -22312,7 +22312,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-10-28T08:36:42.132Z",
+    "attemptedAt": "2026-10-29T08:31:34.214Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -22748,58 +22748,53 @@
     }
   },
   "https://www.freejobalert.com/articles/bel-probationary-engineer-recruitment-2026-3076214": {
-    "attemptedAt": "2026-10-28T08:36:42.099Z",
+    "attemptedAt": "2026-10-29T08:31:34.095Z",
     "parser": "v2",
     "details": {
-      "organization": "BEL Probationary Engineer",
-      "publishedDate": "2026-10-27",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
+      "organization": "Bharat Electronics Limited (BEL)",
+      "publishedDate": "2026-10-29",
+      "openDate": "2026-10-28",
+      "lastDate": "2026-11-18",
+      "examDate": "2026-12-22",
       "resultDate": null,
       "admitCardDate": null,
       "interviewDate": null,
       "vacancies": "350",
-      "ageLimit": "25 years for Unreserved/EWS candidates as on 01.10.2026",
-      "eligibility": "B.E / B.Tech / B.Sc (4 Years) Engineering Graduate in the listed Electronics or Mechanical disciplines (First class; Pass class for SC/ST/PwBD)",
-      "applicationFee": "Rs. 1180/- (Rs 1000/- + GST) for GEN/EWS/OBC (NCL); SC/ST/PwBD/ESM exempted",
+      "ageLimit": "Maximum 25 Years (General/EWS)",
+      "eligibility": "B.E / B.Tech / B.Sc Engineering (4 Years)",
+      "applicationFee": "and other recruitment details below. BEL Quick Summary 2026 · 350 Posts COMPANY NAME Bharat Electronics Limited POST NAME Probationary Engineer QUALIFICATION B.Sc, B.Tech/B.E VACANCY 350 Posts",
       "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
         {
           "label": "Notification Date",
           "date": "2026-10-28",
-          "dateText": "28.10.2026"
+          "dateText": "28 October 2026"
         },
         {
-          "label": "Application Dates",
+          "label": "Online Application Start Date",
           "date": "2026-10-28",
-          "dateText": "28.10.2026 (02:00 PM) to 18.11.2026 (11:59 PM)"
+          "dateText": "28 October 2026 (2:00 PM)"
         },
         {
-          "label": "Date of advertisement",
-          "date": "2026-10-28",
-          "dateText": "28.10.2026"
-        },
-        {
-          "label": "Opening date for online registration of application",
-          "date": "2026-10-28",
-          "dateText": "28.10.2026 (02:00 PM)"
-        },
-        {
-          "label": "Last date of submission of online application with fee",
+          "label": "Last Date to Apply Online",
           "date": "2026-11-18",
-          "dateText": "18.11.2026 (11:59 PM)"
+          "dateText": "18 November 2026 (11:59 PM)"
+        },
+        {
+          "label": "Tentative CBT Date",
+          "date": "2026-12-22",
+          "dateText": "22 December 2026"
         }
       ],
-      "officialLink": "https://bel-india.in",
-      "notificationLink": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
+      "officialLink": "https://bel-india.in/",
       "officialLinks": [
         {
-          "url": "https://bel-india.in",
-          "label": "Apply Online for BEL Probationary Engineer 2026"
-        },
-        {
-          "url": "https://bel-india.in/wp-content/uploads/2026/10/External-Ad-2026-English-1.pdf",
-          "label": "BEL Probationary Engineer Notification PDF (Advt No. 17556/HR/All-India/2026)"
+          "url": "https://bel-india.in/",
+          "label": "Official Website"
         }
       ]
     }
@@ -23160,6 +23155,274 @@
         {
           "url": "https://vyapamcg.cgstate.gov.in/uploads/pdfs/8f69e438-c402-43b5-9284-871cb5036840_4244.pdf",
           "label": "Official Notice (PDF)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rssb-bci-sci-result-2026-3076787": {
+    "attemptedAt": "2026-10-29T08:31:34.122Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RSSB BCI SCI",
+      "publishedDate": "2026-10-29",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-08-23",
+      "resultDate": "2026-11-04",
+      "admitCardDate": "2026-08-19",
+      "interviewDate": null,
+      "vacancies": "3,951",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "BCI Exam Date",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "SCI Exam Date",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Provisional Answer Key Date",
+          "date": "2026-09-18",
+          "dateText": "18 September 2026"
+        },
+        {
+          "label": "Expected Result Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-08-19",
+          "dateText": "19 August 2026"
+        },
+        {
+          "label": "BCI Written Examination",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "SCI Written Examination",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Provisional Answer Key Released",
+          "date": "2026-09-18",
+          "dateText": "18 September 2026"
+        },
+        {
+          "label": "BCI SCI Result Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026 (Expected)"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/jkssb-driver-result-2026-released-3076658": {
+    "attemptedAt": "2026-10-29T08:31:34.162Z",
+    "parser": "v2",
+    "details": {
+      "organization": "JKSSB Driver",
+      "publishedDate": "2026-10-29",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-18",
+      "resultDate": "2026-10-28",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-10-18",
+          "dateText": "18 October 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        },
+        {
+          "label": "Final Answer Key",
+          "date": "2026-10-28",
+          "dateText": "Released on 28 October 2026"
+        }
+      ],
+      "officialLink": "https://jkssb.nic.in/Pdf/Result_28102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://jkssb.nic.in/Pdf/Result_28102026.pdf",
+          "label": "JKSSB Driver, Driver-II and Driver Grade-II Result 2026"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/Final_answerkey_28102026.pdf",
+          "label": "JKSSB Driver Final Answer Key 2026"
+        },
+        {
+          "url": "https://jkssb.nic.in/",
+          "label": "JKSSB Official Website"
+        },
+        {
+          "url": "https://jkssb.nic.in/Results.html",
+          "label": "JKSSB Results Page"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rpsc-lecturer-result-2026-3076079": {
+    "attemptedAt": "2026-10-29T08:31:34.184Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RPSC Ayurved Lecturer",
+      "publishedDate": "2026-10-28",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-10-28",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Examination Date",
+          "date": "2026-01-12",
+          "dateText": "12 January 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        }
+      ],
+      "officialLink": "https://rpsc.rajasthan.gov.in/viewcommon?Slice=RL",
+      "officialLinks": [
+        {
+          "url": "https://rpsc.rajasthan.gov.in/viewcommon?Slice=RL",
+          "label": "RPSC Ayurved Lecturer Main Merit List 2026"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/",
+          "label": "RPSC Ayurved Lecturer Final Answer Key 2026"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/Result/29C9A8DE1CCA460FA8DA0F862F483FEC.pdf",
+          "label": "Kayachikitsa"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/Result/DC1EF1D976A44DDE83C434A5F49683C3.pdf",
+          "label": "Prasooti Tantra and Stree Roga"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/news",
+          "label": "Main Merit List 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/avnl-executive-result-2026-3076458": {
+    "attemptedAt": "2026-10-29T08:31:34.230Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Armoured Vehicles Nigam Limited (AVNL)",
+      "publishedDate": "2026-10-28",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-10",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "CBT Date",
+          "date": "2026-09-10",
+          "dateText": "10/09/2026"
+        }
+      ],
+      "officialLink": "https://avnl.co.in",
+      "officialLinks": [
+        {
+          "url": "https://avnl.co.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://avnl.co.in/files/careers-vacancies-document/06ExecuitveShortlistSummary.pdf",
+          "label": "Download Shortlist Notice PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/hssc-cet-group-c-final-result-2026-3076486": {
+    "attemptedAt": "2026-10-29T08:31:34.245Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Haryana Staff Selection Commission (HSSC)",
+      "publishedDate": "2026-10-28",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-10-23",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Original Final Result Date",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026"
+        },
+        {
+          "label": "Revised Corrigendum Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        }
+      ],
+      "officialLink": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-81a619850014/result",
+      "officialLinks": [
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-81a619850014/result",
+          "label": "HSSC Group-25 Revised Result Corrigendum 2026 (28 October)"
+        },
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-6827b6770011/result",
+          "label": "HSSC Group-25 Final Result 2026 (23 October)"
+        },
+        {
+          "url": "https://cet2025groupc.hryssc.com/",
+          "label": "Haryana CET Group C 2025 Score Card"
+        },
+        {
+          "url": "https://hssc.gov.in/result",
+          "label": "HSSC Official Results Page"
+        },
+        {
+          "url": "https://hssc.gov.in/",
+          "label": "Official Website"
         }
       ]
     }
