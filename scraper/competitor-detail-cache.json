@@ -4725,7 +4725,7 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-29T08:31:34.270Z",
+    "attemptedAt": "2026-10-30T08:41:44.500Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
@@ -22312,11 +22312,11 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-10-29T08:31:34.214Z",
+    "attemptedAt": "2026-10-30T08:41:44.373Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
-      "publishedDate": "2026-10-26",
+      "publishedDate": "2026-10-29",
       "openDate": "2026-10-15",
       "lastDate": "2026-11-13",
       "examDate": null,
@@ -23423,6 +23423,482 @@
         {
           "url": "https://hssc.gov.in/",
           "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/cg-vyapam-assistant-teacher-admit-card-2026-released-3076840": {
+    "attemptedAt": "2026-10-30T08:41:44.295Z",
+    "parser": "v2",
+    "details": {
+      "organization": "CG Vyapam Assistant Teacher",
+      "publishedDate": "2026-10-29",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-12-06",
+      "resultDate": null,
+      "admitCardDate": "2026-10-29",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Earlier Admit Card Release",
+          "date": "2026-10-05",
+          "dateText": "5 October 2026"
+        },
+        {
+          "label": "Latest Admit Card Update",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Original Exam Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026 (Postponed)"
+        },
+        {
+          "label": "Revised Exam Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Exam Postponement Notice",
+          "date": "2026-10-09",
+          "dateText": "9 October 2026"
+        },
+        {
+          "label": "Original Written Exam Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026 (Postponed)"
+        },
+        {
+          "label": "Updated Admit Card Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Revised Examination Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        }
+      ],
+      "officialLink": "https://vyapamprofile.cgstate.gov.in/online/",
+      "officialLinks": [
+        {
+          "url": "https://vyapamprofile.cgstate.gov.in/online/",
+          "label": "CG Vyapam Assistant Teacher Admit Card 2026 (LSAT26)"
+        },
+        {
+          "url": "https://vyapamcg.cgstate.gov.in/Posts?tag=ADMIT%20CARD",
+          "label": "CG Vyapam Admit Card Notices"
+        },
+        {
+          "url": "https://vyapamcg.cgstate.gov.in/",
+          "label": "CG Vyapam Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/sgpgi-nursing-officer-admit-card-2026-3077081": {
+    "attemptedAt": "2026-10-30T08:41:44.412Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SGPGI Nursing Officer",
+      "publishedDate": "2026-10-30",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-01",
+      "resultDate": null,
+      "admitCardDate": "2026-10-30",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Exam City Slip Release Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Stage-II Exam Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Stage-I Exam City Intimation for Nursing Officer",
+          "date": "2026-06-07",
+          "dateText": "7 June 2026"
+        },
+        {
+          "label": "Stage-II Exam City Intimation",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Stage-II Admit Card Released",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Stage-II Examination",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ],
+      "officialLink": "https://sgpgims.eapplynow.com/AdvtI08/Pages/CBTAC01Login7.aspx",
+      "officialLinks": [
+        {
+          "url": "https://sgpgims.eapplynow.com/AdvtI08/Pages/CBTAC01Login7.aspx",
+          "label": "SGPGI Nursing Officer Stage 2 Admit Card 2026"
+        },
+        {
+          "url": "https://sgpgims.org.in/",
+          "label": "SGPGIMS Official Website"
+        },
+        {
+          "url": "https://sgpgims.eapplynow.com/",
+          "label": "Official Recruitment Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/jharkhand-tet-jtet-admit-card-2026-3070239": {
+    "attemptedAt": "2026-10-30T08:41:44.444Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Jharkhand JTET",
+      "publishedDate": "2026-10-30",
+      "openDate": "2026-04-21",
+      "lastDate": "2026-07-20",
+      "examDate": "2026-11-01",
+      "resultDate": null,
+      "admitCardDate": "2026-10-15",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Primary and Upper Primary",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-04-21",
+          "dateText": "21 April 2026"
+        },
+        {
+          "label": "Extended Application Last Date",
+          "date": "2026-07-20",
+          "dateText": "20 July 2026"
+        },
+        {
+          "label": "JTET Examination Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ],
+      "officialLink": "https://jactetonline.com/",
+      "officialLinks": [
+        {
+          "url": "https://jactetonline.com/",
+          "label": "Jharkhand JTET Admit Card 2026"
+        },
+        {
+          "url": "https://jac.jharkhand.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/cil-mt-result-2026-3073783": {
+    "attemptedAt": "2026-10-30T08:41:44.535Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Coal India Limited (CIL)",
+      "publishedDate": "2026-10-29",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-08-24",
+      "resultDate": "2026-11-03",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "660",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "CBT Exam Date",
+          "date": "2026-08-24",
+          "dateText": "24/08/2026"
+        },
+        {
+          "label": "Expected Result Date",
+          "date": "2026-11-03",
+          "dateText": "On or before 03/11/2026 (expected)"
+        },
+        {
+          "label": "CIL MT CBT Exam",
+          "date": "2026-08-24",
+          "dateText": "24/08/2026"
+        },
+        {
+          "label": "CIL MT Result 2026",
+          "date": "2026-11-03",
+          "dateText": "On or before 03/11/2026"
+        }
+      ],
+      "officialLink": "https://coalindia.in",
+      "officialLinks": [
+        {
+          "url": "https://coalindia.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.coalindia.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rbi-grade-b-phase-2-score-card-2026-3076998": {
+    "attemptedAt": "2026-10-30T08:41:44.568Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RBI Grade B Phase 2",
+      "publishedDate": "2026-10-30",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-10-29",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Phase 2 Examination Date",
+          "date": "2026-07-25",
+          "dateText": "25 July 2026"
+        },
+        {
+          "label": "Final Result Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Scorecard Update",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Phase 1 Exam - General Cadre",
+          "date": "2026-06-13",
+          "dateText": "13 June 2026"
+        },
+        {
+          "label": "Phase 2 Exam - General Cadre",
+          "date": "2026-07-25",
+          "dateText": "25 July 2026"
+        },
+        {
+          "label": "RBI Grade B Final Result",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Phase 2 Scorecard Update",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        }
+      ],
+      "officialLink": "https://m.rbi.org.in/Scripts/Res_Ofcr_GRD_B_Gn_PH_II_2026.aspx",
+      "officialLinks": [
+        {
+          "url": "https://m.rbi.org.in/Scripts/Res_Ofcr_GRD_B_Gn_PH_II_2026.aspx",
+          "label": "RBI Grade B Phase 2 Score Card 2026 - General Cadre"
+        },
+        {
+          "url": "https://opportunities.rbi.org.in/scripts/resultsnew.aspx",
+          "label": "RBI Recruitment Results"
+        },
+        {
+          "url": "https://opportunities.rbi.org.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ssc-cpo-pet-pst-result-2026-3076817": {
+    "attemptedAt": "2026-10-30T08:41:44.606Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SSC CPO PET PST",
+      "publishedDate": "2026-10-29",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-28",
+      "resultDate": "2026-10-29",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,073",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Paper 1 Exam Date",
+          "date": "2025-12-12",
+          "dateText": "9 to 12 December 2025"
+        },
+        {
+          "label": "Paper 1 Result Date",
+          "date": "2026-03-30",
+          "dateText": "30 March 2026"
+        },
+        {
+          "label": "PET/PST Dates",
+          "date": "2026-07-30",
+          "dateText": "21 to 30 July 2026"
+        },
+        {
+          "label": "PET/PST Result Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Paper 2 Exam Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026 (Tentative)"
+        },
+        {
+          "label": "Paper 1 Examination",
+          "date": "2025-12-12",
+          "dateText": "9 to 12 December 2025"
+        },
+        {
+          "label": "Paper 1 Result",
+          "date": "2026-03-30",
+          "dateText": "30 March 2026"
+        },
+        {
+          "label": "PET/PST Examination",
+          "date": "2026-07-30",
+          "dateText": "21 to 30 July 2026"
+        },
+        {
+          "label": "PET/PST Result Released",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Paper 2 Examination",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026 (Tentative)"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST_1_29102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST_1_29102026.pdf",
+          "label": "SSC CPO PET PST Result 2026 (List 1)"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST_2_29102026.pdf",
+          "label": "SSC CPO PET PST Result 2026 (List 2)"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/LIST_3_29102026.pdf",
+          "label": "SSC CPO PET PST Result 2026 (List 3)"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "SSC CPO Paper 1 Result and PET/PST Updates"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rssb-driver-result-2026-released-3076933": {
+    "attemptedAt": "2026-10-30T08:41:44.643Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rajasthan RSSB Driver",
+      "publishedDate": "2026-10-29",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2025-11-23",
+      "resultDate": "2026-10-29",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "2,756",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Written Examination Date",
+          "date": "2025-11-23",
+          "dateText": "23 November 2025"
+        },
+        {
+          "label": "Latest Result Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Online Scrutiny Form Start Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Online Scrutiny Form Last Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2025-11-23",
+          "dateText": "23 November 2025"
+        },
+        {
+          "label": "Latest Pre-DV Result",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/storage/news_item/1793273784.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in/storage/news_item/1793273784.pdf",
+          "label": "Rajasthan RSSB Driver Result 2026 - Pre-DV Shortlist"
+        },
+        {
+          "url": "https://sso.rajasthan.gov.in/",
+          "label": "RSSB Driver Online Scrutiny Form"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "RSSB Official Website"
         }
       ]
     }

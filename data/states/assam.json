@@ -1,60 +1,7 @@
 {
-  "generatedAt": "2026-10-29T08:31:32.838Z",
-  "total": 8,
+  "generatedAt": "2026-10-30T08:41:43.089Z",
+  "total": 7,
   "jobs": [
-    {
-      "id": "competitor-sarkariresult-3d68bb397d54c452",
-      "type": "job",
-      "title": "Assam Rifles Rally Recruitment Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Assam",
-      "link": "https://www.assamrifles.gov.in/onlineapp/Default.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/assam-rifles-rally-sep26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-10-28",
-      "organization": "Assam Rifles AR",
-      "publishedDate": "2026-09-29",
-      "openDate": "2026-09-28",
-      "vacancies": "354",
-      "eligibility": "Only for Men 10+2 Intermediate with Physics, Chemistry and English Exam from Any Recognized Board in India. 10th Matric Exam with ITI Certificate in Related Trade. OR Bachelor Degree in Electronics or Information & Communication Technology. More Eligibility Details Read the Notification.",
-      "applicationFee": "General / OBC / EWS : 100/- SC / ST : 100/-",
-      "officialLinks": [
-        {
-          "url": "https://www.assamrifles.gov.in/onlineapp/Default.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://www.assamrifles.gov.in/",
-          "label": "Official Website"
-        },
-        {
-          "url": "https://www.assamrifles.gov.in/onlineapp/frmReprint.aspx",
-          "label": "Re Print Form"
-        }
-      ],
-      "officialLink": "https://www.assamrifles.gov.in/onlineapp/Default.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-09-29",
-          "dateText": "29 September 2026 | 07:25 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-28",
-          "dateText": "28/10/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-10-28",
-          "dateText": "28/10/2026"
-        }
-      ]
-    },
     {
       "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L05vdGlmXzExLTIwMjZfZUNGX05vXzgxOTc2NzExOS5wZGY",
       "type": "job",
