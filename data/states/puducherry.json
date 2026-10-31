@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-10-30T08:41:43.089Z",
-  "total": 3,
+  "generatedAt": "2026-10-31T08:28:54.537Z",
+  "total": 4,
   "jobs": [
+    {
+      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9vbTI4MTAyMDI2Y29uc3VsdGFudG5vdGlmaWNhdGlvbi5wZGY",
+      "type": "job",
+      "title": "Oulgaret Municipality - Notification - Engagement of retired officials from Government of Puducherry as Consultant on Contract basis",
+      "source": "Government of Puducherry",
+      "category": "State PSC",
+      "state": "Puducherry",
+      "link": "https://py.gov.in/sites/default/files/om28102026consultantnotification.pdf",
+      "openDate": null,
+      "lastDate": "2026-10-31",
+      "examDate": null,
+      "publishedDate": "2026-10-28"
+    },
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdHUwMTEwMjAyNi5wZGY",
       "type": "job",

@@ -22312,7 +22312,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-10-30T08:41:44.373Z",
+    "attemptedAt": "2026-10-31T08:28:55.927Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -23899,6 +23899,518 @@
         {
           "url": "https://rssb.rajasthan.gov.in/",
           "label": "RSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/afms-medical-officer-short-service-commission-recruitment-2026-3077439": {
+    "attemptedAt": "2026-10-31T08:28:55.959Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Armed Forces Medical Services (AFMS)",
+      "publishedDate": "2026-10-31",
+      "openDate": null,
+      "lastDate": "2026-11-18",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "120",
+      "ageLimit": "Below 30 Years for MBBS; Below 35 Years for PG Degree Holders",
+      "eligibility": "Minimum Educational Qualification for Medical Officer (Short Service Commission)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-11-09",
+          "dateText": "9 November 2026"
+        },
+        {
+          "label": "Online Registration Last Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        }
+      ],
+      "officialLink": "https://join.afms.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://join.afms.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/tnpsc-cts-hall-ticket-2026-3077502": {
+    "attemptedAt": "2026-10-31T08:28:55.982Z",
+    "parser": "v2",
+    "details": {
+      "organization": "TNPSC CTS Hall Ticket 2026 Out - Download Field Assistant Physical Fitness Test",
+      "publishedDate": "2026-10-31",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2025-09-03",
+          "dateText": "3 September 2025"
+        },
+        {
+          "label": "Hall Ticket Release Update",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        },
+        {
+          "label": "Physical Fitness Test Dates",
+          "date": "2026-11-14",
+          "dateText": "11 to 14 November 2026"
+        },
+        {
+          "label": "Physical Fitness Test Date",
+          "date": "2026-11-14",
+          "dateText": "Allotted date between 11 and 14 November 2026"
+        },
+        {
+          "label": "Hall Ticket Release",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026"
+        }
+      ],
+      "officialLink": "https://www.tnpsc.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://apply.tnpscexams.in/otr?app_id=UElZMDAwMDAwMQ%3D%3D",
+          "label": "TNPSC CTS Field Assistant Hall Ticket 2026"
+        },
+        {
+          "url": "https://www.tnpsc.gov.in/",
+          "label": "TNPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aees-teaching-recruitment-2026-3075950": {
+    "attemptedAt": "2026-10-31T08:28:56.014Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Atomic Energy Education Society (AEES)",
+      "publishedDate": "2026-10-30",
+      "openDate": "2026-11-02",
+      "lastDate": "2026-11-22",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "254",
+      "ageLimit": "Post-Wise Maximum 30 to 50 Years, with Applicable Relaxation",
+      "eligibility": "Post-Specific 12th Pass, Degree, Postgraduate Degree, B.Ed., Diploma, CTET and Experience Requirements",
+      "applicationFee": "Rs. 1,000 or Rs. 250, Depending on Category, Plus Applicable GST",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026, 11:50 PM"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026, 11:50 PM"
+        }
+      ],
+      "officialLink": "https://aees.onlineregistrationforms.com/#/home",
+      "officialLinks": [
+        {
+          "url": "https://www.aees.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://aees.onlineregistrationforms.com/#/home",
+          "label": "Apply Online - From 2 November 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/supreme-court-junior-and-senior-court-assistant-cum-programmer-admit-card-2026-3077146": {
+    "attemptedAt": "2026-10-31T08:28:56.040Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Supreme Court of India",
+      "publishedDate": "2026-10-30",
+      "openDate": "2025-06-06",
+      "lastDate": "2025-06-27",
+      "examDate": "2026-10-21",
+      "resultDate": "2026-10-29",
+      "admitCardDate": "2026-10-30",
+      "interviewDate": null,
+      "vacancies": "26",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Junior Programmer Admit Card Release",
+          "date": "2026-10-18",
+          "dateText": "18 October 2026"
+        },
+        {
+          "label": "Senior Programmer Admit Card Release",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Junior Programmer Written Exam Date",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Recruitment Advertisement Date",
+          "date": "2025-06-05",
+          "dateText": "5 June 2025"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2025-06-06",
+          "dateText": "6 June 2025"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2025-06-27",
+          "dateText": "27 June 2025"
+        },
+        {
+          "label": "Junior Programmer Admit Card Released",
+          "date": "2026-10-18",
+          "dateText": "18 October 2026"
+        },
+        {
+          "label": "Junior Programmer Written Examination",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Junior Programmer Answer Key Objection Notice",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Junior Programmer Answer Key Change Notice",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Senior Programmer Admit Card Released",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        }
+      ],
+      "officialLink": "https://cdn3.digialm.com/EForms/configuredHtml/32912/94289/login.html",
+      "officialLinks": [
+        {
+          "url": "https://cdn3.digialm.com/EForms/configuredHtml/32912/94289/login.html",
+          "label": "SCI Senior Court Assistant-cum-Senior Programmer Admit Card 2026"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/10/2026103027.pdf",
+          "label": "Senior Programmer Admit Card Official Notice"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/10/2026101874.pdf",
+          "label": "Junior Programmer Admit Card Official Notice"
+        },
+        {
+          "url": "https://www.sci.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/upcisb-up-co-operative-bank-various-post-result-2026-3077416": {
+    "attemptedAt": "2026-10-31T08:28:56.059Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UPCISB UP Co-operative Bank Various Post",
+      "publishedDate": "2026-10-31",
+      "openDate": "2026-03-25",
+      "lastDate": "2026-04-15",
+      "examDate": "2026-09-08",
+      "resultDate": "2026-10-30",
+      "admitCardDate": "2026-09-05",
+      "interviewDate": null,
+      "vacancies": "116",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "15 April 2026",
+      "milestones": [
+        {
+          "label": "Written Exam Date",
+          "date": "2026-09-08",
+          "dateText": "7 and 8 September 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-03-25",
+          "dateText": "25 March 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-04-15",
+          "dateText": "15 April 2026"
+        },
+        {
+          "label": "Application Fee Payment Last Date",
+          "date": "2026-04-15",
+          "dateText": "15 April 2026"
+        },
+        {
+          "label": "Originally Scheduled Examination",
+          "date": "2026-07-22",
+          "dateText": "20 to 22 July 2026 (Postponed)"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-08-31",
+          "dateText": "31 August 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-09-05",
+          "dateText": "5 September 2026"
+        },
+        {
+          "label": "Re-Scheduled Written Examination",
+          "date": "2026-09-08",
+          "dateText": "7 and 8 September 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        }
+      ],
+      "officialLink": "https://upcisb.upsdc.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://upcisb.upsdc.gov.in/",
+          "label": "UPCISB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/bpsc-aes-result-2026-3077415": {
+    "attemptedAt": "2026-10-31T08:28:56.081Z",
+    "parser": "v2",
+    "details": {
+      "organization": "BPSC AES",
+      "publishedDate": "2026-10-31",
+      "openDate": "2025-08-27",
+      "lastDate": "2025-09-19",
+      "examDate": "2026-10-30",
+      "resultDate": "2026-10-30",
+      "admitCardDate": "2026-06-04",
+      "interviewDate": null,
+      "vacancies": "17",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Written Exam Date",
+          "date": "2026-06-11",
+          "dateText": "11 June 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2025-08-27",
+          "dateText": "27 August 2025"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2025-09-19",
+          "dateText": "19 September 2025"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-06-04",
+          "dateText": "4 June 2026"
+        },
+        {
+          "label": "Written Examination Date",
+          "date": "2026-06-11",
+          "dateText": "11 June 2026"
+        },
+        {
+          "label": "Answer Key Release Date",
+          "date": "2026-07-07",
+          "dateText": "7 July 2026"
+        },
+        {
+          "label": "Written Exam Result Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        }
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-882025-Assistant-Environmental-Scientist-Written-Exam_BPSC-20261030-rvdpno.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-882025-Assistant-Environmental-Scientist-Written-Exam_BPSC-20261030-rvdpno.pdf",
+          "label": "BPSC AES Result 2026 PDF"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "BPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rrb-ntpc-ug-cbt-2-result-2026-3077220": {
+    "attemptedAt": "2026-10-31T08:28:56.116Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RRB NTPC UG CBT 2",
+      "publishedDate": "2026-10-31",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-27",
+      "resultDate": "2026-10-30",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,058",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "CBT 2 Exam Date",
+          "date": "2026-09-17",
+          "dateText": "17 September 2026"
+        },
+        {
+          "label": "Answer Key Notice Date",
+          "date": "2026-09-23",
+          "dateText": "23 September 2026"
+        },
+        {
+          "label": "CBT 2 Result Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "CBT 2 Scorecard Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Scorecard Access From",
+          "date": "2026-10-30",
+          "dateText": "5:00 PM, 30 October 2026"
+        },
+        {
+          "label": "CBTST Tentative Date",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026"
+        },
+        {
+          "label": "Tentative CBTST Exam Date",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026"
+        },
+        {
+          "label": "CBT 2 Examination",
+          "date": "2026-09-17",
+          "dateText": "17 September 2026"
+        },
+        {
+          "label": "CBT 2 Answer Key Notice",
+          "date": "2026-09-23",
+          "dateText": "23 September 2026"
+        },
+        {
+          "label": "CBT 2 Result Declared",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "CBT 2 Scorecard Released",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Scorecard Link Active From",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026, 5:00 PM"
+        }
+      ],
+      "officialLink": "https://rrb.indianrailways.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "RRB NTPC UG CBT 2 Result 2026"
+        },
+        {
+          "url": "https://rrb.digialm.com/EForms/configuredHtml/33128/100181/login.html",
+          "label": "RRB NTPC UG CBT 2 Scorecard 2026"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1793359441349CEN07_2025_RESULT_for_CBTST_30102026.pdf/examsDocuments",
+          "label": "RRB Ajmer"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/179336130341907-2025-CBTST_Eligibilty_list.pdf/examsDocuments",
+          "label": "RRB Bengaluru"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/179338032459830-BILASPUR-RRB_NTPC_Provisional_Publishing_report-v2.0.pdf/examsDocuments",
+          "label": "RRB Bilaspur"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/1793381854849CEN_07-2025_CBT-2_Result_for_Shortlisting_CBTST.pdf/examsDocuments",
+          "label": "RRB Chennai"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/-/image/179337207784619-GORAKHPUR-RRB_NTPC_Provisional_Publishing_report-v2.0_(1)_RESULT.pdf/examsDocuments",
+          "label": "RRB Gorakhpur"
         }
       ]
     }
