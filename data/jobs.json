@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-31T08:28:56.120Z",
-  "jobsGeneratedAt": "2026-10-31T08:28:54.537Z",
+  "generatedAt": "2026-11-01T09:19:14.443Z",
+  "jobsGeneratedAt": "2026-11-01T09:19:13.011Z",
   "partial": true,
-  "total": 538,
+  "total": 537,
   "quality": {
     "jobsMissingPublicationDate": 55,
     "jobsMissingClosingDate": 74,
@@ -17,7 +17,7 @@
     {
       "source": "IBPS",
       "url": "https://www.ibps.in/",
-      "error": "write EPROTO 808CF480A67F0000:error:0A0000F4:SSL routines:ssl3_read_bytes:unexpected message:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1538:\n"
+      "error": "unable to verify the first certificate"
     },
     {
       "source": "UPSC",
@@ -55,11 +55,6 @@
       "error": "timeout"
     },
     {
-      "source": "Supreme Court of India",
-      "url": "https://www.sci.gov.in/recruitments/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "SAIL",
       "url": "https://sail.co.in/web/careers",
       "error": "unable to verify the first certificate"
@@ -70,29 +65,34 @@
       "error": "timeout"
     },
     {
+      "source": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/recruitments/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "NIC e-Pariksha",
       "url": "https://pariksha.nic.in/",
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "BPSC",
-      "url": "https://bpsc.bihar.gov.in/",
-      "error": "unable to verify the first certificate"
-    },
-    {
       "source": "Calcutta High Court",
       "url": "https://www.calcuttahighcourt.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "RPSC",
-      "url": "https://rpsc.rajasthan.gov.in/",
-      "error": ""
+      "error": "The operation was aborted"
     },
     {
       "source": "BPSC",
       "url": "https://www.bpsc.bih.nic.in/",
       "error": "timeout"
+    },
+    {
+      "source": "BPSC",
+      "url": "https://bpsc.bihar.gov.in/",
+      "error": "read ECONNRESET"
+    },
+    {
+      "source": "RPSC",
+      "url": "https://rpsc.rajasthan.gov.in/",
+      "error": ""
     },
     {
       "source": "WBPSC",
@@ -115,11 +115,6 @@
       "error": ""
     },
     {
-      "source": "TNPSC",
-      "url": "https://www.tnpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "TGPSC",
       "url": "https://www.tgpsc.gov.in/",
       "error": "HTTP 403"
@@ -127,16 +122,26 @@
     {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO 808CF480A67F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "error": "write EPROTO 80EC67CF8E7F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+    },
+    {
+      "source": "TNPSC",
+      "url": "https://www.tnpsc.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "APPSC",
       "url": "https://psc.ap.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "JPSC",
+      "url": "https://www.jpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -152,7 +157,12 @@
     {
       "source": "PPSC",
       "url": "https://ppsc.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
+    },
+    {
+      "source": "APSC",
+      "url": "https://apsc.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "Goa PSC",
@@ -160,19 +170,19 @@
       "error": "HTTP 403"
     },
     {
-      "source": "APSC",
-      "url": "https://apsc.nic.in/",
-      "error": "The operation was aborted"
-    },
-    {
       "source": "JKPSC",
       "url": "https://jkpsc.nic.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "Mizoram PSC",
       "url": "https://mpsc.mizoram.gov.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "MPSC Meghalaya",
+      "url": "https://mpsc.meghalaya.gov.in/advertisements.html",
+      "error": "timeout"
     },
     {
       "source": "SPSC Sikkim",
@@ -202,7 +212,7 @@
     {
       "source": "TNUSRB",
       "url": "https://www.tnusrb.tn.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "Competitor: SarkariResult.com",
@@ -14500,67 +14510,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9lbXBsb3ltZW50bmV3cy5nb3YuaW4vbmV3ZW1wL0FsbEpvYnMuYXNweD9rPUFsbCMyMDI2LTA4LTMxI05BVElPTkFMIEJPQVJEIE9GIEVYQU1JTkFUSU9OUyBJTiBNRURJQ0FMIFNDSUVOQ0VTIOKAlCBFWEVDVVRJVkUgRElSRUNUT1I",
-      "type": "job",
-      "title": "NATIONAL BOARD OF EXAMINATIONS IN MEDICAL SCIENCES — EXECUTIVE DIRECTOR",
-      "source": "Employment News (Govt of India)",
-      "category": "Central",
-      "state": "All India",
-      "link": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
-      "openDate": null,
-      "lastDate": "2026-10-30",
-      "examDate": null,
-      "publishedDate": "2026-08-31"
-    },
-    {
-      "id": "competitor-sarkariresult-b14d92cb6738e837",
-      "type": "job",
-      "title": "UP Rampur ECCE Educator Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-ecce-educator-rampur-oct26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-24",
-      "lastDate": "2026-10-30",
-      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
-      "publishedDate": "2026-10-23",
-      "openDate": "2026-10-22",
-      "ageLimit": "21–40 years",
-      "eligibility": "Graduation in BA Arts, B.Sc, Home Science with FOOD AND NUTRITION from a recognized university Graduate in Science, B.Sc, Home Science from a recognized university Nursery Teacher Training (NTT) – All Subjects Diploma in Early Childhood Education – All Subjects",
-      "applicationFee": "for the All Candidates. UP",
-      "officialLinks": [
-        {
-          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/ECCE_Rampur_23102026.pdf",
-          "label": "Download Vacancy Details"
-        },
-        {
-          "url": "https://rampur.nic.in/hi/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-23",
-          "dateText": "23 October 2026 | 08:50 PM"
-        },
-        {
-          "label": "Last Date for Apply",
-          "date": "2026-10-30",
-          "dateText": "30/10/2026"
-        }
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9vbTI4MTAyMDI2Y29uc3VsdGFudG5vdGlmaWNhdGlvbi5wZGY",
       "type": "job",
       "title": "Oulgaret Municipality - Notification - Engagement of retired officials from Government of Puducherry as Consultant on Contract basis",
@@ -15896,6 +15845,109 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-5bf00ab472cef8ea",
+      "type": "result",
+      "title": "ONGC Apprentice Online Form 2026 (3047 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "PSU",
+      "state": "All India",
+      "link": "https://ongcapprentices.ongc.co.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-01",
+      "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
+      "publishedDate": "2026-10-29",
+      "openDate": "2026-10-29",
+      "lastDate": "2026-11-20",
+      "resultDate": "2026-12-15",
+      "vacancies": "3,047",
+      "ageLimit": "18 to 24 Years, with Applicable Relaxation",
+      "eligibility": "10th, 12th, ITI, Diploma, B.A., B.Com., B.Sc., BBA, B.E./B.Tech. or Relevant Qualification",
+      "notificationLink": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+      "officialLinks": [
+        {
+          "url": "https://ongcindia.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://apprenticeshipindia.gov.in/",
+          "label": "Apply Online - NAPS"
+        },
+        {
+          "url": "https://nats.education.gov.in/",
+          "label": "Apply Online - NATS"
+        },
+        {
+          "url": "https://ongcapprentices.ongc.co.in/",
+          "label": "ONGC Apprenticeship Portal / Result"
+        },
+        {
+          "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+          "label": "Official Notification PDF"
+        }
+      ],
+      "officialLink": "https://ongcapprentices.ongc.co.in/",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Selection Result Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Age and Qualification Passing-Date Cut-Off",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Scheduled Selection Result Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026"
+        },
+        {
+          "label": "Prescribed Date-of-Birth Range",
+          "date": "2002-11-29",
+          "dateText": "29 November 2002 to 29 November 2008"
+        }
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wd2QxMjEwMjAyNnJlYy5wZGY",
       "type": "job",
       "title": "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
@@ -16778,6 +16830,259 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMjgxNjU2MC5wZGY",
+      "type": "result",
+      "title": "Final results for recruitment to the post of Research Assistant in Planning Department on contractual basis. New Updated: 28/10/2026",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26102816560.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-28"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTQxNTI0MC5wZGY",
+      "type": "admit-card",
+      "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26101415240.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-14"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
+      "type": "job",
+      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/files/AE_Exam%20Schedule.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-08"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZV9ub3RpZmljYXRpb25fVVNfTF8yMDI2LnBkZg",
+      "type": "job",
+      "title": "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/files/Reschedule_notification_US_L_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-07"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MTUxNTI1MC5wZGY",
+      "type": "job",
+      "title": "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-09-15"
+    },
+    {
+      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmluYWwtcmVzdWx0cy5odG1s",
+      "type": "result",
+      "title": "Final Results",
+      "source": "MPSC Manipur",
+      "category": "State PSC",
+      "state": "Manipur",
+      "link": "https://mpscmanipur.gov.in/final-results.html",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MzE5MTQ4NTIyMzQy",
+      "type": "job",
+      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": "2026-10-26"
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
+      "type": "result",
+      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
+      "source": "NPSC",
+      "category": "Teaching",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/results/179302304373058",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": "2026-10-26"
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
+      "type": "job",
+      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/applicant/otr",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZG9pdC90YWItY29udGVudC9vbGQtcmVzdWx0",
+      "type": "result",
+      "title": "Old Result",
+      "source": "DSSSB",
+      "category": "State PSC",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/doit/tab-content/old-result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9jZG4uZGlnaWFsbS5jb20vL0VGb3Jtcy9jb25maWd1cmVkSHRtbC8xMjU4LzEwMjk0NC85ZGxtWUwwejRXRnNmc1U2ek0vbG9naW4uaHRtbA",
+      "type": "admit-card",
+      "title": "Download e-Admit card for the DSSSB Exam scheduled from 27 Oct to 05 Dec 2026",
+      "source": "DSSSB",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://cdn.digialm.com//EForms/configuredHtml/1258/102944/9dlmYL0z4WFsfsU6zM/login.html",
+      "openDate": "2026-12-05",
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
+      "type": "job",
+      "title": "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
+      "source": "DSSSB",
+      "category": "State PSC",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-032026-various-posts-post-code-2126-4526-closing-date-0",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2ItdmFjYW5jaWVz",
+      "type": "job",
+      "title": "Vacancy Advertised",
+      "source": "DSSSB",
+      "category": "State PSC",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/dsssb-vacancies",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "competitor-sarkaridon-ibps-so-xvi-mains-admit-2026",
+      "type": "admit-card",
+      "title": "IBPS SO XVI Mains Admit Card 2026",
+      "source": "Institute of Banking Personnel Selection (IBPS)",
+      "organization": "Institute of Banking Personnel Selection (IBPS)",
+      "publisher": "SarkariDon",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://sarkaridon.com/post/ibps-so-xvi-mains-admit-card-2026-released-download-now",
+      "publishedDate": "2026-10-22",
+      "examDate": "2026-11-01",
+      "detail": "Admit card release date: 22 Oct 2026. Exam: 1 Nov 2026. The listing includes the IBPS download link."
+    },
+    {
+      "id": "competitor-sarkaridon-mppsc-adpo-admit-2026",
+      "type": "admit-card",
+      "title": "MPPSC Assistant District Prosecution Officer (ADPO) Admit Card 2026",
+      "source": "Madhya Pradesh Public Service Commission (MPPSC)",
+      "organization": "Madhya Pradesh Public Service Commission (MPPSC)",
+      "publisher": "SarkariDon",
+      "category": "State PSC",
+      "state": "Madhya Pradesh",
+      "link": "https://sarkaridon.com/post/mppsc-adpo-admit-card-2026-released-download-now",
+      "publishedDate": "2026-10-21",
+      "examDate": "2026-11-01",
+      "detail": "Admit card released 21 Oct 2026. Exam: 1 Nov 2026. The listing includes the MPPSC download portal."
+    },
+    {
+      "id": "competitor-sarkaridon-bsf-hc-ro-rm-admit-2026",
+      "type": "admit-card",
+      "title": "BSF Head Constable RO / RM Admit Card 2026",
+      "source": "Border Security Force (BSF)",
+      "organization": "Border Security Force (BSF)",
+      "publisher": "SarkariDon",
+      "category": "Police / Defence",
+      "state": "All India",
+      "link": "https://sarkaridon.com/post/bsf-hc-ro-rm-admit-card-2026-released-download-now",
+      "publishedDate": "2026-10-21",
+      "examDate": "2026-11-02",
+      "detail": "Admit card released 21 Oct 2026. Written exam: 2 Nov 2026. The listing includes the BSF recruitment download link."
+    },
+    {
+      "id": "competitor-sarkaridon-uppsc-lt-home-science-result-2026",
+      "type": "result",
+      "title": "UPPSC LT Grade Assistant Teacher Home Science Final Result 2026",
+      "source": "Uttar Pradesh Public Service Commission (UPPSC)",
+      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
+      "publisher": "SarkariDon",
+      "category": "State PSC / Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://sarkaridon.com/post/uppsc-lt-grade-home-science-final-result-2026-released-check-a-5-e-1-2025-merit-list-pdf",
+      "publishedDate": "2026-10-20",
+      "resultDate": "2026-10-17",
+      "detail": "Final Home Science merit list for Advt. A-5/E-1/2025; the listing points to the UPPSC results section."
+    },
+    {
+      "id": "competitor-sarkaridon-rpsc-tgt-senior-teacher-result-2026",
+      "type": "result",
+      "title": "RPSC Senior Teacher Grade II (TGT) Result 2026 — Subject-wise Merit Lists",
+      "source": "Rajasthan Public Service Commission (RPSC)",
+      "organization": "Rajasthan Public Service Commission (RPSC)",
+      "publisher": "SarkariDon",
+      "category": "State PSC / Teaching",
+      "state": "Rajasthan",
+      "link": "https://sarkaridon.com/post/rpsc-tgt-senior-teacher-result-2026-declared-check-subject-wise-merit-list",
+      "publishedDate": "2026-10-19",
+      "resultDate": "2026-10-13",
+      "detail": "Subject-wise written exam results for Advt. 07/2025 began releasing 13 Oct 2026; see the linked RPSC portal."
+    },
+    {
+      "id": "competitor-freejobalert-kea-vao-rpc-result-2026",
+      "type": "result",
+      "title": "KEA Village Administrative Officer (VAO) RPC Provisional Score List 2026",
+      "source": "Karnataka Examinations Authority (KEA)",
+      "organization": "Karnataka Examinations Authority (KEA)",
+      "publisher": "FreeJobAlert",
+      "category": "State Government",
+      "state": "Karnataka",
+      "link": "https://www.freejobalert.com/articles/kea-vao-result-2026-3074421",
+      "publishedDate": "2026-10-20",
+      "resultDate": "2026-10-19",
+      "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
+    },
+    {
       "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
       "type": "job",
       "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
@@ -16997,259 +17302,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMjgxNjU2MC5wZGY",
-      "type": "result",
-      "title": "Final results for recruitment to the post of Research Assistant in Planning Department on contractual basis. New Updated: 28/10/2026",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26102816560.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-28"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTQxNTI0MC5wZGY",
-      "type": "admit-card",
-      "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26101415240.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-14"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
-      "type": "job",
-      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/AE_Exam%20Schedule.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-08"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZV9ub3RpZmljYXRpb25fVVNfTF8yMDI2LnBkZg",
-      "type": "job",
-      "title": "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/Reschedule_notification_US_L_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-07"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MTUxNTI1MC5wZGY",
-      "type": "job",
-      "title": "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-09-15"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmluYWwtcmVzdWx0cy5odG1s",
-      "type": "result",
-      "title": "Final Results",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/final-results.html",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZG9pdC90YWItY29udGVudC9vbGQtcmVzdWx0",
-      "type": "result",
-      "title": "Old Result",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/doit/tab-content/old-result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9jZG4uZGlnaWFsbS5jb20vL0VGb3Jtcy9jb25maWd1cmVkSHRtbC8xMjU4LzEwMjk0NC85ZGxtWUwwejRXRnNmc1U2ek0vbG9naW4uaHRtbA",
-      "type": "admit-card",
-      "title": "Download e-Admit card for the DSSSB Exam scheduled from 27 Oct to 05 Dec 2026",
-      "source": "DSSSB",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": "https://cdn.digialm.com//EForms/configuredHtml/1258/102944/9dlmYL0z4WFsfsU6zM/login.html",
-      "openDate": "2026-12-05",
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
-      "type": "job",
-      "title": "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-032026-various-posts-post-code-2126-4526-closing-date-0",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2ItdmFjYW5jaWVz",
-      "type": "job",
-      "title": "Vacancy Advertised",
-      "source": "DSSSB",
-      "category": "State PSC",
-      "state": "Delhi",
-      "link": "https://dsssb.delhi.gov.in/dsssb-vacancies",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MzE5MTQ4NTIyMzQy",
-      "type": "job",
-      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-09-25",
-      "publishedDate": "2026-10-26"
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
-      "type": "result",
-      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
-      "source": "NPSC",
-      "category": "Teaching",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/results/179302304373058",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-09-25",
-      "publishedDate": "2026-10-26"
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
-      "type": "job",
-      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/applicant/otr",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkaridon-ibps-so-xvi-mains-admit-2026",
-      "type": "admit-card",
-      "title": "IBPS SO XVI Mains Admit Card 2026",
-      "source": "Institute of Banking Personnel Selection (IBPS)",
-      "organization": "Institute of Banking Personnel Selection (IBPS)",
-      "publisher": "SarkariDon",
-      "category": "Banking",
-      "state": "All India",
-      "link": "https://sarkaridon.com/post/ibps-so-xvi-mains-admit-card-2026-released-download-now",
-      "publishedDate": "2026-10-22",
-      "examDate": "2026-11-01",
-      "detail": "Admit card release date: 22 Oct 2026. Exam: 1 Nov 2026. The listing includes the IBPS download link."
-    },
-    {
-      "id": "competitor-sarkaridon-mppsc-adpo-admit-2026",
-      "type": "admit-card",
-      "title": "MPPSC Assistant District Prosecution Officer (ADPO) Admit Card 2026",
-      "source": "Madhya Pradesh Public Service Commission (MPPSC)",
-      "organization": "Madhya Pradesh Public Service Commission (MPPSC)",
-      "publisher": "SarkariDon",
-      "category": "State PSC",
-      "state": "Madhya Pradesh",
-      "link": "https://sarkaridon.com/post/mppsc-adpo-admit-card-2026-released-download-now",
-      "publishedDate": "2026-10-21",
-      "examDate": "2026-11-01",
-      "detail": "Admit card released 21 Oct 2026. Exam: 1 Nov 2026. The listing includes the MPPSC download portal."
-    },
-    {
-      "id": "competitor-sarkaridon-bsf-hc-ro-rm-admit-2026",
-      "type": "admit-card",
-      "title": "BSF Head Constable RO / RM Admit Card 2026",
-      "source": "Border Security Force (BSF)",
-      "organization": "Border Security Force (BSF)",
-      "publisher": "SarkariDon",
-      "category": "Police / Defence",
-      "state": "All India",
-      "link": "https://sarkaridon.com/post/bsf-hc-ro-rm-admit-card-2026-released-download-now",
-      "publishedDate": "2026-10-21",
-      "examDate": "2026-11-02",
-      "detail": "Admit card released 21 Oct 2026. Written exam: 2 Nov 2026. The listing includes the BSF recruitment download link."
-    },
-    {
-      "id": "competitor-sarkaridon-uppsc-lt-home-science-result-2026",
-      "type": "result",
-      "title": "UPPSC LT Grade Assistant Teacher Home Science Final Result 2026",
-      "source": "Uttar Pradesh Public Service Commission (UPPSC)",
-      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
-      "publisher": "SarkariDon",
-      "category": "State PSC / Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://sarkaridon.com/post/uppsc-lt-grade-home-science-final-result-2026-released-check-a-5-e-1-2025-merit-list-pdf",
-      "publishedDate": "2026-10-20",
-      "resultDate": "2026-10-17",
-      "detail": "Final Home Science merit list for Advt. A-5/E-1/2025; the listing points to the UPPSC results section."
-    },
-    {
-      "id": "competitor-sarkaridon-rpsc-tgt-senior-teacher-result-2026",
-      "type": "result",
-      "title": "RPSC Senior Teacher Grade II (TGT) Result 2026 — Subject-wise Merit Lists",
-      "source": "Rajasthan Public Service Commission (RPSC)",
-      "organization": "Rajasthan Public Service Commission (RPSC)",
-      "publisher": "SarkariDon",
-      "category": "State PSC / Teaching",
-      "state": "Rajasthan",
-      "link": "https://sarkaridon.com/post/rpsc-tgt-senior-teacher-result-2026-declared-check-subject-wise-merit-list",
-      "publishedDate": "2026-10-19",
-      "resultDate": "2026-10-13",
-      "detail": "Subject-wise written exam results for Advt. 07/2025 began releasing 13 Oct 2026; see the linked RPSC portal."
-    },
-    {
-      "id": "competitor-freejobalert-kea-vao-rpc-result-2026",
-      "type": "result",
-      "title": "KEA Village Administrative Officer (VAO) RPC Provisional Score List 2026",
-      "source": "Karnataka Examinations Authority (KEA)",
-      "organization": "Karnataka Examinations Authority (KEA)",
-      "publisher": "FreeJobAlert",
-      "category": "State Government",
-      "state": "Karnataka",
-      "link": "https://www.freejobalert.com/articles/kea-vao-result-2026-3074421",
-      "publishedDate": "2026-10-20",
-      "resultDate": "2026-10-19",
-      "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
     },
     {
       "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmN2YtMTkyMy04MTlmLTk0MjQ0ZWE3MDAwNi9yZXN1bHQ",

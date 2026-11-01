@@ -22312,7 +22312,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-10-31T08:28:55.927Z",
+    "attemptedAt": "2026-11-01T09:19:14.386Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -23904,7 +23904,7 @@
     }
   },
   "https://www.freejobalert.com/articles/afms-medical-officer-short-service-commission-recruitment-2026-3077439": {
-    "attemptedAt": "2026-10-31T08:28:55.959Z",
+    "attemptedAt": "2026-11-01T09:19:14.333Z",
     "parser": "v2",
     "details": {
       "organization": "Armed Forces Medical Services (AFMS)",
@@ -24411,6 +24411,105 @@
         {
           "url": "https://rrb.indianrailways.gov.in/-/image/179337207784619-GORAKHPUR-RRB_NTPC_Provisional_Publishing_report-v2.0_(1)_RESULT.pdf/examsDocuments",
           "label": "RRB Gorakhpur"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
+    "attemptedAt": "2026-11-01T09:19:14.437Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
+      "publishedDate": "2026-10-29",
+      "openDate": "2026-10-29",
+      "lastDate": "2026-11-20",
+      "examDate": null,
+      "resultDate": "2026-12-15",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,047",
+      "ageLimit": "18 to 24 Years, with Applicable Relaxation",
+      "eligibility": "10th, 12th, ITI, Diploma, B.A., B.Com., B.Sc., BBA, B.E./B.Tech. or Relevant Qualification",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Selection Result Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Age and Qualification Passing-Date Cut-Off",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Scheduled Selection Result Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026"
+        },
+        {
+          "label": "Prescribed Date-of-Birth Range",
+          "date": "2002-11-29",
+          "dateText": "29 November 2002 to 29 November 2008"
+        }
+      ],
+      "officialLink": "https://apprenticeshipindia.gov.in/",
+      "notificationLink": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+      "officialLinks": [
+        {
+          "url": "https://ongcindia.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://apprenticeshipindia.gov.in/",
+          "label": "Apply Online - NAPS"
+        },
+        {
+          "url": "https://nats.education.gov.in/",
+          "label": "Apply Online - NATS"
+        },
+        {
+          "url": "https://ongcapprentices.ongc.co.in/",
+          "label": "ONGC Apprenticeship Portal / Result"
+        },
+        {
+          "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+          "label": "Official Notification PDF"
         }
       ]
     }
