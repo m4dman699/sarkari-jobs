@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-01T09:19:14.443Z",
-  "jobsGeneratedAt": "2026-11-01T09:19:13.011Z",
+  "generatedAt": "2026-11-02T09:33:08.227Z",
+  "jobsGeneratedAt": "2026-11-02T09:33:06.889Z",
   "partial": true,
   "total": 537,
   "quality": {
@@ -15,19 +15,14 @@
       "error": "HTTP 403"
     },
     {
+      "source": "UPSC",
+      "url": "https://upsc.gov.in/whats-new",
+      "error": "getaddrinfo ENOTFOUND upsc.gov.in"
+    },
+    {
       "source": "IBPS",
       "url": "https://www.ibps.in/",
       "error": "unable to verify the first certificate"
-    },
-    {
-      "source": "UPSC",
-      "url": "https://upsc.gov.in/whats-new",
-      "error": "timeout"
-    },
-    {
-      "source": "Railway Recruitment Boards",
-      "url": "https://rrb.indianrailways.gov.in/",
-      "error": "The operation was aborted"
     },
     {
       "source": "Indian Army",
@@ -40,13 +35,13 @@
       "error": "timeout"
     },
     {
-      "source": "CBSE/CTET",
-      "url": "https://www.cbse.gov.in/",
-      "error": "HTTP 403"
+      "source": "Railway Recruitment Boards",
+      "url": "https://rrb.indianrailways.gov.in/",
+      "error": "The operation was aborted"
     },
     {
-      "source": "NTPC",
-      "url": "https://careers.ntpc.co.in/",
+      "source": "CBSE/CTET",
+      "url": "https://www.cbse.gov.in/",
       "error": "HTTP 403"
     },
     {
@@ -55,14 +50,14 @@
       "error": "timeout"
     },
     {
+      "source": "NTPC",
+      "url": "https://careers.ntpc.co.in/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "SAIL",
       "url": "https://sail.co.in/web/careers",
       "error": "unable to verify the first certificate"
-    },
-    {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": "timeout"
     },
     {
       "source": "Supreme Court of India",
@@ -75,24 +70,29 @@
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "Calcutta High Court",
-      "url": "https://www.calcuttahighcourt.gov.in/",
-      "error": "The operation was aborted"
-    },
-    {
-      "source": "BPSC",
-      "url": "https://www.bpsc.bih.nic.in/",
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
       "error": "timeout"
     },
     {
       "source": "BPSC",
       "url": "https://bpsc.bihar.gov.in/",
-      "error": "read ECONNRESET"
+      "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "Calcutta High Court",
+      "url": "https://www.calcuttahighcourt.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "RPSC",
       "url": "https://rpsc.rajasthan.gov.in/",
       "error": ""
+    },
+    {
+      "source": "BPSC",
+      "url": "https://www.bpsc.bih.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "WBPSC",
@@ -105,14 +105,14 @@
       "error": "timeout"
     },
     {
-      "source": "KPSC",
-      "url": "https://kpsc.kar.nic.in/",
-      "error": "Parse Error: Invalid header token"
-    },
-    {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
       "error": ""
+    },
+    {
+      "source": "KPSC",
+      "url": "https://kpsc.kar.nic.in/",
+      "error": "Parse Error: Invalid header token"
     },
     {
       "source": "TGPSC",
@@ -122,26 +122,16 @@
     {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO 80EC67CF8E7F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
-    },
-    {
-      "source": "TNPSC",
-      "url": "https://www.tnpsc.gov.in/",
-      "error": "timeout"
+      "error": "write EPROTO 802C0893F47F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
       "url": "https://psc.ap.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "JPSC",
-      "url": "https://www.jpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -170,19 +160,14 @@
       "error": "HTTP 403"
     },
     {
-      "source": "JKPSC",
-      "url": "https://jkpsc.nic.in/",
-      "error": "timeout"
-    },
-    {
       "source": "Mizoram PSC",
       "url": "https://mpsc.mizoram.gov.in/",
       "error": "HTTP 403"
     },
     {
-      "source": "MPSC Meghalaya",
-      "url": "https://mpsc.meghalaya.gov.in/advertisements.html",
-      "error": "timeout"
+      "source": "JKPSC",
+      "url": "https://jkpsc.nic.in/",
+      "error": "The operation was aborted"
     },
     {
       "source": "SPSC Sikkim",
@@ -193,6 +178,11 @@
       "source": "TPSC",
       "url": "https://tpsc.tripura.gov.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Government of Puducherry",
+      "url": "https://www.py.gov.in/recruitment",
+      "error": "The operation was aborted"
     },
     {
       "source": "CSBC (Bihar Police)",
@@ -212,7 +202,7 @@
     {
       "source": "TNUSRB",
       "url": "https://www.tnusrb.tn.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "Competitor: SarkariResult.com",
@@ -8399,6 +8389,77 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-5b8d4e3ab54789d1",
+      "type": "result",
+      "title": "Indian Bank SO Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/indian-bank-so-result-2026-3077692",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-02",
+      "organization": "Indian Bank SO Final",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-04-08",
+      "lastDate": "2026-04-28",
+      "vacancies": "350",
+      "officialLinks": [
+        {
+          "url": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+          "label": "Indian Bank SO Result 2026 PDF"
+        },
+        {
+          "url": "https://indianbank.bank.in/",
+          "label": "Indian Bank Official Website"
+        },
+        {
+          "url": "https://indianbank.bank.in/en/career",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+      "milestones": [
+        {
+          "label": "Recruitment Advertisement Date",
+          "date": "2026-04-08",
+          "dateText": "8 April 2026"
+        },
+        {
+          "label": "Online Examination Date",
+          "date": "2026-05-31",
+          "dateText": "31 May 2026"
+        },
+        {
+          "label": "Final Provisional Selection Notice Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Notice Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-04-28",
+          "dateText": "28 April 2026"
+        },
+        {
+          "label": "Online Examination",
+          "date": "2026-05-31",
+          "dateText": "31 May 2026"
+        },
+        {
+          "label": "Provisional Selection List Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-42b70c24f3962701",
       "type": "result",
       "title": "MPESB Van Rakshak, Jail Prahari Result 2026",
@@ -14510,94 +14571,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9vbTI4MTAyMDI2Y29uc3VsdGFudG5vdGlmaWNhdGlvbi5wZGY",
-      "type": "job",
-      "title": "Oulgaret Municipality - Notification - Engagement of retired officials from Government of Puducherry as Consultant on Contract basis",
-      "source": "Government of Puducherry",
-      "category": "State PSC",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/om28102026consultantnotification.pdf",
-      "openDate": null,
-      "lastDate": "2026-10-31",
-      "examDate": null,
-      "publishedDate": "2026-10-28"
-    },
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdHUwMTEwMjAyNi5wZGY",
-      "type": "job",
-      "title": "Higher & Technical Education - Advertisement - Appointment of Vice-Chancellor of Puducherry Technological University",
-      "source": "Government of Puducherry",
-      "category": "Teaching",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/ptu01102026.pdf",
-      "openDate": null,
-      "lastDate": "2026-10-31",
-      "examDate": null,
-      "publishedDate": "2026-10-06"
-    },
-    {
-      "id": "competitor-sarkariresult-39e19d25868f002a",
-      "type": "job",
-      "title": "BSSC Field Assistant 2025 Mains Online Form",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://bssc.bihar.gov.in/",
-      "lastDate": "2026-10-31",
-      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
-      "publishedDate": "2026-10-16",
-      "vacancies": "201",
-      "examDate": "2025-07-11",
-      "eligibility": "Bihar BSSC Field Assistant 201 Candidates must have passed Intermediate (10+2) or hold a Diploma in Agriculture from a recognized institute or university. Note: Equivalent qualifications or other academic degrees will not be accepted for this post.",
-      "applicationFee": "For General/ BC/ EBC Candidates : ₹ 540/- For Other State All Category : ₹ 540/- For SC/ ST PH Candidates : ₹ 135/- For Female Bihar Candidates : ₹ 135/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://bssc.bihar.gov.in/",
-      "organization": "Bihar Staff Selection Commission (BSSC)"
-    },
-    {
-      "id": "competitor-sarkariresult-60a41886940a803c",
-      "type": "job",
-      "title": "CSJMU Kanpur Teaching Post Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Teaching",
-      "state": "See linked notice",
-      "link": "https://csjmurec.samarth.edu.in/",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/csjmu-kanpur-teaching-oct26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-10-31",
-      "organization": "Chhatrapati Shahu Ji Maharaj University, Kanpur",
-      "publishedDate": "2026-10-04",
-      "openDate": "2026-09-26",
-      "eligibility": "Graduation / Post Graduation (Post Wise Eligibility & Experience) For More Details Read the Notification.",
-      "applicationFee": "UR / OBC / EWS : Rs. 2500/- SC / ST / PH / Female : Rs. 2000/-",
-      "officialLinks": [
-        {
-          "url": "https://csjmurec.samarth.edu.in/",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://csjmu.ac.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://csjmurec.samarth.edu.in/",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-04",
-          "dateText": "04 October 2026 | 08:30 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-10-31",
-          "dateText": "31/10/2026"
-        }
-      ]
-    },
-    {
       "id": "competitor-freejobalert-1865022ebdbdb42e",
       "type": "job",
       "title": "LIC HFL 232 Apprentice Online Form 2026",
@@ -15856,39 +15829,13 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-01",
-      "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
+      "factCheckedAt": "2026-11-02",
       "publishedDate": "2026-10-29",
       "openDate": "2026-10-29",
       "lastDate": "2026-11-20",
-      "resultDate": "2026-12-15",
+      "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
       "vacancies": "3,047",
-      "ageLimit": "18 to 24 Years, with Applicable Relaxation",
       "eligibility": "10th, 12th, ITI, Diploma, B.A., B.Com., B.Sc., BBA, B.E./B.Tech. or Relevant Qualification",
-      "notificationLink": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
-      "officialLinks": [
-        {
-          "url": "https://ongcindia.com/",
-          "label": "Official Website"
-        },
-        {
-          "url": "https://apprenticeshipindia.gov.in/",
-          "label": "Apply Online - NAPS"
-        },
-        {
-          "url": "https://nats.education.gov.in/",
-          "label": "Apply Online - NATS"
-        },
-        {
-          "url": "https://ongcapprentices.ongc.co.in/",
-          "label": "ONGC Apprenticeship Portal / Result"
-        },
-        {
-          "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
-          "label": "Official Notification PDF"
-        }
-      ],
-      "officialLink": "https://ongcapprentices.ongc.co.in/",
       "milestones": [
         {
           "label": "Notification Date",
@@ -15945,7 +15892,54 @@
           "date": "2002-11-29",
           "dateText": "29 November 2002 to 29 November 2008"
         }
-      ]
+      ],
+      "officialLink": "https://ongcapprentices.ongc.co.in/",
+      "notificationLink": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+      "officialLinks": [
+        {
+          "url": "https://ongcindia.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://apprenticeshipindia.gov.in/",
+          "label": "Apply Online - NAPS"
+        },
+        {
+          "url": "https://nats.education.gov.in/",
+          "label": "Apply Online - NATS"
+        },
+        {
+          "url": "https://ongcapprentices.ongc.co.in/",
+          "label": "ONGC Apprenticeship Portal / Result"
+        },
+        {
+          "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.ongcindia.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+          "label": "Official Notification PDF / Recruitment Notices"
+        }
+      ],
+      "resultDate": "2026-12-15",
+      "ageLimit": "18 to 24 Years"
+    },
+    {
+      "id": "aHR0cHM6Ly9lbXBsb3ltZW50bmV3cy5nb3YuaW4vbmV3ZW1wL0FsbEpvYnMuYXNweD9rPUFsbCMyMDI2LTExLTAyI1NBSU5JSyBTQ0hPT0wgTkFHUk9UQSwgU0FJTklLIFNDSE9PTFMgU09DSUVUWSwgTUlOSVNUUlkgT0YgREVGRU5DRSDigJQgVEdUIChDT01QVVRFUiBTQ0lFTkNFKSAmIE9USEVSUw",
+      "type": "job",
+      "title": "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
+      "source": "Employment News (Govt of India)",
+      "category": "Defence",
+      "state": "All India",
+      "link": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "openDate": null,
+      "lastDate": "2026-11-21",
+      "examDate": null,
+      "publishedDate": "2026-11-02"
     },
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wd2QxMjEwMjAyNnJlYy5wZGY",
@@ -16461,6 +16455,19 @@
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)"
     },
     {
+      "id": "aHR0cHM6Ly9lbXBsb3ltZW50bmV3cy5nb3YuaW4vbmV3ZW1wL0FsbEpvYnMuYXNweD9rPUFsbCMyMDI2LTExLTAyI0lOU1RJVFVURSBPRiBIT1RFTCBNQU5BR0VNRU5UIEFORCBDQVRFUklORyBURUNITk9MT0dZLCBNSU5JU1RSWSBPRiBUT1VSSVNNIOKAlCBMT1dFUiBESVZJU0lPTiBDTEVSSw",
+      "type": "job",
+      "title": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
+      "source": "Employment News (Govt of India)",
+      "category": "Banking",
+      "state": "All India",
+      "link": "https://employmentnews.gov.in/newemp/AllJobs.aspx?k=All",
+      "openDate": null,
+      "lastDate": "2026-11-30",
+      "examDate": null,
+      "publishedDate": "2026-11-02"
+    },
+    {
       "id": "competitor-sarkariresult-d6af6007e2b7128e",
       "type": "job",
       "title": "UP ECCE Educator Kanpur Nagar Online Form 2026",
@@ -16791,6 +16798,32 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL290cj9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
+      "type": "admit-card",
+      "title": "நுழைவுச்சீட்டு /Hall Ticket",
+      "source": "TNPSC",
+      "category": "State PSC",
+      "state": "Tamil Nadu",
+      "link": "https://apply.tnpscexams.in/otr?app_id=UElZMDAwMDAwMQ==",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL3NlY3VyZT9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
+      "type": "job",
+      "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
+      "source": "TNPSC",
+      "category": "State PSC",
+      "state": "Tamil Nadu",
+      "link": "https://apply.tnpscexams.in/secure?app_id=UElZMDAwMDAwMQ==",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9yZXN1bHQ",
       "type": "result",
       "title": "Final Results",
@@ -16824,6 +16857,227 @@
       "category": "State PSC",
       "state": "Haryana",
       "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-64139825000e/result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
+      "type": "job",
+      "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/data/Notice.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-07-29",
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDU",
+      "type": "job",
+      "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13045",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDM",
+      "type": "job",
+      "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13043",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDI",
+      "type": "job",
+      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13042",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDE",
+      "type": "job",
+      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13041",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDA",
+      "type": "job",
+      "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13040",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzk",
+      "type": "job",
+      "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13039",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzg",
+      "type": "job",
+      "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13038",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzc",
+      "type": "job",
+      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13037",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzY",
+      "type": "job",
+      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13036",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzU",
+      "type": "job",
+      "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13035",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzM",
+      "type": "job",
+      "title": "Recruitment of Director Advt.No.-07/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13033",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzI",
+      "type": "job",
+      "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13032",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzE",
+      "type": "job",
+      "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13031",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzA",
+      "type": "job",
+      "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13030",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjk",
+      "type": "job",
+      "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13029",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjg",
+      "type": "job",
+      "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13028",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -17081,227 +17335,6 @@
       "publishedDate": "2026-10-20",
       "resultDate": "2026-10-19",
       "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
-      "type": "job",
-      "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/data/Notice.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-07-29",
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDU",
-      "type": "job",
-      "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13045",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDM",
-      "type": "job",
-      "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13043",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDI",
-      "type": "job",
-      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13042",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDE",
-      "type": "job",
-      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13041",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDA",
-      "type": "job",
-      "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13040",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzk",
-      "type": "job",
-      "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13039",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzg",
-      "type": "job",
-      "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13038",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzc",
-      "type": "job",
-      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13037",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzY",
-      "type": "job",
-      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13036",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzU",
-      "type": "job",
-      "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13035",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzM",
-      "type": "job",
-      "title": "Recruitment of Director Advt.No.-07/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13033",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzI",
-      "type": "job",
-      "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13032",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzE",
-      "type": "job",
-      "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13031",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzA",
-      "type": "job",
-      "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13030",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjk",
-      "type": "job",
-      "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13029",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjg",
-      "type": "job",
-      "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13028",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmN2YtMTkyMy04MTlmLTk0MjQ0ZWE3MDAwNi9yZXN1bHQ",
@@ -19133,44 +19166,6 @@
       "category": "State PSC",
       "state": "Madhya Pradesh",
       "link": "https://mppsc.mp.gov.in/Callletter",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL290cj9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
-      "type": "admit-card",
-      "title": "நுழைவுச்சீட்டு /Hall Ticket",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "https://apply.tnpscexams.in/otr?app_id=UElZMDAwMDAwMQ==",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-23",
-      "organization": "KPSC DE Hall Ticket 2026 Out - Download Kannada Language Viva-Voce at kpsc.karnataka.gov.in",
-      "officialLinks": [
-        {
-          "url": "https://kpsc.kar.nic.in",
-          "label": "Official website"
-        },
-        {
-          "url": "https://sevasindhu.karnataka.gov.in/KPSCVIVA/",
-          "label": "KPSC DE Hall Ticket 2026 (Kannada language viva-voce)"
-        }
-      ],
-      "officialLink": "https://kpsc.kar.nic.in"
-    },
-    {
-      "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL3NlY3VyZT9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
-      "type": "job",
-      "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "https://apply.tnpscexams.in/secure?app_id=UElZMDAwMDAwMQ==",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -25612,6 +25607,60 @@
           "label": "Scorecard Link Active From",
           "date": "2026-10-30",
           "dateText": "30 October 2026, 5:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-a8fc1fe9e2b3e865",
+      "type": "result",
+      "title": "APPSC CCE Prelims Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "Andhra Pradesh",
+      "link": "https://appsc.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/appsc-cce-prelims-result-2026-3077739",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-02",
+      "organization": "APPSC CCE",
+      "publishedDate": "2026-11-02",
+      "notificationLink": "https://appsc.gov.in/Index/common_sub_page/doc12233/Notifications",
+      "officialLinks": [
+        {
+          "url": "https://appsc.gov.in/upload/RECINS001/APPSCCE_P_PROVISIONAL_ACCEPTED_REJECTED_20261030_204609.pdf",
+          "label": "APPSC CCE Accepted and Rejected List 2026"
+        },
+        {
+          "url": "https://appsc.gov.in/Index/common_sub_page/doc12233/Notifications",
+          "label": "APPSC Recruitment Notifications"
+        },
+        {
+          "url": "https://appsc.gov.in/",
+          "label": "APPSC Official Website"
+        }
+      ],
+      "officialLink": "https://appsc.gov.in/",
+      "milestones": [
+        {
+          "label": "Official PDF Date Reference",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Official Accepted/Rejected PDF Date Reference",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Latest News Update",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
         }
       ]
     }

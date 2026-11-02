@@ -1,33 +1,7 @@
 {
-  "generatedAt": "2026-11-01T09:19:13.011Z",
-  "total": 4,
+  "generatedAt": "2026-11-02T09:33:06.889Z",
+  "total": 2,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9vbTI4MTAyMDI2Y29uc3VsdGFudG5vdGlmaWNhdGlvbi5wZGY",
-      "type": "job",
-      "title": "Oulgaret Municipality - Notification - Engagement of retired officials from Government of Puducherry as Consultant on Contract basis",
-      "source": "Government of Puducherry",
-      "category": "State PSC",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/om28102026consultantnotification.pdf",
-      "openDate": null,
-      "lastDate": "2026-10-31",
-      "examDate": null,
-      "publishedDate": "2026-10-28"
-    },
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wdHUwMTEwMjAyNi5wZGY",
-      "type": "job",
-      "title": "Higher & Technical Education - Advertisement - Appointment of Vice-Chancellor of Puducherry Technological University",
-      "source": "Government of Puducherry",
-      "category": "Teaching",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/ptu01102026.pdf",
-      "openDate": null,
-      "lastDate": "2026-10-31",
-      "examDate": null,
-      "publishedDate": "2026-10-06"
-    },
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wcmQxMDA5MjAyNnJlYy5wZGY",
       "type": "job",

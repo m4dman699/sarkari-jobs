@@ -22312,7 +22312,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-11-01T09:19:14.386Z",
+    "attemptedAt": "2026-11-02T09:33:08.213Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -23904,7 +23904,7 @@
     }
   },
   "https://www.freejobalert.com/articles/afms-medical-officer-short-service-commission-recruitment-2026-3077439": {
-    "attemptedAt": "2026-11-01T09:19:14.333Z",
+    "attemptedAt": "2026-11-02T09:33:08.125Z",
     "parser": "v2",
     "details": {
       "organization": "Armed Forces Medical Services (AFMS)",
@@ -24416,7 +24416,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
-    "attemptedAt": "2026-11-01T09:19:14.437Z",
+    "attemptedAt": "2026-11-02T09:33:08.090Z",
     "parser": "v2",
     "details": {
       "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
@@ -24427,35 +24427,15 @@
       "resultDate": "2026-12-15",
       "admitCardDate": null,
       "interviewDate": null,
-      "vacancies": "3,047",
-      "ageLimit": "18 to 24 Years, with Applicable Relaxation",
-      "eligibility": "10th, 12th, ITI, Diploma, B.A., B.Com., B.Sc., BBA, B.E./B.Tech. or Relevant Qualification",
+      "vacancies": "3047",
+      "ageLimit": "18 to 24 Years",
+      "eligibility": "10th, 12th, ITI, Diploma, Relevant Graduation",
       "applicationFee": "",
       "milestones": [
         {
-          "label": "Notification Date",
-          "date": "2026-10-29",
-          "dateText": "29 October 2026"
-        },
-        {
-          "label": "Age Calculation Date",
-          "date": "2026-11-29",
-          "dateText": "29 November 2026"
-        },
-        {
-          "label": "Application Start Date",
-          "date": "2026-10-29",
-          "dateText": "29 October 2026"
-        },
-        {
-          "label": "Application Last Date",
+          "label": "Last Date",
           "date": "2026-11-20",
           "dateText": "20 November 2026"
-        },
-        {
-          "label": "Selection Result Date",
-          "date": "2026-12-15",
-          "dateText": "15 December 2026"
         },
         {
           "label": "Notification Release Date",
@@ -24473,43 +24453,164 @@
           "dateText": "20 November 2026"
         },
         {
-          "label": "Age and Qualification Passing-Date Cut-Off",
+          "label": "Age Calculation Date",
           "date": "2026-11-29",
           "dateText": "29 November 2026"
         },
         {
-          "label": "Scheduled Selection Result Date",
+          "label": "Result / Selection Date",
           "date": "2026-12-15",
           "dateText": "15 December 2026"
-        },
-        {
-          "label": "Prescribed Date-of-Birth Range",
-          "date": "2002-11-29",
-          "dateText": "29 November 2002 to 29 November 2008"
         }
       ],
-      "officialLink": "https://apprenticeshipindia.gov.in/",
-      "notificationLink": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+      "officialLink": "https://www.ongcindia.com/",
+      "notificationLink": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
       "officialLinks": [
         {
-          "url": "https://ongcindia.com/",
+          "url": "https://www.ongcindia.com/",
           "label": "Official Website"
         },
         {
           "url": "https://apprenticeshipindia.gov.in/",
-          "label": "Apply Online - NAPS"
+          "label": "NAPS Apprentice Application"
         },
         {
           "url": "https://nats.education.gov.in/",
-          "label": "Apply Online - NATS"
+          "label": "NATS Apprentice Application"
+        },
+        {
+          "url": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+          "label": "Official Notification PDF / Recruitment Notices"
         },
         {
           "url": "https://ongcapprentices.ongc.co.in/",
-          "label": "ONGC Apprenticeship Portal / Result"
+          "label": "ONGC Apprenticeship Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/indian-bank-so-result-2026-3077692": {
+    "attemptedAt": "2026-11-02T09:33:08.152Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Bank SO Final",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-04-08",
+      "lastDate": "2026-04-28",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "350",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Recruitment Advertisement Date",
+          "date": "2026-04-08",
+          "dateText": "8 April 2026"
         },
         {
-          "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
-          "label": "Official Notification PDF"
+          "label": "Online Examination Date",
+          "date": "2026-05-31",
+          "dateText": "31 May 2026"
+        },
+        {
+          "label": "Final Provisional Selection Notice Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Notice Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-04-28",
+          "dateText": "28 April 2026"
+        },
+        {
+          "label": "Online Examination",
+          "date": "2026-05-31",
+          "dateText": "31 May 2026"
+        },
+        {
+          "label": "Provisional Selection List Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        }
+      ],
+      "officialLink": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+      "officialLinks": [
+        {
+          "url": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+          "label": "Indian Bank SO Result 2026 PDF"
+        },
+        {
+          "url": "https://indianbank.bank.in/",
+          "label": "Indian Bank Official Website"
+        },
+        {
+          "url": "https://indianbank.bank.in/en/career",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/appsc-cce-prelims-result-2026-3077739": {
+    "attemptedAt": "2026-11-02T09:33:08.174Z",
+    "parser": "v2",
+    "details": {
+      "organization": "APPSC CCE",
+      "publishedDate": "2026-11-02",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Official PDF Date Reference",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Official Accepted/Rejected PDF Date Reference",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Latest News Update",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        }
+      ],
+      "officialLink": "https://appsc.gov.in/",
+      "notificationLink": "https://appsc.gov.in/Index/common_sub_page/doc12233/Notifications",
+      "officialLinks": [
+        {
+          "url": "https://appsc.gov.in/upload/RECINS001/APPSCCE_P_PROVISIONAL_ACCEPTED_REJECTED_20261030_204609.pdf",
+          "label": "APPSC CCE Accepted and Rejected List 2026"
+        },
+        {
+          "url": "https://appsc.gov.in/Index/common_sub_page/doc12233/Notifications",
+          "label": "APPSC Recruitment Notifications"
+        },
+        {
+          "url": "https://appsc.gov.in/",
+          "label": "APPSC Official Website"
         }
       ]
     }
