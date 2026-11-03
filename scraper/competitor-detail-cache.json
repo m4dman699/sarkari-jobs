@@ -3238,11 +3238,11 @@
     }
   },
   "https://www.sarkariresult.com/2026/rajasthan-sanitation-worker-jul26/": {
-    "attemptedAt": "2026-10-23T06:27:11.648Z",
+    "attemptedAt": "2026-11-03T09:35:55.778Z",
     "parser": "v2",
     "details": {
       "organization": "Local Self Government Department, Rajasthan",
-      "publishedDate": "2026-10-13",
+      "publishedDate": "2026-10-29",
       "openDate": "2026-08-15",
       "lastDate": "2026-10-28",
       "examDate": null,
@@ -3256,8 +3256,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-13",
-          "dateText": "13 October 2026 | 05:28 PM"
+          "date": "2026-10-29",
+          "dateText": "29 October 2026 | 09:46 AM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -3268,6 +3268,11 @@
           "label": "Last Date Pay Exam Fee",
           "date": "2026-10-28",
           "dateText": "28/10/2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-10-29",
+          "dateText": "29/10/2026"
         }
       ],
       "officialLink": "https://sso.rajasthan.gov.in/signin",
@@ -3288,7 +3293,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/cwc-am-je-oct26/": {
-    "attemptedAt": "2026-10-24T04:44:49.403Z",
+    "attemptedAt": "2026-11-03T09:35:51.560Z",
     "parser": "v2",
     "details": {
       "organization": "Central Warehousing Corporation CWC",
@@ -3417,7 +3422,7 @@
     }
   },
   "https://www.sarkariresult.com/2027/up-board-exam-2027/": {
-    "attemptedAt": "2026-10-24T04:44:50.846Z",
+    "attemptedAt": "2026-11-03T09:35:54.000Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Madhyamic Shiksha Parishad UPMSP",
@@ -3453,7 +3458,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/nwr-rrc-jaipur-apprentices-04-2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.921Z",
+    "attemptedAt": "2026-11-03T09:35:54.031Z",
     "parser": "v2",
     "details": {
       "organization": "North Western Railway NWR Railway Recruitment Cell RRC NWR Jaipur Region",
@@ -3910,7 +3915,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/rrb-ntpc-graduate-cen-06-2026/": {
-    "attemptedAt": "2026-10-24T04:44:51.282Z",
+    "attemptedAt": "2026-11-03T09:35:54.228Z",
     "parser": "v2",
     "details": {
       "organization": "Railway RRB Non Technical Popular Categories NTPC Graduate Level CEN 06/2026",
@@ -4356,7 +4361,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/upsssc-j-e-agriculture-august26/": {
-    "attemptedAt": "2026-10-24T04:44:51.248Z",
+    "attemptedAt": "2026-11-03T09:35:54.417Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -4558,7 +4563,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-cane-13-exam-2026/": {
-    "attemptedAt": "2026-10-24T04:44:55.219Z",
+    "attemptedAt": "2026-11-03T09:36:02.303Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -4725,11 +4730,11 @@
     }
   },
   "https://www.freejobalert.com/articles/cwc-recruitment-2026-apply-online-for-327-assistant-manager-junior-executive-posts-3074247": {
-    "attemptedAt": "2026-10-30T08:41:44.500Z",
+    "attemptedAt": "2026-11-03T09:35:54.103Z",
     "parser": "v2",
     "details": {
       "organization": "CWC",
-      "publishedDate": "2026-10-27",
+      "publishedDate": "2026-11-02",
       "openDate": "2026-10-17",
       "lastDate": "2026-11-15",
       "examDate": null,
@@ -4845,7 +4850,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/sbi-po-june26/": {
-    "attemptedAt": "2026-10-24T04:44:56.800Z",
+    "attemptedAt": "2026-11-03T09:36:04.689Z",
     "parser": "v2",
     "details": {
       "organization": "State Bank of India SBI",
@@ -4935,7 +4940,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/sci-senior-personal-assistant-oct26/": {
-    "attemptedAt": "2026-10-24T04:44:49.363Z",
+    "attemptedAt": "2026-11-03T09:35:51.513Z",
     "parser": "v2",
     "details": {
       "organization": "Supreme Court of India SCI",
@@ -5037,11 +5042,11 @@
     }
   },
   "https://www.sarkariresult.com/railway/nta-ugc-net-december2026/": {
-    "attemptedAt": "2026-10-24T04:44:49.617Z",
+    "attemptedAt": "2026-11-03T09:35:56.484Z",
     "parser": "v2",
     "details": {
       "organization": "National Testing Agency (NTA)",
-      "publishedDate": "2026-10-13",
+      "publishedDate": "2026-11-02",
       "openDate": "2026-10-08",
       "lastDate": "2026-10-28",
       "examDate": null,
@@ -5051,12 +5056,12 @@
       "vacancies": "",
       "ageLimit": "Maximum 30 years",
       "eligibility": "S No. Subject Name S No. Subject Name 1 Adult Education/ Continuing Education/ Andragogy/ Non-Formal Education. 44 Maithili 2 Anthropology 45 Malayalam 3 Arab Culture and Islamic Studies 46 Management (including Business Admn. Mgt./Marketing / Marketing Mgt. / Industrial Relations and Personnel Mgt. / Personnel Mgt. / Financial Mgt. /Co-operative Management) 4 Arabic 47 Manipuri 5 Archaeology 48 Marathi 6 Assamese 49 Mass Communication and Journalism 7 Bengali 50 Museology & Conservation 8 Bodo ",
-      "applicationFee": "General : 1150/- EWS / OBC : 600/- ST / SC / PH : 325/- Late Fees : 500/-",
+      "applicationFee": "General : 1150/- EWS / OBC : 600/- ST / SC / PH : 325/-",
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-13",
-          "dateText": "13 October 2026 | 10:00 PM"
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:29 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -5065,11 +5070,6 @@
         },
         {
           "label": "Last Date Pay Exam Fee",
-          "date": "2026-10-28",
-          "dateText": "28/10/2026"
-        },
-        {
-          "label": "Last Date with Late Fee",
           "date": "2026-10-31",
           "dateText": "31/10/2026"
         }
@@ -5078,8 +5078,16 @@
       "notificationLink": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610081852912625.pdf",
       "officialLinks": [
         {
+          "url": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/11/20261102472201336.pdf",
+          "label": "Download Correction Notice"
+        },
+        {
           "url": "https://examinationservices.nic.in/ExamSys27/root/home.aspx?enc=Ei4cajBkK1gZSfgr53ImFV/yIzhTZHBze3wooSg9DjjOvzupXmjixBOc0vZyJQ9v",
           "label": "Apply Online"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610271960110862.pdf",
+          "label": "Download Date Extended Notice"
         },
         {
           "url": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610081852912625.pdf",
@@ -5088,12 +5096,16 @@
         {
           "url": "https://ugcnet.nta.nic.in/",
           "label": "Official Website"
+        },
+        {
+          "url": "https://examinationservices.nic.in/ExamSys27/root/CandidateLogin.aspx?enc=Ei4cajBkK1gZSfgr53ImFV/yIzhTZHBze3wooSg9DjjOvzupXmjixBOc0vZyJQ9v",
+          "label": "Correction / Edit Form"
         }
       ]
     }
   },
   "https://www.sarkariresult.com/2026/delhi-dsssb-advt-no-05-2026/": {
-    "attemptedAt": "2026-10-24T04:44:49.625Z",
+    "attemptedAt": "2026-11-03T09:35:51.954Z",
     "parser": "v2",
     "details": {
       "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
@@ -5144,41 +5156,41 @@
     }
   },
   "https://www.sarkariresult.com/2026/upessc-up-primary-teacher-05-2026/": {
-    "attemptedAt": "2026-10-23T06:27:14.113Z",
+    "attemptedAt": "2026-11-03T09:35:55.920Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
-      "publishedDate": "2026-09-16",
+      "publishedDate": "2026-10-28",
       "openDate": "2026-09-16",
-      "lastDate": null,
+      "lastDate": "2026-11-04",
       "examDate": null,
       "resultDate": null,
       "admitCardDate": null,
       "interviewDate": null,
       "vacancies": "12405",
       "ageLimit": "21–40 years",
-      "eligibility": "Post Name General OBC EWS SC ST Total UPEESSC UP Primary Teacher Eligibility Assistant Teacher in Urban Area Primary Schools 4746 3069 1116 2379 198 11508 Bachelor Degree in Any Stream with DELED (BTC) / BLEd. For More Details Read the Notification. Assistant Teacher – Affiliated Primary (Non-Government Aided School) 378 164 07 348 0 897 Bachelor Degree in Any Stream with DELED (BTC) Class I to V Primary TET Exam Passed. For More Details Read the Notification. UP Primary Teacher Online Form 2026",
+      "eligibility": "Post Name General OBC EWS SC ST Total UPEESSC UP Primary Teacher Eligibility Assistant Teacher in Urban Area Primary Schools 4746 3069 1116 2379 198 11508 Bachelor Degree in Any Stream with DELED (BTC) / B-El-Ed. For More Details Read the Notification. Assistant Teacher – Affiliated Primary (Non-Government Aided School) 378 164 07 348 0 897 Bachelor Degree in Any Stream with DELED (BTC) / B-El-Ed Class I to V Primary TET Exam Passed. For More Details Read the Notification. UP Primary Teacher Onl",
       "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-09-16",
-          "dateText": "16 September 2026 | 09:49 PM"
+          "date": "2026-10-28",
+          "dateText": "28 October 2026 | 07:56 PM"
         },
         {
           "label": "Last Date for Registration",
-          "date": "2026-10-28",
-          "dateText": "28/10/2026"
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
         },
         {
           "label": "Pay Exam Fee Last Date",
-          "date": "2026-10-28",
-          "dateText": "28/10/2026"
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
         },
         {
           "label": "Last Date Correction",
-          "date": "2026-10-31",
-          "dateText": "31/10/2026"
+          "date": "2026-11-07",
+          "dateText": "07/11/2026"
         }
       ],
       "officialLink": "https://apply.upessc.org/register",
@@ -5188,8 +5200,8 @@
           "label": "Apply Online (OTR)"
         },
         {
-          "url": "https://upessc.up.gov.in/Notice/40d4-f371-4c8d-139c-599c.pdf",
-          "label": "Download Date Extended Notice"
+          "url": "https://upessc.up.gov.in/Notice/4b1f-907a-4508-5c3a-0c65.pdf",
+          "label": "Download Date Extended & Eligibility Related Notice"
         },
         {
           "url": "https://doc.sarkariresults.org.in/UP_Primary_Teacher_I_V_Syllabus_2026%20(1).pdf",
@@ -5319,11 +5331,11 @@
     }
   },
   "https://www.sarkariresult.com/2026/dsssb-various-post-oct26/": {
-    "attemptedAt": "2026-10-23T06:27:14.415Z",
+    "attemptedAt": "2026-11-03T09:36:00.571Z",
     "parser": "v2",
     "details": {
       "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
-      "publishedDate": "2026-10-19",
+      "publishedDate": "2026-10-27",
       "openDate": "2026-10-06",
       "lastDate": "2026-11-04",
       "examDate": null,
@@ -5332,13 +5344,13 @@
       "interviewDate": null,
       "vacancies": "641",
       "ageLimit": "18–27 years",
-      "eligibility": "Graduate with speed of not less than 110 words per minute in Shorthand and 40 words per minute in typewriting.",
+      "eligibility": "Bachelor Degree in Any Stream. Shorthand Speed : 110 WPM Typewriting Speed : 40 WPM",
       "applicationFee": "General / OBC / EWS : 100/- SC / ST / PH : 0/- Female Candidate : 0/-",
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-19",
-          "dateText": "19 October 2026 | 06:06 PM"
+          "date": "2026-10-27",
+          "dateText": "27 October 2026 | 10:58 AM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -5618,7 +5630,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-anganwadi-worker/": {
-    "attemptedAt": "2026-10-24T04:44:48.998Z",
+    "attemptedAt": "2026-11-03T09:35:51.092Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh District Program Officer",
@@ -5738,7 +5750,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/army-tgc-145-sep26/": {
-    "attemptedAt": "2026-10-24T04:44:51.967Z",
+    "attemptedAt": "2026-11-03T09:35:56.506Z",
     "parser": "v2",
     "details": {
       "organization": "Join Indian Army",
@@ -5789,7 +5801,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-anganwadi-helper-june26/": {
-    "attemptedAt": "2026-10-24T04:44:52.012Z",
+    "attemptedAt": "2026-11-03T09:35:56.598Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh District Program Officer",
@@ -5858,7 +5870,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ibps-hindi-officer-ho-sep26/": {
-    "attemptedAt": "2026-10-24T04:44:52.032Z",
+    "attemptedAt": "2026-11-03T09:35:56.958Z",
     "parser": "v2",
     "details": {
       "organization": "Institute of Banking Personal Selection (IBPS)",
@@ -5909,15 +5921,15 @@
     }
   },
   "https://www.sarkariresult.com/2026/isro-various-post-jul26/": {
-    "attemptedAt": "2026-10-24T04:44:54.488Z",
+    "attemptedAt": "2026-11-03T09:36:00.948Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Space Research Organization (ISRO) Centralized Recruitment Board ICRB",
-      "publishedDate": "2026-09-25",
+      "publishedDate": "2026-10-24",
       "openDate": "2026-07-27",
       "lastDate": "2026-08-16",
       "examDate": "2026-09-21",
-      "resultDate": "2026-09-25",
+      "resultDate": "2026-10-24",
       "admitCardDate": "2026-09-10",
       "interviewDate": null,
       "vacancies": "244",
@@ -5927,8 +5939,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-09-25",
-          "dateText": "25 September 2026 | 01:00 PM"
+          "date": "2026-10-24",
+          "dateText": "24 October 2026 | 07:00 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -5954,11 +5966,25 @@
           "label": "Answer key Available",
           "date": "2026-09-25",
           "dateText": "25/09/2026"
+        },
+        {
+          "label": "Result Available",
+          "date": "2026-10-24",
+          "dateText": "24/10/2026"
+        },
+        {
+          "label": "Skill Test Date",
+          "date": "2026-11-01",
+          "dateText": "01/11/2026"
         }
       ],
-      "officialLink": "https://www.isro.gov.in/",
+      "officialLink": "https://www.isro.gov.in/ICRB_Recruitment11.html",
       "notificationLink": "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/July/Bilingual%20Advertisement_Asst_JPA_UDC_Steno_ICRB_2026_27072026.pdf",
       "officialLinks": [
+        {
+          "url": "https://www.isro.gov.in/ICRB_Recruitment11.html",
+          "label": "Download Result"
+        },
         {
           "url": "https://cdn.digialm.com//EForms/configuredHtml/1258/101396//Index.html",
           "label": "Download Answer key"
@@ -5979,7 +6005,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/icf-chennai-apprentices-202/": {
-    "attemptedAt": "2026-10-24T04:44:52.093Z",
+    "attemptedAt": "2026-11-03T09:35:57.082Z",
     "parser": "v2",
     "details": {
       "organization": "Integral Coach Factory ICF",
@@ -6074,7 +6100,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/sjvn-various-jul26/": {
-    "attemptedAt": "2026-10-24T04:44:52.103Z",
+    "attemptedAt": "2026-11-03T09:35:57.143Z",
     "parser": "v2",
     "details": {
       "organization": "Satluj Jal Vidyut Nigam Limited",
@@ -6130,7 +6156,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/nielit-ccc-july26/": {
-    "attemptedAt": "2026-10-24T04:44:52.348Z",
+    "attemptedAt": "2026-11-03T09:35:57.632Z",
     "parser": "v2",
     "details": {
       "organization": "NIELIT CCC",
@@ -6166,7 +6192,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ccrum-various-post-jul26/": {
-    "attemptedAt": "2026-10-24T04:44:52.321Z",
+    "attemptedAt": "2026-11-03T09:35:57.808Z",
     "parser": "v2",
     "details": {
       "organization": "Central Council for Research in Unani Medicine (CCRUM)",
@@ -6217,7 +6243,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/jnu-non-teaching-june26/": {
-    "attemptedAt": "2026-10-24T04:44:52.408Z",
+    "attemptedAt": "2026-11-03T09:35:57.674Z",
     "parser": "v2",
     "details": {
       "organization": "JNU Jawaharlal Nehru University",
@@ -6268,7 +6294,7 @@
     }
   },
   "https://www.sarkariresult.com/mp/mpesb-primary-tet-2024/": {
-    "attemptedAt": "2026-10-24T04:44:48.965Z",
+    "attemptedAt": "2026-11-03T09:35:52.102Z",
     "parser": "v2",
     "details": {
       "organization": "MPESB Primary School Teacher Eligibility Test Varg 3 PSTET 2024 Download",
@@ -6373,7 +6399,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/mphc-sr-computer-programmer-july26/": {
-    "attemptedAt": "2026-10-24T04:44:52.478Z",
+    "attemptedAt": "2026-11-03T09:35:57.639Z",
     "parser": "v2",
     "details": {
       "organization": "High Court of Madhya Pradesh, Jabalpur",
@@ -6414,7 +6440,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/dcb-ae-and-je-july26/": {
-    "attemptedAt": "2026-10-24T04:44:52.472Z",
+    "attemptedAt": "2026-11-03T09:35:57.883Z",
     "parser": "v2",
     "details": {
       "organization": "Delhi Cantonment Board DCB",
@@ -6465,7 +6491,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-gorakhpur-ecce-educator-july26/": {
-    "attemptedAt": "2026-10-24T04:44:52.688Z",
+    "attemptedAt": "2026-11-03T09:35:58.174Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
@@ -6555,11 +6581,11 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-pet-all-form-2026/": {
-    "attemptedAt": "2026-10-24T04:44:52.799Z",
+    "attemptedAt": "2026-11-03T09:35:58.233Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
-      "publishedDate": "2026-09-10",
+      "publishedDate": "2026-11-03",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -6573,8 +6599,33 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-09-10",
-          "dateText": "10 September 2026 | 06:36 PM"
+          "date": "2026-11-03",
+          "dateText": "03 November 2026 | 01:36 PM"
+        },
+        {
+          "label": "26-Exam/2026",
+          "date": "2026-11-10",
+          "dateText": "Combined Lower Subordinate Services (Lower PCS) 1784 10/11/2026 to 01/12/2026 Click Here"
+        },
+        {
+          "label": "25-Exam/2026",
+          "date": "2026-11-06",
+          "dateText": "Combined Junior Engineer Electrical 380 06/11/2026 to 27/11/2026 Click Here"
+        },
+        {
+          "label": "24-Exam/2026",
+          "date": "2026-11-03",
+          "dateText": "Combined Junior Engineer Mechanical 1156 03/11/2026 to 25/11/2026 Click Here"
+        },
+        {
+          "label": "23-Exam/2026",
+          "date": "2026-10-16",
+          "dateText": "Regional Youth Welfare and Regional Development Team Officer and Physical Instructor 412 1"
+        },
+        {
+          "label": "22-Exam/2026",
+          "date": "2026-10-14",
+          "dateText": "Sports Directorate 108 14/10/2026 to 04/11/2026 Click Here"
         },
         {
           "label": "21-Exam/2026",
@@ -6703,7 +6754,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/upsssc-otr-online-form-2026/": {
-    "attemptedAt": "2026-10-24T04:44:52.734Z",
+    "attemptedAt": "2026-11-03T09:35:58.215Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -6751,7 +6802,7 @@
     }
   },
   "https://www.sarkariresult.com/mp/mppsc-adpo-2026/": {
-    "attemptedAt": "2026-10-24T04:44:52.893Z",
+    "attemptedAt": "2026-11-03T09:35:58.409Z",
     "parser": "v2",
     "details": {
       "organization": "Madhya Pradesh State Service",
@@ -6830,7 +6881,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/bpssc-bihar-fro-july26/": {
-    "attemptedAt": "2026-10-24T04:44:52.914Z",
+    "attemptedAt": "2026-11-03T09:35:58.788Z",
     "parser": "v2",
     "details": {
       "organization": "Bihar Police Subordinate Services Commission BPSSC",
@@ -6881,7 +6932,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/hssc-group-d-05-2026/": {
-    "attemptedAt": "2026-10-24T04:44:53.109Z",
+    "attemptedAt": "2026-11-03T09:35:58.650Z",
     "parser": "v2",
     "details": {
       "organization": "Haryana Staff Selection Commission HSSC",
@@ -6936,7 +6987,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/kgbv-hamirpur-jul26/": {
-    "attemptedAt": "2026-10-24T04:44:53.135Z",
+    "attemptedAt": "2026-11-03T09:35:58.742Z",
     "parser": "v2",
     "details": {
       "organization": "Kasturba Gandhi Balika Vidyalaya (KGBV) Hamirpur",
@@ -6982,7 +7033,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/upsrtc-conductor-jun26/": {
-    "attemptedAt": "2026-10-24T04:44:53.323Z",
+    "attemptedAt": "2026-11-03T09:35:58.937Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh State Road Transport Corporation (UPSRTC)",
@@ -7023,7 +7074,7 @@
     }
   },
   "https://www.sarkariresult.com/bank/boi-credit-officer-jun26/": {
-    "attemptedAt": "2026-10-24T04:44:53.373Z",
+    "attemptedAt": "2026-11-03T09:35:58.825Z",
     "parser": "v2",
     "details": {
       "organization": "Bank of India",
@@ -7092,7 +7143,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ecece-educator-maharajganj-june26/": {
-    "attemptedAt": "2026-10-24T04:44:53.457Z",
+    "attemptedAt": "2026-11-03T09:35:59.333Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
@@ -7133,7 +7184,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-bijnor-educator-jun26/": {
-    "attemptedAt": "2026-10-24T04:44:53.235Z",
+    "attemptedAt": "2026-11-03T09:35:59.220Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
@@ -7174,7 +7225,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/pm-shri-school-jun26/": {
-    "attemptedAt": "2026-10-24T04:44:53.488Z",
+    "attemptedAt": "2026-11-03T09:35:59.365Z",
     "parser": "v2",
     "details": {
       "organization": "PM Shri School Jawahar Navodaya Vidyalaya Meja Khas Prayagraj",
@@ -7215,7 +7266,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/police-modern-school-prayagraj-2026/": {
-    "attemptedAt": "2026-10-24T04:44:53.647Z",
+    "attemptedAt": "2026-11-03T09:35:59.358Z",
     "parser": "v2",
     "details": {
       "organization": "Police Modern School Prayagraj",
@@ -7271,7 +7322,7 @@
     }
   },
   "https://www.sarkariresult.com/mp/mp-primary-teacher-pstst-2025/": {
-    "attemptedAt": "2026-10-24T04:44:55.277Z",
+    "attemptedAt": "2026-11-03T09:36:02.235Z",
     "parser": "v2",
     "details": {
       "organization": "MPESB Primary School Teacher Selection Test PSPST 2025",
@@ -7354,7 +7405,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/cbi-apprentice-june-2026/": {
-    "attemptedAt": "2026-10-24T04:44:55.319Z",
+    "attemptedAt": "2026-11-03T09:36:02.288Z",
     "parser": "v2",
     "details": {
       "organization": "Central Bank of India Apprentice",
@@ -7435,7 +7486,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/kgbv-sultanpur-june26/": {
-    "attemptedAt": "2026-10-24T04:44:53.745Z",
+    "attemptedAt": "2026-11-03T09:35:59.480Z",
     "parser": "v2",
     "details": {
       "organization": "Kasturba Gandhi Balika Vidyalaya (KGBV) Sultanpur",
@@ -7477,7 +7528,7 @@
     }
   },
   "https://www.sarkariresult.com/ssc/ssc-chsl-2025/": {
-    "attemptedAt": "2026-10-24T04:44:53.773Z",
+    "attemptedAt": "2026-11-03T09:35:59.810Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission SSC",
@@ -7596,7 +7647,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/upsrlm-outsourcing-jobs-june26/": {
-    "attemptedAt": "2026-10-24T04:44:53.810Z",
+    "attemptedAt": "2026-11-03T09:35:59.867Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
@@ -7637,16 +7688,16 @@
     }
   },
   "https://www.sarkariresult.com/railway/rrb-alp-cen-01-2026/": {
-    "attemptedAt": "2026-10-24T04:44:49.014Z",
+    "attemptedAt": "2026-11-03T09:35:51.020Z",
     "parser": "v2",
     "details": {
       "organization": "Railway RRB Assistant Loco Pilot ALP",
-      "publishedDate": "2026-10-24",
+      "publishedDate": "2026-10-30",
       "openDate": "2026-05-15",
       "lastDate": "2026-06-14",
       "examDate": null,
       "resultDate": null,
-      "admitCardDate": null,
+      "admitCardDate": "2026-10-30",
       "interviewDate": null,
       "vacancies": "11127",
       "ageLimit": "18–30 years",
@@ -7655,8 +7706,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-24",
-          "dateText": "24 October 2026 | 09:45 AM"
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 07:05 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -7672,13 +7723,18 @@
           "label": "June 2026 Revised Application Status Available",
           "date": "2026-10-14",
           "dateText": "14/10/2026"
+        },
+        {
+          "label": "Days Before Exam Admit Card Available",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
         }
       ],
       "officialLink": "https://rrb.digialm.com/EForms/configuredHtml/33244/102956/cOPXnjiLXCY5nEw5Vt/login.html",
       "officialLinks": [
         {
           "url": "https://rrb.digialm.com/EForms/configuredHtml/33244/102956/cOPXnjiLXCY5nEw5Vt/login.html",
-          "label": "Check Exam City / Admit Card"
+          "label": "Download Admit Card"
         },
         {
           "url": "https://doc.sarkariresults.org.in/RRB_ALP_Application_Status_14102026.pdf",
@@ -7704,7 +7760,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/bob-c-and-ic-june-2026/": {
-    "attemptedAt": "2026-10-24T04:44:53.830Z",
+    "attemptedAt": "2026-11-03T09:35:59.894Z",
     "parser": "v2",
     "details": {
       "organization": "Bank of Baroda Corporate and Institutional Credit",
@@ -7821,7 +7877,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/lakshmibai-college-teaching-post-june-2026/": {
-    "attemptedAt": "2026-10-24T04:44:54.049Z",
+    "attemptedAt": "2026-11-03T09:35:59.924Z",
     "parser": "v2",
     "details": {
       "organization": "Lakshmibai College Delhi Various Non Teaching Post",
@@ -7975,7 +8031,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/jipmer-non-faculty-june-2026/": {
-    "attemptedAt": "2026-10-24T04:44:54.119Z",
+    "attemptedAt": "2026-11-03T09:35:59.997Z",
     "parser": "v2",
     "details": {
       "organization": "JIPMER Group A Non-Faculty",
@@ -8036,7 +8092,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-election-computer-assistant/": {
-    "attemptedAt": "2026-10-24T04:44:54.180Z",
+    "attemptedAt": "2026-11-03T09:36:00.393Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
@@ -8190,7 +8246,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-sewayojna-mts/": {
-    "attemptedAt": "2026-10-24T04:44:54.425Z",
+    "attemptedAt": "2026-11-03T09:36:00.907Z",
     "parser": "v2",
     "details": {
       "organization": "Sarkari",
@@ -8210,7 +8266,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-advt-11-2023/": {
-    "attemptedAt": "2026-10-24T04:44:54.544Z",
+    "attemptedAt": "2026-11-03T09:36:01.070Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -8304,7 +8360,7 @@
     }
   },
   "https://www.sarkariresult.com/ssc/ssc-stenographer-2026/": {
-    "attemptedAt": "2026-10-24T04:44:54.258Z",
+    "attemptedAt": "2026-11-03T09:35:56.880Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission SSC",
@@ -8375,7 +8431,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-lekhpal-02-exam-2025/": {
-    "attemptedAt": "2026-10-24T04:44:54.433Z",
+    "attemptedAt": "2026-11-03T09:36:00.961Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -8499,7 +8555,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ctet-september-2026/": {
-    "attemptedAt": "2026-10-24T04:44:49.736Z",
+    "attemptedAt": "2026-11-03T09:35:51.970Z",
     "parser": "v2",
     "details": {
       "organization": "Central Board of Secondary Education (CBSE)",
@@ -8573,7 +8629,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/mpesb-group2-subgroup-4-aug26/": {
-    "attemptedAt": "2026-10-24T04:44:54.746Z",
+    "attemptedAt": "2026-11-03T09:36:01.421Z",
     "parser": "v2",
     "details": {
       "organization": "Madhya Pradesh Employee Selection Board (MPESB)",
@@ -8656,7 +8712,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ibps-clerk-16th-august26/": {
-    "attemptedAt": "2026-10-24T04:44:54.595Z",
+    "attemptedAt": "2026-11-03T09:36:01.179Z",
     "parser": "v2",
     "details": {
       "organization": "IBPS Clerk CRP XVI 16th",
@@ -8720,7 +8776,7 @@
     }
   },
   "https://www.sarkariresult.com/2025/uppsc-asst-professor-a7-e1/": {
-    "attemptedAt": "2026-10-24T04:44:54.825Z",
+    "attemptedAt": "2026-11-03T09:36:01.472Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Public Service Commission UPPSC",
@@ -8824,7 +8880,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/bob-lbo-aug26/": {
-    "attemptedAt": "2026-10-24T04:44:54.810Z",
+    "attemptedAt": "2026-11-03T09:36:01.527Z",
     "parser": "v2",
     "details": {
       "organization": "Bank of Baroda (BOB)",
@@ -8892,11 +8948,11 @@
     }
   },
   "https://www.sarkariresult.com/2026/rajasthan-rpsc-senior-teacher-07-2025/": {
-    "attemptedAt": "2026-10-24T04:44:54.923Z",
+    "attemptedAt": "2026-11-03T09:36:01.623Z",
     "parser": "v2",
     "details": {
       "organization": "Rajasthan Public Service Commission",
-      "publishedDate": "2026-10-13",
+      "publishedDate": "2026-10-29",
       "openDate": "2025-08-19",
       "lastDate": "2025-09-17",
       "examDate": null,
@@ -8910,8 +8966,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-13",
-          "dateText": "13 October 2026 | 06:12 PM"
+          "date": "2026-10-29",
+          "dateText": "29 October 2026 | 11:42 AM"
         },
         {
           "label": "Last Date for Apply",
@@ -8934,9 +8990,13 @@
           "dateText": "28/07/2026"
         }
       ],
-      "officialLink": "https://rpsc.rajasthan.gov.in/Static/Result/62B823FAC97A4AF4B74FE1868919F5BD.pdf",
+      "officialLink": "https://rpsc.rajasthan.gov.in/Static/Result/4AD503915DB84384BB2391C863ED4C90.pdf",
       "notificationLink": "https://rpsc.rajasthan.gov.in/Static/RecruitmentAdvertisements/ED4F69C3BFA14F9BBACDC0077554C90D.pdf",
       "officialLinks": [
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/Result/4AD503915DB84384BB2391C863ED4C90.pdf",
+          "label": "Download Result (29/10/2026)"
+        },
         {
           "url": "https://rpsc.rajasthan.gov.in/Static/Result/62B823FAC97A4AF4B74FE1868919F5BD.pdf",
           "label": "Download Result"
@@ -8977,7 +9037,7 @@
     }
   },
   "https://www.sarkariresult.com/2025/uppsc-gic-lecturer-2025/": {
-    "attemptedAt": "2026-10-24T04:44:54.936Z",
+    "attemptedAt": "2026-11-03T09:36:01.729Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Public Service Commission UPPSC",
@@ -9100,7 +9160,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/chhattisgarh-set-jul26/": {
-    "attemptedAt": "2026-10-24T04:44:49.763Z",
+    "attemptedAt": "2026-11-03T09:35:52.038Z",
     "parser": "v2",
     "details": {
       "organization": "Chhattisgarh Vyapam",
@@ -9169,7 +9229,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/mpesb-group2-sub1-krashi-vistar/": {
-    "attemptedAt": "2026-10-24T04:44:55.097Z",
+    "attemptedAt": "2026-11-03T09:36:01.989Z",
     "parser": "v2",
     "details": {
       "organization": "Madhya Pradesh Employee Selection Board (MPESB)",
@@ -9247,7 +9307,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/air-force-agniveervayu-musician-july26/": {
-    "attemptedAt": "2026-10-24T04:44:50.013Z",
+    "attemptedAt": "2026-11-03T09:35:52.376Z",
     "parser": "v2",
     "details": {
       "organization": "Join Indian Air Force",
@@ -9279,7 +9339,7 @@
           "dateText": "02/08/2026"
         }
       ],
-      "officialLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/101682/login.html",
+      "officialLink": "https://indianairforce.nic.in/",
       "notificationLink": "https://iafrecruitment.edcil.co.in/agniveervayu/pdffiles/Musician%20%20Rally%2001%20of%202027.pdf",
       "officialLinks": [
         {
@@ -9298,7 +9358,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/bsnl-jto-2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.029Z",
+    "attemptedAt": "2026-11-03T09:35:52.527Z",
     "parser": "v2",
     "details": {
       "organization": "BSNL Junior Telecom Officer Telecom",
@@ -9345,7 +9405,7 @@
           "dateText": "29/08/2026"
         }
       ],
-      "officialLink": "https://ibtexamination.com/secuAdmitcard/bsnlAdmitcard05/",
+      "officialLink": "https://externalexam.bsnl.co.in/",
       "notificationLink": "https://externalexam.bsnl.co.in/Examination%20notification%20DR%20JTO(T).pdf",
       "officialLinks": [
         {
@@ -9376,7 +9436,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-lower-07-exam-2026/": {
-    "attemptedAt": "2026-10-24T04:44:55.254Z",
+    "attemptedAt": "2026-11-03T09:36:02.119Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -9438,7 +9498,7 @@
           "dateText": "24/08/2026"
         }
       ],
-      "officialLink": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=MAIN",
+      "officialLink": "https://upsssc.gov.in//AllNotifications.aspx",
       "officialLinks": [
         {
           "url": "https://examqp.com/upssscLPCSv02A26/",
@@ -9484,7 +9544,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/nta-csir-net-june2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.105Z",
+    "attemptedAt": "2026-11-03T09:35:52.680Z",
     "parser": "v2",
     "details": {
       "organization": "National Testing Agency (NTA)",
@@ -9598,7 +9658,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/upsssc-10-exam-2026/": {
-    "attemptedAt": "2026-10-24T04:44:55.400Z",
+    "attemptedAt": "2026-11-03T09:36:02.498Z",
     "parser": "v2",
     "details": {
       "organization": "UPSSSC Platoon Commander / Block Organizer",
@@ -9657,7 +9717,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/aiims-cre-june-2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.124Z",
+    "attemptedAt": "2026-11-03T09:35:52.688Z",
     "parser": "v2",
     "details": {
       "organization": "All India Institute of Medical Science AIIMS",
@@ -9714,7 +9774,7 @@
           "dateText": "11/08/2026"
         }
       ],
-      "officialLink": "https://www.aiimsexams.ac.in/landingpage/result",
+      "officialLink": "https://aiimsexams.ac.in/advertisement/6a2cdd89be81945a8330d450",
       "notificationLink": "https://doc.sarkariresults.org.in/AIIMS_CRE_5_Notification_1781360803517-426450330.pdf",
       "officialLinks": [
         {
@@ -9761,7 +9821,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ibps-so-16th-june26/": {
-    "attemptedAt": "2026-10-24T04:44:55.564Z",
+    "attemptedAt": "2026-11-03T09:36:02.828Z",
     "parser": "v2",
     "details": {
       "organization": "Institute of Banking Personal Selection (IBPS)",
@@ -10107,15 +10167,15 @@
     }
   },
   "https://www.sarkariresult.com/2026/rrb-section-controller-03-2026/": {
-    "attemptedAt": "2026-10-24T04:44:55.588Z",
+    "attemptedAt": "2026-11-03T09:36:02.868Z",
     "parser": "v2",
     "details": {
       "organization": "Railway RRB Section Controller CEN 03/2026",
-      "publishedDate": "2026-10-16",
+      "publishedDate": "2026-10-26",
       "openDate": "2026-07-15",
       "lastDate": "2026-08-14",
       "examDate": null,
-      "resultDate": "2026-10-16",
+      "resultDate": "2026-10-26",
       "admitCardDate": null,
       "interviewDate": null,
       "vacancies": "119",
@@ -10125,8 +10185,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-16",
-          "dateText": "16 October 2026 | 04:09 PM"
+          "date": "2026-10-26",
+          "dateText": "26 October 2026 | 04:55 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -10140,15 +10200,23 @@
         },
         {
           "label": "Days Before Exam Answer Key Available",
-          "date": "2026-10-16",
-          "dateText": "16/10/2026"
+          "date": "2026-10-26",
+          "dateText": "26/10/2026"
         }
       ],
       "officialLink": "https://qa-efmprd.digialm.com//EForms/configuredHtml/33128/102721/yTOWT6zoDJDKpLRfP3/login.html",
       "officialLinks": [
         {
-          "url": "https://qa-efmprd.digialm.com//EForms/configuredHtml/33128/102721/yTOWT6zoDJDKpLRfP3/login.html",
+          "url": "https://rrb.digialm.com//EForms/configuredHtml/33128/102721/lM441ZzlGKrNhupJK6/login.html",
           "label": "Download Answer Key"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/RRBStationController_AnswerKey.pdf",
+          "label": "Download Answer Key Notice"
+        },
+        {
+          "url": "https://qa-efmprd.digialm.com//EForms/configuredHtml/33128/102721/yTOWT6zoDJDKpLRfP3/login.html",
+          "label": "Check Exam City / Admit Card"
         },
         {
           "url": "https://www.rrbapply.gov.in/#/auth/landing",
@@ -10373,7 +10441,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/delhi-hc-hjs-july26/": {
-    "attemptedAt": "2026-10-24T04:44:55.612Z",
+    "attemptedAt": "2026-11-03T09:36:03.051Z",
     "parser": "v2",
     "details": {
       "organization": "High Court of Delhi, New Delhi",
@@ -10430,7 +10498,7 @@
           "dateText": "13/10/2026"
         }
       ],
-      "officialLink": "https://delhihighcourt.nic.in/files/2026-08/recuritment/upload_shortlisted_notice.pdf",
+      "officialLink": "https://applycareer.co.in/dhc/highcourt2026dhjse/DHJSE2026_AdmitMain.aspx",
       "notificationLink": "https://delhihighcourt.nic.in/files/2026-07/recuritment/adv-eng_dhjs-2026.pdf",
       "officialLinks": [
         {
@@ -10536,7 +10604,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/uppsc-atp-november25/": {
-    "attemptedAt": "2026-10-24T04:44:55.783Z",
+    "attemptedAt": "2026-11-03T09:36:03.236Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Public Service Commission UPPSC",
@@ -10646,16 +10714,16 @@
     }
   },
   "https://www.sarkariresult.com/2026/ssc-junior-engineer-2026/": {
-    "attemptedAt": "2026-10-23T06:27:20.379Z",
+    "attemptedAt": "2026-11-03T09:36:02.843Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission SSC",
-      "publishedDate": "2026-10-01",
+      "publishedDate": "2026-10-30",
       "openDate": "2026-09-02",
       "lastDate": "2026-09-22",
       "examDate": null,
       "resultDate": null,
-      "admitCardDate": null,
+      "admitCardDate": "2026-10-30",
       "interviewDate": null,
       "vacancies": "1748",
       "ageLimit": "18–32 years",
@@ -10664,8 +10732,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-01",
-          "dateText": "01 October 2026 | 06:17 PM"
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 06:59 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -10676,18 +10744,32 @@
           "label": "upto 11 PM Pay Fee Last Date",
           "date": "2026-09-23",
           "dateText": "23/09/2026"
+        },
+        {
+          "label": "Nov 2026 and 30 Nov to 01 Dec 2026 Exam City Available",
+          "date": "2026-10-24",
+          "dateText": "24/10/2026"
+        },
+        {
+          "label": "December 2026 Admit Card Available",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
         }
       ],
-      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_01102026.pdf",
+      "officialLink": "https://ssc.gov.in/login",
       "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/notice_16092026.pdf",
       "officialLinks": [
         {
-          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_01102026.pdf",
-          "label": "Download Exam Notice"
+          "url": "https://ssc.gov.in/login",
+          "label": "Download Admit Card"
         },
         {
-          "url": "https://ssc.gov.in/login",
-          "label": "Apply Online"
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE_2026_City_Live_Notice_23102026.pdf",
+          "label": "Download Exam City Notice"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_01102026.pdf",
+          "label": "Download Exam Notice"
         },
         {
           "url": "https://doc.sarkariresults.org.in/SSC_JE_Syllabus_2026.pdf",
@@ -10700,12 +10782,16 @@
         {
           "url": "https://ssc.gov.in/",
           "label": "Official Website"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Important%20notice_revised_dated_26_10_2026.pdf",
+          "label": "Exam Date Change Notice"
         }
       ]
     }
   },
   "https://www.sarkariresult.com/delhi/delhi-hc-jja-restorer-feb26/": {
-    "attemptedAt": "2026-10-24T04:44:50.089Z",
+    "attemptedAt": "2026-11-03T09:35:52.959Z",
     "parser": "v2",
     "details": {
       "organization": "High Court of Delhi, New Delhi",
@@ -10801,7 +10887,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ibps-po-xvi-mt-june26/": {
-    "attemptedAt": "2026-10-24T04:44:55.920Z",
+    "attemptedAt": "2026-11-03T09:36:03.373Z",
     "parser": "v2",
     "details": {
       "organization": "IBPS Common Recruitment Process Probationary Officer / Management Trainees – XVI",
@@ -11004,7 +11090,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-police-constable-jan26/": {
-    "attemptedAt": "2026-10-24T04:44:55.978Z",
+    "attemptedAt": "2026-11-03T09:36:03.387Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Police Recruitment & Promotion Board (UPPRPB)",
@@ -11118,7 +11204,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/upsssc-paramedical-fsl-15-exam-2026/": {
-    "attemptedAt": "2026-10-24T04:44:55.940Z",
+    "attemptedAt": "2026-11-03T09:36:03.440Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -11227,7 +11313,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/uttarakhand-utet-2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.495Z",
+    "attemptedAt": "2026-11-03T09:35:52.941Z",
     "parser": "v2",
     "details": {
       "organization": "Uttarakhand Board of School Education (UBSE)",
@@ -11284,7 +11370,7 @@
     }
   },
   "https://www.sarkariresult.com/2025/uppsc-pre-2025/": {
-    "attemptedAt": "2026-10-24T04:44:56.163Z",
+    "attemptedAt": "2026-11-03T09:36:03.846Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Public Service Commission UPPSC",
@@ -11393,7 +11479,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-forest-guard-12-exam-2026/": {
-    "attemptedAt": "2026-10-24T04:44:56.027Z",
+    "attemptedAt": "2026-11-03T09:36:03.617Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -11566,7 +11652,7 @@
     }
   },
   "https://www.sarkariresult.com/railway/rrb-ntpc-graduate-06-2025/": {
-    "attemptedAt": "2026-10-24T04:44:56.352Z",
+    "attemptedAt": "2026-11-03T09:36:03.932Z",
     "parser": "v2",
     "details": {
       "organization": "Railway RRB Various posts of Non-Technical Popular Categories (Graduate) CEN 06/2025",
@@ -11695,7 +11781,7 @@
     }
   },
   "https://www.sarkariresult.com/force/indian-airforce-agniveervayu-02-2027/": {
-    "attemptedAt": "2026-10-24T04:44:50.375Z",
+    "attemptedAt": "2026-11-03T09:35:53.067Z",
     "parser": "v2",
     "details": {
       "organization": "Join Indian Airforce",
@@ -11761,7 +11847,7 @@
     }
   },
   "https://www.sarkariresult.com/force/navy-ssr-mr-inet-2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.510Z",
+    "attemptedAt": "2026-11-03T09:35:53.631Z",
     "parser": "v2",
     "details": {
       "organization": "Join Indian Navy Agniveer SSR & MR 01/2027 & 02/2027 Batch INET 2026",
@@ -12286,7 +12372,7 @@
     }
   },
   "https://www.sarkariresult.com/ssc/ssc-selection-post-14th-2026/": {
-    "attemptedAt": "2026-10-24T04:44:50.466Z",
+    "attemptedAt": "2026-11-03T09:35:53.240Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission SSC",
@@ -12353,7 +12439,7 @@
     }
   },
   "https://www.sarkariresult.com/mp/mpesb-vanrakshak-jail-prahari-feb26/": {
-    "attemptedAt": "2026-10-24T04:44:56.322Z",
+    "attemptedAt": "2026-11-03T09:36:03.962Z",
     "parser": "v2",
     "details": {
       "organization": "MPESB MP Van Rakshak & Kshetra Rakshak Karyapalik Van Vibhag, Jail Prahari PET Schedule 2026",
@@ -12405,7 +12491,7 @@
           "dateText": "22/06/2026"
         }
       ],
-      "officialLink": "https://esb.mp.gov.in/results/RESULT_26/JAIL_VAN_RES26/default_Results.htm",
+      "officialLink": "https://esb.mp.gov.in/tacs/tac_2026/JAIL_VAN_TAC26/default_tac.htm",
       "notificationLink": "https://esb.mp.gov.in/Rulebooks/RB_2026/JAIL_VAN_2026_RuleBook_27022026.pdf",
       "officialLinks": [
         {
@@ -12452,7 +12538,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-pharmaceutical-01-2024/": {
-    "attemptedAt": "2026-10-24T04:44:56.367Z",
+    "attemptedAt": "2026-11-03T09:36:04.362Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
@@ -12622,15 +12708,15 @@
     }
   },
   "https://www.sarkariresult.com/railway/rrb-ntpc-ug-07-2025/": {
-    "attemptedAt": "2026-10-24T04:44:56.392Z",
+    "attemptedAt": "2026-11-03T09:36:04.126Z",
     "parser": "v2",
     "details": {
       "organization": "Railway RRB Non Technical Popular Categories NTPC 10+2 Under Graduate 12th Level CEN 07/2025",
-      "publishedDate": "2026-09-24",
+      "publishedDate": "2026-10-30",
       "openDate": "2025-10-28",
       "lastDate": "2025-12-04",
-      "examDate": "2026-09-17",
-      "resultDate": "2026-09-24",
+      "examDate": "2026-10-30",
+      "resultDate": "2026-10-30",
       "admitCardDate": "2026-09-13",
       "interviewDate": null,
       "vacancies": "3050",
@@ -12640,8 +12726,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-09-24",
-          "dateText": "24 September 2026 | 12:44 PM"
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 05:37 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -12692,6 +12778,11 @@
           "label": "Answer Key Available",
           "date": "2026-09-24",
           "dateText": "24/09/2026"
+        },
+        {
+          "label": "CBT II Result Available",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
         }
       ],
       "officialLink": "https://rrb.digialm.com//EForms/configuredHtml/33128/100181/login.html",
@@ -12699,7 +12790,19 @@
       "officialLinks": [
         {
           "url": "https://rrb.digialm.com//EForms/configuredHtml/33128/100181/login.html",
-          "label": "Download Answer Key"
+          "label": "Download CBT II Score Card"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/RRB_Bangalore_NTPC_Result_30102026.pdf",
+          "label": "Download RRB Bangalore CBT II Result"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/RRB_Ajmer_072025_Result_30102026.pdf",
+          "label": "Download RRB Ajmer CBT II Result"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Download CBT II Result (Other Zone)"
         },
         {
           "url": "https://doc.sarkariresults.org.in/rb_ntpc_aNSWERKEY.pdf",
@@ -12724,18 +12827,6 @@
         {
           "url": "https://doc.sarkariresults.org.in/RRB_NTPC_Malda_Result.pdf",
           "label": "Download RRB Malda Result"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/RRB_Prayagraj_result_Cutoff_NTPC_UG2508.pdf",
-          "label": "Download RRB Prayagraj Result"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/RRB_Patna_NTPC_UG_Result_2508.pdf",
-          "label": "Download RRB Patna Result"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/RRB_MumbaI_NTPC_UG_Result_2508.pdf",
-          "label": "Download RRB Mumbai Result"
         }
       ]
     }
@@ -13152,7 +13243,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/aiims-norcet-11th-july26/": {
-    "attemptedAt": "2026-10-24T04:44:50.476Z",
+    "attemptedAt": "2026-11-03T09:35:53.860Z",
     "parser": "v2",
     "details": {
       "organization": "AIIMS Nursing Officer",
@@ -13244,7 +13335,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/patna-high-court-july26/": {
-    "attemptedAt": "2026-10-24T04:44:56.532Z",
+    "attemptedAt": "2026-11-03T09:36:04.425Z",
     "parser": "v2",
     "details": {
       "organization": "High Court of Judicature at Patna (PHC)",
@@ -13322,7 +13413,7 @@
     }
   },
   "https://www.sarkariresult.com/bihar/csbc-bihar-constable-special-01-2026/": {
-    "attemptedAt": "2026-10-24T04:44:56.793Z",
+    "attemptedAt": "2026-11-03T09:36:04.505Z",
     "parser": "v2",
     "details": {
       "organization": "Central Selection Board of Constable CSBC",
@@ -13431,11 +13522,11 @@
     }
   },
   "https://www.sarkariresult.com/upsc/upsc-cds-ii-exam-2026/": {
-    "attemptedAt": "2026-10-24T04:44:56.774Z",
+    "attemptedAt": "2026-11-03T09:36:04.478Z",
     "parser": "v2",
     "details": {
       "organization": "Union Public Service Commission (UPSC)",
-      "publishedDate": "2026-10-19",
+      "publishedDate": "2026-10-26",
       "openDate": "2026-05-20",
       "lastDate": "2026-06-11",
       "examDate": "2026-09-13",
@@ -13449,8 +13540,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-19",
-          "dateText": "19 October 2026 | 07:55 PM"
+          "date": "2026-10-26",
+          "dateText": "26 October 2026 | 08:04 PM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -13483,9 +13574,13 @@
           "dateText": "19/10/2026"
         }
       ],
-      "officialLink": "https://www.upsc.gov.in/sites/default/files/WR-CDSE-II-2026-Engl-19102026.pdf",
+      "officialLink": "https://upsconline.nic.in/",
       "notificationLink": "https://upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf",
       "officialLinks": [
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/WR-NameList-CDSE-II-2026-Engl-261026.pdf",
+          "label": "Download Result Name Wise"
+        },
         {
           "url": "https://www.upsc.gov.in/sites/default/files/WR-CDSE-II-2026-Engl-19102026.pdf",
           "label": "Download Result"
@@ -13579,7 +13674,7 @@
     }
   },
   "https://www.sarkariresult.com/ssc/ssc-jht-2026/": {
-    "attemptedAt": "2026-10-24T04:44:56.740Z",
+    "attemptedAt": "2026-11-03T09:36:04.969Z",
     "parser": "v2",
     "details": {
       "organization": "SSC Staff Selection Commission SSC",
@@ -13657,7 +13752,7 @@
     }
   },
   "https://www.sarkariresult.com/2025/cbse-kvs-nvs-2025/": {
-    "attemptedAt": "2026-10-24T04:44:56.923Z",
+    "attemptedAt": "2026-11-03T09:36:04.960Z",
     "parser": "v2",
     "details": {
       "organization": "Central Board of Secondary Education (CBSE)",
@@ -13776,7 +13871,7 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-fhw-11-exam-2024/": {
-    "attemptedAt": "2026-10-24T04:44:57.099Z",
+    "attemptedAt": "2026-11-03T09:36:05.062Z",
     "parser": "v2",
     "details": {
       "organization": "UPSSSC Female Health Worker FHW",
@@ -13934,13 +14029,13 @@
     }
   },
   "https://www.sarkariresult.com/upsssc/upsssc-stenographer-09-2023/": {
-    "attemptedAt": "2026-10-23T06:27:23.337Z",
+    "attemptedAt": "2026-11-03T09:36:00.596Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
-      "publishedDate": "2026-08-25",
+      "publishedDate": "2026-10-29",
       "openDate": "2023-10-17",
-      "lastDate": null,
+      "lastDate": "2023-11-06",
       "examDate": "2026-09-01",
       "resultDate": "2026-07-22",
       "admitCardDate": "2026-08-25",
@@ -13952,8 +14047,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-08-25",
-          "dateText": "25 August 2026 | 07:45 PM"
+          "date": "2026-10-29",
+          "dateText": "29 October 2026 | 05:19 PM"
         },
         {
           "label": "Last Date for Registration",
@@ -13994,11 +14089,28 @@
           "label": "Admit Card Available",
           "date": "2026-08-25",
           "dateText": "25/08/2026"
+        },
+        {
+          "label": "Document Upload",
+          "date": "2026-10-28",
+          "dateText": "28/10/2026"
         }
       ],
       "officialLink": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=INTRIM",
       "notificationLink": "http://164.100.181.233/document/Files/UP005/UploadNotices/2309021636171254_C.pdf",
       "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in//Modify/Applicant_Login_DocUploadForDV.aspx?ID=DV",
+          "label": "For Upload Documents"
+        },
+        {
+          "url": "https://upsssc.gov.in//ViewPdf.aspx?RBnrgi6ru/ycE0xIsinJjCWz6C3wn3kCvpnTLWyGSnE=",
+          "label": "Download Document Upload Notice"
+        },
+        {
+          "url": "https://upsssc.gov.in/ViewPdf.aspx?EnBiDam5l0EPdvu6OCvRmb596UD5yuyLHUK6lbQfniM=",
+          "label": "Download Skill Test Result"
+        },
         {
           "url": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=INTRIM",
           "label": "Download Admit Card"
@@ -14026,20 +14138,12 @@
         {
           "url": "http://164.100.181.233/document/Files/UP005/UploadNotices/2311041919426232_C.pdf",
           "label": "Download Vacancy Increase Notice"
-        },
-        {
-          "url": "http://164.100.181.233/document/Files/UP005/UploadNotices/2309021636171254_C.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "http://upsssc.gov.in/Default.aspx",
-          "label": "Official Website"
         }
       ]
     }
   },
   "https://www.sarkariresult.com/2026/neet-pg-jun26/": {
-    "attemptedAt": "2026-10-24T04:44:50.807Z",
+    "attemptedAt": "2026-11-03T09:35:53.479Z",
     "parser": "v2",
     "details": {
       "organization": "National Board of Examinations in Medical Sciences NBE NAT Board",
@@ -14113,7 +14217,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/ccl-various-post-july26/": {
-    "attemptedAt": "2026-10-24T04:44:57.450Z",
+    "attemptedAt": "2026-11-03T09:36:05.051Z",
     "parser": "v2",
     "details": {
       "organization": "The Cotton Corporation of India Ltd. CCI",
@@ -14310,7 +14414,7 @@
     }
   },
   "https://www.sarkariresult.com/ssc/ssc-mts-2025/": {
-    "attemptedAt": "2026-10-24T04:44:57.148Z",
+    "attemptedAt": "2026-11-03T09:36:05.211Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission SSC",
@@ -15070,15 +15174,15 @@
     }
   },
   "https://www.sarkariresult.com/force/ssb-hc-ministerial-jul21/": {
-    "attemptedAt": "2026-10-23T06:35:25.364Z",
+    "attemptedAt": "2026-11-03T09:36:02.693Z",
     "parser": "v2",
     "details": {
       "organization": "Sashastra Seema Bal SSB Head Constable (Min) 2020 CBT",
       "publishedDate": "2026-10-14",
       "openDate": "2021-07-24",
       "lastDate": "2021-08-22",
-      "examDate": "2026-07-07",
-      "resultDate": "2026-10-14",
+      "examDate": "2026-11-02",
+      "resultDate": "2026-11-02",
       "admitCardDate": "2026-07-03",
       "interviewDate": null,
       "vacancies": "115",
@@ -15132,14 +15236,18 @@
           "dateText": "14/07/2026"
         },
         {
-          "label": "Result Available",
-          "date": "2026-10-14",
-          "dateText": "14/10/2026"
+          "label": "CBT Result Available",
+          "date": "2026-11-02",
+          "dateText": "02/11/2026"
         }
       ],
-      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/1258/101413/login.html",
+      "officialLink": "https://doc.sarkariresults.org.in/Circular202__2026_11_02_19_05_37_978.pdf",
       "notificationLink": "https://www.sarkariresults.org.in/wp-content/uploads/2021/07/ADVT_338_HC_MIN_2020.pdf",
       "officialLinks": [
+        {
+          "url": "https://doc.sarkariresults.org.in/Circular202__2026_11_02_19_05_37_978.pdf",
+          "label": "Download CBT Result & Typing Test Notice"
+        },
         {
           "url": "https://cdn.digialm.com//EForms/configuredHtml/1258/101413/login.html",
           "label": "Download Result / Marks"
@@ -15650,11 +15758,11 @@
     }
   },
   "https://www.sarkariresult.com/2025/up-police-home-guard-02-2025/": {
-    "attemptedAt": "2026-10-23T06:35:25.813Z",
+    "attemptedAt": "2026-11-03T09:36:05.546Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Police Recruitment & Promotion Board (UPPRPB)",
-      "publishedDate": "2026-10-03",
+      "publishedDate": "2026-10-24",
       "openDate": "2025-11-17",
       "lastDate": "2025-12-17",
       "examDate": "2026-09-15",
@@ -15668,8 +15776,8 @@
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-03",
-          "dateText": "03 October 2026 | 19:24 PM"
+          "date": "2026-10-24",
+          "dateText": "24 October 2026 | 11:45 AM"
         },
         {
           "label": "Last Date for Apply Online",
@@ -15726,6 +15834,10 @@
       "notificationLink": "https://tinyurl.com/24k3rumv",
       "officialLinks": [
         {
+          "url": "https://www.hgupexam2025.com/hgrequestmail/loginpage.aspx",
+          "label": "Download Marks"
+        },
+        {
           "url": "https://www.hgupexam2025.com/hg25finalresults/loginpage.aspx",
           "label": "Download Final Result"
         },
@@ -15760,10 +15872,6 @@
         {
           "url": "https://www.hgupexam2025.com/hg25DVPSTAdmitcard/loginpage.aspx",
           "label": "Download DV / PST Admit Card"
-        },
-        {
-          "url": "https://uppbpb.gov.in/FilesUploaded/Notice/img20260713_170704299779d63a-5d71-4b27-8b1a-cdf96f7616ff.pdf",
-          "label": "Download Date Change Notice"
         }
       ]
     }
@@ -17306,7 +17414,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/iob-apprentice-july26/": {
-    "attemptedAt": "2026-10-24T04:44:57.491Z",
+    "attemptedAt": "2026-11-03T09:36:05.507Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Overseas Bank IOB Apprentice",
@@ -17460,7 +17568,7 @@
     }
   },
   "https://www.sarkariresult.com/2022/up-tgt-01-2022/": {
-    "attemptedAt": "2026-10-24T04:44:57.540Z",
+    "attemptedAt": "2026-11-03T09:36:05.603Z",
     "parser": "v2",
     "details": {
       "organization": "Uttar Pradesh Secondary Education Service Selection Board (UPSESSB)",
@@ -18529,7 +18637,7 @@
     }
   },
   "https://www.sarkariresult.com/bank/sbi-apprentices-2026/": {
-    "attemptedAt": "2026-10-24T04:44:57.576Z",
+    "attemptedAt": "2026-11-03T09:36:05.611Z",
     "parser": "v2",
     "details": {
       "organization": "State Bank of India SBI Apprentices",
@@ -19095,7 +19203,7 @@
     }
   },
   "https://www.sarkariresult.com/ssc/ssc-junior-engineer-je-2025/": {
-    "attemptedAt": "2026-10-24T04:44:57.666Z",
+    "attemptedAt": "2026-11-03T09:36:06.195Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission (SSC)",
@@ -21371,7 +21479,7 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-ecce-educator-fatehpur-oct26/": {
-    "attemptedAt": "2026-10-24T04:44:51.575Z",
+    "attemptedAt": "2026-11-03T09:35:51.083Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
@@ -21476,12 +21584,12 @@
     }
   },
   "https://www.sarkariresult.com/2026/up-ecce-educator-kanpur-oct26/": {
-    "attemptedAt": "2026-10-24T04:44:51.699Z",
+    "attemptedAt": "2026-11-03T09:35:51.001Z",
     "parser": "v2",
     "details": {
       "organization": "UP Rojgar Sangam (Sewayojan) Portal",
-      "publishedDate": "2026-10-23",
-      "openDate": "2026-10-22",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-11-02",
       "lastDate": null,
       "examDate": null,
       "resultDate": null,
@@ -21489,18 +21597,18 @@
       "interviewDate": null,
       "vacancies": "",
       "ageLimit": "18–40 years",
-      "eligibility": "Graduation from a recognized university with minimum 50% marks and Home Science as a major subject OR 2 Years Diploma in DPSE. 5% marks relaxation in minimum marks for reserved categories.",
+      "eligibility": "Graduation in Home Science with Minimum 50% Marks from Any Recognized University in India. Diploma in Nursery Teacher Education Passed. NTT (Nursery Teacher Training) Passed. CT (Nursery) Passed. DPSE (Diploma in Pre-School Education) Passed.",
       "applicationFee": "for the All Candidates.",
       "milestones": [
         {
           "label": "Post Date / Update",
-          "date": "2026-10-23",
-          "dateText": "23 October 2026 | 09:40 PM"
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:55 PM"
         },
         {
           "label": "Last Date for Apply",
-          "date": "2026-10-30",
-          "dateText": "30/10/2026"
+          "date": "2026-11-10",
+          "dateText": "10/11/2026"
         }
       ],
       "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
@@ -21510,11 +21618,11 @@
           "label": "Apply Online"
         },
         {
-          "url": "https://doc.sarkariresults.org.in/ECCE_Kanpur_23102026.pdf",
+          "url": "https://doc.sarkariresults.org.in/ECCE_Educator_Kanpur_02112026.pdf",
           "label": "Download Vacancy Details"
         },
         {
-          "url": "https://sewayojan.up.nic.in/",
+          "url": "https://kanpurnagar.nic.in/hi/",
           "label": "Official Website"
         }
       ]
@@ -22312,11 +22420,11 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-11-02T09:33:08.213Z",
+    "attemptedAt": "2026-11-03T09:35:54.169Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
-      "publishedDate": "2026-10-29",
+      "publishedDate": "2026-11-03",
       "openDate": "2026-10-15",
       "lastDate": "2026-11-13",
       "examDate": null,
@@ -22394,7 +22502,7 @@
           "dateText": "25 November 2026"
         }
       ],
-      "officialLink": "https://www.rrbapply.gov.in/#/auth/home",
+      "officialLink": "https://www.rrbapply.gov.in/#/auth/landing",
       "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
       "officialLinks": [
         {
@@ -22402,26 +22510,22 @@
           "label": "Official Website"
         },
         {
-          "url": "https://www.rrbapply.gov.in/#/auth/home",
+          "url": "https://www.rrbapply.gov.in/#/auth/landing",
           "label": "Apply Online / Recruitment Portal"
         },
         {
           "url": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
           "label": "Detailed Notification CEN 07/2026"
-        },
-        {
-          "url": "https://www.rrbapply.gov.in/#/auth/landing",
-          "label": "RRB-wise Vacancy Details"
         }
       ]
     }
   },
   "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579": {
-    "attemptedAt": "2026-10-26T07:50:41.511Z",
+    "attemptedAt": "2026-11-03T09:35:59.988Z",
     "parser": "v2",
     "details": {
       "organization": "DSSSB Delhi District Courts",
-      "publishedDate": "2026-10-26",
+      "publishedDate": "2026-11-02",
       "openDate": "2026-10-06",
       "lastDate": "2026-11-04",
       "examDate": null,
@@ -22453,11 +22557,11 @@
     }
   },
   "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927": {
-    "attemptedAt": "2026-10-27T07:55:38.068Z",
+    "attemptedAt": "2026-11-03T09:36:00.019Z",
     "parser": "v2",
     "details": {
       "organization": "Directorate General, Central Reserve Police Force (CRPF), Ministry of Home Affairs",
-      "publishedDate": "2026-10-26",
+      "publishedDate": "2026-11-02",
       "openDate": "2026-10-12",
       "lastDate": null,
       "examDate": null,
@@ -24490,7 +24594,7 @@
     }
   },
   "https://www.freejobalert.com/articles/indian-bank-so-result-2026-3077692": {
-    "attemptedAt": "2026-11-02T09:33:08.152Z",
+    "attemptedAt": "2026-11-03T09:35:53.404Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Bank SO Final",
@@ -24560,7 +24664,7 @@
     }
   },
   "https://www.freejobalert.com/articles/appsc-cce-prelims-result-2026-3077739": {
-    "attemptedAt": "2026-11-02T09:33:08.174Z",
+    "attemptedAt": "2026-11-03T09:35:53.358Z",
     "parser": "v2",
     "details": {
       "organization": "APPSC CCE",
@@ -24611,6 +24715,2072 @@
         {
           "url": "https://appsc.gov.in/",
           "label": "APPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ktet-hall-ticket-2026-3077797": {
+    "attemptedAt": "2026-11-03T09:35:50.177Z",
+    "parser": "v2",
+    "details": {
+      "organization": "KTET Hall Ticket 2026 - Download Kerala TET",
+      "publishedDate": "2026-11-02",
+      "openDate": null,
+      "lastDate": "2026-10-03",
+      "examDate": "2026-11-14",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Kerala Pareeksha Bhavan, Government of Kerala",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Hall Ticket Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-11-14",
+          "dateText": "14 November 2026 and 15 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online and Pay the Fee",
+          "date": "2026-10-03",
+          "dateText": "3 October 2026"
+        },
+        {
+          "label": "Last Date to Take the Final Application Printout",
+          "date": "2026-10-03",
+          "dateText": "3 October 2026"
+        },
+        {
+          "label": "KTET Hall Ticket 2026 Release",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Category 1 and Category 2 Examination",
+          "date": "2026-11-14",
+          "dateText": "14 November 2026 (Saturday)"
+        },
+        {
+          "label": "Category 3 and Category 4 Examination",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026 (Sunday)"
+        }
+      ],
+      "officialLink": "https://ktet.kerala.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://ktet.kerala.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ktet.kerala.gov.in/",
+          "label": "KTET Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/afms-ssc-medical-officer-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:50.665Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Armed Force Medical Service AFMS",
+      "publishedDate": "2026-11-01",
+      "openDate": "2026-11-09",
+      "lastDate": "2026-11-18",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "120",
+      "ageLimit": "Maximum 30 years",
+      "eligibility": "MBBS Degree from a recognized institution. More Eligibility Details Read the Notification",
+      "applicationFee": "All Candidate : 200/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-01",
+          "dateText": "01 November 2026 | 07:45 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
+        }
+      ],
+      "officialLink": "https://join.afms.gov.in/#",
+      "officialLinks": [
+        {
+          "url": "https://join.afms.gov.in/#",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/punjab-and-sind-bank-lbo-phase-3-result-2026-3078035": {
+    "attemptedAt": "2026-11-03T09:35:53.308Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Punjab & Sind Bank LBO Phase 3",
+      "publishedDate": "2026-11-03",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-02",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Original Advertisement Date",
+          "date": "2026-03-30",
+          "dateText": "30 March 2026"
+        },
+        {
+          "label": "Online Examination Date",
+          "date": "2026-05-10",
+          "dateText": "10 May 2026"
+        },
+        {
+          "label": "Earlier Shortlist Date",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Revised Result Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        },
+        {
+          "label": "Previous Result Date",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Notice Date",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        },
+        {
+          "label": "Online Examination",
+          "date": "2026-05-10",
+          "dateText": "10 May 2026"
+        },
+        {
+          "label": "Revised Result Released",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        }
+      ],
+      "officialLink": "https://punjabandsind.bank.in/system/uploads/recruitment/7932_2026110219270682000.pdf",
+      "officialLinks": [
+        {
+          "url": "https://punjabandsind.bank.in/system/uploads/recruitment/7932_2026110219270682000.pdf",
+          "label": "Punjab and Sind Bank LBO Phase 3 Revised Result PDF"
+        },
+        {
+          "url": "https://www.punjabandsind.bank.in/",
+          "label": "Punjab and Sind Bank Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/supreme-court-of-india-cat-nov26/": {
+    "attemptedAt": "2026-11-03T09:35:54.259Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Supreme Court of India SCI",
+      "publishedDate": "2026-11-03",
+      "openDate": "2026-11-03",
+      "lastDate": "2026-11-24",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "18–35 years",
+      "eligibility": "B.Sc in Computer Science and 60% Marks with 4 Year Experience OR BE / B.Tech Degree in Computer Science / IT with 3 Year Exeprience OR Master Degree in Computer Science with 3 Year Experience More Eligibility Details Read the Notification.",
+      "applicationFee": "Details? Candidates can pay the application fee up to 24/11/2026. 7. How can I apply for Supreme Court of India Court Assistant Technical Exam? Candidates can apply online through the official recruitment link available on",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026 | 12:23 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-24",
+          "dateText": "24/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-24",
+          "dateText": "24/11/2026"
+        }
+      ],
+      "officialLink": "https://cdn3.digialm.com/EForms/configuredHtml/32912/103177/qFQ6pc28SKg3N2aijS/Index.html",
+      "notificationLink": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/9501583908.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn3.digialm.com/EForms/configuredHtml/32912/103177/qFQ6pc28SKg3N2aijS/Index.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/9501583908.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.sci.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/up-bulandshahar-ecce-educator-nov26/": {
+    "attemptedAt": "2026-11-03T09:35:54.670Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-11-02",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "21–42 years",
+      "eligibility": "Graduation in Home Science with Minimum 50% Marks from Any Recognized University in India. NTT (Nursery Teacher Training) Passed. CT (Nursery) Passed. Diploma in Pre-School Education (DPSE) Passed",
+      "applicationFee": "for the All Candidates.",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:45 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Bulandshahar_02112026.pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://bulandshahar.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/rites-assistant-manager-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:54.778Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rail India Technical and Economic Service RITES",
+      "publishedDate": "2026-10-31",
+      "openDate": "2026-10-30",
+      "lastDate": "2026-11-20",
+      "examDate": "2026-11-29",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "27",
+      "ageLimit": "18–40 years",
+      "eligibility": "Diploma in Mechanical Engineering in Any Recognized Institute / University in India. OR Bachelor Degree of Technology in Mechanical Engineering in Any Recognized Institute / University in India. Diploma Holder : 08 Year Working Experience. Degree Holder : 02Year Working Experience. More Details Read the Notification.",
+      "applicationFee": "General / OBC : 600/- EWS / SC / ST / PH : 300/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026 | 09:30 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-20",
+          "dateText": "20/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-20",
+          "dateText": "20/11/2026"
+        },
+        {
+          "label": "RITES Exam Date",
+          "date": "2026-11-29",
+          "dateText": "29/11/2026"
+        }
+      ],
+      "officialLink": "https://recruit.rites.com/frmRegistration.aspx",
+      "notificationLink": "https://www.rites.com/Upload/Career/Advertisement_for_CL_09-11_26_pdf-2026-Oct-30-16-48-0.pdf",
+      "officialLinks": [
+        {
+          "url": "https://recruit.rites.com/frmRegistration.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.rites.com/Upload/Career/Advertisement_for_CL_09-11_26_pdf-2026-Oct-30-16-48-0.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.rites.com/Career",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/aees-teaching-various-post-nov26/": {
+    "attemptedAt": "2026-11-03T09:35:54.817Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Atomic Energy Education Society (AEES)",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-11-02",
+      "lastDate": "2026-11-22",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "254",
+      "ageLimit": "",
+      "eligibility": "Master Degree from Any Recognized University in India. Age Limit : 35-50 Years More Eligibility Details Read the Notification.",
+      "applicationFee": "General / OBC / EWS : 1000/- SC / ST / PH / Female : 250/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 11:44 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-22",
+          "dateText": "22/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-22",
+          "dateText": "22/11/2026"
+        }
+      ],
+      "officialLink": "https://aees.onlineregistrationforms.com/#/home",
+      "notificationLink": "https://www.aees.gov.in/DOCUMENTS/rv/1.%20AEES_Recruitment_Notice_01_2026_29.10.2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://aees.onlineregistrationforms.com/#/home",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.aees.gov.in/DOCUMENTS/rv/1.%20AEES_Recruitment_Notice_01_2026_29.10.2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.aees.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/bceceb-sr-resident-tutor-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:54.829Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Bihar Combined Entrance Competitive Examination Board (BCECEB)",
+      "publishedDate": "2026-08-25",
+      "openDate": "2026-11-02",
+      "lastDate": "2026-11-23",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "575",
+      "ageLimit": "Minimum 21 years",
+      "eligibility": "For Post Wise Eligibility Details Must Read the Notification.",
+      "applicationFee": "General / BC / EWS / EBC : 2250/- SC / ST / : 2250/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-08-25",
+          "dateText": "25 August 2026 | 08:30 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Form Correction Date",
+          "date": "2026-11-24",
+          "dateText": "24/11/2026"
+        }
+      ],
+      "officialLink": "https://bceceboard.bihar.gov.in/HEALTH22_Index.php",
+      "notificationLink": "https://bceceboard.bihar.gov.in/pdf_Pros/PROS_3SR26.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bceceboard.bihar.gov.in/HEALTH22_Index.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://bceceboard.bihar.gov.in/pdf_Pros/PROS_3SR26.pdf",
+          "label": "Download Notification"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/rrb-ministerial-isolated-cen-09-2026/": {
+    "attemptedAt": "2026-11-03T09:35:55.199Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Railway RRB Ministerial and Isolated Post CEN 09/2026",
+      "publishedDate": "2026-10-31",
+      "openDate": "2026-11-05",
+      "lastDate": "2026-12-04",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "195",
+      "ageLimit": "Minimum 18 years",
+      "eligibility": "Bachelor Degree in Law with 3 Year Experience. Age Limit : 18-40 Years. More Eligibility Details Read the Notification.",
+      "applicationFee": "General / OBC / EWS : 500/- SC / ST / PH : 250/- All Category Female : 250/- After Appear the Stage I Exam General/OBC/EWS Fee Refund: Rs. 400/- SC / ST / PH / Female Refund : Rs. 250/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026 | 10:10 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-04",
+          "dateText": "04/12/2026"
+        },
+        {
+          "label": "Last Date Pay Exam Fee",
+          "date": "2026-12-04",
+          "dateText": "04/12/2026"
+        }
+      ],
+      "officialLink": "https://www.rrbapply.gov.in/#/auth/landing",
+      "officialLinks": [
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/landing",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/upbocw-coordinator-district-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:55.353Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-30",
+      "openDate": "2026-10-30",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "21–45 years",
+      "eligibility": "Bachelor Degree in Any Stream from recognized University/Institute in India. CCC OR O Level Hindi Typing 25 W.P.M. OR English Typing 30 W.P.M. More Eligibility Read the Notification.",
+      "applicationFee": "for the All Candidates.",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 09:30 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-07",
+          "dateText": "07/11/2026"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/ongc-various-trade-apprentice-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:55.361Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Oil and Natural Gas Corporation Limited",
+      "publishedDate": "2026-10-31",
+      "openDate": "2026-10-29",
+      "lastDate": "2026-11-20",
+      "examDate": null,
+      "resultDate": "2026-12-15",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3047",
+      "ageLimit": "18–24 years",
+      "eligibility": "10th Pass, ITI Certificate in Related Trade, 10+2, Bachelor Degree, Engineering Diploma. For Post Wise Eligibility Details Read the Notification.",
+      "applicationFee": "Gen / OBC / EWS: 0/- SC / ST / PH : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026 | 07:55 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-20",
+          "dateText": "20/11/2026"
+        },
+        {
+          "label": "Result Declared Date",
+          "date": "2026-12-15",
+          "dateText": "15/12/2026"
+        }
+      ],
+      "officialLink": "https://nats.education.gov.in/",
+      "notificationLink": "https://doc.sarkariresults.org.in/Advertisement-engagement-Apprentices2026-27.pdf",
+      "officialLinks": [
+        {
+          "url": "https://nats.education.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/Advertisement-engagement-Apprentices2026-27.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://ongcindia.com/web/eng",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/npcil-apprentice-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:55.372Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Nuclear Power Corporation of India Limited",
+      "publishedDate": "2026-10-29",
+      "openDate": "2026-10-29",
+      "lastDate": "2026-11-18",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "80",
+      "ageLimit": "",
+      "eligibility": "ITI Pass Certificate in Electrician Trade from any recognized institute in India.",
+      "applicationFee": "Gen / OBC / EWS: 100/- SC / ST / PH : 0/- All Category Female : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026 | 07:13 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
+        }
+      ],
+      "officialLink": "https://www.npcilcareers.co.in/NAPSA20262910/candidate/Default.aspx",
+      "notificationLink": "https://www.npcilcareers.co.in/NAPSA20262910/documents/advt.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.npcilcareers.co.in/NAPSA20262910/candidate/Default.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.npcilcareers.co.in/NAPSA20262910/documents/advt.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.npcil.nic.in/index.aspx",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/upbocw-lab-attendant-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:55.409Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-30",
+      "openDate": "2026-10-30",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "18–40 years",
+      "eligibility": "Bachelor Degree in Any Stream from recognized University/Institute in India. More Eligibility Read the Notification.",
+      "applicationFee": "for the All Candidates.",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 09:00 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-07",
+          "dateText": "07/11/2026"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UP_Lab_Attendant_30102026%20(1).pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/uppsc-ro-aro-jun26/": {
+    "attemptedAt": "2026-11-03T09:35:55.930Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-26",
+      "lastDate": "2026-11-26",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "501",
+      "ageLimit": "21–40 years",
+      "eligibility": "Bachelor Degree in Any Stream in Any Recognized University in India. More Eligibility Details Read the Notification",
+      "applicationFee": "General / OBC / EWS : 125/- SC / ST : 65/- PH Candidates : 25/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026 | 04:36 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-12-03",
+          "dateText": "03/12/2026"
+        }
+      ],
+      "officialLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "notificationLink": "https://doc.sarkariresults.org.in/UPPSC_RO_ARO_English_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPPSC_RO_ARO_English_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/up-kushinagar-ecce-educator-july26/": {
+    "attemptedAt": "2026-11-03T09:35:55.935Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-28",
+      "openDate": "2026-10-24",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "21–40 years",
+      "eligibility": "Bachelor’s Degree with Home Science (Minimum 50% Marks) OR 2 Year NTT / CT (Nursery) / DPSE Diploma from a Recognized Institute More Eligibility Details Read the Notification.",
+      "applicationFee": "for the All Candidates. UP Kushinagar",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026 | 04:35 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Educator_Kushinagar_28102026.pdf",
+          "label": "Download Vacancy Details / Notice"
+        },
+        {
+          "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/drrmlims-lucknow-post-oct26/": {
+    "attemptedAt": "2026-11-03T09:35:55.974Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Dr. Ram Manohar Lohia Institute of Medical Sciences (Dr. RMLIMS)",
+      "publishedDate": "2026-10-29",
+      "openDate": "2026-10-19",
+      "lastDate": "2026-11-20",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "74",
+      "ageLimit": "18–40 years",
+      "eligibility": "Class 10th Matric Exam Passed from Any Recognized Board in India.",
+      "applicationFee": "General / OBC / EWS : 1180/- SC / ST : 708/- PH Candidates : 0/- Include GST 18%",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026 | 07:50PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-20",
+          "dateText": "20/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-20",
+          "dateText": "20/11/2026"
+        }
+      ],
+      "officialLink": "https://cdn3.digialm.com//EForms/configuredHtml/33060/102389/z4LWiNYg7o8WMWt7Si/Index.html",
+      "notificationLink": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/7001749989.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn3.digialm.com//EForms/configuredHtml/33060/102389/z4LWiNYg7o8WMWt7Si/Index.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/7/7001749989.pdf",
+          "label": "Download Full Notification"
+        },
+        {
+          "url": "https://www.drrmlims.ac.in/Assets/pages/recruitment/Notice_807_Online_application_window_Advt_78_83_2026.pdf",
+          "label": "Download Short Notice"
+        },
+        {
+          "url": "https://www.drrmlims.ac.in/recruitment",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/railway/nta-csir-ugc-net-dec2026/": {
+    "attemptedAt": "2026-11-03T09:35:56.372Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Testing Agency (NTA)",
+      "publishedDate": "2026-10-07",
+      "openDate": "2026-10-07",
+      "lastDate": "2026-11-05",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Maximum 30 years",
+      "eligibility": "NTA CSIR UGC NET Subject Name CSIR UGC NET Eligibility Chemical Science M.Sc / Equivalent Degree with 55% Marks for General / OBC Candidates. For SC / ST and PH Candidates : 50% Marks. Integrated Course and B.E/ B.Tech / B.Pharma and MBBS Candidates Are Also Eligible Earth, Atmospheric, Ocean and Planetary Science Life Science Mathematical Science Physical Science",
+      "applicationFee": "General : 1150/- EWS / OBC : 600/- ST / SC / PH : 325/- Late Fees : 500/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-07",
+          "dateText": "07 October 2026 | 11:38 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-05",
+          "dateText": "05/11/2026"
+        },
+        {
+          "label": "Last Date Pay Exam Fee",
+          "date": "2026-11-05",
+          "dateText": "05/11/2026"
+        },
+        {
+          "label": "Last Date with Late Fee",
+          "date": "2026-11-09",
+          "dateText": "09/11/2026"
+        }
+      ],
+      "officialLink": "https://examinationservices.nic.in/ExamSys27/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFTqGsyg38PlGNCGSuvSzsiU0N2QIZeKq/cbFBgqeJZQh",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3efdf562ce2fb0ad460fd8e9d33e57f57/uploads/2026/10/202610071407707951.pdf",
+      "officialLinks": [
+        {
+          "url": "https://examinationservices.nic.in/ExamSys27/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFTqGsyg38PlGNCGSuvSzsiU0N2QIZeKq/cbFBgqeJZQh",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3efdf562ce2fb0ad460fd8e9d33e57f57/uploads/2026/10/202610071407707951.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://csirnet.nta.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/vbspu-university-provisional/": {
+    "attemptedAt": "2026-11-03T09:35:56.456Z",
+    "parser": "v2",
+    "details": {
+      "organization": "VBSPU Jaunpur University Provisional Certificate All Course",
+      "publishedDate": "2026-10-30",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Sarkari Result® : How to Fill VBSPU Jaunpur Provisional & Migration Certificate Online Form Step 1 : To apply the provisional certificate of VBSPU Jaunpur University, the candidate will have to go down in this page of Sarkari Result, in the Some Useful Important Link section, the candidate will get the link of Apply Online VBSPU Jaunpur Provisional Certificate, click on it. Step 2 : The candidate has to select his/her examination session as under Example : 2015-16, 2016-17, 2017-18, 2018-19, 202",
+      "applicationFee": "All Category Candidates : 150/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 22:50 PM"
+        }
+      ],
+      "officialLink": "https://vbspu.online/Home/Home_Page",
+      "officialLinks": [
+        {
+          "url": "https://vbspu.online/Home/Home_Page",
+          "label": "Apply Online (Provision Certificate)"
+        },
+        {
+          "url": "https://www.vbspu.ac.in/hi",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/mpesb-group-3-sub-engineer-aug26/": {
+    "attemptedAt": "2026-11-03T09:35:57.030Z",
+    "parser": "v2",
+    "details": {
+      "organization": "MPESB Group 3 Sub Engineer ,Sahayak Manchitrakar, Technician and Other Equivalent Combined",
+      "publishedDate": "2026-08-26",
+      "openDate": "2026-08-18",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1040",
+      "ageLimit": "18–40 years",
+      "eligibility": "ITI / Diploma / Degree in Related Post. For Post Wise Eligibility Details Read the Notification",
+      "applicationFee": "General / Other State : 560/- OBC / SC / ST : 310/- Portal Charges: Rs. 60/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-08-26",
+          "dateText": "26 August 2026 | 07:13 PM"
+        }
+      ],
+      "officialLink": "https://esb.mponline.gov.in/Portal/Examinations/Vyapam/examsList.aspx",
+      "notificationLink": "https://esb.mp.gov.in/Rulebooks/RB_2026/Group3_SUBENG_RuleBook_2026_17_08_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://esb.mp.gov.in/Advertisement/ADV_2026/Group3_2026_ImportantNotice24082026.pdf",
+          "label": "Download Cancelled Notice"
+        },
+        {
+          "url": "https://esb.mponline.gov.in/Portal/Examinations/Vyapam/examsList.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://esb.mp.gov.in/Rulebooks/RB_2026/Group3_SUBENG_RuleBook_2026_17_08_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://esb.mp.gov.in/e_default.html",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/powergrid-engineer-trainee-recruitment-2026-3078049": {
+    "attemptedAt": "2026-11-03T09:35:59.950Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Power Grid Corporation of India Limited (POWERGRID)",
+      "publishedDate": "2026-11-03",
+      "openDate": "2026-11-03",
+      "lastDate": "2026-11-18",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "03",
+      "ageLimit": "",
+      "eligibility": "Full-time B.E./B.Tech/B.Sc. Engineering in the prescribed discipline",
+      "applicationFee": "Rs.500 for applicable candidates",
+      "milestones": [
+        {
+          "label": "Vacancy Notice Date",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026, 11:59 PM"
+        },
+        {
+          "label": "Detailed Advertisement Date",
+          "date": "2025-09-27",
+          "dateText": "27 September 2025"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026 at 5:00 PM"
+        },
+        {
+          "label": "Application Fee Payment Start Date",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026 at 5:00 PM"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 at 11:59 PM"
+        },
+        {
+          "label": "Last Date for Online Fee Payment",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 at 11:59 PM"
+        }
+      ],
+      "officialLinks": []
+    }
+  },
+  "https://www.sarkariresult.com/2026/coast-guard-navik-gd-db-cgpet-01-2027/": {
+    "attemptedAt": "2026-11-03T09:36:06.086Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Joint Indian Coast Guard ICG / Staff Selection Commission SSC",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-10-06",
+      "lastDate": "2026-10-21",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "365",
+      "ageLimit": "",
+      "eligibility": "Post Name Batch Total Post Indian Coast Guard CGEPT Eligibility 2026 Navik General Duty GD CGEPT 01/2027 130 10+2 Intermediate Exam with Physics / Mathematics as a Subject. CGEPT 02/2027 130 Yantrik Mechanical CGEPT 01/2027 28 Class 10th with Diploma in Electrical / Mechanical / Electronics / Telecommunication (Radio / Power) Engineering. OR For Trade Wise Eligibility Details Read the Notification. Yantrik Electrical CGEPT 01/2027 23 Yantrik Electronics CGEPT 01/2027 09 Navik Domestic Branch (DB",
+      "applicationFee": "General / OBC / EWS : 550/- SC / ST : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:18 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-10-21",
+          "dateText": "21/10/2026"
+        },
+        {
+          "label": "PM Pay Exam Fee Last Date",
+          "date": "2026-10-21",
+          "dateText": "21/10/2026"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Exams_notice_02112026.pdf",
+      "notificationLink": "https://cgept.parikshasaarthi.in/docs/CGEPT012027_Adv_Bilingual.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Exams_notice_02112026.pdf",
+          "label": "Download Exam Notice"
+        },
+        {
+          "url": "https://cgept.parikshasaarthi.in/candidate/showSignUp",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cgept.parikshasaarthi.in/docs/CGEPT012027_Adv_Bilingual.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://cgept.parikshasaarthi.in/candidate/login",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/up-ecce-educator-nov26/": {
+    "attemptedAt": "2026-11-03T09:36:06.093Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-10-30",
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "21–40 years",
+      "eligibility": "Graduation in Home Science with Minimum 50% Marks from Any Recognized University in India. NTT (Nursery Teacher Training) Passed. CT (Nursery) Passed. Diploma in Pre-School Education (DPSE) Passed",
+      "applicationFee": "for the All Candidates.",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:20 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-07",
+          "dateText": "07/11/2026"
+        }
+      ],
+      "officialLink": "https://balrampur.nic.in/",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://balrampur.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/concor-mt-ao-august26/": {
+    "attemptedAt": "2026-11-03T09:36:06.104Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Container Corporation of India Limited (CONCOR)",
+      "publishedDate": "2026-10-31",
+      "openDate": "2026-08-31",
+      "lastDate": "2026-09-30",
+      "examDate": "2026-11-21",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "77",
+      "ageLimit": "18–28 years",
+      "eligibility": "Bachelor Degree with 55% marks with 2 Years MBA/PG Degree/Diploma with 60%. More Eligibility Details Read the Notification",
+      "applicationFee": "For Management Trainee : General / OBC / EWS : 750/- SC / ST / PH : 0/- For Assistant Officer : General / OBC / EWS : 500/– SC / ST / PH : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026 | 02:18 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-09-30",
+          "dateText": "30/09/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-09-30",
+          "dateText": "30/09/2026"
+        },
+        {
+          "label": "Concor Exam Date",
+          "date": "2026-11-21",
+          "dateText": "21/11/2026"
+        }
+      ],
+      "officialLink": "https://www.concorindia.co.in/recruitment-notice?lang=hi",
+      "notificationLink": "https://cms.concorindia.co.in:8000/uploads/cms/pdf/Asf6Xc3Mnw5BWdp_FinalAdvertisement-18thAug2026(Published).pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.concorindia.co.in/recruitment-notice?lang=hi",
+          "label": "Download Exam Notice"
+        },
+        {
+          "url": "https://rrb.digialm.com/EForms/configuredHtml/1181/101565/Index.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cms.concorindia.co.in:8000/uploads/cms/pdf/Asf6Xc3Mnw5BWdp_FinalAdvertisement-18thAug2026(Published).pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.concorindia.co.in/?lang=en",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2027/bihar-board-2027/": {
+    "attemptedAt": "2026-11-03T09:36:06.180Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Bihar School Examination Board (BSEB)",
+      "publishedDate": "2026-10-31",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-31",
+          "dateText": "31 October 2026 | 10:30 AM"
+        }
+      ],
+      "officialLink": "https://exam.biharboardonline.org/",
+      "officialLinks": [
+        {
+          "url": "https://exam.biharboardonline.org/",
+          "label": "Download Dummy Admit Card"
+        },
+        {
+          "url": "https://www.biharboardonline.org/",
+          "label": "Download BSEB Registration Card"
+        },
+        {
+          "url": "https://bseh.org.in/uploads/files/31f4e20d09c588f2fd4356c6ecaf28ee.pdf",
+          "label": "Download Compartment Result Notice"
+        },
+        {
+          "url": "https://biharboardonline.com/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/nvs-class-6th-admission-july26/": {
+    "attemptedAt": "2026-11-03T09:36:06.627Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Jawahar Navodaya Vidyalaya JNV",
+      "publishedDate": "2026-10-28",
+      "openDate": "2026-07-07",
+      "lastDate": "2026-08-10",
+      "examDate": "2026-11-28",
+      "resultDate": null,
+      "admitCardDate": "2026-10-28",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Passed the class 5th exam. Spent/Studied full academic session in class III, IV and V",
+      "applicationFee": "Must Submit. If You have Not the Required Application Fees Your Form is Not Completed. Take A Print Out of Final Submitted Form. For the latest updates on",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026 | 05:55 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-08-10",
+          "dateText": "10/08/2026"
+        },
+        {
+          "label": "Date Extended) Complete Form Last Date",
+          "date": "2026-08-10",
+          "dateText": "10/08/2026"
+        },
+        {
+          "label": "NVS Class 6th Exam Date",
+          "date": "2026-11-28",
+          "dateText": "28/11/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-10-28",
+          "dateText": "28/10/2026"
+        }
+      ],
+      "officialLink": "https://cbseitms.rcil.gov.in/nvs/AdminCard/Admit2027Card",
+      "notificationLink": "https://cbseitms.rcil.gov.in/nvs/assets/pdf/Final_Prospectus_2027.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cbseitms.rcil.gov.in/nvs/AdminCard/Admit2027Card",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://cbseitms.rcil.gov.in/nvs/Index/Registration",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cbseitms.rcil.gov.in/nvs/assets/pdf/Final_Prospectus_2027.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://cbseitms.rcil.gov.in/nvs/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/rvunl-june26/": {
+    "attemptedAt": "2026-11-03T09:36:06.634Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rajasthan RVUNL for JE, Junior Accountant & Junior Assistant/ Commercial Assistant-II Common",
+      "publishedDate": "2026-10-29",
+      "openDate": "2026-08-05",
+      "lastDate": "2026-08-31",
+      "examDate": "2026-11-19",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "2005",
+      "ageLimit": "21–40 years",
+      "eligibility": "Post Name Total Post Rajasthan RVUNL Various Post Eligibility Details Junior Engineer JEN-I (Electrical) 727 BE / B.Tech Degree in Related Trade / Branch from Any Recognized Institute in India. More Eligibility Details Available Soon Junior Engineer JEN-I Mechanical 110 Junior Engineer JEN-I Civil 32 Junior Accountant 371 Bachelor Degree in Commerce OR IPCC / Intermediate Exam Passed OR MBA or PG Diploma in Business Management OR M.Com. O Level Exam Passed OR CCC COPA / DPCS / Degree / Diploma /",
+      "applicationFee": "Details? Candidates can pay the application fee up to 31/08/2026 7. How can I apply for Rajasthan RVUNL JE, Junior Accountant & Junior Assistant/ Commercial Assistant-II Common Recruitment Exam? Candidates can apply online through the official recruitment link available on",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026 | 06:26 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-08-31",
+          "dateText": "31/08/2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-08-31",
+          "dateText": "31/08/2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-19",
+          "dateText": "19/11/2026"
+        }
+      ],
+      "officialLink": "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/183/2026/Oct/30409/183c9350bd1-0990-44ea-b75f-f5ab6dc473c0.pdf",
+      "notificationLink": "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/183/2026/Aug/30409/1834ef1422d-0e7f-4f51-bfd3-6c602a408063.pdf",
+      "officialLinks": [
+        {
+          "url": "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/183/2026/Oct/30409/183c9350bd1-0990-44ea-b75f-f5ab6dc473c0.pdf",
+          "label": "Download Exam Notice"
+        },
+        {
+          "url": "https://energy.rajasthan.gov.in/home",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/183/2026/Aug/30409/18357580f16-96d0-4e22-b8fa-af4105e66590.pdf",
+          "label": "Download Date Extended Notice"
+        },
+        {
+          "url": "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/183/2026/Aug/30409/1834ef1422d-0e7f-4f51-bfd3-6c602a408063.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://jankalyanfile.rajasthan.gov.in/WebMyWayFiles/DepartmentMaster/183/2026/Jul/30409/183ea8d2b9d-e0f5-4be4-a75c-a3c8f19e3eda.pdf",
+          "label": "Download Form Start Date Notice"
+        },
+        {
+          "url": "https://energy.rajasthan.gov.in/press-release/953/245053",
+          "label": "Download Short Notice"
+        },
+        {
+          "url": "https://energy.rajasthan.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/dhc-pa-spa-sep26/": {
+    "attemptedAt": "2026-11-03T09:36:06.672Z",
+    "parser": "v2",
+    "details": {
+      "organization": "High Court of Delhi (DHC)",
+      "publishedDate": "2026-10-30",
+      "openDate": "2026-09-15",
+      "lastDate": "2026-10-05",
+      "examDate": "2026-11-27",
+      "resultDate": null,
+      "admitCardDate": "2026-11-24",
+      "interviewDate": null,
+      "vacancies": "150",
+      "ageLimit": "18–32 years",
+      "eligibility": "Bachelor Degree in Any Stream in Any Recognized University in India. English Shorthand : 110 WPM English Typewriting : 40 WPM on Computer Good Working Knowledge of Computer More Eligibility Details Read the Notification",
+      "applicationFee": "Gen / OBC / EWS : 1500/- SC / ST : 1300/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 07:55 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-10-05",
+          "dateText": "05/10/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-10-05",
+          "dateText": "05/10/2026"
+        },
+        {
+          "label": "October 2026 SAP Exam Date",
+          "date": "2026-11-14",
+          "dateText": "14/11/2026"
+        },
+        {
+          "label": "PA Exam Date",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-11-24",
+          "dateText": "24/11/2026"
+        }
+      ],
+      "officialLink": "https://delhihighcourt.nic.in/files/2026-10/recuritment/93-exams-nj.pdf",
+      "notificationLink": "https://delhihighcourt.nic.in/files/2026-09/recuritment/vacancy_circular_for_spa.pdf",
+      "officialLinks": [
+        {
+          "url": "https://delhihighcourt.nic.in/files/2026-10/recuritment/93-exams-nj.pdf",
+          "label": "Download PA Exam Date Notice"
+        },
+        {
+          "url": "https://delhihighcourt.nic.in/files/2026-10/recuritment/92-exams-nj.pdf",
+          "label": "Download SPA Exam Date Notice"
+        },
+        {
+          "url": "https://cdn.digialm.com/EForms/configuredHtml/33131/102306/Index.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://delhihighcourt.nic.in/files/2026-09/recuritment/vacancy_circular_for_spa.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://delhihighcourt.nic.in/web/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/force/cisf-constable-fire-aug24/": {
+    "attemptedAt": "2026-11-03T09:36:06.779Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Central Industrial Security Force CISF Constable / Fire 10+2",
+      "publishedDate": "2026-10-27",
+      "openDate": "2024-08-31",
+      "lastDate": "2024-09-30",
+      "examDate": "2026-12-01",
+      "resultDate": null,
+      "admitCardDate": "2024-12-16",
+      "interviewDate": null,
+      "vacancies": "1130",
+      "ageLimit": "18–23 years",
+      "eligibility": "Only for Male Candidates 10+2 Intermediate with Science Subject. Height : 170 CMS Chest : 80-85 CMS More Details Read Notification.",
+      "applicationFee": "Gen/EWS/OBC : 100/- SC / ST / ESM : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026 | 08:20 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2024-09-30",
+          "dateText": "30/09/2024"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2024-09-30",
+          "dateText": "30/09/2024"
+        },
+        {
+          "label": "DV/PET/PST Exam Date",
+          "date": "2024-12-24",
+          "dateText": "24/12/2024"
+        },
+        {
+          "label": "to 20/01/2024 Admit Card Available",
+          "date": "2024-12-16",
+          "dateText": "16/12/2024"
+        },
+        {
+          "label": "Exam Date Available",
+          "date": "2026-12-01",
+          "dateText": "01/12/2026"
+        }
+      ],
+      "officialLink": "https://cisfrectt.cisf.gov.in/ct_fire_2024/ct_fire_login.php",
+      "officialLinks": [
+        {
+          "url": "https://cisfrectt.cisf.gov.in/file_open.php?fnm=isH31AVEyZzxYvQHdQU0EaOks-tArw6q5ad_sRCnYSZeCksg6A9gwCHjYzkgBewFRRzfOl_yy9e1xe7M07S8782mJ1yGl7BjBjI86ceiUPw",
+          "label": "Download Exam Date"
+        },
+        {
+          "url": "https://cisfrectt.cisf.gov.in/ct_fire_2024/ct_fire_login.php",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/CISF_COnstable_Fire_DV_PET_PST_ExamNotice_SarkariResult.pdf",
+          "label": "Download DV/PET/PST Exam Notice"
+        },
+        {
+          "url": "https://cisfrectt.cisf.gov.in/recruitment_latest/new_registration.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cisfrectt.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/upsc/upsc-cds-i-2026/": {
+    "attemptedAt": "2026-11-03T09:36:06.801Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Union Public Service Commission (UPSC)",
+      "publishedDate": "2026-11-02",
+      "openDate": "2025-12-10",
+      "lastDate": "2025-12-30",
+      "examDate": "2026-04-12",
+      "resultDate": "2026-11-02",
+      "admitCardDate": "2026-04-02",
+      "interviewDate": null,
+      "vacancies": "394",
+      "ageLimit": "",
+      "eligibility": "Bachelor Degree in Any Stream from Any Recognized University in India.",
+      "applicationFee": "General / OBC / EWS : 100/- SC / ST : 0/- Female : 0/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:25 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2025-12-30",
+          "dateText": "30/12/2025"
+        },
+        {
+          "label": "Last Date Pay Exam Fee",
+          "date": "2025-12-30",
+          "dateText": "30/12/2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-04-12",
+          "dateText": "12/04/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-04-02",
+          "dateText": "02/04/2026"
+        },
+        {
+          "label": "Result Available",
+          "date": "2026-05-08",
+          "dateText": "08/05/2026"
+        },
+        {
+          "label": "Final Result Available",
+          "date": "2026-11-02",
+          "dateText": "02/11/2026"
+        }
+      ],
+      "officialLink": "https://www.upsc.gov.in/sites/default/files/FR-CDSE-I-2026-Engl-021126.pdf",
+      "notificationLink": "https://upsc.gov.in/sites/default/files/Notif-CDSE-I-2026-Engl-101225.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/FR-CDSE-I-2026-Engl-021126.pdf",
+          "label": "Download Final Result"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/WR-RollList-CDSE-I-2026-Engl-080526.pdf",
+          "label": "Download Result"
+        },
+        {
+          "url": "https://upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28I%29%2C%202026/Provisional%20Answer%20Key",
+          "label": "Download Answer Key"
+        },
+        {
+          "url": "https://upsconline.nic.in/login",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/TimeTable-CDSE-I-2026-Engl-070126.pdf",
+          "label": "Download Exam Schedule"
+        },
+        {
+          "url": "https://tinyurl.com/4reph534",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://upsconline.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/Notif-CDSE-I-2026-Engl-101225.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upsc.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/tspsc-aee-admit-card-2026-3078044": {
+    "attemptedAt": "2026-11-03T09:36:06.845Z",
+    "parser": "v2",
+    "details": {
+      "organization": "TSPSC AEE",
+      "publishedDate": "2026-11-03",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-07",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-06-02",
+          "dateText": "2 June 2026"
+        },
+        {
+          "label": "Latest Hall Ticket Update",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Hall Ticket Download Last Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-11-07",
+          "dateText": "6 and 7 November 2026"
+        },
+        {
+          "label": "Download Last Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Examination Dates",
+          "date": "2026-11-07",
+          "dateText": "6 and 7 November 2026"
+        },
+        {
+          "label": "CBT Examination",
+          "date": "2026-11-07",
+          "dateText": "6 and 7 November 2026"
+        }
+      ],
+      "officialLink": "https://hallticket.tgpsc.gov.in/hG012026rbg256u8f49-m2j5-79kgfj58hg-d2dfg2k-52dfgh212sdf",
+      "officialLinks": [
+        {
+          "url": "https://hallticket.tgpsc.gov.in/hG012026rbg256u8f49-m2j5-79kgfj58hg-d2dfg2k-52dfgh212sdf",
+          "label": "TSPSC AEE Admit Card 2026"
+        },
+        {
+          "url": "https://www.tgpsc.gov.in/",
+          "label": "TGPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/smc-clerk-result-2026-3077858": {
+    "attemptedAt": "2026-11-03T09:36:06.882Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Surat Municipal Corporation (SMC)",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-04-01",
+      "lastDate": "2026-04-15",
+      "examDate": "2026-10-11",
+      "resultDate": "2026-11-02",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "717",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Written Exam Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Result Declared On",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-04-15",
+          "dateText": "15 April 2026"
+        },
+        {
+          "label": "Written Exam",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Provisional Answer Key",
+          "date": "2026-10-17",
+          "dateText": "17 October 2026"
+        },
+        {
+          "label": "Last Date for Objections",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Result Declared",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        }
+      ],
+      "officialLink": "https://www.suratmunicipal.gov.in/Information/ExamResults",
+      "officialLinks": [
+        {
+          "url": "https://suratmunicipal.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.suratmunicipal.gov.in/Information/ExamResults",
+          "label": "SMC Clerk Result 2026 PDF"
+        },
+        {
+          "url": "https://www.suratmunicipal.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/bank/indian-bank-so-apr26/": {
+    "attemptedAt": "2026-11-03T09:36:07.210Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Bank",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-04-08",
+      "lastDate": "2026-04-28",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "350",
+      "ageLimit": "22–40 years",
+      "eligibility": "For Post Wise Eligibility with Experience Details Read the Notification.",
+      "applicationFee": "General / OBC / EWS : 1000/ SC / ST / PH : 175/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-04-28",
+          "dateText": "28/04/2026"
+        },
+        {
+          "label": "Last Date for Pay Exam Fee",
+          "date": "2026-04-28",
+          "dateText": "28/04/2026"
+        }
+      ],
+      "officialLink": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+      "notificationLink": "https://indianbank.bank.in/wp-content/uploads/2026/04/Advertisment-for-Recruitment-of-Specialist-Officers-2026-27_08042026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://indianbank.bank.in/documents/20117/34414/List%20of%20Provisionally%20selected%20candidates2026_10_29_14_08_27.pdf/7d3d36ab-bb42-9667-65ce-e92bf3ac0bfd",
+          "label": "Download Result"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ibsofeb26/scda_oct26/login.php?appid=8c8a87eff9edf6423f89352999e0965b",
+          "label": "Download Score Card"
+        },
+        {
+          "url": "https://indianbank.bank.in/en/career",
+          "label": "Download Interview Details"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/ibsofeb26/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://indianbank.bank.in/wp-content/uploads/2026/04/Advertisment-for-Recruitment-of-Specialist-Officers-2026-27_08042026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://indianbank.bank.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/upsc/upsc-geo-scientist-2026/": {
+    "attemptedAt": "2026-11-03T09:36:07.243Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Union Public Service Commission UPSC",
+      "publishedDate": "2026-10-31",
+      "openDate": "2025-09-03",
+      "lastDate": "2025-09-23",
+      "examDate": "2026-02-08",
+      "resultDate": "2026-07-20",
+      "admitCardDate": "2026-06-13",
+      "interviewDate": null,
+      "vacancies": "85",
+      "ageLimit": "",
+      "eligibility": "Passed / Appearing Master Degree Geological Science or Geology or Applied Geology or Geo-Exploration or Mineral Exploration or Engineering Geology or Marine Geology or Earth Science or Any Other Equivalent Degree",
+      "applicationFee": "General / OBC : 200/- SC / ST / PH : 0/- (Nil) All Category Female : 0/- (Exempted)",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-31",
+          "dateText": "31/10/2026 | 12:52 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2025-09-23",
+          "dateText": "23/09/2025"
+        },
+        {
+          "label": "PM Only Last Date for Fee Payment",
+          "date": "2025-09-23",
+          "dateText": "23/09/2025"
+        },
+        {
+          "label": "Pre Exam Date",
+          "date": "2026-02-08",
+          "dateText": "08/02/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-01-31",
+          "dateText": "31/01/2026"
+        },
+        {
+          "label": "Pre Result Available",
+          "date": "2026-03-02",
+          "dateText": "02/03/2026"
+        },
+        {
+          "label": "Mains Admit Card",
+          "date": "2026-06-13",
+          "dateText": "13/06/2026"
+        },
+        {
+          "label": "Mains Result Available",
+          "date": "2026-07-20",
+          "dateText": "20/07/2026"
+        },
+        {
+          "label": "Marks Available",
+          "date": "2026-10-31",
+          "dateText": "31/10/2026"
+        }
+      ],
+      "officialLink": "https://www.upsc.gov.in/sites/default/files/WR-RollList-CGeoSntstMain-2026-Engl-200726.pdf",
+      "notificationLink": "https://upsc.gov.in/sites/default/files/Notif-CGeoScnstPre-26-Engl.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/MksRcdCndtsCGeoSnstM-2026-Engl-30102026.pdf",
+          "label": "Download Marks"
+        },
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/WR-RollList-CGeoSntstMain-2026-Engl-200726.pdf",
+          "label": "Download Mains Result"
+        },
+        {
+          "url": "https://upsconline.nic.in/login",
+          "label": "Download Mains Admit Card"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/CGSPE_2026_WR_RollList_Eng_02032026.pdf",
+          "label": "Download Pre Result"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/TT-CGeoScnstPre26-Engl-211125.pdf",
+          "label": "Download Exam Notice"
+        },
+        {
+          "url": "https://upsconline.nic.in/upsc/OTRP/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/Notif-CGeoScnstPre-26-Engl.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upsc.gov.in/whats-new",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/2026/bpsc-aes-88-2025/": {
+    "attemptedAt": "2026-11-03T09:36:07.295Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Bihar Public Service Commission (BPSC)",
+      "publishedDate": "2026-10-30",
+      "openDate": "2025-08-27",
+      "lastDate": "2025-09-19",
+      "examDate": "2026-06-11",
+      "resultDate": "2026-10-30",
+      "admitCardDate": "2026-06-04",
+      "interviewDate": null,
+      "vacancies": "17",
+      "ageLimit": "Minimum 18 years",
+      "eligibility": "Post Graduate Degree in Chemistry, Biology, Environmental Science, or Physics is mandatory. More Eligibility Details Read the Notification",
+      "applicationFee": "General / BC/ Other State : 100/- SC / ST / PH : 100/- Female Candidate (Bihar Dom.) : 100/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026 | 05:44 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2025-09-19",
+          "dateText": "19/09/2025"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2025-09-19",
+          "dateText": "19/09/2025"
+        },
+        {
+          "label": "BPSC AES Exam Date",
+          "date": "2026-06-11",
+          "dateText": "11/06/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-06-04",
+          "dateText": "04/06/2026"
+        },
+        {
+          "label": "Answer Key",
+          "date": "2026-07-07",
+          "dateText": "07/07/2026"
+        },
+        {
+          "label": "Result Available",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
+        }
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-882025-Assistant-Environmental-Scientist-Written-Exam_BPSC-20261030-rvdpno.pdf",
+      "notificationLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/22-8-25-5-Advertisement-882025-Assistant-Environmental-Scientist-Environment-Forest-Climate-Change-Dept_BPSC-20250823-326r9c.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-882025-Assistant-Environmental-Scientist-Written-Exam_BPSC-20261030-rvdpno.pdf",
+          "label": "Download Result"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/ADVTNO3_BPSC-20260707-w8xz41.pdf",
+          "label": "Download Answer Key"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-Invitation-of-Objection-882025_BPSC-20260707-i7ypgz.pdf",
+          "label": "Download Notice"
+        },
+        {
+          "url": "https://bpsconline.bihar.gov.in/candidate/login",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-882025-Asst.-Environmental-Scientist-Admit-Card_BPSC-20260602-se6ft5.pdf",
+          "label": "Download Exam Notice"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/22-8-25-5-Advertisement-882025-Assistant-Environmental-Scientist-Environment-Forest-Climate-Change-Dept_BPSC-20250823-326r9c.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/22-8-25-7-Syllabus-882025-Assistant-Environmental-Scientist-Environment-Forest-Climate-Change-Dept_BPSC-20250823-kuog68.pdf",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.sarkariresult.com/bihar/bpsc-aso-37-2025/": {
+    "attemptedAt": "2026-11-03T09:36:07.320Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Bihar Public Service Commission (BPSC)",
+      "publishedDate": "2026-10-27",
+      "openDate": "2025-05-29",
+      "lastDate": "2025-06-23",
+      "examDate": "2026-02-27",
+      "resultDate": "2026-10-27",
+      "admitCardDate": "2026-02-20",
+      "interviewDate": null,
+      "vacancies": "41",
+      "ageLimit": "21–37 years",
+      "eligibility": "Bachelor Degree in Any Stream from Any Recognized University in India. More Details Read the Notification.",
+      "applicationFee": "General / OBC/ Other State : 600/- SC / ST / PH : 150/- Female Candidate (Bihar Dom.) : 150/-",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-27",
+          "dateText": "27 October 2026 | 08:16 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2025-06-23",
+          "dateText": "23/06/2025"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2025-06-23",
+          "dateText": "23/06/2025"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-02-27",
+          "dateText": "27/02/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-02-20",
+          "dateText": "20/02/2026"
+        },
+        {
+          "label": "Result Available Mains",
+          "date": "2026-10-27",
+          "dateText": "27/10/2026"
+        }
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-372025-ASO-BPSC-Main-Competitive-Examination_BPSC-20261027-pd94j7.pdf",
+      "notificationLink": "https://doc.sarkariresults.org.in/BPSC_Assistant%20Section%20Officer_Advt_37_2025.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-372025-ASO-BPSC-Main-Competitive-Examination_BPSC-20261027-pd94j7.pdf",
+          "label": "Download Result (Mains)"
+        },
+        {
+          "url": "https://bpsconline.bihar.gov.in/candidate/login",
+          "label": "Download Mains Admit Card"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-372025-BPSC-ASO-Main-Admit-Card_BPSC-20260216-swg3xf.pdf",
+          "label": "Download Mains Exam Notice"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/BPSC_Assistant%20Section%20Officer_Advt_37_2025.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.bpsc.bih.nic.in/Notices/NB-2024-06-13-04.pdf",
+          "label": "Download Recruitment Notice"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "Official Website"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T09:33:06.889Z",
-  "total": 4,
+  "generatedAt": "2026-11-03T09:35:42.209Z",
+  "total": 2,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA4XzEwXzIwMjYucGRm",
@@ -14,32 +14,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-10-08"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfQXNzaXN0YW50X0RpcmVjdG9yXzIwMjZfRGF0ZWRfMDZfMDdfMjAyNi5wZGY",
-      "type": "job",
-      "title": "Recruitment Advertisement for Assistant Director 2026, Department of Higher Education, Government of Madhya Pradesh (Advt. No. 12/2026), Dated 06/07/2026",
-      "source": "MPPSC",
-      "category": "Teaching",
-      "state": "Madhya Pradesh",
-      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_2026_Dated_06_07_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-07-06"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfQXNzaXN0YW50X0RpcmVjdG9yX0Zpc2hlcmllc18yMDI2X0RhdGVkXzA2XzA3XzIwMjYucGRm",
-      "type": "job",
-      "title": "Recruitment Advertisement for Assistant Director Fisheries 2026, Department of Fishermen Welfare and Fisheries Development Government of Madhya Pradesh (Advt. No. 11/2026), Dated 0",
-      "source": "MPPSC",
-      "category": "UPSC",
-      "state": "Madhya Pradesh",
-      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Assistant_Director_Fisheries_2026_Dated_06_07_2026.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-07-06"
     },
     {
       "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfSW50ZXJuYWxfQWNjb3VudHNfRXhhbWluZXJfT2ZmaWNlcl9fMjAyNl9EYXRlZF8xMF8wNF8yMDI2LnBkZg",
