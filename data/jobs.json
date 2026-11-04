@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-03T09:36:07.327Z",
-  "jobsGeneratedAt": "2026-11-03T09:35:42.209Z",
+  "generatedAt": "2026-11-04T09:16:15.773Z",
+  "jobsGeneratedAt": "2026-11-04T09:16:14.404Z",
   "partial": true,
-  "total": 569,
+  "total": 574,
   "quality": {
     "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 76,
+    "jobsMissingClosingDate": 75,
     "genericNavigationItems": 0
   },
   "errors": [
@@ -40,23 +40,8 @@
       "error": "timeout"
     },
     {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": ""
-    },
-    {
       "source": "CBSE/CTET",
       "url": "https://www.cbse.gov.in/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "SAIL",
-      "url": "https://sail.co.in/web/careers",
-      "error": "unable to verify the first certificate"
-    },
-    {
-      "source": "NTPC",
-      "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
     },
     {
@@ -65,9 +50,24 @@
       "error": "timeout"
     },
     {
+      "source": "NTPC",
+      "url": "https://careers.ntpc.co.in/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "Supreme Court of India",
       "url": "https://www.sci.gov.in/recruitments/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "SAIL",
+      "url": "https://sail.co.in/web/careers",
+      "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "NIC e-Pariksha",
@@ -100,14 +100,14 @@
       "error": "timeout"
     },
     {
-      "source": "MPPSC",
-      "url": "https://mppsc.mp.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "KPSC",
       "url": "https://kpsc.kar.nic.in/",
       "error": "Parse Error: Invalid header token"
+    },
+    {
+      "source": "MPPSC",
+      "url": "https://mppsc.mp.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "GPSC",
@@ -115,9 +115,14 @@
       "error": ""
     },
     {
+      "source": "TGPSC",
+      "url": "https://www.tgpsc.gov.in/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO 805CB140B27F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "error": "write EPROTO 80CCAD7F9F7F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
@@ -152,17 +157,17 @@
     {
       "source": "APSC",
       "url": "https://apsc.nic.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
+    },
+    {
+      "source": "JKPSC",
+      "url": "https://jkpsc.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "Mizoram PSC",
       "url": "https://mpsc.mizoram.gov.in/",
       "error": "HTTP 403"
-    },
-    {
-      "source": "JKPSC",
-      "url": "https://jkpsc.nic.in/",
-      "error": "The operation was aborted"
     },
     {
       "source": "SPSC Sikkim",
@@ -173,11 +178,6 @@
       "source": "TPSC",
       "url": "https://tpsc.tripura.gov.in/",
       "error": "timeout"
-    },
-    {
-      "source": "Government of Puducherry",
-      "url": "https://www.py.gov.in/recruitment",
-      "error": "The operation was aborted"
     },
     {
       "source": "CSBC (Bihar Police)",
@@ -198,6 +198,21 @@
       "source": "TNUSRB",
       "url": "https://www.tnusrb.tn.gov.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/latestjob/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/admitcard/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/result/",
+      "error": "HTTP 403"
     }
   ],
   "jobs": [
@@ -12741,59 +12756,6 @@
       ]
     },
     {
-      "id": "competitor-sarkariresult-4d466f18e1015008",
-      "type": "job",
-      "title": "Air Force Agniveer Vayu Musician Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Defence",
-      "state": "All India",
-      "link": "https://cdn.digialm.com/EForms/configuredHtml/1258/101682/login.html",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/air-force-agniveervayu-musician-july26/",
-      "discoveredVia": "https://www.sarkariresult.com/admitcard/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "publishedDate": "2026-08-17",
-      "openDate": "2026-07-20",
-      "lastDate": "2026-08-02",
-      "organization": "Join Indian Air Force",
-      "eligibility": "Male / Female Candidates Eligible (All India) Class 10th High School Exam In Any Recognized Board in India. Music Ability Required (For Details Read the Notification) Heights : Male : 162 CMS, Female : 152 CMS Running : Male : 1.6 KM Run in 07 Minutes. Female : 1.6 Km Run in 8 Minutes. More PET Details Read the Notification.",
-      "applicationFee": "General / OBC / EWS : 100/- SC / ST :100/-",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-08-17",
-          "dateText": "17 August 2026 | 11:32 AM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-08-02",
-          "dateText": "02/08/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-08-02",
-          "dateText": "02/08/2026"
-        }
-      ],
-      "officialLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/101682/login.html",
-      "notificationLink": "https://iafrecruitment.edcil.co.in/agniveervayu/pdffiles/Musician%20%20Rally%2001%20of%202027.pdf",
-      "officialLinks": [
-        {
-          "url": "https://cdn.digialm.com/EForms/configuredHtml/1258/101682/login.html",
-          "label": "Download Admit Card"
-        },
-        {
-          "url": "https://iafrecruitment.edcil.co.in/agniveervayu/pdffiles/Musician%20%20Rally%2001%20of%202027.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://indianairforce.nic.in/",
-          "label": "Official Website"
-        }
-      ]
-    },
-    {
       "id": "competitor-sarkariresult-aa45fa55443e99d2",
       "type": "result",
       "title": "Uttarakhand UK TET UTET Admit Card 2026",
@@ -15205,8 +15167,8 @@
       "openDate": null,
       "lastDate": "2026-10-03",
       "examDate": "2026-11-14",
-      "publishedDate": "2026-11-02",
-      "organization": "KTET Hall Ticket 2026 - Download Kerala TET",
+      "publishedDate": "2026-11-04",
+      "organization": "KTET Hall Ticket 2026 Out Today - Download Kerala TET",
       "eligibility": "Kerala Pareeksha Bhavan, Government of Kerala",
       "officialLinks": [
         {
@@ -15533,6 +15495,90 @@
           "label": "October 2026 SSC CHSL 2026 Tier I Exam Date",
           "date": "2026-11-30",
           "dateText": "30/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-c711cb621d47c2d7",
+      "type": "result",
+      "title": "HAL Junior Executive Interview Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://hal-india.co.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/hal-junior-executive-interview-result-2026-3078444",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Hindustan Aeronautics Limited (HAL)",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-10-07",
+      "lastDate": "2026-10-17",
+      "vacancies": "150",
+      "officialLinks": [
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Production_1793679742.pdf",
+          "label": "Production"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Metallurgy_1793679742.pdf",
+          "label": "Metallurgy"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Mechanical_1793679742.pdf",
+          "label": "Mechanical"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Electronics_1793679742.pdf",
+          "label": "Electronics"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Electrical_1793679742.pdf",
+          "label": "Electrical"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Computer%20Science_1793679742.pdf",
+          "label": "Computer Science"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Civil_1793679742.pdf",
+          "label": "Civil"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Chemical_1793679742.pdf",
+          "label": "Chemical"
+        },
+        {
+          "url": "https://hal-india.co.in/backend/wp-content/uploads/career/Aeronautical_1793679742.pdf",
+          "label": "Aeronautical"
+        },
+        {
+          "url": "https://hal-india.co.in/",
+          "label": "HAL Official Website"
+        }
+      ],
+      "officialLink": "https://hal-india.co.in/",
+      "milestones": [
+        {
+          "label": "Shortlist Release Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-07",
+          "dateText": "7 October 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-10-17",
+          "dateText": "17 October 2026"
+        },
+        {
+          "label": "Provisional Interview Shortlist Release Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
         }
       ]
     },
@@ -15900,43 +15946,6 @@
           "label": "Last Date for Apply",
           "date": "2026-11-04",
           "dateText": "04/11/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-freejobalert-e283c81cc962a5c5",
-      "type": "job",
-      "title": "DSSSB 641 Peon, PA and More Posts Online Form 2026",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": null,
-      "sourceListingUrl": "https://www.freejobalert.com/articles/dsssb-delhi-district-courts-recruitment-2026-notification-out-apply-online-for-641-posts-3070579",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "organization": "DSSSB Delhi District Courts",
-      "publishedDate": "2026-11-02",
-      "openDate": "2026-10-06",
-      "lastDate": "2026-11-04",
-      "vacancies": "641",
-      "eligibility": "04 November 2026 (closing date of application)",
-      "milestones": [
-        {
-          "label": "Online Application Last Date",
-          "date": "2026-11-04",
-          "dateText": "04 November 2026, 11:00 PM"
-        },
-        {
-          "label": "Age Reckoning Date",
-          "date": "2026-06-01",
-          "dateText": "01 June 2026"
-        },
-        {
-          "label": "Qualification/Experience Cut-off (Crucial) Date",
-          "date": "2026-11-04",
-          "dateText": "04 November 2026 (closing date of application)"
         }
       ]
     },
@@ -16933,44 +16942,7 @@
       "openDate": "2026-10-17",
       "lastDate": "2026-11-15",
       "publishedDate": "2026-10-17",
-      "detail": "327 vacancies across eight posts. Applications opened 17 Oct 2026; the application deadline is 15 Nov 2026.",
-      "vacancies": "327",
-      "ageLimit": "18–28 years",
-      "eligibility": "Two years Post Graduation Degree/Post Graduation Diploma in any Discipline.",
-      "applicationFee": "General / OBC / EWS : 1350/- SC / ST / PH / Female : 500/-",
-      "notificationLink": "https://cwceportal.com/Careers/Guidelines/45/45_Detailed%20Advertisement_7109fe46-7e18-4b68-84a5-8b6d6708e571.pdf",
-      "officialLinks": [
-        {
-          "url": "https://ibpsreg.ibps.in/cwcaug26/",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://cwceportal.com/Careers/Guidelines/45/45_Detailed%20Advertisement_7109fe46-7e18-4b68-84a5-8b6d6708e571.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://cwceportal.com/careers",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://ibpsreg.ibps.in/cwcaug26/",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-17",
-          "dateText": "17 October 2026 | 12:55 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-15",
-          "dateText": "15/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-15",
-          "dateText": "15/11/2026"
-        }
-      ]
+      "detail": "327 vacancies across eight posts. Applications opened 17 Oct 2026; the application deadline is 15 Nov 2026."
     },
     {
       "id": "competitor-sarkariresult-677f18a62f1a3dd3",
@@ -17363,7 +17335,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/powergrid-engineer-trainee-recruitment-2026-3078049",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
+      "factCheckedAt": "2026-11-04",
       "organization": "Power Grid Corporation of India Limited (POWERGRID)",
       "publishedDate": "2026-11-03",
       "openDate": "2026-11-03",
@@ -18209,6 +18181,99 @@
       "openDate": "2026-10-07"
     },
     {
+      "id": "competitor-freejobalert-927c3e85c577ee65",
+      "type": "job",
+      "title": "Bank of Baroda 837 Professionals Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "See linked notice",
+      "link": "https://bankofbaroda.bank.in/career/current-opportunities",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/bob-recruitment-2026-senior-relationship-manager-3078340",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Bank of Baroda (BOB)",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-11-04",
+      "lastDate": "2026-11-24",
+      "vacancies": "837",
+      "ageLimit": "24 to 50 Years, Post-Wise",
+      "eligibility": "Graduation with Prescribed Professional Certifications and Relevant Experience",
+      "applicationFee": "Rs. 850 / Rs. 175 + Payment Gateway Charges",
+      "notificationLink": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-10/Advertisement-Contractual-04-11-2026-03-18.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bankofbaroda.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://bankofbaroda.bank.in/career/current-opportunities",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-10/Advertisement-Contractual-04-11-2026-03-18.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://bankofbaroda.bank.in/career/current-opportunities/wealth-management-services-department-bob-hrm-rec-advt-2026-20",
+          "label": "Official WMS Recruitment Announcement"
+        },
+        {
+          "url": "https://bankofbaroda.bank.in/career",
+          "label": "Bank of Baroda Careers"
+        }
+      ],
+      "officialLink": "https://bankofbaroda.bank.in/career/current-opportunities",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Eligibility Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Last Date for Application Fee Payment",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Age, Qualification and Experience Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-7651bebe982eec31",
       "type": "job",
       "title": "Railway RRB Station Master Online Form 2026",
@@ -18380,6 +18445,118 @@
       "openDate": "2026-09-17",
       "ageLimit": "18–40 years",
       "notificationLink": "https://doc.sarkariresults.org.in/UPSSSC_19-Exam_2026_Notification.pdf"
+    },
+    {
+      "id": "competitor-freejobalert-0a99f487f1ceca60",
+      "type": "job",
+      "title": "Indian Bank 1500 Apprentices Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "See linked notice",
+      "link": "https://ibpsreg.ibps.in/inbraoct26/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/indian-bank-apprentices-recruitment-2026-3078364",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Indian Bank",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-11-05",
+      "lastDate": "2026-11-25",
+      "resultDate": "2026-11-01",
+      "ageLimit": "20 to 28 Years",
+      "eligibility": "Graduate in Any Discipline",
+      "applicationFee": "Rs. 800 / Rs. 175 + GST",
+      "notificationLink": "https://indianbank.bank.in/documents/20117/34414/FINAL%20UPDATED%20ADVERTISEMENT%20FOR%20ENGAGEMENT%20OF%20APPRENTICES%20FOR%20FY%202026-27%20-%2004.11.20262026_11_04_04_14_20.pdf/451450a2-0501-51ba-e37c-db63b9c27425",
+      "officialLinks": [
+        {
+          "url": "https://indianbank.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/inbraoct26/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://indianbank.bank.in/documents/20117/34414/FINAL%20UPDATED%20ADVERTISEMENT%20FOR%20ENGAGEMENT%20OF%20APPRENTICES%20FOR%20FY%202026-27%20-%2004.11.20262026_11_04_04_14_20.pdf/451450a2-0501-51ba-e37c-db63b9c27425",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://nats.education.gov.in/",
+          "label": "NATS 2.0 Registration"
+        },
+        {
+          "url": "https://nats.education.gov.in/assets/manual/student_manual.pdf",
+          "label": "NATS Student Registration Manual"
+        },
+        {
+          "url": "https://indianbank.bank.in/en/career",
+          "label": "Indian Bank Careers"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/inbraoct26/",
+      "milestones": [
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Updated Notification Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Age and Qualification Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Earliest Eligible Graduation Date",
+          "date": "2022-04-01",
+          "dateText": "1 April 2022"
+        },
+        {
+          "label": "Latest Eligible Graduation Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Final Result Declaration Deadline",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Latest Date of Birth",
+          "date": "2006-11-01",
+          "dateText": "1 November 2006"
+        }
+      ]
     },
     {
       "id": "competitor-sarkariresult-795a1dab244fabf6",
@@ -18586,6 +18763,84 @@
       ],
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
       "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-lower-pcs-26-exam-oct26/"
+    },
+    {
+      "id": "competitor-freejobalert-6d1f8492ff571c9d",
+      "type": "job",
+      "title": "RRC Central Railway 2,861 Act Apprentice Posts Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Railways",
+      "state": "All India",
+      "link": "https://rrccr.com/TradeApp/login/Index",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rrc-central-railway-act-apprentice-recruitment-2026-3078343",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Railway Recruitment Cell, Central Railway (RRC CR)",
+      "publishedDate": "2026-11-03",
+      "openDate": "2026-11-03",
+      "lastDate": "2026-12-02",
+      "ageLimit": "15 to 24 Years",
+      "eligibility": "10th Pass with Minimum 50% Aggregate Marks and Relevant ITI Certificate",
+      "applicationFee": "Rs. 100; Exemptions Applicable",
+      "notificationLink": "https://rrccr.com/rrwc/Files/7131ab94-6fc8-45c1-a2ed-f9191914dcbd.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.rrccr.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://rrccr.com/TradeApp/login/Index",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://rrccr.com/rrwc/Files/7131ab94-6fc8-45c1-a2ed-f9191914dcbd.pdf",
+          "label": "Official Notification PDF (English)"
+        },
+        {
+          "url": "https://www.rrccr.com/Home/Home",
+          "label": "Official Notification and Updates"
+        }
+      ],
+      "officialLink": "https://rrccr.com/TradeApp/login/Index",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026, 11:00 AM"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-02",
+          "dateText": "2 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026, 11:00 AM"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-02",
+          "dateText": "2 December 2026, 5:00 PM"
+        }
+      ]
     },
     {
       "id": "competitor-sarkariresult-bf6b76592d5d19e0",
@@ -18844,19 +19099,6 @@
       "publishedDate": "2026-11-30"
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbXpOSklSVktuRFJ6VEh6L2pmNFpRbQ",
-      "type": "admit-card",
-      "title": "06 Nov 2026 NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2023, LECTURER GOVT. AYURVEDA DEGREE COLLEGE AND HOSPITAL (SCREENING) .....",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmzNJIRVKnDRzTHz/jf4ZQm",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL3NlY3VyZT9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
       "type": "job",
       "title": "இணையவழியில் விண்ணப்பிக்க Apply online",
@@ -18864,19 +19106,6 @@
       "category": "State PSC",
       "state": "Tamil Nadu",
       "link": "https://apply.tnpscexams.in/secure?app_id=UElZMDAwMDAwMQ==",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9oYWxsdGlja2V0LnRncHNjLmdvdi5pbi9oRzAxMjAyNnJiZzI1NnU4ZjQ5LW0yajUtNzlrZ2ZqNThoZy1kMmRmZzJrLTUyZGZnaDIxMnNkZg",
-      "type": "admit-card",
-      "title": "DOWNLOAD HALL TICKET FOR ASSISTANT EXECUTIVE ENGINEER (CIVIL) (01/G/RB/2026)",
-      "source": "TGPSC",
-      "category": "State PSC",
-      "state": "Telangana",
-      "link": "https://hallticket.tgpsc.gov.in/hG012026rbg256u8f49-m2j5-79kgfj58hg-d2dfg2k-52dfgh212sdf",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -19234,45 +19463,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MzE5MTQ4NTIyMzQy",
-      "type": "job",
-      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-09-25",
-      "publishedDate": "2026-10-26"
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
-      "type": "result",
-      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
-      "source": "NPSC",
-      "category": "Teaching",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/results/179302304373058",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-09-25",
-      "publishedDate": "2026-10-26"
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
-      "type": "job",
-      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/applicant/otr",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZG9pdC90YWItY29udGVudC9vbGQtcmVzdWx0",
       "type": "result",
       "title": "Old Result",
@@ -19319,6 +19509,45 @@
       "category": "State PSC",
       "state": "Delhi",
       "link": "https://dsssb.delhi.gov.in/dsssb-vacancies",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MzE5MTQ4NTIyMzQy",
+      "type": "job",
+      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": "2026-10-26"
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
+      "type": "result",
+      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
+      "source": "NPSC",
+      "category": "Teaching",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/results/179302304373058",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-25",
+      "publishedDate": "2026-10-26"
+    },
+    {
+      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
+      "type": "job",
+      "title": "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "source": "NPSC",
+      "category": "State PSC",
+      "state": "Nagaland",
+      "link": "https://npsc.nagaland.gov.in/applicant/otr",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -19407,6 +19636,19 @@
       "publishedDate": "2026-10-20",
       "resultDate": "2026-10-19",
       "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
+    },
+    {
+      "id": "aHR0cHM6Ly9oYWxsdGlja2V0LnRncHNjLmdvdi5pbi9oRzAxMjAyNnJiZzI1NnU4ZjQ5LW0yajUtNzlrZ2ZqNThoZy1kMmRmZzJrLTUyZGZnaDIxMnNkZg",
+      "type": "admit-card",
+      "title": "DOWNLOAD HALL TICKET FOR ASSISTANT EXECUTIVE ENGINEER (CIVIL) (01/G/RB/2026)",
+      "source": "TGPSC",
+      "category": "State PSC",
+      "state": "Telangana",
+      "link": "https://hallticket.tgpsc.gov.in/hG012026rbg256u8f49-m2j5-79kgfj58hg-d2dfg2k-52dfgh212sdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmN2YtMTkyMy04MTlmLTk0MjQ0ZWE3MDAwNi9yZXN1bHQ",
@@ -27878,51 +28120,6 @@
       ]
     },
     {
-      "id": "competitor-freejobalert-31d03a22d8c415f6",
-      "type": "job",
-      "title": "CRPF 521 Sports Quota Online Form 2026",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "Defence",
-      "state": "All India",
-      "link": null,
-      "sourceListingUrl": "https://www.freejobalert.com/articles/crpf-sports-quota-recruitment-2026-apply-online-for-521-head-constable-constable-posts-3068927",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "organization": "Directorate General, Central Reserve Police Force (CRPF), Ministry of Home Affairs",
-      "publishedDate": "2026-11-02",
-      "openDate": "2026-10-12",
-      "vacancies": "521",
-      "milestones": [
-        {
-          "label": "Notification Date",
-          "date": "2026-09-17",
-          "dateText": "17 September 2026"
-        },
-        {
-          "label": "Online Application & Fee Payment Last Date",
-          "date": "2026-11-11",
-          "dateText": "11 November 2026, 23:59 hrs"
-        },
-        {
-          "label": "Crucial Date for Category Status (SC/ST/OBC/EWS)",
-          "date": "2026-11-11",
-          "dateText": "11 November 2026 (closing date of online application)"
-        },
-        {
-          "label": "Cut-off Date",
-          "date": "2026-08-01",
-          "dateText": "1 August 2026"
-        },
-        {
-          "label": "Date of Birth Range",
-          "date": "2003-08-02",
-          "dateText": "Not before 2 August 2003 and not after 1 August 2008"
-        }
-      ]
-    },
-    {
       "id": "competitor-freejobalert-4e0f713fc1ed9d10",
       "type": "admit-card",
       "title": "TSPSC AEE Admit Card 2026 Out",
@@ -27984,6 +28181,364 @@
           "label": "CBT Examination",
           "date": "2026-11-07",
           "dateText": "6 and 7 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-642d939cf9de3578",
+      "type": "admit-card",
+      "title": "JKSSB Accounts Assistant Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/jkssb-accounts-assistant-admit-card-2026-3078441",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Jammu and Kashmir Services Selection Board (JKSSB)",
+      "publishedDate": "2026-11-04",
+      "examDate": "2026-11-15",
+      "officialLinks": [
+        {
+          "url": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
+          "label": "JKSSB Accounts Assistant Admit Card 2026"
+        },
+        {
+          "url": "https://jkssb.nic.in/Whatsnew.html",
+          "label": "JKSSB Admit Card Official Notice"
+        },
+        {
+          "url": "https://jkssb.nic.in/",
+          "label": "JKSSB Official Website"
+        }
+      ],
+      "officialLink": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Written Exam Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026 (Sunday)"
+        },
+        {
+          "label": "Admit Card Notice Issued",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Admit Card Download Starts",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Accounts Assistant Written Exam",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-d9c76e9cedee0ff9",
+      "type": "admit-card",
+      "title": "SSB HC Ministerial Typing Test Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://applyssb.com/ssbhcmin_skilltestadmitcards/applicationAfterIndex",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ssb-hc-ministerial-typing-test-admit-card-2026-3078432",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Sashastra Seema Bal (SSB)",
+      "publishedDate": "2026-11-04",
+      "examDate": "2026-10-14",
+      "vacancies": "115",
+      "officialLinks": [
+        {
+          "url": "https://applyssb.com/ssbhcmin_skilltestadmitcards/applicationAfterIndex",
+          "label": "SSB HC Ministerial Typing Test Admit Card 2026"
+        },
+        {
+          "url": "https://recruitment.ssb.gov.in/notificationUrl",
+          "label": "SSB Skill Test Admit Card Notice"
+        }
+      ],
+      "officialLink": "https://applyssb.com/ssbhcmin_skilltestadmitcards/applicationAfterIndex",
+      "milestones": [
+        {
+          "label": "Typing Test Admit Card Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Typing Test Dates",
+          "date": "2026-11-18",
+          "dateText": "16 and 18 November 2026"
+        },
+        {
+          "label": "CBT Examination Date",
+          "date": "2026-07-07",
+          "dateText": "7 July 2026"
+        },
+        {
+          "label": "CBT Marks Notice Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "CBT Written Examination",
+          "date": "2026-07-07",
+          "dateText": "7 July 2026"
+        },
+        {
+          "label": "CBT Admit Card Release",
+          "date": "2026-07-03",
+          "dateText": "3 July 2026"
+        },
+        {
+          "label": "Typing Test Admit Card Release",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-7867c00ac5c7a646",
+      "type": "admit-card",
+      "title": "UPSSSC Junior Assistant Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Uttar Pradesh",
+      "link": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=INTRIM",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/upsssc-junior-assistant-admit-card-2026-out-3078216",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "UPSSSC Junior Assistant",
+      "publishedDate": "2026-11-03",
+      "examDate": "2026-02-01",
+      "resultDate": "2026-09-15",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=INTRIM",
+          "label": "UPSSSC Junior Assistant Admit Card 2026"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "UPSSSC Official Website"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=INTRIM",
+      "milestones": [
+        {
+          "label": "Main Written Examination Date",
+          "date": "2026-02-01",
+          "dateText": "1 February 2026"
+        },
+        {
+          "label": "Main Examination Result Date",
+          "date": "2026-09-15",
+          "dateText": "15 September 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Typing Test Dates",
+          "date": "2026-11-26",
+          "dateText": "13 to 26 November 2026"
+        },
+        {
+          "label": "Earlier Typing Test Start Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Revised Typing Test Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Main Written Examination",
+          "date": "2026-02-01",
+          "dateText": "1 February 2026"
+        },
+        {
+          "label": "Main Examination Result",
+          "date": "2026-09-15",
+          "dateText": "15 September 2026"
+        },
+        {
+          "label": "Typing Test Admit Card",
+          "date": "2026-11-03",
+          "dateText": "Released on 3 November 2026"
+        },
+        {
+          "label": "Typing Test Admit Card Released",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-796fd4ce28f42d93",
+      "type": "result",
+      "title": "SSC NER Junior Accountant Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "All India",
+      "link": "https://www.sscner.org.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ssc-ner-junior-accountant-result-2026-3078487",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "SSC NER Junior Accountant",
+      "publishedDate": "2026-11-04",
+      "examDate": "2026-02-05",
+      "resultDate": "2026-02-05",
+      "eligibility": "Qualification does not meet the requirement under the Recruitment Rules or advertisement.",
+      "officialLinks": [
+        {
+          "url": "https://sscner.org.in/en/admin/noticedoc/1730blockdoc1document.pdf",
+          "label": "SSC NER Junior Accountant Accepted Rejected List 2026"
+        },
+        {
+          "url": "https://www.sscner.org.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "SSC Official Website"
+        },
+        {
+          "url": "https://www.sscner.org.in/en/viewallupdate.php",
+          "label": "SSC NER Latest Notices"
+        }
+      ],
+      "officialLink": "https://www.sscner.org.in/",
+      "milestones": [
+        {
+          "label": "Notice Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Grievance Last Date",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026, 6:00 PM"
+        },
+        {
+          "label": "Computer-Based Examination",
+          "date": "2025-08-02",
+          "dateText": "24 July to 2 August 2025 and 29 August 2025"
+        },
+        {
+          "label": "CBT Result Declaration",
+          "date": "2026-02-05",
+          "dateText": "5 February 2026"
+        },
+        {
+          "label": "Provisional Scrutiny Notice Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Last Date for Grievances",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026, 6:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-b2d24c5f690c0d20",
+      "type": "result",
+      "title": "GSSSB CCE Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://gsssb.gujarat.gov.in/ViewFile?fileName=4naZ%E2%9C%BF8wS64TzwZ61AZrbMP4tvDBt3Mj8UPSd1xKcshtE%E2%9C%BFh5gox9G2usBm22%E2%9C%A4xwdAnIj1jqyzYCyj2qEIxvMuD%E2%9C%BFB64oZac4kjPFr6fUOmvFG7CyOBtLDDLGcgEyyJgdn73pJzEosthn42IdDNDrTpYg%E2%99%AC%E2%99%AC",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/gsssb-cce-result-2026-3078422",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-04",
+      "organization": "Gujarat Subordinate Services Selection Board (GSSSB)",
+      "publishedDate": "2026-11-04",
+      "examDate": "2026-09-29",
+      "resultDate": "2026-11-03",
+      "vacancies": "7,338",
+      "officialLinks": [
+        {
+          "url": "https://gsssb.gujarat.gov.in/ViewFile?fileName=4naZ%E2%9C%BF8wS64TzwZ61AZrbMP4tvDBt3Mj8UPSd1xKcshtE%E2%9C%BFh5gox9G2usBm22%E2%9C%A4xwdAnIj1jqyzYCyj2qEIxvMuD%E2%9C%BFB64oZac4kjPFr6fUOmvFG7CyOBtLDDLGcgEyyJgdn73pJzEosthn42IdDNDrTpYg%E2%99%AC%E2%99%AC",
+          "label": "GSSSB CCE Result 2026 Group A & B"
+        },
+        {
+          "url": "https://gsssb.gujarat.gov.in/",
+          "label": "GSSSB Official Website"
+        }
+      ],
+      "officialLink": "https://gsssb.gujarat.gov.in/ViewFile?fileName=4naZ%E2%9C%BF8wS64TzwZ61AZrbMP4tvDBt3Mj8UPSd1xKcshtE%E2%9C%BFh5gox9G2usBm22%E2%9C%A4xwdAnIj1jqyzYCyj2qEIxvMuD%E2%9C%BFB64oZac4kjPFr6fUOmvFG7CyOBtLDDLGcgEyyJgdn73pJzEosthn42IdDNDrTpYg%E2%99%AC%E2%99%AC",
+      "milestones": [
+        {
+          "label": "Prelims Exam Date",
+          "date": "2026-09-29",
+          "dateText": "16 to 29 September 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "CCE Preliminary Examination",
+          "date": "2026-09-29",
+          "dateText": "16 to 29 September 2026"
+        },
+        {
+          "label": "Provisional Answer Key Release",
+          "date": "2026-10-05",
+          "dateText": "5 October 2026"
+        },
+        {
+          "label": "Answer Key Objection Last Date",
+          "date": "2026-10-12",
+          "dateText": "12 October 2026"
+        },
+        {
+          "label": "CCE Preliminary Result Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Final Answer Key Release",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Group A Main Examination",
+          "date": "2026-11-29",
+          "dateText": "28 and 29 November 2026 (Tentative)"
         }
       ]
     }

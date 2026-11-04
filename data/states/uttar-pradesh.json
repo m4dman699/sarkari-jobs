@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T09:35:42.209Z",
-  "total": 7,
+  "generatedAt": "2026-11-04T09:16:14.404Z",
+  "total": 12,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -14,6 +14,117 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-sarkariresult-ec628ee5a2ab4d67",
+      "type": "job",
+      "title": "UPESSC UP Primary Teacher Online Form 2026 for 12405 Post",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://apply.upessc.org/register",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-primary-teacher-05-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-03",
+      "lastDate": "2026-11-04",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-10-28",
+      "openDate": "2026-09-16",
+      "vacancies": "12405",
+      "ageLimit": "21–40 years",
+      "eligibility": "Post Name General OBC EWS SC ST Total UPEESSC UP Primary Teacher Eligibility Assistant Teacher in Urban Area Primary Schools 4746 3069 1116 2379 198 11508 Bachelor Degree in Any Stream with DELED (BTC) / B-El-Ed. For More Details Read the Notification. Assistant Teacher – Affiliated Primary (Non-Government Aided School) 378 164 07 348 0 897 Bachelor Degree in Any Stream with DELED (BTC) / B-El-Ed Class I to V Primary TET Exam Passed. For More Details Read the Notification. UP Primary Teacher Onl",
+      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
+      "officialLinks": [
+        {
+          "url": "https://apply.upessc.org/register",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/4b1f-907a-4508-5c3a-0c65.pdf",
+          "label": "Download Date Extended & Eligibility Related Notice"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UP_Primary_Teacher_I_V_Syllabus_2026%20(1).pdf",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/register",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026 | 07:56 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
+        },
+        {
+          "label": "Last Date Correction",
+          "date": "2026-11-07",
+          "dateText": "07/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-b6e3b26ec6534ded",
+      "type": "job",
+      "title": "UP Kushinagar ECCE Educator Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-kushinagar-ecce-educator-july26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-03",
+      "lastDate": "2026-11-04",
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-10-28",
+      "openDate": "2026-10-24",
+      "ageLimit": "21–40 years",
+      "eligibility": "Bachelor’s Degree with Home Science (Minimum 50% Marks) OR 2 Year NTT / CT (Nursery) / DPSE Diploma from a Recognized Institute More Eligibility Details Read the Notification.",
+      "applicationFee": "for the All Candidates. UP Kushinagar",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Educator_Kushinagar_28102026.pdf",
+          "label": "Download Vacancy Details / Notice"
+        },
+        {
+          "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026 | 04:35 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-04",
+          "dateText": "04/11/2026"
+        }
+      ]
     },
     {
       "id": "competitor-sarkariresult-686b7d89d37a2f88",
@@ -115,6 +226,54 @@
           "label": "Last Date for Apply",
           "date": "2026-11-07",
           "dateText": "07/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-683e6a5c8bbb2b46",
+      "type": "job",
+      "title": "UP Bulandshahar ECCE Educator Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-bulandshahar-ecce-educator-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-03",
+      "lastDate": "2026-11-18",
+      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
+      "publishedDate": "2026-11-02",
+      "openDate": "2026-11-02",
+      "ageLimit": "21–42 years",
+      "eligibility": "Graduation in Home Science with Minimum 50% Marks from Any Recognized University in India. NTT (Nursery Teacher Training) Passed. CT (Nursery) Passed. Diploma in Pre-School Education (DPSE) Passed",
+      "applicationFee": "for the All Candidates.",
+      "officialLinks": [
+        {
+          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Bulandshahar_02112026.pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://bulandshahar.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-02",
+          "dateText": "02 November 2026 | 08:45 PM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
         }
       ]
     },
@@ -249,6 +408,66 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-795a1dab244fabf6",
+      "type": "job",
+      "title": "UPPSC Review Officer RO ARO Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uppsc-ro-aro-jun26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-03",
+      "lastDate": "2026-11-26",
+      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
+      "publishedDate": "2026-10-26",
+      "openDate": "2026-10-26",
+      "vacancies": "501",
+      "ageLimit": "21–40 years",
+      "eligibility": "Bachelor Degree in Any Stream in Any Recognized University in India. More Eligibility Details Read the Notification",
+      "applicationFee": "General / OBC / EWS : 125/- SC / ST : 65/- PH Candidates : 25/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/UPPSC_RO_ARO_English_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPPSC_RO_ARO_English_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-26",
+          "dateText": "26 October 2026 | 04:36 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        },
+        {
+          "label": "Correction Date",
+          "date": "2026-12-03",
+          "dateText": "03/12/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-d6af6007e2b7128e",
       "type": "job",
       "title": "UP ECCE Educator Kanpur Nagar Online Form 2026",
@@ -279,6 +498,14 @@
         },
         {
           "url": "https://sewayojan.up.nic.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/ECCE_Educator_Kanpur_02112026.pdf",
+          "label": "Download Vacancy Details"
+        },
+        {
+          "url": "https://kanpurnagar.nic.in/hi/",
           "label": "Official Website"
         }
       ],
@@ -363,6 +590,179 @@
           "label": "Post Date / Update",
           "date": "2026-10-21",
           "dateText": "21 October 2026 | 08:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-e44471b7e3207263",
+      "type": "job",
+      "title": "UPSSSC Auditor and Assistant Accountant Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://upsssc.gov.in//AllNotifications.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-pet-all-form-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-03",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+      "publishedDate": "2026-11-03",
+      "vacancies": "7830",
+      "applicationFee": "Details Through PET 2025 UR (General) / OBC / EWS : 25/- SC / ST / PH : 25/-",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in//AllNotifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://upsssc.gov.in//Online_App/Results.aspx?ID=143&Result_Type=P&Exam_Code=3&Advt_Code=304&Dept_Code=556&Post_Code=1&OnlyIntview=No",
+          "label": "UPSSSC PET 2025 Result"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPSSSC_20-Exam_2026.pdf",
+          "label": "20-Exam/2026"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPSSSC_19-Exam_2026_Notification.pdf",
+          "label": "19-Exam/2026"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in//AllNotifications.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026 | 01:36 PM"
+        },
+        {
+          "label": "26-Exam/2026",
+          "date": "2026-11-10",
+          "dateText": "Combined Lower Subordinate Services (Lower PCS) 1784 10/11/2026 to 01/12/2026 Click Here"
+        },
+        {
+          "label": "25-Exam/2026",
+          "date": "2026-11-06",
+          "dateText": "Combined Junior Engineer Electrical 380 06/11/2026 to 27/11/2026 Click Here"
+        },
+        {
+          "label": "24-Exam/2026",
+          "date": "2026-11-03",
+          "dateText": "Combined Junior Engineer Mechanical 1156 03/11/2026 to 25/11/2026 Click Here"
+        },
+        {
+          "label": "23-Exam/2026",
+          "date": "2026-10-16",
+          "dateText": "Regional Youth Welfare and Regional Development Team Officer and Physical Instructor 412 1"
+        },
+        {
+          "label": "22-Exam/2026",
+          "date": "2026-10-14",
+          "dateText": "Sports Directorate 108 14/10/2026 to 04/11/2026 Click Here"
+        },
+        {
+          "label": "21-Exam/2026",
+          "date": "2026-09-14",
+          "dateText": "State Rural Development Institute (Senior Instructor Cadre) 132 14/09/2026 to 05/10/2026 C"
+        },
+        {
+          "label": "20-Exam/2026",
+          "date": "2026-09-07",
+          "dateText": "Computer Cadre (Computer Operator) 12 07/09/2026 to 28/09/2026 Click Here"
+        },
+        {
+          "label": "19-Exam/2026",
+          "date": "2026-09-17",
+          "dateText": "Junior Engineer Agriculture 134 17/09/2026 to 07/10/2026 Click Here"
+        },
+        {
+          "label": "18-Exam/2026",
+          "date": "2026-09-14",
+          "dateText": "Veterinary Pharmacist 1308 14/09/2026 to 05/10/2026 Click Here"
+        },
+        {
+          "label": "17-Exam/2026",
+          "date": "2026-09-09",
+          "dateText": "LIVESTOCK EXTENSION OFFICER LEO पशुधन प्रसार अधिकारी 1251 09/09/2026 to 29/09/2026 Click H"
+        },
+        {
+          "label": "15-Exam/2026",
+          "date": "2026-07-27",
+          "dateText": "Forensic Science Laboratory 208 27/07/2026 to 17/08/2026 Click Here"
+        },
+        {
+          "label": "14-Exam/2026",
+          "date": "2026-07-14",
+          "dateText": "Auditor and Assistant Accountant 1829 14/07/2026 to 03/08/2026 Click Here"
+        },
+        {
+          "label": "13-Exam/2026",
+          "date": "2026-07-07",
+          "dateText": "Cane Supervisor 1182 07/07/2026 to 28/07/2026 Click Here"
+        },
+        {
+          "label": "12-Exam/2026",
+          "date": "2026-06-30",
+          "dateText": "Forest Guard 708 30/06/2026 to 20/07/2026 Click Here"
+        },
+        {
+          "label": "11-Exam/2026",
+          "date": "2026-06-19",
+          "dateText": "Havaldar Instructor 209 19/06/2026 to 09/07/2026 Click Here"
+        },
+        {
+          "label": "10-Exam/2026",
+          "date": "2026-06-16",
+          "dateText": "Platoon Commander / Block Organizer 295 16/06/2026 to 06/07/2026 Click Here"
+        },
+        {
+          "label": "09-Exam/2026",
+          "date": "2026-06-09",
+          "dateText": "Vidhan Bhawan Rakshak, Vidhan Bhawan Fire Guard 170 09/06/2026 to 29/06/2026 Click Here"
+        },
+        {
+          "label": "08-Exam/2026",
+          "date": "2026-06-04",
+          "dateText": "Excise Constable 722 04/06/2026 to 24/06/2026 Click Here"
+        },
+        {
+          "label": "07-Exam/2026",
+          "date": "2026-05-29",
+          "dateText": "Lower PCS 2285 29/05/2026 to 18/06/2026 Click Here"
+        },
+        {
+          "label": "06-Exam/2026",
+          "date": "2026-05-22",
+          "dateText": "Technical Assistant Group C Exam 2759 22/05/2026 to 11/06/2026 Click Here"
+        },
+        {
+          "label": "05-Exam/2026",
+          "date": "2026-04-21",
+          "dateText": "Assistant Statistical Officer ASO 929 21/04/2026 to 11/05/2026 Click Here"
+        },
+        {
+          "label": "04-Exam/2026",
+          "date": "2026-04-15",
+          "dateText": "Assistant Boring Technician 402 15/04/2026 to 05/05/2026 Click Here"
+        },
+        {
+          "label": "03-Exam/2026",
+          "date": "2026-04-06",
+          "dateText": "Teacher Cadre 58 06/04/2026 to 27/04/2026 Click Here"
+        },
+        {
+          "label": "02-Exam/2026",
+          "date": "2026-04-02",
+          "dateText": "Various Post 115 02/04/2026 to 29/04/2026 Click Here"
+        },
+        {
+          "label": "01-Exam/2026",
+          "date": "2026-03-09",
+          "dateText": "Pharmacist 560 09/03/2026 to 29/03/2026 Click Here"
         }
       ]
     }

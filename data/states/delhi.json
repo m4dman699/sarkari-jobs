@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T09:35:42.209Z",
+  "generatedAt": "2026-11-04T09:16:14.404Z",
   "total": 4,
   "jobs": [
     {
@@ -31,7 +31,7 @@
     {
       "id": "competitor-sarkariresult-fba65ccc4f19f877",
       "type": "job",
-      "title": "Delhi DSSSB Various Post Online Form 2026",
+      "title": "DSSSB Delhi District Courts Various Post Online Form 2026",
       "source": "SarkariResult.com listing (recruiting authority named in notice)",
       "publisher": "SarkariResult.com",
       "category": "Defence",
@@ -40,26 +40,14 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/dsssb-various-post-oct26/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
+      "factCheckedAt": "2026-11-03",
       "lastDate": "2026-11-04",
-      "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
       "publishedDate": "2026-10-19",
       "openDate": "2026-10-06",
+      "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
       "vacancies": "641",
-      "ageLimit": "18–27 years",
       "eligibility": "Graduate with speed of not less than 110 words per minute in Shorthand and 40 words per minute in typewriting.",
       "applicationFee": "General / OBC / EWS : 100/- SC / ST / PH : 0/- Female Candidate : 0/-",
-      "officialLinks": [
-        {
-          "url": "https://dsssbonline.nic.in/",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://dsssb.delhi.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://dsssbonline.nic.in/",
       "milestones": [
         {
           "label": "Post Date / Update",
@@ -76,7 +64,19 @@
           "date": "2026-11-04",
           "dateText": "04/11/2026"
         }
-      ]
+      ],
+      "officialLink": "https://dsssbonline.nic.in/",
+      "officialLinks": [
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "ageLimit": "18–27 years"
     },
     {
       "id": "competitor-sarkariresult-afc99b508677d55a",
