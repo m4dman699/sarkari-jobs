@@ -8204,43 +8204,97 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-isolated-categories-recruitment-2026-cen-09-2026-apply-online-for-195-posts-3074732": {
-    "attemptedAt": "2026-10-25T07:37:38.636Z",
+    "attemptedAt": "2026-11-05T09:31:35.638Z",
     "parser": "v2",
     "details": {
-      "organization": "Railway Recruitment Boards (RRBs), Ministry of Railways, Government of India",
-      "publishedDate": "2026-10-22",
+      "organization": "RRB Isolated Category",
+      "publishedDate": "2026-11-05",
       "openDate": "2026-11-05",
       "lastDate": "2026-12-04",
       "examDate": null,
       "resultDate": null,
       "admitCardDate": null,
       "interviewDate": null,
-      "vacancies": "195",
-      "ageLimit": "",
-      "eligibility": "Not specified in the notice",
-      "applicationFee": "",
+      "vacancies": "191",
+      "ageLimit": "18–30 to 18–40 Years, Post-Wise",
+      "eligibility": "12th Science / Relevant Degree / Postgraduate or Professional Qualification, Depending on Post",
+      "applicationFee": "Rs. 500 / Rs. 250",
       "milestones": [
         {
-          "label": "Notice Date",
+          "label": "Indicative Notice Date",
           "date": "2026-10-24",
-          "dateText": "24.10.2026"
+          "dateText": "24 October 2026"
         },
         {
-          "label": "Opening Date of Application",
+          "label": "Age Calculation Date",
+          "date": "2027-01-01",
+          "dateText": "1 January 2027"
+        },
+        {
+          "label": "Application Start Date",
           "date": "2026-11-05",
-          "dateText": "05.11.2026 (Tentative)"
+          "dateText": "5 November 2026"
         },
         {
-          "label": "Closing Date for Submission of Application",
+          "label": "Application Last Date",
           "date": "2026-12-04",
-          "dateText": "04.12.2026, 23:59 hours (Tentative)"
+          "dateText": "4 December 2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Indicative Notification Date",
+          "date": "2026-10-24",
+          "dateText": "24 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026, 11:59 PM"
+        },
+        {
+          "label": "Last Date for Application Fee Payment",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026, 11:59 PM"
+        },
+        {
+          "label": "Educational Qualification Cut-Off Date",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026"
+        },
+        {
+          "label": "Correction Window Start Date",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026"
+        },
+        {
+          "label": "Correction Window Last Date",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
         }
       ],
-      "officialLink": "https://rrb.indianrailways.gov.in",
+      "officialLink": "https://www.rrbapply.gov.in/#/auth/home",
+      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_09_2026_IsolatedCategory.pdf",
       "officialLinks": [
         {
-          "url": "https://rrb.indianrailways.gov.in",
-          "label": "Official Website (Common Website of All RRBs)"
+          "url": "https://www.rrbapply.gov.in/#/auth/home",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_09_2026_IsolatedCategory.pdf",
+          "label": "Official Notification PDF"
         }
       ]
     }
@@ -24720,20 +24774,20 @@
     }
   },
   "https://www.freejobalert.com/articles/ktet-hall-ticket-2026-3077797": {
-    "attemptedAt": "2026-11-04T09:16:15.522Z",
+    "attemptedAt": "2026-11-05T09:31:35.495Z",
     "parser": "v2",
     "details": {
-      "organization": "KTET Hall Ticket 2026 Out Today - Download Kerala TET",
-      "publishedDate": "2026-11-04",
-      "openDate": null,
+      "organization": "KTET Hall Ticket 2026 Out - Download Kerala TET",
+      "publishedDate": "2026-11-05",
+      "openDate": "2026-09-23",
       "lastDate": "2026-10-03",
-      "examDate": "2026-11-14",
+      "examDate": "2026-11-15",
       "resultDate": null,
       "admitCardDate": null,
       "interviewDate": null,
       "vacancies": "",
       "ageLimit": "",
-      "eligibility": "Kerala Pareeksha Bhavan, Government of Kerala",
+      "eligibility": "September 2026",
       "applicationFee": "",
       "milestones": [
         {
@@ -24743,44 +24797,58 @@
         },
         {
           "label": "Exam Dates",
-          "date": "2026-11-14",
-          "dateText": "14 November 2026 and 15 November 2026"
+          "date": "2026-11-15",
+          "dateText": "14 and 15 November 2026"
         },
         {
-          "label": "Last Date to Apply Online and Pay the Fee",
+          "label": "Online Application Start Date",
+          "date": "2026-09-23",
+          "dateText": "23 September 2026"
+        },
+        {
+          "label": "Online Application Last Date",
           "date": "2026-10-03",
           "dateText": "3 October 2026"
         },
         {
-          "label": "Last Date to Take the Final Application Printout",
+          "label": "Final Application Printout Date",
           "date": "2026-10-03",
           "dateText": "3 October 2026"
         },
         {
-          "label": "KTET Hall Ticket 2026 Release",
+          "label": "KTET Hall Ticket Release Date",
           "date": "2026-11-04",
           "dateText": "4 November 2026"
         },
         {
-          "label": "Category 1 and Category 2 Examination",
+          "label": "KTET Category I and II Exam Date",
           "date": "2026-11-14",
-          "dateText": "14 November 2026 (Saturday)"
+          "dateText": "14 November 2026"
         },
         {
-          "label": "Category 3 and Category 4 Examination",
+          "label": "KTET Category III and IV Exam Date",
           "date": "2026-11-15",
-          "dateText": "15 November 2026 (Sunday)"
+          "dateText": "15 November 2026"
         }
       ],
-      "officialLink": "https://ktet.kerala.gov.in",
+      "officialLink": "https://ktet.kerala.gov.in/",
+      "notificationLink": "https://ktet.kerala.gov.in/notification.php",
       "officialLinks": [
         {
-          "url": "https://ktet.kerala.gov.in",
-          "label": "Official Website"
+          "url": "https://ktet.kerala.gov.in/Registration/candidate_hallticket.php",
+          "label": "KTET Hall Ticket 2026"
         },
         {
           "url": "https://ktet.kerala.gov.in/",
           "label": "KTET Official Website"
+        },
+        {
+          "url": "https://ktet.kerala.gov.in/notification.php",
+          "label": "KTET September 2026 Notification"
+        },
+        {
+          "url": "https://ktet.kerala.gov.in/exam_registrations_informations.php",
+          "label": "KTET September 2026 Examination Details"
         }
       ]
     }
@@ -26786,7 +26854,7 @@
     }
   },
   "https://www.freejobalert.com/articles/indian-bank-apprentices-recruitment-2026-3078364": {
-    "attemptedAt": "2026-11-04T09:16:15.586Z",
+    "attemptedAt": "2026-11-05T09:31:35.683Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Bank",
@@ -27053,7 +27121,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrc-central-railway-act-apprentice-recruitment-2026-3078343": {
-    "attemptedAt": "2026-11-04T09:16:15.688Z",
+    "attemptedAt": "2026-11-05T09:31:35.590Z",
     "parser": "v2",
     "details": {
       "organization": "Railway Recruitment Cell, Central Railway (RRC CR)",
@@ -27344,7 +27412,7 @@
     }
   },
   "https://www.freejobalert.com/articles/hal-junior-executive-interview-result-2026-3078444": {
-    "attemptedAt": "2026-11-04T09:16:15.756Z",
+    "attemptedAt": "2026-11-05T09:31:35.545Z",
     "parser": "v2",
     "details": {
       "organization": "Hindustan Aeronautics Limited (HAL)",
@@ -27493,6 +27561,959 @@
         {
           "url": "https://gsssb.gujarat.gov.in/",
           "label": "GSSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nlc-india-get-recruitment-2026-3078755": {
+    "attemptedAt": "2026-11-05T09:31:35.724Z",
+    "parser": "v2",
+    "details": {
+      "organization": "NLC India Limited (NLCIL)",
+      "publishedDate": "2026-11-05",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "143",
+      "ageLimit": "",
+      "eligibility": "Relevant Bachelor's Degree in Engineering",
+      "applicationFee": "Rs. 854 / Rs. 354",
+      "milestones": [
+        {
+          "label": "Eligibility Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Registration Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Registration Last Date",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Final Submission Deadline for Eligible Registered and Paid Candidates",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Age and Qualification Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Online Registration Last Date",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date for Online Fee Payment",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026, 11:45 PM"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ],
+      "officialLink": "https://www.nlcindia.in/website/en/careers/",
+      "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+      "officialLinks": [
+        {
+          "url": "https://www.nlcindia.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.nlcindia.in/website/en/careers/",
+          "label": "Apply Online (From 13 November 2026)"
+        },
+        {
+          "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+          "label": "Detailed Notification - Advertisement No. 10/2026"
+        },
+        {
+          "url": "https://gate2025.iitr.ac.in/",
+          "label": "GATE 2025 Information"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/sameer-recruitment-2026-apply-online-for-140-project-fellow-project-engineer-and-more-posts-3078741": {
+    "attemptedAt": "2026-11-05T09:31:35.773Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Society for Applied Microwave Electronics Engineering and Research (SAMEER)",
+      "publishedDate": "2026-11-05",
+      "openDate": "2026-11-04",
+      "lastDate": "2026-11-15",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-14",
+      "vacancies": "140",
+      "ageLimit": "",
+      "eligibility": "Post-Specific Ph.D., M.Tech., B.E./B.Tech., M.Sc., MBA, Graduation, Diploma or ITI with NTC and NAC",
+      "applicationFee": "Rs. 100 in PDF; Portal Displays Nil for Contractual Posts - Clarification Required",
+      "milestones": [
+        {
+          "label": "Advertisement Publication Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026, 11:59 PM"
+        },
+        {
+          "label": "Online Interview",
+          "date": "2026-11-30",
+          "dateText": "27 to 30 November 2026"
+        },
+        {
+          "label": "In-Person Interview",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026 (Proposed)"
+        }
+      ],
+      "officialLink": "https://recruitment.sameer.gov.in/",
+      "notificationLink": "https://sameer.gov.in/storage/recruitment/vsZVIgfdR5l8s3RrQzWl22Y8C7AWv4XoYt38OqN4.pdf",
+      "officialLinks": [
+        {
+          "url": "https://sameer.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://recruitment.sameer.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://sameer.gov.in/storage/recruitment/vsZVIgfdR5l8s3RrQzWl22Y8C7AWv4XoYt38OqN4.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://sameer.gov.in/recruitment-details/63",
+          "label": "Advertisement No. 10/2026 Recruitment Listing"
+        },
+        {
+          "url": "https://sameer.gov.in/recruitment",
+          "label": "SAMEER Recruitment Updates"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rites-apprentice-recruitment-2026-3078608": {
+    "attemptedAt": "2026-11-05T09:31:35.806Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RITES Limited",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-11-05",
+      "lastDate": "2026-11-25",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "281",
+      "ageLimit": "",
+      "eligibility": "Relevant Degree, Engineering Diploma or ITI",
+      "applicationFee": "Not Specified in Notification",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Age and Eligibility Cut-Off Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Last Date for NATS / NAPS Application",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last Date for RITES Document Submission",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Eligibility Cut-Off Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        }
+      ],
+      "officialLink": "https://nats.education.gov.in/student_type.php",
+      "notificationLink": "https://rites.com/Upload/Career/Advertisment_for_Engagement_of_Apprentices_for_FY_2026_27_(2)_pdf-2026-Nov-04-16-7-17.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.rites.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://apprentice.rites.com/ApprenticeForm/",
+          "label": "All Candidates - Mandatory Document Submission"
+        },
+        {
+          "url": "https://nats.education.gov.in/student_type.php",
+          "label": "Apply Online - Graduate / Diploma (NATS)"
+        },
+        {
+          "url": "https://www.apprenticeshipindia.gov.in/",
+          "label": "Apply Online - ITI (NAPS)"
+        },
+        {
+          "url": "https://rites.com/Upload/Career/Advertisment_for_Engagement_of_Apprentices_for_FY_2026_27_(2)_pdf-2026-Nov-04-16-7-17.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.rites.com/SkillIndiaMission",
+          "label": "RITES Apprenticeship Updates"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nicl-graduate-apprentices-recruitment-2026-3078567": {
+    "attemptedAt": "2026-11-05T09:31:35.845Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Insurance Company Limited (NICL)",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-11-04",
+      "lastDate": "2026-11-18",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "21 to 30 Years",
+      "eligibility": "Regular Full-Time Graduation in Any Discipline",
+      "applicationFee": "Not Specified in Notification",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Qualification Cut-Off Date",
+          "date": "2026-04-01",
+          "dateText": "1 April 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-04-01",
+          "dateText": "1 April 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Last Date for Online Registration",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Age and Qualification Cut-Off Date",
+          "date": "2026-04-01",
+          "dateText": "1 April 2026"
+        },
+        {
+          "label": "Latest Eligible Date of Birth",
+          "date": "2005-04-01",
+          "dateText": "1 April 2005"
+        }
+      ],
+      "officialLink": "https://nats.education.gov.in/index.php",
+      "notificationLink": "https://nationalinsurance.nic.co.in/sites/default/files/2026-11/Advertisement%20for%20Engagement%20of%20Apprentices%20for%20the%20year%202026-27.pdf",
+      "officialLinks": [
+        {
+          "url": "https://nationalinsurance.nic.co.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://nats.education.gov.in/index.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://nationalinsurance.nic.co.in/sites/default/files/2026-11/Advertisement%20for%20Engagement%20of%20Apprentices%20for%20the%20year%202026-27.pdf",
+          "label": "Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/up-tgt-result-2026-released-3078580": {
+    "attemptedAt": "2026-11-05T09:31:35.872Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UP TGT",
+      "publishedDate": "2026-11-04",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-06-04",
+      "resultDate": "2026-10-16",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,539",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Final Selection Result Date",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026"
+        },
+        {
+          "label": "Revised Panel Release Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2026-06-04",
+          "dateText": "3 and 4 June 2026"
+        },
+        {
+          "label": "Hindi Revised and English Final Selection Results",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026"
+        },
+        {
+          "label": "Revised Panel Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        }
+      ],
+      "officialLink": "https://www.upessc.up.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/67ce-07c3-44a9-e230-56f9.pdf",
+          "label": "UP TGT Hindi Category 1 Panel List 2026"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/8c13-845f-46b4-9eb3-96b3.pdf",
+          "label": "UP TGT Hindi Category 2 Panel List 2026"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/66cc-7e92-4a6f-dabe-443b.pdf",
+          "label": "UP TGT English Category 1 Panel List 2026"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/Notice/0241-987f-40af-0bc8-6572.pdf",
+          "label": "UP TGT English Category 2 Panel List 2026"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/",
+          "label": "UPESSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/bpsc-dso-written-result-2026-3078751": {
+    "attemptedAt": "2026-11-05T09:31:35.908Z",
+    "parser": "v2",
+    "details": {
+      "organization": "BPSC DSO Written",
+      "publishedDate": "2026-11-05",
+      "openDate": "2025-09-02",
+      "lastDate": "2025-09-26",
+      "examDate": "2026-01-30",
+      "resultDate": "2026-11-04",
+      "admitCardDate": "2026-01-20",
+      "interviewDate": null,
+      "vacancies": "33",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Written Examination Dates",
+          "date": "2026-01-30",
+          "dateText": "29 and 30 January 2026"
+        },
+        {
+          "label": "Written Result Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2025-09-02",
+          "dateText": "2 September 2025"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2025-09-26",
+          "dateText": "26 September 2025"
+        },
+        {
+          "label": "Written Examination Admit Card",
+          "date": "2026-01-20",
+          "dateText": "20 January 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2026-01-30",
+          "dateText": "29 and 30 January 2026"
+        },
+        {
+          "label": "Provisional Answer Key",
+          "date": "2026-02-16",
+          "dateText": "16 February 2026"
+        },
+        {
+          "label": "Final Answer Key",
+          "date": "2026-03-19",
+          "dateText": "19 March 2026"
+        },
+        {
+          "label": "Marks-Related Update",
+          "date": "2026-07-30",
+          "dateText": "30 July 2026"
+        },
+        {
+          "label": "Last Date for Marks-Related Objections",
+          "date": "2026-08-06",
+          "dateText": "6 August 2026"
+        },
+        {
+          "label": "Written Result Declaration",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Written Result",
+          "date": "2026-11-04",
+          "dateText": "Released on 4 November 2026"
+        }
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-902025-District-Sports-Officer-Written_BPSC-20261104-vjq13n.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-902025-District-Sports-Officer-Written_BPSC-20261104-vjq13n.pdf",
+          "label": "BPSC DSO Written Result 2026"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "BPSC DSO Official Written Result"
+        },
+        {
+          "url": "https://bpsconline.bihar.gov.in/",
+          "label": "BPSC DSO Marks Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rrc-nwr-various-level-1-posts-result-2026-3078822": {
+    "attemptedAt": "2026-11-05T09:31:35.938Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RRC NWR Various Level-1 Posts",
+      "publishedDate": "2026-11-05",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-07-01",
+      "resultDate": "2026-11-04",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "CBT Result Date",
+          "date": "2026-07-01",
+          "dateText": "1 July 2026"
+        },
+        {
+          "label": "PET Dates",
+          "date": "2026-08-01",
+          "dateText": "29 July to 1 August 2026"
+        },
+        {
+          "label": "DV Result Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Level-1 CBT Result Declaration",
+          "date": "2026-07-01",
+          "dateText": "1 July 2026"
+        },
+        {
+          "label": "Physical Efficiency Test Start Date",
+          "date": "2026-07-29",
+          "dateText": "29 July 2026"
+        },
+        {
+          "label": "Physical Efficiency Test Last Date",
+          "date": "2026-08-01",
+          "dateText": "1 August 2026"
+        },
+        {
+          "label": "RRC NWR Provisional PET Result Update",
+          "date": "2026-08-10",
+          "dateText": "10 August 2026"
+        },
+        {
+          "label": "DV Shortlist and Cut Off Release",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        }
+      ],
+      "officialLink": "https://rrcjaipur.in/storeWebFiles/1013_96012988.PDF",
+      "officialLinks": [
+        {
+          "url": "https://rrcjaipur.in/storeWebFiles/1013_96012988.PDF",
+          "label": "RRC NWR Level 1 DV Result 2026"
+        },
+        {
+          "url": "https://rrcjaipur.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/pfrda-grade-a-assistant-manager-result-2026-3078738": {
+    "attemptedAt": "2026-11-05T09:31:35.976Z",
+    "parser": "v2",
+    "details": {
+      "organization": "PFRDA Grade A Assistant Manager",
+      "publishedDate": "2026-11-05",
+      "openDate": "2026-09-03",
+      "lastDate": "2026-09-24",
+      "examDate": "2026-11-20",
+      "resultDate": "2026-11-04",
+      "admitCardDate": "2026-10-08",
+      "interviewDate": null,
+      "vacancies": "30",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-09-03",
+          "dateText": "3 September 2026"
+        },
+        {
+          "label": "Phase 1 Examination Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Phase 2 Examination Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-09-03",
+          "dateText": "3 September 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-03",
+          "dateText": "3 September 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-09-24",
+          "dateText": "24 September 2026"
+        },
+        {
+          "label": "Phase 1 Admit Card Release",
+          "date": "2026-10-08",
+          "dateText": "8 October 2026"
+        },
+        {
+          "label": "Phase 1 Online Examination",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Phase 1 Result Declaration",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Phase 2 Online Examination",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Phase 2 Exam Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Phase 1 Result",
+          "date": "2026-11-04",
+          "dateText": "Released on 4 November 2026"
+        }
+      ],
+      "officialLink": "https://pfrda.org.in/en/web/pfrda/w/result-of-phase-i-online-examination-recruitment-of-officer-grade-a-assistant-manager-2026",
+      "officialLinks": [
+        {
+          "url": "https://pfrda.org.in/en/web/pfrda/w/result-of-phase-i-online-examination-recruitment-of-officer-grade-a-assistant-manager-2026",
+          "label": "PFRDA Grade A Assistant Manager Result 2026"
+        },
+        {
+          "url": "https://www.pfrda.org.in/",
+          "label": "PFRDA Official Website"
+        },
+        {
+          "url": "https://www.pfrda.org.in/documents/33652/902320/Result%2Bof%2BPhase%2BOnline%2BExamination%2BRecruitment%2Bof%2BOfficers%2BGrade%2BA%2B2026%2B%281%29.pdf",
+          "label": "Download PFRDA Grade A Phase 1 Result 2026"
+        },
+        {
+          "url": "https://www.pfrda.org.in/en/web/pfrda/w/result-of-phase-i-online-examination-recruitment-of-officer-grade-a-assistant-manager-2026",
+          "label": "PFRDA Official Phase 1 Result Notice"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rajasthan-mahila-supervisor-result-2026-3078742": {
+    "attemptedAt": "2026-11-05T09:31:36.003Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rajasthan Mahila Supervisor",
+      "publishedDate": "2026-11-05",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-07-24",
+      "resultDate": "2026-11-04",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "72",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Written Examination Date",
+          "date": "2026-07-24",
+          "dateText": "24 July 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2026-07-24",
+          "dateText": "24 July 2026"
+        },
+        {
+          "label": "Result and Provisional Merit List",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Scrutiny Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Online Scrutiny Last Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/results",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in/results",
+          "label": "Rajasthan Mahila Supervisor Result 2026 Non-TSP"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rbi-bank-office-attendant-score-card-2026-3078631": {
+    "attemptedAt": "2026-11-05T09:31:36.028Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RBI Office Attendant",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-01-15",
+      "lastDate": "2026-02-04",
+      "examDate": "2026-03-01",
+      "resultDate": "2026-11-04",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "572",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Dates",
+          "date": "2026-03-01",
+          "dateText": "28 February and 1 March 2026"
+        },
+        {
+          "label": "Online Result Date",
+          "date": "2026-06-22",
+          "dateText": "22 June 2026"
+        },
+        {
+          "label": "Score Card Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-01-15",
+          "dateText": "15 January 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-02-04",
+          "dateText": "4 February 2026"
+        },
+        {
+          "label": "Online Examination",
+          "date": "2026-03-01",
+          "dateText": "28 February and 1 March 2026"
+        },
+        {
+          "label": "Provisional Result Declaration",
+          "date": "2026-06-22",
+          "dateText": "22 June 2026"
+        },
+        {
+          "label": "Score Card and Cut Off Release",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Cut Off Release",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/rbipodec25/msocty_oct26/login.php?appid=570dc5ce05c03092a8704b0800a50da5",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/rbipodec25/msocty_oct26/login.php?appid=570dc5ce05c03092a8704b0800a50da5",
+          "label": "RBI Office Attendant Score Card 2026"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/CutOffTable04112026.pdf",
+          "label": "RBI Office Attendant Cut Off 2026"
+        },
+        {
+          "url": "https://rbidocs.rbi.org.in/rdocs/content/pdfs/03DisplaySheet_22062026.pdf",
+          "label": "RBI Office Attendant Result 2026"
+        },
+        {
+          "url": "https://opportunities.rbi.org.in/scripts/resultsnew.aspx",
+          "label": "RBI Recruitment Results"
+        },
+        {
+          "url": "https://opportunities.rbi.org.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.rbi.org.in/",
+          "label": "RBI Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rssb-basic-computer-instructor-result-2026-3078600": {
+    "attemptedAt": "2026-11-05T09:31:36.062Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RSSB Computer Instructor",
+      "publishedDate": "2026-11-05",
+      "openDate": "2026-05-25",
+      "lastDate": "2026-06-23",
+      "examDate": "2026-08-23",
+      "resultDate": "2026-11-04",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,951",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "BCI Written Exam Date",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "SCI Written Exam Date",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-05-25",
+          "dateText": "25 May 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-06-23",
+          "dateText": "23 June 2026"
+        },
+        {
+          "label": "Basic Computer Instructor Examination",
+          "date": "2026-08-22",
+          "dateText": "22 August 2026"
+        },
+        {
+          "label": "Senior Computer Instructor Examination",
+          "date": "2026-08-23",
+          "dateText": "23 August 2026"
+        },
+        {
+          "label": "Provisional Answer Key Release",
+          "date": "2026-09-18",
+          "dateText": "18 September 2026"
+        },
+        {
+          "label": "Answer Key Objection Last Date",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Basic Computer Instructor Result",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Scrutiny Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Scrutiny Last Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/storage/result_item/1793800782.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in/storage/result_item/1793800782.pdf",
+          "label": "RSSB Basic Computer Instructor Result 2026 (BCI)"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/storage/result_item/1793800858.pdf",
+          "label": "RSSB Senior Computer Instructor Result 2026 (SCI)"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/results",
+          "label": "RSSB Official Result Portal"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
         }
       ]
     }

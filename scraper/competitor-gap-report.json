@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-11-04T09:16:15.773Z",
+  "generatedAt": "2026-11-05T09:31:36.068Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 566,
-    "jobs": 134,
-    "admitCards": 116,
-    "results": 316,
-    "jobsMissingPublicationDate": 57,
-    "jobsMissingClosingDate": 77,
-    "jobsMissingOrganization": 79,
-    "jobsMissingVacancies": 94,
-    "jobsMissingEligibility": 83,
-    "jobsMissingApplicationFee": 83,
-    "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 15,
-    "resultsMissingPublishedDate": 42,
-    "resultsMissingResultDate": 164
-  },
-  "after": {
     "total": 574,
     "jobs": 136,
     "admitCards": 119,
     "results": 319,
-    "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 75,
-    "jobsMissingOrganization": 77,
-    "jobsMissingVacancies": 94,
-    "jobsMissingEligibility": 81,
-    "jobsMissingApplicationFee": 81,
-    "jobsMissingOfficialLink": 1,
-    "admitCardsMissingPublishedDate": 14,
+    "jobsMissingPublicationDate": 57,
+    "jobsMissingClosingDate": 77,
+    "jobsMissingOrganization": 79,
+    "jobsMissingVacancies": 95,
+    "jobsMissingEligibility": 82,
+    "jobsMissingApplicationFee": 82,
+    "jobsMissingOfficialLink": 0,
+    "admitCardsMissingPublishedDate": 15,
     "resultsMissingPublishedDate": 42,
     "resultsMissingResultDate": 165
   },
+  "after": {
+    "total": 581,
+    "jobs": 137,
+    "admitCards": 119,
+    "results": 325,
+    "jobsMissingPublicationDate": 55,
+    "jobsMissingClosingDate": 75,
+    "jobsMissingOrganization": 77,
+    "jobsMissingVacancies": 93,
+    "jobsMissingEligibility": 80,
+    "jobsMissingApplicationFee": 80,
+    "jobsMissingOfficialLink": 0,
+    "admitCardsMissingPublishedDate": 14,
+    "resultsMissingPublishedDate": 42,
+    "resultsMissingResultDate": 164
+  },
   "imported": {
     "job": 4,
-    "admit-card": 3,
-    "result": 3
+    "admit-card": 0,
+    "result": 6
   },
-  "matchedExisting": 15,
-  "filledItems": 1,
+  "matchedExisting": 16,
+  "filledItems": 3,
   "removedStale": 0,
-  "removedUncertain": 0,
+  "removedUncertain": 1,
   "skippedClosed": 0,
   "removedNavigation": 2,
   "removalLog": [
@@ -60,16 +60,22 @@
       "type": "job",
       "publisher": "(official)",
       "title": "Jobs for Ex-Servicemen"
+    },
+    {
+      "reason": "stale competitor job without dates",
+      "type": "job",
+      "publisher": "SarkariResult.com",
+      "title": "Uttar Pradesh UP Anganwadi Kasganj Worker Bharti Online Form 2026"
     }
   ],
   "detailPages": {
-    "targets": 12,
-    "fetched": 12,
+    "targets": 16,
+    "fetched": 16,
     "cacheHits": 0
   },
   "remainingGaps": {
     "jobsMissingDate": [
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "இணையவழியில் விண்ணப்பிக்க Apply online",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
@@ -88,10 +94,10 @@
       "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
       "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
       "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026"
+      "OTR OTR service is currently closed. Please apply during the notified period. Open"
     ],
     "jobsMissingClosingDate": [
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "இணையவழியில் விண்ணப்பிக்க Apply online",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
@@ -119,7 +125,7 @@
       "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-4/E-1/2026,SAMIKSHA ADHIKARI/SAHAYAK SAMIKSHA ADHIKARI ETC.(GEN. / SPL. RECTT.) EXAM.-2026.",
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "இணையவழியில் விண்ணப்பிக்க Apply online",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
@@ -135,7 +141,6 @@
       "Recruitment of Director Advt.No.-07/2025"
     ],
     "jobsMissingVacancies": [
-      "RBI Mumbai Pharmacist Recruitment 2026 — 22 Posts",
       "UP Kushinagar ECCE Educator Online Form 2026",
       "NTA CSIR UGC NET December 2026 Online Form",
       "UP ECCE Educator Fatehpur Online Form 2026",
@@ -148,6 +153,7 @@
       "URSC:04:2026 — Recruitment to the posts of Technician - B/ Heavy Vehicle Driver - A/ Light Vehicle Driver - A/ Staff Car Driver- A",
       "CWC Assistant Manager and Junior Executive Recruitment 2026 — 327 Posts",
       "UP Bulandshahar ECCE Educator Online Form 2026",
+      "NICL 200 Graduate Apprentices Online Form 2026",
       "Supreme Court of India Senior Personal Assistant Online Form 2026",
       "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
@@ -156,9 +162,7 @@
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
       "RRC Central Railway 2,861 Act Apprentice Posts Online Form 2026"
     ],
-    "jobsMissingOfficialLink": [
-      "POWERGRID 319 Engineer Trainee Online form 2026"
-    ]
+    "jobsMissingOfficialLink": []
   },
   "errors": [
     {
