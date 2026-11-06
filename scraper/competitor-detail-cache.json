@@ -8204,7 +8204,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-isolated-categories-recruitment-2026-cen-09-2026-apply-online-for-195-posts-3074732": {
-    "attemptedAt": "2026-11-05T09:31:35.638Z",
+    "attemptedAt": "2026-11-06T09:28:10.567Z",
     "parser": "v2",
     "details": {
       "organization": "RRB Isolated Category",
@@ -24574,7 +24574,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
-    "attemptedAt": "2026-11-02T09:33:08.090Z",
+    "attemptedAt": "2026-11-06T09:28:10.637Z",
     "parser": "v2",
     "details": {
       "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
@@ -24585,13 +24585,13 @@
       "resultDate": "2026-12-15",
       "admitCardDate": null,
       "interviewDate": null,
-      "vacancies": "3047",
+      "vacancies": "3,047",
       "ageLimit": "18 to 24 Years",
-      "eligibility": "10th, 12th, ITI, Diploma, Relevant Graduation",
+      "eligibility": "10th, 12th, ITI, Diploma or Graduation, as applicable",
       "applicationFee": "",
       "milestones": [
         {
-          "label": "Last Date",
+          "label": "Last Date to Apply",
           "date": "2026-11-20",
           "dateText": "20 November 2026"
         },
@@ -24611,38 +24611,42 @@
           "dateText": "20 November 2026"
         },
         {
+          "label": "Scheduled Result/Selection Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026"
+        },
+        {
           "label": "Age Calculation Date",
           "date": "2026-11-29",
           "dateText": "29 November 2026"
-        },
-        {
-          "label": "Result / Selection Date",
-          "date": "2026-12-15",
-          "dateText": "15 December 2026"
         }
       ],
-      "officialLink": "https://www.ongcindia.com/",
-      "notificationLink": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+      "officialLink": "https://apprenticeshipindia.gov.in/",
+      "notificationLink": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
       "officialLinks": [
         {
-          "url": "https://www.ongcindia.com/",
+          "url": "https://ongcindia.com/",
           "label": "Official Website"
         },
         {
           "url": "https://apprenticeshipindia.gov.in/",
-          "label": "NAPS Apprentice Application"
+          "label": "Apply Online - NAPS"
         },
         {
           "url": "https://nats.education.gov.in/",
-          "label": "NATS Apprentice Application"
+          "label": "Apply Online - NATS"
         },
         {
-          "url": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
-          "label": "Official Notification PDF / Recruitment Notices"
+          "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+          "label": "Official Notification PDF"
         },
         {
           "url": "https://ongcapprentices.ongc.co.in/",
-          "label": "ONGC Apprenticeship Portal"
+          "label": "ONGC Apprentice Updates"
+        },
+        {
+          "url": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+          "label": "ONGC Recruitment Notices"
         }
       ]
     }
@@ -24774,7 +24778,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ktet-hall-ticket-2026-3077797": {
-    "attemptedAt": "2026-11-05T09:31:35.495Z",
+    "attemptedAt": "2026-11-06T09:28:10.732Z",
     "parser": "v2",
     "details": {
       "organization": "KTET Hall Ticket 2026 Out - Download Kerala TET",
@@ -26854,11 +26858,11 @@
     }
   },
   "https://www.freejobalert.com/articles/indian-bank-apprentices-recruitment-2026-3078364": {
-    "attemptedAt": "2026-11-05T09:31:35.683Z",
+    "attemptedAt": "2026-11-06T09:28:10.607Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Bank",
-      "publishedDate": "2026-11-04",
+      "publishedDate": "2026-11-06",
       "openDate": "2026-11-05",
       "lastDate": "2026-11-25",
       "examDate": null,
@@ -27566,7 +27570,7 @@
     }
   },
   "https://www.freejobalert.com/articles/nlc-india-get-recruitment-2026-3078755": {
-    "attemptedAt": "2026-11-05T09:31:35.724Z",
+    "attemptedAt": "2026-11-06T09:28:10.523Z",
     "parser": "v2",
     "details": {
       "organization": "NLC India Limited (NLCIL)",
@@ -28514,6 +28518,924 @@
         {
           "url": "https://rssb.rajasthan.gov.in/",
           "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iocl-apprentice-recruitment-2026-3079245": {
+    "attemptedAt": "2026-11-06T09:28:10.669Z",
+    "parser": "v2",
+    "details": {
+      "organization": "IOCL Apprentice",
+      "publishedDate": "2026-11-06",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Minimum 18 years and maximum 24 years as on 30.11.2026",
+      "eligibility": "30.11.2026",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-05",
+          "dateText": "05.12.2026"
+        },
+        {
+          "label": "Date of opening of online application",
+          "date": "2026-11-06",
+          "dateText": "06.11.2026"
+        },
+        {
+          "label": "Cut-off date for age, qualification and eligibility",
+          "date": "2026-11-30",
+          "dateText": "30.11.2026"
+        },
+        {
+          "label": "Last date of submission of online application",
+          "date": "2026-12-05",
+          "dateText": "05.12.2026"
+        }
+      ],
+      "officialLink": "https://iocl.com",
+      "notificationLink": "https://iocl.com/admin/img/Apprenticeships/Files/c1ee9de273284203b8546936356b9787.pdf",
+      "officialLinks": [
+        {
+          "url": "https://plapps.indianoilpipelines.in/",
+          "label": "Apply At"
+        },
+        {
+          "url": "https://iocl.com/admin/img/Apprenticeships/Files/c1ee9de273284203b8546936356b9787.pdf",
+          "label": "IOCL Apprentice Official Notification PDF"
+        },
+        {
+          "url": "https://iocl.com",
+          "label": "IOCL Apprenticeships Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/sdsc-shar-recruitment-2026-trade-apprentice-diploma-3078917": {
+    "attemptedAt": "2026-11-06T09:28:10.697Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Satish Dhawan Space Centre SHAR (SDSC SHAR), ISRO",
+      "publishedDate": "2026-11-05",
+      "openDate": "2026-11-06",
+      "lastDate": "2026-11-26",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "B.E./B.Tech, B.Sc, B.Com, B.A., Diploma, ITI/NTC or relevant Vocational Certificate",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-06",
+          "dateText": "06 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Notification Date",
+          "date": "2026-11-06",
+          "dateText": "06 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-06",
+          "dateText": "06 November 2026"
+        },
+        {
+          "label": "Last Date for Online Application",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLink": "https://web.umang.gov.in/landing/",
+      "notificationLink": "https://apps.shar.gov.in/sdscshar/apprentice/Apprenticeship2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.shar.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://apps.shar.gov.in/sdscshar/apprentice/Apprenticeship2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://web.umang.gov.in/landing/",
+          "label": "Apply Online - UMANG Portal"
+        },
+        {
+          "url": "https://www.isro.gov.in",
+          "label": "ISRO Official Website"
+        },
+        {
+          "url": "https://nats.education.gov.in",
+          "label": "NATS Registration"
+        },
+        {
+          "url": "https://www.apprenticeship.gov.in",
+          "label": "Apprenticeship Registration Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/kpsc-kas-prelims-hall-ticket-2026-3079049": {
+    "attemptedAt": "2026-11-06T09:28:10.758Z",
+    "parser": "v2",
+    "details": {
+      "organization": "KPSC KAS Prelims Hall Ticket 2026 Out – Download",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-08-01",
+      "lastDate": "2026-09-07",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "319",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Hall Ticket Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Preliminary Examination Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Examination Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-08-01",
+          "dateText": "1 August 2026"
+        },
+        {
+          "label": "Extended Application Last Date",
+          "date": "2026-09-07",
+          "dateText": "7 September 2026"
+        },
+        {
+          "label": "Hall Ticket Release",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Preliminary Examination",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        }
+      ],
+      "officialLink": "https://kpsc.karnataka.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://kpsconline.karnataka.gov.in/login/login",
+          "label": "KPSC KAS Prelims Hall Ticket 2026"
+        },
+        {
+          "url": "https://kpsc.karnataka.gov.in/",
+          "label": "KPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/concor-mt-and-assistant-officer-admit-card-2026-3079248": {
+    "attemptedAt": "2026-11-06T09:28:10.779Z",
+    "parser": "v2",
+    "details": {
+      "organization": "CONCOR",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-08-31",
+      "lastDate": "2026-09-30",
+      "examDate": "2026-11-21",
+      "resultDate": null,
+      "admitCardDate": "2026-11-05",
+      "interviewDate": null,
+      "vacancies": "77",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "CBT Exam Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-08-25",
+          "dateText": "25 August 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-08-31",
+          "dateText": "31 August 2026, 10:00 AM"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-09-30",
+          "dateText": "30 September 2026, 11:55 PM"
+        },
+        {
+          "label": "CONCOR CBT Examination",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        }
+      ],
+      "officialLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/101565/login.html",
+      "officialLinks": [
+        {
+          "url": "https://rrb.digialm.com/EForms/configuredHtml/1181/101565/login.html",
+          "label": "CONCOR Admit Card 2026"
+        },
+        {
+          "url": "https://www.concorindia.co.in/",
+          "label": "CONCOR Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/mp-police-constable-gd-hall-ticket-2026-3079179": {
+    "attemptedAt": "2026-11-06T09:28:10.801Z",
+    "parser": "v2",
+    "details": {
+      "organization": "MP Police Constable",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-09-22",
+      "lastDate": "2026-10-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": "2026-11-16",
+      "interviewDate": null,
+      "vacancies": "7,500",
+      "ageLimit": "",
+      "eligibility": "Medical and Other Prescribed Formalities",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Start Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Expected Exam City Information",
+          "date": "2026-11-12",
+          "dateText": "Around 12 November 2026"
+        },
+        {
+          "label": "Expected Admit Card",
+          "date": "2026-11-16",
+          "dateText": "Around 15-16 November 2026"
+        },
+        {
+          "label": "Exam City Information",
+          "date": "2026-11-12",
+          "dateText": "Around 12 November 2026"
+        },
+        {
+          "label": "Full Admit Card",
+          "date": "2026-11-16",
+          "dateText": "Around 15-16 November 2026"
+        },
+        {
+          "label": "Examination Begins",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-10-06",
+          "dateText": "6 October 2026"
+        },
+        {
+          "label": "Application Correction Last Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Expected Exam City Slip",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Expected Full Admit Card",
+          "date": "2026-11-16",
+          "dateText": "15-16 November 2026"
+        }
+      ],
+      "officialLink": "https://esb.mp.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://esb.mp.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rcf-kapurthala-apprentice-merit-list-2026-3079170": {
+    "attemptedAt": "2026-11-06T09:28:10.823Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rail Coach Factory (RCF), Kapurthala",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-08-07",
+      "lastDate": "2026-09-05",
+      "examDate": null,
+      "resultDate": "2026-11-04",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Matriculation and Relevant ITI",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Recruitment Notice Date",
+          "date": "2026-08-07",
+          "dateText": "7 August 2026"
+        },
+        {
+          "label": "Merit List Notice Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Document Verification Dates",
+          "date": "2026-11-21",
+          "dateText": "16-21 November 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-09-05",
+          "dateText": "5 September 2026"
+        },
+        {
+          "label": "Provisional Merit List Notice",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Fitter Document Verification",
+          "date": "2026-11-17",
+          "dateText": "16-17 November 2026"
+        },
+        {
+          "label": "Welder Document Verification",
+          "date": "2026-11-19",
+          "dateText": "18-19 November 2026"
+        }
+      ],
+      "officialLink": "https://rcf.indianrailways.gov.in/rcf-view/department/Personnel/act-app/act-app/Prov-List-Nov-2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rcf.indianrailways.gov.in/rcf-view/department/Personnel/act-app/act-app/Prov-List-Nov-2026.pdf",
+          "label": "RCF Kapurthala Apprentice Merit List 2026 PDF"
+        },
+        {
+          "url": "https://rcf.indianrailways.gov.in/",
+          "label": "RCF Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/kerala-set-result-2026-3079174": {
+    "attemptedAt": "2026-11-06T09:28:10.834Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Kerala SET",
+      "publishedDate": "2026-11-06",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-20",
+      "resultDate": "2026-11-05",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "20 September 2026 (Sunday)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-09-20",
+          "dateText": "20 September 2026 (Sunday)"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        }
+      ],
+      "officialLink": "https://lbsedp.lbscentre.in/setjul26",
+      "officialLinks": [
+        {
+          "url": "https://lbsedp.lbscentre.in/setjul26",
+          "label": "Official Result Portal"
+        },
+        {
+          "url": "https://lbsedp.lbscentre.in/setjul26/results/regno.php",
+          "label": "Kerala SET Result 2026 Login (Roll Number)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/hprca-tgt-revised-result-2026-3079220": {
+    "attemptedAt": "2026-11-06T09:28:10.848Z",
+    "parser": "v2",
+    "details": {
+      "organization": "HPRCA TGT Arts Revised",
+      "publishedDate": "2026-11-06",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-04",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "425",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "CBST (Written Test) Dates",
+          "date": "2026-01-12",
+          "dateText": "12 January 2026 to 20 January 2026"
+        },
+        {
+          "label": "Document Verification",
+          "date": "2026-04-16",
+          "dateText": "16 April 2026 to 22 April 2026, and again on 1 June 2026"
+        },
+        {
+          "label": "Final Result Declared",
+          "date": "2026-06-10",
+          "dateText": "10 June 2026"
+        },
+        {
+          "label": "Revised Result Released",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        }
+      ],
+      "officialLink": "https://hprca.hp.gov.in/result",
+      "officialLinks": [
+        {
+          "url": "https://hprca.hp.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://hprca.hp.gov.in/result",
+          "label": "HPRCA TGT Arts Revised Result PDF"
+        },
+        {
+          "url": "https://hprca.hp.gov.in/",
+          "label": "HPRCA Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ssc-jht-result-2026-3078921": {
+    "attemptedAt": "2026-11-06T09:28:10.913Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SSC JHT",
+      "publishedDate": "2026-11-05",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-05",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Verification Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Verification Slip Download",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026, 5:00 PM Onwards"
+        },
+        {
+          "label": "SSC JHT Paper-I Result",
+          "date": "2025-11-04",
+          "dateText": "4 November 2025"
+        },
+        {
+          "label": "SSC JHT Paper-II Examination",
+          "date": "2025-12-14",
+          "dateText": "14 December 2025"
+        },
+        {
+          "label": "Paper-II Result Update for CRPF PET/PST",
+          "date": "2026-06-04",
+          "dateText": "4 June 2026"
+        },
+        {
+          "label": "Post Preference Submission Last Date",
+          "date": "2026-09-11",
+          "dateText": "11 September 2026"
+        },
+        {
+          "label": "First Round of Tentative Allocation Result",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Sliding / Identification Verification Slip Release",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026, 5:00 PM"
+        },
+        {
+          "label": "Sliding / Identification Verification",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Sliding / Identification Verification Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/ROLL_05112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/ROLL_05112026.pdf",
+          "label": "SSC JHT Result 2026 - Allocation List"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_05112026.pdf",
+          "label": "SSC JHT FRTA Result Notice 2026"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "SSC Official Results"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/gujarat-anganwadi-merit-list-2026-3078935": {
+    "attemptedAt": "2026-11-06T09:28:10.934Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Gujarat Anganwadi Merit List 2026 Out - Check Worker, Helper District-Wise Selection List",
+      "publishedDate": "2026-11-05",
+      "openDate": "2026-09-21",
+      "lastDate": "2026-10-14",
+      "examDate": null,
+      "resultDate": "2026-11-05",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "6,843",
+      "ageLimit": "",
+      "eligibility": "Considered according to the applicable merit and tie-breaking rules",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Merit List Update",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-21",
+          "dateText": "21 September 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Vadodara Merit List Update",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        }
+      ],
+      "officialLink": "https://e-hrms.gujarat.gov.in/MeritConsentDocumentList/MeritConsentList",
+      "officialLinks": [
+        {
+          "url": "https://e-hrms.gujarat.gov.in/MeritConsentDocumentList/MeritConsentList",
+          "label": "Gujarat Anganwadi Merit List 2026"
+        },
+        {
+          "url": "https://e-hrms.gujarat.gov.in/",
+          "label": "Gujarat Anganwadi Worker Merit List"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/wbssc-group-c-and-d-result-2026-3079034": {
+    "attemptedAt": "2026-11-06T09:28:10.955Z",
+    "parser": "v2",
+    "details": {
+      "organization": "WBSSC Group C and D",
+      "publishedDate": "2026-11-05",
+      "openDate": "2025-11-03",
+      "lastDate": "2025-12-12",
+      "examDate": "2026-04-02",
+      "resultDate": "2026-11-05",
+      "admitCardDate": "2026-02-14",
+      "interviewDate": "2026-11-05",
+      "vacancies": "8,477",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Group C Examination Date",
+          "date": "2026-03-01",
+          "dateText": "1 March 2026"
+        },
+        {
+          "label": "Group D Examination Date",
+          "date": "2026-03-08",
+          "dateText": "8 March 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2025-12-12",
+          "dateText": "12 December 2025"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-02-14",
+          "dateText": "14 February 2026"
+        },
+        {
+          "label": "WBSSC Group C Written Examination",
+          "date": "2026-03-01",
+          "dateText": "1 March 2026"
+        },
+        {
+          "label": "WBSSC Group D Written Examination",
+          "date": "2026-03-08",
+          "dateText": "8 March 2026"
+        },
+        {
+          "label": "Written Examination Answer Key Update",
+          "date": "2026-04-02",
+          "dateText": "2 April 2026"
+        },
+        {
+          "label": "Group C Preliminary Interview List",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Group D Preliminary Interview List",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2026-03-01",
+          "dateText": "1 March 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2026-03-08",
+          "dateText": "8 March 2026"
+        }
+      ],
+      "officialLink": "https://www.westbengalssc.com/",
+      "officialLinks": [
+        {
+          "url": "https://www.westbengalssc.com/",
+          "label": "WBSSC Official Result and Recruitment Updates"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/wbcs-prelims-result-2026-3079003": {
+    "attemptedAt": "2026-11-06T09:28:10.977Z",
+    "parser": "v2",
+    "details": {
+      "organization": "WBCS Prelims",
+      "publishedDate": "2026-11-05",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-05",
+      "admitCardDate": "2026-06-04",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Preliminary Examination Date",
+          "date": "2026-06-14",
+          "dateText": "14 June 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Preliminary Examination Date Notice",
+          "date": "2026-05-14",
+          "dateText": "14 May 2026"
+        },
+        {
+          "label": "Preliminary Admit Card Availability",
+          "date": "2026-06-04",
+          "dateText": "4 June 2026"
+        },
+        {
+          "label": "WBCS Preliminary Examination",
+          "date": "2026-06-14",
+          "dateText": "14 June 2026"
+        },
+        {
+          "label": "Provisional Answer Key Publication",
+          "date": "2026-06-24",
+          "dateText": "24 June 2026"
+        },
+        {
+          "label": "Final Answer Key Publication",
+          "date": "2026-08-27",
+          "dateText": "27 August 2026"
+        },
+        {
+          "label": "WBCS Preliminary Result Declaration",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Preliminary Result",
+          "date": "2026-11-05",
+          "dateText": "Released on 5 November 2026"
+        }
+      ],
+      "officialLink": "https://psc.wb.gov.in/Download?param1=20261105145652_WBCS_2024_PRELI_RESULT.pdf&param2=advertisement",
+      "officialLinks": [
+        {
+          "url": "https://psc.wb.gov.in/Download?param1=20261105145652_WBCS_2024_PRELI_RESULT.pdf&param2=advertisement",
+          "label": "WBCS Prelims Result 2026 PDF"
+        },
+        {
+          "url": "https://psc.wb.gov.in/",
+          "label": "WBPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/upsc-cse-mains-result-2026-3079152": {
+    "attemptedAt": "2026-11-06T09:28:10.997Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UPSC CSE Mains",
+      "publishedDate": "2026-11-06",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-05",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Main Examination Dates",
+          "date": "2026-08-30",
+          "dateText": "21 to 30 August 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Application Update Start Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Application Submission Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026, 6:00 PM"
+        },
+        {
+          "label": "Civil Services Main Examination",
+          "date": "2026-08-30",
+          "dateText": "21-30 August 2026"
+        },
+        {
+          "label": "UPSC CSE Mains Result",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Online Application Update Start",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Last Date to Submit Application Details",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Written Result Date",
+          "date": "2026-11-05",
+          "dateText": "5 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        }
+      ],
+      "officialLink": "https://www.upsc.gov.in/sites/default/files/WR-CSM-2026-Engl-RollList-05112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/WR-CSM-2026-Engl-RollList-05112026.pdf",
+          "label": "UPSC CSE Mains Result 2026 PDF"
+        },
+        {
+          "url": "https://www.upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
+          "label": "UPSC CSE Mains Name-Wise Result"
+        },
+        {
+          "url": "https://www.upsc.gov.in/",
+          "label": "UPSC Official Website"
+        },
+        {
+          "url": "https://upsconline.nic.in/",
+          "label": "Portal"
         }
       ]
     }

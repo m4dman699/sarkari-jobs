@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T09:31:34.314Z",
-  "total": 12,
+  "generatedAt": "2026-11-06T09:28:09.173Z",
+  "total": 9,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -14,117 +14,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-ec628ee5a2ab4d67",
-      "type": "job",
-      "title": "UPESSC UP Primary Teacher Online Form 2026 for 12405 Post",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://apply.upessc.org/register",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-primary-teacher-05-2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "lastDate": "2026-11-04",
-      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
-      "publishedDate": "2026-10-28",
-      "openDate": "2026-09-16",
-      "vacancies": "12405",
-      "ageLimit": "21–40 years",
-      "eligibility": "Post Name General OBC EWS SC ST Total UPEESSC UP Primary Teacher Eligibility Assistant Teacher in Urban Area Primary Schools 4746 3069 1116 2379 198 11508 Bachelor Degree in Any Stream with DELED (BTC) / B-El-Ed. For More Details Read the Notification. Assistant Teacher – Affiliated Primary (Non-Government Aided School) 378 164 07 348 0 897 Bachelor Degree in Any Stream with DELED (BTC) / B-El-Ed Class I to V Primary TET Exam Passed. For More Details Read the Notification. UP Primary Teacher Onl",
-      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
-      "officialLinks": [
-        {
-          "url": "https://apply.upessc.org/register",
-          "label": "Apply Online (OTR)"
-        },
-        {
-          "url": "https://upessc.up.gov.in/Notice/4b1f-907a-4508-5c3a-0c65.pdf",
-          "label": "Download Date Extended & Eligibility Related Notice"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/UP_Primary_Teacher_I_V_Syllabus_2026%20(1).pdf",
-          "label": "Download Syllabus"
-        },
-        {
-          "url": "https://upessc.up.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://apply.upessc.org/register",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-28",
-          "dateText": "28 October 2026 | 07:56 PM"
-        },
-        {
-          "label": "Last Date for Registration",
-          "date": "2026-11-04",
-          "dateText": "04/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-04",
-          "dateText": "04/11/2026"
-        },
-        {
-          "label": "Last Date Correction",
-          "date": "2026-11-07",
-          "dateText": "07/11/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-sarkariresult-b6e3b26ec6534ded",
-      "type": "job",
-      "title": "UP Kushinagar ECCE Educator Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-kushinagar-ecce-educator-july26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "lastDate": "2026-11-04",
-      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
-      "publishedDate": "2026-10-28",
-      "openDate": "2026-10-24",
-      "ageLimit": "21–40 years",
-      "eligibility": "Bachelor’s Degree with Home Science (Minimum 50% Marks) OR 2 Year NTT / CT (Nursery) / DPSE Diploma from a Recognized Institute More Eligibility Details Read the Notification.",
-      "applicationFee": "for the All Candidates. UP Kushinagar",
-      "officialLinks": [
-        {
-          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/ECCE_Educator_Kushinagar_28102026.pdf",
-          "label": "Download Vacancy Details / Notice"
-        },
-        {
-          "url": "https://sewayojan.up.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-28",
-          "dateText": "28 October 2026 | 04:35 PM"
-        },
-        {
-          "label": "Last Date for Apply",
-          "date": "2026-11-04",
-          "dateText": "04/11/2026"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-686b7d89d37a2f88",
@@ -520,76 +409,6 @@
           "label": "Last Date for Apply",
           "date": "2026-10-30",
           "dateText": "30/10/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-sarkariresult-355cf57529ef0867",
-      "type": "job",
-      "title": "Uttar Pradesh UP Anganwadi Kasganj Worker Bharti Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://upanganwadibharti.in/workernew/users/registration.php",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-anganwadi-worker/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "organization": "Uttar Pradesh District Program Officer",
-      "publishedDate": "2026-10-21",
-      "ageLimit": "18–35 years",
-      "eligibility": "Only for Female Candidates. Passed 10+2 Intermediate Exam in Any Recognized Board in India. Candidate must be a resident of the said Village/Ward/Nyaya Panchayat from where she will apply.",
-      "applicationFee": "General / OBC / EWS : 0/- SC / ST : 0/- No Application Fees for the All Candidates.",
-      "notificationLink": "https://upanganwadibharti.in/",
-      "officialLinks": [
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1791979147_52412659.pdf",
-          "label": "Kasganj"
-        },
-        {
-          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1791371812_936656e4.pdf",
-          "label": "Moradabad"
-        },
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1789130301_94035e97.pdf",
-          "label": "Gonda"
-        },
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1790765630_c3e6e85e.pdf",
-          "label": "Kaushambi"
-        },
-        {
-          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1790140236_75c62955.pdf",
-          "label": "Hathras"
-        },
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1789370936_d7a780cb.pdf",
-          "label": "Gorakhpur"
-        },
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1788958383_41995cb1.pdf",
-          "label": "Jalaun"
-        },
-        {
-          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1788845526_43e2a414.pdf",
-          "label": "Gautam buddha Nagar"
-        },
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1788779086_51bd336d.pdf",
-          "label": "Amethi"
-        },
-        {
-          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1788441669_4a5e701d.pdf",
-          "label": "Amroha"
-        }
-      ],
-      "officialLink": "https://upanganwadibharti.in/workernew/users/registration.php",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-21",
-          "dateText": "21 October 2026 | 08:00 PM"
         }
       ]
     },

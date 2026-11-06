@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-11-05T09:31:36.068Z",
-  "durationSeconds": 1,
+  "generatedAt": "2026-11-06T09:28:11.001Z",
+  "durationSeconds": 2,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 574,
-    "jobs": 136,
+    "total": 584,
+    "jobs": 135,
     "admitCards": 119,
-    "results": 319,
+    "results": 330,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 77,
     "jobsMissingOrganization": 79,
-    "jobsMissingVacancies": 95,
+    "jobsMissingVacancies": 94,
     "jobsMissingEligibility": 82,
     "jobsMissingApplicationFee": 82,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 15,
-    "resultsMissingPublishedDate": 42,
-    "resultsMissingResultDate": 165
+    "resultsMissingPublishedDate": 44,
+    "resultsMissingResultDate": 169
   },
   "after": {
-    "total": 581,
-    "jobs": 137,
-    "admitCards": 119,
-    "results": 325,
+    "total": 594,
+    "jobs": 134,
+    "admitCards": 122,
+    "results": 338,
     "jobsMissingPublicationDate": 55,
     "jobsMissingClosingDate": 75,
     "jobsMissingOrganization": 77,
     "jobsMissingVacancies": 93,
     "jobsMissingEligibility": 80,
-    "jobsMissingApplicationFee": 80,
+    "jobsMissingApplicationFee": 82,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 14,
-    "resultsMissingPublishedDate": 42,
-    "resultsMissingResultDate": 164
+    "resultsMissingPublishedDate": 44,
+    "resultsMissingResultDate": 169
   },
   "imported": {
-    "job": 4,
-    "admit-card": 0,
-    "result": 6
+    "job": 2,
+    "admit-card": 3,
+    "result": 8
   },
-  "matchedExisting": 16,
-  "filledItems": 3,
+  "matchedExisting": 12,
+  "filledItems": 2,
   "removedStale": 0,
   "removedUncertain": 1,
   "skippedClosed": 0,
@@ -64,13 +64,13 @@
     {
       "reason": "stale competitor job without dates",
       "type": "job",
-      "publisher": "SarkariResult.com",
-      "title": "Uttar Pradesh UP Anganwadi Kasganj Worker Bharti Online Form 2026"
+      "publisher": "FreeJobAlert",
+      "title": "RRB 1250 Station Master Online Form 2026 (Short Notice)"
     }
   ],
   "detailPages": {
-    "targets": 16,
-    "fetched": 16,
+    "targets": 18,
+    "fetched": 18,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -141,7 +141,6 @@
       "Recruitment of Director Advt.No.-07/2025"
     ],
     "jobsMissingVacancies": [
-      "UP Kushinagar ECCE Educator Online Form 2026",
       "NTA CSIR UGC NET December 2026 Online Form",
       "UP ECCE Educator Fatehpur Online Form 2026",
       "UPBOCW Coordinator Online Form 2026",
@@ -158,6 +157,7 @@
       "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
       "Indian Bank 1500 Apprentices Online Form 2026",
+      "SDSC SHAR Apprentice Online Form 2026 (400 Vacancy)",
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
       "RRC Central Railway 2,861 Act Apprentice Posts Online Form 2026"
