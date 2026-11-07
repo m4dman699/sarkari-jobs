@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-06T09:28:11.001Z",
-  "jobsGeneratedAt": "2026-11-06T09:28:09.173Z",
+  "generatedAt": "2026-11-07T08:49:50.489Z",
+  "jobsGeneratedAt": "2026-11-07T08:49:49.046Z",
   "partial": true,
-  "total": 594,
+  "total": 599,
   "quality": {
     "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 75,
+    "jobsMissingClosingDate": 77,
     "genericNavigationItems": 0
   },
   "errors": [
@@ -25,14 +25,14 @@
       "error": "timeout"
     },
     {
-      "source": "Indian Army",
-      "url": "https://joinindianarmy.nic.in/",
-      "error": "timeout"
-    },
-    {
       "source": "Railway Recruitment Boards",
       "url": "https://rrb.indianrailways.gov.in/",
       "error": "The operation was aborted"
+    },
+    {
+      "source": "Indian Army",
+      "url": "https://joinindianarmy.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "Indian Navy",
@@ -45,14 +45,14 @@
       "error": "HTTP 403"
     },
     {
-      "source": "Indian Air Force",
-      "url": "https://indianairforce.nic.in/",
-      "error": "timeout"
-    },
-    {
       "source": "NTPC",
       "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "Indian Air Force",
+      "url": "https://indianairforce.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "SAIL",
@@ -60,14 +60,14 @@
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "Supreme Court of India",
-      "url": "https://www.sci.gov.in/recruitments/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "NVS",
       "url": "https://navodaya.gov.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/recruitments/",
+      "error": "HTTP 403"
     },
     {
       "source": "NIC e-Pariksha",
@@ -82,7 +82,7 @@
     {
       "source": "Calcutta High Court",
       "url": "https://www.calcuttahighcourt.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "RPSC",
@@ -95,19 +95,9 @@
       "error": "timeout"
     },
     {
-      "source": "KPSC",
-      "url": "https://kpsc.kar.nic.in/",
-      "error": "Parse Error: Invalid header token"
-    },
-    {
       "source": "WBPSC",
       "url": "https://wbpsc.gov.in/",
       "error": "timeout"
-    },
-    {
-      "source": "GPSC",
-      "url": "https://gpsc.gujarat.gov.in/",
-      "error": ""
     },
     {
       "source": "MPPSC",
@@ -115,23 +105,28 @@
       "error": "timeout"
     },
     {
-      "source": "Kerala PSC",
-      "url": "https://www.keralapsc.gov.in/",
-      "error": "timeout"
+      "source": "KPSC",
+      "url": "https://kpsc.kar.nic.in/",
+      "error": "Parse Error: Invalid header token"
     },
     {
-      "source": "APPSC",
-      "url": "https://psc.ap.gov.in/",
-      "error": "timeout"
+      "source": "GPSC",
+      "url": "https://gpsc.gujarat.gov.in/",
+      "error": ""
     },
     {
       "source": "TGPSC",
       "url": "https://www.tgpsc.gov.in/",
-      "error": "timeout"
+      "error": "HTTP 403"
     },
     {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO 802C88F2217F0000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+    },
+    {
+      "source": "APPSC",
+      "url": "https://psc.ap.gov.in/",
       "error": "timeout"
     },
     {
@@ -142,7 +137,7 @@
     {
       "source": "CGPSC",
       "url": "https://psc.cg.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "UKPSC",
@@ -152,7 +147,7 @@
     {
       "source": "PPSC",
       "url": "https://ppsc.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "Goa PSC",
@@ -167,7 +162,7 @@
     {
       "source": "JKPSC",
       "url": "https://jkpsc.nic.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "Mizoram PSC",
@@ -175,13 +170,13 @@
       "error": "HTTP 403"
     },
     {
-      "source": "SPSC Sikkim",
-      "url": "https://spscskm.gov.in/",
+      "source": "TPSC",
+      "url": "https://tpsc.tripura.gov.in/",
       "error": "timeout"
     },
     {
-      "source": "TPSC",
-      "url": "https://tpsc.tripura.gov.in/",
+      "source": "SPSC Sikkim",
+      "url": "https://spscskm.gov.in/",
       "error": "timeout"
     },
     {
@@ -15522,6 +15517,75 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-05749a31065c34a6",
+      "type": "admit-card",
+      "title": "UKPSC Upper PCS Admit Card 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Uttarakhand",
+      "link": "https://psc.uk.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ukpsc-upper-pcs-admit-card-2026-3079319",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "Uttarakhand Public Service Commission (UKPSC)",
+      "publishedDate": "2026-09-09",
+      "openDate": "2026-09-09",
+      "lastDate": "2026-09-29",
+      "examDate": "2026-11-29",
+      "vacancies": "67",
+      "officialLinks": [
+        {
+          "url": "https://psc.uk.gov.in/",
+          "label": "Where to Download"
+        }
+      ],
+      "officialLink": "https://psc.uk.gov.in/",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-13",
+          "dateText": "13/11/2026 (Friday)"
+        },
+        {
+          "label": "Prelims Exam Date",
+          "date": "2026-11-29",
+          "dateText": "29/11/2026 (Sunday)"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-09-09",
+          "dateText": "09/09/2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-09",
+          "dateText": "09/09/2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-09-29",
+          "dateText": "29/09/2026 (11:59 PM)"
+        },
+        {
+          "label": "Exam Date Notice Released",
+          "date": "2026-11-06",
+          "dateText": "06/11/2026"
+        },
+        {
+          "label": "Last Date to Send Scribe Documents (PwD)",
+          "date": "2026-11-16",
+          "dateText": "16/11/2026"
+        },
+        {
+          "label": "UKPSC Upper PCS Admit Card 2026 Download Link",
+          "date": "2026-11-13",
+          "dateText": "Active from 13/11/2026 on psc.uk.gov.in"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-af2240dc1b4c1578",
       "type": "admit-card",
       "title": "SSC CPO SI 2026 Exam Date",
@@ -16590,65 +16654,6 @@
           "label": "PM Pay Exam Fee Last Date",
           "date": "2026-10-21",
           "dateText": "21/10/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-sarkariresult-048ea8925dd713c6",
-      "type": "job",
-      "title": "NTA CSIR UGC NET December 2026 Online Form",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://examinationservices.nic.in/ExamSys27/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFTqGsyg38PlGNCGSuvSzsiU0N2QIZeKq/cbFBgqeJZQh",
-      "sourceListingUrl": "https://www.sarkariresult.com/railway/nta-csir-ugc-net-dec2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "lastDate": "2026-11-05",
-      "organization": "National Testing Agency (NTA)",
-      "publishedDate": "2026-10-07",
-      "openDate": "2026-10-07",
-      "ageLimit": "Maximum 30 years",
-      "eligibility": "NTA CSIR UGC NET Subject Name CSIR UGC NET Eligibility Chemical Science M.Sc / Equivalent Degree with 55% Marks for General / OBC Candidates. For SC / ST and PH Candidates : 50% Marks. Integrated Course and B.E/ B.Tech / B.Pharma and MBBS Candidates Are Also Eligible Earth, Atmospheric, Ocean and Planetary Science Life Science Mathematical Science Physical Science",
-      "applicationFee": "General : 1150/- EWS / OBC : 600/- ST / SC / PH : 325/- Late Fees : 500/-",
-      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3efdf562ce2fb0ad460fd8e9d33e57f57/uploads/2026/10/202610071407707951.pdf",
-      "officialLinks": [
-        {
-          "url": "https://examinationservices.nic.in/ExamSys27/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFTqGsyg38PlGNCGSuvSzsiU0N2QIZeKq/cbFBgqeJZQh",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://cdnbbsr.s3waas.gov.in/s3efdf562ce2fb0ad460fd8e9d33e57f57/uploads/2026/10/202610071407707951.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://csirnet.nta.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://examinationservices.nic.in/ExamSys27/root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFTqGsyg38PlGNCGSuvSzsiU0N2QIZeKq/cbFBgqeJZQh",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-07",
-          "dateText": "07 October 2026 | 11:38 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-05",
-          "dateText": "05/11/2026"
-        },
-        {
-          "label": "Last Date Pay Exam Fee",
-          "date": "2026-11-05",
-          "dateText": "05/11/2026"
-        },
-        {
-          "label": "Last Date with Late Fee",
-          "date": "2026-11-09",
-          "dateText": "09/11/2026"
         }
       ]
     },
@@ -18209,7 +18214,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-06",
+      "factCheckedAt": "2026-11-07",
       "publishedDate": "2026-10-29",
       "openDate": "2026-10-29",
       "lastDate": "2026-11-20",
@@ -20032,6 +20037,124 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-927375c38591b27b",
+      "type": "job",
+      "title": "DSSSB 1260 JE, MTS Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dsssb-recruitment-2026-apply-online-for-mts-junior-engineer-posts-3079318",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "DSSSB",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-11-12",
+      "lastDate": "2026-12-11",
+      "vacancies": "1260",
+      "ageLimit": "Generally 18-27 Years; 18-32 Years for NDMC JE",
+      "eligibility": "Class 10 / ITI / Electrical Engineering Degree or Diploma, Depending on Post",
+      "applicationFee": "Rs. 100 / Exempted",
+      "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_06_2026_j_e_electrical_mts_1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Official Portal"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_06_2026_j_e_electrical_mts_1.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/dsssb-vacancies",
+          "label": "DSSSB Vacancy Updates"
+        }
+      ],
+      "officialLink": "https://dsssb.delhi.gov.in/",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Eligibility Cut-Off Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026, 12:00 Noon"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026, 11:59 PM"
+        }
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2poUmJlSHYrV3g4Ng",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY),..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjhRbeHv+Wx86",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pqTEd6U1N6RE1McA",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjjLGzSSzDMLp",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2psd3RaQmtiR0pyTQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjlwtZBkbGJrM",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pwSzlIVDRaQlg0VA",
       "type": "result",
       "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
@@ -20084,32 +20207,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbXpOSklSVktuRFIweXA4SDBxMWNCeg",
-      "type": "admit-card",
-      "title": "NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2..",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDR0yp8H0q1cBz",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbWJPM09VWmVudGdvU1NndzM0TWthdQ",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-4/E-1/2025, UTTAR PRADESH AYUSH (AYURVEDA) DEPARTMENT, PRO..",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoSSgw34Mkau",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
       "type": "job",
       "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
@@ -20123,6 +20220,45 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2puN203eHdMZHJ6WA",
+      "type": "result",
+      "title": "07 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY), ASSISTANT PROFESSOR MICROBIOLOGY, S-08/89",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjn7m7xwLdrzX",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-07"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2ppcVlWVWdkOUZlVQ",
+      "type": "result",
+      "title": "06 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR MICROBIOLOGY, S-08/22",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjiqYVUgd9FeU",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-06"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2ppYWhIamUvTDhYYw",
+      "type": "result",
+      "title": "06 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR EMERGENCY MEDICINE, S-08/03",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjiahHje/L8Xc",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-06"
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2prNWVGSUI4QWI0MQ",
       "type": "result",
       "title": "05 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR OTO-RHINO-LARYNGOLOGY(ENT), S-08/06",
@@ -20134,45 +20270,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-12-05"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pyWisxT0NUbUY0ag",
-      "type": "result",
-      "title": "05 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR CARDIOLOGY, S-08/09",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjrZ+1OCTmF4j",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-05"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2p2WHpQOTUrR0tFWg",
-      "type": "result",
-      "title": "05 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR ANATOMY, S-08/04",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjvXzP95+GKEZ",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-05"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbmZwdVJINTlYNkFWMXBDNGwrQTlnWg",
-      "type": "result",
-      "title": "30 Nov 2026 RESULT OF ADVT. NO. 2/2020-2021, U.P. CHIKITSA SHIKSHA (HOMOEOPATHIC) DEPTT., LECTURER HOMOEOPATHIC PHARMACY, S-11/01",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnfpuRH59X6AV1pC4l+A9gZ",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-11-30"
     },
     {
       "id": "aHR0cHM6Ly9hcHBseS50bnBzY2V4YW1zLmluL3NlY3VyZT9hcHBfaWQ9VUVsWk1EQXdNREF3TVE9PQ",
@@ -30141,6 +30238,157 @@
           "label": "Sliding / Identification Verification Date",
           "date": "2026-11-18",
           "dateText": "18 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-ac9ae3449ef37174",
+      "type": "job",
+      "title": "RRC NR Various Posts Online Form 2026 (4651 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://www.rrcnr.org",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rrc-nr-recruitment-2026-act-apprentice-3079404",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "Railway Recruitment Cell, Northern Railway (RRC NR), New Delhi, Delhi",
+      "publishedDate": "2026-11-07",
+      "ageLimit": "Should have completed 15 years of age and should not have completed 24 years of age (as on 11 December 2026)",
+      "eligibility": "10th class (10+2 system) with minimum 50% marks in aggregate from a recognised Board, and ITI in the relevant trade (NCVT/SCVT), passed by 06/11/2026",
+      "applicationFee": "for this recruitment? Others: Rs. 100 (non-refundable). SC/ST/PwBD/Women: No fee. Q5. What is the",
+      "notificationLink": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.rrcnr.org",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://www.rrcnr.org",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Notification date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-528a91fdc16a0917",
+      "type": "job",
+      "title": "DVC Executive Trainee Online Form 2026 (108 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://www.dvc.gov.in/cms-web/recruitment_dvc",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dvc-recruitment-2026-executive-trainee-3079288",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "Damodar Valley Corporation (DVC), Kolkata, West Bengal",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-11-06",
+      "ageLimit": "Maximum 29 years (as on closing date of online application)",
+      "eligibility": "Full-time Bachelor's Degree in Engineering or Technology in the post's discipline from an AICTE / appropriate statutory authority approved University/Institution, with 65% marks (Gen/OBC(NCL)/EWS) or 60% marks (SC/ST/PwD) in aggregate; valid GATE-2025 score in the corresponding paper.",
+      "applicationFee": "6 December 2026",
+      "notificationLink": "https://www.dvc.gov.in/storage/app/notice_qr/notice_5819639c38e595d23131b6afea0d29f2295.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.dvc.gov.in/storage/app/notice_qr/notice_5819639c38e595d23131b6afea0d29f2295.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.dvc.gov.in/cms-web/recruitment_dvc",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.dvc.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.dvc.gov.in/cms-web/recruitment_dvc",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Advertisement Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Last Date of Online Application (till 23:59 hrs)",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Last Date for Payment of Application Fee",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-52a626bff8a0eef9",
+      "type": "admit-card",
+      "title": "Jalna DCC Bank Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://jalnadcc.bank.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/jalna-dcc-bank-admit-card-2026-3079313",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "Jalna DCC Bank",
+      "publishedDate": "2026-11-06",
+      "officialLinks": [
+        {
+          "url": "https://jalnadcc.bank.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://jalnadcc.bank.in/",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-05",
+          "dateText": "05 November 2026"
+        },
+        {
+          "label": "Examination Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
         }
       ]
     }

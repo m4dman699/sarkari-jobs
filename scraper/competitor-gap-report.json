@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-11-06T09:28:11.001Z",
-  "durationSeconds": 2,
+  "generatedAt": "2026-11-07T08:49:50.489Z",
+  "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 584,
+    "total": 596,
     "jobs": 135,
-    "admitCards": 119,
-    "results": 330,
+    "admitCards": 121,
+    "results": 340,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 77,
     "jobsMissingOrganization": 79,
     "jobsMissingVacancies": 94,
     "jobsMissingEligibility": 82,
-    "jobsMissingApplicationFee": 82,
+    "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 15,
-    "resultsMissingPublishedDate": 44,
-    "resultsMissingResultDate": 169
+    "admitCardsMissingPublishedDate": 14,
+    "resultsMissingPublishedDate": 46,
+    "resultsMissingResultDate": 171
   },
   "after": {
-    "total": 594,
-    "jobs": 134,
-    "admitCards": 122,
-    "results": 338,
+    "total": 599,
+    "jobs": 136,
+    "admitCards": 123,
+    "results": 340,
     "jobsMissingPublicationDate": 55,
-    "jobsMissingClosingDate": 75,
+    "jobsMissingClosingDate": 77,
     "jobsMissingOrganization": 77,
-    "jobsMissingVacancies": 93,
+    "jobsMissingVacancies": 94,
     "jobsMissingEligibility": 80,
     "jobsMissingApplicationFee": 82,
     "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 14,
-    "resultsMissingPublishedDate": 44,
-    "resultsMissingResultDate": 169
+    "admitCardsMissingPublishedDate": 13,
+    "resultsMissingPublishedDate": 46,
+    "resultsMissingResultDate": 171
   },
   "imported": {
-    "job": 2,
-    "admit-card": 3,
-    "result": 8
+    "job": 3,
+    "admit-card": 2,
+    "result": 0
   },
-  "matchedExisting": 12,
+  "matchedExisting": 20,
   "filledItems": 2,
   "removedStale": 0,
-  "removedUncertain": 1,
+  "removedUncertain": 0,
   "skippedClosed": 0,
   "removedNavigation": 2,
   "removalLog": [
@@ -60,17 +60,11 @@
       "type": "job",
       "publisher": "(official)",
       "title": "Jobs for Ex-Servicemen"
-    },
-    {
-      "reason": "stale competitor job without dates",
-      "type": "job",
-      "publisher": "FreeJobAlert",
-      "title": "RRB 1250 Station Master Online Form 2026 (Short Notice)"
     }
   ],
   "detailPages": {
-    "targets": 18,
-    "fetched": 18,
+    "targets": 11,
+    "fetched": 11,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -141,7 +135,6 @@
       "Recruitment of Director Advt.No.-07/2025"
     ],
     "jobsMissingVacancies": [
-      "NTA CSIR UGC NET December 2026 Online Form",
       "UP ECCE Educator Fatehpur Online Form 2026",
       "UPBOCW Coordinator Online Form 2026",
       "UPBOCW Lab Attendant Online Form 2026",
@@ -160,7 +153,8 @@
       "SDSC SHAR Apprentice Online Form 2026 (400 Vacancy)",
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
-      "RRC Central Railway 2,861 Act Apprentice Posts Online Form 2026"
+      "RRC Central Railway 2,861 Act Apprentice Posts Online Form 2026",
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026."
     ],
     "jobsMissingOfficialLink": []
   },
