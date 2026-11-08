@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-07T08:49:49.046Z",
-  "total": 3,
+  "generatedAt": "2026-11-08T09:03:21.465Z",
+  "total": 4,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
@@ -79,6 +79,85 @@
           "label": "Pay Exam Fee Last Date",
           "date": "2026-11-11",
           "dateText": "11/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-927375c38591b27b",
+      "type": "job",
+      "title": "DSSSB 1260 JE, MTS Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://dsssb.delhi.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dsssb-recruitment-2026-apply-online-for-mts-junior-engineer-posts-3079318",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "DSSSB",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-11-12",
+      "lastDate": "2026-12-11",
+      "vacancies": "1260",
+      "ageLimit": "Generally 18-27 Years; 18-32 Years for NDMC JE",
+      "eligibility": "Class 10 / ITI / Electrical Engineering Degree or Diploma, Depending on Post",
+      "applicationFee": "Rs. 100 / Exempted",
+      "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_06_2026_j_e_electrical_mts_1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Official Portal"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_06_2026_j_e_electrical_mts_1.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/dsssb-vacancies",
+          "label": "DSSSB Vacancy Updates"
+        }
+      ],
+      "officialLink": "https://dsssb.delhi.gov.in/",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Eligibility Cut-Off Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026, 12:00 Noon"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026, 11:59 PM"
         }
       ]
     }

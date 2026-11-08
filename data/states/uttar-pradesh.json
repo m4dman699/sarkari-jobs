@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-07T08:49:49.046Z",
-  "total": 9,
+  "generatedAt": "2026-11-08T09:03:21.465Z",
+  "total": 8,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -14,61 +14,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-686b7d89d37a2f88",
-      "type": "job",
-      "title": "UPSSSC Physical Instructor & Other Post Online Form 2026 for 412 Post",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://upsssc.gov.in/AllNotifications.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-23-exam-2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-11-06",
-      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
-      "publishedDate": "2026-10-21",
-      "openDate": "2026-10-16",
-      "vacancies": "412",
-      "ageLimit": "21–40 years",
-      "eligibility": "UPSSSC PET 2025 PET Score Card Bachelor Degree in Any Stream from any Recognized Board / Institute in India. Height Male : 167.7 CMS (ST Candidate : 160 CMS) Height Female : 152 CMS (ST : 147 CMS) Chest : 78-8 CMS to 83.8 CMS) More Details Read the Notification.",
-      "applicationFee": "General (UR) / OBC / EWS : 25/- SC / ST : 25/- PH (Divyang) : 25/-",
-      "officialLinks": [
-        {
-          "url": "https://upsssc.gov.in/AllNotifications.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://upsssc.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://upsssc.gov.in/AllNotifications.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-21",
-          "dateText": "21 October 2026 | 07:05 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-06",
-          "dateText": "06/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-06",
-          "dateText": "06/11/2026"
-        },
-        {
-          "label": "Form Correction Last Date",
-          "date": "2026-11-13",
-          "dateText": "13/11/2026"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-5819b013a3ca2882",

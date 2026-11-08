@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-07T08:49:50.489Z",
+  "generatedAt": "2026-11-08T09:03:23.035Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 596,
+    "total": 598,
     "jobs": 135,
-    "admitCards": 121,
+    "admitCards": 123,
     "results": 340,
     "jobsMissingPublicationDate": 57,
-    "jobsMissingClosingDate": 77,
+    "jobsMissingClosingDate": 79,
     "jobsMissingOrganization": 79,
-    "jobsMissingVacancies": 94,
+    "jobsMissingVacancies": 96,
     "jobsMissingEligibility": 82,
     "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 0,
@@ -22,8 +22,8 @@
     "resultsMissingResultDate": 171
   },
   "after": {
-    "total": 599,
-    "jobs": 136,
+    "total": 596,
+    "jobs": 133,
     "admitCards": 123,
     "results": 340,
     "jobsMissingPublicationDate": 55,
@@ -38,11 +38,11 @@
     "resultsMissingResultDate": 171
   },
   "imported": {
-    "job": 3,
-    "admit-card": 2,
+    "job": 0,
+    "admit-card": 0,
     "result": 0
   },
-  "matchedExisting": 20,
+  "matchedExisting": 25,
   "filledItems": 2,
   "removedStale": 0,
   "removedUncertain": 0,
@@ -63,8 +63,8 @@
     }
   ],
   "detailPages": {
-    "targets": 11,
-    "fetched": 11,
+    "targets": 8,
+    "fetched": 8,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -88,7 +88,7 @@
       "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
       "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
       "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open"
+      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026"
     ],
     "jobsMissingClosingDate": [
       "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
