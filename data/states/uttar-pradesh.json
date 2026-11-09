@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-08T09:03:21.465Z",
-  "total": 8,
+  "generatedAt": "2026-11-09T09:50:51.523Z",
+  "total": 7,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -14,54 +14,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-5819b013a3ca2882",
-      "type": "job",
-      "title": "UP ECCE Educator Fatehpur Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-ecce-educator-fatehpur-oct26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-24",
-      "lastDate": "2026-11-07",
-      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
-      "publishedDate": "2026-10-23",
-      "openDate": "2026-10-22",
-      "ageLimit": "21–40 years",
-      "eligibility": "Graduation from a recognized university with minimum 50% marks and Home Science as a major subject OR 2 Years Diploma in DPSE. 5% marks relaxation in minimum marks for reserved categories.",
-      "applicationFee": "for the All Candidates.",
-      "officialLinks": [
-        {
-          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/ECCE_Fatehpur_23102026.pdf",
-          "label": "Download Vacancy Details"
-        },
-        {
-          "url": "https://sewayojan.up.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-23",
-          "dateText": "23 October 2026 | 09:50 PM"
-        },
-        {
-          "label": "Last Date for Apply",
-          "date": "2026-11-07",
-          "dateText": "07/11/2026"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-683e6a5c8bbb2b46",
