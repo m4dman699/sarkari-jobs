@@ -24574,7 +24574,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
-    "attemptedAt": "2026-11-09T09:50:52.898Z",
+    "attemptedAt": "2026-11-10T09:53:40.918Z",
     "parser": "v2",
     "details": {
       "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
@@ -26858,7 +26858,7 @@
     }
   },
   "https://www.freejobalert.com/articles/indian-bank-apprentices-recruitment-2026-3078364": {
-    "attemptedAt": "2026-11-09T09:50:52.933Z",
+    "attemptedAt": "2026-11-10T09:53:41.014Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Bank",
@@ -27570,7 +27570,7 @@
     }
   },
   "https://www.freejobalert.com/articles/nlc-india-get-recruitment-2026-3078755": {
-    "attemptedAt": "2026-11-08T09:03:22.830Z",
+    "attemptedAt": "2026-11-10T09:53:40.962Z",
     "parser": "v2",
     "details": {
       "organization": "NLC India Limited (NLCIL)",
@@ -28523,7 +28523,7 @@
     }
   },
   "https://www.freejobalert.com/articles/iocl-apprentice-recruitment-2026-3079245": {
-    "attemptedAt": "2026-11-09T09:50:52.875Z",
+    "attemptedAt": "2026-11-10T09:53:40.887Z",
     "parser": "v2",
     "details": {
       "organization": "IOCL Apprentice",
@@ -28579,7 +28579,7 @@
     }
   },
   "https://www.freejobalert.com/articles/sdsc-shar-recruitment-2026-trade-apprentice-diploma-3078917": {
-    "attemptedAt": "2026-11-09T09:50:52.967Z",
+    "attemptedAt": "2026-11-10T09:53:41.086Z",
     "parser": "v2",
     "details": {
       "organization": "Satish Dhawan Space Centre SHAR (SDSC SHAR), ISRO",
@@ -29441,7 +29441,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrc-nr-recruitment-2026-act-apprentice-3079404": {
-    "attemptedAt": "2026-11-09T09:50:52.823Z",
+    "attemptedAt": "2026-11-10T09:53:40.853Z",
     "parser": "v2",
     "details": {
       "organization": "Railway Recruitment Cell, Northern Railway (RRC NR), New Delhi, Delhi",
@@ -29488,7 +29488,7 @@
     }
   },
   "https://www.freejobalert.com/articles/dvc-recruitment-2026-executive-trainee-3079288": {
-    "attemptedAt": "2026-11-09T09:50:52.795Z",
+    "attemptedAt": "2026-11-10T09:53:40.809Z",
     "parser": "v2",
     "details": {
       "organization": "Damodar Valley Corporation (DVC), Kolkata, West Bengal",
@@ -29728,6 +29728,66 @@
         {
           "url": "https://jalnadcc.bank.in/",
           "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/drdo-ceptam-11-tier-2-result-2026-3079914": {
+    "attemptedAt": "2026-11-10T09:53:41.056Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Defence Research and Development Organisation (DRDO)",
+      "publishedDate": "2026-11-10",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-06-15",
+      "resultDate": "2026-11-09",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "764",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Tier 2 Exam Date",
+          "date": "2026-06-15",
+          "dateText": "15 June 2026"
+        },
+        {
+          "label": "Tier 2 Result Date",
+          "date": "2026-11-09",
+          "dateText": "9 November 2026 (Technician-A available, STA-B under process)"
+        },
+        {
+          "label": "Tier 1 Result",
+          "date": "2026-05-25",
+          "dateText": "25 May 2026"
+        },
+        {
+          "label": "Tier 2 Answer Key",
+          "date": "2026-06-18",
+          "dateText": "18 June 2026"
+        },
+        {
+          "label": "Tier 2 Result (Technician-A)",
+          "date": "2026-11-09",
+          "dateText": "9 November 2026"
+        }
+      ],
+      "officialLink": "https://drdo.res.in/ceptam_noticeboard/drentrystatus/",
+      "officialLinks": [
+        {
+          "url": "https://drdo.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://drdo.res.in/ceptam_noticeboard/drentrystatus/",
+          "label": "CEPTAM 11 Tier 2 Result Status Page"
+        },
+        {
+          "url": "https://www.drdo.gov.in/",
+          "label": "DRDO Official Website"
         }
       ]
     }

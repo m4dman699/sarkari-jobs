@@ -687,10 +687,6 @@
     "hash": "3c8cfdd174a503f71e9395689010f0d8eace37f4",
     "lastmod": "2026-10-23"
   },
-  "hall-ticket-79e8f54d": {
-    "hash": "a96eced94d59a6a1f6e52bf5c07342135b98a0b1",
-    "lastmod": "2026-11-05"
-  },
   "upessc-up-special-tet-admit-card-2026-f8a36774": {
     "hash": "91c29310f78cf69b65f4b227544344f3095ac180",
     "lastmod": "2026-10-24"
@@ -727,21 +723,17 @@
     "hash": "61a289507731b721d4d340f5b51224d6d1a0c5f8",
     "lastmod": "2026-11-03"
   },
-  "hsfc-02-rmt-2026-recruitment-to-the-post-of-medical-of-ac655904": {
-    "hash": "f554f987fb96120e94b69d950ca3946062da34c1",
-    "lastmod": "2026-11-09"
-  },
   "isro-sdsc-shar-recruitment-2026-97-posts-41b776f9": {
-    "hash": "907eff72b61e28ab8f68586061c0cd891293ff97",
-    "lastmod": "2026-11-03"
+    "hash": "20d80d0b73b9ce07b2b093775f348ebdf6bed1b5",
+    "lastmod": "2026-11-10"
   },
   "isro-sdsc-shar-various-post-online-form-2026-4038f2ad": {
-    "hash": "da2f19b1256ffa17361bee329ee35c7edef07dfe",
-    "lastmod": "2026-11-03"
+    "hash": "1e1918bc657e7638aa9ea6214b31f7b88bc619a2",
+    "lastmod": "2026-11-10"
   },
   "irel-131-tradesman-trainee-online-form-2026-2e0cfc63": {
-    "hash": "f65937e1b1233ddbaf574d778cfdacccbf9edfde",
-    "lastmod": "2026-11-03"
+    "hash": "8804d37db103b71c464aacb908636edc125b0eb3",
+    "lastmod": "2026-11-10"
   },
   "supreme-court-spa-online-form-2026-start-85895eed": {
     "hash": "2915df2f17675458e2a1500ad1eec0f277cd2bf5",
@@ -828,8 +820,8 @@
     "lastmod": "2026-10-23"
   },
   "ongc-apprentice-online-form-2026-3047-vacancy-2c9b7ccb": {
-    "hash": "22bb664c32e5e2f77a7571316cb13775a87e22e5",
-    "lastmod": "2026-11-09"
+    "hash": "1f1461b0aa5bd5239e08840dee396abec1c6ee44",
+    "lastmod": "2026-11-10"
   },
   "rites-assistant-manager-online-form-2026-b6187d11": {
     "hash": "0b48c0777cc044252fe9e006fa633ea3f7c72f11",
@@ -999,8 +991,104 @@
     "hash": "cec2cd77e3e1c19a252acb214713ef5391059d62",
     "lastmod": "2026-11-06"
   },
-  "apply-online-b6977a8f": {
-    "hash": "4084ecba3e8d0f7fc3456723a559d5fe6f4ec872",
+  "recruitment-requisition-8d22f28c": {
+    "hash": "b49709c157c395306560d140de8fdc4cf6105ffe",
+    "lastmod": "2026-11-10"
+  },
+  "departmental-examinations-may-2026-result-cc54d613": {
+    "hash": "6d60bfe6fe121f2a403db117a1af6583f746dce9",
+    "lastmod": "2026-11-10"
+  },
+  "combined-technical-services-examination-interview-post-7e3a0da1": {
+    "hash": "26a20b4ea354ab994da872e17eb2bd6458f5bbfc",
+    "lastmod": "2026-11-10"
+  },
+  "combined-civil-services-examination-iv-group-iv-servic-6cc9332a": {
+    "hash": "161044030a865a244b4c3895ee10630f32034b59",
+    "lastmod": "2026-11-10"
+  },
+  "press-release-regarding-the-publication-of-notificatio-19cec179": {
+    "hash": "1dbb86e8bfebf56038082f2197ff63ed368696cb",
+    "lastmod": "2026-11-10"
+  },
+  "final-results-c563101d": {
+    "hash": "b36d796a54b67dbe85fb8a7a31fc9f7561030221",
+    "lastmod": "2026-10-23"
+  },
+  "declaration-of-final-result-for-various-posts-of-group-552e8b7c": {
+    "hash": "43384e1e19f34796f520fd6ea0565bd19f89e7ae",
+    "lastmod": "2026-10-24"
+  },
+  "declaration-of-final-result-for-the-posts-of-forest-ra-87eb3b7e": {
+    "hash": "f4c8c7d22e4fbd03a58ebd22d85de58dff7b8cc4",
+    "lastmod": "2026-10-23"
+  },
+  "notice-regarding-recruitment-of-jharkhand-combined-civ-327c1977": {
+    "hash": "4537d2e45c935523fcc49fdf45bcb0d226dd6e7d",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-assistant-professor-in-medical-colleges-c744664c": {
+    "hash": "707643da2c1078dad14759a06a8b4ca469c5afc2",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-jharkhand-combined-civil-services-exami-df448c14": {
+    "hash": "3a42d43226d3cc87d99339f30a63fbb456cfc9eb",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-lecturer-in-govt-polytechnic-govt-women-db4485c8": {
+    "hash": "c83a3cbcc4345093cdeb88961a87f3612accd8d7",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-lecturer-in-govt-polytechnic-govt-women-d7447f7c": {
+    "hash": "d840b8e90d42ed80bb77cccf2f38874edb02e2cf",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-assistant-professor-in-government-engin-d3447930": {
+    "hash": "8e0deb8e4bb3b7de5a5b735f95991b683caa7f7d",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-jharkhand-combined-civil-services-exami-4a1c7a19": {
+    "hash": "6ee8d9998038fee6e736ef6eed8878ef4b0de3b7",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-drug-inspector-advt-no-12-2025-561c8cfd": {
+    "hash": "70f7950ac4157c4900a099a1bdfaffde84146733",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-assistant-director-senior-scientific-of-521c86b1": {
+    "hash": "0cd205c85fa46b987be5eaf0318907795fd29405",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-assistant-director-senior-scientific-of-381c5dc3": {
+    "hash": "a986062cd773ad6af6f942a951cf0c81e86b4efe",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-non-teaching-posts-in-universities-of-j-441c70a7": {
+    "hash": "c2c2a950ee7fedf8194b615c74d28e1672ce84a8",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-director-advt-no-07-2025-2c1c4adf": {
+    "hash": "e602edca05fa44e2713ae3107dc0a2e1a3554c14",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-boiler-inspector-advt-no-02-2025-281c4493": {
+    "hash": "704553cc2721df5b28b7f613febd75b28dc7aa7e",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-inspector-of-factories-advt-no-01-2025-341c5777": {
+    "hash": "6de802fd559e7770c1d5c4a059cf148155fa1335",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-assistant-public-prosecutor-regular-adv-301c512b": {
+    "hash": "8fae1f6941963b4ece26c93e81e900366f4c6314",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-assistant-public-prosecutor-backlog-adv-69f59d09": {
+    "hash": "de6335601662b50b0483844da0692df0d1628b11",
+    "lastmod": "2026-10-23"
+  },
+  "recruitment-of-project-manager-and-equivalent-advt-no--75f5afed": {
+    "hash": "33b032398c0d69a67f90606829ea55c7df40ff31",
     "lastmod": "2026-10-23"
   },
   "rescheduling-of-the-written-examination-for-recruitmen-c14eec54": {
@@ -1085,86 +1173,6 @@
   },
   "kea-village-administrative-officer-vao-rpc-provisional-06cf5cbb": {
     "hash": "2bcf5284b7b552c5e4ee39d7dc44cb5883638eb7",
-    "lastmod": "2026-10-23"
-  },
-  "final-results-c563101d": {
-    "hash": "b36d796a54b67dbe85fb8a7a31fc9f7561030221",
-    "lastmod": "2026-10-23"
-  },
-  "declaration-of-final-result-for-various-posts-of-group-552e8b7c": {
-    "hash": "43384e1e19f34796f520fd6ea0565bd19f89e7ae",
-    "lastmod": "2026-10-24"
-  },
-  "declaration-of-final-result-for-the-posts-of-forest-ra-87eb3b7e": {
-    "hash": "f4c8c7d22e4fbd03a58ebd22d85de58dff7b8cc4",
-    "lastmod": "2026-10-23"
-  },
-  "notice-regarding-recruitment-of-jharkhand-combined-civ-327c1977": {
-    "hash": "4537d2e45c935523fcc49fdf45bcb0d226dd6e7d",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-assistant-professor-in-medical-colleges-c744664c": {
-    "hash": "707643da2c1078dad14759a06a8b4ca469c5afc2",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-jharkhand-combined-civil-services-exami-df448c14": {
-    "hash": "3a42d43226d3cc87d99339f30a63fbb456cfc9eb",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-lecturer-in-govt-polytechnic-govt-women-db4485c8": {
-    "hash": "c83a3cbcc4345093cdeb88961a87f3612accd8d7",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-lecturer-in-govt-polytechnic-govt-women-d7447f7c": {
-    "hash": "d840b8e90d42ed80bb77cccf2f38874edb02e2cf",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-assistant-professor-in-government-engin-d3447930": {
-    "hash": "8e0deb8e4bb3b7de5a5b735f95991b683caa7f7d",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-jharkhand-combined-civil-services-exami-4a1c7a19": {
-    "hash": "6ee8d9998038fee6e736ef6eed8878ef4b0de3b7",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-drug-inspector-advt-no-12-2025-561c8cfd": {
-    "hash": "70f7950ac4157c4900a099a1bdfaffde84146733",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-assistant-director-senior-scientific-of-521c86b1": {
-    "hash": "0cd205c85fa46b987be5eaf0318907795fd29405",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-assistant-director-senior-scientific-of-381c5dc3": {
-    "hash": "a986062cd773ad6af6f942a951cf0c81e86b4efe",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-non-teaching-posts-in-universities-of-j-441c70a7": {
-    "hash": "c2c2a950ee7fedf8194b615c74d28e1672ce84a8",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-director-advt-no-07-2025-2c1c4adf": {
-    "hash": "e602edca05fa44e2713ae3107dc0a2e1a3554c14",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-boiler-inspector-advt-no-02-2025-281c4493": {
-    "hash": "704553cc2721df5b28b7f613febd75b28dc7aa7e",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-inspector-of-factories-advt-no-01-2025-341c5777": {
-    "hash": "6de802fd559e7770c1d5c4a059cf148155fa1335",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-assistant-public-prosecutor-regular-adv-301c512b": {
-    "hash": "8fae1f6941963b4ece26c93e81e900366f4c6314",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-assistant-public-prosecutor-backlog-adv-69f59d09": {
-    "hash": "de6335601662b50b0483844da0692df0d1628b11",
-    "lastmod": "2026-10-23"
-  },
-  "recruitment-of-project-manager-and-equivalent-advt-no--75f5afed": {
-    "hash": "33b032398c0d69a67f90606829ea55c7df40ff31",
     "lastmod": "2026-10-23"
   },
   "download-hall-ticket-for-assistant-executive-engineer--08a76d2d": {
@@ -2374,6 +2382,10 @@
   "jalna-dcc-bank-admit-card-2026-a0ff72b6": {
     "hash": "587b86e274a02a255cf3363bdd12190643a62105",
     "lastmod": "2026-11-07"
+  },
+  "drdo-ceptam-11-tier-2-result-2026-d2a062c1": {
+    "hash": "4cd69af43d3ba9943d31a95bfa311097e6c6a60a",
+    "lastmod": "2026-11-10"
   },
   "page:about.html": {
     "hash": "a52c759b3bb85b74998bdb5d293a3294d270cda4",
