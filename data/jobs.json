@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-10T09:53:41.095Z",
-  "jobsGeneratedAt": "2026-11-10T09:53:39.598Z",
+  "generatedAt": "2026-11-11T09:29:10.331Z",
+  "jobsGeneratedAt": "2026-11-11T09:29:08.705Z",
   "partial": true,
-  "total": 597,
+  "total": 601,
   "quality": {
     "jobsMissingPublicationDate": 56,
-    "jobsMissingClosingDate": 79,
+    "jobsMissingClosingDate": 80,
     "genericNavigationItems": 0
   },
   "errors": [
@@ -40,14 +40,19 @@
       "error": "timeout"
     },
     {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": ""
-    },
-    {
       "source": "CBSE/CTET",
       "url": "https://www.cbse.gov.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "Indian Air Force",
+      "url": "https://indianairforce.nic.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": ""
     },
     {
       "source": "NTPC",
@@ -63,11 +68,6 @@
       "source": "Supreme Court of India",
       "url": "https://www.sci.gov.in/recruitments/",
       "error": "HTTP 403"
-    },
-    {
-      "source": "Indian Air Force",
-      "url": "https://indianairforce.nic.in/",
-      "error": "timeout"
     },
     {
       "source": "NIC e-Pariksha",
@@ -115,14 +115,14 @@
       "error": ""
     },
     {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO C07C2D9C9C790000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
-    },
-    {
       "source": "TGPSC",
       "url": "https://www.tgpsc.gov.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO C07C71ED5C710000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
@@ -132,7 +132,7 @@
     {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "CGPSC",
@@ -145,14 +145,14 @@
       "error": "timeout"
     },
     {
-      "source": "PPSC",
-      "url": "https://ppsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "Goa PSC",
       "url": "https://gpsc.goa.gov.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "PPSC",
+      "url": "https://ppsc.gov.in/",
+      "error": "The operation was aborted"
     },
     {
       "source": "APSC",
@@ -160,14 +160,14 @@
       "error": "timeout"
     },
     {
-      "source": "Mizoram PSC",
-      "url": "https://mpsc.mizoram.gov.in/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "JKPSC",
       "url": "https://jkpsc.nic.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Mizoram PSC",
+      "url": "https://mpsc.mizoram.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "SPSC Sikkim",
@@ -14811,6 +14811,68 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-702bb1a76457aea4",
+      "type": "result",
+      "title": "SBI Clerk Prelims Result 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "All India",
+      "link": "https://sbi.bank.in/web/careers/current-openings1",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/sbi-clerk-prelims-result-2026-3080155",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "SBI Clerk Prelims",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-08-11",
+      "lastDate": "2026-08-31",
+      "examDate": "2026-11-26",
+      "vacancies": "9,766",
+      "officialLinks": [
+        {
+          "url": "https://sbi.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers/current-openings1",
+          "label": "SBI Clerk Prelims Result 2026"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers",
+          "label": "SBI Recruitment Results"
+        }
+      ],
+      "officialLink": "https://sbi.bank.in/web/careers/current-openings1",
+      "milestones": [
+        {
+          "label": "Preliminary Exam Dates",
+          "date": "2026-09-27",
+          "dateText": "26 and 27 September 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-08-31",
+          "dateText": "31 August 2026"
+        },
+        {
+          "label": "Prelims Examination",
+          "date": "2026-09-27",
+          "dateText": "26 and 27 September 2026"
+        },
+        {
+          "label": "Mains Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-freejobalert-794abd494fe0500b",
       "type": "result",
       "title": "RCF Kapurthala Apprentice Merit list 2026",
@@ -16360,6 +16422,76 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-bbd87ed2b3cdcea2",
+      "type": "admit-card",
+      "title": "RRB Nursing Superintendent Admit Card 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "All India",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rrb-nursing-superintendent-admit-card-2026-3080151",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "RRB Nursing Superintendent",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-09-15",
+      "lastDate": "2026-10-14",
+      "examDate": "2026-11-25",
+      "vacancies": "365",
+      "applicationFee": "16 October 2026",
+      "officialLinks": [
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://rrb.indianrailways.gov.in/",
+      "milestones": [
+        {
+          "label": "Exam Schedule Notice Date",
+          "date": "2026-10-18",
+          "dateText": "18 October 2026"
+        },
+        {
+          "label": "Expected First Admit Card Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Tentative CBT Exam Dates",
+          "date": "2026-11-25",
+          "dateText": "23 and 25 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Expected First Exam City Slip",
+          "date": "2026-11-13",
+          "dateText": "Around 13 November 2026"
+        },
+        {
+          "label": "Expected First Admit Card",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "CBT Examination - First Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "CBT Examination - Second Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-freejobalert-c711cb621d47c2d7",
       "type": "result",
       "title": "HAL Junior Executive Interview Result 2026",
@@ -16577,114 +16709,6 @@
           "label": "PM Pay Exam Fee Last Date",
           "date": "2026-10-21",
           "dateText": "21/10/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-freejobalert-isro-sdsc-2026-97",
-      "type": "job",
-      "title": "ISRO SDSC SHAR Recruitment 2026 — 97 Posts",
-      "source": "Satish Dhawan Space Centre SHAR (ISRO)",
-      "organization": "Satish Dhawan Space Centre SHAR (ISRO)",
-      "publisher": "FreeJobAlert",
-      "category": "Central Government / Space Research",
-      "state": "All India",
-      "link": "https://www.freejobalert.com/articles/isro-sdsc-shar-recruitment-2026-3074399",
-      "openDate": "2026-10-19",
-      "lastDate": "2026-11-09",
-      "publishedDate": "2026-10-19",
-      "detail": "97 posts including MTS, drivers, technicians and assistant roles. Applications opened 19 Oct 2026 and close 9 Nov 2026."
-    },
-    {
-      "id": "competitor-sarkariresult-c03e85fc78b03be0",
-      "type": "job",
-      "title": "ISRO SDSC SHAR Various Post Online Form 2026",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://apps.shar.gov.in/",
-      "lastDate": "2026-11-09",
-      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
-      "publishedDate": "2026-10-20",
-      "openDate": "2026-10-19",
-      "vacancies": "97",
-      "eligibility": "Technical Assistant Candidates must have a First Class Diploma in Mechanical / Electrical / Computer Science / Electronics & Communication / Civil Engineering from a recognized University / Institution.",
-      "applicationFee": "For Post Code (07 to 15) All Category Candidate : Rs. 750/- Fees Refund After Appear CBT Exam General, OBC, EWS : Rs. 500/- SC, ST, PH, Women : Full Refund For Post Code (16 to 30) All Category Candidate : Rs.500/- Fees Refund After Appear CBT Exam General, OBC, EWS : Rs. 400/- SC, ST, PH, Women : Full Refund Payment Mode (Online): You can make the",
-      "officialLink": "https://apps.shar.gov.in/",
-      "organization": "Indian Space Research Organization ISRO"
-    },
-    {
-      "id": "competitor-freejobalert-c0aeabda6e5efba6",
-      "type": "job",
-      "title": "IREL 131 Tradesman Trainee Online Form 2026",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://qa-efmprd.digialm.com/EForms/configuredHtml/1258/101994/Index.html",
-      "sourceListingUrl": "https://www.freejobalert.com/articles/irel-tradesman-trainee-recruitment-2026-3074241",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "organization": "IREL Tradesman Trainee",
-      "publishedDate": "2026-10-20",
-      "openDate": "2026-10-19",
-      "lastDate": "2026-11-09",
-      "vacancies": "131",
-      "eligibility": "Relevant ITI/NAC; alternative 10+2 Science qualification available for AOCP, subject to the advertisement",
-      "applicationFee": "Rs. 826 or Rs. 354, category-wise",
-      "notificationLink": "https://www.irel.co.in/documents/20126/167125/Annx-2_Draft+Full+Advt.+-+36-2026+(Updated).pdf/bc136af1-5456-ea41-cef2-5d8992b297f5?t=1792409069397",
-      "officialLinks": [
-        {
-          "url": "https://www.irel.co.in",
-          "label": "Official Website"
-        },
-        {
-          "url": "https://qa-efmprd.digialm.com/EForms/configuredHtml/1258/101994/Index.html",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://www.irel.co.in/documents/20126/167125/Annx-2_Draft+Full+Advt.+-+36-2026+(Updated).pdf/bc136af1-5456-ea41-cef2-5d8992b297f5?t=1792409069397",
-          "label": "Detailed Recruitment Notification"
-        }
-      ],
-      "officialLink": "https://qa-efmprd.digialm.com/EForms/configuredHtml/1258/101994/Index.html",
-      "milestones": [
-        {
-          "label": "Application Start Date",
-          "date": "2026-10-19",
-          "dateText": "19 October 2026"
-        },
-        {
-          "label": "Application Last Date",
-          "date": "2026-11-09",
-          "dateText": "9 November 2026"
-        },
-        {
-          "label": "Online Application Start Date",
-          "date": "2026-10-19",
-          "dateText": "19 October 2026"
-        },
-        {
-          "label": "Last Date to Apply Online",
-          "date": "2026-11-09",
-          "dateText": "9 November 2026"
-        },
-        {
-          "label": "Last Date for Online Fee Payment",
-          "date": "2026-11-09",
-          "dateText": "9 November 2026"
-        },
-        {
-          "label": "Age, Qualification and Experience Cut-off Date",
-          "date": "2026-11-09",
-          "dateText": "9 November 2026"
-        },
-        {
-          "label": "Age Calculation Date",
-          "date": "2026-11-09",
-          "dateText": "9 November 2026"
         }
       ]
     },
@@ -17846,7 +17870,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-10",
+      "factCheckedAt": "2026-11-11",
       "publishedDate": "2026-10-29",
       "openDate": "2026-10-29",
       "lastDate": "2026-11-20",
@@ -19756,6 +19780,32 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-aa546761f70729d8",
+      "type": "job",
+      "title": "Exim Bank 120 MT & Manager Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "See linked notice",
+      "link": null,
+      "sourceListingUrl": "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "Export-Import Bank of India (India Exim Bank)",
+      "publishedDate": "2026-11-11",
+      "lastDate": "2026-12-11",
+      "ageLimit": "As per detailed Exim Bank Recruitment 2026 Notification",
+      "eligibility": "Graduation / MBA / PGDBA / PGDBM / MMS / CA / Relevant Professional Qualification (subject to official post-wise eligibility)",
+      "milestones": [
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-11",
+          "dateText": "11-12-2026"
+        }
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2poUmJlSHYrV3g4Ng",
       "type": "result",
       "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY),..",
@@ -20343,7 +20393,7 @@
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
       "type": "result",
-      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026) New",
+      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026)",
       "source": "NPSC",
       "category": "Teaching",
       "state": "Nagaland",
@@ -28952,7 +29002,7 @@
     {
       "id": "competitor-freejobalert-642d939cf9de3578",
       "type": "admit-card",
-      "title": "JKSSB Accounts Assistant Admit Card 2026",
+      "title": "JKSSB FAA Admit Card 2026 Out",
       "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
       "publisher": "FreeJobAlert",
       "category": "Admit cards",
@@ -28961,25 +29011,9 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/jkssb-accounts-assistant-admit-card-2026-3078441",
       "discoveredVia": "https://www.freejobalert.com/admit-card/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-04",
-      "organization": "Jammu and Kashmir Services Selection Board (JKSSB)",
+      "factCheckedAt": "2026-11-11",
       "publishedDate": "2026-11-04",
-      "examDate": "2026-11-15",
-      "officialLinks": [
-        {
-          "url": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
-          "label": "JKSSB Accounts Assistant Admit Card 2026"
-        },
-        {
-          "url": "https://jkssb.nic.in/Whatsnew.html",
-          "label": "JKSSB Admit Card Official Notice"
-        },
-        {
-          "url": "https://jkssb.nic.in/",
-          "label": "JKSSB Official Website"
-        }
-      ],
-      "officialLink": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
+      "organization": "Jammu and Kashmir Services Selection Board (JKSSB)",
       "milestones": [
         {
           "label": "Admit Card Notice Date",
@@ -29015,6 +29049,25 @@
           "label": "Exam Date",
           "date": "2026-11-15",
           "dateText": "15 November 2026"
+        }
+      ],
+      "officialLink": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://jkssb.nic.in/Pdf/Admit_Card_Notice_15112026.pdf",
+          "label": "JKSSB Accounts Assistant Admit Card 2026"
+        },
+        {
+          "url": "https://jkssb.nic.in/Whatsnew.html",
+          "label": "JKSSB Admit Card Official Notice"
+        },
+        {
+          "url": "https://jkssb.nic.in/",
+          "label": "JKSSB Official Website"
+        },
+        {
+          "url": "http://jkssb.nic.in",
+          "label": "Official Website"
         }
       ]
     },
@@ -30155,6 +30208,235 @@
           "label": "Tier 2 Result (Technician-A)",
           "date": "2026-11-09",
           "dateText": "9 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-f5497712c63dd655",
+      "type": "job",
+      "title": "BSF Various Posts Online Form 2026 (1167 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Defence",
+      "state": "All India",
+      "link": "https://bsf.mha.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/bsf-recruitment-2026-sub-inspector-gd-3080239",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "Directorate General Border Security Force (BSF), New Delhi, Delhi",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-11-12",
+      "ageLimit": "Maximum 32 years (as on the closing date of submission of applications)",
+      "eligibility": "Degree from a recognized university or equivalent; serving Constables (GD), Constables (Tradesmen), Head Constables (GD), ASIs (GD) of BSF, CRPF, ITBP and ASI (GD) of SSB with four years regular service including basic training and a clean record",
+      "notificationLink": "https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1794383748.pdf",
+      "officialLinks": [
+        {
+          "url": "https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1794383748.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://bsf.mha.gov.in",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://bsf.mha.gov.in",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        },
+        {
+          "label": "Date of covering letter",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
+        },
+        {
+          "label": "Last date for online application (till 23:59 hrs)",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-5dc7219580d4b228",
+      "type": "admit-card",
+      "title": "WBPSC Miscellaneous Personality Test Call Letter 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "West Bengal",
+      "link": "https://psc.wb.gov.in/Download?param1=An_20261110180757_Announcement_downloading_CallLetters_MSRE.pdf&param2=advertisement",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/wbpsc-miscellaneous-personality-test-call-letter-2026-3080202",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "WBPSC Miscellaneous Personality Test Call Letter 2026 - Download Interview Schedule at psc.wb.gov.in",
+      "publishedDate": "2026-11-11",
+      "officialLinks": [
+        {
+          "url": "https://psc.wb.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://psc.wb.gov.in/call-letter.jsp",
+          "label": "Official Download Portal"
+        },
+        {
+          "url": "https://psc.wb.gov.in/Download?param1=An_20261110180757_Announcement_downloading_CallLetters_MSRE.pdf&param2=advertisement",
+          "label": "WBPSC Call Letter Release Notice PDF"
+        }
+      ],
+      "officialLink": "https://psc.wb.gov.in/Download?param1=An_20261110180757_Announcement_downloading_CallLetters_MSRE.pdf&param2=advertisement",
+      "milestones": [
+        {
+          "label": "Announcement Date",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
+        },
+        {
+          "label": "Call Letter Release Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Personality Test Start Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Document Verification Instructions",
+          "date": "2026-11-06",
+          "dateText": "Published 6 November 2026"
+        },
+        {
+          "label": "Online Document Verification Instructions",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Call Letter Release Announcement",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
+        },
+        {
+          "label": "First Document Submission Period Begins",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Announced Interview Schedule Ends",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        },
+        {
+          "label": "Interview Start Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Announced Schedule End Date",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-6a8481cb6f8d6bee",
+      "type": "admit-card",
+      "title": "PSSSB Jail Warder PMT PET Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Punjab",
+      "link": "https://test.learnpunjabi.org/pmt2026/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/psssb-jail-warder-pmt-pet-admit-card-2026-3079979",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "PSSSB Jail Warder PMT PET",
+      "publishedDate": "2026-11-10",
+      "examDate": "2026-07-26",
+      "resultDate": "2026-09-30",
+      "vacancies": "532",
+      "officialLinks": [
+        {
+          "url": "https://test.learnpunjabi.org/pmt2026/",
+          "label": "PSSSB Jail Warder PMT PET Admit Card 2026"
+        },
+        {
+          "url": "https://sssb.punjab.gov.in/",
+          "label": "PSSSB Official Website"
+        }
+      ],
+      "officialLink": "https://test.learnpunjabi.org/pmt2026/",
+      "milestones": [
+        {
+          "label": "Written Examination Date",
+          "date": "2026-07-26",
+          "dateText": "26 July 2026"
+        },
+        {
+          "label": "Written Result Date",
+          "date": "2026-09-30",
+          "dateText": "30 September 2026"
+        },
+        {
+          "label": "Physical Test Notice Date",
+          "date": "2026-11-07",
+          "dateText": "7 November 2026"
+        },
+        {
+          "label": "Physical Test Dates",
+          "date": "2026-11-16",
+          "dateText": "11-16 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-8f9da4f14f627c2d",
+      "type": "admit-card",
+      "title": "MP Police Constable Admit Card 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Madhya Pradesh",
+      "link": "https://esb.mp.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/mp-police-constable-admit-card-2026-3079951",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-11",
+      "organization": "MP Police Constable",
+      "publishedDate": "2026-11-10",
+      "vacancies": "7,500",
+      "officialLinks": [
+        {
+          "url": "https://esb.mp.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://esb.mp.gov.in/",
+      "milestones": [
+        {
+          "label": "Exam City Information",
+          "date": "2026-11-12",
+          "dateText": "Expected on 12 November 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-15",
+          "dateText": "Expected on 15 November 2026"
+        },
+        {
+          "label": "Exam Start Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
         }
       ]
     }

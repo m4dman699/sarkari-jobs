@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-11-10T09:53:41.095Z",
+  "generatedAt": "2026-11-11T09:29:10.331Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 598,
-    "jobs": 133,
+    "total": 596,
+    "jobs": 130,
     "admitCards": 123,
-    "results": 342,
+    "results": 343,
     "jobsMissingPublicationDate": 58,
     "jobsMissingClosingDate": 81,
     "jobsMissingOrganization": 80,
-    "jobsMissingVacancies": 94,
-    "jobsMissingEligibility": 83,
-    "jobsMissingApplicationFee": 85,
+    "jobsMissingVacancies": 93,
+    "jobsMissingEligibility": 82,
+    "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 14,
     "resultsMissingPublishedDate": 48,
     "resultsMissingResultDate": 173
   },
   "after": {
-    "total": 597,
-    "jobs": 131,
-    "admitCards": 123,
-    "results": 343,
+    "total": 601,
+    "jobs": 130,
+    "admitCards": 127,
+    "results": 344,
     "jobsMissingPublicationDate": 56,
-    "jobsMissingClosingDate": 79,
+    "jobsMissingClosingDate": 80,
     "jobsMissingOrganization": 78,
-    "jobsMissingVacancies": 92,
-    "jobsMissingEligibility": 81,
-    "jobsMissingApplicationFee": 83,
-    "jobsMissingOfficialLink": 0,
+    "jobsMissingVacancies": 93,
+    "jobsMissingEligibility": 80,
+    "jobsMissingApplicationFee": 84,
+    "jobsMissingOfficialLink": 1,
     "admitCardsMissingPublishedDate": 14,
     "resultsMissingPublishedDate": 48,
-    "resultsMissingResultDate": 173
+    "resultsMissingResultDate": 174
   },
   "imported": {
-    "job": 0,
-    "admit-card": 0,
+    "job": 2,
+    "admit-card": 4,
     "result": 1
   },
-  "matchedExisting": 24,
-  "filledItems": 1,
+  "matchedExisting": 18,
+  "filledItems": 2,
   "removedStale": 0,
   "removedUncertain": 0,
   "skippedClosed": 0,
@@ -63,8 +63,8 @@
     }
   ],
   "detailPages": {
-    "targets": 8,
-    "fetched": 8,
+    "targets": 14,
+    "fetched": 14,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -135,7 +135,6 @@
       "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025"
     ],
     "jobsMissingVacancies": [
-      "ISRO SDSC SHAR Recruitment 2026 — 97 Posts",
       "Planning & Research - Filling up the post of Joint Director - Group-A (Gazetted / Non-Ministerial) in Level-10 of Pay Matrix on deputation basis - Reg.",
       "Delhi DSSSB Sweeper, Safai Karamchari, Chowkidar Post Online Form 2026",
       "URSC:04:2026 — Recruitment to the posts of Technician - B/ Heavy Vehicle Driver - A/ Light Vehicle Driver - A/ Staff Car Driver- A",
@@ -150,13 +149,16 @@
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
       "RRC Central Railway 2,861 Act Apprentice Posts Online Form 2026",
+      "Exim Bank 120 MT & Manager Online Form 2026",
       "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "Recruitment Requisition",
       "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)"
     ],
-    "jobsMissingOfficialLink": []
+    "jobsMissingOfficialLink": [
+      "Exim Bank 120 MT & Manager Online Form 2026"
+    ]
   },
   "errors": [
     {
