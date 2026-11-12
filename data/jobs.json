@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-11T09:29:10.331Z",
-  "jobsGeneratedAt": "2026-11-11T09:29:08.705Z",
+  "generatedAt": "2026-11-12T09:52:41.688Z",
+  "jobsGeneratedAt": "2026-11-12T09:52:40.027Z",
   "partial": true,
-  "total": 601,
+  "total": 609,
   "quality": {
     "jobsMissingPublicationDate": 56,
     "jobsMissingClosingDate": 80,
@@ -45,18 +45,18 @@
       "error": "HTTP 403"
     },
     {
+      "source": "NTPC",
+      "url": "https://careers.ntpc.co.in/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "Indian Air Force",
       "url": "https://indianairforce.nic.in/",
       "error": "timeout"
     },
     {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": ""
-    },
-    {
-      "source": "NTPC",
-      "url": "https://careers.ntpc.co.in/",
+      "source": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/recruitments/",
       "error": "HTTP 403"
     },
     {
@@ -65,14 +65,14 @@
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "Supreme Court of India",
-      "url": "https://www.sci.gov.in/recruitments/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "NIC e-Pariksha",
       "url": "https://pariksha.nic.in/",
       "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "BPSC",
@@ -95,11 +95,6 @@
       "error": "timeout"
     },
     {
-      "source": "WBPSC",
-      "url": "https://wbpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "MPPSC",
       "url": "https://mppsc.mp.gov.in/",
       "error": "timeout"
@@ -110,19 +105,19 @@
       "error": "Parse Error: Invalid header token"
     },
     {
+      "source": "WBPSC",
+      "url": "https://wbpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
       "error": ""
     },
     {
-      "source": "TGPSC",
-      "url": "https://www.tgpsc.gov.in/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO C07C71ED5C710000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "source": "Kerala PSC",
+      "url": "https://www.keralapsc.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "APPSC",
@@ -130,14 +125,24 @@
       "error": "timeout"
     },
     {
+      "source": "TGPSC",
+      "url": "https://www.tgpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "CGPSC",
       "url": "https://psc.cg.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "UKPSC",
@@ -145,19 +150,19 @@
       "error": "timeout"
     },
     {
-      "source": "Goa PSC",
-      "url": "https://gpsc.goa.gov.in/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "PPSC",
       "url": "https://ppsc.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "APSC",
       "url": "https://apsc.nic.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Goa PSC",
+      "url": "https://gpsc.goa.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "JKPSC",
@@ -13876,6 +13881,80 @@
       "ageLimit": "Maximum 28 years"
     },
     {
+      "id": "competitor-freejobalert-d3844a8025a65c60",
+      "type": "result",
+      "title": "PNB LBO Result 2026 Out",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://pnb.bank.in/Recruitments.aspx",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/pnb-lbo-result-2026-3080257",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "PNB LBO",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-07-20",
+      "lastDate": "2026-08-16",
+      "examDate": "2026-11-11",
+      "resultDate": "2026-11-11",
+      "vacancies": "545",
+      "officialLinks": [
+        {
+          "url": "https://pnb.bank.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://pnb.bank.in/Recruitments.aspx",
+          "label": "PNB LBO Result 2026 (Candidates Qualified in Online Written Examination PDF)"
+        }
+      ],
+      "officialLink": "https://pnb.bank.in/Recruitments.aspx",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-09-06",
+          "dateText": "06.09.2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-11",
+          "dateText": "11.11.2026"
+        },
+        {
+          "label": "Advertisement Date",
+          "date": "2026-07-20",
+          "dateText": "20.07.2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-07-20",
+          "dateText": "20.07.2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-08-16",
+          "dateText": "16.08.2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-08-28",
+          "dateText": "28.08.2026"
+        },
+        {
+          "label": "Online Written Exam Date",
+          "date": "2026-09-06",
+          "dateText": "06.09.2026"
+        },
+        {
+          "label": "Written Exam Result Date",
+          "date": "2026-11-11",
+          "dateText": "11.11.2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-f76ae1db417d0f8a",
       "type": "admit-card",
       "title": "Chhattisgarh State Eligibility Test SET Admit Card 2026",
@@ -14841,6 +14920,10 @@
         {
           "url": "https://sbi.bank.in/web/careers",
           "label": "SBI Recruitment Results"
+        },
+        {
+          "url": "https://sbi.bank.in",
+          "label": "Official Website"
         }
       ],
       "officialLink": "https://sbi.bank.in/web/careers/current-openings1",
@@ -16000,6 +16083,85 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-370668fe5287cb05",
+      "type": "result",
+      "title": "UIIC AO Prelims Result 2026 Out",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "All India",
+      "link": "https://uiic.co.in/web/sites/default/files/Recruitment_UiiC/6.%20Note%20-%20Prelims%20Result%20Publishing.pdf",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/uiic-ao-prelims-result-2026-3080356",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "UIIC AO Prelims",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-09-08",
+      "lastDate": "2026-10-01",
+      "examDate": "2026-11-30",
+      "resultDate": "2026-11-11",
+      "vacancies": "225",
+      "officialLinks": [
+        {
+          "url": "https://uiic.co.in",
+          "label": "Official website"
+        },
+        {
+          "url": "https://uiic.co.in/web/sites/default/files/Recruitment_UiiC/6.%20Note%20-%20Prelims%20Result%20Publishing.pdf",
+          "label": "UIIC AO Prelims Result 2026 PDF"
+        }
+      ],
+      "officialLink": "https://uiic.co.in/web/sites/default/files/Recruitment_UiiC/6.%20Note%20-%20Prelims%20Result%20Publishing.pdf",
+      "milestones": [
+        {
+          "label": "Prelims (Tier-I) exam date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Prelims result date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Mains (Tier-II) exam date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Notification released",
+          "date": "2026-09-07",
+          "dateText": "7 September 2026"
+        },
+        {
+          "label": "Last date to apply",
+          "date": "2026-10-01",
+          "dateText": "1 October 2026"
+        },
+        {
+          "label": "Prelims admit card",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Prelims exam",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Prelims result",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Mains exam",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-1bf1480116ce6b43",
       "type": "admit-card",
       "title": "UPESSC UP Special TET Admit Card 2026",
@@ -16711,26 +16873,6 @@
           "dateText": "21/10/2026"
         }
       ]
-    },
-    {
-      "id": "competitor-sarkariresult-44f4493b9f2027b6",
-      "type": "job",
-      "title": "Supreme Court SPA Online Form 2026 – Start",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://www.sci.gov.in/",
-      "lastDate": "2026-11-10",
-      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
-      "publishedDate": "2026-10-19",
-      "openDate": "2026-10-20",
-      "ageLimit": "18–30 years",
-      "vacancies": "65",
-      "eligibility": "Senior Personal Assistant Bachelor’s degree of a recognized University in India. Proficiency in Shorthand (English) with a speed of 110 w.p.m. Knowledge of Computer operation with a typing speed of 40 w.p.m. in computer.",
-      "applicationFee": "For General/Unreserved : ₹ 1500/- For SC, ST, OBC – NCL, PwBD Candidates : ₹ 750/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://www.sci.gov.in/",
-      "organization": "Supreme Court of India SCI"
     },
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wcmQxMDA5MjAyNnJlYy5wZGY",
@@ -19402,6 +19544,10 @@
         {
           "url": "https://www.rrcnr.org",
           "label": "Apply Online"
+        },
+        {
+          "url": "https://app.rrcnr.org/",
+          "label": "Apply Online"
         }
       ],
       "officialLink": "https://rrccr.com/TradeApp/login/Index",
@@ -19791,7 +19937,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-11",
+      "factCheckedAt": "2026-11-12",
       "organization": "Export-Import Bank of India (India Exim Bank)",
       "publishedDate": "2026-11-11",
       "lastDate": "2026-12-11",
@@ -19802,6 +19948,169 @@
           "label": "Last Date for Apply Online",
           "date": "2026-12-11",
           "dateText": "11-12-2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-69f5d7e00b3d0cfe",
+      "type": "job",
+      "title": "Assam Rifles 354 Technical & Tradesman Rally 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Assam",
+      "link": "https://www.assamrifles.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/assam-riffles-technical-and-tradesman-recruitment-rally-notification-2026-3068597",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "Office of the Directorate General Assam Rifles",
+      "publishedDate": "2026-11-12",
+      "openDate": "2026-11-15",
+      "lastDate": "2026-12-14",
+      "vacancies": "354",
+      "ageLimit": "18–23 / 18–25 Years, Trade-Wise",
+      "eligibility": "10th / 12th / ITI / Diploma / Degree, Trade-Wise",
+      "applicationFee": "Rs. 100 / Exempted",
+      "notificationLink": "https://www.assamrifles.gov.in/ar-recruitment-pdf-viewer/9004",
+      "officialLinks": [
+        {
+          "url": "https://www.assamrifles.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.assamrifles.gov.in/ar-recruitment-pdf-viewer/9004",
+          "label": "Cancelled Notification PDF"
+        },
+        {
+          "url": "https://www.assamrifles.gov.in/ar-recruitment-pdf-viewer/8215",
+          "label": "Recruitment Notification"
+        }
+      ],
+      "officialLink": "https://www.assamrifles.gov.in/",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-07-01",
+          "dateText": "1 July 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Recruitment Rally Start Date",
+          "date": "2027-01-18",
+          "dateText": "18 January 2027 Onwards (Tentative)"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-db7fefa78b5db8fa",
+      "type": "job",
+      "title": "ASRB ICAR Various Technical Assistant Posts Online Form 2026 (1393 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://www.asrb.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/asrb-recruitment-2026-apply-online-for-1393-posts-3080372",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "Indian Council of Agricultural Research (ICAR)",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-11-18",
+      "lastDate": "2026-12-17",
+      "vacancies": "1393",
+      "ageLimit": "21 to 30 Years",
+      "eligibility": "Relevant Graduation / Prescribed Engineering Diploma",
+      "applicationFee": "Nil / Rs. 150 / Rs. 300 / Rs. 600, Depending on Category and Post Choice",
+      "notificationLink": "https://asrb.gov.in/UserDocs/__/__6dc859e6-6651-4187-b328-648e46bb5986_Notification%20of%20Centralized%20Examination2026%20for%20the%20posts%20of%20T3%20%20T4%20in%20ICAR.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.asrb.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://asrb.gov.in/UserDocs/__/__6dc859e6-6651-4187-b328-648e46bb5986_Notification%20of%20Centralized%20Examination2026%20for%20the%20posts%20of%20T3%20%20T4%20in%20ICAR.pdf",
+          "label": "Official Detailed Notification"
+        },
+        {
+          "url": "https://bharatkosh.gov.in/",
+          "label": "Online Fee Payment - Bharatkosh"
+        },
+        {
+          "url": "https://asrb.gov.in/asset/pdf/netSyllabus/T3T4%20Syllabus.pdf",
+          "label": "Official Syllabus - English"
+        },
+        {
+          "url": "https://asrb.gov.in/asset/pdf/netSyllabus/Syllabus%20Hindi%20T3T4.pdf",
+          "label": "Official Syllabus - Hindi"
+        }
+      ],
+      "officialLink": "https://www.asrb.gov.in/",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026, 11:59 PM"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026, 11:59 PM"
         }
       ]
     },
@@ -20387,7 +20696,7 @@
       "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
       "openDate": null,
       "lastDate": null,
-      "examDate": "2026-09-25",
+      "examDate": "2026-10-26",
       "publishedDate": "2026-10-26"
     },
     {
@@ -20400,7 +20709,7 @@
       "link": "https://npsc.nagaland.gov.in/results/179302304373058",
       "openDate": null,
       "lastDate": null,
-      "examDate": "2026-09-25",
+      "examDate": "2026-10-26",
       "publishedDate": "2026-10-26"
     },
     {
@@ -22385,7 +22694,23 @@
       "openDate": null,
       "lastDate": null,
       "examDate": null,
-      "publishedDate": null
+      "publishedDate": "2026-11-11",
+      "organization": "ASRB Interview Call Letter 2025 - Download Combined ARS, SMS & STO Personal Interview Hall Ticket",
+      "officialLinks": [
+        {
+          "url": "https://cbexams.com/ASRB_CallLetter_PI/Default.aspx",
+          "label": "Call Letter Link"
+        },
+        {
+          "url": "https://asrb.gov.in/UserDocs/__/__6f63aa5b-f684-4612-a160-8c65b59a1bba_Interview%20Schedule%20of%20Combined%20ARS%20SMS%20STO%20Exam%202025.pdf",
+          "label": "Interview Schedule"
+        },
+        {
+          "url": "https://asrb.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://cbexams.com/ASRB_CallLetter_PI/Default.aspx"
     },
     {
       "id": "aHR0cHM6Ly9ncHNjLmd1amFyYXQuZ292LmluL0RvY3VtZW50cy9DYWxsLUxldHRlci5wZGY",
@@ -30437,6 +30762,215 @@
           "label": "Exam Start Date",
           "date": "2026-11-19",
           "dateText": "19 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-98f11063f1eb326e",
+      "type": "admit-card",
+      "title": "SSC GD PET PST Admit Card 2026 Out",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "All India",
+      "link": "https://ssc.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ssc-gd-pet-pst-admit-card-2026-3080538",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "Staff Selection Commission (SSC)",
+      "publishedDate": "2026-11-12",
+      "vacancies": "25,487",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-b900ed71edd41459",
+      "type": "admit-card",
+      "title": "RPSC Protection Officer Admit Card 2026 Out",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Rajasthan",
+      "link": "https://rpsc.rajasthan.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rpsc-protection-officer-admit-card-2026-3080511",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "RPSC Protection Officer",
+      "publishedDate": "2026-11-12",
+      "vacancies": "12",
+      "officialLinks": [
+        {
+          "url": "https://rpsc.rajasthan.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://rpsc.rajasthan.gov.in",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Examination Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-0bf44718c704f51a",
+      "type": "admit-card",
+      "title": "PFRDA Grade A Mains Admit Card 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://www.pfrda.org.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/pfrda-grade-a-mains-admit-card-2026-3080441",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "Pension Fund Regulatory and Development Authority (PFRDA)",
+      "publishedDate": "2026-11-12",
+      "examDate": "2026-11-20",
+      "vacancies": "30",
+      "officialLinks": [
+        {
+          "url": "https://www.pfrda.org.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://pfrda.org.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.pfrda.org.in/",
+      "milestones": [
+        {
+          "label": "Phase 2 Exam Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-94258e73f30fe987",
+      "type": "result",
+      "title": "AP Special TET Result 2026 Soon",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://tet2dsc.apcfss.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ap-special-tet-result-2026-3080513",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "AP Special TET",
+      "publishedDate": "2026-11-12",
+      "examDate": "2026-10-21",
+      "resultDate": "2026-11-15",
+      "officialLinks": [
+        {
+          "url": "https://tet2dsc.apcfss.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://tet2dsc.apcfss.in/",
+          "label": "AP Special TET Result 2026 Login Link"
+        }
+      ],
+      "officialLink": "https://tet2dsc.apcfss.in/",
+      "milestones": [
+        {
+          "label": "Exam Dates",
+          "date": "2026-10-21",
+          "dateText": "11 to 21 October 2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "AP Special TET 2026 Exam",
+          "date": "2026-10-21",
+          "dateText": "11 to 21 October 2026"
+        },
+        {
+          "label": "AP Special TET Result 2026",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026 (Sunday)"
+        },
+        {
+          "label": "AP Special TET Result 2026 Login Link",
+          "date": "2026-11-15",
+          "dateText": "Active from 15 November 2026 at tet2dsc.apcfss.in"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-1086e20da02f6937",
+      "type": "result",
+      "title": "OSSSC RI, ICDS and ARI Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "http://www.osssc.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/osssc-ri-icds-and-ari-result-2026-3080507",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "Odisha Sub-Ordinate Staff Selection Commission (OSSSC)",
+      "publishedDate": "2026-11-12",
+      "resultDate": "2026-11-11",
+      "officialLinks": [
+        {
+          "url": "http://www.osssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.osssc.gov.in/Public/OSSSC/Default.aspx",
+          "label": "OSSSC Official Website"
+        }
+      ],
+      "officialLink": "http://www.osssc.gov.in",
+      "milestones": [
+        {
+          "label": "Notice Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Advertisement No. 938(C)/OSSSC Date",
+          "date": "2023-12-29",
+          "dateText": "29 December 2023"
+        },
+        {
+          "label": "Provisional Result Notice Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
         }
       ]
     }

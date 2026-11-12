@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-11-11T09:29:10.331Z",
+  "generatedAt": "2026-11-12T09:52:41.688Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 596,
-    "jobs": 130,
-    "admitCards": 123,
-    "results": 343,
-    "jobsMissingPublicationDate": 58,
-    "jobsMissingClosingDate": 81,
-    "jobsMissingOrganization": 80,
-    "jobsMissingVacancies": 93,
-    "jobsMissingEligibility": 82,
-    "jobsMissingApplicationFee": 84,
-    "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 14,
-    "resultsMissingPublishedDate": 48,
-    "resultsMissingResultDate": 173
-  },
-  "after": {
     "total": 601,
     "jobs": 130,
     "admitCards": 127,
     "results": 344,
+    "jobsMissingPublicationDate": 58,
+    "jobsMissingClosingDate": 82,
+    "jobsMissingOrganization": 80,
+    "jobsMissingVacancies": 94,
+    "jobsMissingEligibility": 82,
+    "jobsMissingApplicationFee": 85,
+    "jobsMissingOfficialLink": 0,
+    "admitCardsMissingPublishedDate": 14,
+    "resultsMissingPublishedDate": 48,
+    "resultsMissingResultDate": 174
+  },
+  "after": {
+    "total": 609,
+    "jobs": 131,
+    "admitCards": 130,
+    "results": 348,
     "jobsMissingPublicationDate": 56,
     "jobsMissingClosingDate": 80,
     "jobsMissingOrganization": 78,
@@ -33,17 +33,17 @@
     "jobsMissingEligibility": 80,
     "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 1,
-    "admitCardsMissingPublishedDate": 14,
+    "admitCardsMissingPublishedDate": 13,
     "resultsMissingPublishedDate": 48,
     "resultsMissingResultDate": 174
   },
   "imported": {
-    "job": 2,
-    "admit-card": 4,
-    "result": 1
+    "job": 3,
+    "admit-card": 3,
+    "result": 4
   },
-  "matchedExisting": 18,
-  "filledItems": 2,
+  "matchedExisting": 15,
+  "filledItems": 3,
   "removedStale": 0,
   "removedUncertain": 0,
   "skippedClosed": 0,
@@ -63,8 +63,8 @@
     }
   ],
   "detailPages": {
-    "targets": 14,
-    "fetched": 14,
+    "targets": 15,
+    "fetched": 15,
     "cacheHits": 0
   },
   "remainingGaps": {
