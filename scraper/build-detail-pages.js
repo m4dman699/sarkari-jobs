@@ -197,6 +197,39 @@ function factTile(label, value, cls = '') {
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 
+// Crawlable internal link web. The hubs (index/category/results/admit-cards/
+// state) render their listing cards with JavaScript, so their HTML source
+// contains no links to any detail page. Without detail → detail links Google
+// has to discover all pages from sitemap.xml alone, which wastes crawl budget
+// on a young domain. This index gives every page real sibling links.
+const entries = [];
+for (const item of payload.jobs || []) {
+  if (!item?.title || !item.id || isNonRecruitmentPage(item)) continue;
+  const type = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
+  entries.push({ item, slug: slugFor(item), kind: listingType(item), type });
+}
+const kindLabel = type => type === 'admit' ? 'Admit' : type === 'result' ? 'Result' : 'Job';
+const kindClass = type => type === 'admit' ? ' d-rel--admit' : type === 'result' ? ' d-rel--result' : '';
+const relatedFor = (entry, limit = 6) => {
+  const { item, slug, type } = entry;
+  const scored = entries
+    .filter(other => other.slug !== slug)
+    .map(other => {
+      let score = 0;
+      if (other.type === type) score += 3;
+      if (item.category && other.item.category === item.category) score += 4;
+      if (item.state && other.item.state === item.state) score += 2;
+      return { other, score };
+    })
+    .filter(entry => entry.score > 0)
+    .sort((a, b) => b.score - a.score || (a.other.slug < b.other.slug ? -1 : 1));
+  // Deterministic rotation per page: without it every page would surface the
+  // same handful of top-scored siblings and the rest would stay under-linked.
+  const offset = scored.length ? seedOf('rel:' + slug) % scored.length : 0;
+  const rotated = scored.slice(offset).concat(scored.slice(0, offset));
+  return rotated.slice(0, limit).map(entry => entry.other);
+};
+
 const urls = [];
 for (const item of payload.jobs || []) {
   if (!item?.title || !item.id || isNonRecruitmentPage(item)) continue;
@@ -205,6 +238,7 @@ for (const item of payload.jobs || []) {
   fs.mkdirSync(directory, { recursive: true });
   const title = escapeHTML(item.title);
   const kind = listingType(item);
+  const type = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
   const verifiedSummary = `<p class="d-lead">${summaryFor(item, kind)}</p>`;
   const names = orgNames(item);
   const guide = guideFor(item, kind, names, slug);
@@ -278,12 +312,22 @@ for (const item of payload.jobs || []) {
     ]
   }).replace(/</g, '\\u003c')}</script>`;
   const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
+  // Sibling links keep every listing reachable in one hop from another listing.
+  const related = relatedFor({ item, slug, kind, type });
+  const relatedLinks = related.map(rel => {
+    const text = String(rel.item.title || '').replace(/\s+/g, ' ').trim();
+    const short = text.length > 82 ? text.slice(0, 80).trimEnd() + '\u2026' : text;
+    return `<a class="d-rel${kindClass(rel.type)}" href="../${rel.slug}/"><b>${kindLabel(rel.type)}</b>${escapeHTML(short)}</a>`;
+  }).join('');
+  const relatedHtml = relatedLinks
+    ? `<section class="d-related"><h2 class="d-section-title">Related listings</h2><div class="d-related-list">${relatedLinks}</div></section>`
+    : '';
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title} listed by ${escapeHTML(names.base)}. Verify eligibility and instructions in the official recruitment notice.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(names.base)} — ${escapeHTML(kind)}: key dates and the official link."><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d2">
+<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -329,6 +373,7 @@ ${faqHtml}
 <dl class="d-facts">${attrFacts}</dl>
 <p class="d-attrib-note">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
 </section>
+${relatedHtml}
 <nav class="d-discover" aria-label="Explore the site">
 <a class="d-disc" href="../../category.html"><span class="d-disc--icon">🔔</span><span class="d-disc--label">Browse notifications</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
 <a class="d-disc" href="../../results.html"><span class="d-disc--icon">🏆</span><span class="d-disc--label">Latest results</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
@@ -352,6 +397,7 @@ ${faqHtml}
 <li><a href="../../contact.html">Contact us</a></li>
 </ul></div>
 <div><h4>This page</h4><ul>
+<li><a href="../../all-jobs.html">All listings (A–Z)</a></li>
 <li><a href="../../">← Back to SarkariJobs+</a></li>
 </ul></div>
 </div>
@@ -373,6 +419,95 @@ ${faqHtml}
   nextLastmodState[slug] = { hash: pageHash, lastmod };
   urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
 }
+
+// ---- Crawlable full index (/all-jobs.html) ----
+// One plain-HTML page listing every published listing as a real <a> link. This
+// is the entry point crawlers use to reach all detail pages even though the
+// JavaScript hubs expose no detail links in their HTML source.
+const groups = [
+  { type: 'job', title: 'Job notifications', anchor: 'jobs' },
+  { type: 'admit', title: 'Admit cards', anchor: 'admit-cards' },
+  { type: 'result', title: 'Results', anchor: 'results' }
+];
+const byType = type => entries
+  .filter(entry => entry.type === type)
+  .sort((a, b) => String(a.item.title || '').localeCompare(String(b.item.title || '')));
+const jumpLinks = groups
+  .map(group => `<a href="#${group.anchor}">${group.title} (${byType(group.type).length})</a>`)
+  .join('');
+const groupBlocks = groups.map(group => {
+  const rows = byType(group.type).map(entry => {
+    const text = String(entry.item.title || '').replace(/\s+/g, ' ').trim();
+    return `<a class="d-rel${kindClass(group.type)}" href="job-details/${entry.slug}/"><b>${kindLabel(group.type)}</b>${escapeHTML(text)}</a>`;
+  }).join('\n');
+  return `<section class="d-index-group" id="${group.anchor}"><h2 class="d-section-title">${group.title}</h2><p class="d-index-count">${byType(group.type).length} live listings, in alphabetical order. Each opens the full summary and the official source link.</p><div class="d-related-list">\n${rows}\n</div></section>`;
+}).join('\n');
+const indexCanonical = 'https://sarkarijobsplus.com/all-jobs.html';
+const indexLd = `<script type="application/ld+json">${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sarkarijobsplus.com/' },
+    { '@type': 'ListItem', position: 2, name: 'All listings', item: indexCanonical }
+  ]
+}).replace(/</g, '\\u003c')}</script>`;
+const indexHtml = `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
+<meta name="theme-color" content="#0a1128">
+<meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
+<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="tricolor-strip"></div>
+<header><div class="container nav-wrap">
+<a class="logo" href="./"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
+<nav><ul>
+<li><a href="category.html">Notifications</a></li>
+<li><a href="results.html">Results</a></li>
+<li><a href="admit-cards.html">Admit cards</a></li>
+<li><a href="state.html">States</a></li>
+</ul></nav>
+<a class="btn btn-primary" href="results.html" style="padding:9px 18px;font-size:.88rem">Latest results</a>
+</div></header>
+<main class="d-main">
+<section class="d-hero">
+<nav class="d-crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span class="d-sep" aria-hidden="true"></span><span>All listings</span></nav>
+<span class="d-ribbon">Index</span>
+<h1>Every listing on SarkariJobs+</h1>
+<div class="d-chiprow"><span class="d-chip">🔔 ${entries.length} live listings</span><span class="d-chip">🗂 Jobs, admit cards, results</span><span class="d-chip">🔗 Official source on every page</span></div>
+<p class="d-lead" style="margin-top:14px">Plain-HTML index of everything the tracker currently follows. Use it to jump straight to a listing instead of scrolling the filterable hubs. Dates, fees and vacancy counts are summarised from the recruiting authority's own notice — always confirm on the official page before applying.</p>
+</section>
+<section class="d-index-jump" aria-label="Jump to a section">${jumpLinks}</section>
+${groupBlocks}
+<section class="d-attrib">
+<h2>Source attribution</h2>
+<p class="d-attrib-note">SarkariJobs+ is an independent information site and is not a recruiting authority. Every listing here links the official notice or portal. Where a source did not state a date, fee or vacancy count, the field is left empty rather than estimated.</p>
+</section>
+</main>
+<footer class="d-foot"><div class="container foot-grid">
+<div class="foot-brand"><a class="logo" href="./" style="color:#fff"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
+<p class="foot-note">Independent tracker for government job notifications, results and admit cards across India — always linking the recruiting authority's own portal.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="category.html">Notifications</a></li>
+<li><a href="results.html">Results</a></li>
+<li><a href="admit-cards.html">Admit cards</a></li>
+<li><a href="state.html">State-wise</a></li>
+<li><a href="all-jobs.html">All listings (A–Z)</a></li>
+</ul></div>
+<div><h4>Information</h4><ul>
+<li><a href="about.html">About SarkariJobs+</a></li>
+<li><a href="editorial-policy.html">Editorial policy</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul></div>
+</div>
+<p style="font-size:.82rem;line-height:1.7;max-width:640px;margin:0 auto;padding:0 0 18px;">SarkariJobs+ is an independent information site and is not a recruiting authority. Original SarkariJobs+ summaries and page layout © 2026 SarkariJobs+.</p>
+<div class="foot-strip"></div>
+</footer>
+</body></html>`;
+fs.writeFileSync(path.join(ROOT, 'all-jobs.html'), indexHtml);
 
 // The client-rendered shell pages below re-render this committed feed in the
 // browser, so the date they materially changed equals the feed's build date.
@@ -398,7 +533,7 @@ for (const loc of shellUrls) {
 // changes — not on every feed-build day. Existing blocks for these URLs are
 // dropped first so repeated builds stay single-copy and byte-stable.
 const staticPageBlocks = [];
-for (const rel of ['about.html', 'editorial-policy.html', 'privacy.html', 'contact.html']) {
+for (const rel of ['about.html', 'editorial-policy.html', 'privacy.html', 'contact.html', 'all-jobs.html']) {
   const fileHash = crypto.createHash('sha1').update(fs.readFileSync(path.join(ROOT, rel)).toString('utf8').replace(/\r\n/g, '\n')).digest('hex');
   const prevState = lastmodState[`page:${rel}`];
   const lastmod = prevState && prevState.hash === fileHash ? (prevState.lastmod || null) : feedDate;

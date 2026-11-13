@@ -374,6 +374,52 @@
 }
 .d-disc:hover .d-disc--arrow { transform: rotate(45deg) translate(2px, -2px); }
 
+/* ---------- Related listings (detail → detail crawl web) ----------
+   These are real <a> links in the HTML source, so crawlers can walk from one
+   listing to the next instead of stopping at a JS-rendered hub. */
+.d-related { display: grid; gap: 12px; }
+.d-related-list { display: grid; gap: 9px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.d-rel {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  background: #fff;
+  border: 1px solid var(--d-line);
+  border-radius: 12px;
+  padding: 11px 13px;
+  font-size: .89rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text-dark);
+  transition: border-color .2s, box-shadow .2s;
+}
+.d-rel:hover { border-color: var(--saffron); box-shadow: 0 8px 18px rgba(10, 17, 40, .08); }
+.d-rel b {
+  flex: 0 0 auto;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--saffron);
+}
+.d-rel--admit b { color: #7a4bd6; }
+.d-rel--result b { color: var(--green); }
+
+/* ---------- Full listing index (/all-jobs.html) ---------- */
+.d-index-jump { display: flex; flex-wrap: wrap; gap: 8px; }
+.d-index-jump a {
+  background: #fff;
+  border: 1px solid var(--d-line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+.d-index-jump a:hover { border-color: var(--saffron); color: #b35a00; }
+.d-index-group { display: grid; gap: 12px; margin-top: 6px; }
+.d-index-count { font-size: .82rem; color: #5a6b85; font-weight: 600; }
+
 /* ---------- Footer reuse (style.css handles colors) ---------- */
 .d-foot p.disclaimer-text { font-size: .82rem; line-height: 1.7; max-width: 640px; margin-top: 10px; }
 .d-foot .foot-grid a { color: #aebadb; }
