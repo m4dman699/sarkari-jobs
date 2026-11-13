@@ -420,6 +420,37 @@
 .d-index-group { display: grid; gap: 12px; margin-top: 6px; }
 .d-index-count { font-size: .82rem; color: #5a6b85; font-weight: 600; }
 
+/* ---------- Inline icon system ----------
+   Icons are inlined SVG paths from Lucide (ISC licence, https://lucide.dev) so
+   they inherit currentColor and stay sharp at any zoom. They replace emoji
+   pictographs, which render as OS colour glyphs and ignore the theme palette. */
+.d-ic {
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: -2px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.d-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.d-index-h-ic { width: 20px; height: 20px; margin-right: 8px; vertical-align: -4px; color: var(--saffron); }
+.d-chip-ic { width: 13px; height: 13px; opacity: .8; }
+.d-ribbon-ic { width: 14px; height: 14px; }
+/* A typed ribbon carries an icon, so the animated status dot is redundant. */
+.d-ribbon:has(.d-ribbon-ic)::before { display: none; }
+.d-banner-ic { display: inline-flex; align-items: center; }
+.d-banner-ic .d-ic { width: 19px; height: 19px; }
+.d-caution-ic { width: 18px; height: 18px; color: #b35a00; margin-top: 1px; }
+.d-disc-ic { width: 20px; height: 20px; color: var(--saffron); }
+.d-rel-ic { width: 13px; height: 13px; stroke-width: 2.2; }
+.d-rel-tag { display: inline-flex; align-items: center; gap: 5px; flex: 0 0 auto; }
+.d-jump-ic { width: 14px; height: 14px; }
+.d-jump-count { opacity: .55; font-variant-numeric: tabular-nums; }
+
 /* ---------- Footer reuse (style.css handles colors) ---------- */
 .d-foot p.disclaimer-text { font-size: .82rem; line-height: 1.7; max-width: 640px; margin-top: 10px; }
 .d-foot .foot-grid a { color: #aebadb; }

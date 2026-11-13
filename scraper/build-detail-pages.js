@@ -179,15 +179,15 @@ function bannerFor(item, kind, state) {
   if (kind === 'Job notification') {
     if (!item.lastDate) return null;
     const closing = date(item.lastDate);
-    if (state === 'passed') return { cls: 'd-banner--crit', icon: '⛔', text: `The listed closing date has passed — applications are closed as per this record. Reconfirm on the official portal before relying on it.` };
-    if (state === 'soon') return { cls: 'd-banner--warn', icon: '⏳', text: `Application window is closing — the listed deadline is <strong>${closing}</strong>. Complete the form and fee before it ends.` };
-    return { cls: 'd-banner--ok', icon: '🟢', text: `Applications are open — the listed deadline is <strong>${closing}</strong>. Read the official notice before you apply.` };
+    if (state === 'passed') return { cls: 'd-banner--crit', icon: 'closed', text: `The listed closing date has passed — applications are closed as per this record. Reconfirm on the official portal before relying on it.` };
+    if (state === 'soon') return { cls: 'd-banner--warn', icon: 'alert', text: `Application window is closing — the listed deadline is <strong>${closing}</strong>. Complete the form and fee before it ends.` };
+    return { cls: 'd-banner--ok', icon: 'open', text: `Applications are open — the listed deadline is <strong>${closing}</strong>. Read the official notice before you apply.` };
   }
   if (kind === 'Admit card') {
     const exam = item.examDate ? ` The listed exam date is <strong>${date(item.examDate)}</strong>.` : '';
-    return { cls: 'd-banner--info', icon: '🎫', text: `Admit card / hall ticket is available on the official portal linked below.${exam}` };
+    return { cls: 'd-banner--info', icon: 'admit', text: `Admit card / hall ticket is available on the official portal linked below.${exam}` };
   }
-  return { cls: 'd-banner--info', icon: '✅', text: `Result / update declared on the authority portal${item.resultDate ? ` — listed result date <strong>${date(item.resultDate)}</strong>` : ''}.` };
+  return { cls: 'd-banner--info', icon: 'result', text: `Result / update declared on the authority portal${item.resultDate ? ` — listed result date <strong>${date(item.resultDate)}</strong>` : ''}.` };
 }
 
 function factTile(label, value, cls = '') {
@@ -196,6 +196,44 @@ function factTile(label, value, cls = '') {
 
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
+
+// Icon set — Lucide (https://lucide.dev), ISC licence. Geometry is inlined as
+// SVG paths rather than loaded as a font or sprite so it inherits currentColor,
+// stays crisp at any zoom, and costs ~300 bytes per glyph.
+//
+// These replace emoji pictographs. Emoji are rendered by the operating system
+// as full-colour glyphs: they ignore CSS colour, sit off the text baseline, and
+// look different on Windows, Android and iOS — which is why a diagram or badge
+// built from emoji never matches the rest of the page.
+const ICONS = {
+  job: '<path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/>',
+  admit: '<path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/>',
+  result: '<path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>',
+  organization: '<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/>',
+  folder: '<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>',
+  pin: '<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>',
+  calendar: '<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/>',
+  bell: '<path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>',
+  map: '<path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/>',
+  alert: '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/>',
+  closed: '<path d="M4.929 4.929 19.07 19.071"/><circle cx="12" cy="12" r="10"/>',
+  open: '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>',
+  info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>'
+};
+// Decorative by default (aria-hidden): every icon here sits next to a visible
+// text label, so announcing it again would just repeat the label to a screen
+// reader. Pass an explicit label only for a genuinely icon-only control.
+//
+// Icons are referenced through a per-page <symbol> sprite instead of repeating
+// the path data at every call site. On the 609-row index that is the difference
+// between ~390 KB and ~160 KB of HTML.
+const icon = (name, cls = 'd-ic', label = '') => {
+  const id = `i-${ICONS[name] ? name : 'info'}`;
+  return `<svg class="${cls}"${label ? ` role="img" aria-label="${escapeHTML(label)}"` : ' aria-hidden="true" focusable="false"'}><use href="#${id}"/></svg>`;
+};
+const iconSprite = () => `<svg class="d-sprite" aria-hidden="true" focusable="false" width="0" height="0">${Object.keys(ICONS)
+  .map(name => `<symbol id="i-${name}" viewBox="0 0 24 24">${ICONS[name]}</symbol>`)
+  .join('')}</svg>`;
 
 // Crawlable internal link web. The hubs (index/category/results/admit-cards/
 // state) render their listing cards with JavaScript, so their HTML source
@@ -249,7 +287,7 @@ for (const item of payload.jobs || []) {
     : '';
   const urgencyState = urgency(item);
   const banner = bannerFor(item, kind, urgencyState);
-  const bannerHtml = banner ? `<div class="d-banner ${banner.cls}"><span>${banner.icon}</span><p>${banner.text}</p></div>` : '';
+  const bannerHtml = banner ? `<div class="d-banner ${banner.cls}"><span class="d-banner-ic">${icon(banner.icon, 'd-ic')}</span><p>${banner.text}</p></div>` : '';
   const keyFacts = [
     item.openDate ? factTile('Applications open', date(item.openDate)) : '',
     item.lastDate ? factTile('Apply before', date(item.lastDate) + ' ' + deadlinePill(urgencyState), urgencyState === 'passed' ? 'd-fact--deadline d-fact--closed' : 'd-fact--deadline') : '',
@@ -294,10 +332,10 @@ for (const item of payload.jobs || []) {
     ? `<div class="d-cta">${links}</div>`
     : '<span class="d-nonelink">No source link was provided in this feed record. Search the recruiting authority website before applying.</span>';
   const chips = [
-    `<span class="d-chip">🏢 ${escapeHTML(item.organization || 'Recruiting authority named in the notice')}</span>`,
-    item.category ? `<span class="d-chip">🗂 ${escapeHTML(item.category)}</span>` : '',
-    `<span class="d-chip">📍 ${escapeHTML(item.state || 'Location: see notice')}</span>`,
-    item.publishedDate ? `<span class="d-chip">🗓 Listed ${date(item.publishedDate)}</span>` : ''
+    `<span class="d-chip">${icon('organization', 'd-ic d-chip-ic')}${escapeHTML(item.organization || 'Recruiting authority named in the notice')}</span>`,
+    item.category ? `<span class="d-chip">${icon('folder', 'd-ic d-chip-ic')}${escapeHTML(item.category)}</span>` : '',
+    `<span class="d-chip">${icon('pin', 'd-ic d-chip-ic')}${escapeHTML(item.state || 'Location: see notice')}</span>`,
+    item.publishedDate ? `<span class="d-chip">${icon('calendar', 'd-ic d-chip-ic')}Listed ${date(item.publishedDate)}</span>` : ''
   ].filter(Boolean).join('');
   const kindId = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
   const ribbonCls = kindId === 'admit' ? ' d-ribbon--admit' : kindId === 'result' ? ' d-ribbon--result' : '';
@@ -317,7 +355,7 @@ for (const item of payload.jobs || []) {
   const relatedLinks = related.map(rel => {
     const text = String(rel.item.title || '').replace(/\s+/g, ' ').trim();
     const short = text.length > 82 ? text.slice(0, 80).trimEnd() + '\u2026' : text;
-    return `<a class="d-rel${kindClass(rel.type)}" href="../${rel.slug}/"><b>${kindLabel(rel.type)}</b>${escapeHTML(short)}</a>`;
+    return `<a class="d-rel${kindClass(rel.type)}" href="../${rel.slug}/"><span class="d-rel-tag">${icon(rel.type, 'd-ic d-rel-ic')}<b>${kindLabel(rel.type)}</b></span>${escapeHTML(short)}</a>`;
   }).join('');
   const relatedHtml = relatedLinks
     ? `<section class="d-related"><h2 class="d-section-title">Related listings</h2><div class="d-related-list">${relatedLinks}</div></section>`
@@ -327,10 +365,11 @@ for (const item of payload.jobs || []) {
 <title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title} listed by ${escapeHTML(names.base)}. Verify eligibility and instructions in the official recruitment notice.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(names.base)} — ${escapeHTML(kind)}: key dates and the official link."><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d5">
+<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d6">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
+${iconSprite()}
 <div class="tricolor-strip"></div>
 <header><div class="container nav-wrap">
 <a class="logo" href="../../"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
@@ -345,7 +384,7 @@ for (const item of payload.jobs || []) {
 <main class="d-main">
 <section class="d-hero">
 <nav class="d-crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span class="d-sep" aria-hidden="true"></span><a href="../../${item.type === 'result' ? 'results.html' : item.type === 'admit-card' ? 'admit-cards.html' : 'category.html'}">${escapeHTML(kind)} listings</a></nav>
-<span class="d-ribbon${ribbonCls}">${escapeHTML(kind)}</span>
+<span class="d-ribbon${ribbonCls}">${icon(kindId, 'd-ic d-ribbon-ic')}<span>${escapeHTML(kind)}</span></span>
 <h1>${title}</h1>
 <div class="d-chiprow">${chips}</div>
 ${ctaRow}
@@ -362,7 +401,7 @@ ${milestoneSection}
 <section class="d-guide">
 <h2>How to use this page</h2>
 <p class="d-glead">${escapeHTML(guide.lead)}</p>
-<div class="d-caution"><span>⚠️</span><p>${escapeHTML(guide.caution)}</p></div>
+<div class="d-caution">${icon('alert', 'd-ic d-caution-ic')}<p>${escapeHTML(guide.caution)}</p></div>
 </section>
 <section class="d-faq">
 <h2>Frequently asked questions</h2>
@@ -375,10 +414,10 @@ ${faqHtml}
 </section>
 ${relatedHtml}
 <nav class="d-discover" aria-label="Explore the site">
-<a class="d-disc" href="../../category.html"><span class="d-disc--icon">🔔</span><span class="d-disc--label">Browse notifications</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
-<a class="d-disc" href="../../results.html"><span class="d-disc--icon">🏆</span><span class="d-disc--label">Latest results</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
-<a class="d-disc" href="../../admit-cards.html"><span class="d-disc--icon">🎫</span><span class="d-disc--label">Admit cards</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
-<a class="d-disc" href="../../state.html"><span class="d-disc--icon">🗺️</span><span class="d-disc--label">State-wise jobs</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
+<a class="d-disc" href="../../category.html"><span class="d-disc--icon">${icon('bell', 'd-ic d-disc-ic')}</span><span class="d-disc--label">Browse notifications</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
+<a class="d-disc" href="../../results.html"><span class="d-disc--icon">${icon('result', 'd-ic d-disc-ic')}</span><span class="d-disc--label">Latest results</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
+<a class="d-disc" href="../../admit-cards.html"><span class="d-disc--icon">${icon('admit', 'd-ic d-disc-ic')}</span><span class="d-disc--label">Admit cards</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
+<a class="d-disc" href="../../state.html"><span class="d-disc--icon">${icon('map', 'd-ic d-disc-ic')}</span><span class="d-disc--label">State-wise jobs</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
 </nav>
 </main>
 <footer class="d-foot"><div class="container foot-grid">
@@ -433,14 +472,14 @@ const byType = type => entries
   .filter(entry => entry.type === type)
   .sort((a, b) => String(a.item.title || '').localeCompare(String(b.item.title || '')));
 const jumpLinks = groups
-  .map(group => `<a href="#${group.anchor}">${group.title} (${byType(group.type).length})</a>`)
+  .map(group => `<a href="#${group.anchor}">${icon(group.type, 'd-ic d-jump-ic')}${group.title} <span class="d-jump-count">${byType(group.type).length}</span></a>`)
   .join('');
 const groupBlocks = groups.map(group => {
   const rows = byType(group.type).map(entry => {
     const text = String(entry.item.title || '').replace(/\s+/g, ' ').trim();
     return `<a class="d-rel${kindClass(group.type)}" href="job-details/${entry.slug}/"><b>${kindLabel(group.type)}</b>${escapeHTML(text)}</a>`;
   }).join('\n');
-  return `<section class="d-index-group" id="${group.anchor}"><h2 class="d-section-title">${group.title}</h2><p class="d-index-count">${byType(group.type).length} live listings, in alphabetical order. Each opens the full summary and the official source link.</p><div class="d-related-list">\n${rows}\n</div></section>`;
+  return `<section class="d-index-group" id="${group.anchor}"><h2 class="d-section-title">${icon(group.type, 'd-ic d-index-h-ic')}${group.title}</h2><p class="d-index-count">${byType(group.type).length} live listings, in alphabetical order. Each opens the full summary and the official source link.</p><div class="d-related-list">\n${rows}\n</div></section>`;
 }).join('\n');
 const indexCanonical = 'https://sarkarijobsplus.com/all-jobs.html';
 const indexLd = `<script type="application/ld+json">${JSON.stringify({
@@ -456,10 +495,11 @@ const indexHtml = `<!doctype html>
 <title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d5">
+<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d6">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
+${iconSprite()}
 <div class="tricolor-strip"></div>
 <header><div class="container nav-wrap">
 <a class="logo" href="./"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
@@ -476,7 +516,7 @@ const indexHtml = `<!doctype html>
 <nav class="d-crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span class="d-sep" aria-hidden="true"></span><span>All listings</span></nav>
 <span class="d-ribbon">Index</span>
 <h1>Every listing on SarkariJobs+</h1>
-<div class="d-chiprow"><span class="d-chip">🔔 ${entries.length} live listings</span><span class="d-chip">🗂 Jobs, admit cards, results</span><span class="d-chip">🔗 Official source on every page</span></div>
+<div class="d-chiprow"><span class="d-chip">${icon('bell', 'd-ic d-chip-ic')}${entries.length} live listings</span><span class="d-chip">${icon('folder', 'd-ic d-chip-ic')}Jobs, admit cards, results</span><span class="d-chip">${icon('open', 'd-ic d-chip-ic')}Official source on every page</span></div>
 <p class="d-lead" style="margin-top:14px">Plain-HTML index of everything the tracker currently follows. Use it to jump straight to a listing instead of scrolling the filterable hubs. Dates, fees and vacancy counts are summarised from the recruiting authority's own notice — always confirm on the official page before applying.</p>
 </section>
 <section class="d-index-jump" aria-label="Jump to a section">${jumpLinks}</section>
