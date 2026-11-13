@@ -248,9 +248,86 @@ for (const item of payload.jobs || []) {
 }
 const kindLabel = type => type === 'admit' ? 'Admit' : type === 'result' ? 'Result' : 'Job';
 const kindClass = type => type === 'admit' ? ' d-rel--admit' : type === 'result' ? ' d-rel--result' : '';
+
+// ---- Duplicate consolidation ----
+// The feed ingests the same official notice from several competitors, and each
+// copy arrives with a different opaque URL token. Left alone that produces
+// several near-identical pages competing for one query (one UPPSC result
+// arrived ten times). Duplicates keep their URL so old links still resolve, but
+// they canonicalise to the most complete copy, drop out of the sitemap, and are
+// never used as internal-link targets.
+//
+// The key needs the host as well as the title: three different state commissions
+// legitimately publish a page titled exactly "Final Results", so title alone
+// would wrongly merge them.
+const normalizeTitle = value => String(value || '')
+  .toLowerCase()
+  .replace(/^\s*\d{1,2}\s+[a-z]{3,9}\s+\d{4}\s+/, '') // leading "07 Dec 2026 "
+  .replace(/[^a-z0-9]+/g, ' ')
+  .trim();
+const hostOf = value => {
+  try { return new URL(String(value)).host.replace(/^www\./, ''); } catch { return ''; }
+};
+const completeness = item => Object.values(item)
+  .filter(value => value !== null && value !== undefined && value !== ''
+    && !(Array.isArray(value) && value.length === 0)
+    && !(typeof value === 'object' && !Array.isArray(value))).length;
+
+const duplicateGroups = new Map();
+for (const entry of entries) {
+  const key = `${normalizeTitle(entry.item.title)}|${hostOf(entry.item.officialLink || entry.item.link)}`;
+  if (!duplicateGroups.has(key)) duplicateGroups.set(key, []);
+  duplicateGroups.get(key).push(entry);
+}
+const canonicalOf = new Map(); // duplicate slug -> primary slug
+for (const list of duplicateGroups.values()) {
+  if (list.length < 2) continue;
+  const ranked = [...list].sort((a, b) =>
+    completeness(b.item) - completeness(a.item) || String(a.slug).localeCompare(String(b.slug)));
+  for (const duplicate of ranked.slice(1)) canonicalOf.set(duplicate.slug, ranked[0].slug);
+}
+const primaryEntries = entries.filter(entry => !canonicalOf.has(entry.slug));
+
+// ---- Titles ----
+// Some feeds expose only a page heading ("Final Results") with the subject
+// nowhere in it. Appending the state or category is derived from the record,
+// not invented, and it stops several pages sharing one identical <title>.
+const isGenericTitle = title => {
+  const value = String(title || '').trim();
+  return value.length < 24 || /^(?:final results?|results?|notices?|admit cards?|home|click here|latest updates?)$/i.test(value);
+};
+const displayTitleFor = item => {
+  const title = String(item.title || '').replace(/\s+/g, ' ').trim();
+  if (!isGenericTitle(title)) return title;
+  const qualifier = [item.state, item.category, item.organization]
+    .map(value => String(value || '').trim())
+    .find(value => value && value.length > 2 && !title.toLowerCase().includes(value.toLowerCase()));
+  return qualifier ? `${title} — ${qualifier}` : title;
+};
+
+// Meta descriptions are truncated in search results past ~155-160 characters,
+// so compose a short factual line instead of prefixing the full title.
+const clampText = (value, max) => {
+  const text = String(value || '').replace(/\s+/g, ' ').trim();
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const space = cut.lastIndexOf(' ');
+  return (space > max * 0.55 ? cut.slice(0, space) : cut).replace(/[\s,;:.—–-]+$/, '');
+};
+const descriptionFor = (item, kind) => {
+  const organization = String(item.organization || 'the recruiting authority').replace(/\s+/g, ' ').trim();
+  const facts = [];
+  if (item.vacancies) facts.push(`${item.vacancies} vacancies`);
+  if (item.lastDate) facts.push(`last date ${date(item.lastDate)}`);
+  if (item.examDate) facts.push(`exam ${date(item.examDate)}`);
+  if (item.resultDate) facts.push(`declared ${date(item.resultDate)}`);
+  const detail = facts.length ? facts.join(', ') : 'key dates and the official source link';
+  return clampText(`${displayTitleFor(item)} — ${kind.toLowerCase()} from ${organization}: ${detail}.`, 155);
+};
+
 const relatedFor = (entry, limit = 6) => {
   const { item, slug, type } = entry;
-  const scored = entries
+  const scored = primaryEntries
     .filter(other => other.slug !== slug)
     .map(other => {
       let score = 0;
@@ -274,7 +351,7 @@ for (const item of payload.jobs || []) {
   const slug = slugFor(item);
   const directory = path.join(output, slug);
   fs.mkdirSync(directory, { recursive: true });
-  const title = escapeHTML(item.title);
+  const title = escapeHTML(displayTitleFor(item));
   const kind = listingType(item);
   const type = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
   const verifiedSummary = `<p class="d-lead">${summaryFor(item, kind)}</p>`;
@@ -349,7 +426,8 @@ for (const item of payload.jobs || []) {
       { '@type': 'ListItem', position: 3, name: String(item.title || '') }
     ]
   }).replace(/</g, '\\u003c')}</script>`;
-  const canonical = `https://sarkarijobsplus.com/job-details/${slug}/`;
+  const primarySlug = canonicalOf.get(slug);
+  const canonical = `https://sarkarijobsplus.com/job-details/${primarySlug || slug}/`;
   // Sibling links keep every listing reachable in one hop from another listing.
   const related = relatedFor({ item, slug, kind, type });
   const relatedLinks = related.map(rel => {
@@ -362,9 +440,9 @@ for (const item of payload.jobs || []) {
     : '';
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${title} | SarkariJobs+</title><meta name="description" content="Key dates and source links for ${title} listed by ${escapeHTML(names.base)}. Verify eligibility and instructions in the official recruitment notice.">
+<title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
-<meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(names.base)} — ${escapeHTML(kind)}: key dates and the official link."><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
+<meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
 <link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d6">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
@@ -456,7 +534,7 @@ ${relatedHtml}
   else if (rawSitemap.includes(`/job-details/${slug}/`)) lastmod = item.publishedDate || null;
   else lastmod = feedDate;
   nextLastmodState[slug] = { hash: pageHash, lastmod };
-  urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
+  if (!canonicalOf.has(slug)) urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
 }
 
 // ---- Crawlable full index (/all-jobs.html) ----
@@ -468,7 +546,7 @@ const groups = [
   { type: 'admit', title: 'Admit cards', anchor: 'admit-cards' },
   { type: 'result', title: 'Results', anchor: 'results' }
 ];
-const byType = type => entries
+const byType = type => primaryEntries
   .filter(entry => entry.type === type)
   .sort((a, b) => String(a.item.title || '').localeCompare(String(b.item.title || '')));
 const jumpLinks = groups
