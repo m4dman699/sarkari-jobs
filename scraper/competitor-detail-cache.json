@@ -24778,11 +24778,11 @@
     }
   },
   "https://www.freejobalert.com/articles/ktet-hall-ticket-2026-3077797": {
-    "attemptedAt": "2026-11-09T09:50:52.852Z",
+    "attemptedAt": "2026-11-13T09:34:24.219Z",
     "parser": "v2",
     "details": {
       "organization": "KTET Hall Ticket 2026 Out - Download Kerala TET",
-      "publishedDate": "2026-11-05",
+      "publishedDate": "2026-11-13",
       "openDate": "2026-09-23",
       "lastDate": "2026-10-03",
       "examDate": "2026-11-15",
@@ -24800,7 +24800,7 @@
           "dateText": "4 November 2026"
         },
         {
-          "label": "Exam Dates",
+          "label": "KTET Exam Dates",
           "date": "2026-11-15",
           "dateText": "14 and 15 November 2026"
         },
@@ -24810,7 +24810,7 @@
           "dateText": "23 September 2026"
         },
         {
-          "label": "Online Application Last Date",
+          "label": "Application Last Date",
           "date": "2026-10-03",
           "dateText": "3 October 2026"
         },
@@ -24825,12 +24825,12 @@
           "dateText": "4 November 2026"
         },
         {
-          "label": "KTET Category I and II Exam Date",
+          "label": "KTET Category I and II Exam",
           "date": "2026-11-14",
           "dateText": "14 November 2026"
         },
         {
-          "label": "KTET Category III and IV Exam Date",
+          "label": "KTET Category III and IV Exam",
           "date": "2026-11-15",
           "dateText": "15 November 2026"
         }
@@ -24839,20 +24839,16 @@
       "notificationLink": "https://ktet.kerala.gov.in/notification.php",
       "officialLinks": [
         {
+          "url": "https://ktet.kerala.gov.in/",
+          "label": "Official Website"
+        },
+        {
           "url": "https://ktet.kerala.gov.in/Registration/candidate_hallticket.php",
           "label": "KTET Hall Ticket 2026"
         },
         {
-          "url": "https://ktet.kerala.gov.in/",
-          "label": "KTET Official Website"
-        },
-        {
           "url": "https://ktet.kerala.gov.in/notification.php",
           "label": "KTET September 2026 Notification"
-        },
-        {
-          "url": "https://ktet.kerala.gov.in/exam_registrations_informations.php",
-          "label": "KTET September 2026 Examination Details"
         }
       ]
     }
@@ -29403,36 +29399,51 @@
     }
   },
   "https://www.freejobalert.com/articles/rrc-nr-recruitment-2026-act-apprentice-3079404": {
-    "attemptedAt": "2026-11-12T09:52:41.441Z",
+    "attemptedAt": "2026-11-13T09:34:24.127Z",
     "parser": "v2",
     "details": {
-      "organization": "Railway Recruitment Cell, Northern Railway (RRC NR), New Delhi, Delhi",
-      "publishedDate": "2026-11-11",
-      "openDate": null,
-      "lastDate": null,
+      "organization": "Railway Recruitment Cell (RRC), Northern Railway",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-11-11",
+      "lastDate": "2026-12-11",
       "examDate": null,
       "resultDate": null,
       "admitCardDate": null,
       "interviewDate": null,
-      "vacancies": "",
-      "ageLimit": "Should have completed 15 years of age and should not have completed 24 years of age (as on 11 December 2026)",
-      "eligibility": "10th class (10+2 system) with minimum 50% marks in aggregate from a recognised Board, and ITI in the relevant trade (NCVT/SCVT), passed by 06/11/2026",
-      "applicationFee": "for this recruitment? Others: Rs. 100 (non-refundable). SC/ST/PwBD/Women: No fee. Q5. What is the",
+      "vacancies": "4,651",
+      "ageLimit": "15 to 24 Years (as on 11 December 2026)",
+      "eligibility": "10th Pass (Minimum 50% Marks) + ITI in Relevant Trade",
+      "applicationFee": "before submitting their forms. RRC NR Apprentice Recruitment 2026 Overview Organisation Railway Recruitment Cell (RRC), Northern Railway Post Name Act Apprentice Total Vacancies 4,651 Advertisement Number RRC/NR/03/2026/Act Apprentice Job Type Apprenticeship Training (2026–27) Qualification 10th Pass (Minimum 50% Marks",
       "milestones": [
         {
-          "label": "Start Date",
+          "label": "Application Start Date",
           "date": "2026-11-11",
           "dateText": "11 November 2026"
         },
         {
-          "label": "Last Date",
+          "label": "Last Date to Apply",
           "date": "2026-12-11",
           "dateText": "11 December 2026"
         },
         {
-          "label": "Notification date",
+          "label": "Notification Release Date",
           "date": "2026-11-06",
-          "dateText": "6 November 2026"
+          "dateText": "06 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026 (11:59 PM)"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
         }
       ],
       "officialLink": "https://app.rrcnr.org/",
@@ -29440,15 +29451,15 @@
       "officialLinks": [
         {
           "url": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
-          "label": "Official Notification PDF"
+          "label": "Official Notification"
+        },
+        {
+          "url": "https://rrcnr.org/",
+          "label": "Official Website"
         },
         {
           "url": "https://app.rrcnr.org/",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://www.rrcnr.org",
-          "label": "Official Website"
+          "label": "RRC NR Apprentice Apply Online 2026"
         }
       ]
     }
@@ -29896,7 +29907,7 @@
     }
   },
   "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153": {
-    "attemptedAt": "2026-11-12T09:52:41.567Z",
+    "attemptedAt": "2026-11-13T09:34:24.192Z",
     "parser": "v2",
     "details": {
       "organization": "Export-Import Bank of India (India Exim Bank)",
@@ -30082,15 +30093,15 @@
     }
   },
   "https://www.freejobalert.com/articles/sbi-clerk-prelims-result-2026-3080155": {
-    "attemptedAt": "2026-11-12T09:52:41.323Z",
+    "attemptedAt": "2026-11-13T09:34:24.175Z",
     "parser": "v2",
     "details": {
       "organization": "SBI Clerk Prelims",
-      "publishedDate": "2026-11-12",
+      "publishedDate": "2026-11-13",
       "openDate": "2026-08-11",
       "lastDate": "2026-08-31",
       "examDate": "2026-11-26",
-      "resultDate": null,
+      "resultDate": "2026-11-14",
       "admitCardDate": null,
       "interviewDate": null,
       "vacancies": "9,766",
@@ -30099,48 +30110,68 @@
       "applicationFee": "",
       "milestones": [
         {
-          "label": "Preliminary Exam Dates",
+          "label": "Prelims Exam Dates",
           "date": "2026-09-27",
           "dateText": "26 and 27 September 2026"
+        },
+        {
+          "label": "Expected Result Date",
+          "date": "2026-11-14",
+          "dateText": "13–14 November 2026 (Unconfirmed)"
         },
         {
           "label": "Mains Exam Date",
           "date": "2026-11-26",
-          "dateText": "26 November 2026"
+          "dateText": "26 November 2026 (Tentative)"
         },
         {
-          "label": "Application Last Date",
+          "label": "SBI Clerk Notification Release",
+          "date": "2026-08-11",
+          "dateText": "11 August 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-08-11",
+          "dateText": "11 August 2026"
+        },
+        {
+          "label": "Online Application Last Date",
           "date": "2026-08-31",
           "dateText": "31 August 2026"
         },
         {
-          "label": "Prelims Examination",
+          "label": "SBI Clerk Prelims Exam",
           "date": "2026-09-27",
           "dateText": "26 and 27 September 2026"
         },
         {
-          "label": "Mains Date",
+          "label": "SBI Clerk Prelims Result Expected Date",
+          "date": "2026-11-14",
+          "dateText": "13–14 November 2026 (Unconfirmed)"
+        },
+        {
+          "label": "SBI Clerk Mains Examination",
           "date": "2026-11-26",
-          "dateText": "26 November 2026"
+          "dateText": "26 November 2026 (Tentative)"
         }
       ],
-      "officialLink": "https://sbi.bank.in/web/careers/current-openings1",
+      "officialLink": "https://sbi.bank.in/web/careers/current-openings",
       "officialLinks": [
         {
-          "url": "https://sbi.bank.in",
+          "url": "https://sbi.bank.in/",
           "label": "Official Website"
         },
         {
-          "url": "https://sbi.bank.in/web/careers/current-openings1",
+          "url": "https://sbi.bank.in/web/careers/current-openings",
           "label": "SBI Clerk Prelims Result 2026"
         },
         {
-          "url": "https://sbi.bank.in/web/careers",
+          "url": "https://sbi.bank.in/en/web/careers/recruitment-results",
           "label": "SBI Recruitment Results"
         },
         {
-          "url": "https://sbi.bank.in/",
-          "label": "SBI Official Website"
+          "url": "https://sbi.bank.in/web/careers",
+          "label": "SBI Careers Official Website"
         }
       ]
     }
@@ -30689,6 +30720,342 @@
         {
           "url": "https://pnb.bank.in/Recruitments.aspx",
           "label": "PNB LBO Result 2026 (Candidates Qualified in Online Written Examination PDF)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iocl-eastern-region-apprentice-recruitment-2026-3080655": {
+    "attemptedAt": "2026-11-13T09:34:24.257Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Oil Corporation Limited (IOCL)",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-11-13",
+      "lastDate": "2026-12-12",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "409",
+      "ageLimit": "18 to 24 Years",
+      "eligibility": "10th + ITI / 12th / Diploma / Graduation, Discipline-Wise",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Last Date for NAPS/NATS Application",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date for Microsoft Form",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026"
+        },
+        {
+          "label": "Age and Qualification Reckoning Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        }
+      ],
+      "officialLink": "https://www.apprenticeshipindia.gov.in/",
+      "notificationLink": "https://iocl.com/admin/img/Apprenticeships/Files/63db2afaa13e47c28e10030d5da6b525.pdf",
+      "officialLinks": [
+        {
+          "url": "https://iocl.com/apprenticeships",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.apprenticeshipindia.gov.in/",
+          "label": "Apply Online - NAPS (ITI/DEO)"
+        },
+        {
+          "url": "https://nats.education.gov.in/student_register.php",
+          "label": "Apply Online - NATS (Diploma/Graduate)"
+        },
+        {
+          "url": "https://iocl.com/admin/img/Apprenticeships/Files/63db2afaa13e47c28e10030d5da6b525.pdf",
+          "label": "Official Notification and Apprenticeship Updates"
+        },
+        {
+          "url": "https://iocl.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://forms.cloud.microsoft/r/5nNkU44Cuc",
+          "label": "Mandatory Microsoft Form"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/allahabad-high-court-private-secretary-admit-card-2026-3080871": {
+    "attemptedAt": "2026-11-13T09:34:24.282Z",
+    "parser": "v2",
+    "details": {
+      "organization": "High Court of Judicature at Allahabad",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-03-12",
+      "lastDate": "2026-04-01",
+      "examDate": "2026-11-17",
+      "resultDate": null,
+      "admitCardDate": "2026-11-13",
+      "interviewDate": null,
+      "vacancies": "195",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-03-12",
+          "dateText": "12 March 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-03-12",
+          "dateText": "12 March 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-04-01",
+          "dateText": "1 April 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-04-02",
+          "dateText": "2 April 2026"
+        },
+        {
+          "label": "Exam City Intimation Slip Release",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Stage-I Admit Card Release",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Stage-I Examination Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/970/103300/0y8mziEd1Eo3Ftg5pK/login.html",
+      "officialLinks": [
+        {
+          "url": "https://allahabadhighcourt.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cdn.digialm.com//EForms/configuredHtml/970/103300/0y8mziEd1Eo3Ftg5pK/login.html",
+          "label": "Download Private Secretary Admit Card 2026"
+        },
+        {
+          "url": "https://www.allahabadhighcourt.in/event/event_27547_13-11-2026.pdf",
+          "label": "Official Admit Card Release Notice PDF"
+        },
+        {
+          "url": "https://www.allahabadhighcourt.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ksp-constable-result-2026-3080766": {
+    "attemptedAt": "2026-11-13T09:34:24.297Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Karnataka State Police (KSP)",
+      "publishedDate": "2026-11-13",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-12",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,991",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "KSP Constable Result 2026",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        }
+      ],
+      "officialLink": "https://ksp-recruitment.in/",
+      "officialLinks": [
+        {
+          "url": "https://ksp-recruitment.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ksp-recruitment.in/",
+          "label": "KSP Constable Result 2026 - District-Wise Merit List"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rssb-teaching-associate-admit-card-2026-3080784": {
+    "attemptedAt": "2026-11-13T09:34:24.318Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rajasthan Staff Selection Board (RSSB)",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-05-05",
+      "lastDate": "2026-06-03",
+      "examDate": "2026-12-21",
+      "resultDate": null,
+      "admitCardDate": "2026-11-12",
+      "interviewDate": null,
+      "vacancies": "3,540",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Paper I Exam Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Paper II Exam Dates",
+          "date": "2026-12-21",
+          "dateText": "7 to 21 December 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-04-30",
+          "dateText": "30 April 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-05-05",
+          "dateText": "5 May 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-06-03",
+          "dateText": "3 June 2026"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/admitcards",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/admitcards",
+          "label": "Teaching Associate Admit Card 2026"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/storage/news_item/1794486797.pdf",
+          "label": "RSSB Official Admit Card Notice"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "RSSB Official Website"
+        },
+        {
+          "url": "https://recruitment.rajasthan.gov.in/",
+          "label": "Rajasthan Recruitment Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aai-je-civil-2nd-phase-result-2026-3080559": {
+    "attemptedAt": "2026-11-13T09:34:24.336Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Airports Authority of India (AAI)",
+      "publishedDate": "2026-11-12",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-10",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Date",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
+        },
+        {
+          "label": "2nd Phase Shortlist Notice Date",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
+        }
+      ],
+      "officialLink": "https://aai.aero",
+      "officialLinks": [
+        {
+          "url": "https://aai.aero",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.aai.aero/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.aai.aero/en/careers/recruitment",
+          "label": "AAI Careers Page"
         }
       ]
     }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T09:52:41.688Z",
-  "jobsGeneratedAt": "2026-11-12T09:52:40.027Z",
+  "generatedAt": "2026-11-13T09:34:24.343Z",
+  "jobsGeneratedAt": "2026-11-13T09:34:23.068Z",
   "partial": true,
-  "total": 609,
+  "total": 613,
   "quality": {
-    "jobsMissingPublicationDate": 56,
+    "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 80,
     "genericNavigationItems": 0
   },
@@ -15,24 +15,19 @@
       "error": "HTTP 403"
     },
     {
-      "source": "IBPS",
-      "url": "https://www.ibps.in/",
-      "error": "unable to verify the first certificate"
-    },
-    {
       "source": "UPSC",
       "url": "https://upsc.gov.in/whats-new",
-      "error": "timeout"
-    },
-    {
-      "source": "Indian Army",
-      "url": "https://joinindianarmy.nic.in/",
       "error": "timeout"
     },
     {
       "source": "Railway Recruitment Boards",
       "url": "https://rrb.indianrailways.gov.in/",
       "error": "The operation was aborted"
+    },
+    {
+      "source": "Indian Army",
+      "url": "https://joinindianarmy.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "Indian Navy",
@@ -55,14 +50,14 @@
       "error": "timeout"
     },
     {
-      "source": "Supreme Court of India",
-      "url": "https://www.sci.gov.in/recruitments/",
-      "error": "HTTP 403"
-    },
-    {
       "source": "SAIL",
       "url": "https://sail.co.in/web/careers",
       "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/recruitments/",
+      "error": "HTTP 403"
     },
     {
       "source": "NIC e-Pariksha",
@@ -85,13 +80,18 @@
       "error": "timeout"
     },
     {
+      "source": "BPSC",
+      "url": "https://www.bpsc.bih.nic.in/",
+      "error": "timeout"
+    },
+    {
       "source": "RPSC",
       "url": "https://rpsc.rajasthan.gov.in/",
       "error": ""
     },
     {
-      "source": "BPSC",
-      "url": "https://www.bpsc.bih.nic.in/",
+      "source": "WBPSC",
+      "url": "https://wbpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -105,33 +105,23 @@
       "error": "Parse Error: Invalid header token"
     },
     {
-      "source": "WBPSC",
-      "url": "https://wbpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
       "error": ""
     },
     {
-      "source": "Kerala PSC",
-      "url": "https://www.keralapsc.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "APPSC",
-      "url": "https://psc.ap.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "TGPSC",
       "url": "https://www.tgpsc.gov.in/",
-      "error": "timeout"
+      "error": "HTTP 403"
     },
     {
       "source": "HPPSC",
       "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO C0CCB64DEE750000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+    },
+    {
+      "source": "APPSC",
+      "url": "https://psc.ap.gov.in/",
       "error": "timeout"
     },
     {
@@ -142,12 +132,17 @@
     {
       "source": "CGPSC",
       "url": "https://psc.cg.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "UKPSC",
       "url": "https://ukpsc.gov.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Goa PSC",
+      "url": "https://gpsc.goa.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "PPSC",
@@ -158,11 +153,6 @@
       "source": "APSC",
       "url": "https://apsc.nic.in/",
       "error": "timeout"
-    },
-    {
-      "source": "Goa PSC",
-      "url": "https://gpsc.goa.gov.in/",
-      "error": "HTTP 403"
     },
     {
       "source": "JKPSC",
@@ -8955,6 +8945,92 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-1a5cc25da16e00d9",
+      "type": "admit-card",
+      "title": "Allahabad High Court Private Secretary Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "All India",
+      "link": "https://cdn.digialm.com//EForms/configuredHtml/970/103300/0y8mziEd1Eo3Ftg5pK/login.html",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/allahabad-high-court-private-secretary-admit-card-2026-3080871",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-13",
+      "organization": "High Court of Judicature at Allahabad",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-03-12",
+      "lastDate": "2026-04-01",
+      "examDate": "2026-11-17",
+      "vacancies": "195",
+      "officialLinks": [
+        {
+          "url": "https://allahabadhighcourt.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cdn.digialm.com//EForms/configuredHtml/970/103300/0y8mziEd1Eo3Ftg5pK/login.html",
+          "label": "Download Private Secretary Admit Card 2026"
+        },
+        {
+          "url": "https://www.allahabadhighcourt.in/event/event_27547_13-11-2026.pdf",
+          "label": "Official Admit Card Release Notice PDF"
+        },
+        {
+          "url": "https://www.allahabadhighcourt.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/970/103300/0y8mziEd1Eo3Ftg5pK/login.html",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-03-12",
+          "dateText": "12 March 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-03-12",
+          "dateText": "12 March 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-04-01",
+          "dateText": "1 April 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-04-02",
+          "dateText": "2 April 2026"
+        },
+        {
+          "label": "Exam City Intimation Slip Release",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Stage-I Admit Card Release",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Stage-I Examination Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-3641ba6b60e9e9d4",
       "type": "result",
       "title": "Indian Navy SSR / MR INET Result 2026",
@@ -9942,6 +10018,86 @@
           "label": "BPSC 72th Pre Exam Date",
           "date": "2026-10-25",
           "dateText": "25/10/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-0e1e2552129b542a",
+      "type": "admit-card",
+      "title": "RSSB Teaching Associate Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://rssb.rajasthan.gov.in/admitcards",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rssb-teaching-associate-admit-card-2026-3080784",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-13",
+      "organization": "Rajasthan Staff Selection Board (RSSB)",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-05-05",
+      "lastDate": "2026-06-03",
+      "examDate": "2026-12-21",
+      "vacancies": "3,540",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/admitcards",
+          "label": "Teaching Associate Admit Card 2026"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/storage/news_item/1794486797.pdf",
+          "label": "RSSB Official Admit Card Notice"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "RSSB Official Website"
+        },
+        {
+          "url": "https://recruitment.rajasthan.gov.in/",
+          "label": "Rajasthan Recruitment Portal"
+        }
+      ],
+      "officialLink": "https://rssb.rajasthan.gov.in/admitcards",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Paper I Exam Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Paper II Exam Dates",
+          "date": "2026-12-21",
+          "dateText": "7 to 21 December 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-04-30",
+          "dateText": "30 April 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-05-05",
+          "dateText": "5 May 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-06-03",
+          "dateText": "3 June 2026"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
         }
       ]
     },
@@ -14924,6 +15080,14 @@
         {
           "url": "https://sbi.bank.in",
           "label": "Official Website"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers/current-openings",
+          "label": "SBI Clerk Prelims Result 2026"
+        },
+        {
+          "url": "https://sbi.bank.in/en/web/careers/recruitment-results",
+          "label": "SBI Recruitment Results"
         }
       ],
       "officialLink": "https://sbi.bank.in/web/careers/current-openings1",
@@ -14953,7 +15117,8 @@
           "date": "2026-11-26",
           "dateText": "26 November 2026"
         }
-      ]
+      ],
+      "resultDate": "2026-11-14"
     },
     {
       "id": "competitor-freejobalert-794abd494fe0500b",
@@ -16162,6 +16327,84 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-51de82651ea4caaf",
+      "type": "admit-card",
+      "title": "KTET Hall Ticket 2026 Out",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://ktet.kerala.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ktet-hall-ticket-2026-3077797",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-13",
+      "organization": "KTET Hall Ticket 2026 Out - Download Kerala TET",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-09-23",
+      "lastDate": "2026-10-03",
+      "examDate": "2026-11-15",
+      "eligibility": "September 2026",
+      "notificationLink": "https://ktet.kerala.gov.in/notification.php",
+      "officialLinks": [
+        {
+          "url": "https://ktet.kerala.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ktet.kerala.gov.in/Registration/candidate_hallticket.php",
+          "label": "KTET Hall Ticket 2026"
+        },
+        {
+          "url": "https://ktet.kerala.gov.in/notification.php",
+          "label": "KTET September 2026 Notification"
+        }
+      ],
+      "officialLink": "https://ktet.kerala.gov.in/",
+      "milestones": [
+        {
+          "label": "Hall Ticket Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "KTET Exam Dates",
+          "date": "2026-11-15",
+          "dateText": "14 and 15 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-23",
+          "dateText": "23 September 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-10-03",
+          "dateText": "3 October 2026"
+        },
+        {
+          "label": "Final Application Printout Date",
+          "date": "2026-10-03",
+          "dateText": "3 October 2026"
+        },
+        {
+          "label": "KTET Hall Ticket Release Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "KTET Category I and II Exam",
+          "date": "2026-11-14",
+          "dateText": "14 November 2026"
+        },
+        {
+          "label": "KTET Category III and IV Exam",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-1bf1480116ce6b43",
       "type": "admit-card",
       "title": "UPESSC UP Special TET Admit Card 2026",
@@ -16871,92 +17114,6 @@
           "label": "PM Pay Exam Fee Last Date",
           "date": "2026-10-21",
           "dateText": "21/10/2026"
-        }
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wcmQxMDA5MjAyNnJlYy5wZGY",
-      "type": "job",
-      "title": "Planning & Research - Filling up the post of Joint Director - Group-A (Gazetted / Non-Ministerial) in Level-10 of Pay Matrix on deputation basis - Reg.",
-      "source": "Government of Puducherry",
-      "category": "State PSC",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/prd10092026rec.pdf",
-      "openDate": null,
-      "lastDate": "2026-11-11",
-      "examDate": null,
-      "publishedDate": "2026-09-10"
-    },
-    {
-      "id": "competitor-sarkariresult-b17ff47fc9d62bf7",
-      "type": "job",
-      "title": "DSSSB Sweeper & Chowkidar Online Form 2026",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://dsssb.delhi.gov.in/",
-      "lastDate": "2026-11-11",
-      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
-      "publishedDate": "2026-10-20",
-      "openDate": "2026-10-13",
-      "vacancies": "25",
-      "eligibility": "Sweeper / Safai karamchari / Chowkidar 10th pass or equivalent from a recognized board.",
-      "applicationFee": "For General, OBC, EWS : ₹ 100/- For SC / ST, PH, Women : ₹ 00/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "https://dsssb.delhi.gov.in/",
-      "organization": "Delhi Subordinate Services Selection Board (DSSSB)"
-    },
-    {
-      "id": "competitor-sarkariresult-afc99b508677d55a",
-      "type": "job",
-      "title": "Delhi DSSSB Sweeper, Safai Karamchari, Chowkidar Post Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Defence",
-      "state": "Delhi",
-      "link": "https://dsssbonline.nic.in/",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/delhi-dsssb-advt-no-05-2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-11-11",
-      "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
-      "publishedDate": "2026-10-13",
-      "openDate": "2026-10-13",
-      "ageLimit": "18–27 years",
-      "eligibility": "Class 10th Matriculation Exam Passed or equivalent from a recognized board.",
-      "applicationFee": "General / OBC / EWS : 100/- SC / ST / PH : 0/- Female Candidate : 0/-",
-      "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026_1.pdf",
-      "officialLinks": [
-        {
-          "url": "https://dsssbonline.nic.in/",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_05_2026_1.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://dsssb.delhi.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://dsssbonline.nic.in/",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-13",
-          "dateText": "13 October 2026 | 04:59 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-11",
-          "dateText": "11/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-11",
-          "dateText": "11/11/2026"
         }
       ]
     },
@@ -19548,6 +19705,10 @@
         {
           "url": "https://app.rrcnr.org/",
           "label": "Apply Online"
+        },
+        {
+          "url": "https://rrcnr.org/",
+          "label": "Official Website"
         }
       ],
       "officialLink": "https://rrccr.com/TradeApp/login/Index",
@@ -19587,7 +19748,8 @@
           "date": "2026-12-02",
           "dateText": "2 December 2026, 5:00 PM"
         }
-      ]
+      ],
+      "vacancies": "4,651"
     },
     {
       "id": "competitor-sarkariresult-bf6b76592d5d19e0",
@@ -19937,7 +20099,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-12",
+      "factCheckedAt": "2026-11-13",
       "organization": "Export-Import Bank of India (India Exim Bank)",
       "publishedDate": "2026-11-11",
       "lastDate": "2026-12-11",
@@ -19948,6 +20110,97 @@
           "label": "Last Date for Apply Online",
           "date": "2026-12-11",
           "dateText": "11-12-2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-81c3f59c13cf4f4b",
+      "type": "job",
+      "title": "IOCL Eastern Region Apprentice Online Form 2026 (409 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "PSU",
+      "state": "See linked notice",
+      "link": "https://www.apprenticeshipindia.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/iocl-eastern-region-apprentice-recruitment-2026-3080655",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-13",
+      "organization": "Indian Oil Corporation Limited (IOCL)",
+      "publishedDate": "2026-11-13",
+      "openDate": "2026-11-13",
+      "lastDate": "2026-12-12",
+      "vacancies": "409",
+      "ageLimit": "18 to 24 Years",
+      "eligibility": "10th + ITI / 12th / Diploma / Graduation, Discipline-Wise",
+      "notificationLink": "https://iocl.com/admin/img/Apprenticeships/Files/63db2afaa13e47c28e10030d5da6b525.pdf",
+      "officialLinks": [
+        {
+          "url": "https://iocl.com/apprenticeships",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.apprenticeshipindia.gov.in/",
+          "label": "Apply Online - NAPS (ITI/DEO)"
+        },
+        {
+          "url": "https://nats.education.gov.in/student_register.php",
+          "label": "Apply Online - NATS (Diploma/Graduate)"
+        },
+        {
+          "url": "https://iocl.com/admin/img/Apprenticeships/Files/63db2afaa13e47c28e10030d5da6b525.pdf",
+          "label": "Official Notification and Apprenticeship Updates"
+        },
+        {
+          "url": "https://iocl.com/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://forms.cloud.microsoft/r/5nNkU44Cuc",
+          "label": "Mandatory Microsoft Form"
+        }
+      ],
+      "officialLink": "https://www.apprenticeshipindia.gov.in/",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Last Date for NAPS/NATS Application",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date for Microsoft Form",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026"
+        },
+        {
+          "label": "Age and Qualification Reckoning Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
         }
       ]
     },
@@ -20115,6 +20368,32 @@
       ]
     },
     {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE5QTJ0WmpYNnlHVg",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq9A2tZjX6yGV",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE1eEVzRGJjRVVLZA",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq5xEsDbcEUKd",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2poUmJlSHYrV3g4Ng",
       "type": "result",
       "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY),..",
@@ -20219,6 +20498,32 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExMWtSNXNVeTVYUQ",
+      "type": "result",
+      "title": "12 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/58...",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq11kR5sUy5XQ",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-12"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHErNkVUQmpNTU56Ng",
+      "type": "result",
+      "title": "12 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR ANATOMY, S-08/44...",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq+6ETBjMMNz6",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-12"
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2puN203eHdMZHJ6WA",
       "type": "result",
       "title": "07 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY), ASSISTANT PROFESSOR MICROBIOLOGY, S-08/89",
@@ -20243,32 +20548,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-12-06"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2ppYWhIamUvTDhYYw",
-      "type": "result",
-      "title": "06 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR EMERGENCY MEDICINE, S-08/03",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjiahHje/L8Xc",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-06"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2prNWVGSUI4QWI0MQ",
-      "type": "result",
-      "title": "05 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR OTO-RHINO-LARYNGOLOGY(ENT), S-08/06",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjk5eFIB8Ab41",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-05"
     },
     {
       "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
@@ -20689,28 +20968,15 @@
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5MzE5MTQ4NTIyMzQy",
       "type": "job",
-      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II) New",
+      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
       "source": "NPSC",
       "category": "State PSC",
       "state": "Nagaland",
       "link": "https://npsc.nagaland.gov.in/notification/179319148522342",
       "openDate": null,
       "lastDate": null,
-      "examDate": "2026-10-26",
-      "publishedDate": "2026-10-26"
-    },
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9yZXN1bHRzLzE3OTMwMjMwNDM3MzA1OA",
-      "type": "result",
-      "title": "Notification No. NPSC/EXAM-5/2022 dt. 26.10.2026 (Written Results of Common Educational Services Examination 2026)",
-      "source": "NPSC",
-      "category": "Teaching",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/results/179302304373058",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-10-26",
-      "publishedDate": "2026-10-26"
+      "examDate": "2026-10-28",
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
@@ -30971,6 +31237,91 @@
           "label": "Provisional Result Notice Date",
           "date": "2026-11-11",
           "dateText": "11 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-2e97c3bcdcee0fe9",
+      "type": "result",
+      "title": "KSP Constable Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://ksp-recruitment.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ksp-constable-result-2026-3080766",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-13",
+      "organization": "Karnataka State Police (KSP)",
+      "publishedDate": "2026-11-13",
+      "resultDate": "2026-11-12",
+      "vacancies": "3,991",
+      "officialLinks": [
+        {
+          "url": "https://ksp-recruitment.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ksp-recruitment.in/",
+          "label": "KSP Constable Result 2026 - District-Wise Merit List"
+        }
+      ],
+      "officialLink": "https://ksp-recruitment.in/",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "KSP Constable Result 2026",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-0125e5f3096dfd7a",
+      "type": "result",
+      "title": "AAI JE Civil 2nd Phase Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "https://aai.aero",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/aai-je-civil-2nd-phase-result-2026-3080559",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-13",
+      "organization": "Airports Authority of India (AAI)",
+      "publishedDate": "2026-11-12",
+      "resultDate": "2026-11-10",
+      "officialLinks": [
+        {
+          "url": "https://aai.aero",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.aai.aero/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.aai.aero/en/careers/recruitment",
+          "label": "AAI Careers Page"
+        }
+      ],
+      "officialLink": "https://aai.aero",
+      "milestones": [
+        {
+          "label": "Result Date",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
+        },
+        {
+          "label": "2nd Phase Shortlist Notice Date",
+          "date": "2026-11-10",
+          "dateText": "10 November 2026"
         }
       ]
     }

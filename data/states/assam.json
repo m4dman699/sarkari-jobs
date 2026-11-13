@@ -1,7 +1,82 @@
 {
-  "generatedAt": "2026-11-12T09:52:40.027Z",
-  "total": 7,
+  "generatedAt": "2026-11-13T09:34:23.068Z",
+  "total": 8,
   "jobs": [
+    {
+      "id": "competitor-freejobalert-69f5d7e00b3d0cfe",
+      "type": "job",
+      "title": "Assam Rifles 354 Technical & Tradesman Rally 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Assam",
+      "link": "https://www.assamrifles.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/assam-riffles-technical-and-tradesman-recruitment-rally-notification-2026-3068597",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-12",
+      "organization": "Office of the Directorate General Assam Rifles",
+      "publishedDate": "2026-11-12",
+      "openDate": "2026-11-15",
+      "lastDate": "2026-12-14",
+      "vacancies": "354",
+      "ageLimit": "18–23 / 18–25 Years, Trade-Wise",
+      "eligibility": "10th / 12th / ITI / Diploma / Degree, Trade-Wise",
+      "applicationFee": "Rs. 100 / Exempted",
+      "notificationLink": "https://www.assamrifles.gov.in/ar-recruitment-pdf-viewer/9004",
+      "officialLinks": [
+        {
+          "url": "https://www.assamrifles.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.assamrifles.gov.in/ar-recruitment-pdf-viewer/9004",
+          "label": "Cancelled Notification PDF"
+        },
+        {
+          "url": "https://www.assamrifles.gov.in/ar-recruitment-pdf-viewer/8215",
+          "label": "Recruitment Notification"
+        }
+      ],
+      "officialLink": "https://www.assamrifles.gov.in/",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-07-01",
+          "dateText": "1 July 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Recruitment Rally Start Date",
+          "date": "2027-01-18",
+          "dateText": "18 January 2027 Onwards (Tentative)"
+        }
+      ]
+    },
     {
       "id": "aHR0cHM6Ly9hcHNjLm5pYy5pbi9ub3RpZl8yMDI2L05vdGlmXzExLTIwMjZfZUNGX05vXzgxOTc2NzExOS5wZGY",
       "type": "job",
