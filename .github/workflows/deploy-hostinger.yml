@@ -55,6 +55,10 @@ jobs:
           cp index.html category.html state.html results.html admit-cards.html about.html editorial-policy.html privacy.html contact.html all-jobs.html robots.txt sitemap.xml deployment-version.txt .deploy-site/
           cp -R assets css js data .deploy-site/
           cp -R upsc-cds-2-2026 .deploy-site/
+          # Sector guides are generated into guides/ by `npm run build:details`
+          # and listed in sitemap.xml. Without this copy they would never reach
+          # the server and every /guides/ URL would 404 in production.
+          cp -R guides .deploy-site/
           mkdir -p .deploy-shard-a
           mapfile -t detail_dirs < <(find job-details -mindepth 1 -maxdepth 1 -type d | sort)
           for index in "${!detail_dirs[@]}"; do
