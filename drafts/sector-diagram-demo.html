@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sector map — animated SVG demo | SarkariJobs+</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/detail.css?v=d5">
+<style>
+  .demo-wrap { max-width: 1020px; margin: 0 auto; padding: 26px 16px 60px; display: grid; gap: 22px; }
+  .demo-note { background: #fff7e6; border: 1px solid #f0c674; border-radius: 12px; padding: 14px 16px; font-size: .9rem; line-height: 1.6; color: #6b4a00; }
+
+  /* ---------- Sector map ---------- */
+  .map-card {
+    position: relative;
+    background:
+      radial-gradient(700px 260px at 85% -30%, rgba(255,153,51,.16), transparent 60%),
+      radial-gradient(600px 260px at -10% 120%, rgba(19,136,8,.14), transparent 60%),
+      linear-gradient(150deg, #101a3a 0%, #0a1128 100%);
+    border-radius: 22px;
+    padding: clamp(16px, 3vw, 30px);
+    color: #fff;
+    overflow: hidden;
+  }
+  .map-card::before {
+    content: ''; position: absolute; inset: 0 0 auto 0; height: 6px;
+    background: linear-gradient(90deg, #FF9933 0 38%, #fff 38% 62%, #138808 62% 100%);
+  }
+  .map-card h2 { margin: 6px 0 4px; font-size: clamp(1.05rem, 2.4vw, 1.35rem); }
+  .map-card p.sub { margin: 0 0 10px; color: #b9c6e2; font-size: .88rem; }
+  .map-svg { width: 100%; height: auto; display: block; }
+
+  .spoke {
+    stroke: rgba(185, 198, 226, .38);
+    stroke-width: 1.6;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: draw 900ms ease forwards;
+  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+
+  .node rect {
+    fill: rgba(255, 255, 255, .06);
+    stroke: rgba(255, 255, 255, .22);
+    stroke-width: 1;
+    rx: 10;
+    opacity: 0;
+    animation: pop 420ms ease forwards;
+  }
+  .node text { opacity: 0; animation: pop 420ms ease forwards; }
+  @keyframes pop { from { opacity: 0; } to { opacity: 1; } }
+
+  .node--rail rect { stroke: #FF9933; }
+  .node--bank rect { stroke: #7a4bd6; }
+  .node--ssc rect { stroke: #138808; }
+  .node--def rect { stroke: #d94f4f; }
+  .node--teach rect { stroke: #2f7fd4; }
+  .node--psu rect { stroke: #c9a227; }
+  .node--post rect { stroke: #d95f9a; }
+  .node--health rect { stroke: #21a179; }
+
+  .hub-circle {
+    fill: rgba(255, 153, 51, .14);
+    stroke: #FF9933;
+    stroke-width: 1.6;
+    transform-origin: center;
+    animation: pulse 3.2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.035); }
+  }
+  .node text.t1 { fill: #fff; font-size: 13px; font-weight: 700; }
+  .node text.t2 { fill: #b9c6e2; font-size: 10.5px; }
+  .hub-text1 { fill: #fff; font-size: 13.5px; font-weight: 800; }
+  .hub-text2 { fill: #FF9933; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+
+  /* ---------- Qualification ladder ---------- */
+  .ladder { display: grid; gap: 10px; }
+  .rung {
+    display: grid; grid-template-columns: 74px 1fr; gap: 14px; align-items: center;
+    background: #fff; border: 1px solid var(--d-line); border-radius: 14px; padding: 14px 16px;
+    position: relative; overflow: hidden;
+  }
+  .rung::after {
+    content: ''; position: absolute; inset: auto 0 0 0; height: 3px;
+    background: linear-gradient(90deg, #FF9933, #fff, #138808);
+    transform: scaleX(0); transform-origin: left;
+    animation: sweep 700ms ease forwards;
+  }
+  .rung:nth-child(1)::after { animation-delay: 100ms; }
+  .rung:nth-child(2)::after { animation-delay: 260ms; }
+  .rung:nth-child(3)::after { animation-delay: 420ms; }
+  .rung:nth-child(4)::after { animation-delay: 580ms; }
+  @keyframes sweep { to { transform: scaleX(1); } }
+  .rung b.stage { font-size: .74rem; letter-spacing: .06em; text-transform: uppercase; color: #fff; background: #0a1128; border-radius: 8px; padding: 7px 6px; text-align: center; }
+  .rung--10 b.stage { background: #FF9933; color: #3a2200; }
+  .rung--12 b.stage { background: #138808; }
+  .rung--dip b.stage { background: #7a4bd6; }
+  .rung--grad b.stage { background: #2f7fd4; }
+  .rung p { margin: 0; font-size: .9rem; line-height: 1.55; color: #33445e; }
+  .rung p strong { color: var(--text-dark); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spoke { animation: none; stroke-dashoffset: 0; }
+    .node rect, .node text { animation: none; opacity: 1; }
+    .hub-circle { animation: none; }
+    .rung::after { animation: none; transform: scaleX(1); }
+  }
+</style>
+</head>
+<body>
+<div class="tricolor-strip"></div>
+<main class="demo-wrap">
+
+  <div class="demo-note">
+    <strong>Visual demo — not published, not linked, not in the sitemap.</strong>
+    Pure SVG + CSS (no JS libraries, no raster images). Labels stay sharp at any zoom, the whole thing is a few KB, and it degrades to a static diagram when the visitor has reduced motion enabled.
+  </div>
+
+  <section class="map-card">
+    <h2>Where a government job can come from</h2>
+    <p class="sub">Eight recruiting systems. Each has its own exam, calendar and eligibility floor.</p>
+    <svg class="map-svg" viewBox="0 0 900 500" role="img" aria-labelledby="mapTitle mapDesc">
+      <title id="mapTitle">Government recruitment sectors in India</title>
+      <desc id="mapDesc">A central hub labelled Government job routes with eight connected sectors: Railways, Banking, SSC, Police and Defence, Teaching, State PSU, Postal, and Health and Allied.</desc>
+
+      <line class="spoke" x1="450" y1="250" x2="450" y2="78"  style="animation-delay:60ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="668" y2="129" style="animation-delay:120ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="760" y2="250" style="animation-delay:180ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="668" y2="371" style="animation-delay:240ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="450" y2="422" style="animation-delay:300ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="232" y2="371" style="animation-delay:360ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="140" y2="250" style="animation-delay:420ms"></line>
+      <line class="spoke" x1="450" y1="250" x2="232" y2="129" style="animation-delay:480ms"></line>
+
+      <circle class="hub-circle" cx="450" cy="250" r="62"></circle>
+      <text class="hub-text1" x="450" y="245" text-anchor="middle">Government</text>
+      <text class="hub-text1" x="450" y="261" text-anchor="middle">job routes</text>
+      <text class="hub-text2" x="450" y="277" text-anchor="middle">8 SYSTEMS</text>
+
+      <g class="node node--rail">
+        <rect x="375" y="56" width="150" height="44" style="animation-delay:640ms"></rect>
+        <text class="t1" x="450" y="75" text-anchor="middle" style="animation-delay:700ms">Railways</text>
+        <text class="t2" x="450" y="90" text-anchor="middle" style="animation-delay:700ms">NTPC · Group D · ALP</text>
+      </g>
+      <g class="node node--bank">
+        <rect x="593" y="107" width="150" height="44" style="animation-delay:700ms"></rect>
+        <text class="t1" x="668" y="126" text-anchor="middle" style="animation-delay:760ms">Banking</text>
+        <text class="t2" x="668" y="141" text-anchor="middle" style="animation-delay:760ms">IBPS · SBI · RBI</text>
+      </g>
+      <g class="node node--ssc">
+        <rect x="685" y="228" width="150" height="44" style="animation-delay:760ms"></rect>
+        <text class="t1" x="760" y="247" text-anchor="middle" style="animation-delay:820ms">SSC</text>
+        <text class="t2" x="760" y="262" text-anchor="middle" style="animation-delay:820ms">CHSL · CGL · GD</text>
+      </g>
+      <g class="node node--def">
+        <rect x="593" y="349" width="150" height="44" style="animation-delay:820ms"></rect>
+        <text class="t1" x="668" y="368" text-anchor="middle" style="animation-delay:880ms">Police &amp; Defence</text>
+        <text class="t2" x="668" y="383" text-anchor="middle" style="animation-delay:880ms">State police · NDA · Agniveer</text>
+      </g>
+      <g class="node node--teach">
+        <rect x="375" y="400" width="150" height="44" style="animation-delay:880ms"></rect>
+        <text class="t1" x="450" y="419" text-anchor="middle" style="animation-delay:940ms">Teaching</text>
+        <text class="t2" x="450" y="434" text-anchor="middle" style="animation-delay:940ms">CTET · State TET · KVS</text>
+      </g>
+      <g class="node node--psu">
+        <rect x="157" y="349" width="150" height="44" style="animation-delay:940ms"></rect>
+        <text class="t1" x="232" y="368" text-anchor="middle" style="animation-delay:1000ms">State PSU</text>
+        <text class="t2" x="232" y="383" text-anchor="middle" style="animation-delay:1000ms">State PSC · Dept exams</text>
+      </g>
+      <g class="node node--post">
+        <rect x="65" y="228" width="150" height="44" style="animation-delay:1000ms"></rect>
+        <text class="t1" x="140" y="247" text-anchor="middle" style="animation-delay:1060ms">Postal</text>
+        <text class="t2" x="140" y="262" text-anchor="middle" style="animation-delay:1060ms">GDS · MTS · Postman</text>
+      </g>
+      <g class="node node--health">
+        <rect x="157" y="107" width="150" height="44" style="animation-delay:1060ms"></rect>
+        <text class="t1" x="232" y="126" text-anchor="middle" style="animation-delay:1120ms">Health &amp; Allied</text>
+        <text class="t2" x="232" y="141" text-anchor="middle" style="animation-delay:1120ms">NHM · Staff Nurse · Lab</text>
+      </g>
+    </svg>
+  </section>
+
+  <section class="map-card" style="background:linear-gradient(150deg,#fff,#f6f8fc);color:#0a1128;box-shadow:0 10px 30px rgba(10,17,40,.10)">
+    <h2>What each qualification actually opens</h2>
+    <p class="sub" style="color:#5a6b85">The same ladder, read bottom-up. This is the part most "jobs after 12th" articles get wrong.</p>
+    <div class="ladder">
+      <div class="rung rung--10">
+        <b class="stage">10th</b>
+        <p><strong>Group D, MTS, GDS, Agniveer (Army), state police constable.</strong> Lowest entry bar, highest competition — and the only rung where "no degree, no diploma" is normal.</p>
+      </div>
+      <div class="rung rung--12">
+        <b class="stage">12th</b>
+        <p><strong>CHSL, NTPC, Postman, NDA (PCM for Navy/Air Force), Coast Guard Navik, state clerk posts.</strong> The widest single jump in options.</p>
+      </div>
+      <div class="rung rung--dip">
+        <b class="stage">ITI / Diploma</b>
+        <p><strong>ALP, technician and apprentice posts in Railways and PSUs.</strong> Trade certificate replaces the degree requirement for technical lines.</p>
+      </div>
+      <div class="rung rung--grad">
+        <b class="stage">Graduate</b>
+        <p><strong>CGL, IBPS PO/Clerk, state PSC, teaching (with B.Ed/D.El.Ed).</strong> Banking clerical and officer roles sit here — not at 12th.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

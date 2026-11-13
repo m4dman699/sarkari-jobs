@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAREER GUIDE DRAFT — preview only (not published)</title>
+<script src="../js/analytics-config.js?v=20261022"></script><script src="../js/analytics.js" defer></script><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/detail.css?v=d4">
+<style>
+/* ===== DRAFT-ONLY preview styles (final version would live in css/detail.css) ===== */
+.d-banner--draft { background: #fdf3e2; color: #7a4b00; border: 1.5px dashed #e0a93f; }
+.d-diagram { background: #fff; border: 1px solid var(--d-line); border-radius: 16px; padding: 18px 14px 6px; box-shadow: 0 4px 16px rgba(10,17,40,.05); margin: 10px 0 16px; }
+.d-diagram figcaption { color: var(--text-grey); font-size: .85rem; text-align: center; padding: 10px 0 12px; }
+.d-diagram svg { width: 100%; height: auto; display: block; }
+.d-table { width: 100%; border-collapse: collapse; font-size: .93rem; line-height: 1.5; margin: 6px 0 16px; }
+.d-table th { text-align: left; background: #0a1128; color: #fff; font-weight: 700; padding: 10px 12px; }
+.d-table th:first-child { border-radius: 10px 0 0 0; }
+.d-table th:last-child { border-radius: 0 10px 0 0; }
+.d-table td { border-bottom: 1px solid #eef1f7; padding: 10px 12px; color: var(--text-dark); }
+.d-table tr:nth-child(even) td { background: #fafbfd; }
+.d-table td:first-child { font-weight: 700; color: #0a1128; }
+.d-books { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 8px 0 16px; }
+.d-book { background: #fff; border: 1px solid var(--d-line); border-left: 4px solid var(--saffron); border-radius: 12px; padding: 14px 16px; box-shadow: 0 3px 10px rgba(10,17,40,.04); }
+.d-book h4 { margin: 0 0 6px; font-size: .95rem; color: var(--text-dark); }
+.d-book p { margin: 0 0 10px; color: var(--text-grey); font-size: .88rem; line-height: 1.55; }
+.d-book .d-btn-slot { display: inline-block; font-size: .8rem; font-weight: 800; color: #7a4b00; background: #ffe9c7; border: 1px dashed #c98a1b; border-radius: 8px; padding: 5px 10px; }
+.d-book .d-why { color: var(--text-dark); }
+.d-partner-note { font-size: .82rem; color: var(--text-grey); margin: 4px 0 14px; }
+
+/* ===== ingested from the reference design (tricolor-mapped) ===== */
+/* 1. curved swoosh under the hero band */
+.d-hero { position: relative; margin-bottom: 34px; }
+.d-hero::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -16%;
+  width: 132%;
+  height: 30px;
+  background: var(--bg-dark);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+/* 2. announcement strip inside the hero */
+.d-ann {
+  display: block;
+  line-height: 1.55;
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-size: .84rem;
+  color: #dfe7f5;
+  margin: 12px 0 0;
+}
+.d-ann strong { color: #fff; }
+.d-ann a { color: var(--saffron); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.d-ann a:hover { text-decoration: underline; }
+.d-ann-go { white-space: nowrap; }
+/* 3. menu: no left rail — sliding underline under the active item */
+.d-toc { padding: 18px 20px 16px; }
+.d-toc ul { gap: 2px; padding: 0; }
+.d-toc ul::before { display: none; }
+.d-toc a {
+  display: inline-block;
+  padding: 9px 2px;
+  font-size: .92rem;
+  line-height: 1.35;
+  color: var(--text-grey);
+  font-weight: 600;
+}
+.d-toc li.on a { color: var(--text-dark); font-weight: 800; }
+.d-toc-cur {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--saffron), var(--green));
+  opacity: 0;
+  transition: left .4s cubic-bezier(.65, 0, .35, 1), top .3s ease, width .4s cubic-bezier(.65, 0, .35, 1), opacity .25s;
+}
+/* 4. roomier section headings */
+.d-prose h2 { font-size: 1.18rem; gap: 10px; }
+.d-prose h2::before { width: 5px; height: 18px; }
+
+/* ===== 5. layered wave under the hero — GetWaves-style divider idea,
+   rebuilt as pure-CSS layers that MATCH the card's width (a "curved chin"),
+   so it reads as part of the hero instead of a detached band.
+   Note: production css/detail.css uses .d-hero::before for the tricolor
+   top hairline — it stays untouched. ===== */
+.d-hero { overflow: visible; }
+.d-hero::after {
+  content: '';
+  position: absolute;
+  top: calc(100% - 22px); /* overlaps the card's bottom corners so the
+                             silhouette is ONE shape: got no "wings" */
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: var(--bg-dark);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+/* soft ground shadow under the chin — a crisp echo arc reads as a
+   detached "smile", a blurred ellipse reads as depth */
+.d-after-wave {
+  position: absolute;
+  top: calc(100% + 13px);
+  left: 8%;
+  width: 84%;
+  height: 18px;
+  background: rgba(10, 17, 40, .32);
+  border-radius: 50%;
+  filter: blur(7px);
+}
+/* hero top hairline: hard flag bands (6px) so white/green stay visible on navy */
+.d-hero::before {
+  height: 6px;
+  background: linear-gradient(90deg, #FF9933 0 38%, #ffffff 38% 62%, #138808 62% 100%);
+}
+
+/* ===== 6. FAQ accordion — adapted from WebTricks' "CSS-only accordion"
+   (native details/summary, hidden markers, + rotates to × on open)
+   https://webtricks.dev/snippets/css-accordion  + CSS-Tricks marker note ===== */
+.d-faq-item { overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
+.d-faq-item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(10, 17, 40, .08); }
+.d-faq-item[open] { box-shadow: inset 4px 0 0 var(--saffron), 0 4px 14px rgba(10, 17, 40, .06); }
+.d-faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  list-style: none; /* hide default triangle (Firefox) */
+  cursor: pointer;
+}
+.d-faq-item summary::-webkit-details-marker { display: none; } /* hide default triangle (WebKit) */
+.d-faq-item summary::after {
+  content: '+';
+  flex: 0 0 auto;
+  color: var(--saffron-dark);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+  transition: transform .2s ease;
+}
+.d-faq-item[open] summary::after { transform: rotate(45deg); }
+.d-faq-item summary:focus-visible { outline: 2px dashed var(--saffron); outline-offset: -4px; border-radius: 10px; }
+.d-faq-item .faq-body { padding: 0 16px 14px; }
+.d-faq-item .faq-body p {
+  margin: 0;
+  color: var(--text-grey);
+  font-size: .92rem;
+  line-height: 1.65;
+  animation: d-faq-in .22s ease both;
+}
+@keyframes d-faq-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .d-faq-item .faq-body p { animation: none; } }
+
+/* ===== 7. gradient-sweep button — uiverse.io / ui-buttons style,
+   rebuilt with our saffron→green gradient + press states ===== */
+.d-faq-more { display: flex; justify-content: center; margin: 10px 0 4px; }
+.d-btn-sweep {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 22px;
+  background: var(--bg-dark);
+  color: #fff;
+  font-size: .88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+.d-btn-sweep::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, var(--saffron), var(--green));
+  transform: translateX(-101%);
+  transition: transform .3s cubic-bezier(.65, 0, .35, 1);
+}
+.d-btn-sweep:hover::before, .d-btn-sweep:focus-visible::before { transform: translateX(0); }
+.d-btn-sweep:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(10, 17, 40, .25); }
+.d-btn-sweep:active { transform: translateY(0) scale(.98); }
+.d-btn-sweep:disabled { opacity: .55; cursor: default; }
+.d-btn-sweep:focus-visible { outline: 2px dashed var(--saffron); outline-offset: 2px; }
+
+/* ===== 8. back-to-top floating button — uiverse-style circle pill ===== */
+.d-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .25);
+  background: var(--bg-dark);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity .25s, transform .25s, background .2s;
+  box-shadow: 0 8px 20px rgba(10, 17, 40, .25);
+  z-index: 40;
+}
+.d-top-btn.d-vis { opacity: 1; pointer-events: auto; transform: none; }
+.d-top-btn:hover { background: var(--bg-dark-2); }
+
+/* ===== 9. table row spotlight + accent bar ===== */
+.d-table tbody tr { transition: background .15s ease; }
+.d-table tbody tr:hover td { background: #fff7ee; }
+.d-table tbody tr:hover td:first-child { box-shadow: inset 3px 0 0 var(--saffron); }
+
+/* ===== 10. tricolor chip bullets for the free-resources list ===== */
+.d-prose ul { padding-left: 2px; }
+.d-prose ul li { position: relative; padding-left: 24px; margin-bottom: 9px; }
+.d-prose ul li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: .45em;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--saffron) 0 33.3%, #ffffff 33.3% 66.6%, var(--green) 66.6% 100%);
+}
+
+/* ===== 11. book cards: hover lift + gradient top strip reveal ===== */
+.d-book { position: relative; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
+.d-book::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--saffron), #ffffff, var(--green));
+  opacity: 0;
+  transition: opacity .25s;
+}
+.d-book:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(10, 17, 40, .1); }
+.d-book:hover::before { opacity: 1; }
+
+/* ===== 12. menu link hover tone ===== */
+.d-toc a { transition: color .18s ease; }
+.d-toc a:hover { color: var(--text-dark); }
+</style>
+</head>
+<body>
+<div class="tricolor-strip"></div>
+<header><div class="container nav-wrap">
+<a class="logo" href="#"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
+<nav><ul><li><a href="#">Notifications</a></li><li><a href="#">Results</a></li><li><a href="#">Admit cards</a></li><li><a href="#">States</a></li></ul></nav>
+<a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.88rem">Latest results</a>
+</div></header>
+<main class="d-main">
+<section class="d-hero">
+<span class="d-after-wave" aria-hidden="true"></span>
+<nav class="d-crumbs" aria-label="Breadcrumb"><a href="#">Home</a><span class="d-sep" aria-hidden="true"></span><a href="#">Career guides</a></nav>
+<span class="d-ribbon d-ribbon--result">Career guide — DRAFT</span>
+<h1>Government jobs after 12th: the complete route map</h1>
+<div class="d-chiprow"><span class="d-chip">🎓 Qualification: 12th pass</span><span class="d-chip">🧭 3 visual maps</span><span class="d-chip">📚 Free + partner picks</span></div>
+<div class="d-ann"><strong>🔔 485 live listings</strong> tracked · refreshed daily <span class="d-ann-go">· <a href="#">See today's updates →</a></span></div>
+</section>
+<div class="d-banner d-banner--draft"><span>🚧</span><p><strong>Draft preview only</strong> — this page is not published, linked, or in the sitemap. Nothing is committed.</p></div>
+<div class="d-pagegrid">
+<div class="d-pagecol">
+<article id="s-glance">
+<h2 class="d-section-title">At a glance</h2>
+<dl class="d-facts">
+<div class="d-fact"><dt>Who this is for</dt><dd>Students who have passed, or are appearing in, class 12 — and their parents</dd></div>
+<div class="d-fact"><dt>Routes covered</dt><dd>Defence · SSC · Railways · State police · Teaching path · Banking (after graduation)</dd></div>
+<div class="d-fact"><dt>Fact rule</dt><dd>No invented dates or fees — exam windows change yearly, so always confirm in the official notification</dd></div>
+</dl>
+</article>
+<article class="d-prose">
+<h2 id="s-who">Who this guide helps</h2>
+<p>You finished (or are finishing) class 12 and want a clear, honest picture of which government exams you can aim for, what each one opens, and how to prepare — without falling for motivational misinformation. Each route below connects to <strong>real, live listings on this site</strong>, so when a notification or admit card actually comes out, you finish your work on the official portal.</p>
+
+<h2 id="s-tree">Route map: choices straight after class 12</h2>
+<figure class="d-diagram">
+<svg viewBox="0 0 760 400" role="img" aria-label="Decision tree showing government exam routes after class 12">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#5b6b8f"/></marker></defs>
+<g font-family="'Segoe UI', system-ui, sans-serif">
+<rect x="285" y="16" width="190" height="46" rx="12" fill="#0a1128"/>
+<text x="380" y="44" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Class 12 pass?</text>
+<line x1="380" y1="62" x2="380" y2="84" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="380" y1="84" x2="118" y2="128" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="380" y1="84" x2="295" y2="128" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="380" y1="84" x2="465" y2="128" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="380" y1="84" x2="642" y2="128" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<g>
+<rect x="30" y="136" width="176" height="118" rx="12" fill="#fff" stroke="#FF9933" stroke-width="2"/>
+<text x="118" y="162" text-anchor="middle" font-size="15" font-weight="800" fill="#0a1128">🛡 Defence — NDA</text>
+<text x="118" y="186" text-anchor="middle" font-size="12" fill="#2e3d56">Unmarried 16½–19 yrs</text>
+<text x="118" y="206" text-anchor="middle" font-size="12" fill="#2e3d56">Any stream; PCM needed</text>
+<text x="118" y="226" text-anchor="middle" font-size="12" fill="#2e3d56">for Air Force/Navy wings</text>
+<text x="118" y="242" text-anchor="middle" font-size="11" fill="#138808" font-weight="700">Twice a year notification</text>
+</g>
+<g>
+<rect x="225" y="136" width="140" height="118" rx="12" fill="#fff" stroke="#FF9933" stroke-width="2"/>
+<text x="295" y="162" text-anchor="middle" font-size="15" font-weight="800" fill="#0a1128">📄 SSC</text>
+<text x="295" y="186" text-anchor="middle" font-size="12" fill="#2e3d56">CHSL — LDC/JSA,</text>
+<text x="295" y="206" text-anchor="middle" font-size="12" fill="#2e3d56">Data Entry Operator,</text>
+<text x="295" y="226" text-anchor="middle" font-size="12" fill="#2e3d56">PA/SA in ministries</text>
+<text x="295" y="242" text-anchor="middle" font-size="11" fill="#138808" font-weight="700">12th pass eligible</text>
+</g>
+<g>
+<rect x="385" y="136" width="150" height="118" rx="12" fill="#fff" stroke="#FF9933" stroke-width="2"/>
+<text x="460" y="162" text-anchor="middle" font-size="15" font-weight="800" fill="#0a1128">🚆 Railways</text>
+<text x="460" y="186" text-anchor="middle" font-size="12" fill="#2e3d56">RRB NTPC — clerk,</text>
+<text x="460" y="206" text-anchor="middle" font-size="12" fill="#2e3d56">station master roles;</text>
+<text x="460" y="226" text-anchor="middle" font-size="12" fill="#2e3d56">Group D categories</text>
+<text x="460" y="242" text-anchor="middle" font-size="11" fill="#138808" font-weight="700">Per-zone notifications</text>
+</g>
+<g>
+<rect x="555" y="136" width="170" height="118" rx="12" fill="#fff" stroke="#FF9933" stroke-width="2"/>
+<text x="640" y="162" text-anchor="middle" font-size="15" font-weight="800" fill="#0a1128">👮 State Police</text>
+<text x="640" y="186" text-anchor="middle" font-size="12" fill="#2e3d56">Constable / Head constable</text>
+<text x="640" y="206" text-anchor="middle" font-size="12" fill="#2e3d56">via state boards —</text>
+<text x="640" y="226" text-anchor="middle" font-size="12" fill="#2e3d56">physical standards apply</text>
+<text x="640" y="242" text-anchor="middle" font-size="11" fill="#138808" font-weight="700">State-wise exams</text>
+</g>
+<rect x="120" y="292" width="520" height="52" rx="12" fill="#f2f7ff" stroke="#bfd8f2"/>
+<text x="380" y="314" text-anchor="middle" font-size="13" fill="#0a1128" font-weight="700">🏫 Teaching &amp; banking open further study:</text>
+<text x="380" y="333" text-anchor="middle" font-size="12" fill="#2e3d56">graduation → IBPS/SBI PO · SSC CGL · UPSC CSE · B.Ed + TET for teacher posts</text>
+<line x1="380" y1="254" x2="380" y2="292" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+</g>
+</svg>
+<figcaption>Route options straight after class 12 — each connects to live listings on this site.</figcaption>
+</figure>
+
+<h2 id="s-cycle">How a recruitment cycle flows</h2>
+<figure class="d-diagram">
+<svg viewBox="0 0 760 150" role="img" aria-label="Recruitment pipeline: notification, apply, admit card, exam, result and verification">
+<defs>
+<marker id="ph" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0,0 L8,3.5 L0,7 Z" fill="#138808"/></marker>
+<linearGradient id="pg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF9933"/><stop offset="1" stop-color="#138808"/></linearGradient>
+</defs>
+<g font-family="'Segoe UI', system-ui, sans-serif">
+<g><rect x="15" y="30" width="122" height="64" rx="12" fill="#fff" stroke="#0a1128" stroke-width="1.5"/><rect x="15" y="30" width="122" height="6" rx="3" fill="#FF9933"/>
+<text x="76" y="58" text-anchor="middle" font-size="16">🔔</text><text x="76" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#0a1128">Notification</text></g>
+<line x1="141" y1="62" x2="163" y2="62" stroke="url(#pg)" stroke-width="3" marker-end="url(#ph)"/>
+<g><rect x="167" y="30" width="122" height="64" rx="12" fill="#fff" stroke="#0a1128" stroke-width="1.5"/><rect x="167" y="30" width="122" height="6" rx="3" fill="#f0a63c"/>
+<text x="228" y="58" text-anchor="middle" font-size="16">📝</text><text x="228" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#0a1128">Apply online</text></g>
+<line x1="293" y1="62" x2="315" y2="62" stroke="url(#pg)" stroke-width="3" marker-end="url(#ph)"/>
+<g><rect x="319" y="30" width="122" height="64" rx="12" fill="#fff" stroke="#0a1128" stroke-width="1.5"/><rect x="319" y="30" width="122" height="6" rx="3" fill="#c4536b"/>
+<text x="380" y="58" text-anchor="middle" font-size="16">🎫</text><text x="380" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#0a1128">Admit card</text></g>
+<line x1="445" y1="62" x2="467" y2="62" stroke="url(#pg)" stroke-width="3" marker-end="url(#ph)"/>
+<g><rect x="471" y="30" width="122" height="64" rx="12" fill="#fff" stroke="#0a1128" stroke-width="1.5"/><rect x="471" y="30" width="122" height="6" rx="3" fill="#3778c2"/>
+<text x="532" y="58" text-anchor="middle" font-size="16">✍️</text><text x="532" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#0a1128">Exam (+ physical)</text></g>
+<line x1="597" y1="62" x2="619" y2="62" stroke="url(#pg)" stroke-width="3" marker-end="url(#ph)"/>
+<g><rect x="623" y="30" width="122" height="64" rx="12" fill="#fff" stroke="#0a1128" stroke-width="1.5"/><rect x="623" y="30" width="122" height="6" rx="3" fill="#138808"/>
+<text x="684" y="58" text-anchor="middle" font-size="16">🏆</text><text x="684" y="78" text-anchor="middle" font-size="12" font-weight="700" fill="#0a1128">Result &amp; DV</text></g>
+<text x="380" y="118" text-anchor="middle" font-size="12" fill="#5b6b8f">This tracker follows every stage — 🔔 notifications, 🎫 admit cards and 🏆 results are the three listing types on the site.</text>
+<text x="380" y="136" text-anchor="middle" font-size="11" fill="#138808" font-weight="700">Always finish on the recruiting authority's own portal — its link sits on every listing page.</text>
+</g>
+</svg>
+<figcaption>The five stages of every recruitment — the same stages this site tracks in real time.</figcaption>
+</figure>
+
+<h2 id="s-exams">Exams and typical eligibility</h2>
+<table class="d-table">
+<thead><tr><th>Exam</th><th>Typical age</th><th>What it opens</th><th>Typical cadence</th></tr></thead>
+<tbody>
+<tr><td>NDA (UPSC)</td><td>16½–19½, unmarried</td><td>Army / Navy / Air Force cadet wings</td><td>2 cycles a year</td></tr>
+<tr><td>SSC CHSL</td><td>18–27 (see notice)</td><td>LDC, JSA, DEO, PA/SA posts</td><td>1 cycle a year</td></tr>
+<tr><td>RRB NTPC / Group D</td><td>18–33 (varies by post)</td><td>Clerk, station master, operator, Group D roles</td><td>Zone-wise cycles</td></tr>
+<tr><td>State constable exams</td><td>~18–28 by state</td><td>Police constable, home guard paths</td><td>State schedule</td></tr>
+<tr><td>TET path</td><td>after graduation + B.Ed / D.El.Ed</td><td>Primary/upper-primary teacher posts</td><td>State + CTET cycles</td></tr>
+</tbody>
+</table>
+<p class="d-partner-note">Ages and cadences are typical patterns, not promises — the recruiting authority's latest notice is always the final word, linked from every listing page on this site.</p>
+
+<h2 id="s-growth">What growth looks like over the years</h2>
+<figure class="d-diagram">
+<svg viewBox="0 0 760 250" role="img" aria-label="Career ladder from entry constable or clerk ranks to senior officer ranks">
+<g font-family="'Segoe UI', system-ui, sans-serif">
+<line x1="95" y1="200" x2="285" y2="152" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="285" y1="150" x2="475" y2="102" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="475" y1="100" x2="665" y2="52" stroke="#5b6b8f" stroke-width="2" marker-end="url(#ah)"/>
+<g><rect x="30" y="196" width="240" height="44" rx="10" fill="#fff7ee" stroke="#FF9933" stroke-width="1.5"/>
+<text x="150" y="214" text-anchor="middle" font-size="13" font-weight="800" fill="#0a1128">Entry — constable / clerk / GD</text>
+<text x="150" y="231" text-anchor="middle" font-style="font-size: .82rem" font-size="11" fill="#2e3d56">entry-level pay matrix rung</text></g>
+<g><rect x="210" y="148" width="240" height="44" rx="10" fill="#eef7ef" stroke="#138808" stroke-width="1.5"/>
+<text x="330" y="166" text-anchor="middle" font-size="13" font-weight="800" fill="#0a1128">Head constable / senior clerk</text>
+<text x="330" y="183" text-anchor="middle" font-size="11" fill="#2e3d56">departmental exam + service years</text></g>
+<g><rect x="400" y="100" width="240" height="44" rx="10" fill="#f2f7ff" stroke="#3778c2" stroke-width="1.5"/>
+<text x="520" y="118" text-anchor="middle" font-size="13" font-weight="800" fill="#0a1128">Inspector / assistant roles</text>
+<text x="520" y="135" text-anchor="middle" font-size="11" fill="#2e3d56">departmental or lateral exams</text></g>
+<g><rect x="590" y="48" width="150" height="44" rx="10" fill="#0a1128"/>
+<text x="665" y="66" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">Senior officer ranks</text>
+<text x="665" y="83" text-anchor="middle" font-size="11" fill="#dfe7f5">promotion ladder / UPSC route</text></g>
+<text x="380" y="243" text-anchor="middle" font-size="11" fill="#5b6b8f">Typical pattern across services — exact pathways are set by each organization's service rules.</text>
+</g>
+</svg>
+<figcaption>Growth is a ladder, not a lottery — service years plus departmental exams keep ranks rising.</figcaption>
+</figure>
+
+<h2 id="s-plan">A realistic 90-day preparation plan</h2>
+<ol class="d-timeline">
+<li class="d-mile"><strong>Days 1–15 — map the target.</strong> Pick two routes at most: one "safe" lower-body exam, one ambitious. Read one official notification of each fully once — syllabus lists are inside.</li>
+<li class="d-mile"><strong>Days 16–45 — basics on repeat.</strong> One subject block daily: quantitative + reasoning on alternate days, GK/current-affairs in short daily sessions, language practice in the exam's medium.</li>
+<li class="d-mile"><strong>Days 46–70 — practice under clock.</strong> Timed sectional sets, then one full mock weekly. Review every wrong answer — the mock analysis matters more than the score.</li>
+<li class="d-mile"><strong>Days 71–90 — exam-window drilling.</strong> Official pattern papers, previous-year sets, and revision capsules. Keep a document file ready: photo, signatures, category certificates.</li>
+</ol>
+
+<h2 id="s-books">Study material picks</h2>
+<p>Books are tools, not strategy — each pick below does one job well. Partner links are placeholders in this draft; in the live page they'd carry <code>rel="sponsored nofollow"</code> and a visible sticker.</p>
+<div class="d-books">
+<div class="d-book"><h4>📖 SSC CHSL / CGL foundation guide</h4><p class="d-why">Why: covers all four SSC sections with practice sets in one volume.</p><span class="d-btn-slot">Partner link — placeholder</span></div>
+<div class="d-book"><h4>🧮 Quantitative aptitude (R.S. Aggarwal class)</h4><p class="d-why">Why: the standard drill-every-pattern book for SSC/Railways pre-stage.</p><span class="d-btn-slot">Partner link — placeholder</span></div>
+<div class="d-book"><h4>🚆 Railway NTPC / Group D full pack</h4><p class="d-why">Why: past papers + GK capsules tailored to RRB patterns.</p><span class="d-btn-slot">Partner link — placeholder</span></div>
+<div class="d-book"><h4>🛡 NDA exam guide + PYQs</h4><p class="d-why">Why: maths + GAT coverage with full solved papers for cadets.</p><span class="d-btn-slot">Partner link — placeholder</span></div>
+</div>
+<p class="d-partner-note">Prices and editions change — check the store page after clicking. Blueprint: Flikart + Amazon slots per card activate post-AdSense (staged plan in our notes).</p>
+
+<h2 id="s-free">Free official resources (use these first)</h2>
+<ul>
+<li><strong>SATHEE</strong> — government-backed free preparation with AI tutor for SSC/IBPS-style exams.</li>
+<li><strong>SWAYAM &amp; NIOS material</strong> — free full courses and textbooks for class 12-level subjects.</li>
+<li><strong>PIB releases</strong> — the raw source for every recruitment headline you read anywhere.</li>
+<li><strong>This site's tracker</strong> — live notifications, admit cards and results with the official links, updated daily.</li>
+</ul>
+
+<h2 id="s-faq">Frequently asked questions</h2>
+<p class="d-partner-note">Answers in this section rotate from a pool of <strong>14 verified questions</strong> — you initially see 7 in random order; use the button below to load more. Reload the page to reshuffle. The structured data always matches what you're reading.</p>
+<div id="faqList"></div>
+<div class="d-faq-more"><button id="faqMore" class="d-btn-sweep">Show more questions ↓</button></div>
+</article>
+<div class="d-banner d-banner--warn"><span>🤝</span><p><strong>Partner-links disclosure.</strong> When live, some study-material links earn us a small commission at no extra cost to you. They never change our judgement: accuracy and usefulness first, as set out in our <a href="#">editorial policy</a>.</p></div>
+</div>
+<aside class="d-toc" aria-label="On this page">
+<h2>On this page</h2>
+<ul>
+<li><a href="#s-glance">At a glance</a></li>
+<li><a href="#s-who">Who this guide helps</a></li>
+<li><a href="#s-tree">Route map (diagram)</a></li>
+<li><a href="#s-cycle">Recruitment cycle (diagram)</a></li>
+<li><a href="#s-exams">Exams &amp; eligibility</a></li>
+<li><a href="#s-growth">Growth ladder (diagram)</a></li>
+<li><a href="#s-plan">90-day plan</a></li>
+<li><a href="#s-books">Study material picks</a></li>
+<li><a href="#s-free">Free official resources</a></li>
+<li><a href="#s-faq">FAQs</a></li>
+</ul>
+</aside>
+</div>
+</main>
+<footer class="d-foot"><div class="container foot-grid">
+<div class="foot-brand"><a class="logo" href="#" style="color:#fff"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
+<p class="foot-note">Independent tracker for government job notifications, results and admit cards across India — always linking the recruiting authority's own portal.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#">Notifications</a></li><li><a href="#">Results</a></li><li><a href="#">Admit cards</a></li><li><a href="#">State-wise</a></li></ul></div>
+<div><h4>Information</h4><ul><li><a href="#">About SarkariJobs+</a></li><li><a href="#">Editorial policy</a></li><li><a href="#">Privacy policy</a></li><li><a href="#">Contact us</a></li></ul></div>
+<div><h4>This page</h4><ul><li><a href="#">← Back to SarkariJobs+</a></li></ul></div>
+</div>
+<p style="font-size:.82rem;line-height:1.7;max-width:640px;margin:0 auto;padding:0 0 18px;">DRAFT page — SarkariJobs+ is an independent information site and is not a recruiting authority.</p>
+<div class="foot-strip"></div>
+</footer>
+<button id="toTop" class="d-top-btn" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+// Draft-local interaction layer: dribbble-style underline rides BELOW the
+// active menu text; scroll-spy + gentle reveal otherwise behave as the
+// production static-toc.js does.
+(function () {
+  'use strict';
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var prose = document.querySelector('.d-prose');
+  if (prose && !reduce && 'IntersectionObserver' in window) {
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var hidden = Array.prototype.filter.call(prose.children, function (el) {
+      return el.getBoundingClientRect().top > vh * 0.9;
+    });
+    if (hidden.length) {
+      hidden.forEach(function (el) { el.classList.add('d-pre'); });
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('d-vis'); io.unobserve(en.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+      hidden.forEach(function (el) { io.observe(el); });
+    }
+  }
+  var toc = document.querySelector('.d-toc');
+  if (!toc) return;
+  var list = toc.querySelector('ul');
+  var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+  if (!list || !links.length) return;
+  var cursor = document.createElement('span');
+  cursor.className = 'd-toc-cur';
+  list.appendChild(cursor);
+  var targets = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); }).filter(Boolean);
+  function setActive(id) {
+    var on = null;
+    links.forEach(function (a) {
+      var isActive = a.getAttribute('href') === '#' + id;
+      a.parentElement.classList.toggle('on', isActive);
+      if (isActive) on = a;
+    });
+    if (!on) return;
+    cursor.style.opacity = '1';
+    cursor.style.left = on.offsetLeft + 'px';
+    cursor.style.top = (on.offsetTop + on.offsetHeight + 2) + 'px';
+    cursor.style.height = '3px';
+    cursor.style.width = on.offsetWidth + 'px';
+  }
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var sy = window.scrollY || document.documentElement.scrollTop || 0;
+    var line = sy + 96;
+    var doc = document.documentElement;
+    var atBottom = doc.scrollHeight - (sy + window.innerHeight) < 60;
+    var active = targets[0];
+    for (var i = 0; i < targets.length; i++) {
+      if (targets[i].getBoundingClientRect().top + sy <= line) active = targets[i];
+    }
+    if (atBottom && targets.length) active = targets[targets.length - 1];
+    if (active) setActive(active.id);
+  }
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    if (window.requestAnimationFrame) window.requestAnimationFrame(update);
+    else setTimeout(update, 16);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', onScroll);
+  onScroll();
+
+  // --- back-to-top (uiverse-style floating circle) ---
+  var toTop = document.getElementById('toTop');
+  if (toTop) {
+    var syncTop = function () {
+      var sy = window.scrollY || document.documentElement.scrollTop || 0;
+      toTop.classList.toggle('d-vis', sy > 600);
+    };
+    window.addEventListener('scroll', syncTop, { passive: true });
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+    syncTop();
+  }
+
+  // --- rotating FAQ pool: 14 real questions, 7 shown per load (shuffled),
+  // the "show more" button folds in the rest; FAQPage schema is regenerated
+  // from whatever is visible so rich results always match the page.
+  var FAQ_POOL = [
+    ['Can I appear in an after-12th exam while awaiting my class 12 result?', 'Some notifications allow candidates who are appearing in the qualifying exam — only if the notice states it explicitly. Otherwise the pass date decides. Every rule you need sits in the official notification, linked from each listing page.'],
+    ['Which stream helps most for NDA?', 'PCM is required for the Air Force and Navy wings; the Army wing accepts any stream. Mathematics matters most for the written paper whichever wing you pick.'],
+    ['Is SSC CHSL a good backup while preparing for banking?', 'Yes — CHSL gives you a post while you finish graduation, after which CGL and PO tiers open. Many candidates stack CHSL → CGL or CHSL → IBPS PO sequentially.'],
+    ['Do I need paid coaching to clear these exams?', 'No. Self-study with disciplined mocks clears these exams every year. Free platforms (SATHEE, SWAYAM) plus previous-year papers cover most of what candidates actually face.'],
+    ['What is negative marking and how do I deal with it?', 'Most of these exams deduct a small fraction of marks for a wrong answer — the exact rule is printed in each notification. In practice: attempt when an elimination narrows the choices, and skip blind guesses.'],
+    ['Which languages can these exams be taken in?', 'SSC, RRB and most state exams run bilingually or with regional options; defence and some posts differ. The medium options are listed inside every notification — decide your practice medium before the mock phase.'],
+    ['How many times can I attempt these exams?', 'Most government exams cap attempts through the age limit rather than a fixed attempt count, and category-wise relaxations apply. Read the attempt rules in the specific notification before planning a multi-year strategy.'],
+    ['Is there age relaxation for reserved categories?', 'Yes — relaxations typically apply for SC/ST/OBC and PwBD categories, plus ex-servicemen rules in many exams. The exact relaxations are stated in each notification; never rely on last year\'s copy.'],
+    ['When should I start preparing after class 12 results?', 'Start immediately — the first weeks go to understanding the syllabus and exam pattern, which are printed in every notification. Early months build speed in quantitative and reasoning phases.'],
+    ['What documents should I keep ready?', 'Recent photograph, signature scan, category/domicile certificates where applicable, a valid photo ID, and any exam-specific uploads mentioned in the notice. Keep digital copies in one folder to survive deadline-day traffic.'],
+    ['How do I avoid fake notifications and fraud sites?', 'Trust only the recruiting authority\'s own portal and the official notice PDF. Cross-check anything exciting with this site\'s tracker — every listing here keeps the official link visible, and we never ask for money or documents.'],
+    ['What happens after the written exam?', 'Depending on the exam: skill/typing tests (SSC), physical efficiency tests (police, defence), Interviews or document verification. Milestones appear as separate listings on this tracker as they are announced.'],
+    ['Can I prepare for two exams at the same time?', 'Yes, if their syllabuses overlap — SSC, Railways and banking mock-test content share quantitative, reasoning and GK cores. The dividing line is the exam language and pattern details, so mirror your mocks accordingly.'],
+    ['When do admit cards come out?', 'Weeks before the exam, not months — the exact window varies by board. Once issued, the admit-card listing appears on this site with the official download link; wishing about dates earlier than the official release never changes them.']
+  ];
+  var faqListEl = document.getElementById('faqList');
+  var faqMoreBtn = document.getElementById('faqMore');
+  // Rotation is content selection, not motion — reduced-motion users still get
+  // the rotating pool; only animations and smooth scrolling are gated off
+  // (CSS media query handles the animation; scrollIntoView takes 'auto').
+  var shown = [];
+  var pool = FAQ_POOL.slice();
+  // Fisher-Yates, fresh order every load (true shuffle)
+  for (var i = pool.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = pool[i]; pool[i] = pool[j]; pool[j] = t;
+  }
+  function renderFAQ(nextCount) {
+    while (shown.length < Math.min(nextCount, pool.length)) {
+      var pair = pool[shown.length];
+      var d = document.createElement('details');
+      d.className = 'd-faq-item';
+      if (shown.length === 0) d.open = true;
+      var s = document.createElement('summary');
+      s.textContent = pair[0];
+      var body = document.createElement('div');
+      body.className = 'faq-body';
+      var p = document.createElement('p');
+      p.textContent = pair[1];
+      body.appendChild(p);
+      d.appendChild(s); d.appendChild(body);
+      faqListEl.appendChild(d);
+      shown.push(pair);
+    }
+    var ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: shown.map(function (pair) { return { '@type': 'Question', name: pair[0], acceptedAnswer: { '@type': 'Answer', text: pair[1] } }; }) };
+    var old = document.getElementById('faqSchema');
+    if (old) old.remove();
+    var sc = document.createElement('script');
+    sc.type = 'application/ld+json';
+    sc.id = 'faqSchema';
+    sc.textContent = JSON.stringify(ld).replace(/</g, '\\u003c');
+    document.head.appendChild(sc);
+  }
+  function updateButton() {
+    var remaining = pool.length - shown.length;
+    if (remaining <= 0) {
+      faqMoreBtn.textContent = 'All ' + pool.length + ' questions are shown ✓';
+      faqMoreBtn.disabled = true;
+      faqMoreBtn.style.opacity = '.55';
+      faqMoreBtn.style.cursor = 'default';
+    } else {
+      faqMoreBtn.textContent = 'Show more questions ↓ (+' + Math.min(3, remaining) + ' · ' + remaining + ' left in pool)';
+    }
+  }
+  renderFAQ(7);
+  updateButton();
+  faqMoreBtn.addEventListener('click', function () {
+    renderFAQ(shown.length + 3);
+    updateButton();
+    faqMoreBtn.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' });
+  });
+})();
+</script>
+</body></html>

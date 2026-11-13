@@ -44,9 +44,26 @@ function date(value) {
   });
 }
 
+// The feed's own `type` field is unreliable in one direction: 17 records whose
+// title plainly says "Admit Card" are typed as results, which made those pages
+// announce a result and answer "how do I check this result" on a page about
+// downloading a hall ticket. The title is the authority the reader sees, so use
+// it to correct the type — but only when it is unambiguous, i.e. it mentions an
+// admit card and no result vocabulary at all.
+const ADMIT_WORDS = /\b(?:admit\s*card|hall\s*ticket|e-?admit|call\s*letter)\b/i;
+const RESULT_WORDS = /\b(?:result|merit|answer\s*key|score\s*card|marks)\b/i;
+function typeOf(item) {
+  const title = String(item?.title || '');
+  if (ADMIT_WORDS.test(title) && !RESULT_WORDS.test(title)) return 'admit';
+  if (item?.type === 'admit-card') return 'admit';
+  if (item?.type === 'result') return 'result';
+  return 'job';
+}
+
 function listingType(item) {
-  if (item.type === 'admit-card') return 'Admit card';
-  if (item.type === 'result') return 'Result / recruitment update';
+  const type = typeOf(item);
+  if (type === 'admit') return 'Admit card';
+  if (type === 'result') return 'Result / recruitment update';
   return 'Job notification';
 }
 
@@ -131,6 +148,12 @@ function faqFor(item, kind, names) {
     if (item.lastDate) list.push({ q: 'What is the application deadline?', a: `The listing records ${date(item.lastDate)} as the closing date. Confirm it on the official portal before paying any fee — authorities occasionally extend deadlines by notice.` });
     if (item.vacancies) list.push({ q: 'How many vacancies are advertised?', a: `${item.vacancies} vacancies are indicated for this recruitment. Post-wise distribution and reservation details should be confirmed from the official notification itself.` });
     if (item.examDate) list.push({ q: 'When is the examination scheduled?', a: `The listing notes the exam date as ${date(item.examDate)}. Any schedule change would be published by ${short} first and reflected on its portal.` });
+    // Always-present pair. Many feeds publish only a headline and a link, with
+    // no dates, vacancy count or qualification in the record itself. Without
+    // these two the page would carry a single FAQ, and a single-question
+    // FAQPage block is both thin content and invalid as a rich result.
+    list.push({ q: 'How do I confirm the eligibility criteria?', a: `Eligibility is stated in ${short}'s own notification, not in this summary. Open the source link above and read the qualification, age and experience clauses for the post you want before paying any application fee.` });
+    list.push({ q: 'Where is the official notification?', a: `The source links section above points to ${short}'s own page or document. This page mirrors the listing headline only, so the official notification remains the authority for post names, pay level, reservation and selection stages.` });
   } else if (kind === 'Admit card') {
     list.push({ q: 'How do I download the admit card?', a: `Open ${short}'s official portal from the links section above and sign in with your registration or roll number and date of birth, exactly as used during the application.` });
     list.push({ q: 'What should I check on it?', a: `Confirm the printed name, photograph, exam date and shift, centre address and category. Report any mismatch to ${short} through its official contact channels before the exam day.` });
@@ -145,7 +168,8 @@ function faqFor(item, kind, names) {
 
 function summaryFor(item, kind) {
   const organization = escapeHTML(item.organization || 'the recruiting authority');
-  if (item.type === 'job') {
+  const type = typeOf(item);
+  if (type === 'job') {
     const facts = [
       item.vacancies ? `${escapeHTML(item.vacancies)} vacancies are listed` : '',
       item.openDate ? `applications opened ${date(item.openDate)}` : '',
@@ -153,7 +177,7 @@ function summaryFor(item, kind) {
     ].filter(Boolean).join('; ');
     return `${organization} recruitment${facts ? `: ${facts}` : ''}. Check the authority notice for the complete post-wise requirements and application instructions.`;
   }
-  if (item.type === 'admit-card') {
+  if (type === 'admit') {
     return `${escapeHTML(item.title)} is an examination update from ${organization}. Confirm the exam schedule and candidate instructions on the authority portal before downloading.`;
   }
   const updateDate = item.resultDate || item.publishedDate;
@@ -161,7 +185,7 @@ function summaryFor(item, kind) {
 }
 
 function urgency(item) {
-  if (item.type !== 'job' || !item.lastDate) return null;
+  if (typeOf(item) !== 'job' || !item.lastDate) return null;
   const close = new Date(`${item.lastDate}T23:59:59Z`);
   if (close < new Date()) return 'passed';
   return (close - new Date()) <= 604800000 ? 'soon' : 'open';
@@ -243,7 +267,7 @@ const iconSprite = () => `<svg class="d-sprite" aria-hidden="true" focusable="fa
 const entries = [];
 for (const item of payload.jobs || []) {
   if (!item?.title || !item.id || isNonRecruitmentPage(item)) continue;
-  const type = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
+  const type = typeOf(item);
   entries.push({ item, slug: slugFor(item), kind: listingType(item), type });
 }
 const kindLabel = type => type === 'admit' ? 'Admit' : type === 'result' ? 'Result' : 'Job';
@@ -345,6 +369,17 @@ const relatedFor = (entry, limit = 6) => {
   return rotated.slice(0, limit).map(entry => entry.other);
 };
 
+// Long-form guides that live outside job-details/. Each entry claims the
+// listings it is genuinely about, so the guide gets inbound links from real
+// content instead of sitting orphaned in the sitemap.
+const GUIDES = [
+  {
+    href: 'upsc-cds-2-2026/',
+    label: 'UPSC CDS II 2026 — exam guide: dates, vacancies, result and admit card',
+    test: item => /\bCDS\b/i.test(String(item.title || '')) && /UPSC|Union Public Service/i.test(String(item.organization || ''))
+  }
+];
+
 const urls = [];
 for (const item of payload.jobs || []) {
   if (!item?.title || !item.id || isNonRecruitmentPage(item)) continue;
@@ -353,7 +388,7 @@ for (const item of payload.jobs || []) {
   fs.mkdirSync(directory, { recursive: true });
   const title = escapeHTML(displayTitleFor(item));
   const kind = listingType(item);
-  const type = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
+  const type = typeOf(item);
   const verifiedSummary = `<p class="d-lead">${summaryFor(item, kind)}</p>`;
   const names = orgNames(item);
   const guide = guideFor(item, kind, names, slug);
@@ -375,7 +410,7 @@ for (const item of payload.jobs || []) {
     item.eligibility ? factTile('Eligibility', escapeHTML(item.eligibility)) : '',
     item.applicationFee ? factTile('Application fee', escapeHTML(item.applicationFee.split(/payment mode/i)[0].trim())) : ''
   ].filter(Boolean).join('\n');
-  const listedDateFact = item.type === 'job'
+  const listedDateFact = type === 'job'
     ? ''
     : factTile(kind === 'Admit card' ? 'Admit card listed' : 'Update published', date(item.publishedDate), 'd-fact--mini');
   const attrFacts = [
@@ -401,7 +436,7 @@ for (const item of payload.jobs || []) {
     if (!/^https:\/\//i.test(entry.url || '')) return '';
     const generic = /^(click here|here|official recruitment portal)$/i.test(entry.label || '');
     const label = generic
-      ? (index === 0 && item.type === 'result' ? 'Open official result page' : index === 0 && item.type === 'admit-card' ? 'Download official admit card' : index === 0 ? 'Open official recruitment portal' : 'Official notice or update')
+      ? (index === 0 && type === 'result' ? 'Open official result page' : index === 0 && type === 'admit' ? 'Download official admit card' : index === 0 ? 'Open official recruitment portal' : 'Official notice or update')
       : `Official ${escapeHTML(entry.label)}`;
     return `<a class="btn${index ? ' btn-outline' : ' btn-primary'}" href="${escapeHTML(entry.url)}" rel="noopener noreferrer" target="_blank">${label} ↗</a>`;
   }).filter(Boolean).join('\n');
@@ -414,7 +449,7 @@ for (const item of payload.jobs || []) {
     `<span class="d-chip">${icon('pin', 'd-ic d-chip-ic')}${escapeHTML(item.state || 'Location: see notice')}</span>`,
     item.publishedDate ? `<span class="d-chip">${icon('calendar', 'd-ic d-chip-ic')}Listed ${date(item.publishedDate)}</span>` : ''
   ].filter(Boolean).join('');
-  const kindId = item.type === 'admit-card' ? 'admit' : item.type === 'result' ? 'result' : 'job';
+  const kindId = type;
   const ribbonCls = kindId === 'admit' ? ' d-ribbon--admit' : kindId === 'result' ? ' d-ribbon--result' : '';
   // Breadcrumb structured data mirroring the visible d-crumbs navigation.
   const breadcrumbLd = `<script type="application/ld+json">${JSON.stringify({
@@ -422,7 +457,7 @@ for (const item of payload.jobs || []) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sarkarijobsplus.com/' },
-      { '@type': 'ListItem', position: 2, name: `${kind} listings`, item: `https://sarkarijobsplus.com/${item.type === 'result' ? 'results' : item.type === 'admit-card' ? 'admit-cards' : 'category'}.html` },
+      { '@type': 'ListItem', position: 2, name: `${kind} listings`, item: `https://sarkarijobsplus.com/${type === 'result' ? 'results' : type === 'admit' ? 'admit-cards' : 'category'}.html` },
       { '@type': 'ListItem', position: 3, name: String(item.title || '') }
     ]
   }).replace(/</g, '\\u003c')}</script>`;
@@ -438,6 +473,13 @@ for (const item of payload.jobs || []) {
   const relatedHtml = relatedLinks
     ? `<section class="d-related"><h2 class="d-section-title">Related listings</h2><div class="d-related-list">${relatedLinks}</div></section>`
     : '';
+  // Contextual link to the long-form exam guides. Without this the guides are
+  // orphans: they sit in sitemap.xml but no page links to them, so crawlers
+  // reach them with no context and no internal PageRank.
+  const guideLinks = GUIDES
+    .filter(entry => entry.test(item))
+    .map(entry => `<section class="d-related d-guide-link"><h2 class="d-section-title">${icon('info', 'd-ic d-index-h-ic')}Deeper guide</h2><div class="d-related-list"><a class="d-rel" href="../../${entry.href}"><span class="d-rel-tag">${icon('folder', 'd-ic d-rel-ic')}<b>Guide</b></span>${escapeHTML(entry.label)}</a></div></section>`)
+    .join('');
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
@@ -461,7 +503,7 @@ ${iconSprite()}
 </div></header>
 <main class="d-main">
 <section class="d-hero">
-<nav class="d-crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span class="d-sep" aria-hidden="true"></span><a href="../../${item.type === 'result' ? 'results.html' : item.type === 'admit-card' ? 'admit-cards.html' : 'category.html'}">${escapeHTML(kind)} listings</a></nav>
+<nav class="d-crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span class="d-sep" aria-hidden="true"></span><a href="../../${type === 'result' ? 'results.html' : type === 'admit' ? 'admit-cards.html' : 'category.html'}">${escapeHTML(kind)} listings</a></nav>
 <span class="d-ribbon${ribbonCls}">${icon(kindId, 'd-ic d-ribbon-ic')}<span>${escapeHTML(kind)}</span></span>
 <h1>${title}</h1>
 <div class="d-chiprow">${chips}</div>
@@ -490,6 +532,7 @@ ${faqHtml}
 <dl class="d-facts">${attrFacts}</dl>
 <p class="d-attrib-note">This page uses original SarkariJobs+ wording and layout to summarize public listing facts. Confirm dates, eligibility, vacancies, fees, and instructions in the recruiting authority’s latest notice. Details not stated in the source are left unfilled.</p>
 </section>
+${guideLinks}
 ${relatedHtml}
 <nav class="d-discover" aria-label="Explore the site">
 <a class="d-disc" href="../../category.html"><span class="d-disc--icon">${icon('bell', 'd-ic d-disc-ic')}</span><span class="d-disc--label">Browse notifications</span><span class="d-disc--arrow" aria-hidden="true"></span></a>
@@ -535,6 +578,86 @@ ${relatedHtml}
   else lastmod = feedDate;
   nextLastmodState[slug] = { hash: pageHash, lastmod };
   if (!canonicalOf.has(slug)) urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
+}
+
+// ---- Remove pages that should never have been published ----
+// The deploy uploads files and never deletes them (delete: 'false'), so a page
+// that stops being generated keeps serving its old HTML at HTTP 200 forever.
+// Deleting the local file therefore fixes nothing: the remote copy survives.
+//
+// scraper/retired-slugs.json is the committed record of every URL the tracker
+// has ever published and since dropped. Entries flagged `stub: true` are the
+// ones that should not exist at all — navigational pages imported from
+// competitor indexes (browse hubs, "Post New Jobs", two Tamil nav links, a
+// competitor's own brand page). Each is rewritten into a small noindexed stub
+// pointing at the live index, which replaces the stale remote HTML without
+// touching .htaccess or the deploy workflow.
+//
+// Real listings that merely rotated out of the feed are NOT stubbed: they keep
+// their content, and they are already absent from sitemap.xml and from every
+// internal link, so they decay out of the index on their own.
+const retiredPath = path.join(__dirname, 'retired-slugs.json');
+const builtSlugs = new Set(entries.map(entry => entry.slug));
+const retiredRecords = fs.existsSync(retiredPath) ? JSON.parse(fs.readFileSync(retiredPath, 'utf8')) : [];
+
+// Live pages indexed by normalised title, so a retired URL that is really the
+// same notice under an older slug can be consolidated into it. The feed
+// re-issues records with new ids, which leaves the previous slug stranded with
+// identical content — 50 of the retired URLs are exactly this.
+const liveByTitle = new Map();
+for (const entry of primaryEntries) {
+  const key = normalizeTitle(entry.item.title);
+  if (key && !liveByTitle.has(key)) liveByTitle.set(key, entry);
+}
+
+const stubs = [];
+for (const record of retiredRecords) {
+  if (!record?.slug || builtSlugs.has(record.slug)) continue;
+  if (record.stub) { stubs.push({ slug: record.slug, kind: 'junk' }); continue; }
+  const match = liveByTitle.get(normalizeTitle(record.title));
+  if (match) stubs.push({ slug: record.slug, kind: 'duplicate', target: match.slug });
+}
+const stubSlugs = stubs.map(stub => stub.slug);
+// A truncated feed must never be able to blank the site, so refuse to act on a
+// suspiciously large set.
+if (stubSlugs.length > Math.max(20, Math.floor(entries.length * 0.15))) {
+  throw new Error(`Refusing to stub ${stubSlugs.length} pages: the feed looks truncated, so this build is probably incomplete.`);
+}
+const stubPage = ({ kind, target }) => {
+  const duplicate = kind === 'duplicate';
+  const canonicalUrl = duplicate
+    ? `https://sarkarijobsplus.com/job-details/${target}/`
+    : 'https://sarkarijobsplus.com/all-jobs.html';
+  const lead = duplicate
+    ? 'The tracker republished this notice under a newer URL, so this copy has been retired and points at the current page. Nothing here should be relied on for dates, fees or eligibility.'
+    : 'It was never a recruitment notice — the source published a browsing page rather than a post — so it has been removed from the tracker. Nothing here should be relied on for dates, fees or eligibility.';
+  return `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${duplicate ? 'This listing has moved' : 'Listing no longer tracked'} | SarkariJobs+</title>
+<meta name="robots" content="noindex, follow">
+<meta name="description" content="This URL has been retired. Open the current SarkariJobs+ page for this notice, or browse every live listing.">
+<link rel="canonical" href="${canonicalUrl}">
+<meta http-equiv="refresh" content="3;url=${canonicalUrl}">
+<meta name="theme-color" content="#0a1128">
+<link rel="stylesheet" href="../../css/detail.css?v=d6">
+</head><body>
+${iconSprite()}
+<div class="tricolor-strip"></div>
+<main class="d-wrap" style="max-width:720px;margin:0 auto;padding:48px 20px">
+<p class="d-kicker">${duplicate ? 'Listing moved' : 'Listing withdrawn'}</p>
+<h1>${duplicate ? 'This listing has moved to a newer page' : 'This listing is no longer tracked'}</h1>
+<p class="d-lead">${lead}</p>
+<h2 class="d-section-title">How to use this page</h2>
+<p>${duplicate ? 'The current page opens automatically in a few seconds, or use the link below.' : 'The current official listings are all on the index page. Use the link below; this page also redirects there automatically in a few seconds.'}</p>
+<p><a class="d-disc" href="${duplicate ? `../${target}/` : '../../all-jobs.html'}"><span class="d-disc--icon">${icon(duplicate ? 'info' : 'folder', 'd-ic d-disc-ic')}</span><span class="d-disc--label">${duplicate ? 'Open the current page for this notice' : 'All current listings (A–Z)'}</span><span class="d-disc--arrow" aria-hidden="true"></span></a></p>
+<p style="font-size:.85rem;color:#4a5677">If you reached this page from a bookmark, search the index for the authority name.</p>
+</main>
+</body></html>`;
+};
+for (const stub of stubs) {
+  const directory = path.join(output, stub.slug);
+  fs.mkdirSync(directory, { recursive: true });
+  fs.writeFileSync(path.join(directory, 'index.html'), stubPage(stub));
 }
 
 // ---- Crawlable full index (/all-jobs.html) ----
@@ -670,6 +793,9 @@ sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}${staticPageBlocks.len
 const opening = rawSitemap.slice(0, rawSitemap.indexOf('<url>')).replace(/\s+$/, '\n').replace(/\r/g, '');
 const blocks = (sitemap.replace(/\r/g, '').match(/<url>[\s\S]*?<\/url>/g) || []);
 fs.writeFileSync(sitemapPath, `${opening}${blocks.join('\n')}\n</urlset>\n`);
+// Retired slugs no longer produce a page, so keeping their lastmod entry would
+// only grow the state file forever.
+for (const slug of stubSlugs) delete nextLastmodState[slug];
 fs.writeFileSync(lastmodStatePath, JSON.stringify(nextLastmodState, null, 2) + '\n');
 
 // A previous feed imported a third-party privacy-policy page as an admit card.
