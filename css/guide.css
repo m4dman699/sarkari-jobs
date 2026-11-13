@@ -1,0 +1,259 @@
+/* ==========================================================================
+   Sector guide pages (guides/*)
+   Visual-first pillar content. Every diagram here is HTML + CSS: text stays in
+   the DOM, reflows at any width, and never scales down as a picture. Inline SVG
+   is used only for icon glyphs. No JavaScript.
+
+   Written against the design tokens in css/style.css.
+   ========================================================================== */
+
+.g-ic {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  vertical-align: -4px;
+}
+.g-ic--sm { width: 16px; height: 16px; vertical-align: -3px; }
+
+/* ---------- Hero ---------- */
+.g-hero {
+  --g-accent: #FF9933;
+  position: relative;
+  background:
+    radial-gradient(900px 420px at 12% -10%, rgba(255, 153, 51, .18), transparent 65%),
+    radial-gradient(760px 380px at 92% 8%, rgba(19, 136, 8, .16), transparent 62%),
+    var(--bg-dark);
+  color: #eef2fb;
+  padding: 34px 0 40px;
+  border-bottom: 3px solid var(--g-accent);
+}
+.g-hero .container { position: relative; }
+.g-crumbs { font-size: .82rem; letter-spacing: .01em; color: #b9c6e2; margin-bottom: 14px; }
+.g-crumbs a { color: #dce5f7; text-decoration: none; font-weight: 600; }
+.g-crumbs a:hover { color: var(--g-accent); }
+.g-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin: 0 0 12px; font-size: .8125rem; font-weight: 800;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: #0a1128; background: var(--g-accent);
+  padding: 6px 13px; border-radius: 999px;
+}
+.g-hero-ic { width: 15px; height: 15px; vertical-align: -2px; }
+.g-hero h1 {
+  font-size: clamp(1.6rem, 3.6vw, 2.5rem);
+  line-height: 1.18; margin: 0 0 14px; max-width: 21ch; color: #fff;
+}
+.g-lede { font-size: 1.02rem; line-height: 1.65; color: #ccd7ec; max-width: 66ch; margin: 0 0 24px; }
+.g-statrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.g-stat {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 14px; padding: 14px 16px;
+}
+.g-stat-value { display: block; font-size: 1.5rem; font-weight: 800; color: #fff; line-height: 1.1; }
+.g-stat-label { display: block; font-size: .8125rem; color: #b9c6e2; margin-top: 4px; }
+.g-hero-note { display: flex; align-items: flex-start; gap: 8px; font-size: .82rem; color: #a9b8d6; margin: 0; max-width: 70ch; }
+.g-hero-logo { display: block; width: clamp(130px, 20vw, 190px); height: auto; margin: 0 0 14px; }
+
+/* Real official marks (self-hosted under assets/) when a sector declares one. */
+.g-card-icon img,
+.g-card-icon .g-card-logo { width: 100%; height: 100%; object-fit: contain; background: #fff; border-radius: 8px; display: block; }
+
+/* ---------- Section jump ---------- */
+.g-jump {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding-top: 20px; padding-bottom: 4px;
+}
+.g-jump a {
+  font-size: .84rem; font-weight: 600; text-decoration: none;
+  padding: 7px 14px; border-radius: 999px;
+  background: #fff; border: 1px solid #d8e0ef; color: var(--text-dark);
+  transition: border-color .18s, color .18s, transform .18s;
+}
+.g-jump a:hover { border-color: var(--saffron); color: var(--saffron-dark); transform: translateY(-1px); }
+
+/* ---------- Blocks ---------- */
+.g-block { padding-top: 34px; }
+.g-h2 {
+  display: flex; align-items: center; gap: 10px;
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.25;
+  margin: 0 0 8px; color: var(--text-dark);
+}
+.g-h2-ic { color: var(--saffron-dark); width: 22px; height: 22px; }
+.g-sub { font-size: .95rem; line-height: 1.6; color: var(--text-grey); margin: 0 0 20px; max-width: 70ch; }
+
+/* ---------- 3.4 Matrix: qualification → post ---------- */
+.g-matrix {
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+}
+.g-col {
+  background: #fff; border: 1px solid #e2e8f3; border-radius: 16px;
+  padding: 16px 16px 14px; display: flex; flex-direction: column;
+  box-shadow: 0 1px 2px rgba(10, 17, 40, .04);
+}
+.g-col-head { display: flex; align-items: center; gap: 8px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 2px solid #f0f3f9; }
+.g-col-head .g-ic { color: var(--saffron-dark); }
+.g-col-head h3 { margin: 0; font-size: 1rem; font-weight: 800; color: var(--text-dark); }
+.g-posts { list-style: none; margin: 0 0 10px; padding: 0; display: grid; gap: 9px; }
+.g-post { display: block; background: var(--off-white); border-radius: 10px; padding: 9px 11px; }
+.g-post-name { display: block; font-size: .9rem; font-weight: 700; color: var(--text-dark); line-height: 1.35; }
+.g-post-code {
+  display: inline-block; margin-top: 5px;
+  font-size: .8125rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--green-dark); background: rgba(19, 136, 8, .1);
+  padding: 2px 7px; border-radius: 999px;
+}
+.g-post-note { display: block; font-size: .8125rem; color: var(--text-grey); margin-top: 5px; line-height: 1.45; }
+.g-col-note { margin: auto 0 0; font-size: .8125rem; line-height: 1.55; color: var(--text-grey); }
+
+/* ---------- 3.1 Flow / stepper ---------- */
+.g-flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.g-step { position: relative; padding-left: 62px; }
+/* The rail is one pseudo-element on the list container, so wrapping never
+   breaks it. */
+.g-flow::before {
+  content: ''; position: absolute; left: 23px; top: 14px; bottom: 14px;
+  width: 2px; background: linear-gradient(180deg, var(--saffron), var(--green));
+  opacity: .3;
+}
+.g-flow { position: relative; }
+.g-step-num {
+  position: absolute; left: 0; top: 2px;
+  width: 48px; height: 48px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #fff; border: 2px solid var(--saffron);
+  color: var(--saffron-dark); font-weight: 800; font-size: 1.05rem;
+  z-index: 1;
+}
+.g-step-body { background: #fff; border: 1px solid #e2e8f3; border-radius: 14px; padding: 14px 16px; }
+.g-step-name { margin: 0 0 5px; font-size: 1rem; font-weight: 800; color: var(--text-dark); }
+.g-step-tests { margin: 0 0 6px; font-size: .9rem; line-height: 1.55; color: var(--text-dark); }
+.g-step-note { margin: 0; font-size: .82rem; line-height: 1.5; color: var(--text-grey); }
+
+/* ---------- 3.3 Ladder ---------- */
+.g-ladder { list-style: none; margin: 0; padding: 0 0 0 6px; display: grid; gap: 10px; }
+.g-rung { position: relative; display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid #e2e8f3; border-radius: 12px; padding: 12px 16px; }
+/* Each rung steps a little further right on wide screens, so the progression is
+   visible without a single absolute coordinate. */
+.g-rung:nth-child(1) { margin-right: 0; }
+.g-rung:nth-child(2) { margin-right: 8%; }
+.g-rung:nth-child(3) { margin-right: 16%; }
+.g-rung:nth-child(4) { margin-right: 24%; }
+.g-rung:nth-child(5) { margin-right: 32%; }
+.g-rung-index {
+  flex: 0 0 auto; width: 30px; height: 30px; border-radius: 8px;
+  display: grid; place-items: center;
+  background: rgba(255, 153, 51, .14); color: var(--saffron-dark);
+  font-weight: 800; font-size: .88rem;
+}
+.g-rung-text { font-size: .93rem; font-weight: 600; color: var(--text-dark); line-height: 1.4; }
+
+/* ---------- Reality check ---------- */
+.g-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); }
+.g-point {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: #fff; border: 1px solid #e2e8f3; border-left: 3px solid var(--saffron);
+  border-radius: 12px; padding: 14px 16px;
+}
+.g-point-ic { color: var(--saffron-dark); margin-top: 2px; width: 18px; height: 18px; }
+.g-point p { margin: 0; font-size: .89rem; line-height: 1.58; color: var(--text-dark); }
+
+/* ---------- Live listings ---------- */
+.g-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.g-list-row {
+  display: grid; gap: 4px 14px;
+  grid-template-columns: minmax(140px, auto) 1fr auto;
+  align-items: center;
+  background: #fff; border: 1px solid #e2e8f3; border-radius: 12px;
+  padding: 12px 16px;
+  transition: border-color .18s, box-shadow .18s;
+}
+.g-list-row:hover { border-color: var(--saffron); box-shadow: 0 8px 18px rgba(10, 17, 40, .07); }
+.g-list-type {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .8125rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--text-grey);
+}
+.g-list-type .g-ic { width: 14px; height: 14px; vertical-align: -2px; }
+.g-list-type--job .g-ic { color: var(--saffron-dark); }
+.g-list-type--admit .g-ic { color: #7a4bd6; }
+.g-list-type--result .g-ic { color: var(--green-dark); }
+.g-list-title { font-size: .93rem; font-weight: 600; color: var(--text-dark); text-decoration: none; line-height: 1.4; }
+.g-list-title:hover { color: var(--saffron-dark); text-decoration: underline; }
+.g-list-date { font-size: .8125rem; color: var(--text-grey); white-space: nowrap; }
+.g-empty { font-size: .92rem; color: var(--text-grey); background: #fff; border: 1px dashed #d8e0ef; border-radius: 12px; padding: 18px; }
+.g-empty a { color: var(--saffron-dark); font-weight: 600; }
+
+/* ---------- FAQ (native, always in the DOM) ---------- */
+.g-faq-item { background: #fff; border: 1px solid #e2e8f3; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+.g-faq-item summary {
+  cursor: pointer; padding: 14px 18px; font-size: .95rem; font-weight: 700;
+  color: var(--text-dark); list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.g-faq-item summary::-webkit-details-marker { display: none; }
+.g-faq-item summary::after {
+  content: '+'; font-size: 1.2rem; font-weight: 700; color: var(--saffron-dark); line-height: 1;
+}
+.g-faq-item[open] summary::after { content: '–'; }
+.g-faq-item p { margin: 0; padding: 0 18px 16px; font-size: .91rem; line-height: 1.62; color: var(--text-grey); }
+.g-faq-item summary:focus-visible { outline: 3px solid rgba(255, 153, 51, .55); outline-offset: -3px; }
+
+/* ---------- Attribution ---------- */
+.g-attrib { background: #fff; border: 1px solid #e2e8f3; border-radius: 16px; padding: 22px 24px; margin-bottom: 40px; }
+.g-attrib p { font-size: .87rem; line-height: 1.65; color: var(--text-grey); margin: 0 0 10px; }
+.g-attrib-links a { color: var(--saffron-dark); font-weight: 600; text-decoration: none; }
+.g-attrib-links a:hover { text-decoration: underline; }
+
+/* ---------- Hub cards ---------- */
+.g-cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(248px, 1fr)); }
+.g-card {
+  --g-accent: #FF9933;
+  display: flex; flex-direction: column; gap: 6px;
+  background: #fff; border: 1px solid #e2e8f3; border-top: 4px solid var(--g-accent);
+  border-radius: 16px; padding: 20px; text-decoration: none;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.g-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(10, 17, 40, .1); border-color: var(--g-accent); }
+.g-card-icon {
+  width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+  background: rgba(255, 153, 51, .13); color: var(--saffron-dark); margin-bottom: 4px;
+}
+.g-card-icon .g-ic { width: 22px; height: 22px; vertical-align: 0; }
+.g-card-name { font-size: 1.1rem; font-weight: 800; color: var(--text-dark); }
+.g-card-meta { font-size: .82rem; color: var(--text-grey); }
+.g-card-cta { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: .85rem; font-weight: 700; color: var(--saffron-dark); }
+
+/* ---------- Footer ---------- */
+.g-foot { background: var(--bg-dark); color: #c3cfe6; padding: 40px 0 0; margin-top: 20px; }
+.g-foot .foot-grid { display: grid; gap: 26px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); padding-bottom: 26px; }
+.g-foot h4 { color: #fff; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px; }
+.g-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.g-foot a { color: #c3cfe6; text-decoration: none; font-size: .88rem; }
+.g-foot a:hover { color: var(--saffron); }
+.g-foot .foot-note { font-size: .85rem; line-height: 1.6; color: #9dabc8; margin: 10px 0 0; }
+.g-foot-note { font-size: .8125rem; line-height: 1.65; max-width: 760px; margin: 0 auto; padding: 0 20px 22px; color: #8f9db9; text-align: center; }
+.g-nav-cta { padding: 9px 18px; font-size: .88rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .g-step { padding-left: 56px; }
+  .g-step-num { width: 40px; height: 40px; font-size: .95rem; }
+  .g-flow::before { left: 19px; }
+  .g-rung:nth-child(n) { margin-right: 0; }
+  .g-list-row { grid-template-columns: 1fr; align-items: start; }
+  .g-list-date { white-space: normal; }
+}
+@media (max-width: 520px) {
+  .g-hero { padding: 26px 0 30px; }
+  .g-block { padding-top: 26px; }
+  .g-attrib { padding: 18px; margin-bottom: 28px; }
+}
+
+/* ---------- Motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .g-card, .g-jump a, .g-list-row { will-change: transform; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

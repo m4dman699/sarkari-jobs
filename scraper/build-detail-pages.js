@@ -2,6 +2,12 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
+// Sector guide generator. Imported here rather than run as a separate script so
+// there is one entry point (`npm run build:details`) and one deploy path, and so
+// the per-listing "deeper guide" links are derived from the same content model
+// that produces the guides themselves.
+const { buildGuides, loadSectors, sectorMatcher } = require('./build-sector-pages');
+
 const ROOT = path.join(__dirname, '..');
 const payload = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'jobs.json'), 'utf8'));
 const output = path.join(ROOT, 'job-details');
@@ -372,13 +378,57 @@ const relatedFor = (entry, limit = 6) => {
 // Long-form guides that live outside job-details/. Each entry claims the
 // listings it is genuinely about, so the guide gets inbound links from real
 // content instead of sitting orphaned in the sitemap.
+//
+// The sector guides are generated from scraper/sectors/*.json, so this list is
+// derived rather than hand-maintained: a listing whose authority or title matches
+// a sector links to that sector's guide.
 const GUIDES = [
+  ...loadSectors().map(sector => ({
+    href: `guides/${sector.slug}/`,
+    label: `${sector.name} sector guide: which qualification unlocks which post, selection stages and live listings`,
+    test: sectorMatcher(sector)
+  })),
   {
     href: 'upsc-cds-2-2026/',
     label: 'UPSC CDS II 2026 — exam guide: dates, vacancies, result and admit card',
     test: item => /\bCDS\b/i.test(String(item.title || '')) && /UPSC|Union Public Service/i.test(String(item.organization || ''))
   }
 ];
+
+// ---- Real authority marks ----
+// Detail pages are static, so they cannot use the host→logo lookup that
+// js/main.js runs in the browser. The mark is chosen from the authority named in
+// the record, not the URL host: feeds routinely link a state portal
+// (recruitment.rajasthan.gov.in) or a republisher, so host matching misses most
+// authorities, while the organisation text is what the reader actually sees.
+//
+// Every entry points at an image the authority itself publishes. Where no mark
+// is on file the page keeps its plain text label rather than inventing a seal.
+const MARK_BY_NAME = [
+  [/\bRPSC\b|Rajasthan Public Service/i, 'portal-logos/rpsc.png'],
+  [/\bUPPSC\b|UP Public Service/i, 'portal-logos/uppsc-official.png'],
+  [/\bMPPSC\b|Madhya Pradesh Public Service/i, 'portal-logos/mppsc.png'],
+  [/\bGPSC\b|Gujarat Public Service/i, 'portal-logos/gpsc.png'],
+  [/\bHPSC\b|Haryana Public Service/i, 'portal-logos/hpsc.png'],
+  [/\bTPSC\b|Tripura Public Service/i, 'portal-logos/tpsc-emblem.png'],
+  [/\bHSSC\b|Haryana Staff Selection/i, 'portal-logos/hssc.png'],
+  [/\bDSSSB\b|Delhi Subordinate Services/i, 'portal-logos/dsssb.png'],
+  [/\bMPSC\b|Manipur Public Service/i, 'portal-logos/manipur-mpsc.ico'],
+  [/\bSSC\b|Staff Selection Commission/i, 'portal-logos/ssc.webp'],
+  [/\bRRB\b|Railway Recruitment|Railways?\b/i, 'portal-logos/railways.png'],
+  [/Supreme Court of India/i, 'portal-logos/supreme-court.ico']
+];
+
+// Decorative: the authority is already named in the h1, the chips and the source
+// table, so alt="" stops a screen reader from hearing it twice. width/height are
+// fixed so the hero never shifts, and the image is lazy so a logo can never
+// become the LCP element.
+const markFor = item => {
+  const org = String(item.organization || item.source || item.publisher || '');
+  const match = MARK_BY_NAME.find(([pattern]) => pattern.test(org));
+  if (!match) return '';
+  return `<img class="d-org-mark" src="../../assets/${match[1]}" alt="" width="40" height="40" loading="lazy" decoding="async">`;
+};
 
 const urls = [];
 for (const item of payload.jobs || []) {
@@ -485,7 +535,7 @@ for (const item of payload.jobs || []) {
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d6">
+<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d7">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -504,7 +554,7 @@ ${iconSprite()}
 <main class="d-main">
 <section class="d-hero">
 <nav class="d-crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span class="d-sep" aria-hidden="true"></span><a href="../../${type === 'result' ? 'results.html' : type === 'admit' ? 'admit-cards.html' : 'category.html'}">${escapeHTML(kind)} listings</a></nav>
-<span class="d-ribbon${ribbonCls}">${icon(kindId, 'd-ic d-ribbon-ic')}<span>${escapeHTML(kind)}</span></span>
+<div class="d-hero-top">${markFor(item)}<span class="d-ribbon${ribbonCls}">${icon(kindId, 'd-ic d-ribbon-ic')}<span>${escapeHTML(kind)}</span></span></div>
 <h1>${title}</h1>
 <div class="d-chiprow">${chips}</div>
 ${ctaRow}
@@ -639,7 +689,7 @@ const stubPage = ({ kind, target }) => {
 <link rel="canonical" href="${canonicalUrl}">
 <meta http-equiv="refresh" content="3;url=${canonicalUrl}">
 <meta name="theme-color" content="#0a1128">
-<link rel="stylesheet" href="../../css/detail.css?v=d6">
+<link rel="stylesheet" href="../../css/detail.css?v=d7">
 </head><body>
 ${iconSprite()}
 <div class="tricolor-strip"></div>
@@ -784,7 +834,35 @@ for (const rel of ['about.html', 'editorial-policy.html', 'privacy.html', 'conta
   if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, '');
   if (lastmod) staticPageBlocks.push(`<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`);
 }
+// Sector guide pages (guides/*). Generated from scraper/sectors/*.json and
+// folded into this build so one script produces the whole crawlable site.
+const guidePages = buildGuides({
+  ROOT,
+  payload,
+  helpers: { escapeHTML, date, feedDate, typeOf, listingType, isNonRecruitmentPage, slugFor }
+});
+
 sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}${staticPageBlocks.length ? '\n' + staticPageBlocks.join('\n') : ''}\n</urlset>`);
+
+// Guide pages get the same change-aware treatment as the prose pages: <lastmod>
+// moves only when the generated HTML actually changes, so a rebuild that pulled
+// no new listing does not falsely bump every guide.
+const guidePageBlocks = [];
+for (const page of guidePages) {
+  const fileHash = crypto.createHash('sha1').update(fs.readFileSync(page.file).toString('utf8').replace(/\r\n/g, '\n')).digest('hex');
+  const key = `page:${page.rel}`;
+  const prevState = lastmodState[key];
+  const lastmod = prevState && prevState.hash === fileHash ? (prevState.lastmod || null) : feedDate;
+  nextLastmodState[key] = { hash: fileHash, lastmod };
+  if (!lastmod) continue;
+  const loc = `https://sarkarijobsplus.com/${page.rel}`;
+  const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
+  if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, '');
+  guidePageBlocks.push(`<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`);
+}
+if (guidePageBlocks.length) {
+  sitemap = sitemap.replace('</urlset>', `${guidePageBlocks.join('\n')}\n</urlset>`);
+}
 
 // Canonical serialization independent of the previous file's formatting:
 // every <url> block on its own compact line, so repeated builds are
