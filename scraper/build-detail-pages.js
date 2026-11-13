@@ -650,10 +650,34 @@ const retiredPath = path.join(__dirname, 'retired-slugs.json');
 const builtSlugs = new Set(entries.map(entry => entry.slug));
 const retiredRecords = fs.existsSync(retiredPath) ? JSON.parse(fs.readFileSync(retiredPath, 'utf8')) : [];
 
+// A listing can drop out of the feed because a scrape for that source failed,
+// not because the notice is gone: data/jobs.json sets "partial": true and the
+// per-source error list is long. Stubbing on the first absence would therefore
+// replace a live page with a "withdrawn" notice over a transient network error.
+//
+// So absence has to be confirmed across consecutive builds before the page is
+// retired. scraper/retired-state.json counts them, and the counter resets the
+// moment the slug reappears in the feed.
+const ABSENCE_BUILDS_BEFORE_RETIREMENT = 3;
+const SHRINK_GUARD = 0.9; // a feed this much smaller than the baseline is a partial scrape
+const retiredStatePath = path.join(__dirname, 'retired-state.json');
+let retiredState = {};
+try { retiredState = JSON.parse(fs.readFileSync(retiredStatePath, 'utf8')); } catch { }
+const nextRetiredState = {};
+
+// A feed that has shrunk sharply is missing whole sources (data/jobs.json sets
+// "partial": true and lists per-source errors), so absences in it prove nothing.
+// In that build, hold the counters still rather than counting a network failure
+// towards retirement.
+const baseline = Number(retiredState.baseline) || entries.length;
+const shrunken = entries.length < baseline * SHRINK_GUARD;
+if (entries.length > baseline) nextRetiredState.baseline = entries.length;
+else if (!shrunken) nextRetiredState.baseline = baseline;
+
 // Live pages indexed by normalised title, so a retired URL that is really the
 // same notice under an older slug can be consolidated into it. The feed
 // re-issues records with new ids, which leaves the previous slug stranded with
-// identical content — 50 of the retired URLs are exactly this.
+// identical content — about 50 of the retired URLs are exactly this.
 const liveByTitle = new Map();
 for (const entry of primaryEntries) {
   const key = normalizeTitle(entry.item.title);
@@ -661,29 +685,56 @@ for (const entry of primaryEntries) {
 }
 
 const stubs = [];
+const pending = [];
 for (const record of retiredRecords) {
-  if (!record?.slug || builtSlugs.has(record.slug)) continue;
+  if (!record?.slug) continue;
+  if (builtSlugs.has(record.slug)) { delete nextRetiredState[record.slug]; continue; }
   if (record.stub) { stubs.push({ slug: record.slug, kind: 'junk' }); continue; }
+
   const match = liveByTitle.get(normalizeTitle(record.title));
-  if (match) stubs.push({ slug: record.slug, kind: 'duplicate', target: match.slug });
+  // A retired copy of a notice that is still live is safe to retire immediately:
+  // the reader is sent to a current page, so nothing is lost.
+  if (match) { stubs.push({ slug: record.slug, kind: 'duplicate', target: match.slug }); continue; }
+
+  const count = shrunken
+    ? (retiredState[record.slug] || 0) // hold, do not advance
+    : (retiredState[record.slug] || 0) + 1;
+  nextRetiredState[record.slug] = count;
+  if (count >= ABSENCE_BUILDS_BEFORE_RETIREMENT) stubs.push({ slug: record.slug, kind: 'gone' });
+  else pending.push(record.slug);
 }
+
 const stubSlugs = stubs.map(stub => stub.slug);
 // A truncated feed must never be able to blank the site, so refuse to act on a
-// suspiciously large set.
-if (stubSlugs.length > Math.max(20, Math.floor(entries.length * 0.15))) {
-  throw new Error(`Refusing to stub ${stubSlugs.length} pages: the feed looks truncated, so this build is probably incomplete.`);
+// suspiciously large set. Confirmed retirements are exempt from the ratio cap:
+// they are historical, already validated over several builds, and bounded by the
+// size of retired-slugs.json.
+const confirmed = stubs.filter(stub => stub.kind === 'gone').length;
+const unconfirmed = stubSlugs.length - confirmed;
+if (unconfirmed > Math.max(20, Math.floor(entries.length * 0.15))) {
+  throw new Error(`Refusing to stub ${unconfirmed} pages: the feed looks truncated, so this build is probably incomplete.`);
 }
 const stubPage = ({ kind, target }) => {
   const duplicate = kind === 'duplicate';
+  const junk = kind === 'junk';
   const canonicalUrl = duplicate
     ? `https://sarkarijobsplus.com/job-details/${target}/`
     : 'https://sarkarijobsplus.com/all-jobs.html';
   const lead = duplicate
     ? 'The tracker republished this notice under a newer URL, so this copy has been retired and points at the current page. Nothing here should be relied on for dates, fees or eligibility.'
-    : 'It was never a recruitment notice — the source published a browsing page rather than a post — so it has been removed from the tracker. Nothing here should be relied on for dates, fees or eligibility.';
+    : junk
+      ? 'It was never a recruitment notice — the source published a browsing page rather than a post — so it has been removed from the tracker. Nothing here should be relied on for dates, fees or eligibility.'
+      : 'It has dropped out of the feed SarkariJobs+ follows, so the summary that used to be here would be out of date. Nothing here should be relied on for dates, fees or eligibility.';
+  const kicker = duplicate ? 'Listing moved' : junk ? 'Listing withdrawn' : 'Listing retired';
+  const heading = duplicate
+    ? 'This listing has moved to a newer page'
+    : junk ? 'This listing is no longer tracked' : 'This listing has been retired';
+  const howto = duplicate
+    ? 'The current page opens automatically in a few seconds, or use the link below.'
+    : 'The current official listings are all on the index page. Use the link below; this page also redirects there automatically in a few seconds.';
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${duplicate ? 'This listing has moved' : 'Listing no longer tracked'} | SarkariJobs+</title>
+<title>${duplicate ? 'This listing has moved' : junk ? 'Listing no longer tracked' : 'This listing has been retired'} | SarkariJobs+</title>
 <meta name="robots" content="noindex, follow">
 <meta name="description" content="This URL has been retired. Open the current SarkariJobs+ page for this notice, or browse every live listing.">
 <link rel="canonical" href="${canonicalUrl}">
@@ -694,13 +745,13 @@ const stubPage = ({ kind, target }) => {
 ${iconSprite()}
 <div class="tricolor-strip"></div>
 <main class="d-wrap" style="max-width:720px;margin:0 auto;padding:48px 20px">
-<p class="d-kicker">${duplicate ? 'Listing moved' : 'Listing withdrawn'}</p>
-<h1>${duplicate ? 'This listing has moved to a newer page' : 'This listing is no longer tracked'}</h1>
+<p class="d-kicker">${kicker}</p>
+<h1>${heading}</h1>
 <p class="d-lead">${lead}</p>
 <h2 class="d-section-title">How to use this page</h2>
-<p>${duplicate ? 'The current page opens automatically in a few seconds, or use the link below.' : 'The current official listings are all on the index page. Use the link below; this page also redirects there automatically in a few seconds.'}</p>
+<p>${howto}</p>
 <p><a class="d-disc" href="${duplicate ? `../${target}/` : '../../all-jobs.html'}"><span class="d-disc--icon">${icon(duplicate ? 'info' : 'folder', 'd-ic d-disc-ic')}</span><span class="d-disc--label">${duplicate ? 'Open the current page for this notice' : 'All current listings (A–Z)'}</span><span class="d-disc--arrow" aria-hidden="true"></span></a></p>
-<p style="font-size:.85rem;color:#4a5677">If you reached this page from a bookmark, search the index for the authority name.</p>
+<p style="font-size:.85rem;color:#4a5677">If you reached this page from a bookmark, search the index for the authority name — the same recruitment is often republished under a newer notice.</p>
 </main>
 </body></html>`;
 };
@@ -875,6 +926,10 @@ fs.writeFileSync(sitemapPath, `${opening}${blocks.join('\n')}\n</urlset>\n`);
 // only grow the state file forever.
 for (const slug of stubSlugs) delete nextLastmodState[slug];
 fs.writeFileSync(lastmodStatePath, JSON.stringify(nextLastmodState, null, 2) + '\n');
+// Persist the absence counters so retirement survives across builds, and so a
+// listing that reappears (partial feed, fixed scrape) resets instead of being
+// retired on the strength of an earlier outage.
+fs.writeFileSync(retiredStatePath, JSON.stringify(nextRetiredState, null, 2) + '\n');
 
 // A previous feed imported a third-party privacy-policy page as an admit card.
 // Redirect its retired URL to the real first-party policy page after deployment.
