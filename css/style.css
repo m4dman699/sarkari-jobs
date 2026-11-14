@@ -784,24 +784,49 @@ footer { background: var(--bg-dark); color: #aebadb; padding: 58px 0 0; }
 }
 
 /* NCS source guide: standalone bento section */
-/* ---------- Sources we follow (realistic logo ribbon) ---------- */
+/* ---------- Sources we follow (aesthetic card) ---------- */
 section.block.sources-block { 
-  padding: 20px 0; 
-  background: #fff; 
+  padding: 40px 0; 
+  background: linear-gradient(180deg, #fafbfc 0%, #ffffff 100%); 
   border-top: 1px solid #e8ecf1; 
   border-bottom: 1px solid #e8ecf1;
 }
-.sources-ribbon-row { 
-  display: flex; 
-  justify-content: center; 
+.sources-card {
+  background: #fff;
+  border: 1px solid #e8ecf1;
+  border-radius: 20px;
+  padding: 32px 40px;
+  box-shadow: 0 4px 24px rgba(22, 37, 67, .06), 0 1px 3px rgba(22, 37, 67, .04);
+  transition: box-shadow .3s;
+}
+.sources-card:hover { 
+  box-shadow: 0 8px 32px rgba(22, 37, 67, .08), 0 2px 6px rgba(22, 37, 67, .06);
+}
+.sources-label {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 24px;
+  color: #14213b;
+  font-size: .85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  text-align: center;
+}
+.sources-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9933 0%, #138808 100%);
 }
 .sources-logos {
   list-style: none; 
   margin: 0; 
   padding: 0;
   display: flex; 
-  gap: 12px; 
+  gap: 16px; 
   flex-wrap: wrap;
   justify-content: center; 
   align-items: center;
@@ -810,32 +835,58 @@ section.block.sources-block {
   display: flex; 
   align-items: center;
   justify-content: center;
-  height: 56px;
-  padding: 0 8px;
+  height: 64px;
+  width: 96px;
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 8px;
+  transition: background .25s, transform .2s, box-shadow .2s;
+}
+.sources-logos li:hover {
+  background: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(22, 37, 67, .1);
 }
 .sources-logos img {
-  height: 52px; 
+  height: 48px; 
   width: auto; 
-  max-width: 90px;
+  max-width: 80px;
   object-fit: contain;
-  filter: grayscale(12%) opacity(0.92);
-  transition: filter .25s, transform .2s;
+  filter: grayscale(15%) opacity(0.88);
+  transition: filter .3s, transform .2s;
 }
-.sources-logos img:hover { 
+.sources-logos li:hover img { 
   filter: grayscale(0%) opacity(1);
-  transform: translateY(-2px);
+  transform: scale(1.05);
 }
+.sources-note {
+  margin: 24px 0 0;
+  text-align: center;
+  color: #52617a;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.sources-note a {
+  color: #965000;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s;
+}
+.sources-note a:hover { color: #14213b; text-decoration: underline; }
 @media (max-width: 768px) {
-  section.block.sources-block { padding: 18px 0; }
-  .sources-logos { gap: 10px; }
-  .sources-logos li { height: 48px; padding: 0 6px; }
-  .sources-logos img { height: 44px; max-width: 78px; }
+  section.block.sources-block { padding: 32px 0; }
+  .sources-card { padding: 24px 20px; border-radius: 16px; }
+  .sources-label { font-size: .78rem; letter-spacing: .1em; margin: 0 0 20px; }
+  .sources-logos { gap: 12px; }
+  .sources-logos li { height: 56px; width: 80px; padding: 6px; }
+  .sources-logos img { height: 40px; max-width: 68px; }
 }
 @media (max-width: 480px) {
-  section.block.sources-block { padding: 16px 0; }
+  section.block.sources-block { padding: 28px 0; }
+  .sources-card { padding: 20px 16px; }
   .sources-logos { gap: 8px; }
-  .sources-logos li { height: 42px; padding: 0 4px; }
-  .sources-logos img { height: 38px; max-width: 65px; }
+  .sources-logos li { height: 50px; width: 72px; padding: 4px; }
+  .sources-logos img { height: 36px; max-width: 60px; }
 }
 
 section.block.source-section { position: relative; overflow: hidden; padding: 68px 0 76px; background: radial-gradient(ellipse at 8% 0%, rgba(255,153,51,.11), transparent 35%), radial-gradient(ellipse at 96% 100%, rgba(19,136,8,.09), transparent 33%), #f2f5fa; border-top: 1px solid #e3e8f0; border-bottom: 1px solid #e3e8f0; }
