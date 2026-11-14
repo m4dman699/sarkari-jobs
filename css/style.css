@@ -784,26 +784,58 @@ footer { background: var(--bg-dark); color: #aebadb; padding: 58px 0 0; }
 }
 
 /* NCS source guide: standalone bento section */
-/* ---------- Sources we follow (single logo row) ---------- */
-section.block.sources-block { padding: 24px 0; background: #fafbfc; border-bottom: 1px solid #e3e8f0; }
-.sources-ribbon-row { display: flex; justify-content: center; }
+/* ---------- Sources we follow (realistic logo ribbon) ---------- */
+section.block.sources-block { 
+  padding: 20px 0; 
+  background: #fff; 
+  border-top: 1px solid #e8ecf1; 
+  border-bottom: 1px solid #e8ecf1;
+}
+.sources-ribbon-row { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
 .sources-logos {
-  list-style: none; margin: 0; padding: 0;
-  display: flex; gap: 20px; flex-wrap: wrap;
-  justify-content: center; align-items: center;
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
 }
-.sources-logos li { display: flex; align-items: center; }
+.sources-logos li { 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 8px;
+}
 .sources-logos img {
-  height: 48px; width: auto; max-width: 80px;
+  height: 52px; 
+  width: auto; 
+  max-width: 90px;
   object-fit: contain;
-  opacity: .8;
-  transition: opacity .2s, transform .18s;
+  filter: grayscale(12%) opacity(0.92);
+  transition: filter .25s, transform .2s;
 }
-.sources-logos img:hover { opacity: 1; transform: scale(1.08); }
-@media (max-width: 640px) {
-  section.block.sources-block { padding: 20px 0; }
-  .sources-logos { gap: 14px; }
-  .sources-logos img { height: 40px; max-width: 70px; }
+.sources-logos img:hover { 
+  filter: grayscale(0%) opacity(1);
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  section.block.sources-block { padding: 18px 0; }
+  .sources-logos { gap: 10px; }
+  .sources-logos li { height: 48px; padding: 0 6px; }
+  .sources-logos img { height: 44px; max-width: 78px; }
+}
+@media (max-width: 480px) {
+  section.block.sources-block { padding: 16px 0; }
+  .sources-logos { gap: 8px; }
+  .sources-logos li { height: 42px; padding: 0 4px; }
+  .sources-logos img { height: 38px; max-width: 65px; }
 }
 
 section.block.source-section { position: relative; overflow: hidden; padding: 68px 0 76px; background: radial-gradient(ellipse at 8% 0%, rgba(255,153,51,.11), transparent 35%), radial-gradient(ellipse at 96% 100%, rgba(19,136,8,.09), transparent 33%), #f2f5fa; border-top: 1px solid #e3e8f0; border-bottom: 1px solid #e3e8f0; }
