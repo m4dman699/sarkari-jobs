@@ -1,0 +1,104 @@
+{
+  "slug": "teaching",
+  "name": "Teaching",
+  "icon": "graduation-cap",
+  "logo": { "src": "assets/logos/kvs-logo.svg", "alt": "Kendriya Vidyalaya Sangathan", "width": 380, "height": 190 },
+  "accent": "#7a4bd6",
+  "categoryMatch": ["Teaching"],
+  "titleMatch": "\\b(kvs|nvs|cbse|ctet|tet|teacher|teaching|pgt|tgt|prt|lecturer|professor| Kendriya Vidyalaya|Navodaya)\\b",
+  "stats": [
+    { "value": "1200+", "label": "KVs Nationwide" },
+    { "value": "600+", "label": "NVs Nationwide" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "12th Pass",
+      "posts": [
+        { "name": "Primary Teacher (PRT)", "code": "Level 6", "note": "12th + 2-year D.El.Ed / B.El.Ed" },
+        { "name": "Junior Teacher", "code": "Level 5", "note": "State-level, varies by board" }
+      ],
+      "note": "12th pass + teaching diploma. CTET Paper 1 (Classes 1–5). Age 18–35."
+    },
+    {
+      "level": "Graduate",
+      "posts": [
+        { "name": "Trained Graduate Teacher (TGT)", "code": "Level 7", "note": "Graduate + B.Ed, teaches Classes 6–10" },
+        { "name": "Post Graduate Teacher (PGT)", "code": "Level 8", "note": "Post-graduate + B.Ed, teaches Classes 11–12" },
+        { "name": "Lecturer (College)", "code": "Level 10", "note": "Master's + NET/SET, UGC norms" }
+      ],
+      "note": "Graduation in relevant subject + B.Ed. CTET Paper 2 (Classes 6–8) or State TET."
+    },
+    {
+      "level": "Post Graduate",
+      "posts": [
+        { "name": "Assistant Professor", "code": "Level 10", "note": "Master's + NET/Ph.D, UGC CAS" },
+        { "name": "Professor", "code": "Level 14", "note": "Ph.D + 10 years experience, UGC norms" }
+      ],
+      "note": "Master's degree. UGC-NET or Ph.D for Assistant Professor. Age 21–40."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Written Exam",
+      "tests": "CTET: 150 Qs, 150 min. Child Pedagogy, Subject, Language I & II, EVS/Maths.",
+      "note": "Qualifying. 60% to pass. Valid for lifetime (from 2021)."
+    },
+    {
+      "name": "Interview / Demo",
+      "tests": "Teaching demo (10–15 min) + personal interview. Subject knowledge + pedagogy.",
+      "note": "KVS/NVS have interview. State TET recruitments may skip interview (merit-based)."
+    },
+    {
+      "name": "Document Verification",
+      "tests": "Degree, B.Ed, TET certificate, caste, domicile, NOC.",
+      "note": "B.Ed must be from NCTE-recognised institution. Verify before applying."
+    },
+    {
+      "name": "Medical & Joining",
+      "tests": "Basic medical fitness. Joining in allotted school/region.",
+      "note": "KVS/NVS have transferable posts. State boards: home state preference."
+    }
+  ],
+  "ladder": [
+    "Primary Teacher (Level 6)",
+    "TGT / PGT (Level 7-8)",
+    "Vice Principal / Headmaster (Level 9-10)",
+    "Principal (Level 11-12)",
+    "Education Officer / DEO (Level 13+)"
+  ],
+  "reality": [
+    "CTET is qualifying only — it doesn't get you a job. You need a recruitment exam (KVS, NVS, state boards) separately.",
+    "KVS and NVS are central; state boards are state-specific. Apply to both for more chances.",
+    "B.Ed is mandatory for TGT/PGT. Without B.Ed, only PRT (primary) posts are open.",
+    "State TET (like UPTET, HTET) is separate from CTET. Some states accept CTET; many require state TET.",
+    "Teaching jobs have high competition. KVS PGT attracts 50,000+ applicants for 1000 posts.",
+    "Salary: KVS PGT ~₹47,600 (Level 8) + DA + HRA. State varies. Private schools pay less."
+  ],
+  "faq": [
+    {
+      "q": "What is CTET and is it mandatory?",
+      "a": "Central Teacher Eligibility Test — qualifying exam for teaching Classes 1–8 in central schools (KVS, NVS, Army schools). Mandatory for central recruitment. State schools may require state TET instead."
+    },
+    {
+      "q": "Can a B.Tech graduate become a teacher?",
+      "a": "Yes. B.Tech + B.Ed makes you eligible for TGT (Maths/Science) in KVS, NVS, and state boards. Some states allow B.Tech without B.Ed for specific subjects."
+    },
+    {
+      "q": "What is the difference between KVS and NVS?",
+      "a": "KVS = Kendriya Vidyalaya Sangathan (urban, central government employees' children). NVS = Navodaya Vidyalaya Samiti (rural, free residential schools). Both central, similar pay, different locations."
+    },
+    {
+      "q": "How many vacancies are there in teaching?",
+      "a": "KVS recruits 5,000–10,000+ annually. NVS recruits 2,000–3,000. State boards vary widely (UP TGT: 10,000+). Total government teaching vacancies exceed 1 lakh per year."
+    },
+    {
+      "q": "What is the age limit for teaching jobs?",
+      "a": "KVS: 18–35 years (PRT), 21–35 (TGT/PGT). NVS: similar. State boards: varies (often 21–40). Age relaxations for SC/ST/OBC/PwD."
+    },
+    {
+      "q": "Where do I find official teaching notifications?",
+      "a": "kvs.gov.in (KVS), navodaya.gov.in (NVS), cbse.gov.in (CTET), and state education boards. SarkariJobs+ links the official notification on every listing."
+    }
+  ]
+}

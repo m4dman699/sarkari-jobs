@@ -1,0 +1,106 @@
+{
+  "slug": "upsc",
+  "name": "UPSC",
+  "icon": "landmark",
+  "logo": null,
+  "accent": "#000080",
+  "categoryMatch": ["UPSC"],
+  "titleMatch": "\\b(upsc|civil services|ias|ips|ifs|ies|iss|cse|nda|cds|capf|epfo|geologist|statistician)\\b",
+  "stats": [
+    { "value": "24", "label": "Services" },
+    { "value": "900+", "label": "Vacancies (CSE)" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "Graduate",
+      "posts": [
+        { "name": "IAS (Indian Administrative Service)", "code": "Group A", "note": "District Collector, Secretary" },
+        { "name": "IPS (Indian Police Service)", "code": "Group A", "note": "SP, DIG, IG, DGP" },
+        { "name": "IFS (Indian Foreign Service)", "code": "Group A", "note": "Ambassador, High Commissioner" },
+        { "name": "IRS (Income Tax / Customs)", "code": "Group A", "note": "Commissioner, Principal Commissioner" }
+      ],
+      "note": "Any degree. Age 21–32 (relaxations: SC/ST 5 yrs, OBC 3 yrs). 6 attempts (General)."
+    },
+    {
+      "level": "Engineering Graduate",
+      "posts": [
+        { "name": "IES (Indian Engineering Services)", "code": "Group A", "note": "Civil, Mech, Elec, Electronics" },
+        { "name": "ISS (Indian Statistical Service)", "code": "Group A", "note": "Statistics, data analysis" },
+        { "name": "I Geo S (Indian Geologist Service)", "code": "Group A", "note": "Geology, mining" }
+      ],
+      "note": "B.E./B.Tech in relevant branch. Age 21–30 (IES). 6 attempts."
+    },
+    {
+      "level": "Post Graduate",
+      "posts": [
+        { "name": "IES (Economics)", "code": "Group A", "note": "Economic analysis, policy" },
+        { "name": "ISS (Statistics)", "code": "Group A", "note": "Statistical officer" }
+      ],
+      "note": "Master's in Economics/Statistics. Age 21–30."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Preliminary Exam",
+      "tests": "Paper 1: GS (100 Qs, 200 marks, 2 hrs). Paper 2: CSAT (80 Qs, 200 marks, 2 hrs).",
+      "note": "CSAT qualifying (33%). GS score decides cut-off. Negative marking 1/3."
+    },
+    {
+      "name": "Main Exam",
+      "tests": "9 papers: Essay, GS I-IV, Optional I-II, Language (qualifying). Total 1750 marks.",
+      "note": "Written. 3 hrs per paper. Optional subject chosen by candidate."
+    },
+    {
+      "name": "Personality Test (Interview)",
+      "tests": "275 marks. Board of 4-5 members. 30-45 min. Personality, current affairs, optional subject.",
+      "note": "No coaching can substitute genuine personality. DAF (Detailed Application Form) is key."
+    },
+    {
+      "name": "Final Merit",
+      "tests": "Mains (1750) + Interview (275) = 2025 marks. Service allocated by rank + preference.",
+      "note": "Top 900-1000 candidates recommended. Service allocation by merit + preference."
+    }
+  ],
+  "ladder": [
+    "Probationer (Level 10, training 2 years)",
+    "Under Secretary / SDM / ASP (Level 11)",
+    "Deputy Secretary / ADM / SP (Level 12)",
+    "Joint Secretary / Commissioner / DIG (Level 13-14)",
+    "Secretary / DGP / Ambassador (Level 15-17)"
+  ],
+  "reality": [
+    "UPSC CSE is the most competitive exam in India. 10 lakh+ applicants, ~900 vacancies. Success rate < 0.1%.",
+    "Preparation takes 1-2 years minimum. Many take 3-4 attempts. Average age of successful candidate: 27-28.",
+    "Optional subject choice is crucial. Choose based on interest and scoring potential, not popularity.",
+    "Current affairs matter more than static knowledge. Read The Hindu/Indian Express daily.",
+    "Interview is not about knowledge — it tests personality, balance, and integrity. DAF preparation is key.",
+    "Service allocation: IAS > IPS > IFS > IRS (by rank). Top 100 get IAS. Rank 100-200 get IPS/IFS."
+  ],
+  "faq": [
+    {
+      "q": "How many attempts are allowed for UPSC CSE?",
+      "a": "General: 6 attempts (age 21-32). OBC: 9 attempts (age 21-35). SC/ST: unlimited (age 21-37). PwD: 9 attempts (age 21-42)."
+    },
+    {
+      "q": "What is the difference between IAS and IPS?",
+      "a": "IAS = administrative service (district collector, policy making). IPS = police service (SP, DIG, DGP). Both are Group A. IAS has higher status and broader scope."
+    },
+    {
+      "q": "Can I choose my optional subject freely?",
+      "a": "Yes. Any subject from the UPSC list. No restriction based on graduation. Choose based on interest, syllabus overlap with GS, and availability of study material."
+    },
+    {
+      "q": "What is the UPSC interview like?",
+      "a": "275 marks. 4-5 member board. 30-45 minutes. Questions on DAF (hobbies, education, work), current affairs, optional subject, and situational judgment. No right/wrong answers — personality assessment."
+    },
+    {
+      "q": "Is coaching necessary for UPSC?",
+      "a": "Not mandatory. Many clear without coaching. Coaching helps with structure and mock tests. Self-study with standard books + test series is equally effective."
+    },
+    {
+      "q": "Where do I find official UPSC notifications?",
+      "a": "upsc.gov.in (main site) and upsconline.nic.in (application). SarkariJobs+ links the official notification PDF on every listing page."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "banking",
+  "name": "Banking",
+  "icon": "landmark",
+  "logo": { "src": "assets/logos/ibps-logo.png", "alt": "IBPS", "width": 380, "height": 190 },
+  "accent": "#2f7fd4",
+  "categoryMatch": ["Banking"],
+  "titleMatch": "\\b(ibps|sbi|bank|banking|rbi|rrb|po|clerk|so |specialist officer|probationary officer)\\b",
+  "stats": [
+    { "value": "12", "label": "Public Sector Banks" },
+    { "value": "40+", "label": "RRBs" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "12th Pass",
+      "posts": [
+        { "name": "Bank Clerk (IBPS / SBI)", "code": "Clerk", "note": "Cash, accounts, customer service" },
+        { "name": "RRB Office Assistant", "code": "Clerk", "note": "Rural bank clerk, multipurpose" }
+      ],
+      "note": "12th pass (60% for SBI). Computer literacy. Age 20–28 (relaxations apply)."
+    },
+    {
+      "level": "Graduate",
+      "posts": [
+        { "name": "Probationary Officer (PO)", "code": "Officer", "note": "Branch management, lending, operations" },
+        { "name": "Specialist Officer (SO)", "code": "Officer", "note": "IT, HR, Law, Marketing, Rajbhasha" },
+        { "name": "RRB Officer Scale I", "code": "Officer", "note": "Rural bank officer, all functions" },
+        { "name": "RBI Grade B Officer", "code": "Officer", "note": "Central bank, policy, regulation" }
+      ],
+      "note": "Any degree. SO needs specific qualification (B.Tech for IT, LLB for Law, etc.). Age 20–30."
+    },
+    {
+      "level": "Post Graduate",
+      "posts": [
+        { "name": "RBI Grade B (DEPR/DSIM)", "code": "Officer", "note": "Economics, Statistics, Finance" },
+        { "name": "NABARD Grade A/B", "code": "Officer", "note": "Rural development, agriculture finance" }
+      ],
+      "note": "Master's in relevant field. Age 21–30 (relaxations apply)."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Preliminary Exam",
+      "tests": "100 Qs, 60 min. English, Quantitative Aptitude, Reasoning Ability.",
+      "note": "Qualifying. Cut-off per section and overall. No interview for Clerk."
+    },
+    {
+      "name": "Main Exam",
+      "tests": "200 Qs, 160 min. Reasoning, English, Quant, GA, Computer. + Descriptive (letter + essay).",
+      "note": "Merit prepared from Main score. Descriptive qualifying."
+    },
+    {
+      "name": "Interview (PO/SO only)",
+      "tests": "20-min panel. Banking awareness, current affairs, personality, situational questions.",
+      "note": "100 marks. Final merit = Main (80%) + Interview (20%)."
+    },
+    {
+      "name": "Document Verification",
+      "tests": "All originals, caste, domicile, NOC, gap certificate.",
+      "note": "Any discrepancy = rejection. Verify before applying."
+    }
+  ],
+  "ladder": [
+    "Clerk / Office Assistant (Level 1-2)",
+    "Probationary Officer / Scale I (Level 7)",
+    "Manager / Scale II (Level 8-9)",
+    "Senior Manager / Scale III (Level 10-11)",
+    "Chief Manager / AGM / DGM (Level 12-14)"
+  ],
+  "reality": [
+    "IBPS PO and SBI PO are the most competitive. 10 lakh+ applicants for 4000–5000 vacancies.",
+    "Clerk has no interview — pure merit. PO has interview (20% weight). Focus accordingly.",
+    "Banking exams test speed + accuracy. 60 min for 100 Qs in Prelims = 36 sec per question.",
+    "SBI PO has group exercise + interview (different from IBPS). Prepare for group discussion.",
+    "RRB (Regional Rural Bank) exams are easier than IBPS/SBI but fewer vacancies and lower pay.",
+    "RBI Grade B is the most prestigious banking exam. Requires deeper economics/finance knowledge."
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between IBPS PO and SBI PO?",
+      "a": "IBPS PO recruits for 11 public sector banks (excluding SBI). SBI PO recruits only for SBI. SBI PO has group exercise + interview; IBPS PO has only interview. SBI PO pay is slightly higher."
+    },
+    {
+      "q": "Can a 12th pass apply for bank jobs?",
+      "a": "Yes, for Clerk posts (IBPS Clerk, SBI Clerk, RRB Office Assistant). PO and SO require graduation. RBI Grade B requires graduation or post-graduation depending on the post."
+    },
+    {
+      "q": "What is the age limit for banking exams?",
+      "a": "Clerk: 20–28 years. PO: 20–30 years. SO: 20–30 years. RBI Grade B: 21–30 years. Age relaxations: SC/ST 5 years, OBC 3 years, PwD 10 years."
+    },
+    {
+      "q": "How many attempts are allowed?",
+      "a": "IBPS PO: no attempt limit (age-based). SBI PO: no attempt limit. RBI Grade B: 6 attempts for General, no limit for SC/ST/OBC/PwD."
+    },
+    {
+      "q": "Is there negative marking in banking exams?",
+      "a": "Yes. 0.25 marks deducted per wrong answer in both Prelims and Mains. No negative marking in descriptive paper or interview."
+    },
+    {
+      "q": "Where do I find official banking notifications?",
+      "a": "ibps.in (IBPS), sbi.co.in/careers (SBI), rbi.org.in (RBI), ibps.in (RRB). SarkariJobs+ links the official notification on every listing page."
+    }
+  ]
+}

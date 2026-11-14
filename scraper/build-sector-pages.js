@@ -93,7 +93,9 @@ function renderListings(listings, helpers) {
   if (!listings.length) {
     return '<p class="g-empty">No live listing in this sector right now. New notifications appear here as soon as the feed picks them up — <a href="../../all-jobs.html">browse every listing</a> meanwhile.</p>';
   }
-  const rows = listings.map(({ item, type, slug }) => {
+  const MAX = 8;
+  const shown = listings.slice(0, MAX);
+  const rows = shown.map(({ item, type, slug }) => {
     const when = item.lastDate
       ? `Closes ${escapeHTML(date(item.lastDate))}`
       : item.examDate
@@ -107,7 +109,10 @@ function renderListings(listings, helpers) {
 ${when ? `<span class="g-list-date">${when}</span>` : ''}
 </li>`;
   }).join('\n');
-  return `<ul class="g-list">${rows}</ul>`;
+  const more = listings.length > MAX
+    ? `<p class="g-list-more"><a href="../../all-jobs.html">See all ${listings.length} listings for this sector →</a></p>`
+    : '';
+  return `<ul class="g-list">${rows}</ul>${more}`;
 }
 
 function renderPage(sector, listings, helpers) {
@@ -236,7 +241,7 @@ ${jsonLd}
 ${heroLogo}
 <p class="g-kicker">${icon(sector.icon, 'g-ic g-hero-ic')}Sector guide</p>
 <h1>${escapeHTML(name)} jobs: who can apply, and how selection works</h1>
-<p class="g-lede">Everything below is derived from the recruiting authority's own notification. The structure — posts, stages, pay levels — is written here once so you do not have to decode a PDF. The dates and vacancy counts are pulled live from the feed and always link the official page.</p>
+<p class="g-lede">${escapeHTML(name)} recruitment explained in diagrams: which qualification unlocks which post, every selection stage, and live listings pulled from the official feed.</p>
 <div class="g-statrow">${stats}</div>
 <p class="g-hero-note">${icon('landmark', 'g-ic g-ic--sm')}Not a recruiting authority. Confirm every date, fee and eligibility clause on the official notice linked from each listing.</p>
 </div>
