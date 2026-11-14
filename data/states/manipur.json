@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-13T09:34:23.068Z",
-  "total": 4,
+  "generatedAt": "2026-11-14T09:00:12.672Z",
+  "total": 3,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZSUyMG9mJTIwQUVfJTIwRXhhbWluYXRpb24ucGRm",
       "type": "job",
-      "title": "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). New Updated: 02/11/2026",
+      "title": "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). Updated: 02/11/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
@@ -18,7 +18,7 @@
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
       "type": "job",
-      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
+      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
@@ -40,19 +40,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-10-07"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MTUxNTI1MC5wZGY",
-      "type": "job",
-      "title": "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-09-15"
     }
   ]
 }

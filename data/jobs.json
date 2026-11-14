@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-13T09:34:24.343Z",
-  "jobsGeneratedAt": "2026-11-13T09:34:23.068Z",
+  "generatedAt": "2026-11-14T09:00:14.263Z",
+  "jobsGeneratedAt": "2026-11-14T09:00:12.672Z",
   "partial": true,
-  "total": 613,
+  "total": 619,
   "quality": {
     "jobsMissingPublicationDate": 57,
-    "jobsMissingClosingDate": 80,
+    "jobsMissingClosingDate": 78,
     "genericNavigationItems": 0
   },
   "errors": [
@@ -40,6 +40,11 @@
       "error": "HTTP 403"
     },
     {
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": ""
+    },
+    {
       "source": "NTPC",
       "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
@@ -65,11 +70,6 @@
       "error": "unable to verify the first certificate"
     },
     {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "BPSC",
       "url": "https://bpsc.bihar.gov.in/",
       "error": "unable to verify the first certificate"
@@ -80,23 +80,18 @@
       "error": "timeout"
     },
     {
-      "source": "BPSC",
-      "url": "https://www.bpsc.bih.nic.in/",
-      "error": "timeout"
-    },
-    {
       "source": "RPSC",
       "url": "https://rpsc.rajasthan.gov.in/",
       "error": ""
     },
     {
-      "source": "WBPSC",
-      "url": "https://wbpsc.gov.in/",
+      "source": "BPSC",
+      "url": "https://www.bpsc.bih.nic.in/",
       "error": "timeout"
     },
     {
-      "source": "MPPSC",
-      "url": "https://mppsc.mp.gov.in/",
+      "source": "WBPSC",
+      "url": "https://wbpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -105,23 +100,33 @@
       "error": "Parse Error: Invalid header token"
     },
     {
+      "source": "MPPSC",
+      "url": "https://mppsc.mp.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
       "error": ""
     },
     {
-      "source": "TGPSC",
-      "url": "https://www.tgpsc.gov.in/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "write EPROTO C0CCB64DEE750000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
+      "source": "Kerala PSC",
+      "url": "https://www.keralapsc.gov.in/",
+      "error": "timeout"
     },
     {
       "source": "APPSC",
       "url": "https://psc.ap.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "TGPSC",
+      "url": "https://www.tgpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
       "error": "timeout"
     },
     {
@@ -147,22 +152,22 @@
     {
       "source": "PPSC",
       "url": "https://ppsc.gov.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "APSC",
       "url": "https://apsc.nic.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "JKPSC",
-      "url": "https://jkpsc.nic.in/",
-      "error": "timeout"
+      "error": "The operation was aborted"
     },
     {
       "source": "Mizoram PSC",
       "url": "https://mpsc.mizoram.gov.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "JKPSC",
+      "url": "https://jkpsc.nic.in/",
+      "error": "timeout"
     },
     {
       "source": "SPSC Sikkim",
@@ -17118,6 +17123,78 @@
       ]
     },
     {
+      "id": "competitor-freejobalert-5cebfea1168e4a9f",
+      "type": "admit-card",
+      "title": "Supreme Court Junior Court Assistant Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "All India",
+      "link": "https://cdn3.digialm.com/EForms/configuredHtml/32912/100521/Index.html",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/supreme-court-junior-court-assistant-admit-card-2026-3081218",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-14",
+      "organization": "Supreme Court Junior Court Assistant",
+      "publishedDate": "2026-11-14",
+      "openDate": "2026-10-07",
+      "lastDate": "2026-10-28",
+      "examDate": "2026-11-20",
+      "vacancies": "250",
+      "officialLinks": [
+        {
+          "url": "https://www.sci.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cdn3.digialm.com/EForms/configuredHtml/32912/100521/Index.html",
+          "label": "Supreme Court Junior Court Assistant Admit Card 2026"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/11/2026111459.pdf",
+          "label": "Junior Court Assistant Admit Card Official Notice PDF"
+        }
+      ],
+      "officialLink": "https://cdn3.digialm.com/EForms/configuredHtml/32912/100521/Index.html",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-11-14",
+          "dateText": "14 November 2026"
+        },
+        {
+          "label": "Reported Exam Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026 (Tentative)"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-07",
+          "dateText": "7 October 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        },
+        {
+          "label": "Reported Exam City Intimation Date",
+          "date": "2026-11-09",
+          "dateText": "9 November 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-14",
+          "dateText": "14 November 2026"
+        },
+        {
+          "label": "Objective Type Test Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026 (Tentative; verify on admit card)"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-c197f1aa121f0b67",
       "type": "admit-card",
       "title": "UPSSSC Stenographer 2023 Skill Test Admit Card",
@@ -17231,55 +17308,6 @@
       "examDate": "2026-09-01",
       "resultDate": "2026-07-22",
       "ageLimit": "18–40 years"
-    },
-    {
-      "id": "competitor-sarkariresult-173da1bfefcc4e47",
-      "type": "job",
-      "title": "Indian Army TES 57th Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://joinindianarmy.nic.in/Authentication.aspx",
-      "lastDate": "2026-11-12",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "publishedDate": "2026-10-14",
-      "vacancies": "90",
-      "eligibility": "Army 10+2 TES 57th 90 Post For the Indian Army TES 57th Course, candidates must have appeared in JEE Mains 2026, as it is now mandatory. They should also have passed 10+2 (Intermediate) with a minimum of 60% aggregate marks in Physics, Chemistry, and Mathematics (PCM stream) from a recognized board.",
-      "applicationFee": "No application fee is required for any candidate.",
-      "officialLink": "https://joinindianarmy.nic.in/Authentication.aspx",
-      "organization": "Join Indian Army",
-      "openDate": "2026-10-14",
-      "ageLimit": "16–19 years",
-      "officialLinks": [
-        {
-          "url": "https://joinindianarmy.nic.in/Authentication.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "http://joinindianarmy.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-14",
-          "dateText": "14 October 2026 | 08:30 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-12",
-          "dateText": "12/11/2026"
-        },
-        {
-          "label": "Last Date Complete Form",
-          "date": "2026-11-12",
-          "dateText": "12/11/2026"
-        }
-      ],
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/army-tes-57th-oct26/"
     },
     {
       "id": "aHR0cHM6Ly93d3cuaXNyby5nb3YuaW4vVVJTQ1JlY3J1aXRtZW50MTMuaHRtbA",
@@ -20099,13 +20127,18 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-13",
+      "factCheckedAt": "2026-11-14",
       "organization": "Export-Import Bank of India (India Exim Bank)",
-      "publishedDate": "2026-11-11",
+      "publishedDate": "2026-11-13",
       "lastDate": "2026-12-11",
-      "ageLimit": "As per detailed Exim Bank Recruitment 2026 Notification",
+      "ageLimit": "As per detailed Exim Bank Recruitment 2026 Notification: MT 21 to 28 Years, Manager 24 to 30 Years (as on 01-11-2026)",
       "eligibility": "Graduation / MBA / PGDBA / PGDBM / MMS / CA / Relevant Professional Qualification (subject to official post-wise eligibility)",
       "milestones": [
+        {
+          "label": "Start Date for Apply Online",
+          "date": "2026-11-27",
+          "dateText": "27-11-2026"
+        },
         {
           "label": "Last Date for Apply Online",
           "date": "2026-12-11",
@@ -20368,6 +20401,45 @@
       ]
     },
     {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE2cE55Z3lkZjVqYQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq6pNygydf5ja",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHF4ME9rRWtGSEhtWg",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdqx0OkEkFHHmZ",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE0N05yTExpd2tQaQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq47NrLLiwkPi",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE5QTJ0WmpYNnlHVg",
       "type": "result",
       "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
@@ -20498,6 +20570,45 @@
       "publishedDate": null
     },
     {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHEzUDVIR2tRazNSRg",
+      "type": "result",
+      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq3P5HGkQk3RF",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-13"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExQVoxUVAvb1YvRQ",
+      "type": "result",
+      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR CARDIOLOGY, S-08/54",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq1AZ1QP/oV/E",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-13"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHF4OVRaRVZqRDNwag",
+      "type": "result",
+      "title": "13 Dec 2027 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR EMERGENCY MEDICINE, S-08/43",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdqx9TZEVjD3pj",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2027-12-13"
+    },
+    {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExMWtSNXNVeTVYUQ",
       "type": "result",
       "title": "12 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/58...",
@@ -20509,45 +20620,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-12-12"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHErNkVUQmpNTU56Ng",
-      "type": "result",
-      "title": "12 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR ANATOMY, S-08/44...",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq+6ETBjMMNz6",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-12"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2puN203eHdMZHJ6WA",
-      "type": "result",
-      "title": "07 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY), ASSISTANT PROFESSOR MICROBIOLOGY, S-08/89",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjn7m7xwLdrzX",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-07"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2ppcVlWVWdkOUZlVQ",
-      "type": "result",
-      "title": "06 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/PROFESSOR MICROBIOLOGY, S-08/22",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk3H4ltFfLCjiqYVUgd9FeU",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-06"
     },
     {
       "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
@@ -20877,7 +20949,7 @@
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZSUyMG9mJTIwQUVfJTIwRXhhbWluYXRpb24ucGRm",
       "type": "job",
-      "title": "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). New Updated: 02/11/2026",
+      "title": "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). Updated: 02/11/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
@@ -20890,7 +20962,7 @@
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMjgxNjU2MC5wZGY",
       "type": "result",
-      "title": "Final results for recruitment to the post of Research Assistant in Planning Department on contractual basis. New Updated: 28/10/2026",
+      "title": "Final results for recruitment to the post of Research Assistant in Planning Department on contractual basis. Updated: 28/10/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
@@ -20903,7 +20975,7 @@
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjEwMTQxNTI0MC5wZGY",
       "type": "admit-card",
-      "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. New Updated: 14/10/2026",
+      "title": "Assistant Engineer/Manager Recruitment 2026 – Eligible & Rejected Candidates List, Exam Centre Selection and Admit Card Update. Updated: 14/10/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
@@ -20916,7 +20988,7 @@
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvQUVfRXhhbSUyMFNjaGVkdWxlLnBkZg",
       "type": "job",
-      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager New Updated: 08/10/2026",
+      "title": "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "source": "MPSC Manipur",
       "category": "State PSC",
       "state": "Manipur",
@@ -20938,19 +21010,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-10-07"
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvTVBTQ18yNjA5MTUxNTI1MC5wZGY",
-      "type": "job",
-      "title": "Schedule of Written Examination for Recruitment of Under Secretary (Law) and Law Officers in the Law & Legislative Affairs Department Updated: 15/09/2026",
-      "source": "MPSC Manipur",
-      "category": "State PSC",
-      "state": "Manipur",
-      "link": "https://mpscmanipur.gov.in/files/MPSC_26091515250.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-09-15"
     },
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmluYWwtcmVzdWx0cy5odG1s",
@@ -29232,42 +29291,6 @@
       ]
     },
     {
-      "id": "competitor-sarkariresult-70d03a4e30c1598b",
-      "type": "job",
-      "title": "VBSPU Jaunpur University Provisional & Migration Certificate Download",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://vbspu.online/Home/Home_Page",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/vbspu-university-provisional/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "organization": "VBSPU Jaunpur University Provisional Certificate All Course",
-      "publishedDate": "2026-10-30",
-      "eligibility": "Sarkari Result® : How to Fill VBSPU Jaunpur Provisional & Migration Certificate Online Form Step 1 : To apply the provisional certificate of VBSPU Jaunpur University, the candidate will have to go down in this page of Sarkari Result, in the Some Useful Important Link section, the candidate will get the link of Apply Online VBSPU Jaunpur Provisional Certificate, click on it. Step 2 : The candidate has to select his/her examination session as under Example : 2015-16, 2016-17, 2017-18, 2018-19, 202",
-      "applicationFee": "All Category Candidates : 150/-",
-      "officialLinks": [
-        {
-          "url": "https://vbspu.online/Home/Home_Page",
-          "label": "Apply Online (Provision Certificate)"
-        },
-        {
-          "url": "https://www.vbspu.ac.in/hi",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://vbspu.online/Home/Home_Page",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-30",
-          "dateText": "30 October 2026 | 22:50 PM"
-        }
-      ]
-    },
-    {
       "id": "competitor-sarkariresult-e44471b7e3207263",
       "type": "job",
       "title": "UPSSSC Auditor and Assistant Accountant Online Form 2026",
@@ -31322,6 +31345,348 @@
           "label": "2nd Phase Shortlist Notice Date",
           "date": "2026-11-10",
           "dateText": "10 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-c97cd9fef334ce8d",
+      "type": "admit-card",
+      "title": "SSB Odisha Junior Assistant & Clerk Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Odisha",
+      "link": "https://ssbodisha.ac.in/wp-content/uploads/2026/11/SSB-NOTICE.pdf",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/ssb-odisha-junior-assistant-and-clerk-admit-card-2026-3081210",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-14",
+      "organization": "SSB Odisha Junior Assistant & Clerk",
+      "publishedDate": "2026-11-14",
+      "examDate": "2026-12-02",
+      "officialLinks": [
+        {
+          "url": "https://ssbodisha.ac.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ssbodisha.ac.in/wp-content/uploads/2026/11/SSB-NOTICE.pdf",
+          "label": "Revised Examination Schedule and Admit Card Notice PDF"
+        },
+        {
+          "url": "https://ssbodisha.ac.in/wp-content/uploads/2026/11/Examination-Schedule-of-Advt.-No.01-2026.pdf",
+          "label": "Original Examination Schedule PDF"
+        }
+      ],
+      "officialLink": "https://ssbodisha.ac.in/wp-content/uploads/2026/11/SSB-NOTICE.pdf",
+      "milestones": [
+        {
+          "label": "City Intimation Slip Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026 at 8:00 PM"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 at 8:00 PM"
+        },
+        {
+          "label": "Revised Exam Dates",
+          "date": "2026-12-02",
+          "dateText": "21, 23, 25, 27 November and 1, 2 December 2026"
+        },
+        {
+          "label": "Original Examination Schedule Notice",
+          "date": "2026-11-07",
+          "dateText": "07 November 2026"
+        },
+        {
+          "label": "Revised Examination Schedule Notice",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "City Intimation Slip Release",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026 (8:00 PM)"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 (8:00 PM)"
+        },
+        {
+          "label": "CBT Examination Dates",
+          "date": "2026-12-02",
+          "dateText": "21, 23, 25, 27 November and 1, 2 December 2026"
+        },
+        {
+          "label": "Junior Assistant and Junior Clerk Admit Card 2026",
+          "date": "2026-11-18",
+          "dateText": "Official Website - Available from 18 November 2026, 8 PM"
+        },
+        {
+          "label": "SSB Odisha City Intimation Slip 2026",
+          "date": "2026-11-16",
+          "dateText": "Official Website - Available from 16 November 2026, 8 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-223dd877f20ab401",
+      "type": "admit-card",
+      "title": "C DAC Project Engineer and Project Associate Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://cdac.kspcportal.com/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/c-dac-project-engineer-and-project-associate-admit-card-2026-3081063",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-14",
+      "organization": "Centre for Development of Advanced Computing (C-DAC)",
+      "publishedDate": "2026-11-13",
+      "examDate": "2026-11-28",
+      "officialLinks": [
+        {
+          "url": "https://cdac.kspcportal.com/",
+          "label": "Official C-DAC recruitment portal (admit card page)"
+        },
+        {
+          "url": "https://cdac.kspcportal.com/download/1",
+          "label": "Download admit card: Project Engineer (Fresher) - Computer Science"
+        },
+        {
+          "url": "https://cdac.kspcportal.com/download/2",
+          "label": "Download admit card: Project Engineer (Fresher) - Electronics"
+        },
+        {
+          "url": "https://cdac.kspcportal.com/download/3",
+          "label": "Download admit card: Project Engineer (Fresher) - Electrical & Electronics"
+        },
+        {
+          "url": "https://cdac.kspcportal.com/download/4",
+          "label": "Download admit card: Project Associate (Fresher) - Electrical & Electronics"
+        }
+      ],
+      "officialLink": "https://cdac.kspcportal.com/",
+      "milestones": [
+        {
+          "label": "CBT dates",
+          "date": "2026-11-28",
+          "dateText": "Saturday, 28 November 2026 and Sunday, 29 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-25a08b5cd9e3b657",
+      "type": "admit-card",
+      "title": "Assam Police ASI Admit Card 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "Assam",
+      "link": "https://formsrec.in/IGPA_Assam_2026/index_IGPA_Assam_26.php?r",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/assam-police-asi-admit-card-2026-3080955",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-14",
+      "organization": "State Level Police Recruitment Board (SLPRB), Assam",
+      "publishedDate": "2026-11-13",
+      "notificationLink": "https://slprbassam.in/pdf/Notice2026/12112026/notification_admit_download_DPE2026_ASI_UB.pdf",
+      "officialLinks": [
+        {
+          "url": "http://slprbassam.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://formsrec.in/IGPA_Assam_2026/index_IGPA_Assam_26.php?r",
+          "label": "Download ASI UB Departmental Exam Admit Card"
+        },
+        {
+          "url": "https://slprbassam.in/pdf/Notice2026/12112026/notification_admit_download_DPE2026_ASI_UB.pdf",
+          "label": "Official Admit Card Notification PDF"
+        },
+        {
+          "url": "https://slprbassam.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://formsrec.in/IGPA_Assam_2026/index_IGPA_Assam_26.php?r",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Admit Card Download Notification",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-3557b8cf7ad5ed84",
+      "type": "result",
+      "title": "UTET Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "See linked notice",
+      "link": "http://ukutet.com",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/utet-result-2026-3081018",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-14",
+      "organization": "UTET",
+      "publishedDate": "2026-11-13",
+      "resultDate": "2026-11-25",
+      "eligibility": "Paper 1 and Paper 2",
+      "officialLinks": [
+        {
+          "url": "http://ukutet.com",
+          "label": "Official Result Portal"
+        },
+        {
+          "url": "https://ubse.uk.gov.in/document-category/utet/",
+          "label": "UTET Paper 1 Final Answer Key 2026"
+        },
+        {
+          "url": "https://ukutet.com/",
+          "label": "UTET Result 2026 - Paper 1 & Paper 2"
+        },
+        {
+          "url": "https://ubse.uk.gov.in/",
+          "label": "Official Board Website"
+        }
+      ],
+      "officialLink": "http://ukutet.com",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Result Download Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Provisional Answer Key Release",
+          "date": "2026-10-05",
+          "dateText": "5 October 2026"
+        },
+        {
+          "label": "Answer Key Objection Last Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "UTET Paper 1 Result Release",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "UTET Paper 2 Result Release",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Final Answer Key Release",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-f21351ea6dd38050",
+      "type": "result",
+      "title": "APSC Veterinary Officer Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "Assam",
+      "link": "https://apsc.nic.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/apsc-veterinary-officer-result-2026-3080985",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-14",
+      "organization": "Assam Public Service Commission (APSC)",
+      "publishedDate": "2026-11-13",
+      "examDate": "2026-11-29",
+      "notificationLink": "https://apsc.nic.in/latest_page.php",
+      "officialLinks": [
+        {
+          "url": "https://apsc.nic.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://apsc.nic.in/status_app_2026/list_of_candidates_11-2026_signed.pdf",
+          "label": "VO/BVO Screening Test Candidates List PDF"
+        },
+        {
+          "url": "https://apsc.nic.in/latest_page.php",
+          "label": "APSC Latest Notifications"
+        },
+        {
+          "url": "https://apsc.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://apsc.nic.in",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-08-03",
+          "dateText": "3 August 2026"
+        },
+        {
+          "label": "Candidate List Scheduled Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Recruitment Advertisement Date",
+          "date": "2026-08-03",
+          "dateText": "3 August 2026"
+        },
+        {
+          "label": "Candidate List Scheduled Publication",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Last Date for PwBD Scribe Requests",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "E-Admission Certificate Release",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Screening Test Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "APSC Veterinary Officer Admit Card 2026",
+          "date": "2026-11-23",
+          "dateText": "Scheduled for 23 November 2026"
         }
       ]
     }

@@ -1,52 +1,52 @@
 {
-  "generatedAt": "2026-11-13T09:34:24.343Z",
+  "generatedAt": "2026-11-14T09:00:14.263Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 608,
-    "jobs": 129,
-    "admitCards": 130,
-    "results": 349,
+    "total": 615,
+    "jobs": 128,
+    "admitCards": 133,
+    "results": 354,
     "jobsMissingPublicationDate": 59,
-    "jobsMissingClosingDate": 82,
-    "jobsMissingOrganization": 79,
-    "jobsMissingVacancies": 92,
-    "jobsMissingEligibility": 81,
+    "jobsMissingClosingDate": 81,
+    "jobsMissingOrganization": 78,
+    "jobsMissingVacancies": 90,
+    "jobsMissingEligibility": 80,
     "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 13,
-    "resultsMissingPublishedDate": 50,
-    "resultsMissingResultDate": 175
+    "resultsMissingPublishedDate": 53,
+    "resultsMissingResultDate": 177
   },
   "after": {
-    "total": 613,
-    "jobs": 129,
-    "admitCards": 133,
-    "results": 351,
+    "total": 619,
+    "jobs": 126,
+    "admitCards": 137,
+    "results": 356,
     "jobsMissingPublicationDate": 57,
-    "jobsMissingClosingDate": 80,
-    "jobsMissingOrganization": 77,
-    "jobsMissingVacancies": 90,
-    "jobsMissingEligibility": 79,
-    "jobsMissingApplicationFee": 84,
+    "jobsMissingClosingDate": 78,
+    "jobsMissingOrganization": 76,
+    "jobsMissingVacancies": 88,
+    "jobsMissingEligibility": 78,
+    "jobsMissingApplicationFee": 83,
     "jobsMissingOfficialLink": 1,
     "admitCardsMissingPublishedDate": 13,
-    "resultsMissingPublishedDate": 50,
-    "resultsMissingResultDate": 174
+    "resultsMissingPublishedDate": 53,
+    "resultsMissingResultDate": 178
   },
   "imported": {
-    "job": 2,
-    "admit-card": 3,
+    "job": 1,
+    "admit-card": 4,
     "result": 2
   },
-  "matchedExisting": 16,
-  "filledItems": 2,
+  "matchedExisting": 14,
+  "filledItems": 0,
   "removedStale": 0,
-  "removedUncertain": 0,
-  "skippedClosed": 0,
+  "removedUncertain": 1,
+  "skippedClosed": 1,
   "removedNavigation": 2,
   "removalLog": [
     {
@@ -60,11 +60,17 @@
       "type": "job",
       "publisher": "(official)",
       "title": "Jobs for Ex-Servicemen"
+    },
+    {
+      "reason": "stale competitor job without dates",
+      "type": "job",
+      "publisher": "SarkariResult.com",
+      "title": "VBSPU Jaunpur University Provisional & Migration Certificate Download"
     }
   ],
   "detailPages": {
-    "targets": 9,
-    "fetched": 9,
+    "targets": 10,
+    "fetched": 10,
     "cacheHits": 0
   },
   "remainingGaps": {
