@@ -22474,7 +22474,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706": {
-    "attemptedAt": "2026-11-14T09:00:14.124Z",
+    "attemptedAt": "2026-11-15T09:29:33.132Z",
     "parser": "v2",
     "details": {
       "organization": "RRB NTPC UG",
@@ -29907,7 +29907,7 @@
     }
   },
   "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153": {
-    "attemptedAt": "2026-11-14T09:00:14.077Z",
+    "attemptedAt": "2026-11-15T09:29:33.094Z",
     "parser": "v2",
     "details": {
       "organization": "Export-Import Bank of India (India Exim Bank)",
@@ -30730,7 +30730,7 @@
     }
   },
   "https://www.freejobalert.com/articles/iocl-eastern-region-apprentice-recruitment-2026-3080655": {
-    "attemptedAt": "2026-11-14T09:00:13.974Z",
+    "attemptedAt": "2026-11-15T09:29:33.014Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Oil Corporation Limited (IOCL)",
@@ -31136,7 +31136,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ssc-cpo-city-intimation-slip-2026-3080923": {
-    "attemptedAt": "2026-11-14T09:00:14.050Z",
+    "attemptedAt": "2026-11-15T09:29:33.082Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission (SSC)",
@@ -31464,7 +31464,7 @@
     }
   },
   "https://www.freejobalert.com/articles/apsc-veterinary-officer-result-2026-3080985": {
-    "attemptedAt": "2026-11-14T09:00:14.255Z",
+    "attemptedAt": "2026-11-15T09:29:33.059Z",
     "parser": "v2",
     "details": {
       "organization": "Assam Public Service Commission (APSC)",
@@ -31549,6 +31549,47 @@
         {
           "url": "https://apsc.nic.in/",
           "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/sbi-po-interview-admit-card-2026-3081253": {
+    "attemptedAt": "2026-11-15T09:29:33.153Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SBI PO Interview",
+      "publishedDate": "2026-11-14",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-01",
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Interview Start Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "SBI PO Interview Start Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        }
+      ],
+      "officialLink": "https://sbi.bank.in/web/careers/current-openings",
+      "officialLinks": [
+        {
+          "url": "https://sbi.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers/current-openings",
+          "label": "Download Website"
         }
       ]
     }

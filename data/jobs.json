@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-14T09:00:14.263Z",
-  "jobsGeneratedAt": "2026-11-14T09:00:12.672Z",
+  "generatedAt": "2026-11-15T09:29:33.157Z",
+  "jobsGeneratedAt": "2026-11-15T09:29:31.840Z",
   "partial": true,
-  "total": 619,
+  "total": 617,
   "quality": {
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 78,
@@ -22,7 +22,7 @@
     {
       "source": "Railway Recruitment Boards",
       "url": "https://rrb.indianrailways.gov.in/",
-      "error": "The operation was aborted"
+      "error": "timeout"
     },
     {
       "source": "Indian Army",
@@ -45,6 +45,11 @@
       "error": ""
     },
     {
+      "source": "SAIL",
+      "url": "https://sail.co.in/web/careers",
+      "error": "unable to verify the first certificate"
+    },
+    {
       "source": "NTPC",
       "url": "https://careers.ntpc.co.in/",
       "error": "HTTP 403"
@@ -55,11 +60,6 @@
       "error": "timeout"
     },
     {
-      "source": "SAIL",
-      "url": "https://sail.co.in/web/careers",
-      "error": "unable to verify the first certificate"
-    },
-    {
       "source": "Supreme Court of India",
       "url": "https://www.sci.gov.in/recruitments/",
       "error": "HTTP 403"
@@ -68,6 +68,11 @@
       "source": "NIC e-Pariksha",
       "url": "https://pariksha.nic.in/",
       "error": "unable to verify the first certificate"
+    },
+    {
+      "source": "UPPSC",
+      "url": "https://uppsc.up.nic.in/",
+      "error": "HTTP 503"
     },
     {
       "source": "BPSC",
@@ -90,6 +95,11 @@
       "error": "timeout"
     },
     {
+      "source": "MPPSC",
+      "url": "https://mppsc.mp.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "WBPSC",
       "url": "https://wbpsc.gov.in/",
       "error": "timeout"
@@ -100,19 +110,19 @@
       "error": "Parse Error: Invalid header token"
     },
     {
-      "source": "MPPSC",
-      "url": "https://mppsc.mp.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "GPSC",
       "url": "https://gpsc.gujarat.gov.in/",
       "error": ""
     },
     {
-      "source": "Kerala PSC",
-      "url": "https://www.keralapsc.gov.in/",
-      "error": "timeout"
+      "source": "TGPSC",
+      "url": "https://www.tgpsc.gov.in/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO C0AC8BA5F6710000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
@@ -120,18 +130,13 @@
       "error": "timeout"
     },
     {
-      "source": "TGPSC",
-      "url": "https://www.tgpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
+      "error": "timeout"
+    },
+    {
+      "source": "JPSC",
+      "url": "https://www.jpsc.gov.in/",
       "error": "timeout"
     },
     {
@@ -145,29 +150,29 @@
       "error": "timeout"
     },
     {
+      "source": "PPSC",
+      "url": "https://ppsc.gov.in/",
+      "error": "timeout"
+    },
+    {
       "source": "Goa PSC",
       "url": "https://gpsc.goa.gov.in/",
       "error": "HTTP 403"
     },
     {
-      "source": "PPSC",
-      "url": "https://ppsc.gov.in/",
-      "error": "The operation was aborted"
-    },
-    {
       "source": "APSC",
       "url": "https://apsc.nic.in/",
-      "error": "The operation was aborted"
-    },
-    {
-      "source": "Mizoram PSC",
-      "url": "https://mpsc.mizoram.gov.in/",
-      "error": "HTTP 403"
+      "error": "timeout"
     },
     {
       "source": "JKPSC",
       "url": "https://jkpsc.nic.in/",
       "error": "timeout"
+    },
+    {
+      "source": "Mizoram PSC",
+      "url": "https://mpsc.mizoram.gov.in/",
+      "error": "HTTP 403"
     },
     {
       "source": "SPSC Sikkim",
@@ -17310,258 +17315,6 @@
       "ageLimit": "18–40 years"
     },
     {
-      "id": "aHR0cHM6Ly93d3cuaXNyby5nb3YuaW4vVVJTQ1JlY3J1aXRtZW50MTMuaHRtbA",
-      "type": "job",
-      "title": "URSC:04:2026 — Recruitment to the posts of Technician - B/ Heavy Vehicle Driver - A/ Light Vehicle Driver - A/ Staff Car Driver- A",
-      "source": "ISRO",
-      "category": "Railways",
-      "state": "All India",
-      "link": "https://www.isro.gov.in/URSCRecruitment13.html",
-      "openDate": "2026-10-24",
-      "lastDate": "2026-11-13",
-      "examDate": null,
-      "publishedDate": "2026-10-24"
-    },
-    {
-      "id": "competitor-sarkariresult-3727810ceb636036",
-      "type": "job",
-      "title": "RRB NTPC 10+2 UG Online Form 2026 (1688 Posts)",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://www.rrbapply.gov.in/#/auth/landing",
-      "lastDate": "2026-11-13",
-      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
-      "publishedDate": "2026-10-21",
-      "openDate": "2026-10-15",
-      "ageLimit": "18–30 years",
-      "vacancies": "1688",
-      "eligibility": "Commercial Cum Ticket Clerk 10+2 Intermediate Exam From Any Recognized Board in India. General / OBC / EWS : 50% Marks. SC / ST / PH : Pass Only",
-      "applicationFee": "For General / OBC / EWS : ₹ 500/- For SC / ST / EBC : ₹ 250/- For All Category female : ₹ 250/- Fee Refund : General / OBC : Rs. 400/- will be refunded and Other candidates : Rs. 250/- will be refunded to the bank account after appearing in Stage I Exam. Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit ",
-      "officialLink": "https://www.rrbapply.gov.in/#/auth/landing",
-      "organization": "Railway Recruitment Board (RRB)",
-      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
-      "officialLinks": [
-        {
-          "url": "https://rrb.indianrailways.gov.in/",
-          "label": "Official Website"
-        },
-        {
-          "url": "https://www.rrbapply.gov.in/#/auth/home",
-          "label": "Apply Online / Recruitment Portal"
-        },
-        {
-          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
-          "label": "Detailed Notification CEN 07/2026"
-        },
-        {
-          "url": "https://www.rrbapply.gov.in/#/auth/landing",
-          "label": "RRB-wise Vacancy Details"
-        }
-      ],
-      "milestones": [
-        {
-          "label": "Indicative Notification Date",
-          "date": "2026-09-26",
-          "dateText": "26 September 2026"
-        },
-        {
-          "label": "Qualification Cut-off Date",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026"
-        },
-        {
-          "label": "Age Calculation Date",
-          "date": "2027-01-01",
-          "dateText": "01 January 2027"
-        },
-        {
-          "label": "Application Start Date",
-          "date": "2026-10-15",
-          "dateText": "15 October 2026"
-        },
-        {
-          "label": "Application Last Date",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026"
-        },
-        {
-          "label": "Last Date for Fee Payment",
-          "date": "2026-11-15",
-          "dateText": "15 November 2026"
-        },
-        {
-          "label": "Online Application Start Date",
-          "date": "2026-10-15",
-          "dateText": "15 October 2026"
-        },
-        {
-          "label": "Online Application Last Date",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026 (11:59 PM)"
-        },
-        {
-          "label": "Application Fee Payment Last Date",
-          "date": "2026-11-15",
-          "dateText": "15 November 2026"
-        },
-        {
-          "label": "Application Modification Start Date",
-          "date": "2026-11-16",
-          "dateText": "16 November 2026"
-        },
-        {
-          "label": "Application Modification Last Date",
-          "date": "2026-11-25",
-          "dateText": "25 November 2026"
-        },
-        {
-          "label": "Modification Start Date",
-          "date": "2026-11-16",
-          "dateText": "16 November 2026"
-        },
-        {
-          "label": "Modification Last Date",
-          "date": "2026-11-25",
-          "dateText": "25 November 2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-sarkariresult-b8b198fcb07c3b87",
-      "type": "job",
-      "title": "Railway RRB NTPC 10+2 Under Graduate Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "PSU",
-      "state": "All India",
-      "link": "https://www.rrbapply.gov.in/#/auth/landing",
-      "sourceListingUrl": "https://www.sarkariresult.com/railway/railway-rrb-ntpc-ug-level-07-2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-23",
-      "lastDate": "2026-11-13",
-      "organization": "Railway RRB Non Technical Popular Categories NTPC 10+2 Under Graduate Level CEN 07/2026",
-      "publishedDate": "2026-10-07",
-      "openDate": "2026-10-15",
-      "vacancies": "1688",
-      "ageLimit": "18–30 years",
-      "eligibility": "10+2 Passed from Any Recognized Institute / Board in India.",
-      "applicationFee": "General / OBC / EWS : 500/- SC / ST / PH : 250/- All Category Female : 250/- After Appear the Stage I Exam General/OBC/EWS Fee Refund: Rs. 400/- SC / ST / PH / Female Refund : Rs. 250/-",
-      "notificationLink": "https://doc.sarkariresults.org.in/Railway_CEN_07_2026_Notification.pdf",
-      "officialLinks": [
-        {
-          "url": "https://www.rrbapply.gov.in/#/auth/landing",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/RRB_NTPC_07_2026_Syllabus%20(1).pdf",
-          "label": "Download Syllabus Stage I & II"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/Railway_CEN_07_2026_Notification.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/RRB_CEN_07_2026_Zone_WiseVacancy.pdf",
-          "label": "Download Zone Wise Vacancy Details"
-        }
-      ],
-      "officialLink": "https://www.rrbapply.gov.in/#/auth/landing",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-07",
-          "dateText": "07 October 2026 | 08:30 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-13",
-          "dateText": "13/11/2026"
-        },
-        {
-          "label": "Last Date Pay Exam Fee",
-          "date": "2026-11-15",
-          "dateText": "15/11/2026"
-        }
-      ]
-    },
-    {
-      "id": "competitor-freejobalert-154d4eec581d0f8b",
-      "type": "job",
-      "title": "ISRO URSC TechnicianB, Driver Online Form 2026",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "PSU",
-      "state": "All India",
-      "link": "https://www.isro.gov.in/ISRO_HINDI/URSCRecruitment13.html",
-      "sourceListingUrl": "https://www.freejobalert.com/articles/isro-ursc-to-recruit-61-technician-b-driver-posts-3075553",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-24",
-      "organization": "Indian Space Research Organisation (ISRO)",
-      "publishedDate": "2026-10-24",
-      "openDate": "2026-10-24",
-      "lastDate": "2026-11-13",
-      "vacancies": "61",
-      "ageLimit": "18 to 35 Years",
-      "eligibility": "10th Pass with Relevant ITI/NTC/NAC for Technician-B; 10th Pass with Valid Driving Licence and Experience for Driver Posts",
-      "applicationFee": "13 November 2026",
-      "notificationLink": "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/Oct/URSClAdvt2410_24102026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://www.isro.gov.in/",
-          "label": "Official Website"
-        },
-        {
-          "url": "https://www.isro.gov.in/ISRO_HINDI/URSCRecruitment13.html",
-          "label": "Apply Online / Recruitment Portal"
-        },
-        {
-          "url": "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/Oct/URSClAdvt2410_24102026.pdf",
-          "label": "Official Notification PDF"
-        },
-        {
-          "url": "https://www.isro.gov.in/Careers.html",
-          "label": "ISRO Careers"
-        }
-      ],
-      "officialLink": "https://www.isro.gov.in/ISRO_HINDI/URSCRecruitment13.html",
-      "milestones": [
-        {
-          "label": "Notification Date",
-          "date": "2026-10-24",
-          "dateText": "24 October 2026"
-        },
-        {
-          "label": "Application Last Date",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026"
-        },
-        {
-          "label": "Online Application Start Date",
-          "date": "2026-10-24",
-          "dateText": "24 October 2026, 5:00 PM"
-        },
-        {
-          "label": "Last Date to Apply Online",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026"
-        },
-        {
-          "label": "Last Date for Application Fee Payment",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026"
-        },
-        {
-          "label": "Crucial Date of Eligibility",
-          "date": "2026-11-13",
-          "dateText": "13 November 2026"
-        }
-      ]
-    },
-    {
       "id": "competitor-freejobalert-cwc-2026-327",
       "type": "job",
       "title": "CWC Assistant Manager and Junior Executive Recruitment 2026 — 327 Posts",
@@ -17756,6 +17509,110 @@
           "label": "In-Person Interview",
           "date": "2026-12-14",
           "dateText": "14 December 2026 (Proposed)"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-a898bd896b32f21e",
+      "type": "job",
+      "title": "RRB 1,688 NTPC UG Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "PSU",
+      "state": "All India",
+      "link": "https://www.rrbapply.gov.in/#/auth/landing",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rrb-ntpc-ug-recruitment-2026-cen-07-2026-1688-posts-3068706",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-15",
+      "organization": "RRB NTPC UG",
+      "publishedDate": "2026-11-14",
+      "openDate": "2026-10-15",
+      "lastDate": "2026-11-15",
+      "vacancies": ",",
+      "eligibility": "Age Limit 18–30 Years",
+      "applicationFee": "Rs. 500",
+      "notificationLink": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/#/auth/landing",
+          "label": "Apply Online / Recruitment Portal"
+        },
+        {
+          "url": "https://www.rrbapply.gov.in/assets/forms/CEN_07_2026_NTPC_UG.pdf",
+          "label": "Detailed Notification CEN 07/2026"
+        }
+      ],
+      "officialLink": "https://www.rrbapply.gov.in/#/auth/landing",
+      "milestones": [
+        {
+          "label": "Indicative Notification Date",
+          "date": "2026-09-26",
+          "dateText": "26 September 2026"
+        },
+        {
+          "label": "Qualification Cut-off Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2027-01-01",
+          "dateText": "01 January 2027"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-15",
+          "dateText": "15 October 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026 (11:59 PM)"
+        },
+        {
+          "label": "Application Fee Payment Last Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Application Modification Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Application Modification Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Modification Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Modification Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
         }
       ]
     },
@@ -20127,7 +19984,7 @@
       "sourceListingUrl": "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153",
       "discoveredVia": "https://www.freejobalert.com/government-jobs/",
       "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-14",
+      "factCheckedAt": "2026-11-15",
       "organization": "Export-Import Bank of India (India Exim Bank)",
       "publishedDate": "2026-11-13",
       "lastDate": "2026-12-11",
@@ -20401,227 +20258,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE2cE55Z3lkZjVqYQ",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq6pNygydf5ja",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHF4ME9rRWtGSEhtWg",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdqx0OkEkFHHmZ",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE0N05yTExpd2tQaQ",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq47NrLLiwkPi",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE5QTJ0WmpYNnlHVg",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq9A2tZjX6yGV",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE1eEVzRGJjRVVLZA",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq5xEsDbcEUKd",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2poUmJlSHYrV3g4Ng",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY),..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjhRbeHv+Wx86",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pqTEd6U1N6RE1McA",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjjLGzSSzDMLp",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2psd3RaQmtiR0pyTQ",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjlwtZBkbGJrM",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pwSzlIVDRaQlg0VA",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjpK9HT4ZBX4T",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2ppTnRNam5Tcy9jYQ",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjiNtMjnSs/ca",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pwdCtOUFlhdFd4Mg",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjpt+NPYatWx2",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbmZwdVJINTlYNkFkVURqaHZ6OG9YYw",
-      "type": "result",
-      "title": "RESULT OF ADVT. NO. 2/2020-2021, U.P. CHIKITSA SHIKSHA (HOMOEOPATHIC) DEPTT., LE..",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnfpuRH59X6AdUDjhvz8oXc",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
-      "type": "job",
-      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
-      "source": "UPPSC",
-      "category": "State PSC",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHEzUDVIR2tRazNSRg",
-      "type": "result",
-      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq3P5HGkQk3RF",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-13"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExQVoxUVAvb1YvRQ",
-      "type": "result",
-      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR CARDIOLOGY, S-08/54",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq1AZ1QP/oV/E",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-13"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHF4OVRaRVZqRDNwag",
-      "type": "result",
-      "title": "13 Dec 2027 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR EMERGENCY MEDICINE, S-08/43",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdqx9TZEVjD3pj",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2027-12-13"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExMWtSNXNVeTVYUQ",
-      "type": "result",
-      "title": "12 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/58...",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq11kR5sUy5XQ",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-12-12"
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
       "type": "job",
       "title": "Recruitment Requisition",
@@ -20661,19 +20297,6 @@
       "publishedDate": null
     },
     {
-      "id": "aHR0cHM6Ly90bnBzYy5nb3YuaW4vZXhhbWRhc2hib2FyZC93ZWIvaW5kZXguYXNweD9rZXk9a3NvanMyZWZyZTNXRkRzdzU",
-      "type": "job",
-      "title": "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
-      "source": "TNPSC",
-      "category": "UPSC",
-      "state": "Tamil Nadu",
-      "link": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
       "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvcHJlc3NfcmVsZWFzZXMuYXNweA",
       "type": "job",
       "title": "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
@@ -20685,6 +20308,19 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-10-06"
+    },
+    {
+      "id": "aHR0cHM6Ly90bnBzYy5nb3YuaW4vZXhhbWRhc2hib2FyZC93ZWIvaW5kZXguYXNweD9rZXk9a3NvanMyZWZyZTNXRkRzdzU",
+      "type": "job",
+      "title": "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
+      "source": "TNPSC",
+      "category": "UPSC",
+      "state": "Tamil Nadu",
+      "link": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9yZXN1bHQ",
@@ -20720,227 +20356,6 @@
       "category": "State PSC",
       "state": "Haryana",
       "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-64139825000e/result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
-      "type": "job",
-      "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/data/Notice.pdf",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-07-29",
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDU",
-      "type": "job",
-      "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13045",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDM",
-      "type": "job",
-      "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13043",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDI",
-      "type": "job",
-      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13042",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDE",
-      "type": "job",
-      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13041",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDA",
-      "type": "job",
-      "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13040",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzk",
-      "type": "job",
-      "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13039",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzg",
-      "type": "job",
-      "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13038",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzc",
-      "type": "job",
-      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13037",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzY",
-      "type": "job",
-      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13036",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzU",
-      "type": "job",
-      "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
-      "source": "JPSC",
-      "category": "Teaching",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13035",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzM",
-      "type": "job",
-      "title": "Recruitment of Director Advt.No.-07/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13033",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzI",
-      "type": "job",
-      "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13032",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzE",
-      "type": "job",
-      "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
-      "source": "JPSC",
-      "category": "UPSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13031",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzA",
-      "type": "job",
-      "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13030",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjk",
-      "type": "job",
-      "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13029",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjg",
-      "type": "job",
-      "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
-      "source": "JPSC",
-      "category": "State PSC",
-      "state": "Jharkhand",
-      "link": "https://www.jpsc.gov.in/exam_files.php?id=13028",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
@@ -21198,6 +20613,448 @@
       "publishedDate": "2026-10-20",
       "resultDate": "2026-10-19",
       "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE2cE55Z3lkZjVqYQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq6pNygydf5ja",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHF4ME9rRWtGSEhtWg",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdqx0OkEkFHHmZ",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE0N05yTExpd2tQaQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/A..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq47NrLLiwkPi",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE5QTJ0WmpYNnlHVg",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq9A2tZjX6yGV",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHE1eEVzRGJjRVVLZA",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) ..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagn3Lnqaz4gdq5xEsDbcEUKd",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2poUmJlSHYrV3g4Ng",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY),..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjhRbeHv+Wx86",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pqTEd6U1N6RE1McA",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjjLGzSSzDMLp",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2psd3RaQmtiR0pyTQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjlwtZBkbGJrM",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pwSzlIVDRaQlg0VA",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjpK9HT4ZBX4T",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2ppTnRNam5Tcy9jYQ",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjiNtMjnSs/ca",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnazNINGx0RmZMQ2pwdCtOUFlhdFd4Mg",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/..",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagk3H4ltFfLCjpt+NPYatWx2",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREZfREIuYXNweD9JNFBuUTB0QmFnbmZwdVJINTlYNkFkVURqaHZ6OG9YYw",
+      "type": "result",
+      "title": "RESULT OF ADVT. NO. 2/2020-2021, U.P. CHIKITSA SHIKSHA (HOMOEOPATHIC) DEPTT., LE..",
+      "source": "UPPSC",
+      "category": "State PSC",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnfpuRH59X6AdUDjhvz8oXc",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
+      "type": "job",
+      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
+      "source": "UPPSC",
+      "category": "State PSC",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHEzUDVIR2tRazNSRg",
+      "type": "result",
+      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq3P5HGkQk3RF",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-13"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExQVoxUVAvb1YvRQ",
+      "type": "result",
+      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR CARDIOLOGY, S-08/54",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq1AZ1QP/oV/E",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-13"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHF4OVRaRVZqRDNwag",
+      "type": "result",
+      "title": "13 Dec 2027 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR EMERGENCY MEDICINE, S-08/43",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdqx9TZEVjD3pj",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2027-12-13"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHExMWtSNXNVeTVYUQ",
+      "type": "result",
+      "title": "12 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/58...",
+      "source": "UPPSC",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq11kR5sUy5XQ",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-12-12"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
+      "type": "job",
+      "title": "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/data/Notice.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-07-29",
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDU",
+      "type": "job",
+      "title": "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13045",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDM",
+      "type": "job",
+      "title": "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13043",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDI",
+      "type": "job",
+      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13042",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDE",
+      "type": "job",
+      "title": "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13041",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwNDA",
+      "type": "job",
+      "title": "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13040",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzk",
+      "type": "job",
+      "title": "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13039",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzg",
+      "type": "job",
+      "title": "Recruitment of Drug Inspector Advt.No.-12/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13038",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzc",
+      "type": "job",
+      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13037",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzY",
+      "type": "job",
+      "title": "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13036",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzU",
+      "type": "job",
+      "title": "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
+      "source": "JPSC",
+      "category": "Teaching",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13035",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzM",
+      "type": "job",
+      "title": "Recruitment of Director Advt.No.-07/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13033",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzI",
+      "type": "job",
+      "title": "Recruitment of Boiler Inspector Advt.No.-02/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13032",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzE",
+      "type": "job",
+      "title": "Recruitment of Inspector of Factories Advt.No.-01/2025",
+      "source": "JPSC",
+      "category": "UPSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13031",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMzA",
+      "type": "job",
+      "title": "Recruitment of Assistant Public Prosecutor (Regular),Advt.No.-06/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13030",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjk",
+      "type": "job",
+      "title": "Recruitment of Assistant Public Prosecutor (Backlog),Advt.No.-05/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13029",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZXhhbV9maWxlcy5waHA_aWQ9MTMwMjg",
+      "type": "job",
+      "title": "Recruitment of Project Manager and equivalent,advt.No.-04/2025",
+      "source": "JPSC",
+      "category": "State PSC",
+      "state": "Jharkhand",
+      "link": "https://www.jpsc.gov.in/exam_files.php?id=13028",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9oYWxsdGlja2V0LnRncHNjLmdvdi5pbi9oRzAxMjAyNnJiZzI1NnU4ZjQ5LW0yajUtNzlrZ2ZqNThoZy1kMmRmZzJrLTUyZGZnaDIxMnNkZg",
@@ -31687,6 +31544,45 @@
           "label": "APSC Veterinary Officer Admit Card 2026",
           "date": "2026-11-23",
           "dateText": "Scheduled for 23 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-90d4f4515f75cbfd",
+      "type": "admit-card",
+      "title": "SBI PO Interview Admit Card 2026 Date Out",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Admit cards",
+      "state": "All India",
+      "link": "https://sbi.bank.in/web/careers/current-openings",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/sbi-po-interview-admit-card-2026-3081253",
+      "discoveredVia": "https://www.freejobalert.com/admit-card/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-15",
+      "organization": "SBI PO Interview",
+      "publishedDate": "2026-11-14",
+      "officialLinks": [
+        {
+          "url": "https://sbi.bank.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers/current-openings",
+          "label": "Download Website"
+        }
+      ],
+      "officialLink": "https://sbi.bank.in/web/careers/current-openings",
+      "milestones": [
+        {
+          "label": "Interview Start Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "SBI PO Interview Start Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
         }
       ]
     }
