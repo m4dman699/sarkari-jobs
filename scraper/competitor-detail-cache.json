@@ -29907,7 +29907,7 @@
     }
   },
   "https://www.freejobalert.com/articles/exim-bank-recruitment-2026-apply-online-for-120-management-trainee-and-manager-posts-3080153": {
-    "attemptedAt": "2026-11-15T09:29:33.094Z",
+    "attemptedAt": "2026-11-16T09:48:01.298Z",
     "parser": "v2",
     "details": {
       "organization": "Export-Import Bank of India (India Exim Bank)",
@@ -30730,7 +30730,7 @@
     }
   },
   "https://www.freejobalert.com/articles/iocl-eastern-region-apprentice-recruitment-2026-3080655": {
-    "attemptedAt": "2026-11-15T09:29:33.014Z",
+    "attemptedAt": "2026-11-16T09:48:01.172Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Oil Corporation Limited (IOCL)",
@@ -31136,7 +31136,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ssc-cpo-city-intimation-slip-2026-3080923": {
-    "attemptedAt": "2026-11-15T09:29:33.082Z",
+    "attemptedAt": "2026-11-16T09:48:01.252Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission (SSC)",
@@ -31464,7 +31464,7 @@
     }
   },
   "https://www.freejobalert.com/articles/apsc-veterinary-officer-result-2026-3080985": {
-    "attemptedAt": "2026-11-15T09:29:33.059Z",
+    "attemptedAt": "2026-11-16T09:48:01.277Z",
     "parser": "v2",
     "details": {
       "organization": "Assam Public Service Commission (APSC)",
@@ -31590,6 +31590,222 @@
         {
           "url": "https://sbi.bank.in/web/careers/current-openings",
           "label": "Download Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/indian-coast-guard-cgept-admit-card-2026-3081352": {
+    "attemptedAt": "2026-11-16T09:48:01.227Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Coast Guard CGEPT",
+      "publishedDate": "2026-11-16",
+      "openDate": "2026-10-06",
+      "lastDate": "2026-10-21",
+      "examDate": "2026-11-18",
+      "resultDate": null,
+      "admitCardDate": "2026-11-15",
+      "interviewDate": null,
+      "vacancies": "365",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Stage I Exam Dates",
+          "date": "2026-11-18",
+          "dateText": "17 and 18 November 2026"
+        },
+        {
+          "label": "Exam City Details",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-06",
+          "dateText": "6 October 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Stage I Exam City Details",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Stage I Admit Card Release",
+          "date": "2026-11-15",
+          "dateText": "15 November 2026"
+        },
+        {
+          "label": "Stage I Examination",
+          "date": "2026-11-18",
+          "dateText": "17 and 18 November 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-11-18",
+          "dateText": "17 and 18 November 2026"
+        }
+      ],
+      "officialLink": "https://cgept.parikshasaarthi.in/candidate/login",
+      "officialLinks": [
+        {
+          "url": "https://cgept.parikshasaarthi.in/candidate/login",
+          "label": "Indian Coast Guard CGEPT Admit Card 2026"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Englishnotice_06112026.pdf",
+          "label": "Official CGEPT Exam Date Notice PDF"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "SSC Official Website"
+        },
+        {
+          "url": "https://cgept.parikshasaarthi.in/",
+          "label": "CGEPT Examination Portal"
+        },
+        {
+          "url": "https://joinindiancoastguard.cdac.in/",
+          "label": "Indian Coast Guard Recruitment Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aiims-mangalagiri-assistant-professor-result-2026-3081384": {
+    "attemptedAt": "2026-11-16T09:48:01.317Z",
+    "parser": "v2",
+    "details": {
+      "organization": "All India Institute of Medical Sciences, Mangalagiri, Andhra Pradesh",
+      "publishedDate": "2026-11-16",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-12",
+      "resultDate": "2026-11-12",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Date",
+          "date": "2026-11-12",
+          "dateText": "12.11.2026"
+        },
+        {
+          "label": "Result Date",
+          "date": "2026-11-12",
+          "dateText": "12.11.2026"
+        },
+        {
+          "label": "Result Notices Date",
+          "date": "2026-11-12",
+          "dateText": "12.11.2026"
+        }
+      ],
+      "officialLink": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2026/11/Result-of-screening-written-test-for-the-post-of-Assistant-Professor-Lecturer-in-Nursing.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.aiimsmangalagiri.edu.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2026/11/Result-of-screening-written-test-for-the-post-of-Assistant-Professor-Lecturer-in-Nursing.pdf",
+          "label": "Assistant Professor (Lecturer in Nursing) Result PDF"
+        },
+        {
+          "url": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2026/11/Result-of-screening-written-test-for-the-post-of-Assistant-Professor-Dentistry-1.pdf",
+          "label": "Assistant Professor (Dentistry) Result PDF"
+        },
+        {
+          "url": "https://www.aiimsmangalagiri.edu.in/recruitment/results/",
+          "label": "AIIMS Mangalagiri Recruitment Results Page"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/mpesb-subedar-steno-asi-admit-card-2026-3081299": {
+    "attemptedAt": "2026-11-16T09:48:01.363Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Madhya Pradesh Employees Selection Board (MPESB)",
+      "publishedDate": "2026-11-16",
+      "openDate": "2026-09-24",
+      "lastDate": "2026-10-08",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": "2026-11-13",
+      "interviewDate": null,
+      "vacancies": "655",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Exam Start Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-24",
+          "dateText": "24 September 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-10-08",
+          "dateText": "8 October 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-10-08",
+          "dateText": "8 October 2026"
+        },
+        {
+          "label": "Application Correction Last Date",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026"
+        },
+        {
+          "label": "Recruitment Test Start Date",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        }
+      ],
+      "officialLink": "https://esb.mp.gov.in/tacs/tac_2026/SUBEDAR_STENO_ASI_TAC26/default_tac.htm",
+      "officialLinks": [
+        {
+          "url": "https://esb.mp.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://esb.mp.gov.in/tacs/tac_2026/SUBEDAR_STENO_ASI_TAC26/default_tac.htm",
+          "label": "MPESB Subedar Steno, ASI Admit Card 2026"
+        },
+        {
+          "url": "https://esb.mp.gov.in/",
+          "label": "MPESB Official Website"
+        },
+        {
+          "url": "https://esb.mp.gov.in/student_dashboard.htm",
+          "label": "MPESB Student Dashboard"
         }
       ]
     }

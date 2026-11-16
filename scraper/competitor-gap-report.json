@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-15T09:29:33.157Z",
+  "generatedAt": "2026-11-16T09:48:01.369Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 616,
-    "jobs": 123,
-    "admitCards": 137,
+    "total": 618,
+    "jobs": 124,
+    "admitCards": 138,
     "results": 356,
     "jobsMissingPublicationDate": 59,
     "jobsMissingClosingDate": 80,
@@ -22,10 +22,10 @@
     "resultsMissingResultDate": 178
   },
   "after": {
-    "total": 617,
+    "total": 620,
     "jobs": 123,
-    "admitCards": 138,
-    "results": 356,
+    "admitCards": 140,
+    "results": 357,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 78,
     "jobsMissingOrganization": 75,
@@ -38,11 +38,11 @@
     "resultsMissingResultDate": 178
   },
   "imported": {
-    "job": 2,
-    "admit-card": 1,
-    "result": 0
+    "job": 1,
+    "admit-card": 2,
+    "result": 1
   },
-  "matchedExisting": 17,
+  "matchedExisting": 16,
   "filledItems": 0,
   "removedStale": 0,
   "removedUncertain": 0,
@@ -63,19 +63,19 @@
     }
   ],
   "detailPages": {
-    "targets": 6,
-    "fetched": 6,
+    "targets": 7,
+    "fetched": 7,
     "cacheHits": 0
   },
   "remainingGaps": {
     "jobsMissingDate": [
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "Recruitment Requisition",
       "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
-      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
       "Vacancy Advertised",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
+      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
@@ -91,17 +91,17 @@
       "Recruitment of Boiler Inspector Advt.No.-02/2025"
     ],
     "jobsMissingClosingDate": [
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "Recruitment Requisition",
       "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
       "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). Updated: 02/11/2026",
       "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
-      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
       "Vacancy Advertised",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
+      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
@@ -116,17 +116,17 @@
       "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "Recruitment Requisition",
       "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
       "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). Updated: 02/11/2026",
       "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
-      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
       "Vacancy Advertised",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
+      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
@@ -146,15 +146,15 @@
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
       "Exim Bank 120 MT & Manager Online Form 2026",
+      "CLICK HERE TO APPLY FOR ADVT.NO. A-5/E-1/2026,ASSISTANT ARCHITECT PLANNER EXAMINATION-2026 / SPORTS OFFICER EXAMINATION-2026 / PROGRAMMER GRADE-2 EXAMINATION-2026.",
       "Recruitment Requisition",
       "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
       "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "Rescheduling of the written examination for recruitment of Assistant Engineer/ Manager (Civil/ Electrical). Updated: 02/11/2026",
       "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
-      "Notification NO.NPSC/ADVT-1/04(VOL-1) dt. 28.10.2026 (CTSE 2026 Re-examination Mechanical Engg. (Diploma) Paper I & II)",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open",
-      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026"
+      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026",
+      "Vacancy Advertised"
     ],
     "jobsMissingOfficialLink": [
       "Exim Bank 120 MT & Manager Online Form 2026"
