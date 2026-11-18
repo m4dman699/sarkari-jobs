@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T10:46:29.282Z",
-  "total": 7,
+  "generatedAt": "2026-11-18T10:13:17.916Z",
+  "total": 10,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -310,6 +310,130 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-b7477c32b77cb772",
+      "type": "job",
+      "title": "UPSSSC 10+2 Inter Level Various Post (Lower PCS) Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://upsssc.gov.in/AllNotifications.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-lower-pcs-26-exam-oct26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "lastDate": "2026-12-01",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-11-10",
+      "vacancies": "1784",
+      "ageLimit": "18–40 years",
+      "eligibility": "Post Name Total Post UPSSSC Lower PCS 10+2 Level Eligibility 2026 UPSSSC Lower PCS 10+2 Level Exam 2026 1784 UPSSSC PET 2025 Score Card 10+2 Passed from Any Recognized Institute / Board in India. More Eligibility Details Read the Notification.",
+      "applicationFee": "General (UR) / OBC / EWS : 25/- SC / ST : 25/- PH (Divyang) : 25/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/upsssc-26exam-2026-notification.pdf",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/AllNotifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPSSSC_Lower_PCS_Syllabus_2026%20(1).pdf",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/upsssc-26exam-2026-notification.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in/AllNotifications.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026 | 10:55 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-01",
+          "dateText": "01/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-01",
+          "dateText": "01/12/2026"
+        },
+        {
+          "label": "Form Correction Last Date",
+          "date": "2026-12-08",
+          "dateText": "08/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-37f3dc9ea960a3c7",
+      "type": "job",
+      "title": "UPPSC Various Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uppsc-various-post-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "lastDate": "2026-12-04",
+      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
+      "publishedDate": "2026-11-12",
+      "openDate": "2026-11-04",
+      "vacancies": "25",
+      "ageLimit": "21–40 years",
+      "eligibility": "Master Degree in Town or City or Urban or Housing or Country or Rural or Infrastructure or Regional or Transport or Environment Planning from a recognized University or Institute in India. Bachelor of Planning or Bachelor of Technology In Planning from a recognized University or Institute with two years of experience in the field of Urban Planning in the Central/State Government or local Urban Authorities, etc. More Eligibility Details Read the Notification",
+      "applicationFee": "General / OBC / EWS : 225/- SC / ST : 105/- PH Candidates : 25/-",
+      "notificationLink": "https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=751&flag=E&FID=950",
+      "officialLinks": [
+        {
+          "url": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=751&flag=E&FID=950",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026 | 11:56 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-04",
+          "dateText": "04/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-04",
+          "dateText": "04/12/2026"
+        },
+        {
+          "label": "Last Date Correction",
+          "date": "2026-12-11",
+          "dateText": "11/12/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-e44471b7e3207263",
       "type": "job",
       "title": "UPSSSC Auditor and Assistant Accountant Online Form 2026",
@@ -479,6 +603,76 @@
           "label": "01-Exam/2026",
           "date": "2026-03-09",
           "dateText": "Pharmacist 560 09/03/2026 to 29/03/2026 Click Here"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-355cf57529ef0867",
+      "type": "job",
+      "title": "Uttar Pradesh UP Anganwadi Worker Bharti Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "https://upanganwadibharti.in/workernew/users/registration.php",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-anganwadi-worker/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "organization": "Uttar Pradesh District Program Officer",
+      "publishedDate": "2026-11-16",
+      "ageLimit": "18–35 years",
+      "eligibility": "Only for Female Candidates. Passed 10+2 Intermediate Exam in Any Recognized Board in India. Candidate must be a resident of the said Village/Ward/Nyaya Panchayat from where she will apply.",
+      "applicationFee": "General / OBC / EWS : 0/- SC / ST : 0/- No Application Fees for the All Candidates.",
+      "notificationLink": "https://upanganwadibharti.in/",
+      "officialLinks": [
+        {
+          "url": "https://upanganwadibharti.in/helper-v2/uploadOrder/ordercopy1794462868.pdf",
+          "label": "Lucknow"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1794483262_764d0c2f.pdf",
+          "label": "Pilibhit"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1793786155_897410f7.pdf",
+          "label": "Hardoi"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1793788125_fe3d1005.pdf",
+          "label": "Ballia"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1793693933_c0a05fe7.pdf",
+          "label": "Budaun"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1791979147_52412659.pdf",
+          "label": "Kasganj"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1791371812_936656e4.pdf",
+          "label": "Moradabad"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1789130301_94035e97.pdf",
+          "label": "Gonda"
+        },
+        {
+          "url": "https://upanganwadibharti.in/workernew/uploadOrder/ordercopy_1790765630_c3e6e85e.pdf",
+          "label": "Kaushambi"
+        },
+        {
+          "url": "https://upanganwadibharti.in/worker-v4/uploadOrder/ordercopy_1790140236_75c62955.pdf",
+          "label": "Hathras"
+        }
+      ],
+      "officialLink": "https://upanganwadibharti.in/workernew/users/registration.php",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026 | 05:42 AM"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T10:46:29.282Z",
-  "total": 3,
+  "generatedAt": "2026-11-18T10:13:17.916Z",
+  "total": 4,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
@@ -104,6 +104,61 @@
           "label": "Last Date to Apply Online",
           "date": "2026-12-11",
           "dateText": "11 December 2026, 11:59 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-74c47409dc21e0fd",
+      "type": "job",
+      "title": "Delhi DSSSB JE Electrical, MTS Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Defence",
+      "state": "Delhi",
+      "link": "https://dsssbonline.nic.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/dsssb-je-elect-mts-06-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "lastDate": "2026-12-11",
+      "organization": "Delhi Subordinate Service Selection Board (DSSSB)",
+      "publishedDate": "2026-11-12",
+      "openDate": "2026-11-12",
+      "vacancies": "1260",
+      "ageLimit": "Minimum 18 years",
+      "eligibility": "Degree / Diploma in Electrical Engineering. For Department Wise Eligibility Details Read the Notification.",
+      "applicationFee": "General / OBC / EWS : 100/- SC / ST / PH : 0/- Female Candidate : 0/-",
+      "notificationLink": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_06_2026_j_e_electrical_mts.pdf",
+      "officialLinks": [
+        {
+          "url": "https://dsssbonline.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_06_2026_j_e_electrical_mts.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://dsssbonline.nic.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026 | 08:59 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-11",
+          "dateText": "11/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-11",
+          "dateText": "11/12/2026"
         }
       ]
     }

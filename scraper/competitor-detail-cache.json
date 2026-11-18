@@ -30844,7 +30844,7 @@
     }
   },
   "https://www.freejobalert.com/articles/iocl-eastern-region-apprentice-recruitment-2026-3080655": {
-    "attemptedAt": "2026-11-17T10:46:39.931Z",
+    "attemptedAt": "2026-11-18T10:13:19.256Z",
     "parser": "v2",
     "details": {
       "organization": "Indian Oil Corporation Limited (IOCL)",
@@ -31250,7 +31250,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ssc-cpo-city-intimation-slip-2026-3080923": {
-    "attemptedAt": "2026-11-17T10:46:47.355Z",
+    "attemptedAt": "2026-11-18T10:13:19.278Z",
     "parser": "v2",
     "details": {
       "organization": "Staff Selection Commission (SSC)",
@@ -32787,7 +32787,7 @@
     }
   },
   "https://www.freejobalert.com/articles/wcl-recruitment-2026-clerk-jr-data-entry-operator-t-s-3081692": {
-    "attemptedAt": "2026-11-17T10:46:47.191Z",
+    "attemptedAt": "2026-11-18T10:13:19.169Z",
     "parser": "v2",
     "details": {
       "organization": "Western Coalfields Limited (WCL), Nagpur, Maharashtra",
@@ -32859,7 +32859,7 @@
     }
   },
   "https://www.freejobalert.com/articles/nlc-india-executive-recruitment-2026-3081657": {
-    "attemptedAt": "2026-11-17T10:46:47.253Z",
+    "attemptedAt": "2026-11-18T10:13:19.235Z",
     "parser": "v2",
     "details": {
       "organization": "NLC India Limited (NLCIL)",
@@ -34344,7 +34344,7 @@
     }
   },
   "https://www.freejobalert.com/articles/tiruppur-dhs-staff-nurse-selection-list-2026-3081705": {
-    "attemptedAt": "2026-11-17T10:46:55.245Z",
+    "attemptedAt": "2026-11-18T10:13:19.198Z",
     "parser": "v2",
     "details": {
       "organization": "District Health Society, Tiruppur",
@@ -34374,7 +34374,7 @@
     }
   },
   "https://www.freejobalert.com/articles/kslsa-section-officer-eligible-list-2026-3081711": {
-    "attemptedAt": "2026-11-17T10:46:55.261Z",
+    "attemptedAt": "2026-11-18T10:13:19.207Z",
     "parser": "v2",
     "details": {
       "organization": "Karnataka State Legal Service Authority",
@@ -34617,6 +34617,312 @@
         {
           "url": "https://rssb.rajasthan.gov.in/",
           "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/upsssc-havildar-instructor-admit-card-2026-3082214": {
+    "attemptedAt": "2026-11-18T10:13:19.297Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UPSSSC Havildar Instructor",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-06-19",
+      "lastDate": "2026-07-09",
+      "examDate": "2026-11-22",
+      "resultDate": "2026-09-30",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "209",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam District Slip Date",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Main Exam Date",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-06-19",
+          "dateText": "19 June 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-07-09",
+          "dateText": "9 July 2026"
+        },
+        {
+          "label": "Application Correction Last Date",
+          "date": "2026-07-16",
+          "dateText": "16 July 2026"
+        },
+        {
+          "label": "PET-Based Shortlisting Result",
+          "date": "2026-09-30",
+          "dateText": "30 September 2026"
+        },
+        {
+          "label": "Mains Exam Date Notice",
+          "date": "2026-11-03",
+          "dateText": "3 November 2026"
+        },
+        {
+          "label": "Exam District Intimation Slip",
+          "date": "2026-11-12",
+          "dateText": "12 November 2026"
+        },
+        {
+          "label": "Main Examination",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=MAIN",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=MAIN",
+          "label": "UPSSSC Havildar Instructor Mains Admit Card 2026"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "UPSSSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rrb-paramedical-staff-admit-card-2026-3082207": {
+    "attemptedAt": "2026-11-18T10:13:19.316Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RRB Paramedical Staff",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-09-15",
+      "lastDate": "2026-10-14",
+      "examDate": "2026-11-25",
+      "resultDate": null,
+      "admitCardDate": "2026-11-21",
+      "interviewDate": null,
+      "vacancies": "590",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "16 October 2026",
+      "milestones": [
+        {
+          "label": "Admit Card Update Date",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "CBT Exam Dates",
+          "date": "2026-11-25",
+          "dateText": "23 and 25 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-15",
+          "dateText": "15 September 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-10-14",
+          "dateText": "14 October 2026"
+        },
+        {
+          "label": "Application Fee Payment Last Date",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026"
+        },
+        {
+          "label": "Admit Card Release Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "E-Call Letter for 23 November Exam",
+          "date": "2026-11-19",
+          "dateText": "Around 19 November 2026"
+        },
+        {
+          "label": "E-Call Letter for 25 November Exam",
+          "date": "2026-11-21",
+          "dateText": "Around 21 November 2026"
+        },
+        {
+          "label": "Computer-Based Examination",
+          "date": "2026-11-25",
+          "dateText": "23 and 25 November 2026"
+        },
+        {
+          "label": "First Exam Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Second Exam Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        }
+      ],
+      "officialLink": "https://rrb.digialm.com//EForms/configuredHtml/33244/103377/VCEkJmRHV2o6qDNSV4/login.html",
+      "officialLinks": [
+        {
+          "url": "https://rrb.digialm.com//EForms/configuredHtml/33244/103377/VCEkJmRHV2o6qDNSV4/login.html",
+          "label": "RRB Paramedical Staff Admit Card 2026"
+        },
+        {
+          "url": "https://rrb.indianrailways.gov.in/",
+          "label": "Official RRB Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/karnataka-kea-prison-admit-card-2026-3081945": {
+    "attemptedAt": "2026-11-18T10:13:19.340Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Karnataka KEA Prison",
+      "publishedDate": "2026-11-17",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-22",
+      "resultDate": null,
+      "admitCardDate": "2026-11-17",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026 (RPC Cadre)"
+        },
+        {
+          "label": "RPC Cadre Exam Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "KK Cadre Exam Date",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        },
+        {
+          "label": "Kannada Language Examination (Applicable Candidates)",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026 3:00 PM to 5:00 PM"
+        }
+      ],
+      "officialLink": "https://www.cetonline.karnataka.gov.in/KEA_EXAM_PORTAL/Forms/Candidates/Login",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.cetonline.karnataka.gov.in/KEA_EXAM_PORTAL/Forms/Candidates/Login",
+          "label": "Karnataka KEA Prison Admit Card 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/wbsedcl-je-and-assistant-manager-score-card-2026-3082068": {
+    "attemptedAt": "2026-11-18T10:13:19.355Z",
+    "parser": "v2",
+    "details": {
+      "organization": "West Bengal State Electricity Distribution Company Limited (WBSEDCL)",
+      "publishedDate": "2026-11-18",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-01-27",
+      "resultDate": "2026-11-23",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "447",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2025-11-24",
+          "dateText": "24 November 2025"
+        },
+        {
+          "label": "CBT Exam Date",
+          "date": "2026-01-27",
+          "dateText": "27 January 2026"
+        },
+        {
+          "label": "Scorecard Release Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Download Last Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026 at 5:00 PM"
+        },
+        {
+          "label": "CBT Examination",
+          "date": "2026-01-27",
+          "dateText": "27 January 2026"
+        },
+        {
+          "label": "Scorecard Release",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Final Answer Key Release",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Scorecard Download Starts",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026 at 11:00 AM"
+        },
+        {
+          "label": "Last Date to View Scorecard",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026 at 5:00 PM"
+        }
+      ],
+      "officialLink": "https://cdn3.digialm.com/EForms/configuredHtml/32902/95673/login.html",
+      "officialLinks": [
+        {
+          "url": "https://wbsedcl.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cdn3.digialm.com/EForms/configuredHtml/32902/95673/login.html",
+          "label": "WBSEDCL Score Card 2026"
+        },
+        {
+          "url": "https://www.wbsedcl.in/irj/go/km/docs/internet/new_website/pdf/Careers/Signed%20Copy%20of%20Website%20Notice_17_11.pdf",
+          "label": "Official Scorecard Notice PDF"
+        },
+        {
+          "url": "https://www.wbsedcl.in/",
+          "label": "WBSEDCL Official Website"
         }
       ]
     }

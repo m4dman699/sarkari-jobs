@@ -1,5 +1,61 @@
 {
-  "generatedAt": "2026-11-17T10:46:29.282Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-18T10:13:17.916Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-sarkariresult-52384a915537c97f",
+      "type": "job",
+      "title": "Bihar Vidhan Sabha JSA and Office Attendant Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Bihar",
+      "link": "https://blasrecruit.in/welcome",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/bihar-vidhan-sabha-recruitment/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "lastDate": "2026-12-06",
+      "organization": "Bihar Vidhan Sabha",
+      "publishedDate": "2026-11-07",
+      "openDate": "2026-11-07",
+      "vacancies": "20",
+      "ageLimit": "18–37 years",
+      "eligibility": "10+2 Passed from Any Recognized Institute / Board in India. For More Details Read the Notification.",
+      "applicationFee": "For Junior Secretariat Assistant General / BC / Other State : 600/- SC / ST / PH : 150/- Female Candidate (Bihar Dom.) : 150/- For Office Attendant General / BC / Other State : 400/- SC / ST / PH : 100/- Female Candidate (Bihar Dom.) : 100/-",
+      "notificationLink": "https://blasrecruit.in/assets/adv/26_01N.pdf",
+      "officialLinks": [
+        {
+          "url": "https://blasrecruit.in/welcome",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://blasrecruit.in/assets/adv/26_01N.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://vidhansabha.bihar.gov.in/Recruitment%20Notice.html",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://blasrecruit.in/welcome",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-07",
+          "dateText": "07 November 2026 | 09:00 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-06",
+          "dateText": "06/12/2026"
+        },
+        {
+          "label": "Last Date Pay Exam Fee",
+          "date": "2026-12-06",
+          "dateText": "06/12/2026"
+        }
+      ]
+    }
+  ]
 }
