@@ -254,6 +254,9 @@ ${heroLogo}
 <h1>${escapeHTML(name)} jobs: who can apply, and how selection works</h1>
 <p class="g-lede">${escapeHTML(name)} recruitment explained in diagrams: which qualification unlocks which post, every selection stage, and live listings pulled from the official feed.</p>
 <div class="g-statrow">${stats}</div>
+<div class="g-pictograms">
+${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-icon">${icon(p.icon, 'g-ic g-picto-ic')}</span><span class="g-picto-label">${escapeHTML(p.label)}</span></div>`).join('')}
+</div>
 <p class="g-hero-note">${icon('landmark', 'g-ic g-ic--sm')}Not a recruiting authority. Confirm every date, fee and eligibility clause on the official notice linked from each listing.</p>
 </div>
 </section>

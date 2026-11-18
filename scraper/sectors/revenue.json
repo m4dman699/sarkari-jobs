@@ -11,6 +11,14 @@
     { "value": "5000+", "label": "Vacancies/Year" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "landmark", "label": "Revenue jobs" },
+    { "icon": "graduation-cap", "label": "Graduate+" },
+    { "icon": "book-open", "label": "SSC CGL" },
+    { "icon": "target", "label": "Physical test" },
+    { "icon": "briefcase", "label": "Govt sector" },
+    { "icon": "trophy", "label": "Inspector/IRS" }
+  ],
   "levels": [
     {
       "level": "12th Pass",

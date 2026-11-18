@@ -11,6 +11,14 @@
     { "value": "40+", "label": "RRBs" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "landmark", "label": "Banking jobs" },
+    { "icon": "graduation-cap", "label": "Graduate+" },
+    { "icon": "book-open", "label": "Prelims + Mains" },
+    { "icon": "briefcase", "label": "Govt sector" },
+    { "icon": "target", "label": "Speed test" },
+    { "icon": "trophy", "label": "PO/Clerk" }
+  ],
   "levels": [
     {
       "level": "12th Pass",

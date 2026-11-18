@@ -44,7 +44,11 @@
   line-height: 1.18; margin: 0 0 14px; max-width: 21ch; color: #fff;
 }
 .g-lede { font-size: .95rem; line-height: 1.55; color: #ccd7ec; max-width: 60ch; margin: 0 0 18px; }
-.g-statrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-bottom: 20px; max-width: 500px; }
+.g-statrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-bottom: 16px; max-width: 500px; }
+.g-pictograms { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.g-picto { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: 8px; padding: 6px 12px; }
+.g-picto-icon { color: var(--g-accent); width: 16px; height: 16px; }
+.g-picto-label { font-size: .78rem; font-weight: 600; color: #ccd7ec; }
 .g-stat {
   background: rgba(255, 255, 255, .06);
   border: 1px solid rgba(255, 255, 255, .14);

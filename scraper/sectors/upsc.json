@@ -11,6 +11,14 @@
     { "value": "900+", "label": "Vacancies (CSE)" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "landmark", "label": "UPSC jobs" },
+    { "icon": "graduation-cap", "label": "Graduate+" },
+    { "icon": "book-open", "label": "Prelims + Mains" },
+    { "icon": "users", "label": "Interview" },
+    { "icon": "target", "label": "Current affairs" },
+    { "icon": "trophy", "label": "IAS/IPS/IFS" }
+  ],
   "levels": [
     {
       "level": "Graduate",

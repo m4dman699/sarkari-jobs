@@ -11,6 +11,14 @@
     { "value": "1 Lakh+", "label": "Vacancies/Year" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "landmark", "label": "SSC jobs" },
+    { "icon": "graduation-cap", "label": "10th to Graduate" },
+    { "icon": "book-open", "label": "Tier 1 + Tier 2" },
+    { "icon": "briefcase", "label": "Govt sector" },
+    { "icon": "target", "label": "Speed test" },
+    { "icon": "trophy", "label": "Inspector/Clerk" }
+  ],
   "levels": [
     {
       "level": "10th Pass",

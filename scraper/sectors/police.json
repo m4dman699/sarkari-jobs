@@ -11,6 +11,14 @@
     { "value": "5 Lakh+", "label": "Vacancies/Year" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "shield", "label": "Police jobs" },
+    { "icon": "graduation-cap", "label": "10th to Graduate" },
+    { "icon": "target", "label": "Physical test" },
+    { "icon": "book-open", "label": "Written exam" },
+    { "icon": "users", "label": "Interview" },
+    { "icon": "trophy", "label": "Constable/SI" }
+  ],
   "levels": [
     {
       "level": "10th Pass",

@@ -11,6 +11,14 @@
     { "value": "600+", "label": "NVs Nationwide" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "graduation-cap", "label": "Teaching jobs" },
+    { "icon": "book-open", "label": "CTET/TET" },
+    { "icon": "users", "label": "Interview" },
+    { "icon": "file-text", "label": "B.Ed required" },
+    { "icon": "target", "label": "Demo class" },
+    { "icon": "trophy", "label": "PRT/TGT/PGT" }
+  ],
   "levels": [
     {
       "level": "12th Pass",

@@ -11,6 +11,14 @@
     { "value": "1.3M+", "label": "Employees" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "train-front", "label": "Railway jobs" },
+    { "icon": "graduation-cap", "label": "All qualifications" },
+    { "icon": "book-open", "label": "CBT exam" },
+    { "icon": "briefcase", "label": "Govt sector" },
+    { "icon": "shield", "label": "Medical fit" },
+    { "icon": "landmark", "label": "18 zones" }
+  ],
   "levels": [
     {
       "level": "10th Pass",

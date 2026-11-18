@@ -11,6 +11,14 @@
     { "value": "10K+", "label": "Vacancies/Year" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "building-2", "label": "IT jobs" },
+    { "icon": "graduation-cap", "label": "B.Tech/MCA" },
+    { "icon": "book-open", "label": "GATE exam" },
+    { "icon": "target", "label": "Coding test" },
+    { "icon": "users", "label": "Interview" },
+    { "icon": "trophy", "label": "Scientist/Engineer" }
+  ],
   "levels": [
     {
       "level": "10th Pass",

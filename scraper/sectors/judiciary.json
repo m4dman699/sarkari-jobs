@@ -11,6 +11,14 @@
     { "value": "500+", "label": "Vacancies/Year" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "landmark", "label": "Judiciary jobs" },
+    { "icon": "graduation-cap", "label": "LLB/LLM" },
+    { "icon": "book-open", "label": "PCS(J) exam" },
+    { "icon": "users", "label": "Interview" },
+    { "icon": "file-text", "label": "Law degree" },
+    { "icon": "trophy", "label": "Civil Judge" }
+  ],
   "levels": [
     {
       "level": "12th Pass",

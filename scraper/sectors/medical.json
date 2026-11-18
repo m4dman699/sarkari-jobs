@@ -11,6 +11,14 @@
     { "value": "50K+", "label": "Vacancies/Year" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "shield", "label": "Medical jobs" },
+    { "icon": "graduation-cap", "label": "MBBS/BDS" },
+    { "icon": "book-open", "label": "NEET PG" },
+    { "icon": "users", "label": "Interview" },
+    { "icon": "check-circle", "label": "Medical fit" },
+    { "icon": "trophy", "label": "MO/Specialist" }
+  ],
   "levels": [
     {
       "level": "12th Pass (Paramedical)",

@@ -11,6 +11,14 @@
     { "value": "5", "label": "Paramilitary Forces" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
+  "pictograms": [
+    { "icon": "shield", "label": "Defence jobs" },
+    { "icon": "graduation-cap", "label": "10th to Graduate" },
+    { "icon": "book-open", "label": "Written exam" },
+    { "icon": "users", "label": "SSB interview" },
+    { "icon": "check-circle", "label": "Medical fit" },
+    { "icon": "trophy", "label": "Officer/Sepoy" }
+  ],
   "levels": [
     {
       "level": "10th Pass",
