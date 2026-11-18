@@ -1,0 +1,104 @@
+{
+  "slug": "police",
+  "name": "Police",
+  "icon": "shield",
+  "logo": null,
+  "accent": "#c0392b",
+  "categoryMatch": ["Police"],
+  "titleMatch": "\\b(police|constable|sub.?inspector|si |head constable|assistant sub.?inspector|asi |dy.?sp|dsp|inspector|police recruitment|upprpb|csbc|wb police|tnusrb)\\b",
+  "stats": [
+    { "value": "28", "label": "State Police Forces" },
+    { "value": "5 Lakh+", "label": "Vacancies/Year" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "10th Pass",
+      "posts": [
+        { "name": "Constable (General Duty)", "code": "Level 3", "note": "Beat policing, patrol, law & order" },
+        { "name": "Constable (Driver)", "code": "Level 3", "note": "Vehicle operation, transport" },
+        { "name": "Constable (Tradesman)", "code": "Level 3", "note": "Carpenter, tailor, cook, barber" }
+      ],
+      "note": "10th pass. Age 18–25. Physical: running 1.6km in 6 min, long jump, high jump, chest."
+    },
+    {
+      "level": "12th Pass",
+      "posts": [
+        { "name": "Head Constable", "code": "Level 4", "note": "Supervisory, station records, wireless" },
+        { "name": "Assistant Sub-Inspector (ASI)", "code": "Level 5", "note": "Investigation, station house officer" }
+      ],
+      "note": "12th pass. Age 18–25. Physical standards + written exam."
+    },
+    {
+      "level": "Graduate",
+      "posts": [
+        { "name": "Sub-Inspector (SI)", "code": "Level 6", "note": "Station house officer, investigation" },
+        { "name": "Deputy Superintendent (Dy.SP)", "code": "Level 8", "note": "Circle officer, supervisory" }
+      ],
+      "note": "Any degree. Age 20–28 (SI), 21–30 (Dy.SP). Physical + written + interview."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Physical Efficiency Test (PET)",
+      "tests": "Running: 1.6km (men) / 800m (women) in time limit. Long jump, high jump.",
+      "note": "Qualifying. 5–10% pass. Start running 3 months before."
+    },
+    {
+      "name": "Physical Standard Test (PST)",
+      "tests": "Height: 165cm (men), 152cm (women). Chest: 79-84cm (men). Weight proportional.",
+      "note": "Strict measurement. No relaxation except for specific categories."
+    },
+    {
+      "name": "Written Exam",
+      "tests": "100-200 Qs. GK, Reasoning, Numerical Ability, General Hindi/English.",
+      "note": "Merit prepared from written score. Negative marking 0.25-0.50."
+    },
+    {
+      "name": "Interview / Document Verification",
+      "tests": "Personal interview (for SI/Dy.SP). All originals, caste, domicile.",
+      "note": "Final appointment after medical fitness (vision, hearing, BMI)."
+    }
+  ],
+  "ladder": [
+    "Constable (Level 3)",
+    "Head Constable (Level 4)",
+    "Assistant Sub-Inspector (Level 5)",
+    "Sub-Inspector (Level 6)",
+    "Inspector / Dy.SP (Level 7-8)"
+  ],
+  "reality": [
+    "Police recruitment is state-specific. Each state has its own exam, syllabus, and physical standards.",
+    "Physical test eliminates 80-90% of candidates. Fitness is more important than book knowledge.",
+    "Constable has no interview — pure merit (written + physical). SI/Dy.SP have interview.",
+    "Medical standards are strict. Flat feet, knock knees, colour blindness = rejection.",
+    "Working hours are long and irregular. Night shifts, emergencies, transfers to remote areas.",
+    "Salary: Constable ~₹21,700 (Level 3) + DA + HRA. SI ~₹35,400 (Level 6) + allowances."
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Constable and Sub-Inspector?",
+      "a": "Constable: 10th pass, Level 3, beat policing. Sub-Inspector: graduate, Level 6, station house officer with investigation powers. Different exams, different eligibility."
+    },
+    {
+      "q": "Can women apply for police jobs?",
+      "a": "Yes. Women can apply for Constable, Head Constable, SI, and Dy.SP. Separate physical standards for women (lower height, different running distance)."
+    },
+    {
+      "q": "What is the age limit for police recruitment?",
+      "a": "Constable: 18-25 years. Head Constable: 18-25. SI: 20-28 years. Dy.SP: 21-30 years. Age relaxations for SC/ST/OBC/PwD."
+    },
+    {
+      "q": "Is there negative marking in police exams?",
+      "a": "Yes. Most state police exams have 0.25-0.50 negative marking per wrong answer. No negative marking in physical tests."
+    },
+    {
+      "q": "How many vacancies are there in police recruitment?",
+      "a": "UP Police: 50,000+ (2024). Bihar Police: 20,000+. Total state police vacancies exceed 2 lakh per year across India."
+    },
+    {
+      "q": "Where do I find official police notifications?",
+      "a": "State police websites (e.g., uppbpb.gov.in, csbc.bih.nic.in). SarkariJobs+ links the official notification on every listing page."
+    }
+  ]
+}

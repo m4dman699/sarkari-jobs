@@ -416,7 +416,26 @@ const MARK_BY_NAME = [
   [/\bMPSC\b|Manipur Public Service/i, 'portal-logos/manipur-mpsc.ico'],
   [/\bSSC\b|Staff Selection Commission/i, 'portal-logos/ssc.webp'],
   [/\bRRB\b|Railway Recruitment|Railways?\b/i, 'portal-logos/railways.png'],
-  [/Supreme Court of India/i, 'portal-logos/supreme-court.ico']
+  [/Supreme Court of India/i, 'portal-logos/supreme-court.ico'],
+  [/IBPS|Institute of Banking Personnel/i, 'logos/ibps-logo.png'],
+  [/State Bank of India|\bSBI\b/i, 'logos/sbi-logo.svg'],
+  [/Kendriya Vidyalaya|\bKVS\b/i, 'logos/kvs-logo.svg'],
+  [/Indian Air Force|\bIAF\b/i, 'logos/indian-air-force-logo.png'],
+  [/\bPolice\b|BSF|CISF|CRPF|SSB\b|Border Security|Central Industrial Security/i, 'logos/police.png'],
+  [/Teaching|Teacher|\bTET\b/i, 'logos/teaching.png'],
+  [/Indian Police Service|\bIPS\b/i, 'logos/indian-police-service-logo.png'],
+  [/Staff Selection Commission/i, 'logos/staff-selection-commission-logo.jpg'],
+  [/Indian Army/i, 'logos/indian-police-service-logo.png'],
+  [/Indian Navy/i, 'logos/indian-police-service-logo.png'],
+  [/Reserve Bank of India|\bRBI\b/i, 'logos/sbi-logo.svg'],
+  [/Union Bank|PNB|Bank of Baroda|Indian Bank|Canara Bank|Bank of India/i, 'logos/sbi-logo.svg'],
+  [/NTA|National Testing Agency/i, 'portal-logos/ssc.webp'],
+  [/CBSE|Central Board of Secondary/i, 'logos/teaching.png'],
+  [/ISRO|Indian Space Research/i, 'portal-logos/ssc.webp'],
+  [/ONGC|Oil and Natural Gas/i, 'portal-logos/ssc.webp'],
+  [/NTPC|National Thermal Power/i, 'portal-logos/ssc.webp'],
+  [/AIIMS|All India Institute of Medical/i, 'portal-logos/ssc.webp'],
+  [/High Court/i, 'portal-logos/supreme-court.ico']
 ];
 
 // Decorative: the authority is already named in the h1, the chips and the source

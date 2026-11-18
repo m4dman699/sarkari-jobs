@@ -5,7 +5,7 @@
   "logo": { "src": "assets/logos/ibps-logo.png", "alt": "IBPS", "width": 380, "height": 190 },
   "accent": "#2f7fd4",
   "categoryMatch": ["Banking"],
-  "titleMatch": "\\b(ibps|sbi|bank|banking|rbi|rrb|po|clerk|so |specialist officer|probationary officer)\\b",
+  "titleMatch": "\\b(ibps|sbi|bank|banking|rbi|po|clerk|specialist officer|probationary officer)\\b",
   "stats": [
     { "value": "12", "label": "Public Sector Banks" },
     { "value": "40+", "label": "RRBs" },
