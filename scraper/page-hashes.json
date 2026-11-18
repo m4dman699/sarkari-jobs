@@ -2644,51 +2644,55 @@
     "lastmod": "2026-11-18"
   },
   "page:guides/banking/": {
-    "hash": "ce72f19c09a28811d9a7d7f245cc01255276e434",
+    "hash": "bcabe2fce9b52ae78400b85a6553e24fff929153",
     "lastmod": "2026-11-18"
   },
   "page:guides/defence/": {
-    "hash": "b95f344f6cfbdef62d9b33bc21776518bc4012e4",
+    "hash": "cc5461f88a8ddb2b087acc070c01f591323de4d9",
+    "lastmod": "2026-11-18"
+  },
+  "page:guides/employment/": {
+    "hash": "007d86232bce79a95de06dfb268615c39c541f67",
     "lastmod": "2026-11-18"
   },
   "page:guides/it-technical/": {
-    "hash": "e35976ba65851653a944225fa34cb22b2cfd2d5e",
+    "hash": "aa34dafece4150b68fcf4debf34e60d0ba2609a1",
     "lastmod": "2026-11-18"
   },
   "page:guides/judiciary/": {
-    "hash": "c56f816df34dc0a5b9f80db7d3695f30ea5ebfe5",
+    "hash": "fd79234a43d25fc7af5f65012e6664a10bd43037",
     "lastmod": "2026-11-18"
   },
   "page:guides/medical/": {
-    "hash": "4fcebf20dfd075508ccea131fabda9ca649618fe",
+    "hash": "9cb9700d86a75860415f5021d0bf6b7c30482fc3",
     "lastmod": "2026-11-18"
   },
   "page:guides/police/": {
-    "hash": "c51e9d74efe13b4abc1704172f017f97c4a34946",
+    "hash": "1a7577384f745829d48167b03b0234c17f3ef707",
     "lastmod": "2026-11-18"
   },
   "page:guides/railways/": {
-    "hash": "e5f3e12e0f51d0d06ab1d8f7b9e2361c38c98f4e",
+    "hash": "6aa143063056c297e7311f77d5a7eaf27f85973b",
     "lastmod": "2026-11-18"
   },
   "page:guides/revenue/": {
-    "hash": "cc8779f8fa6d102452788c99abb7bbfd2c10f771",
+    "hash": "f44e17aa91908c53d6318434a5f8a1d21da1f379",
     "lastmod": "2026-11-18"
   },
   "page:guides/ssc/": {
-    "hash": "3445cc494ee2977be2fa357970456d6024d6577c",
+    "hash": "82f7f0854ed46bbc31ab12d37dccc6cbcc946f88",
     "lastmod": "2026-11-18"
   },
   "page:guides/teaching/": {
-    "hash": "050dec219ce6663587f54449a0cc3a57afc04fae",
+    "hash": "50ca598a60b18050d0aa8d27b77edc3cdfc5f840",
     "lastmod": "2026-11-18"
   },
   "page:guides/upsc/": {
-    "hash": "d3bfb463ea1be049de32544d10030f9d172ec52d",
+    "hash": "d8c4f12994da89fb89dddaefa0b53bcb8dfedd4b",
     "lastmod": "2026-11-18"
   },
   "page:guides/": {
-    "hash": "6ace997ea34e8daf5667e352cf74ff6cf746f1a0",
+    "hash": "87338c6db5d8d48bc72001f610beb757d1a07aa0",
     "lastmod": "2026-11-18"
   }
 }

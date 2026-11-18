@@ -1,0 +1,53 @@
+{
+  "slug": "employment",
+  "name": "Employment News",
+  "icon": "newspaper",
+  "logo": null,
+  "accent": "#34495e",
+  "categoryMatch": ["Employment", "Central", "Central Government", "Central Govt"],
+  "titleMatch": "\\b(employment news|employmentnews|employment office|employment exchange|swavlaman|job)\\b",
+  "stats": [
+    { "value": "1", "label": "Govt Source" },
+    { "value": "50K+", "label": "Jobs Covered" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "pictograms": [
+    { "icon": "newspaper", "label": "Employment news" },
+    { "icon": "book-open", "label": "Job alerts" },
+    { "icon": "briefcase", "label": "Govt jobs" },
+    { "icon": "users", "label": "Career seekers" },
+    { "icon": "check-circle", "label": "Verified" },
+    { "icon": "trophy", "label": "Govt career" }
+  ],
+  "levels": [
+    {
+      "level": "All Pass",
+      "posts": [
+        { "name": "Various Government Jobs", "code": "N/A", "note": "Employment News aggregates govt jobs from all sectors" }
+      ],
+      "note": "Employment News is a government newspaper aggregating job notifications from central and state govt."
+    }
+  ],
+  "stages": [],
+  "ladder": [],
+  "reality": [
+    "Employment News is a government publication. It is not a recruiting portal itself but an aggregator.",
+    "Jobs listed there are mostly from the last 7 days to 1 year old.",
+    "Treat Employment News posts as historical references, not current notifications."
+  ],
+  "syllabus": [],
+  "faq": [
+    {
+      "q": "Is Employment News a recruiting portal?",
+      "a": "No. Employment News is a government newspaper that publishes job listings. It is an aggregator source, not a primary recruiting board."
+    },
+    {
+      "q": "Which jobs are listed in Employment News?",
+      "a": "Various government jobs from central and state governments — Railways, SSC, UPSC, State PSCs, PSU jobs, etc. across all categories."
+    },
+    {
+      "q": "Can I find current government jobs in Employment News?",
+      "a": "No. Employment News is a weekly publication. For current jobs, use the primary recruiting portals (see /all-jobs.html)."
+    }
+  ]
+}
