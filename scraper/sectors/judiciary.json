@@ -1,0 +1,108 @@
+{
+  "slug": "judiciary",
+  "name": "Judiciary",
+  "icon": "landmark",
+  "logo": null,
+  "accent": "#8e44ad",
+  "categoryMatch": ["Judiciary"],
+  "titleMatch": "\\b(judiciary|court|judge|judicial|high court|supreme court|district judge|civil judge|munsif|steno)\\b",
+  "stats": [
+    { "value": "25", "label": "High Courts" },
+    { "value": "500+", "label": "Vacancies/Year" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "12th Pass",
+      "posts": [
+        { "name": "Junior Court Assistant / Clerk", "code": "Level 2-4", "note": "Court records, filing, typing" },
+        { "name": "Process Server / Peon", "code": "Level 1-2", "note": "Court summons, document delivery" }
+      ],
+      "note": "12th pass + typing. Age 18-27. Computer certificate preferred."
+    },
+    {
+      "level": "Graduate (LLB)",
+      "posts": [
+        { "name": "Civil Judge (Junior Division)", "code": "Level 10", "note": "Civil/criminal cases, magistrate" },
+        { "name": "Judicial Magistrate", "code": "Level 10", "note": "Criminal cases, bail, remand" }
+      ],
+      "note": "LLB degree. Age 21-35. PCS(J) exam by state PSC."
+    },
+    {
+      "level": "Post Graduate (LLM)",
+      "posts": [
+        { "name": "District Judge", "code": "Level 12", "note": "Senior civil/criminal cases" },
+        { "name": "Additional District Judge", "code": "Level 12", "note": "Appellate, sessions court" }
+      ],
+      "note": "LLM or 7 years practice. Age 35-45. Higher Judicial Service exam."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Preliminary Exam",
+      "tests": "100-150 Qs — Law (Civil/Criminal/Constitutional), GK, English. Objective type.",
+      "note": "Qualifying. Cut-off varies by state and category."
+    },
+    {
+      "name": "Main Exam (Written)",
+      "tests": "3-4 papers: Civil Law, Criminal Law, English, Language (Hindi/Regional). Descriptive.",
+      "note": "Merit prepared from Main score. 3 hrs per paper."
+    },
+    {
+      "name": "Interview",
+      "tests": "20-30 min panel. Legal knowledge, personality, aptitude for judicial service.",
+      "note": "200 marks. Final merit = Main + Interview."
+    },
+    {
+      "name": "Training & Posting",
+      "tests": "6-12 months judicial training at state judicial academy.",
+      "note": "Posted as Civil Judge / Judicial Magistrate after training."
+    }
+  ],
+  "ladder": [
+    "Junior Court Assistant / Clerk (Level 2-4)",
+    "Civil Judge / Judicial Magistrate (Level 10)",
+    "Senior Civil Judge (Level 11)",
+    "District & Sessions Judge (Level 12)",
+    "High Court Judge (Level 16-17)"
+  ],
+  "reality": [
+    "Judicial service exams are state-specific. Each state has its own syllabus and pattern.",
+    "PCS(J) is one of the most competitive exams. 10,000+ applicants for 100-200 vacancies.",
+    "Law degree (LLB) is mandatory. 3-year or 5-year LLB both accepted.",
+    "Some states require 2-3 years of practice for HJS (Higher Judicial Service).",
+    "Judges have job security but heavy workload. 50-100 cases per day in trial courts.",
+    "Salary: Civil Judge ~₹77,840 (Level 10) + DA + HRA. District Judge ~₹1,44,840 (Level 12)."
+  ],
+  "syllabus": [
+    { "exam": "PCS(J) Prelims", "pattern": "100-150 Qs — Civil Law, Criminal Law, Constitutional Law, CPC, CrPC, Evidence Act, Contract Act, Transfer of Property. GK + English.", "link": "https://uppsc.up.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600090?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>PCS(J) Guide (Amazon)</a> · <a href='https://www.flipkart.com/pcs-j-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "PCS(J) Mains", "pattern": "3-4 papers (descriptive) — Civil Law (CPC, Contract, TPA), Criminal Law (IPC, CrPC, Evidence), English (Essay + Translation), Hindi/Regional Language.", "link": "https://uppsc.up.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600091?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Judicial Services Mains Guide (Amazon)</a>" },
+    { "exam": "Interview", "pattern": "20-30 min — Legal knowledge, personality, aptitude for judicial service. 200 marks.", "link": "https://uppsc.up.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600092?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Judicial Interview Guide (Amazon)</a>" }
+  ],
+  "faq": [
+    {
+      "q": "What is PCS(J) and how is it different from UPSC?",
+      "a": "PCS(J) = Provincial Civil Service (Judicial). State-level exam for Civil Judge posts. UPSC conducts exams for central services (IAS, IPS). Different eligibility, syllabus, and recruiting body."
+    },
+    {
+      "q": "Can a 3-year LLB graduate apply for judicial service?",
+      "a": "Yes. 3-year LLB after graduation or 5-year integrated LLB both accepted. Some states require minimum age 21-22 and maximum 35."
+    },
+    {
+      "q": "Is practice experience required for judicial service?",
+      "a": "For lower judiciary (Civil Judge): no experience required in most states. For higher judiciary (District Judge): 7 years practice required. Check state-specific rules."
+    },
+    {
+      "q": "What is the age limit for judicial service exams?",
+      "a": "Civil Judge: 21-35 years (varies by state). District Judge: 35-45 years. Age relaxations for SC/ST/OBC/PwD."
+    },
+    {
+      "q": "How many vacancies are there in judiciary?",
+      "a": "UP: 100-200 (Civil Judge) annually. Bihar: 100-150. Total judicial vacancies exceed 2000 per year across India. High Courts recruit separately."
+    },
+    {
+      "q": "Where do I find official judiciary notifications?",
+      "a": "State PSC websites (uppsc.up.nic.in, bpsc.bihar.gov.in) and High Court websites. SarkariJobs+ links the official notification on every listing."
+    }
+  ]
+}

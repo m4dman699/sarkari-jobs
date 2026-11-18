@@ -1,0 +1,108 @@
+{
+  "slug": "revenue",
+  "name": "Revenue & Tax",
+  "icon": "landmark",
+  "logo": null,
+  "accent": "#27ae60",
+  "categoryMatch": ["Revenue"],
+  "titleMatch": "\\b(income tax|customs|gst|excise|revenue|tax|irs|cbic|cbdt|inspector.*tax|tax.*inspector)\\b",
+  "stats": [
+    { "value": "2", "label": "Central Boards (CBDT, CBIC)" },
+    { "value": "5000+", "label": "Vacancies/Year" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "12th Pass",
+      "posts": [
+        { "name": "Tax Assistant", "code": "Level 4", "note": "Data entry, tax records, filing" },
+        { "name": "Havaldar (Customs)", "code": "Level 3", "note": "Physical verification, warehouse" }
+      ],
+      "note": "12th pass. Age 18-27. Typing: 35 wpm English / 30 wpm Hindi."
+    },
+    {
+      "level": "Graduate",
+      "posts": [
+        { "name": "Inspector (Income Tax)", "code": "Level 7", "note": "Tax assessment, raids, investigation" },
+        { "name": "Inspector (Customs/Excise)", "code": "Level 7", "note": "Customs clearance, anti-smuggling" },
+        { "name": "IRS Officer (via UPSC CSE)", "code": "Level 10", "note": "Senior tax administration" }
+      ],
+      "note": "Any degree. Age 18-30. Physical standards for Customs Inspector."
+    },
+    {
+      "level": "Post Graduate",
+      "posts": [
+        { "name": "IRS (Indian Revenue Service)", "code": "Level 10", "note": "Via UPSC CSE, senior positions" }
+      ],
+      "note": "Any degree (preferably Commerce/Law). Age 21-32. UPSC CSE exam."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Tier 1 (CBT)",
+      "tests": "100 Qs, 60 min — Reasoning, GK, Quant, English. 0.50 negative marking.",
+      "note": "Qualifying. Cut-off varies by post and category."
+    },
+    {
+      "name": "Tier 2 (CBT)",
+      "tests": "200 Qs, 2 hrs — Quant, English, GK, Reasoning. + Descriptive (essay + letter).",
+      "note": "Merit prepared from Tier 2. Descriptive qualifying."
+    },
+    {
+      "name": "Physical Test (Customs)",
+      "tests": "Running: 1.6km (men) / 800m (women). Long jump, high jump, physical standards.",
+      "note": "Only for Customs Inspector/Havaldar. Qualifying."
+    },
+    {
+      "name": "Document Verification",
+      "tests": "All originals, caste, NOC. Eye test for Customs (color vision).",
+      "note": "Final appointment after medical fitness."
+    }
+  ],
+  "ladder": [
+    "Tax Assistant / Havaldar (Level 3-4)",
+    "Inspector (Level 7)",
+    "Superintendent (Level 8)",
+    "Assistant Commissioner (Level 10)",
+    "Commissioner / Chief Commissioner (Level 13-15)"
+  ],
+  "reality": [
+    "SSC CGL is the main route for Inspector posts. IRS via UPSC CSE.",
+    "Income Tax Inspector: field work (raids, surveys) + office work (assessment).",
+    "Customs Inspector: airport/seaport/land border duty. Irregular hours.",
+    "Tax Assistant: desk job, data entry, processing returns. Less field work.",
+    "Physical standards strict for Customs. Color blindness disqualifies.",
+    "Salary: Inspector ~₹44,900 (Level 7) + DA + HRA. IRS Officer ~₹56,100 (Level 10)."
+  ],
+  "syllabus": [
+    { "exam": "SSC CGL Tier 1", "pattern": "100 Qs, 60 min — Reasoning (25), GK (25), Quant (25), English (25). 0.50 negative marking.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600100?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Guide (Amazon)</a> · <a href='https://www.flipkart.com/ssc-cgl-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "SSC CGL Tier 2", "pattern": "200 Qs, 2 hrs — Quant (100), English (100), GK (50), Reasoning (50). + Descriptive (essay + letter).", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600101?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 2 Guide (Amazon)</a>" },
+    { "exam": "Customs Physical Test", "pattern": "Running: 1.6km (men) / 800m (women). Long jump, high jump. Height: 165cm (men), 152cm (women). Color vision test.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600102?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Physical Fitness Guide (Amazon)</a>" }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Income Tax Inspector and Customs Inspector?",
+      "a": "Income Tax Inspector: assesses income tax, conducts raids/surveys, office-based. Customs Inspector: customs clearance at ports/airports, anti-smuggling. Different departments (CBDT vs CBIC)."
+    },
+    {
+      "q": "Can a commerce graduate apply for revenue jobs?",
+      "a": "Yes. Any graduate can apply for Tax Assistant and Inspector posts via SSC CGL. IRS via UPSC CSE. Commerce background helps but is not mandatory."
+    },
+    {
+      "q": "What is the age limit for revenue jobs?",
+      "a": "Tax Assistant: 18-27 years. Inspector: 18-30 years. IRS: 21-32 years. Age relaxations for SC/ST/OBC/PwD."
+    },
+    {
+      "q": "Is there negative marking in revenue exams?",
+      "a": "Yes. SSC CGL Tier 1: 0.50. Tier 2: 0.25. No negative marking in typing/skill tests."
+    },
+    {
+      "q": "How many vacancies are there in revenue?",
+      "a": "Income Tax: 500-1000 (Inspector) annually. Customs: 300-500. Total revenue vacancies exceed 3000 per year via SSC CGL."
+    },
+    {
+      "q": "Where do I find official revenue notifications?",
+      "a": "ssc.gov.in (SSC CGL), upsc.gov.in (IRS). SarkariJobs+ links the official notification on every listing."
+    }
+  ]
+}

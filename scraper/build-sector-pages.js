@@ -262,6 +262,7 @@ ${heroLogo}
 <a href="#who-can-apply">Who can apply</a>
 <a href="#selection">Selection stages</a>
 <a href="#career">Career path</a>
+<a href="#syllabus">Syllabus</a>
 <a href="#reality">Reality check</a>
 <a href="#live">Live listings (${listings.length})</a>
 <a href="#faq">FAQ</a>
@@ -277,6 +278,14 @@ ${heroLogo}
 <h2 class="g-h2">${icon('book-open', 'g-ic g-h2-ic')}How selection works, stage by stage</h2>
 <p class="g-sub">Each stage below is a real gate. Only the last one leads to an appointment letter.</p>
 <ol class="g-flow">${stages}</ol>
+</section>
+
+<section class="g-block container" id="syllabus">
+<h2 class="g-h2">${icon('file-text', 'g-ic g-h2-ic')}Exam syllabus &amp; pattern</h2>
+<p class="g-sub">Official syllabus and exam pattern for this sector. Always verify on the recruiting authority's website.</p>
+<div class="g-syllabus">
+${(sector.syllabus || []).map(s => `<div class="g-syl-card"><h3>${escapeHTML(s.exam)}</h3><p>${escapeHTML(s.pattern)}</p>${s.link ? `<a href="${escapeHTML(s.link)}" target="_blank" rel="noopener noreferrer">Official syllabus →</a>` : ''}${s.books ? `<div class="g-syl-books"><span class="g-syl-books-label">Recommended books:</span> ${s.books}</div>` : ''}</div>`).join('\n')}
+</div>
 </section>
 
 <section class="g-block container" id="career">

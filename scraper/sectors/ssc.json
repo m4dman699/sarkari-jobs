@@ -67,6 +67,11 @@
     "Assistant Section Officer (Level 7)",
     "Section Officer / Under Secretary (Level 8-10)"
   ],
+  "syllabus": [
+    { "exam": "Tier 1 (CBT)", "pattern": "100 Qs, 60 min — Reasoning (25), GK (25), Quant (25), English (25). 0.50 negative marking.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600030?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 1 Guide (Amazon)</a> · <a href='https://www.flipkart.com/ssc-cgl-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "Tier 2 (CBT)", "pattern": "200 Qs, 2 hrs — Quant (100), English (100), GK (50), Reasoning (50). + Computer (qualifying).", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600031?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 2 Guide (Amazon)</a>" },
+    { "exam": "Skill Test / Typing", "pattern": "Typing: 35 wpm English / 30 wpm Hindi (10 min). DEST for DEO. Qualifying only.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600032?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Typing Practice Book (Amazon)</a>" }
+  ],
   "reality": [
     "SSC CGL is the most popular government exam. 20-30 lakh applicants for 7000-15000 vacancies.",
     "Tier 1 is qualifying but the cut-off is high. Focus on accuracy, not just speed.",

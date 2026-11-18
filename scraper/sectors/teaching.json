@@ -67,6 +67,11 @@
     "Principal (Level 11-12)",
     "Education Officer / DEO (Level 13+)"
   ],
+  "syllabus": [
+    { "exam": "CTET Paper 1 (Classes 1-5)", "pattern": "150 Qs, 150 min — Child Pedagogy (30), Language I (30), Language II (30), Maths (30), EVS (30). 60% to pass.", "link": "https://ctet.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600050?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CTET Paper 1 Guide (Amazon)</a> · <a href='https://www.flipkart.com/ctet-paper1-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "CTET Paper 2 (Classes 6-8)", "pattern": "150 Qs, 150 min — Child Pedagogy (30), Language I (30), Language II (30), Subject (60). 60% to pass.", "link": "https://ctet.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600051?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CTET Paper 2 Guide (Amazon)</a>" },
+    { "exam": "KVS/NVS Exam", "pattern": "150 Qs, 150 min — Reasoning, GK, Teaching Aptitude, Subject. Interview (100 marks) for TGT/PGT.", "link": "https://kvs.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600052?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>KVS TGT/PGT Guide (Amazon)</a>" }
+  ],
   "reality": [
     "CTET is qualifying only — it doesn't get you a job. You need a recruitment exam (KVS, NVS, state boards) separately.",
     "KVS and NVS are central; state boards are state-specific. Apply to both for more chances.",

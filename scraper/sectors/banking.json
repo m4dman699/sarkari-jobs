@@ -68,6 +68,11 @@
     "Senior Manager / Scale III (Level 10-11)",
     "Chief Manager / AGM / DGM (Level 12-14)"
   ],
+  "syllabus": [
+    { "exam": "Preliminary Exam", "pattern": "100 Qs, 60 min — English (30), Quantitative Aptitude (35), Reasoning (35). 0.25 negative marking.", "link": "https://www.ibps.in/", "books": "<a href='https://www.amazon.in/dp/9354600010?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>IBPS PO Prelims Guide (Amazon)</a> · <a href='https://www.flipkart.com/ibps-po-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "Main Exam", "pattern": "200 Qs, 160 min — Reasoning (40), English (35), Quant (40), GA (40), Computer (45). + Descriptive (letter + essay).", "link": "https://www.ibps.in/", "books": "<a href='https://www.amazon.in/dp/9354600011?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>IBPS PO Mains Guide (Amazon)</a>" },
+    { "exam": "Interview", "pattern": "20 min panel. Banking awareness, current affairs, personality. 100 marks (20% weight).", "link": "https://www.ibps.in/", "books": "<a href='https://www.amazon.in/dp/9354600012?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Banking Awareness Book (Amazon)</a>" }
+  ],
   "reality": [
     "IBPS PO and SBI PO are the most competitive. 10 lakh+ applicants for 4000–5000 vacancies.",
     "Clerk has no interview — pure merit. PO has interview (20% weight). Focus accordingly.",

@@ -361,9 +361,15 @@ const relatedFor = (entry, limit = 6) => {
     .filter(other => other.slug !== slug)
     .map(other => {
       let score = 0;
-      if (other.type === type) score += 3;
-      if (item.category && other.item.category === item.category) score += 4;
+      // Cross-type linking: prefer different types (job→admit→result)
+      if (other.type !== type) score += 4;
+      else score += 1;
+      if (item.category && other.item.category === item.category) score += 3;
       if (item.state && other.item.state === item.state) score += 2;
+      // Same organization = strong link
+      const itemOrg = String(item.organization || item.source || '').toLowerCase();
+      const otherOrg = String(other.item.organization || other.item.source || '').toLowerCase();
+      if (itemOrg && itemOrg === otherOrg) score += 6;
       return { other, score };
     })
     .filter(entry => entry.score > 0)

@@ -1,0 +1,109 @@
+{
+  "slug": "it-technical",
+  "name": "IT & Technical",
+  "icon": "building-2",
+  "logo": null,
+  "accent": "#2f7fd4",
+  "categoryMatch": ["IT"],
+  "titleMatch": "\\b(nic|cdac|sameer|bel|hal|bhel|drdo|isro|scientist|engineer|technical|it |computer|software|developer|programmer|data entry)\\b",
+  "stats": [
+    { "value": "50+", "label": "PSU & Govt IT Orgs" },
+    { "value": "10K+", "label": "Vacancies/Year" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "10th Pass",
+      "posts": [
+        { "name": "Data Entry Operator (DEO)", "code": "Level 2-4", "note": "Typing 35 wpm, data entry, records" },
+        { "name": "Computer Operator", "code": "Level 2-3", "note": "Basic computer operations, filing" }
+      ],
+      "note": "10th pass + typing speed. Age 18-27. Computer certificate preferred."
+    },
+    {
+      "level": "12th Pass / Diploma",
+      "posts": [
+        { "name": "Technician (IT/Hardware/Network)", "code": "Level 2-4", "note": "ITI/Diploma in relevant trade" },
+        { "name": "Junior Programmer", "code": "Level 4", "note": "Basic programming, data management" }
+      ],
+      "note": "12th pass or ITI/Diploma. Age 18-27. Trade test for Technician."
+    },
+    {
+      "level": "Graduate (B.Tech/B.E.)",
+      "posts": [
+        { "name": "Scientist/Engineer (NIC, ISRO, DRDO)", "code": "Level 10", "note": "B.Tech in CS/IT/ECE" },
+        { "name": "Probationary Engineer (BEL, HAL, BHEL)", "code": "Level 7-10", "note": "B.Tech in relevant branch" },
+        { "name": "Software Developer (Govt/PSU)", "code": "Level 6-8", "note": "B.Tech/MCA in CS/IT" }
+      ],
+      "note": "B.Tech/B.E. in CS/IT/ECE. Age 21-30. GATE score for some PSUs."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Written Exam / GATE",
+      "tests": "Technical MCQs: OS, DBMS, Networks, Programming, Data Structures. 100-200 Qs.",
+      "note": "GATE score used by ISRO, DRDO, BARC. Others have own exam."
+    },
+    {
+      "name": "Technical Interview",
+      "tests": "20-30 min. Technical questions, project discussion, problem-solving.",
+      "note": "Focus on core CS subjects and practical experience."
+    },
+    {
+      "name": "Skill Test / Coding",
+      "tests": "Coding test (for developer roles). Typing test (for DEO).",
+      "note": "Qualifying or merit-based depending on post."
+    },
+    {
+      "name": "Document Verification",
+      "tests": "Degree, marksheets, caste, NOC, experience certificates.",
+      "note": "Any discrepancy = rejection."
+    }
+  ],
+  "ladder": [
+    "DEO / Computer Operator (Level 2-4)",
+    "Junior Programmer / Technician (Level 4-6)",
+    "Software Engineer / Scientist-B (Level 6-10)",
+    "Senior Scientist / Manager (Level 11-12)",
+    "Chief Scientist / GM (Level 13-14)"
+  ],
+  "reality": [
+    "PSU IT jobs (BEL, HAL, BHEL) require GATE score. ISRO/DRDO have own exams.",
+    "Government IT salaries are lower than private sector but job security is higher.",
+    "NIC (National Informatics Centre) is the largest government IT employer.",
+    "DRDO/ISRO require B.Tech with high CGPA. Research background preferred.",
+    "Coding tests are becoming common for government IT roles. Practice LeetCode.",
+    "Age relaxation: SC/ST 5 years, OBC 3 years. PwD 10 years."
+  ],
+  "syllabus": [
+    { "exam": "GATE CS/IT", "pattern": "65 Qs, 100 marks, 3 hrs — Engineering Maths (13%), General Aptitude (15%), CS/IT (72%).", "link": "https://gate.iitk.ac.in/", "books": "<a href='https://www.amazon.in/dp/9354600070?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>GATE CS Guide (Amazon)</a> · <a href='https://www.flipkart.com/gate-cs-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "NIC Scientist-B Exam", "pattern": "100 Qs, 2 hrs — CS fundamentals, programming, networking, DBMS, OS.", "link": "https://www.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600071?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NIC Exam Guide (Amazon)</a>" },
+    { "exam": "ISRO Scientist/Engineer", "pattern": "80 Qs, 90 min — Technical (60%) + Aptitude (40%). CS/IT/ECE branch specific.", "link": "https://www.isro.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600072?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>ISRO Exam Guide (Amazon)</a>" }
+  ],
+  "faq": [
+    {
+      "q": "Can I get a government IT job without GATE?",
+      "a": "Yes. NIC, SSC JE (IT), UPSC IES (for engineers) don't require GATE. PSUs like BEL, HAL, BHEL prefer GATE but some have own exams."
+    },
+    {
+      "q": "What is the salary for government IT jobs?",
+      "a": "Scientist-B (ISRO/DRDO): ~₹56,100 (Level 10). Probationary Engineer (BEL): ~₹40,000-50,000. NIC Scientist: ~₹56,100. Plus DA, HRA, allowances."
+    },
+    {
+      "q": "Is coding required for government IT jobs?",
+      "a": "For developer roles (NIC, ISRO), yes. For system admin/network roles, less coding but strong fundamentals. DEO roles require typing, not coding."
+    },
+    {
+      "q": "How competitive are government IT jobs?",
+      "a": "ISRO: 1-2 lakh applicants for 300-500 vacancies. NIC: 50,000+ for 500-1000. BEL/HAL: 1-2 lakh for 100-300. Very competitive."
+    },
+    {
+      "q": "What qualifications are needed for government IT jobs?",
+      "a": "B.Tech/MCA for scientist/engineer roles. Diploma/ITI for technician roles. 12th pass for DEO. Some PSUs accept M.Sc (Computer Science)."
+    },
+    {
+      "q": "Where do I find official IT job notifications?",
+      "a": "nic.in, isro.gov.in, drdo.gov.in, bel-india.in, hal-india.co.in, bhel.com. SarkariJobs+ links the official notification on every listing."
+    }
+  ]
+}

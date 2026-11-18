@@ -1,0 +1,110 @@
+{
+  "slug": "medical",
+  "name": "Medical & Health",
+  "icon": "shield",
+  "logo": null,
+  "accent": "#e74c3c",
+  "categoryMatch": ["Medical"],
+  "titleMatch": "\\b(medical|doctor|nursing|nurse|aiims|neet|mbbs|bds|pharmacist|health|hospital|dental|ayush|veterinary|veterinarian)\\b",
+  "stats": [
+    { "value": "100+", "label": "Govt Medical Colleges" },
+    { "value": "50K+", "label": "Vacancies/Year" },
+    { "value": "@liveListings", "label": "Live listings tracked" }
+  ],
+  "levels": [
+    {
+      "level": "12th Pass (Paramedical)",
+      "posts": [
+        { "name": "Staff Nurse / Nursing Officer", "code": "Level 7", "note": "GNM/B.Sc Nursing, patient care" },
+        { "name": "Pharmacist", "code": "Level 6", "note": "D.Pharm/B.Pharm, drug dispensing" },
+        { "name": "Lab Technician", "code": "Level 4-5", "note": "DMLT/BMLT, lab tests" }
+      ],
+      "note": "12th with PCB + nursing/pharmacy diploma. Age 18-30."
+    },
+    {
+      "level": "Graduate (MBBS/BDS)",
+      "posts": [
+        { "name": "Medical Officer (Allopathy)", "code": "Level 10", "note": "MBBS, general practice" },
+        { "name": "Dental Surgeon (BDS)", "code": "Level 10", "note": "BDS, dental care" },
+        { "name": "Medical Officer (AYUSH)", "code": "Level 10", "note": "BAMS/BHMS/BUMS" }
+      ],
+      "note": "MBBS/BDS degree + internship. Age 21-35. NEET PG for specialization."
+    },
+    {
+      "level": "Post Graduate (MD/MS)",
+      "posts": [
+        { "name": "Specialist (MD/MS)", "code": "Level 11", "note": "Cardiology, Neurology, Surgery, etc." },
+        { "name": "Senior Resident", "code": "Level 11", "note": "Teaching hospital, 3-year tenure" }
+      ],
+      "note": "MD/MS degree. Age 21-40. NEET SS for super-specialty."
+    }
+  ],
+  "stages": [
+    {
+      "name": "NEET PG / NEET SS",
+      "tests": "NEET PG: 200 Qs, 3.5 hrs. NEET SS: 100 Qs, 1.5 hrs.",
+      "note": "For MD/MS/super-specialty. Score determines college allocation."
+    },
+    {
+      "name": "Written Exam (for non-PG posts)",
+      "tests": "100-200 Qs. Medical knowledge, GK, Reasoning. For Staff Nurse, Pharmacist, etc.",
+      "note": "State-level exams. Some central (AIIMS, ESIC) have own exams."
+    },
+    {
+      "name": "Interview / Skill Test",
+      "tests": "Personal interview. For MO posts: clinical knowledge + personality.",
+      "note": "Some posts have skill test (nursing practical, pharmacy practical)."
+    },
+    {
+      "name": "Document Verification",
+      "tests": "Degree, internship certificate, registration, caste, NOC.",
+      "note": "Medical registration (MCI/NMC) mandatory. Verify before applying."
+    }
+  ],
+  "ladder": [
+    "Staff Nurse / Pharmacist / Technician (Level 4-7)",
+    "Medical Officer / Dental Surgeon (Level 10)",
+    "Specialist / Senior Resident (Level 11)",
+    "Professor / Head of Department (Level 12-14)",
+    "Director / Dean (Level 15+)"
+  ],
+  "reality": [
+    "AIIMS and central institutes pay better than state hospitals. Prefer central if possible.",
+    "Staff Nurse (GNM) vs Nursing Officer (B.Sc Nursing): different pay levels and eligibility.",
+    "NEET PG cut-off is very high. General category needs 50th percentile minimum.",
+    "Government medical jobs have bond service (1-3 years) in many states. Check before applying.",
+    "Rural service is often mandatory for new MOs. Remote posting for 1-2 years.",
+    "Salary: MO ~₹56,100 (Level 10) + NPA (Non-Practicing Allowance). Nursing Officer ~₹44,900 (Level 7)."
+  ],
+  "syllabus": [
+    { "exam": "NEET PG", "pattern": "200 Qs, 3.5 hrs — Pre-clinical (Anatomy, Physiology, Biochemistry), Para-clinical (Pathology, Microbiology, Pharmacology), Clinical (Medicine, Surgery, OB-GYN, Pediatrics).", "link": "https://nbe.edu.in/", "books": "<a href='https://www.amazon.in/dp/9354600080?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NEET PG Guide (Amazon)</a> · <a href='https://www.flipkart.com/neet-pg-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "AIIMS NORCET (Nursing)", "pattern": "100 Qs, 90 min — Nursing fundamentals, Medical-Surgical, OB-GYN, Pediatrics, Community Health.", "link": "https://www.aiims.edu/", "books": "<a href='https://www.amazon.in/dp/9354600081?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NORCET Guide (Amazon)</a>" },
+    { "exam": "UPSC CMS", "pattern": "2 papers × 120 Qs — General Medicine, Pediatrics, Surgery, OB-GYN, Preventive & Social Medicine.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600082?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CMS Guide (Amazon)</a>" }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Staff Nurse and Nursing Officer?",
+      "a": "Staff Nurse: GNM diploma, Level 7. Nursing Officer: B.Sc Nursing, Level 7 (higher entry pay). Both do patient care. Nursing Officer has better promotion prospects."
+    },
+    {
+      "q": "Can a BAMS/BHMS graduate apply for allopathy MO posts?",
+      "a": "No. Allopathy MO requires MBBS. AYUSH graduates apply for AYUSH MO posts (BAMS/BHMS/BUMS). Separate exams and vacancies."
+    },
+    {
+      "q": "What is NEET PG and is it mandatory?",
+      "a": "National Eligibility cum Entrance Test for Post-Graduation. Mandatory for MD/MS admission in government and private colleges. Score determines college and specialty allocation."
+    },
+    {
+      "q": "What is the age limit for medical government jobs?",
+      "a": "MO: 21-35 years. Staff Nurse: 18-30 years. Pharmacist: 18-30 years. Age relaxations for SC/ST/OBC/PwD."
+    },
+    {
+      "q": "Is there negative marking in medical exams?",
+      "a": "Yes. NEET PG: 4 marks correct, -1 wrong. AIIMS: 1 mark correct, -1/3 wrong. UPSC CMS: 1 mark correct, -1/3 wrong."
+    },
+    {
+      "q": "Where do I find official medical job notifications?",
+      "a": "aiims.edu (AIIMS), upsc.gov.in (CMS), state health departments, esic.nic.in. SarkariJobs+ links the official notification on every listing."
+    }
+  ]
+}

@@ -69,6 +69,12 @@
     "Junior Commissioned Officer (Level 6-7)",
     "Commissioned Officer (Level 10+)"
   ],
+  "syllabus": [
+    { "exam": "NDA Written", "pattern": "Paper 1: Maths (120 Qs, 300 marks, 2.5 hrs). Paper 2: GAT (150 Qs, 600 marks, 2.5 hrs). 1/3 negative marking.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600020?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NDA Guide (Amazon)</a> · <a href='https://www.flipkart.com/nda-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "CDS Written", "pattern": "English (120 Qs), GK (120 Qs), Maths (100 Qs). 2 hrs each. 1/3 negative marking.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600021?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CDS Guide (Amazon)</a>" },
+    { "exam": "AFCAT", "pattern": "100 Qs, 2 hrs — GK, Verbal Ability, Numerical Ability, Reasoning, Military Aptitude. 1/3 negative marking.", "link": "https://afcat.cdac.in/", "books": "<a href='https://www.amazon.in/dp/9354600022?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>AFCAT Guide (Amazon)</a>" },
+    { "exam": "SSB Interview", "pattern": "5-day: Stage 1 (OIR + PPDT), Stage 2 (Psychology, GTO, Interview, Conference). Personality assessment.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600023?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSB Interview Guide (Amazon)</a>" }
+  ],
   "reality": [
     "Agniveer is a 4-year contract. Only 25% are retained for 15 more years. Plan for civilian career after.",
     "NDA requires 12th with Physics & Maths — no exceptions. CDS allows any degree but Maths for Navy/Air Force.",

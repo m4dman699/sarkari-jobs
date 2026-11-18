@@ -67,6 +67,11 @@
     "Sub-Inspector (Level 6)",
     "Inspector / Dy.SP (Level 7-8)"
   ],
+  "syllabus": [
+    { "exam": "Written Exam (Constable)", "pattern": "100-200 Qs — GK, Reasoning, Numerical Ability, General Hindi/English. 0.25-0.50 negative marking.", "link": "https://uppbpb.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600040?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Police Constable Guide (Amazon)</a> · <a href='https://www.flipkart.com/police-constable-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
+    { "exam": "PET / PST", "pattern": "Running: 1.6km (men) / 800m (women). Long jump, high jump. Height: 165cm (men), 152cm (women).", "link": "https://uppbpb.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600041?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Physical Fitness Guide (Amazon)</a>" },
+    { "exam": "Written Exam (SI)", "pattern": "200 Qs — GK, Reasoning, Numerical Ability, General Hindi/English, Law. 0.25 negative marking.", "link": "https://uppbpb.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600042?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Police SI Guide (Amazon)</a>" }
+  ],
   "reality": [
     "Police recruitment is state-specific. Each state has its own exam, syllabus, and physical standards.",
     "Physical test eliminates 80-90% of candidates. Fitness is more important than book knowledge.",
