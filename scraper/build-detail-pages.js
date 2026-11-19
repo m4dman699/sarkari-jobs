@@ -986,14 +986,15 @@ const byDeadline = list => {
     || String(a.item.title || '').localeCompare(String(b.item.title || '')));
 };
 
-const indexCard = (entry, secondary) => {
+const indexCard = (entry, secondary, label = 'Job notification', showPublished = false) => {
   const item = entry.item;
   const title = String(item.title || '').replace(/\s+/g, ' ').trim();
   const facts = [
     item.openDate ? ['Applications open', item.openDate] : null,
     item.lastDate ? ['Last date', item.lastDate] : null,
     item.examDate ? ['Exam date', item.examDate] : null,
-    item.resultDate ? ['Result declared', item.resultDate] : null
+    item.resultDate ? ['Result declared', item.resultDate] : null,
+    showPublished && item.publishedDate ? ['Published', item.publishedDate] : null
   ].filter(Boolean)
     .map(([name, value]) => `<span>${escapeHTML(name)}: <b>${escapeHTML(hubDate(value))}</b></span>`)
     .join('');
@@ -1002,7 +1003,7 @@ const indexCard = (entry, secondary) => {
     .filter(value => value && !/^see linked notice$/i.test(value))
     .map(value => `<span class="tag">${escapeHTML(clampText(value, 44))}</span>`)
     .join('');
-  return `<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
+  return `<article class="job-card announcement-card"><span class="tag saff">${escapeHTML(label)}</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
 };
 
 const groupedIndex = (groups, introFor, secondaryFor) => {
@@ -1110,6 +1111,34 @@ writeGroupedPage({
     : `${group.entries.length} ${group.title} ${group.entries.length === 1 ? 'notification' : 'notifications'}. State quota, eligibility and domicile rules are stated by the recruiting board, not by this index.`,
   secondaryFor: entry => entry.item.category
 });
+
+// The homepage's three listing grids were empty in its HTML source too: every
+// link into a detail page was created by JavaScript after load. Search Console
+// counted 419 internal links pointing at the homepage, so it is the page that
+// should pass authority on to real listings. The build writes the same first
+// screen the browser script would render; main.js replaces it on load, so the
+// visible page is unchanged.
+const writeHomeGrid = (marker, cards) => {
+  const homePath = path.join(ROOT, 'index.html');
+  let html = fs.readFileSync(homePath, 'utf8');
+  const block = new RegExp(`<!-- ${marker}:start -->[\\s\\S]*?<!-- ${marker}:end -->`);
+  if (!block.test(html)) throw new Error(`index.html: missing ${marker} markers`);
+  html = html.replace(block, `<!-- ${marker}:start -->\n${cards}\n<!-- ${marker}:end -->`);
+  fs.writeFileSync(homePath, html);
+};
+
+writeHomeGrid('home-jobs', byDeadline(jobEntries).slice(0, 9)
+  .map(entry => indexCard(entry, entry.item.state)).join('\n'));
+
+const newestOfType = type => primaryEntries
+  .filter(entry => entry.item.type === type)
+  .sort((a, b) => String(b.item.publishedDate || '').localeCompare(String(a.item.publishedDate || '')))
+  .slice(0, 12);
+
+writeHomeGrid('home-results', newestOfType('result')
+  .map(entry => indexCard(entry, entry.item.category, 'Result / merit list', true)).join('\n'));
+writeHomeGrid('home-admit', newestOfType('admit-card')
+  .map(entry => indexCard(entry, entry.item.category, 'Admit card / hall ticket', true)).join('\n'));
 
 // The client-rendered shell pages below re-render this committed feed in the
 // browser, so the date they materially changed equals the feed's build date.
