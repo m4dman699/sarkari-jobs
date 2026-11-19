@@ -877,6 +877,79 @@ ${groupBlocks}
 </body></html>`;
 fs.writeFileSync(path.join(ROOT, 'all-jobs.html'), indexHtml);
 
+// ---- Crawlable result / admit-card hubs ----
+// results.html and admit-cards.html were JavaScript shells: their HTML source
+// held a single "Loading…" line, so on 19 Nov Search Console reported both as
+// "URL is unknown to Google" while only detail pages were indexed. The build
+// now writes the whole list into the page as plain <a> links; the browser
+// script still replaces it with the filterable view, but a crawler that never
+// runs scripts sees a real page with real internal links.
+const hubPages = [
+  { file: 'results.html', type: 'result', gridId: 'results-grid', statusId: 'results-status', label: 'Result / merit list', cardClass: 'result-card', kind: 'results' },
+  { file: 'admit-cards.html', type: 'admit', gridId: 'admit-cards-grid', statusId: 'admit-cards-status', label: 'Admit card / hall ticket', cardClass: 'admit-card', kind: 'admit cards' }
+];
+const hubDate = value => {
+  if (!value) return '';
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+};
+const hubCard = (entry, hub) => {
+  const item = entry.item;
+  const title = String(item.title || '').replace(/\s+/g, ' ').trim();
+  const facts = [
+    item.resultDate ? ['Result declared', item.resultDate] : null,
+    item.examDate ? ['Exam date', item.examDate] : null,
+    item.publishedDate ? ['Published', item.publishedDate] : null
+  ].filter(Boolean).map(([label, value]) => `<span>${escapeHTML(label)}: <b>${escapeHTML(hubDate(value))}</b></span>`).join('');
+  const tags = [item.category, item.state]
+    .map(value => String(value || '').trim())
+    .filter(value => value && !/^see linked notice$/i.test(value))
+    .map(value => `<span class="tag">${escapeHTML(value)}</span>`)
+    .join('');
+  return `<article class="job-card announcement-card ${hub.cardClass}"><span class="tag saff">${escapeHTML(hub.label)}</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
+};
+for (const hub of hubPages) {
+  const hubPath = path.join(ROOT, hub.file);
+  if (!fs.existsSync(hubPath)) continue;
+  const list = primaryEntries
+    .filter(entry => entry.type === hub.type)
+    .sort((a, b) => String(b.item.resultDate || b.item.publishedDate || '').localeCompare(String(a.item.resultDate || a.item.publishedDate || ''))
+      || String(a.item.title || '').localeCompare(String(b.item.title || '')));
+  const cards = list.map(entry => hubCard(entry, hub)).join('\n');
+  const status = `<p id="${hub.statusId}" aria-live="polite">${list.length} ${escapeHTML(hub.kind)} tracked · last updated ${escapeHTML(hubDate(feedDate))}</p>`;
+  const hubLd = `<script type="application/ld+json" data-hub-ld>${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sarkarijobsplus.com/' },
+          { '@type': 'ListItem', position: 2, name: hub.kind === 'results' ? 'Results' : 'Admit cards', item: `https://sarkarijobsplus.com/${hub.file}` }
+        ]
+      },
+      {
+        '@type': 'ItemList',
+        name: hub.kind === 'results' ? 'Government exam results' : 'Government exam admit cards',
+        numberOfItems: list.length,
+        itemListElement: list.map((entry, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: String(entry.item.title || '').replace(/\s+/g, ' ').trim(),
+          url: `https://sarkarijobsplus.com/job-details/${entry.slug}/`
+        }))
+      }
+    ]
+  }).replace(/</g, '\\u003c')}</script>`;
+  let hubHtml = fs.readFileSync(hubPath, 'utf8');
+  hubHtml = hubHtml.replace(/<!-- hub-static:start -->[\s\S]*?<!-- hub-static:end -->\n?/g, '');
+  hubHtml = hubHtml.replace(/<script type="application\/ld\+json" data-hub-ld>[\s\S]*?<\/script>\n?/g, '');
+  hubHtml = hubHtml.replace(new RegExp(`<p id="${hub.statusId}"[^>]*>[\\s\\S]*?</p>`), status);
+  hubHtml = hubHtml.replace(new RegExp(`(<div class="jobs-grid" id="${hub.gridId}"[^>]*>)`), `$1\n<!-- hub-static:start -->\n${cards}\n<!-- hub-static:end -->`);
+  hubHtml = hubHtml.replace('</head>', `${hubLd}</head>`);
+  fs.writeFileSync(hubPath, hubHtml);
+}
+
 // The client-rendered shell pages below re-render this committed feed in the
 // browser, so the date they materially changed equals the feed's build date.
 // No deploy-time sitemap rewriting is needed anymore: this makes the deployed
