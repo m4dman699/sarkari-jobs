@@ -74,6 +74,18 @@ function listingType(item) {
   return 'Job notification';
 }
 
+// A listing with no dated milestone and no vacancy count gives a crawler
+// nothing but a headline and an outbound link. On 19 Nov Search Console showed
+// 278 of these detail pages in "Crawled - currently not indexed" and 182 more
+// in "Discovered - currently not indexed": Google spends its crawl budget on
+// pages it will never index, and the same thin templates dilute the pages that
+// are worth indexing. They stay online with their official source link, but
+// they ask not to be indexed and stay out of sitemap.xml until the feed gives
+// them a fact worth indexing (a date or a vacancy count).
+function isThin(item) {
+  return !item?.vacancies && !item?.openDate && !item?.lastDate && !item?.examDate && !item?.resultDate;
+}
+
 function isNonRecruitmentPage(item) {
   const title = String(item?.title || '').replace(/\s+/g, ' ').trim().toLowerCase();
   const url = String(item?.sourceListingUrl || item?.discoveredVia || item?.link || '');
@@ -543,12 +555,13 @@ for (const item of payload.jobs || []) {
     .filter(entry => entry.test(item))
     .map(entry => `<section class="d-related d-guide-link"><h2 class="d-section-title">${icon('info', 'd-ic d-index-h-ic')}Deeper guide</h2><div class="d-related-list"><a class="d-rel" href="../../${entry.href}"><span class="d-rel-tag">${icon('folder', 'd-ic d-rel-ic')}<b>Guide</b></span>${escapeHTML(entry.label)}</a></div></section>`)
     .join('');
+  const thin = isThin(item);
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d8">
+<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -640,7 +653,7 @@ ${relatedHtml}
   else if (rawSitemap.includes(`/job-details/${slug}/`)) lastmod = item.publishedDate || null;
   else lastmod = feedDate;
   nextLastmodState[slug] = { hash: pageHash, lastmod };
-  if (!canonicalOf.has(slug)) urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
+  if (!canonicalOf.has(slug) && !thin) urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
 }
 
 // ---- Remove pages that should never have been published ----
@@ -743,15 +756,15 @@ const stubPage = ({ kind, target }) => {
     ? 'This listing has moved to a newer page'
     : junk ? 'This listing is no longer tracked' : 'This listing has been retired';
   const howto = duplicate
-    ? 'The current page opens automatically in a few seconds, or use the link below.'
-    : 'The current official listings are all on the index page. Use the link below; this page also redirects there automatically in a few seconds.';
+    ? 'The current page opens automatically, or use the link below.'
+    : 'The current official listings are all on the index page. Use the link below; this page also redirects there automatically.';
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${duplicate ? 'This listing has moved' : junk ? 'Listing no longer tracked' : 'This listing has been retired'} | SarkariJobs+</title>
 <meta name="robots" content="noindex, follow">
 <meta name="description" content="This URL has been retired. Open the current SarkariJobs+ page for this notice, or browse every live listing.">
 <link rel="canonical" href="${canonicalUrl}">
-<meta http-equiv="refresh" content="3;url=${canonicalUrl}">
+<meta http-equiv="refresh" content="0;url=${canonicalUrl}">
 <meta name="theme-color" content="#0a1128">
 <link rel="stylesheet" href="../../css/detail.css?v=d8">
 </head><body>
