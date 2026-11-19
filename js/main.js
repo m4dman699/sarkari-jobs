@@ -532,10 +532,18 @@ function renderJobs() {
       const countEl = document.getElementById('feed-job-count');
       if (countEl) countEl.textContent = '—';
       const status = document.getElementById('jobs-status');
-      if (status) status.textContent = 'The notifications feed could not be loaded.';
-      setJobsMessage('Could not load notifications. Please try again later.');
+      if (status) status.textContent = 'The notifications feed could not be loaded. Showing the listings built into this page.';
+      // The homepage ships server-rendered cards so that crawlers and readers
+      // without JavaScript still get links. Replacing those grids with an error
+      // message on a failed fetch would throw that away, so the message only
+      // appears when there is nothing to fall back to.
+      const jobsGrid = document.getElementById('jobs-grid');
+      const hasBuiltCards = el => !!(el && el.querySelector('.announcement-card'));
+      if (!hasBuiltCards(jobsGrid)) setJobsMessage('Could not load notifications. Please try again later.');
       renderCategories([]);
-      renderAnnouncementSections([], null);
+      const resultsGrid = document.getElementById('results-grid');
+      const admitGrid = document.getElementById('admit-cards-grid');
+      if (!hasBuiltCards(resultsGrid) && !hasBuiltCards(admitGrid)) renderAnnouncementSections([], null);
       const more = document.getElementById('show-all-jobs');
       if (more) more.hidden = true;
     });
