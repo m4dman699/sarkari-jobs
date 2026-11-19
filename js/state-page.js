@@ -36,14 +36,14 @@ function renderStatePage() {
   // hash-based routing (survives clean-URL redirects); fall back to ?s=
   const slug = window.location.hash.slice(1) ||
     new URLSearchParams(window.location.search).get('s') || '';
+  // No fragment means the server-rendered grouped index is the page.
+  if (!slug) return;
   const key = slugToKey(slug);
+  // Unknown slug: keep the full index rather than blanking the page.
+  if (!key) return;
 
-  if (!key) {
-    document.getElementById('state-title').textContent = 'State not found';
-    document.getElementById('state-psc').style.display = 'none';
-    document.getElementById('state-desc').textContent = 'Pick a state from the interactive map on the homepage.';
-    return;
-  }
+  document.getElementById('state-static').hidden = true;
+  document.getElementById('state-dynamic').hidden = false;
 
   const s = STATES[key];
   document.title = `${s.name} Government Jobs ${new Date().getFullYear()} — ${s.psc} Notifications | SarkariJobs+`;

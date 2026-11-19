@@ -561,7 +561,7 @@ for (const item of payload.jobs || []) {
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d8">
+<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -823,7 +823,7 @@ const indexHtml = `<!doctype html>
 <title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d8">
+<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -949,6 +949,167 @@ for (const hub of hubPages) {
   hubHtml = hubHtml.replace('</head>', `${hubLd}</head>`);
   fs.writeFileSync(hubPath, hubHtml);
 }
+
+// ---- Crawlable category and state indexes ----
+// category.html and state.html were the last two JavaScript shells in the
+// sitemap: <h1>Loading…</h1>, an empty grid, and content fetched from
+// data/jobs.json only after the page loaded. Search Console reported both as
+// "URL is unknown to Google" while every page's navigation linked to them.
+// The build now writes the complete grouped index into the HTML source, so a
+// crawler that never runs scripts still sees real headings and real links; the
+// page script takes over only when a #fragment (or ?c= / ?s=) asks for one group.
+const slugify = value => String(value || '').toLowerCase().normalize('NFKD')
+  .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+// Group anchors for states must match js/states-data.js, because the homepage
+// links state.html#uttar-pradesh and friends.
+const stateSlugByName = new Map();
+{
+  const data = fs.readFileSync(path.join(ROOT, 'js', 'states-data.js'), 'utf8');
+  const pair = /name:\s*"([^"]+)"\s*,\s*slug:\s*"([^"]+)"/g;
+  let match;
+  while ((match = pair.exec(data))) stateSlugByName.set(match[1].trim(), match[2]);
+}
+
+// Upcoming deadlines first, then records with no date, then closed ones — the
+// same order the client-rendered hubs use, so the static and dynamic views of
+// one page do not disagree.
+const byDeadline = list => {
+  const rank = entry => {
+    const value = String(entry.item.lastDate || '').slice(0, 10);
+    if (!value) return 1;
+    return value >= feedDate ? 0 : 2;
+  };
+  return [...list].sort((a, b) => rank(a) - rank(b)
+    || (rank(a) === 0 ? String(a.item.lastDate).localeCompare(String(b.item.lastDate)) : 0)
+    || (rank(a) === 2 ? String(b.item.lastDate).localeCompare(String(a.item.lastDate)) : 0)
+    || String(a.item.title || '').localeCompare(String(b.item.title || '')));
+};
+
+const indexCard = (entry, secondary) => {
+  const item = entry.item;
+  const title = String(item.title || '').replace(/\s+/g, ' ').trim();
+  const facts = [
+    item.openDate ? ['Applications open', item.openDate] : null,
+    item.lastDate ? ['Last date', item.lastDate] : null,
+    item.examDate ? ['Exam date', item.examDate] : null,
+    item.resultDate ? ['Result declared', item.resultDate] : null
+  ].filter(Boolean)
+    .map(([name, value]) => `<span>${escapeHTML(name)}: <b>${escapeHTML(hubDate(value))}</b></span>`)
+    .join('');
+  const tags = [secondary, item.organization]
+    .map(value => String(value || '').replace(/\s+/g, ' ').trim())
+    .filter(value => value && !/^see linked notice$/i.test(value))
+    .map(value => `<span class="tag">${escapeHTML(clampText(value, 44))}</span>`)
+    .join('');
+  return `<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
+};
+
+const groupedIndex = (groups, introFor, secondaryFor) => {
+  const jump = groups.map(group =>
+    `<a class="pill" href="#${group.id}">${escapeHTML(group.title)} <b>${group.entries.length}</b></a>`).join('');
+  const blocks = groups.map(group => `
+<section class="group-block" id="${group.id}">
+<div class="group-head"><h2>${escapeHTML(group.title)}</h2><span class="group-count">${group.entries.length} ${group.entries.length === 1 ? 'listing' : 'listings'}</span></div>
+<p class="group-intro">${escapeHTML(introFor(group))}</p>
+<div class="jobs-grid">
+${group.entries.map(entry => indexCard(entry, secondaryFor(entry))).join('\n')}
+</div>
+</section>`).join('\n');
+  return `<nav class="group-jump" aria-label="Jump to a group">${jump}</nav>
+<div class="group-index">${blocks}
+</div>`;
+};
+
+const groupLd = (file, name, description, entries) => `<script type="application/ld+json" data-hub-ld>${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sarkarijobsplus.com/' },
+        { '@type': 'ListItem', position: 2, name, item: `https://sarkarijobsplus.com/${file}` }
+      ]
+    },
+    {
+      '@type': 'CollectionPage',
+      name,
+      description,
+      url: `https://sarkarijobsplus.com/${file}`,
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: entries.length,
+        itemListElement: entries.map((entry, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: String(entry.item.title || '').replace(/\s+/g, ' ').trim(),
+          url: `https://sarkarijobsplus.com/job-details/${entry.slug}/`
+        }))
+      }
+    }
+  ]
+}).replace(/</g, '\\u003c')}</script>`;
+
+const writeGroupedPage = ({ file, markers, groups, name, description, introFor, secondaryFor }) => {
+  const pagePath = path.join(ROOT, file);
+  if (!fs.existsSync(pagePath)) return;
+  let html = fs.readFileSync(pagePath, 'utf8');
+  const body = groupedIndex(groups, introFor, secondaryFor);
+  const block = new RegExp(`<!-- ${markers}:start -->[\\s\\S]*?<!-- ${markers}:end -->`);
+  if (!block.test(html)) throw new Error(`${file}: missing ${markers} markers`);
+  html = html.replace(block, `<!-- ${markers}:start -->\n${body}\n<!-- ${markers}:end -->`);
+  html = html.replace(/<script type="application\/ld\+json" data-hub-ld>[\s\S]*?<\/script>\n?/g, '');
+  html = html.replace('</head>', `${groupLd(file, name, description, groups.flatMap(group => group.entries))}</head>`);
+  fs.writeFileSync(pagePath, html);
+};
+
+const jobEntries = primaryEntries.filter(entry => entry.type === 'job');
+
+const categoryGroups = [...jobEntries.reduce((map, entry) => {
+  const name = String(entry.item.category || '').replace(/\s+/g, ' ').trim() || 'Other notifications';
+  if (!map.has(name)) map.set(name, []);
+  map.get(name).push(entry);
+  return map;
+}, new Map())]
+  .map(([name, list]) => ({ id: `cat-${slugify(name)}`, title: name, entries: byDeadline(list) }))
+  .sort((a, b) => b.entries.length - a.entries.length || a.title.localeCompare(b.title));
+
+writeGroupedPage({
+  file: 'category.html',
+  markers: 'cat-static',
+  groups: categoryGroups,
+  name: 'Government job notifications by category',
+  description: `Every job notification tracked by SarkariJobs+ (${jobEntries.length} listings), grouped by the category recorded in the notice, with available deadlines and official source links.`,
+  introFor: group => `${group.entries.length} job ${group.entries.length === 1 ? 'notification' : 'notifications'} recorded under ${group.title}. Dates appear only where the source stated them.`,
+  secondaryFor: entry => entry.item.state
+});
+
+const stateGroups = [...jobEntries.reduce((map, entry) => {
+  const name = String(entry.item.state || '').replace(/\s+/g, ' ').trim();
+  if (!name || /^see linked notice$/i.test(name)) return map;
+  if (!map.has(name)) map.set(name, []);
+  map.get(name).push(entry);
+  return map;
+}, new Map())]
+  .map(([name, list]) => ({
+    id: stateSlugByName.get(name) || slugify(name),
+    title: name,
+    entries: byDeadline(list)
+  }))
+  .sort((a, b) => (a.title === 'All India' ? -1 : b.title === 'All India' ? 1 : 0)
+    || b.entries.length - a.entries.length || a.title.localeCompare(b.title));
+
+writeGroupedPage({
+  file: 'state.html',
+  markers: 'state-static',
+  groups: stateGroups,
+  name: 'State government jobs',
+  description: `Job notifications grouped by the state recorded in the notice — ${stateGroups.length} states and union territories plus central All India posts, with available deadlines and official source links.`,
+  introFor: group => group.title === 'All India'
+    ? `${group.entries.length} central notifications open to candidates from every state.`
+    : `${group.entries.length} ${group.title} ${group.entries.length === 1 ? 'notification' : 'notifications'}. State quota, eligibility and domicile rules are stated by the recruiting board, not by this index.`,
+  secondaryFor: entry => entry.item.category
+});
 
 // The client-rendered shell pages below re-render this committed feed in the
 // browser, so the date they materially changed equals the feed's build date.
