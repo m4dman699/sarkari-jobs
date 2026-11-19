@@ -2,46 +2,108 @@
   "slug": "teaching",
   "name": "Teaching",
   "icon": "graduation-cap",
-  "logo": { "src": "assets/logos/kvs-logo.svg", "alt": "Kendriya Vidyalaya Sangathan", "width": 380, "height": 190 },
+  "logo": {
+    "src": "assets/logos/kvs-logo.svg",
+    "alt": "Kendriya Vidyalaya Sangathan",
+    "width": 380,
+    "height": 190
+  },
   "accent": "#7a4bd6",
-  "categoryMatch": ["Teaching"],
+  "categoryMatch": [
+    "Teaching"
+  ],
   "titleMatch": "\\b(kvs|nvs|cbse|ctet|tet|teacher|teaching|pgt|tgt|prt|lecturer|professor| Kendriya Vidyalaya|Navodaya)\\b",
   "stats": [
-    { "value": "1200+", "label": "KVs Nationwide" },
-    { "value": "600+", "label": "NVs Nationwide" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "1200+",
+      "label": "KVs Nationwide"
+    },
+    {
+      "value": "600+",
+      "label": "NVs Nationwide"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "graduation-cap", "label": "Teaching jobs" },
-    { "icon": "book-open", "label": "CTET/TET" },
-    { "icon": "users", "label": "Interview" },
-    { "icon": "file-text", "label": "B.Ed required" },
-    { "icon": "target", "label": "Demo class" },
-    { "icon": "trophy", "label": "PRT/TGT/PGT" }
+    {
+      "icon": "graduation-cap",
+      "label": "Teaching jobs"
+    },
+    {
+      "icon": "book-open",
+      "label": "CTET/TET"
+    },
+    {
+      "icon": "users",
+      "label": "Interview"
+    },
+    {
+      "icon": "file-text",
+      "label": "B.Ed required"
+    },
+    {
+      "icon": "target",
+      "label": "Demo class"
+    },
+    {
+      "icon": "trophy",
+      "label": "PRT/TGT/PGT"
+    }
   ],
   "levels": [
     {
       "level": "12th Pass",
       "posts": [
-        { "name": "Primary Teacher (PRT)", "code": "Level 6", "note": "12th + 2-year D.El.Ed / B.El.Ed" },
-        { "name": "Junior Teacher", "code": "Level 5", "note": "State-level, varies by board" }
+        {
+          "name": "Primary Teacher (PRT)",
+          "code": "Level 6",
+          "note": "12th + 2-year D.El.Ed / B.El.Ed"
+        },
+        {
+          "name": "Junior Teacher",
+          "code": "Level 5",
+          "note": "State-level, varies by board"
+        }
       ],
       "note": "12th pass + teaching diploma. CTET Paper 1 (Classes 1–5). Age 18–35."
     },
     {
       "level": "Graduate",
       "posts": [
-        { "name": "Trained Graduate Teacher (TGT)", "code": "Level 7", "note": "Graduate + B.Ed, teaches Classes 6–10" },
-        { "name": "Post Graduate Teacher (PGT)", "code": "Level 8", "note": "Post-graduate + B.Ed, teaches Classes 11–12" },
-        { "name": "Lecturer (College)", "code": "Level 10", "note": "Master's + NET/SET, UGC norms" }
+        {
+          "name": "Trained Graduate Teacher (TGT)",
+          "code": "Level 7",
+          "note": "Graduate + B.Ed, teaches Classes 6–10"
+        },
+        {
+          "name": "Post Graduate Teacher (PGT)",
+          "code": "Level 8",
+          "note": "Post-graduate + B.Ed, teaches Classes 11–12"
+        },
+        {
+          "name": "Lecturer (College)",
+          "code": "Level 10",
+          "note": "Master's + NET/SET, UGC norms"
+        }
       ],
       "note": "Graduation in relevant subject + B.Ed. CTET Paper 2 (Classes 6–8) or State TET."
     },
     {
       "level": "Post Graduate",
       "posts": [
-        { "name": "Assistant Professor", "code": "Level 10", "note": "Master's + NET/Ph.D, UGC CAS" },
-        { "name": "Professor", "code": "Level 14", "note": "Ph.D + 10 years experience, UGC norms" }
+        {
+          "name": "Assistant Professor",
+          "code": "Level 10",
+          "note": "Master's + NET/Ph.D, UGC CAS"
+        },
+        {
+          "name": "Professor",
+          "code": "Level 14",
+          "note": "Ph.D + 10 years experience, UGC norms"
+        }
       ],
       "note": "Master's degree. UGC-NET or Ph.D for Assistant Professor. Age 21–40."
     }
@@ -76,9 +138,85 @@
     "Education Officer / DEO (Level 13+)"
   ],
   "syllabus": [
-    { "exam": "CTET Paper 1 (Classes 1-5)", "pattern": "150 Qs, 150 min — Child Pedagogy (30), Language I (30), Language II (30), Maths (30), EVS (30). 60% to pass.", "link": "https://ctet.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600050?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CTET Paper 1 Guide (Amazon)</a> · <a href='https://www.flipkart.com/ctet-paper1-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "CTET Paper 2 (Classes 6-8)", "pattern": "150 Qs, 150 min — Child Pedagogy (30), Language I (30), Language II (30), Subject (60). 60% to pass.", "link": "https://ctet.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600051?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CTET Paper 2 Guide (Amazon)</a>" },
-    { "exam": "KVS/NVS Exam", "pattern": "150 Qs, 150 min — Reasoning, GK, Teaching Aptitude, Subject. Interview (100 marks) for TGT/PGT.", "link": "https://kvs.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600052?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>KVS TGT/PGT Guide (Amazon)</a>" }
+    {
+      "exam": "CTET Paper 1 (Classes 1–5)",
+      "pattern": "150 questions, 150 marks, 150 minutes: Child Development & Pedagogy 30, Language I 30, Language II 30, Mathematics 30, Environmental Studies 30. No negative marking. Qualifying 60% (90/150).",
+      "link": "https://ctet.nic.in/",
+      "topics": [
+        {
+          "group": "Child Development & Pedagogy",
+          "items": "Development and its relation to learning, Piaget, Kohlberg and Vygotsky, socialisation, intelligence, language and thought, gender, individual differences, assessment, inclusive education, learning difficulties"
+        },
+        {
+          "group": "Mathematics",
+          "items": "Geometry, shapes and spatial understanding, numbers, addition and subtraction, multiplication and division, measurement, time, money, patterns, data handling, pedagogical issues"
+        },
+        {
+          "group": "Environmental Studies",
+          "items": "Family and friends, food, shelter, water, travel, things we make and do, natural resources, pedagogy of EVS"
+        },
+        {
+          "group": "Language I and II",
+          "items": "Comprehension, pedagogy of language development, grammar, teaching-learning materials, remedial teaching"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600050?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CTET Paper 1 Guide (Amazon)</a> · <a href='https://www.flipkart.com/ctet-paper1-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "CTET Paper 2 (Classes 6–8)",
+      "pattern": "150 questions, 150 marks, 150 minutes: CDP 30, Language I 30, Language II 30, and either Mathematics & Science 60 or Social Science 60. Qualifying 60%.",
+      "link": "https://ctet.nic.in/",
+      "topics": [
+        {
+          "group": "Mathematics & Science",
+          "items": "Number system, algebra, geometry, mensuration, data handling; food, materials, the world of the living, moving things, how things work, natural phenomena, pedagogy of science"
+        },
+        {
+          "group": "Social Science",
+          "items": "History (ancient, medieval, modern), geography, social and political life, pedagogy of social science"
+        },
+        {
+          "group": "CDP and Languages",
+          "items": "Same as Paper 1 but at upper-primary level, with more emphasis on inclusive education and assessment"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600051?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CTET Paper 2 Guide (Amazon)</a>"
+    },
+    {
+      "exam": "KVS / NVS — PRT, TGT, PGT",
+      "pattern": "Computer-based written test on subject knowledge, pedagogy, reasoning, general awareness and language, followed by an interview and demo class. Weightage is published in each KVS/NVS notification — read that notice before you prepare.",
+      "link": "https://kvsangathan.nic.in/",
+      "topics": [
+        {
+          "group": "Subject knowledge",
+          "items": "The NCERT syllabus of the subject and the classes you are applying to teach"
+        },
+        {
+          "group": "Pedagogy",
+          "items": "Teaching methods of that subject, lesson planning, evaluation, child psychology"
+        },
+        {
+          "group": "Aptitude and language",
+          "items": "Reasoning, general awareness, Hindi and English"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600052?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>KVS TGT/PGT Guide (Amazon)</a>"
+    },
+    {
+      "exam": "State TET",
+      "pattern": "State TETs follow the CTET structure — Paper 1 for Classes 1–5 and Paper 2 for 6–8 — with state-specific qualifying marks. Several states add a state-specific general studies section.",
+      "link": "https://ctet.nic.in/",
+      "topics": [
+        {
+          "group": "Common core",
+          "items": "CDP, two languages, mathematics and EVS or science and social science, as in CTET"
+        },
+        {
+          "group": "State addition",
+          "items": "State GK, state education policy and, in some states, the local language paper"
+        }
+      ]
+    }
   ],
   "reality": [
     "CTET is qualifying only — it doesn't get you a job. You need a recruitment exam (KVS, NVS, state boards) separately.",
@@ -112,6 +250,28 @@
     {
       "q": "Where do I find official teaching notifications?",
       "a": "kvs.gov.in (KVS), navodaya.gov.in (NVS), cbse.gov.in (CTET), and state education boards. SarkariJobs+ links the official notification on every listing."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "6 months out — Pedagogy first",
+      "what": "CDP and subject pedagogy carry 30–60 marks and are the most ignored part. Read one pedagogy book cover to cover before subject revision; it also supplies the vocabulary the interview expects."
+    },
+    {
+      "phase": "Months 2–4 — Subject and languages",
+      "what": "Revise the NCERT of the subject and class you are targeting, then pick the two languages you score highest in. Language papers are scoring sections, not filler."
+    },
+    {
+      "phase": "Month 5 — Previous years",
+      "what": "Solve 10 years of CTET papers. CTET repeats concepts and often the same pedagogy questions. Track which subject gives you the lowest accuracy and give it double time."
+    },
+    {
+      "phase": "Final month — Full papers",
+      "what": "One full 150-question paper a week at exam timing. No negative marking means you should attempt every question — practise that habit in mocks."
+    },
+    {
+      "phase": "After the written — Demo class",
+      "what": "KVS, NVS and state interviews include a demo lesson. Practise a 10-minute lesson with a blackboard plan, an activity and a closing question. Record yourself once."
     }
   ]
 }

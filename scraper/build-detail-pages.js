@@ -7,6 +7,7 @@ const path = require('path');
 // the per-listing "deeper guide" links are derived from the same content model
 // that produces the guides themselves.
 const { buildGuides, loadSectors, sectorMatcher } = require('./build-sector-pages');
+const { markPathFor } = require('./org-marks');
 
 const ROOT = path.join(__dirname, '..');
 const payload = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'jobs.json'), 'utf8'));
@@ -403,56 +404,17 @@ const GUIDES = [
 
 // ---- Real authority marks ----
 // Detail pages are static, so they cannot use the host→logo lookup that
-// js/main.js runs in the browser. The mark is chosen from the authority named in
-// the record, not the URL host: feeds routinely link a state portal
-// (recruitment.rajasthan.gov.in) or a republisher, so host matching misses most
-// authorities, while the organisation text is what the reader actually sees.
+// js/main.js runs in the browser. The authority map lives in ./org-marks so the
+// sector guides show exactly the same mark for the same organisation.
 //
-// Every entry points at an image the authority itself publishes. Where no mark
-// is on file the page keeps its plain text label rather than inventing a seal.
-const MARK_BY_NAME = [
-  [/\bRPSC\b|Rajasthan Public Service/i, 'portal-logos/rpsc.png'],
-  [/\bUPPSC\b|UP Public Service/i, 'portal-logos/uppsc-official.png'],
-  [/\bMPPSC\b|Madhya Pradesh Public Service/i, 'portal-logos/mppsc.png'],
-  [/\bGPSC\b|Gujarat Public Service/i, 'portal-logos/gpsc.png'],
-  [/\bHPSC\b|Haryana Public Service/i, 'portal-logos/hpsc.png'],
-  [/\bTPSC\b|Tripura Public Service/i, 'portal-logos/tpsc-emblem.png'],
-  [/\bHSSC\b|Haryana Staff Selection/i, 'portal-logos/hssc.png'],
-  [/\bDSSSB\b|Delhi Subordinate Services/i, 'portal-logos/dsssb.png'],
-  [/\bMPSC\b|Manipur Public Service/i, 'portal-logos/manipur-mpsc.ico'],
-  [/\bSSC\b|Staff Selection Commission/i, 'portal-logos/ssc.webp'],
-  [/\bRRB\b|Railway Recruitment|Railways?\b/i, 'portal-logos/railways.png'],
-  [/Supreme Court of India/i, 'portal-logos/supreme-court.ico'],
-  [/IBPS|Institute of Banking Personnel/i, 'logos/ibps-logo.png'],
-  [/State Bank of India|\bSBI\b/i, 'logos/sbi-logo.svg'],
-  [/Kendriya Vidyalaya|\bKVS\b/i, 'logos/kvs-logo.svg'],
-  [/Indian Air Force|\bIAF\b/i, 'logos/indian-air-force-logo.png'],
-  [/\bPolice\b|BSF|CISF|CRPF|SSB\b|Border Security|Central Industrial Security/i, 'logos/police.png'],
-  [/Teaching|Teacher|\bTET\b/i, 'logos/teaching.png'],
-  [/Indian Police Service|\bIPS\b/i, 'logos/indian-police-service-logo.png'],
-  [/Staff Selection Commission/i, 'logos/staff-selection-commission-logo.jpg'],
-  [/Indian Army/i, 'logos/indian-police-service-logo.png'],
-  [/Indian Navy/i, 'logos/indian-police-service-logo.png'],
-  [/Reserve Bank of India|\bRBI\b/i, 'logos/sbi-logo.svg'],
-  [/Union Bank|PNB|Bank of Baroda|Indian Bank|Canara Bank|Bank of India/i, 'logos/sbi-logo.svg'],
-  [/NTA|National Testing Agency/i, 'portal-logos/ssc.webp'],
-  [/CBSE|Central Board of Secondary/i, 'logos/teaching.png'],
-  [/ISRO|Indian Space Research/i, 'portal-logos/ssc.webp'],
-  [/ONGC|Oil and Natural Gas/i, 'portal-logos/ssc.webp'],
-  [/NTPC|National Thermal Power/i, 'portal-logos/ssc.webp'],
-  [/AIIMS|All India Institute of Medical/i, 'portal-logos/ssc.webp'],
-  [/High Court/i, 'portal-logos/supreme-court.ico']
-];
-
 // Decorative: the authority is already named in the h1, the chips and the source
 // table, so alt="" stops a screen reader from hearing it twice. width/height are
 // fixed so the hero never shifts, and the image is lazy so a logo can never
 // become the LCP element.
 const markFor = item => {
-  const org = String(item.organization || item.source || item.publisher || '');
-  const match = MARK_BY_NAME.find(([pattern]) => pattern.test(org));
-  if (!match) return '';
-  return `<img class="d-org-mark" src="../../assets/${match[1]}" alt="" width="40" height="40" loading="lazy" decoding="async">`;
+  const src = markPathFor(item);
+  if (!src) return '';
+  return `<img class="d-org-mark" src="../../assets/${src}" alt="" width="40" height="40" loading="lazy" decoding="async">`;
 };
 
 const urls = [];

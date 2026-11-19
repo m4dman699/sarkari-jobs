@@ -16,5 +16,8 @@ These portal marks are copied from assets exposed by the listed government recru
 | `hssc.png` | https://hssc.gov.in/images/logo.png |
 | `manipur-mpsc.ico` | https://mpscmanipur.gov.in/favico.ico |
 | `supreme-court.ico` | https://www.sci.gov.in/favicon.ico |
+| `nta.png` | https://nta.ac.in/img/NTA_logo.png |
+| `rssb.png` | https://rssb.rajasthan.gov.in/images/logo_img.png |
+| `mpesb.jpg` | https://esb.mp.gov.in/new_look_images/PEB_LOGO_NEW1.jpg |
 
 Category cards use custom inline SVG icons, since a category such as Banking or Teaching has no single official recruiting-portal logo.

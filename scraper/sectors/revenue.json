@@ -4,43 +4,96 @@
   "icon": "landmark",
   "logo": null,
   "accent": "#27ae60",
-  "categoryMatch": ["Revenue"],
+  "categoryMatch": [
+    "Revenue"
+  ],
   "titleMatch": "\\b(income tax|customs|gst|excise|revenue|tax|irs|cbic|cbdt|inspector.*tax|tax.*inspector)\\b",
   "stats": [
-    { "value": "2", "label": "Central Boards (CBDT, CBIC)" },
-    { "value": "5000+", "label": "Vacancies/Year" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "2",
+      "label": "Central Boards (CBDT, CBIC)"
+    },
+    {
+      "value": "5000+",
+      "label": "Vacancies/Year"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "landmark", "label": "Revenue jobs" },
-    { "icon": "graduation-cap", "label": "Graduate+" },
-    { "icon": "book-open", "label": "SSC CGL" },
-    { "icon": "target", "label": "Physical test" },
-    { "icon": "briefcase", "label": "Govt sector" },
-    { "icon": "trophy", "label": "Inspector/IRS" }
+    {
+      "icon": "landmark",
+      "label": "Revenue jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "Graduate+"
+    },
+    {
+      "icon": "book-open",
+      "label": "SSC CGL"
+    },
+    {
+      "icon": "target",
+      "label": "Physical test"
+    },
+    {
+      "icon": "briefcase",
+      "label": "Govt sector"
+    },
+    {
+      "icon": "trophy",
+      "label": "Inspector/IRS"
+    }
   ],
   "levels": [
     {
       "level": "12th Pass",
       "posts": [
-        { "name": "Tax Assistant", "code": "Level 4", "note": "Data entry, tax records, filing" },
-        { "name": "Havaldar (Customs)", "code": "Level 3", "note": "Physical verification, warehouse" }
+        {
+          "name": "Tax Assistant",
+          "code": "Level 4",
+          "note": "Data entry, tax records, filing"
+        },
+        {
+          "name": "Havaldar (Customs)",
+          "code": "Level 3",
+          "note": "Physical verification, warehouse"
+        }
       ],
       "note": "12th pass. Age 18-27. Typing: 35 wpm English / 30 wpm Hindi."
     },
     {
       "level": "Graduate",
       "posts": [
-        { "name": "Inspector (Income Tax)", "code": "Level 7", "note": "Tax assessment, raids, investigation" },
-        { "name": "Inspector (Customs/Excise)", "code": "Level 7", "note": "Customs clearance, anti-smuggling" },
-        { "name": "IRS Officer (via UPSC CSE)", "code": "Level 10", "note": "Senior tax administration" }
+        {
+          "name": "Inspector (Income Tax)",
+          "code": "Level 7",
+          "note": "Tax assessment, raids, investigation"
+        },
+        {
+          "name": "Inspector (Customs/Excise)",
+          "code": "Level 7",
+          "note": "Customs clearance, anti-smuggling"
+        },
+        {
+          "name": "IRS Officer (via UPSC CSE)",
+          "code": "Level 10",
+          "note": "Senior tax administration"
+        }
       ],
       "note": "Any degree. Age 18-30. Physical standards for Customs Inspector."
     },
     {
       "level": "Post Graduate",
       "posts": [
-        { "name": "IRS (Indian Revenue Service)", "code": "Level 10", "note": "Via UPSC CSE, senior positions" }
+        {
+          "name": "IRS (Indian Revenue Service)",
+          "code": "Level 10",
+          "note": "Via UPSC CSE, senior positions"
+        }
       ],
       "note": "Any degree (preferably Commerce/Law). Age 21-32. UPSC CSE exam."
     }
@@ -83,9 +136,62 @@
     "Salary: Inspector ~₹44,900 (Level 7) + DA + HRA. IRS Officer ~₹56,100 (Level 10)."
   ],
   "syllabus": [
-    { "exam": "SSC CGL Tier 1", "pattern": "100 Qs, 60 min — Reasoning (25), GK (25), Quant (25), English (25). 0.50 negative marking.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600100?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Guide (Amazon)</a> · <a href='https://www.flipkart.com/ssc-cgl-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "SSC CGL Tier 2", "pattern": "200 Qs, 2 hrs — Quant (100), English (100), GK (50), Reasoning (50). + Descriptive (essay + letter).", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600101?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 2 Guide (Amazon)</a>" },
-    { "exam": "Customs Physical Test", "pattern": "Running: 1.6km (men) / 800m (women). Long jump, high jump. Height: 165cm (men), 152cm (women). Color vision test.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600102?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Physical Fitness Guide (Amazon)</a>" }
+    {
+      "exam": "SSC CGL — Income Tax Inspector / CBIC Inspector",
+      "pattern": "Entry to Inspector posts in CBDT and CBIC is through SSC CGL. Tier 1: 100 questions, 200 marks, 60 minutes, negative 0.50. Tier 2: section-wise papers with negative marking; the syllabus is the CGL syllabus.",
+      "link": "https://ssc.gov.in/",
+      "topics": [
+        {
+          "group": "Tier 1 sections",
+          "items": "General Intelligence & Reasoning, General Awareness, Quantitative Aptitude, English Comprehension"
+        },
+        {
+          "group": "Tier 2 papers",
+          "items": "Mathematical abilities, reasoning and general intelligence, English language and comprehension, general awareness, computer proficiency, and the descriptive paper where applicable"
+        },
+        {
+          "group": "Post-specific",
+          "items": "CBIC Inspector posts add a physical standard test; CBDT posts do not. Check the CGL notice for the post you are opting"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600100?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Guide (Amazon)</a> · <a href='https://www.flipkart.com/ssc-cgl-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "State Commercial Tax Officer",
+      "pattern": "State PSC or state tax board examination with general studies, law and accounts papers. The exact subjects and marks are set by each state public service commission.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "General studies",
+          "items": "Polity, economy, history, geography, current affairs of the state and the country"
+        },
+        {
+          "group": "Tax law",
+          "items": "State VAT / GST law, registration, input tax credit, returns, assessment, appeals and penalties"
+        },
+        {
+          "group": "Accounts and commerce",
+          "items": "Basic accounting, bookkeeping, auditing and commercial arithmetic"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600101?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 2 Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Departmental GST / Customs exam",
+      "pattern": "Departmental promotion examinations for existing inspectors and superintendents, conducted by the CBIC and state tax departments on the law in force.",
+      "link": "https://cbic.gov.in/",
+      "topics": [
+        {
+          "group": "Indirect tax law",
+          "items": "CGST Act and rules, IGST, customs law, central excise legacy provisions, demand and recovery, refunds, appeals"
+        },
+        {
+          "group": "Procedure",
+          "items": "Assessment, audit, search and seizure, prosecution, and departmental procedure manuals"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600102?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Physical Fitness Guide (Amazon)</a>"
+    }
   ],
   "faq": [
     {
@@ -111,6 +217,28 @@
     {
       "q": "Where do I find official revenue notifications?",
       "a": "ssc.gov.in (SSC CGL), upsc.gov.in (IRS). SarkariJobs+ links the official notification on every listing."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "If you are entering through CGL",
+      "what": "Prepare the SSC CGL syllabus first — reasoning, quantitative aptitude, English and general awareness. Revenue posts are allotted on the CGL merit and preference form, so the CGL score decides whether you get a tax post at all."
+    },
+    {
+      "phase": "Months 1–3 — Quant and reasoning base",
+      "what": "Arithmetic, advance maths and reasoning at CGL level. Revenue inspector posts are cut-off driven, and Tier 2 maths carries the most marks."
+    },
+    {
+      "phase": "Months 3–5 — English and awareness",
+      "what": "English is the fastest section to improve. Add a daily current-affairs slot and a basic economy glossary — budget, GST, direct tax, customs terms appear in general awareness."
+    },
+    {
+      "phase": "State exams — tax law",
+      "what": "If you are targeting a state commercial tax officer post, read the state VAT/GST Act and the state PSC syllabus. Add basic accountancy; most candidates lose marks there, not in general studies."
+    },
+    {
+      "phase": "Final phase — Mocks and physicals",
+      "what": "Weekly CGL mocks with the 0.50 negative-marking rule, and for CBIC posts start the physical standard practice early — it is qualifying and non-negotiable."
     }
   ]
 }

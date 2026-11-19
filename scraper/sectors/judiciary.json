@@ -4,43 +4,96 @@
   "icon": "landmark",
   "logo": null,
   "accent": "#8e44ad",
-  "categoryMatch": ["Judiciary"],
+  "categoryMatch": [
+    "Judiciary"
+  ],
   "titleMatch": "\\b(judiciary|court|judge|judicial|high court|supreme court|district judge|civil judge|munsif|steno)\\b",
   "stats": [
-    { "value": "25", "label": "High Courts" },
-    { "value": "500+", "label": "Vacancies/Year" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "25",
+      "label": "High Courts"
+    },
+    {
+      "value": "500+",
+      "label": "Vacancies/Year"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "landmark", "label": "Judiciary jobs" },
-    { "icon": "graduation-cap", "label": "LLB/LLM" },
-    { "icon": "book-open", "label": "PCS(J) exam" },
-    { "icon": "users", "label": "Interview" },
-    { "icon": "file-text", "label": "Law degree" },
-    { "icon": "trophy", "label": "Civil Judge" }
+    {
+      "icon": "landmark",
+      "label": "Judiciary jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "LLB/LLM"
+    },
+    {
+      "icon": "book-open",
+      "label": "PCS(J) exam"
+    },
+    {
+      "icon": "users",
+      "label": "Interview"
+    },
+    {
+      "icon": "file-text",
+      "label": "Law degree"
+    },
+    {
+      "icon": "trophy",
+      "label": "Civil Judge"
+    }
   ],
   "levels": [
     {
       "level": "12th Pass",
       "posts": [
-        { "name": "Junior Court Assistant / Clerk", "code": "Level 2-4", "note": "Court records, filing, typing" },
-        { "name": "Process Server / Peon", "code": "Level 1-2", "note": "Court summons, document delivery" }
+        {
+          "name": "Junior Court Assistant / Clerk",
+          "code": "Level 2-4",
+          "note": "Court records, filing, typing"
+        },
+        {
+          "name": "Process Server / Peon",
+          "code": "Level 1-2",
+          "note": "Court summons, document delivery"
+        }
       ],
       "note": "12th pass + typing. Age 18-27. Computer certificate preferred."
     },
     {
       "level": "Graduate (LLB)",
       "posts": [
-        { "name": "Civil Judge (Junior Division)", "code": "Level 10", "note": "Civil/criminal cases, magistrate" },
-        { "name": "Judicial Magistrate", "code": "Level 10", "note": "Criminal cases, bail, remand" }
+        {
+          "name": "Civil Judge (Junior Division)",
+          "code": "Level 10",
+          "note": "Civil/criminal cases, magistrate"
+        },
+        {
+          "name": "Judicial Magistrate",
+          "code": "Level 10",
+          "note": "Criminal cases, bail, remand"
+        }
       ],
       "note": "LLB degree. Age 21-35. PCS(J) exam by state PSC."
     },
     {
       "level": "Post Graduate (LLM)",
       "posts": [
-        { "name": "District Judge", "code": "Level 12", "note": "Senior civil/criminal cases" },
-        { "name": "Additional District Judge", "code": "Level 12", "note": "Appellate, sessions court" }
+        {
+          "name": "District Judge",
+          "code": "Level 12",
+          "note": "Senior civil/criminal cases"
+        },
+        {
+          "name": "Additional District Judge",
+          "code": "Level 12",
+          "note": "Appellate, sessions court"
+        }
       ],
       "note": "LLM or 7 years practice. Age 35-45. Higher Judicial Service exam."
     }
@@ -83,9 +136,73 @@
     "Salary: Civil Judge ~₹77,840 (Level 10) + DA + HRA. District Judge ~₹1,44,840 (Level 12)."
   ],
   "syllabus": [
-    { "exam": "PCS(J) Prelims", "pattern": "100-150 Qs — Civil Law, Criminal Law, Constitutional Law, CPC, CrPC, Evidence Act, Contract Act, Transfer of Property. GK + English.", "link": "https://uppsc.up.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600090?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>PCS(J) Guide (Amazon)</a> · <a href='https://www.flipkart.com/pcs-j-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "PCS(J) Mains", "pattern": "3-4 papers (descriptive) — Civil Law (CPC, Contract, TPA), Criminal Law (IPC, CrPC, Evidence), English (Essay + Translation), Hindi/Regional Language.", "link": "https://uppsc.up.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600091?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Judicial Services Mains Guide (Amazon)</a>" },
-    { "exam": "Interview", "pattern": "20-30 min — Legal knowledge, personality, aptitude for judicial service. 200 marks.", "link": "https://uppsc.up.nic.in/", "books": "<a href='https://www.amazon.in/dp/9354600092?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Judicial Interview Guide (Amazon)</a>" }
+    {
+      "exam": "Prelims — Civil Judge (Junior Division)",
+      "pattern": "Objective paper on substantive and procedural law plus general knowledge, with negative marking in most states. Marks, sections and the number of questions are fixed by each High Court's notification.",
+      "link": "https://www.sci.gov.in/",
+      "topics": [
+        {
+          "group": "Civil law",
+          "items": "Code of Civil Procedure, Indian Contract Act, Transfer of Property Act, Specific Relief Act, Limitation Act, Hindu Marriage Act, Indian Succession Act"
+        },
+        {
+          "group": "Criminal law",
+          "items": "Indian Penal Code / Bharatiya Nyaya Sanhita, Code of Criminal Procedure / Bharatiya Nagarik Suraksha Sanhita, Indian Evidence Act / Bharatiya Sakshya Adhiniyam"
+        },
+        {
+          "group": "Constitutional and other law",
+          "items": "Constitution of India, torts, consumer protection, family law, local rent and land laws of the state"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600090?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>PCS(J) Guide (Amazon)</a> · <a href='https://www.flipkart.com/pcs-j-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "Mains — written papers",
+      "pattern": "Written papers in civil law, criminal law, English (essay and precis) and the state language or Hindi, with a translation paper. Several states add judgment writing. Each High Court sets its own paper structure and marks.",
+      "link": "https://www.sci.gov.in/",
+      "topics": [
+        {
+          "group": "Law papers",
+          "items": "Problem-based questions that require applying sections and citing case law, not reciting definitions"
+        },
+        {
+          "group": "Language papers",
+          "items": "Essay, precis, comprehension and translation — qualifying in some states but counted in others"
+        },
+        {
+          "group": "Judgment writing",
+          "items": "Framing issues, marshalling facts, applying law and writing a reasoned order"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600091?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Judicial Services Mains Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Interview / viva voce",
+      "pattern": "Oral examination on law, procedure and the candidate's background, conducted by the High Court's selection committee after the mains.",
+      "link": "https://www.sci.gov.in/",
+      "topics": [
+        {
+          "group": "What is asked",
+          "items": "Leading cases, procedural steps, recent amendments, legal current affairs, and the candidate's practice or academic specialisation"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600092?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Judicial Interview Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Bare Acts and case law — the real syllabus",
+      "pattern": "Judicial service exams are set from bare Acts and leading judgments. State notifications list the exact statutes, and the list differs between states.",
+      "link": "https://www.sci.gov.in/",
+      "topics": [
+        {
+          "group": "How to read",
+          "items": "Read the bare Act section by section and annotate it with leading cases; do not rely on guides alone, because the papers quote sections directly"
+        },
+        {
+          "group": "Case law",
+          "items": "Constitutional law and procedural law judgments of the Supreme Court; recent amendments to criminal law"
+        }
+      ]
+    }
   ],
   "faq": [
     {
@@ -111,6 +228,28 @@
     {
       "q": "Where do I find official judiciary notifications?",
       "a": "State PSC websites (uppsc.up.nic.in, bpsc.bihar.gov.in) and High Court websites. SarkariJobs+ links the official notification on every listing."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "Months 1–6 — Bare Acts",
+      "what": "Read CPC, CrPC/BNSS, IPC/BNS, Evidence Act/BSA and the Constitution from the bare Act, section by section, annotating leading cases. Guides summarise; the papers quote sections."
+    },
+    {
+      "phase": "Months 4–9 — State-specific law",
+      "what": "Add the state rent control, land revenue and local laws named in your High Court's notification. This is where candidates who studied only central law lose marks."
+    },
+    {
+      "phase": "Months 6–12 — Writing practice",
+      "what": "Judicial mains is problem-based. Write answers applying the section to the facts, then cite one or two cases. Practise judgment writing and the essay paper weekly."
+    },
+    {
+      "phase": "Month 9 onward — Previous papers",
+      "what": "Solve previous papers of your state and two neighbouring states. Prelims repeats sections and case names; track every wrong answer by statute."
+    },
+    {
+      "phase": "Final month — Revision and viva",
+      "what": "Revise annotated bare Acts and your case list. Prepare for the viva: recent Supreme Court judgments, amendments and your own academic or practice background."
     }
   ]
 }

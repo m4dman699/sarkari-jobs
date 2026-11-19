@@ -7,8 +7,8 @@
   "categoryMatch": ["Employment", "Central", "Central Government", "Central Govt"],
   "titleMatch": "\\b(employment news|employmentnews|employment office|employment exchange|swavlaman|job)\\b",
   "stats": [
-    { "value": "1", "label": "Govt Source" },
-    { "value": "50K+", "label": "Jobs Covered" },
+    { "value": "Weekly", "label": "Publication cycle" },
+    { "value": "1", "label": "Govt source" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
   "pictograms": [

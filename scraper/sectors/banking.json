@@ -2,47 +2,113 @@
   "slug": "banking",
   "name": "Banking",
   "icon": "landmark",
-  "logo": { "src": "assets/logos/ibps-logo.png", "alt": "IBPS", "width": 380, "height": 190 },
+  "logo": {
+    "src": "assets/logos/ibps-logo.png",
+    "alt": "IBPS",
+    "width": 380,
+    "height": 190
+  },
   "accent": "#2f7fd4",
-  "categoryMatch": ["Banking"],
+  "categoryMatch": [
+    "Banking"
+  ],
   "titleMatch": "\\b(ibps|sbi|bank|banking|rbi|po|clerk|specialist officer|probationary officer)\\b",
   "stats": [
-    { "value": "12", "label": "Public Sector Banks" },
-    { "value": "40+", "label": "RRBs" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "12",
+      "label": "Public Sector Banks"
+    },
+    {
+      "value": "40+",
+      "label": "RRBs"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "landmark", "label": "Banking jobs" },
-    { "icon": "graduation-cap", "label": "Graduate+" },
-    { "icon": "book-open", "label": "Prelims + Mains" },
-    { "icon": "briefcase", "label": "Govt sector" },
-    { "icon": "target", "label": "Speed test" },
-    { "icon": "trophy", "label": "PO/Clerk" }
+    {
+      "icon": "landmark",
+      "label": "Banking jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "Graduate+"
+    },
+    {
+      "icon": "book-open",
+      "label": "Prelims + Mains"
+    },
+    {
+      "icon": "briefcase",
+      "label": "Govt sector"
+    },
+    {
+      "icon": "target",
+      "label": "Speed test"
+    },
+    {
+      "icon": "trophy",
+      "label": "PO/Clerk"
+    }
   ],
   "levels": [
     {
       "level": "12th Pass",
       "posts": [
-        { "name": "Bank Clerk (IBPS / SBI)", "code": "Clerk", "note": "Cash, accounts, customer service" },
-        { "name": "RRB Office Assistant", "code": "Clerk", "note": "Rural bank clerk, multipurpose" }
+        {
+          "name": "Bank Clerk (IBPS / SBI)",
+          "code": "Clerk",
+          "note": "Cash, accounts, customer service"
+        },
+        {
+          "name": "RRB Office Assistant",
+          "code": "Clerk",
+          "note": "Rural bank clerk, multipurpose"
+        }
       ],
       "note": "12th pass (60% for SBI). Computer literacy. Age 20–28 (relaxations apply)."
     },
     {
       "level": "Graduate",
       "posts": [
-        { "name": "Probationary Officer (PO)", "code": "Officer", "note": "Branch management, lending, operations" },
-        { "name": "Specialist Officer (SO)", "code": "Officer", "note": "IT, HR, Law, Marketing, Rajbhasha" },
-        { "name": "RRB Officer Scale I", "code": "Officer", "note": "Rural bank officer, all functions" },
-        { "name": "RBI Grade B Officer", "code": "Officer", "note": "Central bank, policy, regulation" }
+        {
+          "name": "Probationary Officer (PO)",
+          "code": "Officer",
+          "note": "Branch management, lending, operations"
+        },
+        {
+          "name": "Specialist Officer (SO)",
+          "code": "Officer",
+          "note": "IT, HR, Law, Marketing, Rajbhasha"
+        },
+        {
+          "name": "RRB Officer Scale I",
+          "code": "Officer",
+          "note": "Rural bank officer, all functions"
+        },
+        {
+          "name": "RBI Grade B Officer",
+          "code": "Officer",
+          "note": "Central bank, policy, regulation"
+        }
       ],
       "note": "Any degree. SO needs specific qualification (B.Tech for IT, LLB for Law, etc.). Age 20–30."
     },
     {
       "level": "Post Graduate",
       "posts": [
-        { "name": "RBI Grade B (DEPR/DSIM)", "code": "Officer", "note": "Economics, Statistics, Finance" },
-        { "name": "NABARD Grade A/B", "code": "Officer", "note": "Rural development, agriculture finance" }
+        {
+          "name": "RBI Grade B (DEPR/DSIM)",
+          "code": "Officer",
+          "note": "Economics, Statistics, Finance"
+        },
+        {
+          "name": "NABARD Grade A/B",
+          "code": "Officer",
+          "note": "Rural development, agriculture finance"
+        }
       ],
       "note": "Master's in relevant field. Age 21–30 (relaxations apply)."
     }
@@ -77,9 +143,96 @@
     "Chief Manager / AGM / DGM (Level 12-14)"
   ],
   "syllabus": [
-    { "exam": "Preliminary Exam", "pattern": "100 Qs, 60 min — English (30), Quantitative Aptitude (35), Reasoning (35). 0.25 negative marking.", "link": "https://www.ibps.in/", "books": "<a href='https://www.amazon.in/dp/9354600010?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>IBPS PO Prelims Guide (Amazon)</a> · <a href='https://www.flipkart.com/ibps-po-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "Main Exam", "pattern": "200 Qs, 160 min — Reasoning (40), English (35), Quant (40), GA (40), Computer (45). + Descriptive (letter + essay).", "link": "https://www.ibps.in/", "books": "<a href='https://www.amazon.in/dp/9354600011?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>IBPS PO Mains Guide (Amazon)</a>" },
-    { "exam": "Interview", "pattern": "20 min panel. Banking awareness, current affairs, personality. 100 marks (20% weight).", "link": "https://www.ibps.in/", "books": "<a href='https://www.amazon.in/dp/9354600012?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Banking Awareness Book (Amazon)</a>" }
+    {
+      "exam": "Prelims — PO and Clerk (IBPS / SBI / RRB)",
+      "pattern": "100 questions, 100 marks, 60 minutes. English 30, Quantitative Aptitude 35, Reasoning 35. Negative marking 0.25 per wrong answer. Sectional timing is not applied in the prelims.",
+      "link": "https://www.ibps.in/",
+      "topics": [
+        {
+          "group": "English Language",
+          "items": "Reading comprehension, cloze test, error spotting, fillers, para jumbles, sentence improvement, synonyms and antonyms, idioms and phrases"
+        },
+        {
+          "group": "Quantitative Aptitude",
+          "items": "Simplification and approximation, number series, quadratic equations, data interpretation (table, bar, pie, line), percentage, ratio, average, profit and loss, SI and CI, time and work, time and distance, mixture, partnership, probability, mensuration"
+        },
+        {
+          "group": "Reasoning Ability",
+          "items": "Puzzles and seating arrangement (highest weight), syllogism, inequality, direction sense, blood relations, coding-decoding, alphanumeric series, order and ranking, input-output"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600010?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>IBPS PO Prelims Guide (Amazon)</a> · <a href='https://www.flipkart.com/ibps-po-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "Mains — IBPS PO / SBI PO",
+      "pattern": "Objective 200 marks: Reasoning & Computer Aptitude 45 Qs, Data Analysis & Interpretation 35 Qs, General/Economy/Banking Awareness 40 Qs, English Language 35 Qs. Descriptive 25 marks (letter and essay), 30 minutes. Negative 0.25.",
+      "link": "https://www.ibps.in/",
+      "topics": [
+        {
+          "group": "Reasoning & Computer Aptitude",
+          "items": "Machine input-output, high-level puzzles, logical reasoning, data sufficiency, computer fundamentals, networking and DBMS basics, MS Office"
+        },
+        {
+          "group": "Data Analysis & Interpretation",
+          "items": "Caselet DI, radar and mixed graphs, missing DI, quantity comparison, arithmetic at mains difficulty, probability, permutation and combination"
+        },
+        {
+          "group": "General / Economy / Banking Awareness",
+          "items": "RBI and monetary policy, banking terminology, financial inclusion, Union Budget and Economic Survey highlights, last six months of current affairs, static banking (headquarters, taglines, current MD and Chairman)"
+        },
+        {
+          "group": "English (descriptive included)",
+          "items": "Reading comprehension including economy passages; letter and essay writing for the 25-mark descriptive paper"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600011?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>IBPS PO Mains Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Interview — PO and SO",
+      "pattern": "100 marks, weighted 20% of final merit (IBPS PO final merit is 80% Mains and 20% Interview). No interview for Clerk posts.",
+      "link": "https://www.ibps.in/",
+      "topics": [
+        {
+          "group": "What is asked",
+          "items": "Banking awareness, current economic affairs, the candidate's graduation subject, home state, and situational questions on customer handling and priority sector lending"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600012?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Banking Awareness Book (Amazon)</a>"
+    },
+    {
+      "exam": "RBI Grade B — Phase 1",
+      "pattern": "200 questions, 200 marks, 120 minutes: General Awareness 80, Reasoning 60, English Language 30, Quantitative Aptitude 30. Negative 0.25.",
+      "link": "https://www.rbi.org.in/",
+      "topics": [
+        {
+          "group": "General Awareness",
+          "items": "RBI functions and monetary policy, banking and financial system, economic and social issues, budget, current affairs of the last six months"
+        },
+        {
+          "group": "Reasoning, English, Quant",
+          "items": "Same families as IBPS but at a higher difficulty; data interpretation and puzzles dominate"
+        }
+      ]
+    },
+    {
+      "exam": "RBI Grade B — Phase 2",
+      "pattern": "Three papers: Economic and Social Issues (90 marks), English (descriptive, 90 marks), Finance and Management (90 marks). Phase 2 marks decide the interview call.",
+      "link": "https://www.rbi.org.in/",
+      "topics": [
+        {
+          "group": "Economic and Social Issues",
+          "items": "Growth and development, inflation, monetary and fiscal policy, poverty and unemployment, social structure, globalisation"
+        },
+        {
+          "group": "Finance and Management",
+          "items": "Financial system, risk management, derivatives, corporate governance, accounting, organisational behaviour, HR"
+        },
+        {
+          "group": "English (descriptive)",
+          "items": "Essay, precis and comprehension at RBI standard"
+        }
+      ]
+    }
   ],
   "reality": [
     "IBPS PO and SBI PO are the most competitive. 10 lakh+ applicants for 4000–5000 vacancies.",
@@ -113,6 +266,28 @@
     {
       "q": "Where do I find official banking notifications?",
       "a": "ibps.in (IBPS), sbi.co.in/careers (SBI), rbi.org.in (RBI), ibps.in (RRB). SarkariJobs+ links the official notification on every listing page."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "Months 1–2 — Accuracy before speed",
+      "what": "Learn the 20–25 question types that repeat every year (number series, quadratic, inequality, puzzles, DI) to accuracy first. Do 30 arithmetic questions and 2 puzzles daily. Do not start full mocks yet."
+    },
+    {
+      "phase": "Month 3 — Sectional timing",
+      "what": "Add a timer: 20 questions in 15 minutes, then 20 in 12. English is the cheapest section to score — finish grammar and vocabulary rules here. Start a daily 20-minute current affairs slot; banking awareness cannot be crammed later."
+    },
+    {
+      "phase": "Month 4 — Mains-level practice",
+      "what": "Prelims gets you shortlisted, mains gets you the job. Move DI and puzzles to mains difficulty, add computer aptitude, and write one letter and one essay every week for the descriptive paper."
+    },
+    {
+      "phase": "Month 5 — Mock cycle",
+      "what": "Two prelims mocks a week with full analysis, plus one mains sectional. Maintain an error notebook by question type; revising it is worth more than a new book."
+    },
+    {
+      "phase": "Final 2 weeks — Slot simulation and capsule",
+      "what": "Give mocks at the real slot time. Revise your own banking-awareness capsule, formulae and error notebook. Stop new topics."
     }
   ]
 }

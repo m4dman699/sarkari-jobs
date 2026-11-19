@@ -76,9 +76,47 @@
     "Section Officer / Under Secretary (Level 8-10)"
   ],
   "syllabus": [
-    { "exam": "Tier 1 (CBT)", "pattern": "100 Qs, 60 min — Reasoning (25), GK (25), Quant (25), English (25). 0.50 negative marking.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600030?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 1 Guide (Amazon)</a> · <a href='https://www.flipkart.com/ssc-cgl-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "Tier 2 (CBT)", "pattern": "200 Qs, 2 hrs — Quant (100), English (100), GK (50), Reasoning (50). + Computer (qualifying).", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600031?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 2 Guide (Amazon)</a>" },
-    { "exam": "Skill Test / Typing", "pattern": "Typing: 35 wpm English / 30 wpm Hindi (10 min). DEST for DEO. Qualifying only.", "link": "https://ssc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600032?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Typing Practice Book (Amazon)</a>" }
+    {
+      "exam": "Tier 1 — CGL and CHSL (Computer Based Examination)",
+      "pattern": "100 questions, 200 marks, 60 minutes. Negative marking 0.50 per wrong answer. Section-wise split is published in the notice; the syllabus below is common to both.",
+      "link": "https://ssc.gov.in/",
+      "topics": [
+        { "group": "General Intelligence & Reasoning", "items": "Analogies, similarities and differences, space visualisation, problem solving, analysis, judgement, decision making, visual memory, discrimination, observation, arithmetical reasoning, verbal and figure classification, non-verbal series, coding-decoding, statement-conclusion, syllogistic reasoning" },
+        { "group": "Quantitative Aptitude (Arithmetic)", "items": "Whole numbers, decimals, fractions, percentage, ratio and proportion, square roots, averages, interest, profit and loss, discount, partnership, mixture, time and distance, time and work, basic algebra, geometry, mensuration, trigonometry, height and distance, data interpretation, charts and graphs" },
+        { "group": "General Awareness", "items": "India and its neighbouring countries, history, culture, geography, economic scene, general polity, Indian constitution, scientific developments, current affairs" },
+        { "group": "English Comprehension", "items": "Spot the error, fill in the blanks, synonyms and antonyms, spelling correction, idioms and phrases, one word substitution, active and passive voice, direct and indirect narration, cloze passage, reading comprehension, sentence improvement, shuffling of sentence parts, sentence rearrangement" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600030?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 1 Guide (Amazon)</a> · <a href='https://www.flipkart.com/ssc-cgl-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "Tier 2 — CGL (Mains)",
+      "pattern": "Objective papers held in sessions as published in the notice, with negative marking. A descriptive paper (essay and letter) is qualifying for some posts.",
+      "link": "https://ssc.gov.in/",
+      "topics": [
+        { "group": "Mathematical Abilities", "items": "Arithmetic at higher difficulty, advanced mensuration, geometry, trigonometry, surds and indices, statistics, data interpretation, charts and tables" },
+        { "group": "Reasoning and General Intelligence", "items": "Higher-difficulty puzzles, seating arrangement, blood relations, syllogism, coding-decoding, data sufficiency" },
+        { "group": "English Language & Comprehension", "items": "Vocabulary, grammar and usage, error spotting, cloze test, reading comprehension, para jumbles, sentence rearrangement" },
+        { "group": "General Awareness", "items": "Deeper current affairs, history and culture, polity and constitution, economy, science and technology, environment, computers" },
+        { "group": "Computer Proficiency", "items": "Computer basics, MS Office, operating systems, networking, internet and email — qualifying" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600031?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSC CGL Tier 2 Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Skill Test / Typing / DEST",
+      "pattern": "Typing: 35 wpm English or 30 wpm Hindi in 10 minutes. Data Entry Speed Test (DEST) for DEO posts. Both qualifying.",
+      "link": "https://ssc.gov.in/",
+      "topics": [
+        { "group": "Typing and data entry", "items": "Speed and accuracy only — no syllabus text is tested" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600032?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Typing Speed Practice (Amazon)</a>"
+    }
+  ],
+  "prepPlan": [
+    { "phase": "Start the notice is out — Months 1–2", "what": "Give one diagnostic Tier 1 mock cold on day one. That tells you which of the four sections costs you the most marks. Start with that section for the first month; do not spend equal time on all four." },
+    { "phase": "Months 3–4 — Section-wise completion", "what": "Finish English grammar and vocabulary (the highest-scoring, lowest-cost section), then reasoning type by type. Do 50 arithmetic questions daily — SSC is mostly speed maths, not advanced maths." },
+    { "phase": "Month 5 — Mock-led", "what": "Two Tier 1 mocks a week and one Tier 2 section test. Review every wrong answer by writing it in an error notebook. Target 45 seconds per question." },
+    { "phase": "Month 6 — Tier 2 focus", "what": "If the exam calendar puts Tier 2 soon after Tier 1, start Tier 2 preparation in parallel from month 3. Tier 2 is where final merit is decided — Tier 1 only filters." },
+    { "phase": "Final 2 weeks — Timing and revision", "what": "Full mocks at the actual slot, error notebook revision, and 10 minutes of typing practice daily for the skill test. Do not open new books." }
   ],
   "reality": [
     "SSC CGL is the most popular government exam. 20-30 lakh applicants for 7000-15000 vacancies.",

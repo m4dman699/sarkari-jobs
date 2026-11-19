@@ -4,45 +4,106 @@
   "icon": "shield",
   "logo": null,
   "accent": "#e74c3c",
-  "categoryMatch": ["Medical"],
+  "categoryMatch": [
+    "Medical"
+  ],
   "titleMatch": "\\b(medical|doctor|nursing|nurse|aiims|neet|mbbs|bds|pharmacist|health|hospital|dental|ayush|veterinary|veterinarian)\\b",
   "stats": [
-    { "value": "100+", "label": "Govt Medical Colleges" },
-    { "value": "50K+", "label": "Vacancies/Year" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "100+",
+      "label": "Govt Medical Colleges"
+    },
+    {
+      "value": "50K+",
+      "label": "Vacancies/Year"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "shield", "label": "Medical jobs" },
-    { "icon": "graduation-cap", "label": "MBBS/BDS" },
-    { "icon": "book-open", "label": "NEET PG" },
-    { "icon": "users", "label": "Interview" },
-    { "icon": "check-circle", "label": "Medical fit" },
-    { "icon": "trophy", "label": "MO/Specialist" }
+    {
+      "icon": "shield",
+      "label": "Medical jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "MBBS/BDS"
+    },
+    {
+      "icon": "book-open",
+      "label": "NEET PG"
+    },
+    {
+      "icon": "users",
+      "label": "Interview"
+    },
+    {
+      "icon": "check-circle",
+      "label": "Medical fit"
+    },
+    {
+      "icon": "trophy",
+      "label": "MO/Specialist"
+    }
   ],
   "levels": [
     {
       "level": "12th Pass (Paramedical)",
       "posts": [
-        { "name": "Staff Nurse / Nursing Officer", "code": "Level 7", "note": "GNM/B.Sc Nursing, patient care" },
-        { "name": "Pharmacist", "code": "Level 6", "note": "D.Pharm/B.Pharm, drug dispensing" },
-        { "name": "Lab Technician", "code": "Level 4-5", "note": "DMLT/BMLT, lab tests" }
+        {
+          "name": "Staff Nurse / Nursing Officer",
+          "code": "Level 7",
+          "note": "GNM/B.Sc Nursing, patient care"
+        },
+        {
+          "name": "Pharmacist",
+          "code": "Level 6",
+          "note": "D.Pharm/B.Pharm, drug dispensing"
+        },
+        {
+          "name": "Lab Technician",
+          "code": "Level 4-5",
+          "note": "DMLT/BMLT, lab tests"
+        }
       ],
       "note": "12th with PCB + nursing/pharmacy diploma. Age 18-30."
     },
     {
       "level": "Graduate (MBBS/BDS)",
       "posts": [
-        { "name": "Medical Officer (Allopathy)", "code": "Level 10", "note": "MBBS, general practice" },
-        { "name": "Dental Surgeon (BDS)", "code": "Level 10", "note": "BDS, dental care" },
-        { "name": "Medical Officer (AYUSH)", "code": "Level 10", "note": "BAMS/BHMS/BUMS" }
+        {
+          "name": "Medical Officer (Allopathy)",
+          "code": "Level 10",
+          "note": "MBBS, general practice"
+        },
+        {
+          "name": "Dental Surgeon (BDS)",
+          "code": "Level 10",
+          "note": "BDS, dental care"
+        },
+        {
+          "name": "Medical Officer (AYUSH)",
+          "code": "Level 10",
+          "note": "BAMS/BHMS/BUMS"
+        }
       ],
       "note": "MBBS/BDS degree + internship. Age 21-35. NEET PG for specialization."
     },
     {
       "level": "Post Graduate (MD/MS)",
       "posts": [
-        { "name": "Specialist (MD/MS)", "code": "Level 11", "note": "Cardiology, Neurology, Surgery, etc." },
-        { "name": "Senior Resident", "code": "Level 11", "note": "Teaching hospital, 3-year tenure" }
+        {
+          "name": "Specialist (MD/MS)",
+          "code": "Level 11",
+          "note": "Cardiology, Neurology, Surgery, etc."
+        },
+        {
+          "name": "Senior Resident",
+          "code": "Level 11",
+          "note": "Teaching hospital, 3-year tenure"
+        }
       ],
       "note": "MD/MS degree. Age 21-40. NEET SS for super-specialty."
     }
@@ -85,9 +146,77 @@
     "Salary: MO ~₹56,100 (Level 10) + NPA (Non-Practicing Allowance). Nursing Officer ~₹44,900 (Level 7)."
   ],
   "syllabus": [
-    { "exam": "NEET PG", "pattern": "200 Qs, 3.5 hrs — Pre-clinical (Anatomy, Physiology, Biochemistry), Para-clinical (Pathology, Microbiology, Pharmacology), Clinical (Medicine, Surgery, OB-GYN, Pediatrics).", "link": "https://nbe.edu.in/", "books": "<a href='https://www.amazon.in/dp/9354600080?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NEET PG Guide (Amazon)</a> · <a href='https://www.flipkart.com/neet-pg-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "AIIMS NORCET (Nursing)", "pattern": "100 Qs, 90 min — Nursing fundamentals, Medical-Surgical, OB-GYN, Pediatrics, Community Health.", "link": "https://www.aiims.edu/", "books": "<a href='https://www.amazon.in/dp/9354600081?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NORCET Guide (Amazon)</a>" },
-    { "exam": "UPSC CMS", "pattern": "2 papers × 120 Qs — General Medicine, Pediatrics, Surgery, OB-GYN, Preventive & Social Medicine.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600082?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CMS Guide (Amazon)</a>" }
+    {
+      "exam": "NEET UG",
+      "pattern": "180 questions, 720 marks, 200 minutes: Physics 45, Chemistry 45, Botany 45, Zoology 45. Each question is 4 marks with a 1-mark penalty for a wrong answer. Required for MBBS, BDS, BSc Nursing and allied courses.",
+      "link": "https://neet.nta.nic.in/",
+      "topics": [
+        {
+          "group": "Physics",
+          "items": "Class 11 and 12 NCERT — mechanics, thermodynamics, oscillations and waves, electrostatics, current electricity, magnetism, optics, modern physics, electronic devices"
+        },
+        {
+          "group": "Chemistry",
+          "items": "Physical, organic and inorganic chemistry of Class 11 and 12 — mole concept, equilibrium, thermodynamics, electrochemistry, hydrocarbons, biomolecules, coordination compounds, p-block"
+        },
+        {
+          "group": "Botany",
+          "items": "Diversity in living world, plant physiology, cell structure and function, genetics and evolution, ecology and environment, biotechnology"
+        },
+        {
+          "group": "Zoology",
+          "items": "Human physiology, reproduction, genetics, evolution, human health and disease, biotechnology applications"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600080?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NEET PG Guide (Amazon)</a> · <a href='https://www.flipkart.com/neet-pg-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "NORCET — AIIMS Nursing Officer",
+      "pattern": "Computer-based test on nursing subjects, general knowledge and aptitude, held in stages as published in each NORCET notice. Shortlisting is entirely CBT-based, with no interview.",
+      "link": "https://www.aiimsexams.ac.in/",
+      "topics": [
+        {
+          "group": "Nursing",
+          "items": "Fundamentals of nursing, medical-surgical nursing, community health nursing, child health, mental health, midwifery and gynaecology, nursing management"
+        },
+        {
+          "group": "General sections",
+          "items": "Anatomy, physiology, microbiology, pharmacology, nutrition, general knowledge and current affairs, reasoning and aptitude"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600081?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NORCET Guide (Amazon)</a>"
+    },
+    {
+      "exam": "State / ESIC Staff Nurse",
+      "pattern": "State nursing officer and ESIC recruitment use a subject-based objective paper on nursing fundamentals, anatomy, physiology, community health and current affairs, followed by document verification. Marks and negative marking vary by state.",
+      "link": "https://www.esic.gov.in/",
+      "topics": [
+        {
+          "group": "Nursing subjects",
+          "items": "As per the state nursing council syllabus — fundamentals, medical-surgical, community, maternal and child health"
+        },
+        {
+          "group": "Supporting subjects",
+          "items": "Anatomy, physiology, microbiology, nutrition, first aid, hospital procedures"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600082?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CMS Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Medical Officer (NHM / state health)",
+      "pattern": "Written test or walk-in interview on clinical subjects, public health and the state health programme, as stated in the state notification. Some states use NEET PG or a state-conducted screening test.",
+      "link": "https://nhm.gov.in/",
+      "topics": [
+        {
+          "group": "Clinical",
+          "items": "General medicine, surgery, obstetrics and gynaecology, paediatrics, community medicine"
+        },
+        {
+          "group": "Public health",
+          "items": "National health programmes, immunisation, maternal and child health, health management information system"
+        }
+      ]
+    }
   ],
   "faq": [
     {
@@ -113,6 +242,28 @@
     {
       "q": "Where do I find official medical job notifications?",
       "a": "aiims.edu (AIIMS), upsc.gov.in (CMS), state health departments, esic.nic.in. SarkariJobs+ links the official notification on every listing."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "NEET — Two years, NCERT first",
+      "what": "NEET is an NCERT exam. Read NCERT Biology line by line, then Physics and Chemistry. Finish the syllabus once before joining any test series; mock scores before completion only demoralise."
+    },
+    {
+      "phase": "NEET — Practice over reading",
+      "what": "From the second half, 100 MCQs a day and one full paper a week. Biology decides the rank — attempt all 90 biology questions and keep a diagram-based revision sheet."
+    },
+    {
+      "phase": "Nursing exams — Subject revision",
+      "what": "NORCET and state nurse papers reward subject accuracy, not general knowledge. Revise fundamentals and medical-surgical nursing from one standard textbook, then solve previous NORCET papers."
+    },
+    {
+      "phase": "Nursing exams — Current affairs and aptitude",
+      "what": "Add 20 minutes of health current affairs and 30 minutes of reasoning daily. These sections separate candidates with similar nursing scores."
+    },
+    {
+      "phase": "Before applying — Registration check",
+      "what": "Confirm your state nursing council registration and eligibility date. Many candidates clear the exam and are rejected at document verification for a lapsed or out-of-state registration."
     }
   ]
 }

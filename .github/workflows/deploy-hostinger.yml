@@ -41,7 +41,12 @@ jobs:
         run: |
           if [ -n "$GA4_ID" ]; then
             if [[ ! "$GA4_ID" =~ ^G-[A-Z0-9]+$ ]]; then echo 'GA4_MEASUREMENT_ID must look like G-XXXXXXXXXX.'; exit 1; fi
-            sed -i "s/window.SARKARI_JOBS_GA_ID = '';$/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
+            # Replace whatever ID the repository currently carries, not only an
+            # empty string: the committed file holds a real ID, so the old
+            # empty-only pattern silently kept sending data to the wrong
+            # property whenever the secret changed.
+            sed -i -E "s/window\.SARKARI_JOBS_GA_ID = '[^']*';/window.SARKARI_JOBS_GA_ID = '$GA4_ID';/" js/analytics-config.js
+            grep -q "window.SARKARI_JOBS_GA_ID = '$GA4_ID';" js/analytics-config.js || { echo 'GA4 Measurement ID was not written into analytics-config.js.'; exit 1; }
           fi
       - name: Prepare deployment revision marker
         run: |

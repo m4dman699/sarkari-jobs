@@ -4,44 +4,101 @@
   "icon": "shield",
   "logo": null,
   "accent": "#c0392b",
-  "categoryMatch": ["Police"],
+  "categoryMatch": [
+    "Police"
+  ],
   "titleMatch": "\\b(police|constable|sub.?inspector|si |head constable|assistant sub.?inspector|asi |dy.?sp|dsp|inspector|police recruitment|upprpb|csbc|wb police|tnusrb)\\b",
   "stats": [
-    { "value": "28", "label": "State Police Forces" },
-    { "value": "5 Lakh+", "label": "Vacancies/Year" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "28",
+      "label": "State Police Forces"
+    },
+    {
+      "value": "5 Lakh+",
+      "label": "Vacancies/Year"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "shield", "label": "Police jobs" },
-    { "icon": "graduation-cap", "label": "10th to Graduate" },
-    { "icon": "target", "label": "Physical test" },
-    { "icon": "book-open", "label": "Written exam" },
-    { "icon": "users", "label": "Interview" },
-    { "icon": "trophy", "label": "Constable/SI" }
+    {
+      "icon": "shield",
+      "label": "Police jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "10th to Graduate"
+    },
+    {
+      "icon": "target",
+      "label": "Physical test"
+    },
+    {
+      "icon": "book-open",
+      "label": "Written exam"
+    },
+    {
+      "icon": "users",
+      "label": "Interview"
+    },
+    {
+      "icon": "trophy",
+      "label": "Constable/SI"
+    }
   ],
   "levels": [
     {
       "level": "10th Pass",
       "posts": [
-        { "name": "Constable (General Duty)", "code": "Level 3", "note": "Beat policing, patrol, law & order" },
-        { "name": "Constable (Driver)", "code": "Level 3", "note": "Vehicle operation, transport" },
-        { "name": "Constable (Tradesman)", "code": "Level 3", "note": "Carpenter, tailor, cook, barber" }
+        {
+          "name": "Constable (General Duty)",
+          "code": "Level 3",
+          "note": "Beat policing, patrol, law & order"
+        },
+        {
+          "name": "Constable (Driver)",
+          "code": "Level 3",
+          "note": "Vehicle operation, transport"
+        },
+        {
+          "name": "Constable (Tradesman)",
+          "code": "Level 3",
+          "note": "Carpenter, tailor, cook, barber"
+        }
       ],
       "note": "10th pass. Age 18–25. Physical: running 1.6km in 6 min, long jump, high jump, chest."
     },
     {
       "level": "12th Pass",
       "posts": [
-        { "name": "Head Constable", "code": "Level 4", "note": "Supervisory, station records, wireless" },
-        { "name": "Assistant Sub-Inspector (ASI)", "code": "Level 5", "note": "Investigation, station house officer" }
+        {
+          "name": "Head Constable",
+          "code": "Level 4",
+          "note": "Supervisory, station records, wireless"
+        },
+        {
+          "name": "Assistant Sub-Inspector (ASI)",
+          "code": "Level 5",
+          "note": "Investigation, station house officer"
+        }
       ],
       "note": "12th pass. Age 18–25. Physical standards + written exam."
     },
     {
       "level": "Graduate",
       "posts": [
-        { "name": "Sub-Inspector (SI)", "code": "Level 6", "note": "Station house officer, investigation" },
-        { "name": "Deputy Superintendent (Dy.SP)", "code": "Level 8", "note": "Circle officer, supervisory" }
+        {
+          "name": "Sub-Inspector (SI)",
+          "code": "Level 6",
+          "note": "Station house officer, investigation"
+        },
+        {
+          "name": "Deputy Superintendent (Dy.SP)",
+          "code": "Level 8",
+          "note": "Circle officer, supervisory"
+        }
       ],
       "note": "Any degree. Age 20–28 (SI), 21–30 (Dy.SP). Physical + written + interview."
     }
@@ -76,9 +133,77 @@
     "Inspector / Dy.SP (Level 7-8)"
   ],
   "syllabus": [
-    { "exam": "Written Exam (Constable)", "pattern": "100-200 Qs — GK, Reasoning, Numerical Ability, General Hindi/English. 0.25-0.50 negative marking.", "link": "https://uppbpb.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600040?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Police Constable Guide (Amazon)</a> · <a href='https://www.flipkart.com/police-constable-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "PET / PST", "pattern": "Running: 1.6km (men) / 800m (women). Long jump, high jump. Height: 165cm (men), 152cm (women).", "link": "https://uppbpb.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600041?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Physical Fitness Guide (Amazon)</a>" },
-    { "exam": "Written Exam (SI)", "pattern": "200 Qs — GK, Reasoning, Numerical Ability, General Hindi/English, Law. 0.25 negative marking.", "link": "https://uppbpb.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600042?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Police SI Guide (Amazon)</a>" }
+    {
+      "exam": "SSC GD Constable",
+      "pattern": "80 questions, 160 marks, 60 minutes: General Intelligence & Reasoning 20, General Knowledge & General Awareness 20, Elementary Mathematics 20, English/Hindi 20. Negative 0.25. Followed by PET/PST and medical.",
+      "link": "https://ssc.gov.in/",
+      "topics": [
+        {
+          "group": "General Intelligence & Reasoning",
+          "items": "Analogies, similarities and differences, spatial visualisation, spatial orientation, visual memory, observation, relationship concepts, arithmetical reasoning, figural classification, arithmetic number series, non-verbal series, coding-decoding, statement-conclusion"
+        },
+        {
+          "group": "General Knowledge & Awareness",
+          "items": "Current events, India and its neighbours, sports, history, culture, geography, economic scene, polity, scientific research"
+        },
+        {
+          "group": "Elementary Mathematics",
+          "items": "Number system, whole numbers, decimals and fractions, LCM and HCF, ratio and proportion, percentage, average, profit and loss, discount, mensuration, time and distance, time and work, simple interest"
+        },
+        {
+          "group": "English / Hindi",
+          "items": "Grammar, vocabulary, sentence structure, synonyms and antonyms, error spotting, comprehension"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600040?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Police Constable Guide (Amazon)</a> · <a href='https://www.flipkart.com/police-constable-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "State police constable (written)",
+      "pattern": "Most state boards use a 100-mark objective paper on reasoning, general studies, mathematics and the state language, followed by a physical efficiency test. Exact marks and negative marking are set by each state board.",
+      "link": "https://uppbpb.gov.in/",
+      "topics": [
+        {
+          "group": "General Studies",
+          "items": "Indian polity and constitution, history, geography, economy, science, current affairs, and state-specific general knowledge which carries heavy weight"
+        },
+        {
+          "group": "Reasoning and Mathematics",
+          "items": "Series, analogy, coding-decoding, direction, blood relations, percentage, ratio, average, time-work, mensuration"
+        },
+        {
+          "group": "Law awareness (SI and some constable papers)",
+          "items": "Indian Penal Code basics, CrPC basics, Evidence Act basics, police procedures and human rights"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600041?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Physical Fitness Guide (Amazon)</a>"
+    },
+    {
+      "exam": "PET / PST — physical test",
+      "pattern": "Typical state standard: 1.6 km run for men and 800 m for women within a fixed time, long jump and high jump, plus height, chest and eyesight standards. Qualifying — but it decides the final list in many states.",
+      "link": "https://uppbpb.gov.in/",
+      "topics": [
+        {
+          "group": "What is measured",
+          "items": "Endurance (run), explosive strength (long and high jump), and body measurements. Standards differ by state and by category — check your state notification"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600042?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Police SI Guide (Amazon)</a>"
+    },
+    {
+      "exam": "CAPF Assistant Commandant (UPSC)",
+      "pattern": "Paper I 250 marks, 2 hours, objective: general ability and intelligence. Paper II 200 marks, 3 hours, descriptive: essay, precis and report writing. Then PET/PST, medical and interview.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "Paper I",
+          "items": "General mental ability, general science, current events, Indian polity and economy, history, geography, security and law"
+        },
+        {
+          "group": "Paper II",
+          "items": "Essay, precis writing, report writing, grammar and comprehension"
+        }
+      ]
+    }
   ],
   "reality": [
     "Police recruitment is state-specific. Each state has its own exam, syllabus, and physical standards.",
@@ -112,6 +237,28 @@
     {
       "q": "Where do I find official police notifications?",
       "a": "State police websites (e.g., uppbpb.gov.in, csbc.bih.nic.in). SarkariJobs+ links the official notification on every listing page."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "Day one — Physical training",
+      "what": "Start the run, long jump and high jump on day one, not after the written result. Physical tests are qualifying but in many states they also decide the final merit, and fitness cannot be built in a month."
+    },
+    {
+      "phase": "Months 1–2 — Written basics",
+      "what": "Mathematics and reasoning at Class 10 level plus one general studies book. State police papers are easier than SSC but test state-specific GK heavily — get the state board's own syllabus and previous papers."
+    },
+    {
+      "phase": "Months 3–4 — Previous papers",
+      "what": "Solve the last 5–10 years of the state constable paper and SSC GD papers. Note repeated questions on state history, festivals, districts and police-related law."
+    },
+    {
+      "phase": "Month 5 — Mocks and medical",
+      "what": "Weekly full mocks with the negative-marking rule practised (skip only when you cannot eliminate two options). Check eyesight, height, chest and tattoo rules now — they are absolute disqualifications."
+    },
+    {
+      "phase": "Final month — Combined cycle",
+      "what": "Alternate written revision with physical practice. Run at the same time of day as the PET slot, and do two full timed runs a week to know your pace."
     }
   ]
 }

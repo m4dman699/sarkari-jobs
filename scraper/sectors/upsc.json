@@ -4,46 +4,111 @@
   "icon": "landmark",
   "logo": null,
   "accent": "#000080",
-  "categoryMatch": ["UPSC"],
+  "categoryMatch": [
+    "UPSC"
+  ],
   "titleMatch": "\\b(upsc|civil services|ias|ips|ifs|ies|iss|cse|nda|cds|capf|epfo|geologist|statistician)\\b",
   "stats": [
-    { "value": "24", "label": "Services" },
-    { "value": "900+", "label": "Vacancies (CSE)" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "24",
+      "label": "Services"
+    },
+    {
+      "value": "900+",
+      "label": "Vacancies (CSE)"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "landmark", "label": "UPSC jobs" },
-    { "icon": "graduation-cap", "label": "Graduate+" },
-    { "icon": "book-open", "label": "Prelims + Mains" },
-    { "icon": "users", "label": "Interview" },
-    { "icon": "target", "label": "Current affairs" },
-    { "icon": "trophy", "label": "IAS/IPS/IFS" }
+    {
+      "icon": "landmark",
+      "label": "UPSC jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "Graduate+"
+    },
+    {
+      "icon": "book-open",
+      "label": "Prelims + Mains"
+    },
+    {
+      "icon": "users",
+      "label": "Interview"
+    },
+    {
+      "icon": "target",
+      "label": "Current affairs"
+    },
+    {
+      "icon": "trophy",
+      "label": "IAS/IPS/IFS"
+    }
   ],
   "levels": [
     {
       "level": "Graduate",
       "posts": [
-        { "name": "IAS (Indian Administrative Service)", "code": "Group A", "note": "District Collector, Secretary" },
-        { "name": "IPS (Indian Police Service)", "code": "Group A", "note": "SP, DIG, IG, DGP" },
-        { "name": "IFS (Indian Foreign Service)", "code": "Group A", "note": "Ambassador, High Commissioner" },
-        { "name": "IRS (Income Tax / Customs)", "code": "Group A", "note": "Commissioner, Principal Commissioner" }
+        {
+          "name": "IAS (Indian Administrative Service)",
+          "code": "Group A",
+          "note": "District Collector, Secretary"
+        },
+        {
+          "name": "IPS (Indian Police Service)",
+          "code": "Group A",
+          "note": "SP, DIG, IG, DGP"
+        },
+        {
+          "name": "IFS (Indian Foreign Service)",
+          "code": "Group A",
+          "note": "Ambassador, High Commissioner"
+        },
+        {
+          "name": "IRS (Income Tax / Customs)",
+          "code": "Group A",
+          "note": "Commissioner, Principal Commissioner"
+        }
       ],
       "note": "Any degree. Age 21–32 (relaxations: SC/ST 5 yrs, OBC 3 yrs). 6 attempts (General)."
     },
     {
       "level": "Engineering Graduate",
       "posts": [
-        { "name": "IES (Indian Engineering Services)", "code": "Group A", "note": "Civil, Mech, Elec, Electronics" },
-        { "name": "ISS (Indian Statistical Service)", "code": "Group A", "note": "Statistics, data analysis" },
-        { "name": "I Geo S (Indian Geologist Service)", "code": "Group A", "note": "Geology, mining" }
+        {
+          "name": "IES (Indian Engineering Services)",
+          "code": "Group A",
+          "note": "Civil, Mech, Elec, Electronics"
+        },
+        {
+          "name": "ISS (Indian Statistical Service)",
+          "code": "Group A",
+          "note": "Statistics, data analysis"
+        },
+        {
+          "name": "I Geo S (Indian Geologist Service)",
+          "code": "Group A",
+          "note": "Geology, mining"
+        }
       ],
       "note": "B.E./B.Tech in relevant branch. Age 21–30 (IES). 6 attempts."
     },
     {
       "level": "Post Graduate",
       "posts": [
-        { "name": "IES (Economics)", "code": "Group A", "note": "Economic analysis, policy" },
-        { "name": "ISS (Statistics)", "code": "Group A", "note": "Statistical officer" }
+        {
+          "name": "IES (Economics)",
+          "code": "Group A",
+          "note": "Economic analysis, policy"
+        },
+        {
+          "name": "ISS (Statistics)",
+          "code": "Group A",
+          "note": "Statistical officer"
+        }
       ],
       "note": "Master's in Economics/Statistics. Age 21–30."
     }
@@ -78,9 +143,89 @@
     "Secretary / DGP / Ambassador (Level 15-17)"
   ],
   "syllabus": [
-    { "exam": "Preliminary Exam", "pattern": "Paper 1: GS (100 Qs, 200 marks, 2 hrs). Paper 2: CSAT (80 Qs, 200 marks, 2 hrs). CSAT qualifying (33%). 1/3 negative marking.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600060?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>UPSC Prelims Guide (Amazon)</a> · <a href='https://www.flipkart.com/upsc-prelims-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "Main Exam", "pattern": "9 papers: Essay (250), GS I-IV (250 each), Optional I-II (250 each), Language (qualifying). Total 1750 marks.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600061?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>UPSC Mains Guide (Amazon)</a>" },
-    { "exam": "Personality Test", "pattern": "275 marks. 4-5 member board. 30-45 min. DAF-based + current affairs + optional subject.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600062?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Interview Preparation Book (Amazon)</a>" }
+    {
+      "exam": "Prelims — General Studies Paper I",
+      "pattern": "100 questions, 200 marks, 2 hours. Negative 1/3. This is the merit paper of the prelims; the cut-off is decided by the Commission each year.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "History and Culture",
+          "items": "Ancient, medieval and modern Indian history, the freedom struggle, art and culture, post-independence consolidation"
+        },
+        {
+          "group": "Geography",
+          "items": "Physical geography of India and the world, Indian geography, economic geography, distribution of resources"
+        },
+        {
+          "group": "Polity and Governance",
+          "items": "Constitution, political system, panchayati raj, public policy, rights issues"
+        },
+        {
+          "group": "Economy and Social Development",
+          "items": "Economic and social development, sustainable development, poverty, inclusion, demographics, social sector initiatives"
+        },
+        {
+          "group": "Environment and Science",
+          "items": "Ecology, biodiversity, climate change, general science, current events of national and international importance"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600060?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>UPSC Prelims Guide (Amazon)</a> · <a href='https://www.flipkart.com/upsc-prelims-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "Prelims — CSAT (Paper II)",
+      "pattern": "80 questions, 200 marks, 2 hours. Qualifying at 33% — these marks are not counted in the merit. A low CSAT score fails candidates every year.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "Comprehension and reasoning",
+          "items": "Comprehension, interpersonal and communication skills, logical reasoning and analytical ability, decision making and problem solving"
+        },
+        {
+          "group": "Aptitude",
+          "items": "General mental ability, basic numeracy (Class 10 level), data interpretation (charts, graphs, tables)"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600061?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>UPSC Mains Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Mains — 9 papers",
+      "pattern": "Essay 250 marks; GS I to GS IV 250 marks each; Optional Paper I and II 250 each — 1750 marks counted. English and one Indian language paper of 300 marks each are qualifying at 25%.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "GS I",
+          "items": "Indian heritage and culture, history and geography of the world and society"
+        },
+        {
+          "group": "GS II",
+          "items": "Governance, constitution, polity, social justice and international relations"
+        },
+        {
+          "group": "GS III",
+          "items": "Technology, economic development, bio-diversity, environment, security and disaster management"
+        },
+        {
+          "group": "GS IV",
+          "items": "Ethics, integrity and aptitude — theory plus case studies"
+        },
+        {
+          "group": "Essay and Optional",
+          "items": "Two essays of 125 marks each; two papers in one optional subject chosen from the UPSC list"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600062?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Interview Preparation Book (Amazon)</a>"
+    },
+    {
+      "exam": "Interview — Personality Test",
+      "pattern": "275 marks. Conducted by a board on the candidate's application form, home state, education, optional subject and current affairs.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "What is assessed",
+          "items": "Mental alertness, critical powers of assimilation, clear and logical exposition, balance of judgement, variety and depth of interest, leadership and social cohesion"
+        }
+      ]
+    }
   ],
   "reality": [
     "UPSC CSE is the most competitive exam in India. 10 lakh+ applicants, ~900 vacancies. Success rate < 0.1%.",
@@ -114,6 +259,28 @@
     {
       "q": "Where do I find official UPSC notifications?",
       "a": "upsc.gov.in (main site) and upsconline.nic.in (application). SarkariJobs+ links the official notification PDF on every listing page."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "Months 1–6 — NCERT and one book per subject",
+      "what": "Read Class 6–12 NCERTs for history, geography, polity, economics and science, then one standard book per subject. One book read twice beats five books read once."
+    },
+    {
+      "phase": "Daily — Newspaper and notes",
+      "what": "One newspaper a day, with a monthly compilation for revision. Write notes only for what you will revise — most aspirants write notes they never reopen."
+    },
+    {
+      "phase": "Months 4–9 — Answer writing",
+      "what": "Start Mains answer writing early, not after the prelims. Two answers a day from previous-year questions, 150 words in 7 minutes. This is the single biggest differentiator at the mains stage."
+    },
+    {
+      "phase": "Prelims phase — PYQs and mocks",
+      "what": "Solve 10 years of prelims papers subject-wise, then 30–40 full mocks. CSAT deserves a fixed weekly slot: 33% is a low bar but two hours of reasoning without practice is how candidates fail."
+    },
+    {
+      "phase": "Final 3 months — Revision only",
+      "what": "No new material. Revise your own notes, maps, current affairs compilation and error log in cycles. Give mocks at the actual slot time and keep the last week light."
     }
   ]
 }

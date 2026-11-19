@@ -10,6 +10,7 @@
 // career ladder) is authored, and it lives in scraper/sectors/*.json.
 const fs = require('fs');
 const path = require('path');
+const { markPathFor } = require('./org-marks');
 
 const SECTORS_DIR = path.join(__dirname, 'sectors');
 const ICONS = {
@@ -115,7 +116,15 @@ function renderListings(listings, helpers) {
         : item.resultDate
           ? `Result ${escapeHTML(date(item.resultDate))}`
           : '';
+    // The authority mark, so a row is recognisable before the title is read.
+    // Where no official mark is on file the cell keeps the listing-type glyph
+    // rather than borrowing another authority's seal.
+    const mark = markPathFor(item);
+    const markCell = mark
+      ? `<img class="g-list-mark" src="../../assets/${mark}" alt="" width="28" height="28" loading="lazy" decoding="async">`
+      : `<span class="g-list-mark g-list-mark--none" aria-hidden="true">${icon(type === 'admit' ? 'book-open' : type === 'result' ? 'graduation-cap' : 'briefcase')}</span>`;
     return `<li class="g-list-row">
+${markCell}
 <span class="g-list-type g-list-type--${type}">${icon(type === 'admit' ? 'book-open' : type === 'result' ? 'graduation-cap' : 'briefcase')}<span>${escapeHTML(listingType(item))}</span></span>
 <a class="g-list-title" href="../../job-details/${slug}/">${escapeHTML(item.title)}</a>
 ${when ? `<span class="g-list-date">${when}</span>` : ''}
@@ -230,7 +239,7 @@ ${icon('shield', 'g-ic g-point-ic')}
 ${jsonLd}
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/guide.css">
+<link rel="stylesheet" href="../../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../../css/guide.css?v=20261119-guides">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -288,8 +297,9 @@ ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-
 <h2 class="g-h2">${icon('file-text', 'g-ic g-h2-ic')}Exam syllabus &amp; pattern</h2>
 <p class="g-sub">Official syllabus and exam pattern for this sector. Always verify on the recruiting authority's website.</p>
 <div class="g-syllabus">
-${(sector.syllabus || []).map(s => `<div class="g-syl-card"><h3>${escapeHTML(s.exam)}</h3><p>${escapeHTML(s.pattern)}</p>${s.link ? `<a href="${escapeHTML(s.link)}" target="_blank" rel="noopener noreferrer">Official syllabus →</a>` : ''}${s.books ? `<div class="g-syl-books"><span class="g-syl-books-label">Recommended books:</span> ${s.books}</div>` : ''}</div>`).join('\n')}
+${(sector.syllabus || []).map(s => `<div class="g-syl-card"><h3>${escapeHTML(s.exam)}</h3><p>${escapeHTML(s.pattern)}</p>${s.topics ? `<ul class="g-syl-topics">${s.topics.map(t => `<li><b>${escapeHTML(t.group)}</b> — ${escapeHTML(t.items)}</li>`).join('')}</ul>` : ''}${s.link ? `<a href="${escapeHTML(s.link)}" target="_blank" rel="noopener noreferrer">Official syllabus →</a>` : ''}${s.books ? `<div class="g-syl-books"><span class="g-syl-books-label">Recommended books:</span> ${s.books}</div>` : ''}</div>`).join('\n')}
 </div>
+${(sector.prepPlan && sector.prepPlan.length) ? `<div class="g-plan"><h3 class="g-plan-h">${icon('clock', 'g-ic g-ic--sm')} When and how to prepare</h3><ol class="g-plan-list">${sector.prepPlan.map((p, i) => `<li class="g-plan-step"><span class="g-plan-num">${i + 1}</span><div class="g-plan-body"><b>${escapeHTML(p.phase)}</b><p>${escapeHTML(p.what)}</p></div></li>`).join('')}</ol></div>` : ''}
 </section>
 
 <section class="g-block container" id="career">
@@ -318,7 +328,7 @@ ${faqHtml}
 <section class="g-block container g-attrib">
 <h2 class="g-h2">About this guide</h2>
 <p>SarkariJobs+ is an independent tracker, not a recruiting authority. The post structure, pay levels and selection stages above are summarised from published recruitment notifications for this sector; where a notification differs, the notification wins. Listing dates, vacancy counts and fees are taken from the feed and credited to the source page.</p>
-<p class="g-attrib-links">More sectors: ${loadSectors().filter(other => other.slug !== sector.slug).map(other => `<a href="${other.slug}/">${escapeHTML(other.name)}</a>`).join(' · ') || '<a href="../">all sector guides</a>'}</p>
+<p class="g-attrib-links">More sectors: ${loadSectors().filter(other => other.slug !== sector.slug).map(other => `<a href="../${other.slug}/">${escapeHTML(other.name)}</a>`).join(' · ') || '<a href="../">all sector guides</a>'}</p>
 </section>
 </main>
 
@@ -332,7 +342,7 @@ ${faqHtml}
 <li><a href="../../all-jobs.html">All listings (A–Z)</a></li>
 </ul></div>
 <div><h4>Sector guides</h4><ul>
-${loadSectors().map(other => `<li><a href="${other.slug === sector.slug ? './' : other.slug + '/'}">${escapeHTML(other.name)}</a></li>`).join('\n')}
+${loadSectors().map(other => `<li><a href="${other.slug === sector.slug ? './' : '../' + other.slug + '/'}">${escapeHTML(other.name)}</a></li>`).join('\n')}
 </ul></div>
 <div><h4>Information</h4><ul>
 <li><a href="../../about.html">About</a></li>
@@ -382,7 +392,7 @@ function renderHub(sectors, helpers) {
   }).replace(/</g, '\\u003c')}</script>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../js/analytics-config.js?v=20261022"></script><script src="../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/guide.css">
+<link rel="stylesheet" href="../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../css/guide.css?v=20261119-guides">
 </head>
 <body>
 <div class="tricolor-strip"></div>

@@ -7,8 +7,8 @@
   "categoryMatch": ["Railways"],
   "titleMatch": "\\b(railway|railways|rrb|rrc|ntpc|alp|technician|station master|group d|assistant loco pilot)\\b",
   "stats": [
-    { "value": "18", "label": "Railway Zones" },
-    { "value": "1.3M+", "label": "Employees" },
+    { "value": "21", "label": "Railway Recruitment Boards" },
+    { "value": "1.3M+", "label": "Railways employees" },
     { "value": "@liveListings", "label": "Live listings tracked" }
   ],
   "pictograms": [
@@ -17,7 +17,7 @@
     { "icon": "book-open", "label": "CBT exam" },
     { "icon": "briefcase", "label": "Govt sector" },
     { "icon": "shield", "label": "Medical fit" },
-    { "icon": "landmark", "label": "18 zones" }
+    { "icon": "landmark", "label": "21 RRBs" }
   ],
   "levels": [
     {
@@ -50,7 +50,7 @@
     {
       "level": "Graduate",
       "posts": [
-        { "name": "Station Master", "code": "Level 6", "note": "Any degree + aptitude test" },
+        { "name": "Station Master", "code": "Level 6", "note": "Any degree + Computer Based Aptitude Test (CBAT)" },
         { "name": "Goods Guard", "code": "Level 5", "note": "Any degree + document verification" },
         { "name": "Commercial / Traffic Apprentice (Graduate)", "code": "Level 6", "note": "Any degree" }
       ],
@@ -59,24 +59,24 @@
   ],
   "stages": [
     {
-      "name": "CBT 1",
-      "tests": "75 questions, 60 min. Mathematics, General Intelligence, General Science, General Awareness.",
-      "note": "Qualifying nature; score used for shortlisting to CBT 2. Negative marking 1/3."
+      "name": "CBT 1 (Computer Based Test 1)",
+      "tests": "Graduate level (NTPC): 100 questions in 90 minutes. Undergraduate level: 100 questions in 90 minutes. ALP: 75 questions in 60 minutes.",
+      "note": "Qualifying in nature; the normalised score shortlists candidates to CBT 2. Negative marking 1/3."
     },
     {
-      "name": "CBT 2",
-      "tests": "75 questions, 60 min. Same subjects, higher difficulty. Trade-relevant questions for Technician.",
-      "note": "Merit prepared from CBT 2 normalized score."
+      "name": "CBT 2 (Computer Based Test 2)",
+      "tests": "Graduate level (NTPC): 120 questions in 90 minutes. ALP Part 2: 125 trade-specific questions.",
+      "note": "Merit is prepared from the normalised CBT 2 score. ALP Part 2 must be qualified along with Part 1."
     },
     {
       "name": "Typing / Skill Test",
-      "tests": "Typing: 30 wpm English / 25 wpm Hindi (10 min). Trade test for Technician as per trade syllabus.",
-      "note": "Qualifying only; does not add to merit."
+      "tests": "Typing: 30 wpm English or 25 wpm Hindi, 10 minutes. Trade test for Technician as per the published trade syllabus.",
+      "note": "Qualifying only — does not add to merit."
     },
     {
-      "name": "CBAT (Station Master)",
-      "tests": "5 test batteries: memory, attention, spatial, reasoning, psychomotor. 90 min total.",
-      "note": "Qualifying. Only for Station Master candidates who clear CBT 2."
+      "name": "CBAT (Station Master / Goods Guard)",
+      "tests": "Five test batteries totalling about 90 minutes: memory, attention, perceptual speed, spatial visualisation, psychomotor.",
+      "note": "Qualifying. Only for Station Master and Goods Guard candidates who clear CBT 2."
     },
     {
       "name": "Document Verification + Medical",
@@ -92,43 +92,119 @@
     "Assistant Divisional Engineer / Divisional Engineer (Level 8–10)"
   ],
   "syllabus": [
-    { "exam": "CBT 1 (All posts)", "pattern": "75 Qs, 60 min — Mathematics, General Intelligence & Reasoning, General Science, General Awareness. 1/3 negative marking.", "link": "https://rrb.indianrailways.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600000?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>RRB NTPC Guide (Amazon)</a> · <a href='https://www.flipkart.com/rrb-ntpc-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "CBT 2 (NTPC/Group D)", "pattern": "75 Qs, 60 min — same subjects, higher difficulty. Normalized scoring across shifts.", "link": "https://rrb.indianrailways.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600001?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>RRB Group D Guide (Amazon)</a> · <a href='https://www.flipkart.com/rrb-group-d-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "Typing Test", "pattern": "30 wpm English / 25 wpm Hindi, 10 min. Qualifying only.", "link": "https://rrb.indianrailways.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600002?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Typing Practice Book (Amazon)</a>" },
-    { "exam": "CBAT (Station Master)", "pattern": "5 batteries: memory, attention, spatial, reasoning, psychomotor. 90 min total.", "link": "https://rrb.indianrailways.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600003?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Psychometric Test Guide (Amazon)</a>" }
+    {
+      "exam": "CBT 1 — Graduate level (NTPC)",
+      "pattern": "100 Qs, 90 min. General Awareness 40, Mathematics 30, General Intelligence & Reasoning 30. Negative marking 1/3.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "Mathematics", "items": "Number system, BODMAS, decimals, fractions, LCM/HCF, ratio & proportion, percentages, mensuration, time & work, time & distance, simple & compound interest, profit & loss, algebra, geometry, trigonometry, elementary statistics, calendar & clock, pipes & cistern" },
+        { "group": "General Intelligence & Reasoning", "items": "Analogies, number & alphabetical series, coding-decoding, mathematical operations, similarities & differences, syllogism, jumbling, Venn diagrams, puzzle, data sufficiency, statement-conclusion, statement-courses of action, decision making, maps, interpretation of graphs" },
+        { "group": "General Awareness", "items": "Current events of national and international importance, Indian history and freedom struggle, art & culture of India, monuments and places of India, Indian polity and governance, geography and economic scene, environmental issues, general science and life science, UN and world organisations, basics of computers" },
+        { "group": "General Science", "items": "Physics, Chemistry and Life Sciences up to 10th standard CBSE level" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600000?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>RRB NTPC Guide (Amazon)</a> · <a href='https://www.flipkart.com/rrb-ntpc-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "CBT 1 — Undergraduate level (NTPC)",
+      "pattern": "100 Qs, 90 min. General Awareness 40, Mathematics 30, General Intelligence & Reasoning 30. Negative marking 1/3.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "Mathematics", "items": "Same syllabus as graduate level but pitched at 10+2 standard: arithmetic, percentages, profit-loss, ratio, time-work, time-distance, simple interest, mensuration basics" },
+        { "group": "General Intelligence & Reasoning", "items": "Analogies, series, coding-decoding, odd one out, alphabetical series, syllogism, Venn diagrams, puzzle, data sufficiency" },
+        { "group": "General Awareness", "items": "Current affairs, Indian history, geography, polity, general science, sports, art & culture, environmental issues" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600005?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>RRB NTPC Undergrad Guide (Amazon)</a>"
+    },
+    {
+      "exam": "ALP & Technician — Part 1",
+      "pattern": "75 Qs, 60 min. Mathematics 20, General Intelligence & Reasoning 25, Basic Science & Engineering 25, General Awareness 5. Negative marking 1/3.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "Mathematics", "items": "Elementary mathematics, geometry, trigonometry, mensuration, measurement, ratios, percentages" },
+        { "group": "Basic Science & Engineering", "items": "Elementary physics and chemistry, engineering drawing basics, workshop calculations, IT literacy, energy conversion, environment, industrial safety" },
+        { "group": "General Intelligence & Reasoning", "items": "Analogies, series, coding-decoding, spatial reasoning, mechanical reasoning basics" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600004?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>ALP & Technician Guide (Amazon)</a>"
+    },
+    {
+      "exam": "ALP & Technician — Part 2 (trade)",
+      "pattern": "125 Qs, 60 min, branch-specific technical questions for the trade applied under. Qualifying in a combined ratio with Part 1.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "Trade subjects", "items": "Branch-specific trade theory and practice exactly as published in the CEN for the ITI trade — e.g. for Fitter: fitting tools, measurement, workshop practice; for Electrician: electrical machines, wiring, safety" },
+        { "group": "Qualifying ratio", "items": "Part 1 and Part 2 marks are combined in the ratio published in the notification to prepare the merit list" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600006?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>ALP Technician Part 2 (Amazon)</a>"
+    },
+    {
+      "exam": "CBT 2 — Graduate level (NTPC)",
+      "pattern": "120 Qs, 90 min. General Awareness 50, Mathematics 35, General Intelligence & Reasoning 35. Merit comes from normalised CBT 2.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "General Awareness", "items": "Deeper current affairs, Indian polity and governance, Indian economy, history and culture, general science and environment, computers" },
+        { "group": "Mathematics", "items": "Higher-difficulty mensuration, time-work-distance, compound interest, algebra, geometry, trigonometry, statistics" },
+        { "group": "Reasoning", "items": "Higher-difficulty puzzles, seating arrangement, syllogism, data sufficiency, coding-decoding" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600001?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>RRB NTPC CBT 2 Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Typing / Skill Test (qualifying)",
+      "pattern": "Typing: 30 wpm English or 25 wpm Hindi, 10 minutes. Trade test for Technician as per published trade syllabus.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "Typing", "items": "Speed and accuracy only — no syllabus text is tested" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600002?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Typing Speed Practice (Amazon)</a>"
+    },
+    {
+      "exam": "CBAT — Station Master & Goods Guard",
+      "pattern": "Computer Based Aptitude Test, about 90 minutes across five test batteries. Qualifying.",
+      "link": "https://rrb.indianrailways.gov.in/",
+      "topics": [
+        { "group": "Batteries", "items": "Memory test, attention test, perceptual speed test, spatial visualisation test, psychomotor test" }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600003?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>Psychometric / CBAT Practice (Amazon)</a>"
+    }
+  ],
+  "prepPlan": [
+    { "phase": "Start the notification date is announced — Months 1–2", "what": "Do Class 9–10 NCERT Maths and Science first: that is exactly the level of General Science and most Maths questions. Add 30 minutes of GK daily (one newspaper plus one yearbook). Finish one textbook rather than starting five." },
+    { "phase": "Months 3–4 — Topic-wise practice", "what": "Move to reasoning type by type, leaving puzzles for last since they take the longest. Learn Maths shortcuts for percentages, interest, time-work and mensuration. Give a chapter-wise test after every topic." },
+    { "phase": "Month 5 — Speed and accuracy", "what": "One full timed CBT-1 mock every week. RRB gives about 54 seconds per question, so your target is under 55 seconds. Analyse every mock for silly mistakes — fixing errors alone moves cut-off marks more than new topics." },
+    { "phase": "Month 6 — Revision cycle", "what": "Two mocks a week plus a small revision notebook of formulae, GK facts and your own error log. Re-read the error log every week; it is the highest-return revision material you have." },
+    { "phase": "Final 2 weeks — Exam simulation", "what": "Give mocks at the actual slot time so your body clock matches the exam. Stop new topics. Practise typing 15 minutes a day if the post needs the skill test, and start basic fitness because medical standards will be applied after the written stages." }
   ],
   "reality": [
-    "RRB notifications come in cycles (CEN). A single CEN advertises 10,000–100,000+ posts across zones.",
-    "CBT 1 is qualifying — clearing it does not guarantee a job. 5–10× the vacancies are called for CBT 2.",
-    "Trade test for Technician is hands-on; many who clear CBT 2 fail the practical.",
-    "Station Master CBAT is unique — no books prepare you. Practice with railway psychometric apps.",
-    "Medical standard is strict. Colour blindness knocks out Signal/Tele; BMI limits for heavy trades.",
-    "Zones publish their own panels after the centralised RRB merit. No inter-zone transfer in first posting."
+    "RRB recruitment runs on centralised employment notices (CEN). A single CEN can advertise tens of thousands of posts across the 21 RRBs.",
+    "CBT 1 is qualifying — clearing it does not guarantee a job. Several times the number of vacancies are called for CBT 2.",
+    "ALP Part 2 is trade-specific: non-ITI candidates fail it even with a good Part 1 score.",
+    "Station Master CBAT has no textbook preparation. Only timed psychometric practice helps.",
+    "Medical standards are strict. Colour vision rules out signal and telecom posts; BMI limits apply to some trades.",
+    "RRBs publish their own panels after centralised merit. You apply to one RRB per notice."
   ],
   "faq": [
     {
-      "q": "How many Railway zones and RRBs are there?",
-      "a": "18 Railway zones, each with a Railway Recruitment Board (RRB). RRBs conduct centralised exams (CEN) for Group C/D posts; zones do final panel and appointment."
+      "q": "How many Railway Recruitment Boards are there?",
+      "a": "21 Railway Recruitment Boards (RRBs), coordinated by the Railway Recruitment Control Board (RRCB) under the Railway Board, Ministry of Railways. Each RRB covers a group of zones. Confirm the current list at rrcb.gov.in."
     },
     {
       "q": "Can a 10th pass apply for Technician posts?",
-      "a": "No. Technician requires ITI/NCVT in the specific trade. 10th pass applies for Group D (Level 1) posts like Track Maintainer, Pointsman, Helper."
+      "a": "No. Technician requires an ITI/NCVT certificate in the specific trade, and ALP requires the same or a diploma. A 10th pass applies for Level 1 posts such as Track Maintainer, Assistant Pointsman and Helper."
     },
     {
       "q": "What is the difference between RRB NTPC and RRB Group D?",
-      "a": "NTPC = Non-Technical Popular Categories (graduate/12th posts: Clerk, Station Master, Goods Guard, Typist). Group D = Level 1 posts (Track Maintainer, Helper, Pointsman). Separate CENs, separate exams."
+      "a": "NTPC (Non-Technical Popular Categories) covers graduate and 12th-pass commercial and operating posts — Clerk, Station Master, Goods Guard, Typist. Group D covers Level 1 posts such as Track Maintainer, Helper and Pointsman. They are advertised in separate notices with separate exams."
     },
     {
       "q": "Is there negative marking in RRB exams?",
-      "a": "Yes, 1/3 mark deducted per wrong answer in both CBT 1 and CBT 2. No negative marking in typing test, trade test, or CBAT."
+      "a": "Yes. One-third of a mark is deducted per wrong answer in the computer based tests. There is no negative marking in the typing test, trade test or CBAT."
     },
     {
       "q": "Where do I find the official RRB notification?",
-      "a": "Each RRB website (e.g., rrbmumbai.gov.in, rrbchennai.gov.in) and the central portal rrb.indianrailways.gov.in. SarkariJobs+ links the official PDF on every listing page."
+      "a": "Each RRB website (for example rrbmumbai.gov.in, rrbchennai.gov.in), the central portal rrb.indianrailways.gov.in, and the coordinator rrcb.gov.in. SarkariJobs+ links the official PDF on every listing page."
     },
     {
       "q": "Can I choose my zone?",
-      "a": "You apply to one RRB (zone) per notification. Preference is for that zone. Inter-zone transfers are not allowed in the first appointment."
+      "a": "You apply to one RRB per notice and your preference is within that board's zone group. The merit and panel are centralised, and the posting is made by the zone from its own vacancy list."
     }
   ]
 }

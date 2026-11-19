@@ -2,48 +2,118 @@
   "slug": "defence",
   "name": "Defence",
   "icon": "shield",
-  "logo": { "src": "assets/logos/indian-air-force-logo.png", "alt": "Indian Defence Services", "width": 380, "height": 190 },
+  "logo": {
+    "src": "assets/logos/indian-air-force-logo.png",
+    "alt": "Indian Defence Services",
+    "width": 380,
+    "height": 190
+  },
   "accent": "#138808",
-  "categoryMatch": ["Defence"],
+  "categoryMatch": [
+    "Defence"
+  ],
   "titleMatch": "\\b(defence|defense|army|navy|air force|agniveer|agnipath|nda|cds|coast guard|border security|bsf|crpf|cisf|ssb|itarbp)\\b",
   "stats": [
-    { "value": "3", "label": "Armed Forces" },
-    { "value": "5", "label": "Paramilitary Forces" },
-    { "value": "@liveListings", "label": "Live listings tracked" }
+    {
+      "value": "3",
+      "label": "Armed Forces"
+    },
+    {
+      "value": "5",
+      "label": "Paramilitary Forces"
+    },
+    {
+      "value": "@liveListings",
+      "label": "Live listings tracked"
+    }
   ],
   "pictograms": [
-    { "icon": "shield", "label": "Defence jobs" },
-    { "icon": "graduation-cap", "label": "10th to Graduate" },
-    { "icon": "book-open", "label": "Written exam" },
-    { "icon": "users", "label": "SSB interview" },
-    { "icon": "check-circle", "label": "Medical fit" },
-    { "icon": "trophy", "label": "Officer/Sepoy" }
+    {
+      "icon": "shield",
+      "label": "Defence jobs"
+    },
+    {
+      "icon": "graduation-cap",
+      "label": "10th to Graduate"
+    },
+    {
+      "icon": "book-open",
+      "label": "Written exam"
+    },
+    {
+      "icon": "users",
+      "label": "SSB interview"
+    },
+    {
+      "icon": "check-circle",
+      "label": "Medical fit"
+    },
+    {
+      "icon": "trophy",
+      "label": "Officer/Sepoy"
+    }
   ],
   "levels": [
     {
       "level": "10th Pass",
       "posts": [
-        { "name": "Agniveer (Army, Navy, Air Force)", "code": "Level 1-3", "note": "4-year service, 25% retained" },
-        { "name": "Constable / Rifleman / Sepoy", "code": "Level 3", "note": "SSC GD, CAPF, State Police" },
-        { "name": "Tradesman Mate", "code": "Level 1", "note": "Support roles, workshop, stores" }
+        {
+          "name": "Agniveer (Army, Navy, Air Force)",
+          "code": "Level 1-3",
+          "note": "4-year service, 25% retained"
+        },
+        {
+          "name": "Constable / Rifleman / Sepoy",
+          "code": "Level 3",
+          "note": "SSC GD, CAPF, State Police"
+        },
+        {
+          "name": "Tradesman Mate",
+          "code": "Level 1",
+          "note": "Support roles, workshop, stores"
+        }
       ],
       "note": "10th pass + physical standards. Age 17.5–21 (Agniveer). Physical: running, push-ups, pull-ups."
     },
     {
       "level": "12th Pass",
       "posts": [
-        { "name": "NDA (National Defence Academy)", "code": "Officer", "note": "Graduate + military training, 3-year" },
-        { "name": "CDS (Combined Defence Services)", "code": "Officer", "note": "Graduate entry, IMA/OTA/INA/AFA" },
-        { "name": "AFCAT (Air Force Common Admission)", "code": "Officer", "note": "Flying, Ground Duty (Tech/Non-Tech)" }
+        {
+          "name": "NDA (National Defence Academy)",
+          "code": "Officer",
+          "note": "Graduate + military training, 3-year"
+        },
+        {
+          "name": "CDS (Combined Defence Services)",
+          "code": "Officer",
+          "note": "Graduate entry, IMA/OTA/INA/AFA"
+        },
+        {
+          "name": "AFCAT (Air Force Common Admission)",
+          "code": "Officer",
+          "note": "Flying, Ground Duty (Tech/Non-Tech)"
+        }
       ],
       "note": "12th pass with Physics & Maths for NDA/AFCAT (Flying). Age 16.5–19.5 for NDA."
     },
     {
       "level": "Graduate",
       "posts": [
-        { "name": "Indian Army Officer (SSB)", "code": "Officer", "note": "CDS, TGC, SSC (Tech/Non-Tech)" },
-        { "name": "Indian Navy Officer", "code": "Officer", "note": "CDS, INET, SSC" },
-        { "name": "Indian Air Force Officer", "code": "Officer", "note": "AFCAT, NCC Special Entry" }
+        {
+          "name": "Indian Army Officer (SSB)",
+          "code": "Officer",
+          "note": "CDS, TGC, SSC (Tech/Non-Tech)"
+        },
+        {
+          "name": "Indian Navy Officer",
+          "code": "Officer",
+          "note": "CDS, INET, SSC"
+        },
+        {
+          "name": "Indian Air Force Officer",
+          "code": "Officer",
+          "note": "AFCAT, NCC Special Entry"
+        }
       ],
       "note": "Any degree. SSB interview (5 days). Age 19–25. Height: 157cm (men), 152cm (women)."
     }
@@ -78,10 +148,90 @@
     "Commissioned Officer (Level 10+)"
   ],
   "syllabus": [
-    { "exam": "NDA Written", "pattern": "Paper 1: Maths (120 Qs, 300 marks, 2.5 hrs). Paper 2: GAT (150 Qs, 600 marks, 2.5 hrs). 1/3 negative marking.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600020?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NDA Guide (Amazon)</a> · <a href='https://www.flipkart.com/nda-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>" },
-    { "exam": "CDS Written", "pattern": "English (120 Qs), GK (120 Qs), Maths (100 Qs). 2 hrs each. 1/3 negative marking.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600021?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CDS Guide (Amazon)</a>" },
-    { "exam": "AFCAT", "pattern": "100 Qs, 2 hrs — GK, Verbal Ability, Numerical Ability, Reasoning, Military Aptitude. 1/3 negative marking.", "link": "https://afcat.cdac.in/", "books": "<a href='https://www.amazon.in/dp/9354600022?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>AFCAT Guide (Amazon)</a>" },
-    { "exam": "SSB Interview", "pattern": "5-day: Stage 1 (OIR + PPDT), Stage 2 (Psychology, GTO, Interview, Conference). Personality assessment.", "link": "https://upsc.gov.in/", "books": "<a href='https://www.amazon.in/dp/9354600023?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSB Interview Guide (Amazon)</a>" }
+    {
+      "exam": "NDA — UPSC written",
+      "pattern": "Mathematics 120 questions / 300 marks, 2.5 hours. General Ability Test 150 questions / 600 marks, 2.5 hours. Negative 1/3. SSB interview of 900 marks follows the written test.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "Mathematics",
+          "items": "Sets and functions, quadratic equations, matrices and determinants, trigonometry, analytical geometry (2D and 3D), differential and integral calculus, vectors, statistics and probability"
+        },
+        {
+          "group": "GAT — English",
+          "items": "Grammar and usage, vocabulary, synonyms and antonyms, comprehension, cloze, sentence ordering"
+        },
+        {
+          "group": "GAT — General Knowledge",
+          "items": "Physics, chemistry and general science at Class 9–10 level, history and freedom struggle, geography, current events"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600020?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>NDA Guide (Amazon)</a> · <a href='https://www.flipkart.com/nda-guide/p/BOOKID?affid=sarkarijobsplus' target='_blank' rel='noopener sponsored'>Flipkart</a>"
+    },
+    {
+      "exam": "CDS — UPSC written",
+      "pattern": "English 120 questions / 100 marks, 2 hours. General Knowledge 120 questions / 100 marks, 2 hours. Elementary Mathematics 100 questions / 100 marks, 2 hours. Negative 1/3.",
+      "link": "https://upsc.gov.in/",
+      "topics": [
+        {
+          "group": "English",
+          "items": "Comprehension, error spotting, sentence improvement, ordering of words and sentences, fill in the blanks, antonyms and synonyms"
+        },
+        {
+          "group": "General Knowledge",
+          "items": "Current affairs, history, geography, polity, economy, general science, defence-related current events"
+        },
+        {
+          "group": "Elementary Mathematics",
+          "items": "Number system, HCF and LCM, ratio and proportion, percentage, profit and loss, time and work, time and distance, mensuration, algebra, trigonometry, statistics"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600021?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>CDS Guide (Amazon)</a>"
+    },
+    {
+      "exam": "AFCAT — Air Force",
+      "pattern": "100 questions, 300 marks, 2 hours, covering General Awareness, Verbal Ability in English, Numerical Ability and Reasoning & Military Aptitude. Negative 1 mark per wrong answer.",
+      "link": "https://afcat.cdac.in/",
+      "topics": [
+        {
+          "group": "Verbal Ability",
+          "items": "Comprehension, error detection, sentence completion, synonyms and antonyms"
+        },
+        {
+          "group": "Numerical and Reasoning",
+          "items": "Arithmetic, number series, analogy, odd one out, coding-decoding, spatial reasoning, military aptitude (pattern and figure based)"
+        },
+        {
+          "group": "General Awareness",
+          "items": "Defence, sports, current affairs, history, geography, polity, basic science"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600022?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>AFCAT Guide (Amazon)</a>"
+    },
+    {
+      "exam": "Agniveer — Army CEE",
+      "pattern": "50 questions, 100 marks, 45 minutes: General Knowledge 15, General Science 15, Mathematics 10, Computer 10. Followed by the physical fitness test and medical examination.",
+      "link": "https://joinindianarmy.nic.in/",
+      "topics": [
+        {
+          "group": "General Knowledge",
+          "items": "Current affairs, sports, awards, Indian history and geography, defence"
+        },
+        {
+          "group": "General Science",
+          "items": "Physics, chemistry and biology at Class 8–10 level"
+        },
+        {
+          "group": "Mathematics",
+          "items": "Arithmetic, percentage, average, ratio, mensuration, simple interest"
+        },
+        {
+          "group": "Computer",
+          "items": "Basic computer knowledge, MS Office, internet and email"
+        }
+      ],
+      "books": "<a href='https://www.amazon.in/dp/9354600023?tag=sarkarijobsplus-21' target='_blank' rel='noopener sponsored'>SSB Interview Guide (Amazon)</a>"
+    }
   ],
   "reality": [
     "Agniveer is a 4-year contract. Only 25% are retained for 15 more years. Plan for civilian career after.",
@@ -115,6 +265,28 @@
     {
       "q": "Where do I find official defence notifications?",
       "a": "joinindianarmy.nic.in (Army), joinindiannavy.gov.in (Navy), indianairforce.nic.in (Air Force), upsc.gov.in (NDA/CDS), afcat.cdac.in (AFCAT). SarkariJobs+ links the official PDF on every listing."
+    }
+  ],
+  "prepPlan": [
+    {
+      "phase": "3–4 months out — Written base",
+      "what": "NDA and CDS mathematics is Class 11–12 level, so work from NCERT plus one practice book rather than only guides. Keep English daily: it is the fastest section to raise and it also decides your SSB performance."
+    },
+    {
+      "phase": "Parallel — General Knowledge habit",
+      "what": "One newspaper plus one monthly compilation, and Class 9–10 science revision. Defence current affairs (exercises, acquisitions, appointments) are asked every year and are not in school books."
+    },
+    {
+      "phase": "8–10 weeks out — Previous years",
+      "what": "Solve the last 10 years of NDA or CDS papers topic-wise. UPSC repeats concepts and sometimes questions. Add one full mock a week under exam timing."
+    },
+    {
+      "phase": "Day one — Physical standards, not after the result",
+      "what": "Start running 2.4 km, push-ups and sit-ups now. Physical and medical tests eliminate more candidates than the written exam, and eyesight and tattoo rules cannot be fixed at the last minute."
+    },
+    {
+      "phase": "After the written — SSB immediately",
+      "what": "SSB is 900 marks and decides selection. Begin group discussion, current affairs, honest self-appraisal and the psychological questionnaire habit before the result, because the SSB window is short."
     }
   ]
 }
