@@ -19,11 +19,11 @@ jobs:
   deploy:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
-    # 819 detail directories upload at roughly 2.2 s per directory, so a single
-    # shard needs about 15.5 minutes. The old 20-minute job cap with a
-    # 15-minute upload step cut the upload off mid-list: deployment-version.txt
-    # had already landed, the run failed, and the tail of each shard 404ed.
-    timeout-minutes: 35
+    # SFTP is latency-bound: one directory costs about 3.4 s, so 258 directories
+    # plus the site files take roughly 21 minutes. A 22-minute upload step left
+    # under a minute of slack (run 44570922814 used 20m53s of 22m) and will
+    # overrun as the feed grows, which is how the earlier truncation happened.
+    timeout-minutes: 45
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
       DEPLOY_SHA: ${{ github.sha }}
@@ -74,7 +74,7 @@ jobs:
             if (( index % 2 == 0 )); then cp -R "${detail_dirs[$index]}" .deploy-shard-a/; fi
           done
       - name: Upload only public site files over SFTP
-        timeout-minutes: 22
+        timeout-minutes: 32
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}
@@ -91,7 +91,7 @@ jobs:
   deploy-detail-shard-b:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
-    timeout-minutes: 35
+    timeout-minutes: 45
     env:
       SFTP_REMOTE_DIR: /home/${{ secrets.HOSTINGER_SFTP_USER }}/domains/sarkarijobsplus.com/public_html
     steps:
@@ -117,7 +117,7 @@ jobs:
             if [ -z "${!key}" ]; then echo "Missing deployment setting for $key."; exit 1; fi
           done
       - name: Upload second half of detail pages over SFTP
-        timeout-minutes: 22
+        timeout-minutes: 32
         uses: Dylan700/sftp-upload-action@5108b43b1cd4d60abd1982edb4c7159ece875c44 # v1.2.5
         with:
           server: ${{ secrets.HOSTINGER_SFTP_HOST }}
