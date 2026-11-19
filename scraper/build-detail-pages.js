@@ -186,7 +186,8 @@ function faqFor(item, kind, names) {
 }
 
 function summaryFor(item, kind) {
-  const organization = escapeHTML(item.organization || 'the recruiting authority');
+  const namedOrganization = String(item.organization || '').replace(/\s+/g, ' ').trim();
+  const organization = escapeHTML(namedOrganization || 'the recruiting authority');
   const type = typeOf(item);
   if (type === 'job') {
     const facts = [
@@ -194,7 +195,13 @@ function summaryFor(item, kind) {
       item.openDate ? `applications opened ${date(item.openDate)}` : '',
       item.lastDate ? `the listed deadline is ${date(item.lastDate)}` : ''
     ].filter(Boolean).join('; ');
-    return `${organization} recruitment${facts ? `: ${facts}` : ''}. Check the authority notice for the complete post-wise requirements and application instructions.`;
+    // Records without a named authority used to read "the recruiting authority
+    // recruitment:", so the sentence is only possessive when there is a name.
+    const lead = namedOrganization ? `${organization} recruitment` : 'This notice';
+    if (!facts) {
+      return `${lead} does not state a deadline or vacancy count in the source feed. Check the authority notice for the complete post-wise requirements and application instructions.`;
+    }
+    return `${lead}${namedOrganization ? ':' : ' records that'} ${facts}. Check the authority notice for the complete post-wise requirements and application instructions.`;
   }
   if (type === 'admit') {
     return `${escapeHTML(item.title)} is an examination update from ${organization}. Confirm the exam schedule and candidate instructions on the authority portal before downloading.`;
@@ -722,9 +729,12 @@ for (const record of retiredRecords) {
   // the reader is sent to a current page, so nothing is lost.
   if (match) { stubs.push({ slug: record.slug, kind: 'duplicate', target: match.slug }); continue; }
 
+  // Once a page has been retired there is nothing left to count: letting the
+  // counter climb forever made every rebuild rewrite retired-state.json (24 →
+  // 25 → 26 …) and put a meaningless diff in each deploy commit.
   const count = shrunken
     ? (retiredState[record.slug] || 0) // hold, do not advance
-    : (retiredState[record.slug] || 0) + 1;
+    : Math.min((retiredState[record.slug] || 0) + 1, ABSENCE_BUILDS_BEFORE_RETIREMENT);
   nextRetiredState[record.slug] = count;
   if (count >= ABSENCE_BUILDS_BEFORE_RETIREMENT) stubs.push({ slug: record.slug, kind: 'gone' });
   else pending.push(record.slug);
