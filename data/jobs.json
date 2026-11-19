@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-18T10:13:19.359Z",
-  "jobsGeneratedAt": "2026-11-18T10:13:17.916Z",
+  "generatedAt": "2026-11-19T10:24:47.360Z",
+  "jobsGeneratedAt": "2026-11-19T10:24:23.470Z",
   "partial": true,
-  "total": 656,
+  "total": 672,
   "quality": {
     "jobsMissingPublicationDate": 57,
-    "jobsMissingClosingDate": 80,
+    "jobsMissingClosingDate": 82,
     "genericNavigationItems": 0
   },
   "errors": [
@@ -17,11 +17,16 @@
     {
       "source": "IBPS",
       "url": "https://www.ibps.in/",
-      "error": "write EPROTO C00C6D65957E0000:error:0A0000F4:SSL routines:ssl3_read_bytes:unexpected message:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1538:\n"
+      "error": "write EPROTO C0AC735256700000:error:0A0000F4:SSL routines:ssl3_read_bytes:unexpected message:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1538:\n"
     },
     {
       "source": "UPSC",
       "url": "https://upsc.gov.in/whats-new",
+      "error": "timeout"
+    },
+    {
+      "source": "Railway Recruitment Boards",
+      "url": "https://rrb.indianrailways.gov.in/",
       "error": "timeout"
     },
     {
@@ -30,14 +35,14 @@
       "error": "timeout"
     },
     {
-      "source": "Railway Recruitment Boards",
-      "url": "https://rrb.indianrailways.gov.in/",
-      "error": "The operation was aborted"
-    },
-    {
       "source": "Indian Navy",
       "url": "https://www.joinindiannavy.gov.in/",
       "error": "timeout"
+    },
+    {
+      "source": "NVS",
+      "url": "https://navodaya.gov.in/",
+      "error": ""
     },
     {
       "source": "CBSE/CTET",
@@ -50,6 +55,11 @@
       "error": "HTTP 403"
     },
     {
+      "source": "Supreme Court of India",
+      "url": "https://www.sci.gov.in/recruitments/",
+      "error": "HTTP 403"
+    },
+    {
       "source": "Indian Air Force",
       "url": "https://indianairforce.nic.in/",
       "error": "timeout"
@@ -58,16 +68,6 @@
       "source": "SAIL",
       "url": "https://sail.co.in/web/careers",
       "error": "unable to verify the first certificate"
-    },
-    {
-      "source": "Supreme Court of India",
-      "url": "https://www.sci.gov.in/recruitments/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "NVS",
-      "url": "https://navodaya.gov.in/",
-      "error": "timeout"
     },
     {
       "source": "NIC e-Pariksha",
@@ -90,23 +90,18 @@
       "error": "timeout"
     },
     {
-      "source": "TNPSC",
-      "url": "https://www.tnpsc.gov.in/",
-      "error": "HTTP 500"
-    },
-    {
       "source": "KPSC",
       "url": "https://kpsc.kar.nic.in/",
       "error": "Parse Error: Invalid header token"
     },
     {
-      "source": "MPPSC",
-      "url": "https://mppsc.mp.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "WBPSC",
       "url": "https://wbpsc.gov.in/",
+      "error": "The operation was aborted"
+    },
+    {
+      "source": "MPPSC",
+      "url": "https://mppsc.mp.gov.in/",
       "error": "timeout"
     },
     {
@@ -115,9 +110,9 @@
       "error": ""
     },
     {
-      "source": "Kerala PSC",
-      "url": "https://www.keralapsc.gov.in/",
-      "error": "timeout"
+      "source": "HPPSC",
+      "url": "https://hppsc.hp.gov.in/",
+      "error": "write EPROTO C0AC735256700000:error:0A000152:SSL routines:final_renegotiate:unsafe legacy renegotiation disabled:../deps/openssl/openssl/ssl/statem/extensions.c:844:\n"
     },
     {
       "source": "APPSC",
@@ -125,23 +120,8 @@
       "error": "timeout"
     },
     {
-      "source": "TGPSC",
-      "url": "https://www.tgpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "HPPSC",
-      "url": "https://hppsc.hp.gov.in/",
-      "error": "timeout"
-    },
-    {
       "source": "HPSC/HSSC",
       "url": "https://hpsc.gov.in/",
-      "error": "timeout"
-    },
-    {
-      "source": "HPSC/HSSC",
-      "url": "https://hssc.gov.in/",
       "error": "timeout"
     },
     {
@@ -170,14 +150,14 @@
       "error": "timeout"
     },
     {
-      "source": "APSC",
-      "url": "https://apsc.nic.in/",
-      "error": "timeout"
-    },
-    {
       "source": "Goa PSC",
       "url": "https://gpsc.goa.gov.in/",
       "error": "HTTP 403"
+    },
+    {
+      "source": "APSC",
+      "url": "https://apsc.nic.in/",
+      "error": "The operation was aborted"
     },
     {
       "source": "JKPSC",
@@ -205,13 +185,13 @@
       "error": "The operation was aborted"
     },
     {
-      "source": "WB Police",
-      "url": "https://wbpolice.gov.in/",
+      "source": "CSBC (Bihar Police)",
+      "url": "https://csbc.bih.nic.in/",
       "error": "timeout"
     },
     {
-      "source": "CSBC (Bihar Police)",
-      "url": "https://csbc.bih.nic.in/",
+      "source": "WB Police",
+      "url": "https://wbpolice.gov.in/",
       "error": "timeout"
     },
     {
@@ -223,21 +203,6 @@
       "source": "TNUSRB",
       "url": "https://www.tnusrb.tn.gov.in/",
       "error": "timeout"
-    },
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/latestjob/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/admitcard/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/result/",
-      "error": "HTTP 403"
     }
   ],
   "jobs": [
@@ -398,7 +363,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/force/ssb-hc-ministerial-jul21/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-14",
       "openDate": "2021-07-24",
       "lastDate": "2021-08-22",
@@ -1604,7 +1569,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-advt-11-2023/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-08",
       "openDate": "2023-12-18",
       "lastDate": "2024-01-08",
@@ -1703,7 +1668,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-pharmaceutical-01-2024/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-22",
       "openDate": "2024-02-12",
       "lastDate": "2024-03-03",
@@ -2609,7 +2574,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/mp/mpesb-primary-tet-2024/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-07-20",
       "openDate": "2024-10-01",
       "lastDate": "2024-10-15",
@@ -2914,7 +2879,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2025/uppsc-pre-2025/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-22",
       "openDate": "2025-02-20",
       "lastDate": "2025-04-02",
@@ -3016,6 +2981,80 @@
       "examDate": "2026-03-29",
       "resultDate": "2026-09-17",
       "ageLimit": "21–40 years"
+    },
+    {
+      "id": "competitor-sarkariresult-83510c3adb7cfc01",
+      "type": "admit-card",
+      "title": "CISF Constable Tradesman 2024 Exam City Details",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Admit cards",
+      "state": "All India",
+      "link": "https://cdn.digialm.com//EForms/configuredHtml/1258/103242/y4tDwHLgKSH0m7qEmL/login.html",
+      "sourceListingUrl": "https://www.sarkariresult.com/force/cisf-constable-tradesman-mar25/",
+      "discoveredVia": "https://www.sarkariresult.com/admitcard/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "CISF Constable Tradesman",
+      "publishedDate": "2026-11-17",
+      "openDate": "2025-03-05",
+      "lastDate": "2025-04-03",
+      "examDate": "2026-12-01",
+      "vacancies": "1048",
+      "ageLimit": "18–23 years",
+      "eligibility": "Class 10th Matric Exam Passed in Any Recognized Board in India. Skill Trade : Barber, Boot Maker/Cobbler, Tailor, Cook, Carpenter, Mali, Painter, Charge Mechanic, Washer Man, Welder, Electrician and Motor Pump Attendant Height : Male 170 CMS, Female : 157 CMS Chest Male : 80-85 CMS Running : Male : 1.6 KM in 6 Min 30 Second Female : 800 Meter in 4 Minutes. More Eligibility Details Read Notification.",
+      "applicationFee": "General/EWS/OBC : 100/- SC / ST / ESM : 0/- All Category Female : 0/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/CISF_Tradesman_Notification_English.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn.digialm.com//EForms/configuredHtml/1258/103242/y4tDwHLgKSH0m7qEmL/login.html",
+          "label": "Download Exam City/Admit Card"
+        },
+        {
+          "url": "https://cisfrectt.cisf.gov.in/file_open.php?fnm=XQiTcgmO0MzrbAkXDrrEsOd4P_EWiWKd0VxpMe4POVkIrKeUzKCxZIZMj3P6Ofz8XyFuMW3fSVsPwNMgcSVhxpDpbZwExeTfK74KsVJ617g",
+          "label": "Download Exam Notice"
+        },
+        {
+          "url": "https://cisfrectt.cisf.gov.in/recruitment_latest/new_registration.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/CISF_Tradesman_Notification_English.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://cisfrectt.cisf.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com//EForms/configuredHtml/1258/103242/y4tDwHLgKSH0m7qEmL/login.html",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026 | 06:48 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2025-04-03",
+          "dateText": "03/04/2025"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2025-04-03",
+          "dateText": "03/04/2025"
+        },
+        {
+          "label": "CISF Constable Tradesman Exam Date",
+          "date": "2026-12-01",
+          "dateText": "01/12/2026"
+        },
+        {
+          "label": "Exam City Available",
+          "date": "2026-11-17",
+          "dateText": "17/11/2026"
+        }
+      ]
     },
     {
       "id": "competitor-sarkariresult-dbeaca5dfbfade54",
@@ -3653,40 +3692,14 @@
       "sourceListingUrl": "https://www.sarkariresult.com/bihar/bpsc-71th-exam-2025/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
-      "organization": "Bihar Public Service Commission (BPSC)",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-11-06",
       "openDate": "2025-06-02",
       "lastDate": "2025-06-30",
-      "examDate": "2026-11-06",
-      "resultDate": "2026-11-06",
+      "organization": "Bihar Public Service Commission (BPSC)",
       "vacancies": "1250",
       "eligibility": "Bachelor Degree in Any Stream in Any Recognized University in India. For Post Wise Eligibility Details Read the Notification",
       "applicationFee": "General / OBC/ Other State : 600/- SC / ST / PH : 150/- Female Candidate (Bihar Dom.) : 150/-",
-      "notificationLink": "https://doc.sarkariresults.org.in/BPSC_71th_Detailed_Notification.pdf",
-      "officialLinks": [
-        {
-          "url": "https://bpsc.bihar.gov.in/",
-          "label": "Download Mains Result (Link Activate Soon)"
-        },
-        {
-          "url": "https://bpsconline.bihar.gov.in/candidate/login",
-          "label": "Download Mains Admit Card"
-        },
-        {
-          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/71st-CCE-admit-card-Notice_BPSC-20260414-s9471r.pdf",
-          "label": "Download Mains Admit Card Notice"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/BPSC_71th_Detailed_Notification.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/BPSC_70th_SarkariResult_Com_Syllabus-CC-Exam-Updated.pdf",
-          "label": "Download Syllabus (Pre / Mains)"
-        }
-      ],
-      "officialLink": "https://bpsc.bihar.gov.in/",
       "milestones": [
         {
           "label": "Post Date / Update",
@@ -3718,7 +3731,41 @@
           "date": "2026-11-06",
           "dateText": "06/11/2026"
         }
-      ]
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/",
+      "notificationLink": "https://doc.sarkariresults.org.in/BPSC_71th_Detailed_Notification.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "Download Mains Result (Link Activate Soon)"
+        },
+        {
+          "url": "https://bpsconline.bihar.gov.in/candidate/login",
+          "label": "Download Mains Admit Card"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/71st-CCE-admit-card-Notice_BPSC-20260414-s9471r.pdf",
+          "label": "Download Mains Admit Card Notice"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/BPSC_71th_Detailed_Notification.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/BPSC_70th_SarkariResult_Com_Syllabus-CC-Exam-Updated.pdf",
+          "label": "Download Syllabus (Pre / Mains)"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/DV-Program-Integrated-71st-CCE_BPSC-20261118-vwk9rz.pdf",
+          "label": "DV Schedule"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Important-Notice-DV-Integrated-71st-CCE_BPSC-20261118-jenxth.pdf",
+          "label": "DV Schedule Notice"
+        }
+      ],
+      "examDate": "2026-11-06",
+      "resultDate": "2026-11-06"
     },
     {
       "id": "competitor-sarkariresult-ff0cc403ff13078b",
@@ -4287,7 +4334,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/mp/mp-primary-teacher-pstst-2025/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-06-23",
       "openDate": "2025-07-18",
       "lastDate": "2025-08-25",
@@ -4661,7 +4708,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/rajasthan-rpsc-senior-teacher-07-2025/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-13",
       "openDate": "2025-08-19",
       "lastDate": "2025-09-17",
@@ -5120,17 +5167,17 @@
     },
     {
       "id": "competitor-sarkariresult-a26346800b534ebe",
-      "type": "admit-card",
-      "title": "UPPSC Assistant Professor GDC Mains Admit Card 2026",
+      "type": "job",
+      "title": "UPPSC Assistant Professor GDC Mains Online Form 2026",
       "source": "SarkariResult.com listing (recruiting authority named in notice)",
       "publisher": "SarkariResult.com",
-      "category": "Admit cards",
+      "category": "Teaching",
       "state": "Uttar Pradesh",
       "link": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
       "sourceListingUrl": "https://www.sarkariresult.com/2025/uppsc-asst-professor-a7-e1/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-09",
       "openDate": "2025-09-04",
       "lastDate": "2025-10-06",
@@ -5629,7 +5676,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/railway/rrb-ntpc-graduate-06-2025/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-21",
       "openDate": "2025-10-27",
       "lastDate": "2025-11-27",
@@ -5764,7 +5811,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/uppsc-atp-november25/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-28",
       "openDate": "2025-11-03",
       "lastDate": "2025-12-03",
@@ -5880,7 +5927,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/railway/rrb-ntpc-ug-07-2025/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-24",
       "openDate": "2025-10-28",
       "lastDate": "2025-12-04",
@@ -5989,7 +6036,7 @@
           "label": "Download RRB Mumbai Result"
         }
       ],
-      "examDate": "2026-10-30",
+      "examDate": "2026-11-17",
       "resultDate": "2026-10-30",
       "ageLimit": "18–30 years"
     },
@@ -6406,7 +6453,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2025/up-police-home-guard-02-2025/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-03",
       "openDate": "2025-11-17",
       "lastDate": "2025-12-17",
@@ -6820,6 +6867,102 @@
           "label": "Final Result Available",
           "date": "2026-11-02",
           "dateText": "02/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-c2236e53007e0441",
+      "type": "result",
+      "title": "UPSC NDA I Exam 2026 Marks",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Results",
+      "state": "All India",
+      "link": "https://upsc.gov.in/sites/default/files/WR-RollList-NDA-NA-I-2026-Engl-080526.pdf",
+      "sourceListingUrl": "https://www.sarkariresult.com/upsc/upsc-nda-i-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/result/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Union Public Service Commission (UPSC)</span></a>",
+      "publishedDate": "2026-11-18",
+      "openDate": "2025-12-10",
+      "lastDate": "2025-12-30",
+      "examDate": "2026-04-12",
+      "resultDate": "2026-04-16",
+      "vacancies": "394",
+      "eligibility": "10+2 Intermediate Exam in Any Recognized Board in India.",
+      "applicationFee": "General / OBC / EWS : 100/- SC / ST : 0/- Female : 0/-",
+      "notificationLink": "https://upsc.gov.in/sites/default/files/Notif-NDA-NA-I-2026-Engl-101225.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.upsc.gov.in/sites/default/files/MksRcdCndts-NDANA-I-2026-Engl-181126.pdf",
+          "label": "Download Marks (Qualified Candidates)"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/WR-RollList-NDA-NA-I-2026-Engl-080526.pdf",
+          "label": "Download Result"
+        },
+        {
+          "url": "https://upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202026/Provisional%20Answer%20Key",
+          "label": "Download Answer Key"
+        },
+        {
+          "url": "https://upsconline.nic.in/login",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://tinyurl.com/mr2xt4k6",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://upsconline.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://upsc.gov.in/sites/default/files/Notif-NDA-NA-I-2026-Engl-101225.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upsc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://upsc.gov.in/sites/default/files/WR-RollList-NDA-NA-I-2026-Engl-080526.pdf",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 08:16 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2025-12-30",
+          "dateText": "30/12/2025"
+        },
+        {
+          "label": "Last Date Pay Exam Fee",
+          "date": "2025-12-30",
+          "dateText": "30/12/2025"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-04-12",
+          "dateText": "12/04/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-04-02",
+          "dateText": "02/04/2026"
+        },
+        {
+          "label": "Answer Key Available",
+          "date": "2026-04-16",
+          "dateText": "16/04/2026"
+        },
+        {
+          "label": "Marks Available",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
         }
       ]
     },
@@ -7266,7 +7409,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-lekhpal-02-exam-2025/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-15",
       "openDate": "2025-12-29",
       "lastDate": "2026-01-28",
@@ -8101,7 +8244,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/delhi/delhi-hc-jja-restorer-feb26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-29",
       "openDate": "2026-02-04",
       "lastDate": "2026-02-23",
@@ -8398,7 +8541,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsc/upsc-ias-ifs-pre-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-08-14",
       "openDate": "2026-02-04",
       "lastDate": "2026-02-27",
@@ -9565,7 +9708,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/force/navy-ssr-mr-inet-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-17",
       "openDate": "2026-03-14",
       "lastDate": "2026-04-06",
@@ -9978,7 +10121,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/mp/mpesb-vanrakshak-jail-prahari-feb26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-16",
       "openDate": "2026-02-28",
       "lastDate": "2026-04-30",
@@ -10194,7 +10337,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/ssc/ssc-selection-post-14th-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-09",
       "openDate": "2026-04-13",
       "lastDate": "2026-05-04",
@@ -10992,7 +11135,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/railway/rrb-alp-cen-01-2026/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-30",
       "openDate": "2026-05-15",
       "lastDate": "2026-06-14",
@@ -11147,7 +11290,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/nta-csir-net-june2026/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-25",
       "openDate": "2026-05-27",
       "lastDate": "2026-06-19",
@@ -11587,7 +11730,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-lower-07-exam-2026/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-08-25",
       "openDate": "2026-05-29",
       "lastDate": "2026-06-25",
@@ -11877,6 +12020,75 @@
       "ageLimit": "20–28 years"
     },
     {
+      "id": "competitor-sarkariresult-047450bff8cdf3ff",
+      "type": "result",
+      "title": "UPSSSC UP Vidhan Bhawan Guard / Fireman Eligibility Result 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Results",
+      "state": "Uttar Pradesh",
+      "link": "https://upsssc.gov.in/ResultsDire.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-vidhan-09-exam-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/result/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-06-09",
+      "lastDate": "2026-06-29",
+      "resultDate": "2026-11-18",
+      "vacancies": "170",
+      "ageLimit": "18–40 years",
+      "eligibility": "Application Fee General / OBC / EWS : 25/- SC / ST : 25/- PH (Dviyang) : 25/- Pay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan",
+      "applicationFee": "General / OBC / EWS : 25/- SC / ST : 25/- PH (Dviyang) : 25/-",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/ResultsDire.aspx",
+          "label": "Download Eligibility Result"
+        },
+        {
+          "url": "https://upsssc.gov.in//ViewPdf.aspx?ngEtdaUC9p3RcuztWKjE7BF4GBloOsHX9XZfaDcLwUw=",
+          "label": "Download Eligibility Result Notice"
+        },
+        {
+          "url": "https://upsssc.gov.in//AllNotifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in/ResultsDire.aspx",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 06:00 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-06-29",
+          "dateText": "29/06/2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-06-29",
+          "dateText": "29/06/2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-07-06",
+          "dateText": "06/07/2026"
+        },
+        {
+          "label": "Eligibility Result Available",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-355e2192e8fa9e0a",
       "type": "result",
       "title": "BSNL Junior Telecom Officer JTO Correction Form 2026 for 100 Post",
@@ -11888,7 +12100,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/bsnl-jto-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-08-29",
       "openDate": "2026-06-04",
       "lastDate": "2026-07-03",
@@ -11971,7 +12183,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-10-exam-2026/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-30",
       "openDate": "2026-06-16",
       "lastDate": "2026-07-06",
@@ -12026,6 +12238,10 @@
         {
           "url": "https://upsssc.gov.in//ViewPdf.aspx?8gFyyKfR64qVwmHyHohSvVgIePwSxOV976bhdQNOdeQ=",
           "label": "Download Exam City Notice"
+        },
+        {
+          "url": "https://upsssc.gov.in/upssscadmitcard/admitCard.aspx?ID=MAIN",
+          "label": "Download Admit Card"
         }
       ],
       "examDate": "2026-11-22",
@@ -12044,7 +12260,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/aiims-cre-june-2026/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-08-24",
       "openDate": "2026-06-06",
       "lastDate": "2026-07-08",
@@ -12151,7 +12367,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/sbi-po-june26/",
       "discoveredVia": "https://www.sarkariresult.com/result/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-15",
       "openDate": "2026-06-18",
       "lastDate": "2026-07-08",
@@ -12705,7 +12921,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/mpesb-group2-sub1-krashi-vistar/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-21",
       "openDate": "2026-07-03",
       "lastDate": "2026-07-17",
@@ -12789,7 +13005,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-forest-guard-12-exam-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-29",
       "openDate": "2026-06-30",
       "lastDate": "2026-07-20",
@@ -13157,7 +13373,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/ccl-various-post-july26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-08-21",
       "openDate": "2026-07-09",
       "lastDate": "2026-07-24",
@@ -13216,7 +13432,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/ibps-so-16th-june26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-22",
       "openDate": "2026-07-01",
       "lastDate": "2026-07-26",
@@ -13313,7 +13529,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/ibps-po-xvi-mt-june26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-29",
       "openDate": "2026-07-01",
       "lastDate": "2026-07-26",
@@ -13407,7 +13623,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/force/indian-airforce-agniveervayu-02-2027/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-26",
       "openDate": "2026-07-06",
       "lastDate": "2026-07-26",
@@ -13542,7 +13758,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/upsssc/upsssc-cane-13-exam-2026/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-12",
       "openDate": "2026-07-07",
       "lastDate": "2026-07-28",
@@ -14016,7 +14232,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/uttarakhand-utet-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-05",
       "openDate": "2026-07-14",
       "lastDate": "2026-08-03",
@@ -14584,7 +14800,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/rrb-section-controller-03-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-16",
       "openDate": "2026-07-15",
       "lastDate": "2026-08-14",
@@ -14762,7 +14978,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/isro-various-post-jul26/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-25",
       "openDate": "2026-07-27",
       "lastDate": "2026-08-16",
@@ -14916,7 +15132,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/chhattisgarh-set-jul26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-28",
       "openDate": "2026-07-23",
       "lastDate": "2026-08-17",
@@ -14988,7 +15204,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/mpesb-group2-subgroup-4-aug26/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-06",
       "openDate": "2026-08-04",
       "lastDate": "2026-08-21",
@@ -15149,7 +15365,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-paramedical-fsl-15-exam-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-29",
       "openDate": "2026-07-27",
       "lastDate": "2026-08-24",
@@ -15638,7 +15854,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/ibps-clerk-16th-august26/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-01",
       "openDate": "2026-08-01",
       "lastDate": "2026-08-28",
@@ -16122,6 +16338,76 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-c8625bded4436150",
+      "type": "admit-card",
+      "title": "NTPC NGEL Engineer and Executive Post Admit Card 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://cdn.digialm.com/EForms/configuredHtml/1258/101871/login.html",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/ntpc-ngel-august26/",
+      "discoveredVia": "https://www.sarkariresult.com/admitcard/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "NTPC Green Energy Limited (NGEL)",
+      "publishedDate": "2026-11-19",
+      "openDate": "2026-08-18",
+      "lastDate": "2026-09-07",
+      "examDate": "2026-11-30",
+      "vacancies": "147",
+      "ageLimit": "Maximum 35 years",
+      "eligibility": "BE/B.Tech/B.Sc. (Engg.) Degree in Civil Engineering with 65% Marks. for SC / ST / PH : 55% Marks. 3 Year Experience. More Eligibility Detail Read The Notification.",
+      "applicationFee": "General / OBC / EWS : 500 SC / ST / PH : 0/- All Category Female : 0/-",
+      "notificationLink": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/6/6701774263.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn.digialm.com/EForms/configuredHtml/1258/101871/login.html",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://cdn.digialm.com/EForms/configuredHtml/1258/101871/Index.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/6/6701774263.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.ngel.in/ngel-home",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/101871/login.html",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026 | 10:42 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-09-07",
+          "dateText": "07/09/2026"
+        },
+        {
+          "label": "upto 06 PM Only. Pay Exam Fee Last Date",
+          "date": "2026-09-07",
+          "dateText": "07/09/2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-30",
+          "dateText": "30/11/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-11-19",
+          "dateText": "19/11/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-93ee658d2089a0c3",
       "type": "admit-card",
       "title": "Railway RRB Junior Engineer JE Admit Card 2026",
@@ -16216,7 +16502,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/bob-lbo-aug26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-27",
       "openDate": "2026-08-18",
       "lastDate": "2026-09-17",
@@ -17247,6 +17533,93 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-29ed3281e38fa299",
+      "type": "result",
+      "title": "NTA RIMCEE 2027 Class 8th Admissions Exam City Details 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://exams.nta.nic.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/nta-rimcee-class-8th-sep26/",
+      "discoveredVia": "https://www.sarkariresult.com/admitcard/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "National Testing Agency NTA Rashtriya Indian Military College Entrance Examination (RIMCEE)",
+      "publishedDate": "2026-11-17",
+      "openDate": "2026-09-01",
+      "lastDate": "2026-09-30",
+      "examDate": "2026-12-06",
+      "resultDate": "2027-02-20",
+      "eligibility": "Appearing / Passed Class 7th exam from a recognized School.",
+      "applicationFee": "Must Submit. If You have Not the Required Application Fees Your Form is Not Completed. Take A Print Out of Final Submitted Form. For the latest updates on",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2026/09/202609011320122256.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cnr.nic.in/ExamDocumentsPortal/login?moduleId=60&appFormId=YTYa771G1rmrpe2LjZ%2B9OQ%3D%3D&examAttempt=01",
+          "label": "Check Exam City Details"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2026/11/202611171769931499.pdf",
+          "label": "Download Exam City Notice"
+        },
+        {
+          "url": "https://examinationservices.nic.in/ExamSys26Part2/Root/Home.aspx?enc=Ei4cajBkK1gZSfgr53ImFQBut9oTMxhETt9bNm6zcP2ghS+a59eor30/A5h2io4z",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2026/09/202609011320122256.pdf",
+          "label": "Download Short Notification"
+        },
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2026/09/202609011042052466.pdf",
+          "label": "Download Bulletin"
+        },
+        {
+          "url": "https://exams.nta.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://exams.nta.nic.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026 | 09:02 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-09-30",
+          "dateText": "30/09/2026"
+        },
+        {
+          "label": "upto 05 PM Pay Fee Last Date",
+          "date": "2026-09-30",
+          "dateText": "30/09/2026"
+        },
+        {
+          "label": "Last Date with Late Fees",
+          "date": "2026-10-07",
+          "dateText": "07/10/2026"
+        },
+        {
+          "label": "October 2026 RIMCEE 8th Stage I Exam Date 2026",
+          "date": "2026-12-06",
+          "dateText": "06/12/2026"
+        },
+        {
+          "label": "Exam City Available",
+          "date": "2026-11-17",
+          "dateText": "17/11/2026"
+        },
+        {
+          "label": "Days Before Exam Result Available Date",
+          "date": "2027-02-20",
+          "dateText": "20/02/2027"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-621a89141a356897",
       "type": "result",
       "title": "United India Insurance UIIC AO Tier I Result 2026",
@@ -17258,7 +17631,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/uiic-ao-sep26/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-10-15",
       "openDate": "2026-09-08",
       "lastDate": "2026-10-01",
@@ -17694,6 +18067,75 @@
           "label": "Admit Card Available",
           "date": "2026-11-24",
           "dateText": "24/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-5ee26d73e9facd37",
+      "type": "admit-card",
+      "title": "Bank of India BOI Specialist Officers SO Recruitment For Exam Date 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://ibpsreg.ibps.in/boiaug26/oecla_nov26/login.php?appid=9c6c9135ed63fdd078b56a64307918b9",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/bank-of-india-so-sep26/",
+      "discoveredVia": "https://www.sarkariresult.com/admitcard/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Bank of India BOI Specialist Officers SO",
+      "publishedDate": "2026-11-19",
+      "openDate": "2026-09-10",
+      "lastDate": "2026-10-05",
+      "examDate": "2026-11-27",
+      "vacancies": "205",
+      "ageLimit": "25–42 years",
+      "eligibility": "Click Here",
+      "applicationFee": "General / OBC / EWS : 1180/- SC / ST / PH : 175/-",
+      "notificationLink": "https://bankofindia.bank.in/documents/20121/28761619/FINAL_NOTICE_SPECIALIST_OFFICER-01082026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/boiaug26/oecla_nov26/login.php?appid=9c6c9135ed63fdd078b56a64307918b9",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://ibpsreg.ibps.in/boiaug26/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://bankofindia.bank.in/documents/20121/28761619/FINAL_NOTICE_SPECIALIST_OFFICER-01082026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bankofindia.bank.in/documents/20121/28761619/FINAL_ANNEXURE_I.pdf",
+          "label": "Download Post Wise Eligibility"
+        },
+        {
+          "url": "https://sbi.bank.in/web/careers/current-openings",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/boiaug26/oecla_nov26/login.php?appid=9c6c9135ed63fdd078b56a64307918b9",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026 | 02:42 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-10-05",
+          "dateText": "05/10/2026"
+        },
+        {
+          "label": "Complete Form Last Date",
+          "date": "2026-10-05",
+          "dateText": "05/10/2026"
+        },
+        {
+          "label": "BOI Exam Date",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
         }
       ]
     },
@@ -18604,6 +19046,74 @@
           "label": "Exam Dates",
           "date": "2026-11-18",
           "dateText": "17 and 18 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-313204427dad202e",
+      "type": "admit-card",
+      "title": "AIBE XXII All India Bar Exam Admit Card 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Admit cards",
+      "state": "See linked notice",
+      "link": "https://aibe.digivarsity.online/WebApp/Forms/UserAuthentication.aspx",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/aibe-22nd-august26/",
+      "discoveredVia": "https://www.sarkariresult.com/admitcard/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "All India Bar Examination AIBE 22nd",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-08-19",
+      "lastDate": "2026-10-27",
+      "examDate": "2026-11-29",
+      "eligibility": "All India Bar Examination AIBE XXII",
+      "applicationFee": "up to 28 October 2026. Q7. How can I apply for All India Bar Examination AIBE XXII Examination 2026? Candidates can apply online through the official recruitment link available on",
+      "officialLinks": [
+        {
+          "url": "https://aibe.digivarsity.online/WebApp/Forms/UserAuthentication.aspx",
+          "label": "Download Admit Card"
+        },
+        {
+          "url": "https://www.allindiabarexamination.com/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.allindiabarexamination.com/img/PressReleasedated18.07.2026.pdf",
+          "label": "Download Press Release"
+        }
+      ],
+      "officialLink": "https://aibe.digivarsity.online/WebApp/Forms/UserAuthentication.aspx",
+      "milestones": [
+        {
+          "label": "CPost Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 12:30 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-10-27",
+          "dateText": "27/10/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-10-28",
+          "dateText": "28/10/2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-10-30",
+          "dateText": "30/10/2026"
+        },
+        {
+          "label": "AIBE XXII Exam Date",
+          "date": "2026-11-29",
+          "dateText": "29/11/2026"
+        },
+        {
+          "label": "Admit Card Available",
+          "date": "2026-11-18",
+          "dateText": "18/11/2026"
         }
       ]
     },
@@ -19612,7 +20122,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/ongc-various-trade-apprentice-oct26/",
       "discoveredVia": "https://www.sarkariresult.com/latestjob/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "lastDate": "2026-11-20",
       "publishedDate": "2026-10-31",
       "openDate": "2026-10-29",
@@ -21027,6 +21537,59 @@
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)"
     },
     {
+      "id": "competitor-sarkariresult-270d96f12c053fea",
+      "type": "job",
+      "title": "Haryana TET HTET Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Haryana",
+      "link": "https://htet2026.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/haryana-htet-dec2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Board of Secondary Education, BSEH Haryana",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-18",
+      "lastDate": "2026-11-27",
+      "eligibility": "18 November 2026 | 03:25 PM",
+      "applicationFee": "For Single Paper Only : Gen / OBC / Other State : 1200/- SC / PH : 700/- For Double Paper : Gen / OBC / Other State : 2000/- SC / PH : 1100/- For Triple Paper : Gen / OBC / Other State : 2600/- SC / PH : 1400/-",
+      "notificationLink": "https://htet2026.org/htet2023/Information_Bulletin%20HTET-2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://htet2026.org/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://htet2026.org/htet2023/Information_Bulletin%20HTET-2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bseh.org.in/uploads/files/ca4d5721ceac080d7bc160f37ec6967e.pdf",
+          "label": "Download Exam Date Notice"
+        }
+      ],
+      "officialLink": "https://htet2026.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 03:25 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        }
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly9lbXBsb3ltZW50bmV3cy5nb3YuaW4vbmV3ZW1wL0FsbEpvYnMuYXNweD9rPUFsbCMyMDI2LTExLTAyI0lOU1RJVFVURSBPRiBIT1RFTCBNQU5BR0VNRU5UIEFORCBDQVRFUklORyBURUNITk9MT0dZLCBNSU5JU1RSWSBPRiBUT1VSSVNNIOKAlCBMT1dFUiBESVZJU0lPTiBDTEVSSw",
       "type": "job",
       "title": "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
@@ -22229,6 +22792,66 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-113887bedaee51c1",
+      "type": "job",
+      "title": "NLC Graduate Executive Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://web.nlcindia.in/rec102026/index.php",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/nlc-graduate-executive-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-14",
+      "organization": "NLC Graduate Executive",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-13",
+      "vacancies": "143",
+      "ageLimit": "Maximum 30 years",
+      "eligibility": "BA, B.Sc., B.Tech. and other relevant degrees/trades, as per post-wise eligibility criteria. Candidates must hold the required qualification from a recognized university and must have qualified GATE 2025 in the relevant paper/code.",
+      "applicationFee": "General / OBC / EWS : 854/- SC / ST / PH : 354/-",
+      "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+      "officialLinks": [
+        {
+          "url": "https://web.nlcindia.in/rec102026/index.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bseh.org.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://web.nlcindia.in/rec102026/index.php",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 10:29 AM"
+        },
+        {
+          "label": "Application start Date",
+          "date": "2026-11-13",
+          "dateText": "13/11/2026"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-14",
+          "dateText": "14/12/2026"
+        },
+        {
+          "label": "upto 05 PM Only Pay Exam Fee Last Date",
+          "date": "2026-12-14",
+          "dateText": "14/12/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-freejobalert-db7fefa78b5db8fa",
       "type": "job",
       "title": "ASRB ICAR Various Technical Assistant Posts Online Form 2026 (1393 Vacancy)",
@@ -22313,6 +22936,236 @@
           "label": "Last Date for Fee Payment",
           "date": "2026-12-17",
           "dateText": "17 December 2026, 11:59 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-c61d8c707a4628c2",
+      "type": "job",
+      "title": "RSSB Junior Engineer JE Online Form 2026 (Re Open)",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Defence",
+      "state": "See linked notice",
+      "link": "https://sso.rajasthan.gov.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/rajasthan-rssb-je-august26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-17",
+      "organization": "Rajasthan Staff Selection Board (RSSB)",
+      "publishedDate": "2026-11-18",
+      "vacancies": "1909",
+      "ageLimit": "18–40 years",
+      "eligibility": "Engineering Diploma or Degree in Related Trade / Branch from any Recognized Institute in India. More Eligibility Details Read the Notification",
+      "applicationFee": "(OTR) General / OBC / Other State : 600/- OBC NCL / MBC / EWS / SC / ST / PH (Rajasthan) : 400/- Correction Charge : 300/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/1794922282.pdf",
+      "officialLinks": [
+        {
+          "url": "https://sso.rajasthan.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/1794922282.pdf",
+          "label": "Download Reopen Notification"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sso.rajasthan.gov.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 10:55 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-17",
+          "dateText": "17/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-17",
+          "dateText": "17/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-9b1c3a8af3127fa2",
+      "type": "job",
+      "title": "NLC India Executive Posts Online Form 2026 (145 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://www.nlcindia.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nlc-india-executive-recruitment-2026-3081657",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "organization": "NLC India Limited (NLCIL)",
+      "publishedDate": "2026-11-17",
+      "openDate": "2026-11-20",
+      "vacancies": "145",
+      "eligibility": "Relevant Engineering Degree, M.Sc., Law Degree, Graduation with prescribed PG qualification or other notified qualifications",
+      "officialLinks": [
+        {
+          "url": "https://www.nlcindia.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.nlcindia.in/website/en/careers/jobs/currentopenings.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/97260",
+          "label": "Download Notification"
+        }
+      ],
+      "officialLink": "https://www.nlcindia.in/",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Registration Last Date",
+          "date": "2026-12-19",
+          "dateText": "19 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Last Date for Online Registration",
+          "date": "2026-12-19",
+          "dateText": "19 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-12-19",
+          "dateText": "19 December 2026, 11:45 PM"
+        }
+      ],
+      "lastDate": "2026-12-19",
+      "applicationFee": "General / OBC / EWS : 854/- SC / ST / PH : 354/-",
+      "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/97260"
+    },
+    {
+      "id": "competitor-sarkariresult-0303fe706070c265",
+      "type": "job",
+      "title": "UPTET February 2027 Exam Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "See linked notice",
+      "link": "https://apply.upessc.org/register",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uptet-10-2026-feb27exam/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-23",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-24",
+      "eligibility": "UPTET Primary Level (Class I to V) Eligibility Passed / Appearing (Final Year) Bachelor Degree in Any Stream with 2 Year DELED (BTC) / DED / Special DELED (BTC) / DELED Urdu / BELEd Course OR Bachelor Degree with Diploma in Teaching from AMU, Aligarh More Details Read Notification. UPTET Junior Level (Class VI to VIII) Eligibility Passed / Appearing (Final Year) Bachelor Degree in Any Stream with 2 Year DELED (BTC) Course. OR Bachelor Degree / Master Degree with 50% Marks with B.Ed / B.Ed Specia",
+      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/- Certificate Correction Fee : 200/-",
+      "officialLinks": [
+        {
+          "url": "https://upessc.up.gov.in/Notice/58a4-ee39-4750-9f09-cc44.pdf",
+          "label": "Download Short Notice"
+        },
+        {
+          "url": "https://apply.upessc.org/register",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/register",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 09:34 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-12-23",
+          "dateText": "23/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-23",
+          "dateText": "23/12/2026"
+        },
+        {
+          "label": "UPTET Last Date Correction",
+          "date": "2026-12-27",
+          "dateText": "27/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-753ca2c63adc971f",
+      "type": "job",
+      "title": "UKSSSC Constable and Other Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Police",
+      "state": "See linked notice",
+      "link": "https://sssc.uk.gov.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uksssc-various-post-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-25",
+      "organization": "UKSSSC Uttarakhand Constable & Other Post",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-25",
+      "examDate": "2027-04-04",
+      "eligibility": "10+2 Intermediate Exam from Any Recognized Board in India. Height : 165 CMS for Male & 152 CMS for Female Chest Male Only : 78.8-83.8 CMS Running : 5 Km for Male & 2 Km for Female Cricket Ball Through, Long Jump, Chining Up, & Other PET Details Read the Notification.",
+      "applicationFee": "Details? Candidates can pay the application fee up to 25 December 2026. 7. How can I apply for UKSSSC Constable and Other Post Exam 2026? Candidates can apply online through the official recruitment link available on",
+      "notificationLink": "https://doc.sarkariresults.org.in/UKSSSC_Constable_OtherPost_Nov2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://sssc.uk.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UKSSSC_Constable_OtherPost_Nov2026.pdf",
+          "label": "Download Notification"
+        }
+      ],
+      "officialLink": "https://sssc.uk.gov.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 11:37 AM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-12-25",
+          "dateText": "25/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-25",
+          "dateText": "25/12/2026"
+        },
+        {
+          "label": "December 2026 UKSSSC Exam Date",
+          "date": "2027-04-04",
+          "dateText": "04/04/2027"
         }
       ]
     },
@@ -22512,17 +23365,108 @@
       "publishedDate": "2026-12-16"
     },
     {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vT3Blbl9QREYuYXNweD9JNFBuUTB0QmFnbjNMbnFhejRnZHEzUDVIR2tRazNSRg",
-      "type": "result",
-      "title": "13 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026,MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY)/ASSISTANT PROFESSOR TRANSFUSION MEDICINE, S-08/118",
-      "source": "UPPSC",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagn3Lnqaz4gdq3P5HGkQk3RF",
+      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
+      "type": "job",
+      "title": "Recruitment Requisition",
+      "source": "TNPSC",
+      "category": "State PSC",
+      "state": "Tamil Nadu",
+      "link": "https://www.tnpsc.gov.in/Hod/RecruitmentRequisition.aspx",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
-      "publishedDate": "2026-12-13"
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvRFJlc3VsdFZpZXcuYXNweA",
+      "type": "result",
+      "title": "DEPARTMENTAL EXAMINATIONS - MAY 2026 (Result)",
+      "source": "TNPSC",
+      "category": "State PSC",
+      "state": "Tamil Nadu",
+      "link": "https://www.tnpsc.gov.in/english/DResultView.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvbGF0ZXN0X3Jlc3VsdHMuYXNweD9jPTQ1OTM",
+      "type": "result",
+      "title": "COMBINED TECHNICAL SERVICES EXAMINATION (INTERVIEW POSTS) (Final Result)",
+      "source": "TNPSC",
+      "category": "State PSC",
+      "state": "Tamil Nadu",
+      "link": "https://www.tnpsc.gov.in/english/latest_results.aspx?c=4593",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvcHJlc3NfcmVsZWFzZXMuYXNweA",
+      "type": "job",
+      "title": "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
+      "source": "TNPSC",
+      "category": "UPSC",
+      "state": "Tamil Nadu",
+      "link": "https://www.tnpsc.gov.in/english/press_releases.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-06"
+    },
+    {
+      "id": "aHR0cHM6Ly90bnBzYy5nb3YuaW4vZXhhbWRhc2hib2FyZC93ZWIvaW5kZXguYXNweD9rZXk9a3NvanMyZWZyZTNXRkRzdzU",
+      "type": "job",
+      "title": "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
+      "source": "TNPSC",
+      "category": "UPSC",
+      "state": "Tamil Nadu",
+      "link": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9yZXN1bHQ",
+      "type": "result",
+      "title": "Final Results",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in/result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmZGEtMTM3ZS04MWExLTY4MjdiNjc3MDAxMS9yZXN1bHQ",
+      "type": "result",
+      "title": "Declaration of final result for various posts of Group-25 against Advt. No. 08/2024 of various Departments, Haryana",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-6827b6770011/result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmZGEtMTM3ZS04MWExLTY0MTM5ODI1MDAwZS9yZXN1bHQ",
+      "type": "result",
+      "title": "Declaration of final result for the posts of Forest Ranger (Category No. 102) and Deputy Ranger (Category No. 295) against Advt. No. 09/2024 and 11/2024 respectively of Forest Depa",
+      "source": "HPSC/HSSC",
+      "category": "State PSC",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-64139825000e/result",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly9tcHNjbWFuaXB1ci5nb3YuaW4vZmlsZXMvUmVzY2hlZHVsZSUyMG9mJTIwQUVfJTIwRXhhbWluYXRpb24ucGRm",
@@ -22763,110 +23707,6 @@
       "publishedDate": "2026-10-20",
       "resultDate": "2026-10-19",
       "detail": "RPC provisional scores for the 4 Oct exam; the objection window ended 22 Oct 2026 at 10:00 AM."
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
-      "type": "job",
-      "title": "Recruitment Requisition",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnpsc.gov.in/Hod/RecruitmentRequisition.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvRFJlc3VsdFZpZXcuYXNweA",
-      "type": "result",
-      "title": "DEPARTMENTAL EXAMINATIONS - MAY 2026 (Result)",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnpsc.gov.in/english/DResultView.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvbGF0ZXN0X3Jlc3VsdHMuYXNweD9jPTQ1OTM",
-      "type": "result",
-      "title": "COMBINED TECHNICAL SERVICES EXAMINATION (INTERVIEW POSTS) (Final Result)",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnpsc.gov.in/english/latest_results.aspx?c=4593",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvcHJlc3NfcmVsZWFzZXMuYXNweA",
-      "type": "job",
-      "title": "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
-      "source": "TNPSC",
-      "category": "UPSC",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnpsc.gov.in/english/press_releases.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-06"
-    },
-    {
-      "id": "aHR0cHM6Ly90bnBzYy5nb3YuaW4vZXhhbWRhc2hib2FyZC93ZWIvaW5kZXguYXNweD9rZXk9a3NvanMyZWZyZTNXRkRzdzU",
-      "type": "job",
-      "title": "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
-      "source": "TNPSC",
-      "category": "UPSC",
-      "state": "Tamil Nadu",
-      "link": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9yZXN1bHQ",
-      "type": "result",
-      "title": "Final Results",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "https://hssc.gov.in/result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmZGEtMTM3ZS04MWExLTY4MjdiNjc3MDAxMS9yZXN1bHQ",
-      "type": "result",
-      "title": "Declaration of final result for various posts of Group-25 against Advt. No. 08/2024 of various Departments, Haryana",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-6827b6770011/result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9oc3NjLmdvdi5pbi9maWxlL2FjMWYyM2NkLTlmZGEtMTM3ZS04MWExLTY0MTM5ODI1MDAwZS9yZXN1bHQ",
-      "type": "result",
-      "title": "Declaration of final result for the posts of Forest Ranger (Category No. 102) and Deputy Ranger (Category No. 295) against Advt. No. 09/2024 and 11/2024 respectively of Forest Depa",
-      "source": "HPSC/HSSC",
-      "category": "State PSC",
-      "state": "Haryana",
-      "link": "https://hssc.gov.in/file/ac1f23cd-9fda-137e-81a1-64139825000e/result",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
@@ -29441,7 +30281,7 @@
       "sourceListingUrl": "https://www.sarkariresult.com/2026/ctet-september-2026/",
       "discoveredVia": "https://www.sarkariresult.com/admitcard/",
       "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
+      "factCheckedAt": "2026-11-19",
       "publishedDate": "2026-09-14",
       "openDate": "2026-05-11",
       "organization": "Central Board of Secondary Education (CBSE)",
@@ -33642,59 +34482,6 @@
       ]
     },
     {
-      "id": "competitor-freejobalert-9b1c3a8af3127fa2",
-      "type": "job",
-      "title": "NLC India Executive Posts Online Form 2026 (145 Vacancy)",
-      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
-      "publisher": "FreeJobAlert",
-      "category": "Government jobs",
-      "state": "See linked notice",
-      "link": "https://www.nlcindia.in/",
-      "sourceListingUrl": "https://www.freejobalert.com/articles/nlc-india-executive-recruitment-2026-3081657",
-      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
-      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
-      "organization": "NLC India Limited (NLCIL)",
-      "publishedDate": "2026-11-17",
-      "openDate": "2026-11-20",
-      "vacancies": "145",
-      "eligibility": "Relevant Engineering Degree, M.Sc., Law Degree, Graduation with prescribed PG qualification or other notified qualifications",
-      "officialLinks": [
-        {
-          "url": "https://www.nlcindia.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://www.nlcindia.in/",
-      "milestones": [
-        {
-          "label": "Application Start Date",
-          "date": "2026-11-20",
-          "dateText": "20 November 2026"
-        },
-        {
-          "label": "Registration Last Date",
-          "date": "2026-12-19",
-          "dateText": "19 December 2026"
-        },
-        {
-          "label": "Online Application Start Date",
-          "date": "2026-11-20",
-          "dateText": "20 November 2026, 10:00 AM"
-        },
-        {
-          "label": "Last Date for Online Registration",
-          "date": "2026-12-19",
-          "dateText": "19 December 2026, 5:00 PM"
-        },
-        {
-          "label": "Last Date for Fee Payment",
-          "date": "2026-12-19",
-          "dateText": "19 December 2026, 11:45 PM"
-        }
-      ]
-    },
-    {
       "id": "competitor-freejobalert-95b7950b5d45f43b",
       "type": "admit-card",
       "title": "Bihar SLET Admit Card 2026 Out",
@@ -34258,6 +35045,272 @@
           "label": "Last Date to View Scorecard",
           "date": "2026-11-23",
           "dateText": "23 November 2026 at 5:00 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-5ca0c58ba4475bb8",
+      "type": "job",
+      "title": "CRPF Various Posts Walkin Form 2026 (19 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Defence",
+      "state": "All India",
+      "link": "https://rect.crpf.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/crpf-recruitment-2026-specialist-medical-officer-and-surgeon-3081799",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Central Reserve Police Force (CRPF), Across India",
+      "publishedDate": "2026-11-19",
+      "ageLimit": "Below 70 years (as on date of Walk-in-interview)",
+      "eligibility": "Recognised allopathic medical qualification under the Indian Medical Council Act, 1956, compulsory rotating internship, and a Post Graduate Degree/Diploma in the concerned specialty with 1.5 years' (PG Degree) or 2.5 years' (PG Diploma) experience in that specialty.",
+      "applicationFee": "is mentioned in the notification",
+      "notificationLink": "https://rect.crpf.gov.in/Upload/Recruitment/Walk-in-interview_for_19_Specialist_Medical_Officers_337112026-567.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rect.crpf.gov.in/Upload/Recruitment/Walk-in-interview_for_19_Specialist_Medical_Officers_337112026-567.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://rect.crpf.gov.in/Upload/Recruitment/CORRIGENDUM_ADDENDUM_Walk-in-interview_for_19_Specialist_Medical_Officers_337112026-391.pdf",
+          "label": "Corrigendum (18 Nov 2026)"
+        },
+        {
+          "url": "https://rect.crpf.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://rect.crpf.gov.in",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026 (17 December 2026 for CH, CRPF, Avadi, CH, CRPF, Jagdalpur and CH, CRPF, "
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Walk-in Interview (0900 hrs)",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026 (17 December 2026 for CH, CRPF, Avadi, CH, CRPF, Jagdalpur and CH, CRPF, "
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-7aca535bc633a3f4",
+      "type": "job",
+      "title": "RECPDCL Senior Consultant (Renewable Energy) Recruitment 2026 (1 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://www.recpdcl.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/recpdcl-senior-consultant-renewable-energy-recruitment-2026-3077386",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "REC Power Development and Consultancy Limited (RECPDCL)",
+      "publishedDate": "2026-11-18",
+      "vacancies": "01",
+      "notificationLink": "https://www.recpdcl.in/assets/data/vacancy/EoI_Engagement_of_01_Consultant_RE_29102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.recpdcl.in/assets/data/vacancy/EoI_Engagement_of_01_Consultant_RE_29102026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.recpdcl.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.recpdcl.in",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026 till 06:30 pm"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-78cd011e1f43e6a4",
+      "type": "job",
+      "title": "RECPDCL Various Posts Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "See linked notice",
+      "link": "https://www.recpdcl.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/recpdcl-recruitment-2026-apply-online-for-32-senior-executive-deputy-executive-and-more-posts-3076364",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "REC Power Development and Consultancy Limited (RECPDCL)",
+      "publishedDate": "2026-11-18",
+      "vacancies": "32",
+      "eligibility": "M.E./M.Tech./M.S. in relevant discipline 12",
+      "notificationLink": "https://www.recpdcl.in/assets/data/vacancy/Detailed_Advertisement_English_HR_2026_03_Dated_27102026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.recpdcl.in",
+          "label": "Apply online (RECPDCL career page)"
+        },
+        {
+          "url": "https://www.recpdcl.in/assets/data/vacancy/Detailed_Advertisement_English_HR_2026_03_Dated_27102026.pdf",
+          "label": "Official notification"
+        }
+      ],
+      "officialLink": "https://www.recpdcl.in",
+      "milestones": [
+        {
+          "label": "Start date",
+          "date": "2026-10-27",
+          "dateText": "27.10.2026, 12:00 PM"
+        },
+        {
+          "label": "Last date",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026, 06:30 PM"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-95657e33b853d9fb",
+      "type": "result",
+      "title": "ISRO ISTRAC CBT Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "All India",
+      "link": "https://www.istrac.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/isro-istrac-cbt-technical-assistant-result-2026-3082506",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "ISRO Telemetry Tracking & Command Network (ISTRAC)",
+      "publishedDate": "2026-11-19",
+      "officialLinks": [
+        {
+          "url": "https://www.istrac.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20001_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "001 - Technician – B Electronic Mechanic"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20002_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "002 - Technician – B Carpenter"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20003_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "Post Code 003"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20004_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "Post Code 004"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20005_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "005 - Technical Assistant - Electronics"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20006_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "Post Code 006"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20007_List%20of%20candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "Post Code 007"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20008_List%20of%20candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "Post Code 008"
+        },
+        {
+          "url": "https://www.istrac.gov.in/files/PC%20009_List%20of%20Candidates%20Shortlisted%20for%20Skill%20Test.pdf",
+          "label": "009 - Library Assistant - A"
+        }
+      ],
+      "officialLink": "https://www.istrac.gov.in/",
+      "milestones": [
+        {
+          "label": "Exam",
+          "date": "2026-09-25",
+          "dateText": "Computer Based Test held on 25-09-2026"
+        },
+        {
+          "label": "Advertisement ISTRAC: 02:2026 Dated",
+          "date": "2026-06-27",
+          "dateText": "27.06.2026"
+        },
+        {
+          "label": "Document Verification - Technician – B Carpenter (002)",
+          "date": "2026-12-07",
+          "dateText": "07.12.2026 & 1300 Hrs"
+        },
+        {
+          "label": "Document Verification - Library Assistant - A (009)",
+          "date": "2026-12-10",
+          "dateText": "10.12.2026 & 1300 Hrs"
+        },
+        {
+          "label": "Document Verification - Technical Assistant - Electronics (005)",
+          "date": "2026-12-14",
+          "dateText": "14.12.2026 & 1300 Hrs"
+        },
+        {
+          "label": "Document Verification - Technician – B Electronic Mechanic (001)",
+          "date": "2026-12-15",
+          "dateText": "15.12.2026 & 1300 Hrs"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-9133ee1fba90d726",
+      "type": "result",
+      "title": "ISRO VSSC Technician B Result 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Results",
+      "state": "All India",
+      "link": "https://www.vssc.gov.in/VSSC334ADVT.html",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/isro-vssc-technician-b-result-2026-3082348",
+      "discoveredVia": "https://www.freejobalert.com/exam-results/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Indian Space Research Organisation (ISRO)",
+      "publishedDate": "2026-11-18",
+      "examDate": "2026-09-16",
+      "resultDate": "2026-11-17",
+      "officialLinks": [
+        {
+          "url": "https://vssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.vssc.gov.in/VSSC334ADVT.html",
+          "label": "VSSC Technician B Result 2026 – All Trades"
+        },
+        {
+          "url": "https://www.vssc.gov.in/",
+          "label": "VSSC Official Website"
+        }
+      ],
+      "officialLink": "https://www.vssc.gov.in/VSSC334ADVT.html",
+      "milestones": [
+        {
+          "label": "Result Notice Dates",
+          "date": "2026-11-17",
+          "dateText": "16 and 17 November 2026"
+        },
+        {
+          "label": "Welder CBT Examination",
+          "date": "2026-09-16",
+          "dateText": "16 September 2026"
         }
       ]
     }
