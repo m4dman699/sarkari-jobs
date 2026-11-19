@@ -461,6 +461,17 @@
   border-radius: 10px; padding: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
 }
+/* Monogram fallback: the authority's own initials, not a borrowed seal. */
+.d-org-mark--mono {
+  display: grid; place-items: center;
+  font-size: .72rem; font-weight: 800; letter-spacing: .02em;
+  padding: 0;
+  color: hsl(var(--mono-h, 30) 52% 27%);
+  background: hsl(var(--mono-h, 30) 70% 93%);
+  border: 1px solid hsl(var(--mono-h, 30) 60% 84%);
+}
+.d-org-mark--mono[data-len="3"] { font-size: .62rem; letter-spacing: 0; }
+.d-org-mark--mono[data-len="4"] { font-size: .55rem; letter-spacing: 0; }
 
 /* ---------- Footer reuse (style.css handles colors) ---------- */
 .d-foot p.disclaimer-text { font-size: .82rem; line-height: 1.7; max-width: 640px; margin-top: 10px; }

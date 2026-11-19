@@ -7,7 +7,7 @@ const path = require('path');
 // the per-listing "deeper guide" links are derived from the same content model
 // that produces the guides themselves.
 const { buildGuides, loadSectors, sectorMatcher } = require('./build-sector-pages');
-const { markPathFor } = require('./org-marks');
+const { markPathFor, monogramFor } = require('./org-marks');
 
 const ROOT = path.join(__dirname, '..');
 const payload = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'jobs.json'), 'utf8'));
@@ -413,8 +413,14 @@ const GUIDES = [
 // become the LCP element.
 const markFor = item => {
   const src = markPathFor(item);
-  if (!src) return '';
-  return `<img class="d-org-mark" src="../../assets/${src}" alt="" width="40" height="40" loading="lazy" decoding="async">`;
+  if (src) {
+    return `<img class="d-org-mark" src="../../assets/${src}" alt="" width="40" height="40" loading="lazy" decoding="async">`;
+  }
+  // No verified logo: show the authority's own initials instead of a generic
+  // icon or another body's seal. Same monogram the sector guides use.
+  const mono = monogramFor(item);
+  if (!mono) return '';
+  return `<span class="d-org-mark d-org-mark--mono" data-len="${mono.initials.length}" style="--mono-h:${mono.hue}" aria-hidden="true">${escapeHTML(mono.initials)}</span>`;
 };
 
 const urls = [];
@@ -457,8 +463,28 @@ for (const item of payload.jobs || []) {
     item.factCheckedAt ? factTile('Source checked', date(item.factCheckedAt), 'd-fact--mini') : '',
     factTile('Page wording and layout', 'Original SarkariJobs+ summary', 'd-fact--mini')
   ].filter(Boolean).join('\n');
-  const milestones = (item.milestones || []).filter(entry => entry?.label && entry?.dateText)
+  const declaredMilestones = (item.milestones || []).filter(entry => entry?.label && entry?.dateText)
     .map(entry => `<div class="d-mile"><b>${escapeHTML(entry.label)}</b><em>${escapeHTML(entry.dateText)}</em></div>`).join('');
+  // Plenty of feed records carry structured dates but no milestone list. Draw the
+  // timeline from those dates instead of leaving the page without a diagram; the
+  // labels only name the field the date came from, so nothing is inferred.
+  const derivedMilestones = !declaredMilestones
+    ? (() => {
+      const entries = [];
+      if (item.openDate && item.lastDate && item.openDate === item.lastDate) {
+        entries.push(['Applications open and close', item.openDate]);
+      } else {
+        if (item.openDate) entries.push(['Applications open', item.openDate]);
+        if (item.lastDate) entries.push(['Last date to apply', item.lastDate]);
+      }
+      if (item.examDate) entries.push(['Exam date', item.examDate]);
+      if (item.resultDate) entries.push(['Result date', item.resultDate]);
+      return entries
+        .sort((a, b) => String(a[1]).localeCompare(String(b[1])))
+        .map(([label, value]) => `<div class="d-mile"><b>${escapeHTML(label)}</b><em>${escapeHTML(date(value))}</em></div>`).join('');
+    })()
+    : '';
+  const milestones = declaredMilestones || derivedMilestones;
   const milestoneSection = milestones
     ? `<h2 class="d-section-title">Timeline of dates</h2><div class="d-timeline">${milestones}</div>` : '';
   const trustedLinks = Array.isArray(item.officialLinks) ? item.officialLinks : [];
@@ -522,7 +548,7 @@ for (const item of payload.jobs || []) {
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d7">
+<link rel="canonical" href="${canonical}">${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -727,7 +753,7 @@ const stubPage = ({ kind, target }) => {
 <link rel="canonical" href="${canonicalUrl}">
 <meta http-equiv="refresh" content="3;url=${canonicalUrl}">
 <meta name="theme-color" content="#0a1128">
-<link rel="stylesheet" href="../../css/detail.css?v=d7">
+<link rel="stylesheet" href="../../css/detail.css?v=d8">
 </head><body>
 ${iconSprite()}
 <div class="tricolor-strip"></div>
@@ -784,7 +810,7 @@ const indexHtml = `<!doctype html>
 <title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d6">
+<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>

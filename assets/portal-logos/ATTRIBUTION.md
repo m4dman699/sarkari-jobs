@@ -19,5 +19,15 @@ These portal marks are copied from assets exposed by the listed government recru
 | `nta.png` | https://nta.ac.in/img/NTA_logo.png |
 | `rssb.png` | https://rssb.rajasthan.gov.in/images/logo_img.png |
 | `mpesb.jpg` | https://esb.mp.gov.in/new_look_images/PEB_LOGO_NEW1.jpg |
+| `upsc.png` | https://www.upsc.gov.in/sites/all/themes/upsc/images/logo.png |
+| `apsc.png` | https://apsc.nic.in/header_logo.png |
+| `tnpsc.png` | https://www.tnpsc.gov.in/English/images/TNPSC-logo.png |
+| `mizoram-psc.png` | https://mpsc.mizoram.gov.in/apple-touch-icon.png |
+| `rbi.png` | https://www.rbi.org.in/images/logo_for_rbi_website.png |
+| `cbse.png` | https://www.cbse.gov.in/images/logo.png |
+| `nicl.svg` | https://nationalinsurance.nic.co.in/themes/custom/nicl/logo.svg |
+| `aai.png` | https://www.aai.aero/sites/default/files/logo_15042021.png |
+| `bsf.png` | https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1746079135.png |
+| `bob.png` | https://bankofbaroda.bank.in/chat/bob/countrywebsite/india/build/logo/logo512.png |
 
 Category cards use custom inline SVG icons, since a category such as Banking or Teaching has no single official recruiting-portal logo.

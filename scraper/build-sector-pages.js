@@ -10,7 +10,7 @@
 // career ladder) is authored, and it lives in scraper/sectors/*.json.
 const fs = require('fs');
 const path = require('path');
-const { markPathFor } = require('./org-marks');
+const { markPathFor, monogramFor } = require('./org-marks');
 
 const SECTORS_DIR = path.join(__dirname, 'sectors');
 const ICONS = {
@@ -33,7 +33,13 @@ const ICONS = {
   'alert-triangle': '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/>',
   'info': '<circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/>',
   'folder': '<path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/>',
-  'star': '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>'
+  'star': '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+  'camera': '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/>',
+  'pen-line': '<path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/>',
+  'id-card': '<path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/>',
+  'home': '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+  'clipboard-check': '<rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
+  'credit-card': '<rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>'
 };
 
 const icon = (name, cls = 'g-ic') =>
@@ -117,12 +123,15 @@ function renderListings(listings, helpers) {
           ? `Result ${escapeHTML(date(item.resultDate))}`
           : '';
     // The authority mark, so a row is recognisable before the title is read.
-    // Where no official mark is on file the cell keeps the listing-type glyph
-    // rather than borrowing another authority's seal.
+    // Where no official mark is on file the cell falls back to a monogram of the
+    // authority's own name rather than borrowing another authority's seal.
     const mark = markPathFor(item);
+    const mono = mark ? null : monogramFor(item);
     const markCell = mark
       ? `<img class="g-list-mark" src="../../assets/${mark}" alt="" width="28" height="28" loading="lazy" decoding="async">`
-      : `<span class="g-list-mark g-list-mark--none" aria-hidden="true">${icon(type === 'admit' ? 'book-open' : type === 'result' ? 'graduation-cap' : 'briefcase')}</span>`;
+      : mono
+        ? `<span class="g-list-mark g-list-mark--mono" data-len="${mono.initials.length}" style="--mono-h:${mono.hue}" aria-hidden="true">${escapeHTML(mono.initials)}</span>`
+        : `<span class="g-list-mark g-list-mark--none" aria-hidden="true">${icon(type === 'admit' ? 'book-open' : type === 'result' ? 'graduation-cap' : 'briefcase')}</span>`;
     return `<li class="g-list-row">
 ${markCell}
 <span class="g-list-type g-list-type--${type}">${icon(type === 'admit' ? 'book-open' : type === 'result' ? 'graduation-cap' : 'briefcase')}<span>${escapeHTML(listingType(item))}</span></span>
@@ -239,7 +248,7 @@ ${icon('shield', 'g-ic g-point-ic')}
 ${jsonLd}
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../../css/guide.css?v=20261119-guides">
+<link rel="stylesheet" href="../../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../../css/guide.css?v=20261119-guides2">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -274,8 +283,10 @@ ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-
 <nav class="g-jump container" aria-label="Jump to a section">
 <a href="#who-can-apply">Who can apply</a>
 <a href="#selection">Selection stages</a>
-<a href="#career">Career path</a>
+<a href="#apply">Apply</a>
+<a href="#documents">Documents</a>
 <a href="#syllabus">Syllabus</a>
+<a href="#career">Career path</a>
 <a href="#reality">Reality check</a>
 <a href="#live">Live listings (${listings.length})</a>
 <a href="#faq">FAQ</a>
@@ -291,6 +302,33 @@ ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-
 <h2 class="g-h2">${icon('book-open', 'g-ic g-h2-ic')}How selection works, stage by stage</h2>
 <p class="g-sub">Each stage below is a real gate. Only the last one leads to an appointment letter.</p>
 <ol class="g-flow">${stages}</ol>
+</section>
+
+<section class="g-block container" id="apply">
+<h2 class="g-h2">${icon('clipboard-check', 'g-ic g-h2-ic')}How to apply, in five steps</h2>
+<p class="g-sub">Almost every central and state portal follows this order. Complete each step before moving on — most portals stop letting you edit once the fee is paid.</p>
+<ol class="g-apply">
+<li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">1</span><span class="g-apply-ic">${icon('file-text', 'g-ic')}</span><h3>Read the official notice</h3><p>Confirm qualification, age as on the notice's cut-off date, fee and the last date before you register.</p></li>
+<li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">2</span><span class="g-apply-ic">${icon('clipboard-check', 'g-ic')}</span><h3>Register on the official portal</h3><p>Use the link on the notice, not a search result. Keep the registration number and password it gives you.</p></li>
+<li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">3</span><span class="g-apply-ic">${icon('pen-line', 'g-ic')}</span><h3>Fill the form, upload photo and signature</h3><p>Enter your name exactly as on your Class 10 certificate. Upload the photo and signature in the size and format the portal specifies.</p></li>
+<li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">4</span><span class="g-apply-ic">${icon('credit-card', 'g-ic')}</span><h3>Pay the fee</h3><p>Pay online and save the receipt. If you claim a fee waiver, the category certificate must already be in the prescribed format.</p></li>
+<li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">5</span><span class="g-apply-ic">${icon('check-circle', 'g-ic')}</span><h3>Download the confirmation</h3><p>Save the submitted application PDF and the payment receipt. Check the portal again after a day to confirm the form was accepted.</p></li>
+</ol>
+</section>
+
+<section class="g-block container" id="documents">
+<h2 class="g-h2">${icon('folder', 'g-ic g-h2-ic')}Documents to keep ready</h2>
+<p class="g-sub">Scan these before the form opens. A missing certificate is the most common reason an otherwise eligible application is rejected at verification.</p>
+<ul class="g-docs">
+<li class="g-doc"><span class="g-doc-ic">${icon('camera', 'g-ic')}</span><b>Passport photograph</b><p>Recent, plain light background, within the portal's file-size limit.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('pen-line', 'g-ic')}</span><b>Signature</b><p>Signed in black ink on white paper, scanned at the size the portal asks for.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('graduation-cap', 'g-ic')}</span><b>Class 10 certificate</b><p>Proves your date of birth and is the usual minimum qualification.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('file-text', 'g-ic')}</span><b>Degree or marksheet</b><p>Final or provisional, whichever the notice says it accepts.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('shield', 'g-ic')}</span><b>Caste or EWS certificate</b><p>In the prescribed format from the competent authority, valid on the cut-off date.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('home', 'g-ic')}</span><b>Domicile or residence proof</b><p>Needed only where the notice reserves posts for a state or region.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('id-card', 'g-ic')}</span><b>Photo ID</b><p>Aadhaar, PAN, passport or voter card — the name must match the application.</p></li>
+<li class="g-doc"><span class="g-doc-ic">${icon('credit-card', 'g-ic')}</span><b>Fee payment proof</b><p>UPI or bank receipt, kept until the admit card is issued.</p></li>
+</ul>
 </section>
 
 <section class="g-block container" id="syllabus">
@@ -392,7 +430,7 @@ function renderHub(sectors, helpers) {
   }).replace(/</g, '\\u003c')}</script>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../js/analytics-config.js?v=20261022"></script><script src="../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../css/guide.css?v=20261119-guides">
+<link rel="stylesheet" href="../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../css/guide.css?v=20261119-guides2">
 </head>
 <body>
 <div class="tricolor-strip"></div>

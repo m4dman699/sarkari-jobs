@@ -183,6 +183,18 @@
   background: #f1f5fb; color: #94a3b8;
 }
 .g-list-mark--none .g-ic { width: 14px; height: 14px; }
+/* Authorities with no verified logo get a monogram of their own name. It is
+   deliberately not an emblem: two initials on a colour derived from the name,
+   so every row is recognisable without pretending to be an official seal. */
+.g-list-mark--mono {
+  display: grid; place-items: center;
+  font-size: .62rem; font-weight: 800; letter-spacing: .02em;
+  color: hsl(var(--mono-h, 30) 52% 27%);
+  background: hsl(var(--mono-h, 30) 70% 93%);
+  border: 1px solid hsl(var(--mono-h, 30) 60% 84%);
+}
+.g-list-mark--mono[data-len="3"] { font-size: .52rem; letter-spacing: 0; }
+.g-list-mark--mono[data-len="4"] { font-size: .46rem; letter-spacing: 0; }
 .g-list-type {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: .8125rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
@@ -239,6 +251,29 @@
 .g-plan-num { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--saffron); color: #fff; font-weight: 800; font-size: .8rem; }
 .g-plan-body b { display: block; font-size: .88rem; color: var(--text-dark); }
 .g-plan-body p { margin: 2px 0 0; font-size: .82rem; line-height: 1.55; color: var(--text-grey); }
+
+/* ---------- Apply flow + document checklist ---------- */
+.g-apply { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(188px, 1fr)); }
+.g-apply-step { position: relative; background: #fff; border: 1px solid #e2e8f3; border-radius: 14px; padding: 16px; box-shadow: 0 1px 2px rgba(10, 17, 40, .04); }
+.g-apply-num {
+  position: absolute; top: 12px; right: 12px;
+  width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--saffron); color: #fff; font-weight: 800; font-size: .8rem;
+}
+.g-apply-ic { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: rgba(255, 153, 51, .13); color: var(--saffron-dark); margin-bottom: 10px; }
+.g-apply-step h3 { margin: 0 0 6px; font-size: .95rem; font-weight: 800; color: var(--text-dark); line-height: 1.3; padding-right: 24px; }
+.g-apply-step p { margin: 0; font-size: .82rem; line-height: 1.55; color: var(--text-grey); }
+
+.g-docs { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.g-doc { display: grid; grid-template-columns: 36px 1fr; gap: 4px 12px; align-items: start; background: #fff; border: 1px solid #e2e8f3; border-radius: 12px; padding: 14px; }
+.g-doc-ic { grid-row: 1 / span 2; width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: rgba(19, 136, 8, .1); color: var(--green-dark); }
+.g-doc b { font-size: .88rem; font-weight: 800; color: var(--text-dark); line-height: 1.35; }
+.g-doc p { margin: 0; font-size: .82rem; line-height: 1.5; color: var(--text-grey); }
+@media (max-width: 520px) {
+  .g-apply { grid-template-columns: 1fr; }
+  .g-docs { grid-template-columns: 1fr; }
+}
 
 /* ---------- Attribution ---------- */
 .g-attrib { background: #fff; border: 1px solid #e2e8f3; border-radius: 16px; padding: 22px 24px; margin-bottom: 40px; }

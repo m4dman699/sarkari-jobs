@@ -236,48 +236,59 @@ function fmtDate(d, opts = { day: 'numeric', month: 'short', year: 'numeric' }) 
   return dt ? dt.toLocaleDateString('en-IN', opts) : d;
 }
 
-const PORTAL_LOGOS = {
-  'rpsc.rajasthan.gov.in': 'rpsc.png',
-  'hpsc.gov.in': 'hpsc.png',
-  'tpsc.tripura.gov.in': 'tpsc-emblem.png',
-  'gpsc.gujarat.gov.in': 'gpsc.png',
-  'uppsc.up.nic.in': 'uppsc-official.png',
-  'mppsc.mp.gov.in': 'mppsc.png',
-  'mppsc.mponline.gov.in': 'mppsc.png',
-  'ssc.gov.in': 'ssc.webp',
-  'dsssb.delhi.gov.in': 'dsssb.png',
-  'rrb.indianrailways.gov.in': 'railways.png',
-  'indianrailways.gov.in': 'railways.png',
-  'hssc.gov.in': 'hssc.png',
-  'mpscmanipur.gov.in': 'manipur-mpsc.ico',
-  'www.sci.gov.in': 'supreme-court.ico',
-  'sci.gov.in': 'supreme-court.ico'
-};
-
-const PORTAL_FAVICONS = {
-  'www.jpsc.gov.in': 'https://www.jpsc.gov.in/favicon.ico',
-  'jpsc.gov.in': 'https://www.jpsc.gov.in/favicon.ico'
-};
+// Authority marks are matched on the organisation name, not the URL host: feeds
+// routinely link a state portal or a republisher, so host matching shows the
+// wrong logo — or a 404 favicon. This is the same verified list as
+// scraper/org-marks.js, kept in sync by hand because this file runs in the
+// browser and cannot require a CommonJS module.
+const PORTAL_LOGOS = [
+  [/\bRPSC\b|Rajasthan Public Service/i, 'portal-logos/rpsc.png'],
+  [/\bUPPSC\b|Uttar Pradesh Public Service/i, 'portal-logos/uppsc-official.png'],
+  [/\bMPPSC\b|Madhya Pradesh Public Service/i, 'portal-logos/mppsc.png'],
+  [/\bGPSC\b|Gujarat Public Service/i, 'portal-logos/gpsc.png'],
+  [/\bHPSC\b|Haryana Public Service/i, 'portal-logos/hpsc.png'],
+  [/\bTPSC\b|Tripura Public Service/i, 'portal-logos/tpsc-emblem.png'],
+  [/\bHSSC\b|Haryana Staff Selection/i, 'portal-logos/hssc.png'],
+  [/\bDSSSB\b|Delhi Subordinate Service/i, 'portal-logos/dsssb.png'],
+  [/Manipur Public Service|MPSC\s+Manipur|Manipur\s+MPSC/i, 'portal-logos/manipur-mpsc.ico'],
+  [/National Testing Agency|\bNTA\b/i, 'portal-logos/nta.png'],
+  [/Rajasthan Staff Selection|RSSB|RSMSSB/i, 'portal-logos/rssb.png'],
+  [/Madhya Pradesh Employee Selection|\bMPESB\b|Madhya Pradesh Vyapam|\bVyapam\b/i, 'portal-logos/mpesb.jpg'],
+  [/\bUPSC\b|Union Public Service/i, 'portal-logos/upsc.png'],
+  [/\bAPSC\b|Assam Public Service/i, 'portal-logos/apsc.png'],
+  [/\bTNPSC\b|Tamil Nadu Public Service/i, 'portal-logos/tnpsc.png'],
+  [/Mizoram Public Service|Mizoram\s+PSC/i, 'portal-logos/mizoram-psc.png'],
+  [/\bRBI\b|Reserve Bank of India/i, 'portal-logos/rbi.png'],
+  [/\bCBSE\b|Central Board of Secondary Education/i, 'portal-logos/cbse.png'],
+  [/National Insurance Company|\bNICL\b/i, 'portal-logos/nicl.svg'],
+  [/Airports Authority of India|\bAAI\b/i, 'portal-logos/aai.png'],
+  [/Border Security Force|\bBSF\b/i, 'portal-logos/bsf.png'],
+  [/Bank of Baroda|\bBOB\b/i, 'portal-logos/bob.png'],
+  [/\bSSC\b|Staff Selection Commission/i, 'portal-logos/ssc.webp'],
+  [/\bRRB\b|Railway Recruitment Board|Ministry of Railways/i, 'portal-logos/railways.png'],
+  [/Supreme Court of India/i, 'portal-logos/supreme-court.ico'],
+  [/\bIBPS\b|Institute of Banking Personnel/i, 'logos/ibps-logo.png'],
+  [/Kendriya Vidyalaya|\bKVS\b/i, 'logos/kvs-logo.svg'],
+  [/Indian Air Force|\bIAF\b/i, 'logos/indian-air-force-logo.png'],
+  [/Indian Police Service|\bIPS\b/i, 'logos/indian-police-service-logo.png']
+];
 
 function portalMarkHTML(item) {
   const name = cleanText(item.organization || item.source || item.title);
   const words = name.match(/[A-Za-z0-9]+/g) || [];
-  const acronym = name.match(/\b[A-Z]{2,6}\b/)?.[0];
-  const parentheticalAcronym = name.match(/\(([A-Z]{2,6})\)/)?.[1];
-  const initials = (parentheticalAcronym || acronym || (words.length > 1
+  // Prefer a published acronym short enough for the badge, then two initials.
+  const acronym = (name.match(/\b[A-Z]{2,6}\b/g) || [])
+    .find(token => !/^(19|20)\d{2}$/.test(token) && token.length <= 4);
+  const initials = (acronym || (words.length > 1
     ? words.slice(0, 2).map(word => word[0]).join('')
     : (words[0] || 'GO').slice(0, 2))).toUpperCase();
-  const officialLink = officialURL(item.publisher ? item.officialLink : item.link);
-  let host = '';
-  if (officialLink) {
-    try {
-      host = new URL(officialLink).hostname.toLowerCase();
-    } catch (_) {}
-  }
-  const logo = PORTAL_LOGOS[host]
-    ? `assets/portal-logos/${PORTAL_LOGOS[host]}`
-    : (PORTAL_FAVICONS[host] || (host ? `https://${host}/favicon.ico` : ''));
-  return `<span class="portal-mark" aria-hidden="true">${logo ? `<img src="${escapeHTML(logo)}" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">` : ''}<span class="portal-monogram">${escapeHTML(initials || 'GO')}</span></span>`;
+  const match = PORTAL_LOGOS.find(([pattern]) => pattern.test(name));
+  // Each entry carries its own assets/ path, because a few marks sit in logos/.
+  const logo = match ? `assets/${match[1]}` : '';
+  let hue = 0;
+  for (let i = 0; i < name.length; i++) hue = (hue * 31 + name.charCodeAt(i)) >>> 0;
+  hue %= 360;
+  return `<span class="portal-mark" aria-hidden="true"${logo ? '' : ` style="--mono-h:${hue}"`}>${logo ? `<img src="${escapeHTML(logo)}" alt="" loading="lazy" decoding="async" onerror="this.hidden=true">` : ''}<span class="portal-monogram" data-len="${(initials || 'GO').length}">${escapeHTML(initials || 'GO')}</span></span>`;
 }
 
 // ---------- Render job cards ----------
