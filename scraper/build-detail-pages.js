@@ -1016,7 +1016,23 @@ const indexCard = (entry, secondary, label = 'Job notification', showPublished =
   return `<article class="job-card announcement-card"><span class="tag saff">${escapeHTML(label)}</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
 };
 
-const groupedIndex = (groups, introFor, secondaryFor) => {
+const feedDay = String(feedDate || '').slice(0, 10);
+const indexIntro = (group, dimension) => {
+  const values = group.entries.map(entry => entry.item);
+  const dated = values.filter(item => item.lastDate).length;
+  const upcoming = values.filter(item => item.lastDate && String(item.lastDate).slice(0, 10) >= feedDay).length;
+  const states = new Set(values.map(item => String(item.state || '').replace(/\s+/g, ' ').trim()).filter(value => value && !/^see linked notice$/i.test(value)));
+  const categories = new Set(values.map(item => String(item.category || '').replace(/\s+/g, ' ').trim()).filter(Boolean));
+  const scope = dimension === 'category'
+    ? (states.size === 0 ? 'no state or UT named in the feed' : `${states.size} ${states.size === 1 ? 'state or UT' : 'states and UTs'}`)
+    : (categories.size === 0 ? 'no category recorded in the feed' : `${categories.size} ${categories.size === 1 ? 'category' : 'categories'}`);
+  const dateLine = dated
+    ? `A last date is recorded for ${dated}; ${upcoming === 0 ? 'none is' : `${upcoming} ${upcoming === 1 ? 'is' : 'are'}`} on or after ${hubDate(feedDay)}.`
+    : 'No last date is recorded in the feed for this group.';
+  return `${group.entries.length} ${group.entries.length === 1 ? 'notification' : 'notifications'} recorded under ${group.title}, with ${scope}. ${dateLine} Dates appear only where the source stated them.`;
+};
+
+const groupedIndex = (groups, introFor, secondaryFor, file) => {
   const jump = groups.map(group =>
     `<a class="pill" href="#${group.id}">${escapeHTML(group.title)} <b>${group.entries.length}</b></a>`).join('');
   const blocks = groups.map(group => `
@@ -1027,7 +1043,15 @@ const groupedIndex = (groups, introFor, secondaryFor) => {
 ${group.entries.map(entry => indexCard(entry, secondaryFor(entry))).join('\n')}
 </div>
 </section>`).join('\n');
+  const otherViews = [
+    ['all-jobs.html', 'A–Z'],
+    file !== 'state.html' ? ['state.html', 'state'] : null,
+    file !== 'category.html' ? ['category.html', 'category'] : null,
+    ['results.html', 'results'],
+    ['admit-cards.html', 'admit cards']
+  ].filter(Boolean).map(([href, label]) => `<a href="${href}">${label}</a>`).join(' · ');
   return `<nav class="group-jump" aria-label="Jump to a group">${jump}</nav>
+<p class="group-intro">The same feed is also indexed ${otherViews}.</p>
 <div class="group-index">${blocks}
 </div>`;
 };
@@ -1065,7 +1089,7 @@ const writeGroupedPage = ({ file, markers, groups, name, description, introFor, 
   const pagePath = path.join(ROOT, file);
   if (!fs.existsSync(pagePath)) return;
   let html = fs.readFileSync(pagePath, 'utf8');
-  const body = groupedIndex(groups, introFor, secondaryFor);
+  const body = groupedIndex(groups, introFor, secondaryFor, file);
   const block = new RegExp(`<!-- ${markers}:start -->[\\s\\S]*?<!-- ${markers}:end -->`);
   if (!block.test(html)) throw new Error(`${file}: missing ${markers} markers`);
   html = html.replace(block, `<!-- ${markers}:start -->\n${body}\n<!-- ${markers}:end -->`);
@@ -1091,7 +1115,7 @@ writeGroupedPage({
   groups: categoryGroups,
   name: 'Government job notifications by category',
   description: `Every job notification tracked by SarkariJobs+ (${jobEntries.length} listings), grouped by the category recorded in the notice, with available deadlines and official source links.`,
-  introFor: group => `${group.entries.length} job ${group.entries.length === 1 ? 'notification' : 'notifications'} recorded under ${group.title}. Dates appear only where the source stated them.`,
+  introFor: group => indexIntro(group, 'category'),
   secondaryFor: entry => entry.item.state
 });
 
@@ -1117,8 +1141,8 @@ writeGroupedPage({
   name: 'State government jobs',
   description: `Job notifications grouped by the state recorded in the notice — ${stateGroups.length} states and union territories plus central All India posts, with available deadlines and official source links.`,
   introFor: group => group.title === 'All India'
-    ? `${group.entries.length} central notifications open to candidates from every state.`
-    : `${group.entries.length} ${group.title} ${group.entries.length === 1 ? 'notification' : 'notifications'}. State quota, eligibility and domicile rules are stated by the recruiting board, not by this index.`,
+    ? `${group.entries.length} central notifications recorded in the feed, covering ${new Set(group.entries.map(entry => String(entry.item.category || '').replace(/\s+/g, ' ').trim()).filter(Boolean)).size} categories. Dates appear only where the source stated them.`
+    : indexIntro(group, 'state'),
   secondaryFor: entry => entry.item.category
 });
 
