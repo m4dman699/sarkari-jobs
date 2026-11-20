@@ -24711,13 +24711,13 @@
     }
   },
   "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
-    "attemptedAt": "2026-11-11T09:29:10.035Z",
+    "attemptedAt": "2026-11-20T10:04:14.823Z",
     "parser": "v2",
     "details": {
       "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
       "publishedDate": "2026-10-29",
       "openDate": "2026-10-29",
-      "lastDate": "2026-11-20",
+      "lastDate": "2026-11-29",
       "examDate": null,
       "resultDate": "2026-12-15",
       "admitCardDate": null,
@@ -24729,8 +24729,8 @@
       "milestones": [
         {
           "label": "Last Date to Apply",
-          "date": "2026-11-20",
-          "dateText": "20 November 2026"
+          "date": "2026-11-29",
+          "dateText": "29 November 2026 (NAPS, extended); 20 November 2026 (NATS)"
         },
         {
           "label": "Notification Release Date",
@@ -24744,8 +24744,8 @@
         },
         {
           "label": "Last Date to Apply Online",
-          "date": "2026-11-20",
-          "dateText": "20 November 2026"
+          "date": "2026-11-29",
+          "dateText": "29 November 2026 (NAPS, extended); 20 November 2026 (NATS)"
         },
         {
           "label": "Scheduled Result/Selection Date",
@@ -24776,6 +24776,10 @@
         {
           "url": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
           "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://ongcindia.com/documents/77751/2660534/Corrigendum191126.pdf/177ccb28-2eca-5dd0-5998-1366a4055242",
+          "label": "Last Date Extension Notice PDF (19 Nov 2026)"
         },
         {
           "url": "https://ongcapprentices.ongc.co.in/",
@@ -35281,7 +35285,7 @@
     }
   },
   "https://www.freejobalert.com/articles/crpf-recruitment-2026-specialist-medical-officer-and-surgeon-3081799": {
-    "attemptedAt": "2026-11-19T10:24:40.859Z",
+    "attemptedAt": "2026-11-20T10:04:14.723Z",
     "parser": "v2",
     "details": {
       "organization": "Central Reserve Police Force (CRPF), Across India",
@@ -35332,7 +35336,7 @@
     }
   },
   "https://www.freejobalert.com/articles/recpdcl-senior-consultant-renewable-energy-recruitment-2026-3077386": {
-    "attemptedAt": "2026-11-19T10:24:40.887Z",
+    "attemptedAt": "2026-11-20T10:04:14.799Z",
     "parser": "v2",
     "details": {
       "organization": "REC Power Development and Consultancy Limited (RECPDCL)",
@@ -35688,7 +35692,7 @@
     }
   },
   "https://www.freejobalert.com/articles/isro-istrac-cbt-technical-assistant-result-2026-3082506": {
-    "attemptedAt": "2026-11-19T10:24:47.109Z",
+    "attemptedAt": "2026-11-20T10:04:14.757Z",
     "parser": "v2",
     "details": {
       "organization": "ISRO Telemetry Tracking & Command Network (ISTRAC)",
@@ -36045,6 +36049,326 @@
         {
           "url": "https://upsssc.gov.in/",
           "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rites-recruitment-2026-apply-online-for-8-technical-assistant-technician-posts-3082727": {
+    "attemptedAt": "2026-11-20T10:04:14.780Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rail India Technical and Economic Service (RITES), Gurgaon, Across India",
+      "publishedDate": "2026-11-20",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Varies by post - see the table below",
+      "eligibility": "Matriculation plus ITI in relevant trade or Diploma in Civil/Architecture",
+      "applicationFee": "is Rs. 300 plus Taxes for General/OBC Candidates. Selection is by written Test and document Scrutiny. Post-wise eligibility, dates and the steps to apply are given below. Key Points Last date: 15 December 2026 Vacancies: 8, in 3 roles How to apply: Online Fee: General/OBC Candidates: Rs. 300 plus Taxes; EWS/ SC/ST/ PWD",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-15",
+          "dateText": "15 December 2026"
+        }
+      ],
+      "officialLink": "https://rites.com",
+      "notificationLink": "https://rites.com/Upload/Career/Final_adv_of_RG_50-52_26_pdf-2026-Nov-16-13-3-13.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rites.com/Upload/Career/Final_adv_of_RG_50-52_26_pdf-2026-Nov-16-13-3-13.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://rites.com/Upload/Career/Hindi_50_51_52__pdf-2026-Nov-20-10-23-22.pdf",
+          "label": "Hindi Notification PDF"
+        },
+        {
+          "url": "https://rites.com",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/skau-kurukshetra-staff-nurse-and-more-post-admit-card-2026-3082947": {
+    "attemptedAt": "2026-11-20T10:04:14.848Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SKAU Kurukshetra",
+      "publishedDate": "2026-11-20",
+      "openDate": "2026-07-30",
+      "lastDate": "2026-08-28",
+      "examDate": "2026-11-22",
+      "resultDate": "2026-10-17",
+      "admitCardDate": "2026-11-20",
+      "interviewDate": null,
+      "vacancies": "60",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Written Examination Date",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-07-30",
+          "dateText": "30 July 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-08-28",
+          "dateText": "28 August 2026"
+        },
+        {
+          "label": "Clerk Typing Test Result",
+          "date": "2026-10-17",
+          "dateText": "17 October 2026"
+        },
+        {
+          "label": "Written Exam City Intimation Slip",
+          "date": "2026-11-07",
+          "dateText": "7 November 2026"
+        },
+        {
+          "label": "Written Exam Admit Card",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Written Examination",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        }
+      ],
+      "officialLink": "https://skau.eapplynow.com/Pages/WTAdmitCard02Login5.aspx",
+      "officialLinks": [
+        {
+          "url": "https://skau.ac.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://skau.eapplynow.com",
+          "label": "Recruitment Portal"
+        },
+        {
+          "url": "https://skau.eapplynow.com/Pages/WTAdmitCard02Login5.aspx",
+          "label": "SKAU Kurukshetra Admit Card 2026"
+        },
+        {
+          "url": "https://skau.eapplynow.com/",
+          "label": "SKAU Clerk Typing Test Result 2026"
+        },
+        {
+          "url": "https://skau.ac.in/",
+          "label": "Official Recruitment Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ibps-po-mains-result-2026-3081498": {
+    "attemptedAt": "2026-11-20T10:04:14.871Z",
+    "parser": "v2",
+    "details": {
+      "organization": "IBPS PO Mains",
+      "publishedDate": "2026-11-20",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-10-04",
+      "resultDate": "2026-11-20",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "7,565",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Mains Exam Date",
+          "date": "2026-10-04",
+          "dateText": "4 October 2026"
+        },
+        {
+          "label": "Expected Result Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Prelims Examination",
+          "date": "2026-08-23",
+          "dateText": "22–23 August 2026"
+        },
+        {
+          "label": "Mains Examination",
+          "date": "2026-10-04",
+          "dateText": "4 October 2026"
+        },
+        {
+          "label": "Mains Result",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026 (Expected)"
+        }
+      ],
+      "officialLink": "https://www.ibps.in/",
+      "officialLinks": [
+        {
+          "url": "https://ibps.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.ibps.in/",
+          "label": "IBPS PO Mains Result 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/psssb-pmt-pet-result-2026-3082675": {
+    "attemptedAt": "2026-11-20T10:04:14.891Z",
+    "parser": "v2",
+    "details": {
+      "organization": "PSSSB PMT PET",
+      "publishedDate": "2026-11-19",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-19",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "PMT/PET Dates",
+          "date": "2026-11-16",
+          "dateText": "11 to 16 November 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Counselling Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Post-Wise PMT/PET Results and Counselling List",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        }
+      ],
+      "officialLink": "https://sssb.punjab.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/11/PMT-PET-Warder.pdf",
+          "label": "Warder"
+        },
+        {
+          "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/11/PMT-PET-Matron.pdf",
+          "label": "Matron"
+        },
+        {
+          "url": "https://sssb.punjab.gov.in/wp-content/uploads/2026/11/PMT-PET-Assis-Supdt.pdf",
+          "label": "Assistant Superintendent"
+        },
+        {
+          "url": "https://sssb.punjab.gov.in/",
+          "label": "PSSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/bihar-bpsc-apo-result-2026-3082861": {
+    "attemptedAt": "2026-11-20T10:04:14.917Z",
+    "parser": "v2",
+    "details": {
+      "organization": "BPSC APO",
+      "publishedDate": "2026-11-20",
+      "openDate": "2026-02-27",
+      "lastDate": "2026-03-20",
+      "examDate": "2026-07-15",
+      "resultDate": "2026-11-19",
+      "admitCardDate": "2026-07-06",
+      "interviewDate": null,
+      "vacancies": "300",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Prelims Exam Date",
+          "date": "2026-07-15",
+          "dateText": "15 July 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-02-27",
+          "dateText": "27 February 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-03-20",
+          "dateText": "20 March 2026"
+        },
+        {
+          "label": "Prelims Admit Card",
+          "date": "2026-07-06",
+          "dateText": "6 July 2026"
+        },
+        {
+          "label": "Preliminary Examination",
+          "date": "2026-07-15",
+          "dateText": "15 July 2026"
+        },
+        {
+          "label": "Provisional Answer Key",
+          "date": "2026-08-12",
+          "dateText": "12 August 2026"
+        },
+        {
+          "label": "Final Answer Key",
+          "date": "2026-10-13",
+          "dateText": "13 October 2026"
+        },
+        {
+          "label": "Prelims Result",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        }
+      ],
+      "officialLink": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-132026-Prosecution-Officer-Preliminary-Examination_BPSC-20261119-d637of.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-132026-Prosecution-Officer-Preliminary-Examination_BPSC-20261119-d637of.pdf",
+          "label": "BPSC APO Result 2026"
+        },
+        {
+          "url": "https://bpsc.bihar.gov.in/",
+          "label": "BPSC Official Website"
         }
       ]
     }

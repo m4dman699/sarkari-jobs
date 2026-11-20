@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 9,
+  "generatedAt": "2026-11-20T10:04:13.654Z",
+  "total": 8,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -14,54 +14,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-683e6a5c8bbb2b46",
-      "type": "job",
-      "title": "UP Bulandshahar ECCE Educator Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/up-bulandshahar-ecce-educator-nov26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "lastDate": "2026-11-18",
-      "organization": "UP Rojgar Sangam (Sewayojan) Portal",
-      "publishedDate": "2026-11-02",
-      "openDate": "2026-11-02",
-      "ageLimit": "21–42 years",
-      "eligibility": "Graduation in Home Science with Minimum 50% Marks from Any Recognized University in India. NTT (Nursery Teacher Training) Passed. CT (Nursery) Passed. Diploma in Pre-School Education (DPSE) Passed",
-      "applicationFee": "for the All Candidates.",
-      "officialLinks": [
-        {
-          "url": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/ECCE_Bulandshahar_02112026.pdf",
-          "label": "Download Vacancy Details"
-        },
-        {
-          "url": "https://bulandshahar.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://sewayojan.up.nic.in/IEP/Login.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-11-02",
-          "dateText": "02 November 2026 | 08:45 PM"
-        },
-        {
-          "label": "Last Date for Apply",
-          "date": "2026-11-18",
-          "dateText": "18/11/2026"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-52e3e1e350d0d2f7",

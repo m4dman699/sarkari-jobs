@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-11-19T10:24:47.360Z",
-  "durationSeconds": 24,
+  "generatedAt": "2026-11-20T10:04:14.922Z",
+  "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 657,
-    "jobs": 133,
-    "admitCards": 156,
-    "results": 368,
+    "total": 667,
+    "jobs": 134,
+    "admitCards": 159,
+    "results": 374,
     "jobsMissingPublicationDate": 59,
-    "jobsMissingClosingDate": 82,
+    "jobsMissingClosingDate": 84,
     "jobsMissingOrganization": 77,
-    "jobsMissingVacancies": 88,
-    "jobsMissingEligibility": 77,
-    "jobsMissingApplicationFee": 84,
+    "jobsMissingVacancies": 91,
+    "jobsMissingEligibility": 78,
+    "jobsMissingApplicationFee": 85,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 12,
-    "resultsMissingPublishedDate": 54,
-    "resultsMissingResultDate": 179
+    "resultsMissingPublishedDate": 55,
+    "resultsMissingResultDate": 181
   },
   "after": {
-    "total": 672,
-    "jobs": 140,
-    "admitCards": 159,
-    "results": 373,
+    "total": 669,
+    "jobs": 132,
+    "admitCards": 160,
+    "results": 377,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 82,
     "jobsMissingOrganization": 75,
@@ -34,19 +34,19 @@
     "jobsMissingApplicationFee": 83,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 12,
-    "resultsMissingPublishedDate": 54,
-    "resultsMissingResultDate": 180
+    "resultsMissingPublishedDate": 55,
+    "resultsMissingResultDate": 181
   },
   "imported": {
-    "job": 8,
-    "admit-card": 4,
-    "result": 5
+    "job": 1,
+    "admit-card": 1,
+    "result": 3
   },
-  "matchedExisting": 205,
-  "filledItems": 47,
+  "matchedExisting": 19,
+  "filledItems": 1,
   "removedStale": 0,
-  "removedUncertain": 0,
-  "skippedClosed": 261,
+  "removedUncertain": 1,
+  "skippedClosed": 0,
   "removedNavigation": 2,
   "removalLog": [
     {
@@ -60,12 +60,18 @@
       "type": "job",
       "publisher": "(official)",
       "title": "Jobs for Ex-Servicemen"
+    },
+    {
+      "reason": "stale competitor job without dates",
+      "type": "job",
+      "publisher": "FreeJobAlert",
+      "title": "NLC India 143 GET Online Form 2026"
     }
   ],
   "detailPages": {
-    "targets": 114,
-    "fetched": 112,
-    "cacheHits": 2
+    "targets": 9,
+    "fetched": 9,
+    "cacheHits": 0
   },
   "remainingGaps": {
     "jobsMissingDate": [
@@ -135,7 +141,6 @@
       "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026"
     ],
     "jobsMissingVacancies": [
-      "UP Bulandshahar ECCE Educator Online Form 2026",
       "Supreme Court of India Senior Personal Assistant Online Form 2026",
       "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
@@ -154,9 +159,26 @@
       "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
       "Notification NO.NPSC/ADVT-1/04(VOL-1) dt.16.11.2026 (CTSE 2026 Re-exam) New",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open"
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026"
     ],
     "jobsMissingOfficialLink": []
   },
-  "errors": []
+  "errors": [
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/latestjob/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/admitcard/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/result/",
+      "error": "HTTP 403"
+    }
+  ]
 }
