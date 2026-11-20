@@ -563,12 +563,50 @@ for (const item of payload.jobs || []) {
     .map(entry => `<section class="d-related d-guide-link"><h2 class="d-section-title">${icon('info', 'd-ic d-index-h-ic')}Deeper guide</h2><div class="d-related-list"><a class="d-rel" href="../../${entry.href}"><span class="d-rel-tag">${icon('folder', 'd-ic d-rel-ic')}<b>Guide</b></span>${escapeHTML(entry.label)}</a></div></section>`)
     .join('');
   const thin = isThin(item);
+  // Type-specific illustrated checklists. These are action guides, not decoration:
+  // admit-card pages get an exam-day checklist and result pages get a merit-list
+  // reading guide. Both are paired with real HTML labels and a source caveat.
+  const typeDiagram = type === 'admit'
+    ? `<section class="diagram-band" aria-labelledby="type-diagram-heading">
+  <div class="container">
+    <div class="diagram-frame">
+      <img src="../../assets/diagrams/admit-card-checklist.webp" alt="Exam-day checklist: downloaded hall ticket, printed copy, photo identity, exam venue and reporting time" width="1344" height="768" loading="lazy" decoding="async">
+    </div>
+    <h2 id="type-diagram-heading" class="diagram-heading">Exam-day checklist</h2>
+    <ol class="diagram-steps">
+      <li>Download the hall ticket from the official portal</li>
+      <li>Keep a printed copy and a phone copy</li>
+      <li>Carry the photo ID named in the notice</li>
+      <li>Reach the exam centre before the reporting time</li>
+      <li>Follow only the instructions on your admit card</li>
+    </ol>
+    <p class="diagram-caption"><b>Check your own admit card for the exact documents, reporting time and centre.</b> This is a general reminder, not a substitute for the recruiting authority's instructions.</p>
+  </div>
+</section>`
+    : type === 'result'
+      ? `<section class="diagram-band" aria-labelledby="type-diagram-heading">
+  <div class="container">
+    <div class="diagram-frame">
+      <img src="../../assets/diagrams/result-merit-reading.webp" alt="Guide to reading a merit list: official notice, find your row, check rank, download scorecard, document verification" width="1344" height="768" loading="lazy" decoding="async">
+    </div>
+    <h2 id="type-diagram-heading" class="diagram-heading">How to read a result or merit list</h2>
+    <ol class="diagram-steps">
+      <li>Open the result PDF on the authority's own portal</li>
+      <li>Find your roll or registration number</li>
+      <li>Check the rank, category and qualifying status</li>
+      <li>Download the scorecard if one is issued</li>
+      <li>Watch for the document-verification notice</li>
+    </ol>
+    <p class="diagram-caption">A merit list is not an appointment letter. <b>Only the official result PDF and later verification notice confirm your status</b> — this page never invents a rank or date.</p>
+  </div>
+</section>`
+      : '';
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css"><link rel="stylesheet" href="../../css/detail.css?v=d8">
+<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css?v=20261120-diagrams"><link rel="stylesheet" href="../../css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -594,6 +632,7 @@ ${ctaRow}
 </section>
 ${bannerHtml}
 ${verifiedSummary}
+${typeDiagram}
 <article>
 <h2 class="d-section-title">Key details</h2>
 <dl class="d-facts">
@@ -833,7 +872,7 @@ const indexHtml = `<!doctype html>
 <title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/detail.css?v=d8">
+<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="css/style.css?v=20261120-diagrams"><link rel="stylesheet" href="css/detail.css?v=d8">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -856,6 +895,22 @@ ${iconSprite()}
 <h1>Every listing on SarkariJobs+</h1>
 <div class="d-chiprow"><span class="d-chip">${icon('bell', 'd-ic d-chip-ic')}${entries.length} live listings</span><span class="d-chip">${icon('folder', 'd-ic d-chip-ic')}Jobs, admit cards, results</span><span class="d-chip">${icon('open', 'd-ic d-chip-ic')}Official source on every page</span></div>
 <p class="d-lead" style="margin-top:14px">Plain-HTML index of everything the tracker currently follows. Use it to jump straight to a listing instead of scrolling the filterable hubs. Dates, fees and vacancy counts are summarised from the recruiting authority's own notice — always confirm on the official page before applying.</p>
+</section>
+<section class="diagram-band" aria-labelledby="journey-heading">
+  <div class="container">
+    <div class="diagram-frame">
+      <img src="assets/diagrams/journey-flow.webp" alt="Illustrated five-step recruitment journey: notification, application, exam, merit list, document verification and appointment" width="1344" height="768" loading="lazy" decoding="async">
+    </div>
+    <h2 id="journey-heading" class="diagram-heading">How a government job recruitment works</h2>
+    <ol class="diagram-steps">
+      <li>Official notice with dates and eligibility</li>
+      <li>Application before the last date</li>
+      <li>Written or computer-based test</li>
+      <li>Merit list or result published</li>
+      <li>Verification and appointment</li>
+    </ol>
+    <p class="diagram-caption">This is the general process, not a promise for any one post. <b>Every date, fee and eligibility clause comes from the official notice linked on the listing.</b></p>
+  </div>
 </section>
 <section class="d-index-jump" aria-label="Jump to a section">${jumpLinks}</section>
 ${groupBlocks}

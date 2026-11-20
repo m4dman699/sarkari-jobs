@@ -248,7 +248,7 @@ ${icon('shield', 'g-ic g-point-ic')}
 ${jsonLd}
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../../css/guide.css?v=20261119-guides2">
+<link rel="stylesheet" href="../../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../../css/guide.css?v=20261120-sector-art">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -272,6 +272,10 @@ ${heroLogo}
 <p class="g-kicker">${icon(sector.icon, 'g-ic g-hero-ic')}Sector guide</p>
 <h1>${escapeHTML(name)} jobs: who can apply, and how selection works</h1>
 <p class="g-lede">${escapeHTML(name)} recruitment explained in diagrams: which qualification unlocks which post, every selection stage, and live listings pulled from the official feed.</p>
+<figure class="g-sector-art">
+<img src="../../assets/sector-art/${sector.slug}.webp" alt="Illustration of ${escapeHTML(name)} government jobs: the tools and symbols of this sector" width="1344" height="768" loading="lazy" decoding="async">
+<figcaption>Illustrative artwork for the ${escapeHTML(name)} guide. <b>Selection rules, dates and vacancies come only from the official notice linked on each listing.</b></figcaption>
+</figure>
 <div class="g-statrow">${stats}</div>
 <div class="g-pictograms">
 ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-icon">${icon(p.icon, 'g-ic g-picto-ic')}</span><span class="g-picto-label">${escapeHTML(p.label)}</span></div>`).join('')}
@@ -291,6 +295,22 @@ ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-
 <a href="#live">Live listings (${listings.length})</a>
 <a href="#faq">FAQ</a>
 </nav>
+
+<section class="diagram-band g-diagram" aria-labelledby="ladder-heading">
+<div class="container">
+<div class="diagram-frame">
+<img src="../../assets/diagrams/eligibility-ladder.webp" alt="Four-step qualification ladder from school pass to graduate" width="1344" height="768" loading="lazy" decoding="async">
+</div>
+<h2 id="ladder-heading" class="diagram-heading">Qualification decides the post you can target</h2>
+<ol class="diagram-steps">
+<li>10th pass — entry-level posts</li>
+<li>12th pass — clerk and operating posts</li>
+<li>ITI or diploma — technician and engineer posts</li>
+<li>Graduate — officer and specialist posts</li>
+</ol>
+<p class="diagram-caption">This ladder is a starting point. Confirm the <b>exact educational clause, age limit and relaxations in the official notice</b> before you apply.</p>
+</div>
+</section>
 
 <section class="g-block container" id="who-can-apply">
 <h2 class="g-h2">${icon('graduation-cap', 'g-ic g-h2-ic')}Who can apply: qualification → post</h2>
@@ -430,7 +450,7 @@ function renderHub(sectors, helpers) {
   }).replace(/</g, '\\u003c')}</script>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../js/analytics-config.js?v=20261022"></script><script src="../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../css/guide.css?v=20261119-guides2">
+<link rel="stylesheet" href="../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../css/guide.css?v=20261120-sector-art">
 </head>
 <body>
 <div class="tricolor-strip"></div>
@@ -450,6 +470,15 @@ function renderHub(sectors, helpers) {
 <h1>Which government job fits your qualification</h1>
 <p class="g-lede">Every sector has its own ladder, its own exam pattern and its own traps. Pick one to see the qualification that unlocks each post, the stages you have to clear, and the live listings tracked from the official portals.</p>
 </div></section>
+<section class="diagram-band" aria-labelledby="sector-heading">
+<div class="container">
+<div class="diagram-frame">
+<img src="../assets/diagrams/sector-map.webp" alt="Map of twelve government job sectors covered by SarkariJobs+ guides" width="1344" height="768" loading="lazy" decoding="async">
+</div>
+<h2 id="sector-heading" class="diagram-heading">Pick a sector, then follow its ladder</h2>
+<p class="diagram-caption">Each guide has its own illustration and covers <b>qualification → post → selection stages → live listings</b>. The portal mark on each guide is the real logo of that organisation; this artwork is only a map of the sectors we cover.</p>
+</div>
+</section>
 <section class="g-block container">
 <div class="g-cards">${cards}</div>
 </section>

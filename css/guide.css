@@ -335,3 +335,78 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- Illustrated process diagrams (content-first) ---------- */
+.diagram-band { margin: 26px 0 8px; }
+.diagram-frame {
+  overflow: hidden;
+  border: 1px solid #e6ecf6;
+  border-radius: 18px;
+  background: #FFF8EE;
+  box-shadow: 0 6px 22px rgba(10,17,40,.06);
+}
+.diagram-frame img { display: block; width: 100%; height: auto; }
+.diagram-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: dstep;
+}
+.diagram-steps li {
+  position: relative;
+  padding: 11px 12px 11px 36px;
+  background: #fff;
+  border: 1px solid #e6ecf6;
+  border-radius: 10px;
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--navy);
+}
+.diagram-steps li::before {
+  counter-increment: dstep;
+  content: counter(dstep);
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.diagram-heading { font-size: clamp(1.15rem, 2.4vw, 1.5rem); margin: 18px 2px 0; color: var(--navy); }
+.diagram-caption { color: var(--text-grey); font-size: .86rem; line-height: 1.65; margin: 14px 2px 0; }
+.diagram-caption b { color: var(--navy); }
+
+/* Topic-specific artwork for each sector guide */
+.g-sector-art {
+  margin: 22px 0 0;
+  border: 1px solid #e6ecf6;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #FFF8EE;
+  box-shadow: 0 6px 22px rgba(10,17,40,.06);
+}
+.g-sector-art img { display: block; width: 100%; height: auto; }
+.g-sector-art figcaption {
+  padding: 12px 16px 14px;
+  color: var(--text-grey);
+  font-size: .82rem;
+  line-height: 1.6;
+  border-top: 1px solid #e6ecf6;
+  background: #fff;
+}
+.g-sector-art figcaption b { color: var(--navy); }
+@media (max-width: 640px) {
+  .diagram-frame { border-radius: 12px; }
+  .diagram-steps { grid-template-columns: 1fr; }
+  .g-sector-art { border-radius: 12px; }
+}

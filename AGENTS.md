@@ -24,3 +24,11 @@
 
 - A push to GitHub `main` invokes the Hostinger deploy workflow. Do not manually upload files over FTP/SFTP when that workflow is available.
 - Deployment overwrites matching paths in Hostinger `public_html`; it does not delete every remote file absent locally. Check `deployment-version.txt` / the workflow verification before claiming a deploy succeeded.
+
+## Model and image-generation preferences
+
+- Always prefer free models that do not consume credits, for every task.
+- For chat work that needs to read images, use a free vision model such as `opencode/nemotron-3.5-super-vl-free`.
+- For image generation, use an explicitly free model such as `openrouter/recraft/recraft-v4.1-flash-v2:free`.
+- A `0` cost in the model list is not proof a model is free: `opencode/grok-imagine-image-2.0` showed `0` but failed with "Insufficient balance". Prefer IDs ending in `:free`.
+- If a model fails for billing/credit reasons, query the model list for free alternatives and retry with one of them automatically; do not stop or ask the user first.

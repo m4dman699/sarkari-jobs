@@ -979,3 +979,58 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
   animation-delay: .12s;
 }
 .detail-hero p.desc { color: #b9c4dd; margin-top: 14px; max-width: 680px; line-height: 1.7; animation: riseIn 1s cubic-bezier(.22,.9,.3,1) both; animation-delay: .24s; }
+
+/* ---------- Illustrated process diagrams (content-first) ---------- */
+.diagram-band { margin: 30px 0 10px; }
+.diagram-band.g-diagram { margin: 26px 0 8px; }
+.diagram-frame {
+  overflow: hidden;
+  border: 1px solid #e6ecf6;
+  border-radius: 18px;
+  background: #FFF8EE;
+  box-shadow: 0 6px 22px rgba(10,17,40,.06);
+}
+.diagram-frame img { display: block; width: 100%; height: auto; }
+.diagram-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: dstep;
+}
+.diagram-steps li {
+  position: relative;
+  padding: 11px 12px 11px 36px;
+  background: #fff;
+  border: 1px solid #e6ecf6;
+  border-radius: 10px;
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--navy);
+}
+.diagram-steps li::before {
+  counter-increment: dstep;
+  content: counter(dstep);
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.diagram-heading { font-size: clamp(1.15rem, 2.4vw, 1.5rem); margin: 18px 2px 0; color: var(--navy); }
+.diagram-caption { color: var(--text-grey); font-size: .86rem; line-height: 1.65; margin: 14px 2px 0; }
+.diagram-caption b { color: var(--navy); }
+@media (max-width: 640px) {
+  .diagram-frame { border-radius: 12px; }
+  .diagram-steps { grid-template-columns: 1fr; }
+}
