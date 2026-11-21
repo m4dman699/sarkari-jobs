@@ -24711,7 +24711,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
-    "attemptedAt": "2026-11-20T10:04:14.823Z",
+    "attemptedAt": "2026-11-21T09:52:23.321Z",
     "parser": "v2",
     "details": {
       "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
@@ -35285,7 +35285,7 @@
     }
   },
   "https://www.freejobalert.com/articles/crpf-recruitment-2026-specialist-medical-officer-and-surgeon-3081799": {
-    "attemptedAt": "2026-11-20T10:04:14.723Z",
+    "attemptedAt": "2026-11-21T09:52:23.376Z",
     "parser": "v2",
     "details": {
       "organization": "Central Reserve Police Force (CRPF), Across India",
@@ -36054,7 +36054,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rites-recruitment-2026-apply-online-for-8-technical-assistant-technician-posts-3082727": {
-    "attemptedAt": "2026-11-20T10:04:14.780Z",
+    "attemptedAt": "2026-11-21T09:52:23.255Z",
     "parser": "v2",
     "details": {
       "organization": "Rail India Technical and Economic Service (RITES), Gurgaon, Across India",
@@ -36369,6 +36369,478 @@
         {
           "url": "https://bpsc.bihar.gov.in/",
           "label": "BPSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ncrtc-supervisor-and-junior-maintainer-admit-card-2026-3083463": {
+    "attemptedAt": "2026-11-21T09:52:23.287Z",
+    "parser": "v2",
+    "details": {
+      "organization": "NCRTC",
+      "publishedDate": "2026-11-21",
+      "openDate": "2026-09-10",
+      "lastDate": "2026-10-09",
+      "examDate": "2026-12-01",
+      "resultDate": null,
+      "admitCardDate": "2026-11-26",
+      "interviewDate": null,
+      "vacancies": "32",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Junior Maintainer Electrical CBT Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-10",
+          "dateText": "10 September 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-10-09",
+          "dateText": "9 October 2026"
+        }
+      ],
+      "officialLink": "https://www.ncrtc.co.in/jobs.php",
+      "officialLinks": [
+        {
+          "url": "https://www.ncrtc.co.in/jobs.php",
+          "label": "NCRTC Admit Card 2026"
+        },
+        {
+          "url": "https://www.ncrtc.co.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/kea-ksp-hall-ticket-2026-3083464": {
+    "attemptedAt": "2026-11-21T09:52:23.350Z",
+    "parser": "v2",
+    "details": {
+      "organization": "KEA KSP Hall Ticket 2026 Out - Download Police Constable",
+      "publishedDate": "2026-11-21",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Hall Ticket Release Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "KSP DV and Medical Hall Ticket Release",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        }
+      ],
+      "officialLink": "https://cetonline.karnataka.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/KSP_ETPST_MDNominalRoll_call/Forms/Candidates/MedicalDVCallLetter",
+          "label": "KEA KSP Hall Ticket 2026"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "KEA Official Website"
+        },
+        {
+          "url": "https://ksp.karnataka.gov.in/",
+          "label": "Karnataka State Police Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dav-teaching-and-non-teaching-admit-card-2026-3083437": {
+    "attemptedAt": "2026-11-21T09:52:23.405Z",
+    "parser": "v2",
+    "details": {
+      "organization": "DAV Teaching and Non Teaching",
+      "publishedDate": "2026-11-21",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": "2026-11-21",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-09-16",
+          "dateText": "16 September 2026"
+        },
+        {
+          "label": "Online Registration Last Date",
+          "date": "2026-10-11",
+          "dateText": "11 October 2026"
+        },
+        {
+          "label": "Document Verification Period",
+          "date": "2026-10-24",
+          "dateText": "25 September to 24 October 2026"
+        }
+      ],
+      "officialLink": "https://davrecruit.davcmc.in/CBT/",
+      "officialLinks": [
+        {
+          "url": "https://davrecruit.davcmc.in/CBT/",
+          "label": "DAV Admit Card 2026 Download"
+        },
+        {
+          "url": "https://davrecruit.davcmc.in/",
+          "label": "DAV Teaching and Non Teaching Admit Card 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ossc-cglre-admit-card-2026-3083194": {
+    "attemptedAt": "2026-11-21T09:52:23.441Z",
+    "parser": "v2",
+    "details": {
+      "organization": "OSSC CGLRE",
+      "publishedDate": "2026-11-20",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-30",
+      "resultDate": null,
+      "admitCardDate": "2026-11-20",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2025-12-30",
+          "dateText": "30 December 2025"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Preliminary Exam Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Preliminary Exam Date Notice",
+          "date": "2026-10-21",
+          "dateText": "21 October 2026"
+        },
+        {
+          "label": "Detailed Examination Programme Published",
+          "date": "2026-11-09",
+          "dateText": "9 November 2026"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Preliminary Examination",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Scribe-Related Document Submission Deadline, If Applicable",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        }
+      ],
+      "officialLink": "https://ossc.gov.in/Public/Pages/Login.aspx",
+      "officialLinks": [
+        {
+          "url": "https://ossc.gov.in/Public/Pages/Login.aspx",
+          "label": "OSSC CGLRE Specialist Admit Card 2026"
+        },
+        {
+          "url": "https://www.ossc.gov.in/",
+          "label": "OSSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/hp-high-court-process-server-admit-card-2026-3079182": {
+    "attemptedAt": "2026-11-21T09:52:23.465Z",
+    "parser": "v2",
+    "details": {
+      "organization": "HP High Court Process Server",
+      "publishedDate": "2026-11-21",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-11-22",
+      "resultDate": null,
+      "admitCardDate": "2026-11-06",
+      "interviewDate": null,
+      "vacancies": "65",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-08-05",
+          "dateText": "5 August 2026"
+        },
+        {
+          "label": "Admit Card Release Update",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-22",
+          "dateText": "22 November 2026"
+        }
+      ],
+      "officialLink": "https://www.hphcrecruitment.in/auth/get-admit-card",
+      "officialLinks": [
+        {
+          "url": "https://www.hphcrecruitment.in/auth/get-admit-card",
+          "label": "HP High Court Process Server Admit Card 2026"
+        },
+        {
+          "url": "https://hphighcourt.nic.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://hphighcourt.nic.in/",
+          "label": "HP High Court Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/osssc-excise-constable-pet-admit-card-2026-3083242": {
+    "attemptedAt": "2026-11-21T09:52:23.488Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Odisha Sub-ordinate Staff Selection Commission (OSSSC)",
+      "publishedDate": "2026-11-20",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": "2026-11-20",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Physical Test Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026 (Thursday)"
+        },
+        {
+          "label": "Admit card for Baleshwar and Ganjam candidates",
+          "date": "2026-11-20",
+          "dateText": "Released on 20 November 2026"
+        }
+      ],
+      "officialLink": "https://osssc.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://osssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://osssc.gov.in/",
+          "label": "OSSSC Excise Constable PET Admit Card 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/osssc-nursing-officer-result-2026-out-download-provisional-screening-list-pdf-3083359": {
+    "attemptedAt": "2026-11-21T09:52:23.512Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Odisha Sub-ordinate Staff Selection Commission (OSSSC)",
+      "publishedDate": "2026-11-21",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-23",
+      "resultDate": "2026-11-20",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "5,989",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Exam Dates",
+          "date": "2026-09-23",
+          "dateText": "22 and 23 September 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Written Examination (CBRE)",
+          "date": "2026-09-23",
+          "dateText": "22 and 23 September 2026"
+        },
+        {
+          "label": "Result and Provisional Screening List Released",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Document Verification Starts",
+          "date": "2026-12-08",
+          "dateText": "8 December 2026 onwards"
+        }
+      ],
+      "officialLink": "https://osssc.gov.in/Public/OSSSC/Default.aspx",
+      "officialLinks": [
+        {
+          "url": "https://osssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://osssc.gov.in/Public/OSSSC/Default.aspx",
+          "label": "OSSSC Nursing Officer Result 2026 and Screening List PDF"
+        },
+        {
+          "url": "https://www.osssc.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ssc-cpo-si-capf-admit-card-2026-3083135": {
+    "attemptedAt": "2026-11-21T09:52:23.539Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SSC CPO SI CAPF Paper-I",
+      "publishedDate": "2026-11-20",
+      "openDate": "2026-09-10",
+      "lastDate": "2026-09-30",
+      "examDate": "2026-11-28",
+      "resultDate": null,
+      "admitCardDate": "2026-11-20",
+      "interviewDate": null,
+      "vacancies": "1,871",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "1 October 2026",
+      "milestones": [
+        {
+          "label": "Exam City Slip Release Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Admit Card Release",
+          "date": "2026-11-20",
+          "dateText": "From 20 November 2026, according to individual exam dates"
+        },
+        {
+          "label": "Paper-I Exam Dates",
+          "date": "2026-11-28",
+          "dateText": "23 to 28 November 2026"
+        },
+        {
+          "label": "Notification and Application Start Date",
+          "date": "2026-09-10",
+          "dateText": "10 September 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-09-30",
+          "dateText": "30 September 2026"
+        },
+        {
+          "label": "Application Fee Payment Last Date",
+          "date": "2026-10-01",
+          "dateText": "1 October 2026"
+        },
+        {
+          "label": "Exam City Details Released",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Paper-I Admit Card",
+          "date": "2026-11-20",
+          "dateText": "From 20 November 2026"
+        },
+        {
+          "label": "Paper-I Examination",
+          "date": "2026-11-28",
+          "dateText": "23-28 November 2026"
+        },
+        {
+          "label": "Exam Start Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Exam Last Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in/login",
+      "notificationLink": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "SSC CPO SI CAPF Paper-I Admit Card 2026"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "SSC CPO Exam City Slip 2026"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/City%20live%20CPO%20Exam%20notice_13112026.pdf",
+          "label": "SSC CPO Admission Certificate Official Notice"
+        },
+        {
+          "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf",
+          "label": "SSC CPO SI CAPF Recruitment Notification 2026"
         }
       ]
     }
