@@ -24711,7 +24711,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ongc-apprentice-recruitment-2026-3077536": {
-    "attemptedAt": "2026-11-21T09:52:23.321Z",
+    "attemptedAt": "2026-11-22T09:49:31.435Z",
     "parser": "v2",
     "details": {
       "organization": "Oil and Natural Gas Corporation Limited (ONGC)",
@@ -35285,7 +35285,7 @@
     }
   },
   "https://www.freejobalert.com/articles/crpf-recruitment-2026-specialist-medical-officer-and-surgeon-3081799": {
-    "attemptedAt": "2026-11-21T09:52:23.376Z",
+    "attemptedAt": "2026-11-22T09:49:31.475Z",
     "parser": "v2",
     "details": {
       "organization": "Central Reserve Police Force (CRPF), Across India",
@@ -36054,7 +36054,7 @@
     }
   },
   "https://www.freejobalert.com/articles/rites-recruitment-2026-apply-online-for-8-technical-assistant-technician-posts-3082727": {
-    "attemptedAt": "2026-11-21T09:52:23.255Z",
+    "attemptedAt": "2026-11-22T09:49:31.375Z",
     "parser": "v2",
     "details": {
       "organization": "Rail India Technical and Economic Service (RITES), Gurgaon, Across India",
@@ -36841,6 +36841,131 @@
         {
           "url": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf",
           "label": "SSC CPO SI CAPF Recruitment Notification 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ssc-je-telecom-city-intimation-slip-2026-3083479": {
+    "attemptedAt": "2026-11-22T09:49:31.408Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SSC JE Telecom City Intimation Slip 2026 Out - Check Paper 1",
+      "publishedDate": "2026-11-21",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-12-01",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "City Slip Release Date",
+          "date": "2026-11-21",
+          "dateText": "20 and 21 November 2026"
+        },
+        {
+          "label": "Telecom Exam Dates",
+          "date": "2026-12-01",
+          "dateText": "30 November and 1 December 2026"
+        },
+        {
+          "label": "Official SSC City Intimation Notice",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026"
+        },
+        {
+          "label": "Telecom City Slip for 30 November Exam",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Telecom City Slip for 1 December Exam",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "SSC JE Telecom Paper 1 Exam",
+          "date": "2026-12-01",
+          "dateText": "30 November and 1 December 2026"
+        }
+      ],
+      "officialLink": "https://ssc.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://ssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://ssc.gov.in/login",
+          "label": "SSC JE Telecom Exam City 2026"
+        },
+        {
+          "url": "https://ssc.gov.in/",
+          "label": "SSC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/gsrtc-conductor-provisional-merit-list-2026-3083488": {
+    "attemptedAt": "2026-11-22T09:49:31.453Z",
+    "parser": "v2",
+    "details": {
+      "organization": "GSRTC Conductor Provisional Merit List 2026 Out - Download Eligible Candidates List PDF",
+      "publishedDate": "2026-11-21",
+      "openDate": "2026-09-01",
+      "lastDate": "2026-10-05",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "27 November 2026",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Provisional List Release Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-09-01",
+          "dateText": "1 September 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-10-05",
+          "dateText": "5 October 2026"
+        },
+        {
+          "label": "Last Date to Submit Objections",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026"
+        },
+        {
+          "label": "Objection Start Reference Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        }
+      ],
+      "officialLink": "https://gsrtc.in",
+      "officialLinks": [
+        {
+          "url": "https://gsrtc.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://gsrtc.in/site/downloads/innerPages/recruitment.html",
+          "label": "GSRTC Conductor Provisional List 2026"
+        },
+        {
+          "url": "https://gsrtc.in/",
+          "label": "GSRTC Official Website"
         }
       ]
     }

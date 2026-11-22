@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-11-21T09:52:23.546Z",
+  "generatedAt": "2026-11-22T09:49:31.484Z",
   "durationSeconds": 1,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 673,
-    "jobs": 135,
-    "admitCards": 160,
-    "results": 378,
+    "total": 675,
+    "jobs": 129,
+    "admitCards": 167,
+    "results": 379,
     "jobsMissingPublicationDate": 59,
-    "jobsMissingClosingDate": 84,
+    "jobsMissingClosingDate": 82,
     "jobsMissingOrganization": 78,
-    "jobsMissingVacancies": 93,
+    "jobsMissingVacancies": 90,
     "jobsMissingEligibility": 79,
-    "jobsMissingApplicationFee": 86,
+    "jobsMissingApplicationFee": 85,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 12,
     "resultsMissingPublishedDate": 56,
     "resultsMissingResultDate": 182
   },
   "after": {
-    "total": 677,
-    "jobs": 131,
+    "total": 674,
+    "jobs": 127,
     "admitCards": 167,
-    "results": 379,
+    "results": 380,
     "jobsMissingPublicationDate": 57,
     "jobsMissingClosingDate": 80,
     "jobsMissingOrganization": 76,
-    "jobsMissingVacancies": 89,
-    "jobsMissingEligibility": 77,
-    "jobsMissingApplicationFee": 83,
+    "jobsMissingVacancies": 88,
+    "jobsMissingEligibility": 78,
+    "jobsMissingApplicationFee": 84,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 12,
     "resultsMissingPublishedDate": 56,
-    "resultsMissingResultDate": 182
+    "resultsMissingResultDate": 183
   },
   "imported": {
-    "job": 0,
-    "admit-card": 7,
+    "job": 1,
+    "admit-card": 0,
     "result": 1
   },
-  "matchedExisting": 15,
+  "matchedExisting": 22,
   "filledItems": 1,
   "removedStale": 0,
-  "removedUncertain": 2,
+  "removedUncertain": 1,
   "skippedClosed": 0,
   "removedNavigation": 2,
   "removalLog": [
@@ -65,18 +65,12 @@
       "reason": "stale competitor job without dates",
       "type": "job",
       "publisher": "FreeJobAlert",
-      "title": "IOCL Apprentice Online Form 2026 (500 Vacancy)"
-    },
-    {
-      "reason": "stale competitor job without dates",
-      "type": "job",
-      "publisher": "FreeJobAlert",
-      "title": "DVC Executive Trainee Online Form 2026 (108 Vacancy)"
+      "title": "RRC NR Various Posts Online Form 2026 (4651 Vacancy)"
     }
   ],
   "detailPages": {
-    "targets": 11,
-    "fetched": 11,
+    "targets": 5,
+    "fetched": 5,
     "cacheHits": 0
   },
   "remainingGaps": {
@@ -147,7 +141,6 @@
       "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026"
     ],
     "jobsMissingVacancies": [
-      "Supreme Court of India Senior Personal Assistant Online Form 2026",
       "SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) & OTHERS",
       "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
       "PAJANCOA&RI, KKL - Engagement of Consultant orr contract Basis in the grade of Junior Accounts Ofticer - Applications From the Retired Oflicials - Called for - Reg.",
@@ -166,7 +159,8 @@
       "Notification Regarding examination schedule for direct recruitment of Assistant Engineer/ Manager Updated: 08/10/2026",
       "Notification Regarding Rescheduling of the Recruitment Examination for the Posts of Under Secretary (Law) and Legal Officer in the Law & Legislative Affairs Department, Government ",
       "Notification NO.NPSC/ADVT-1/04(VOL-1) dt.16.11.2026 (CTSE 2026 Re-exam) New",
-      "OTR OTR service is currently closed. Please apply during the notified period. Open"
+      "OTR OTR service is currently closed. Please apply during the notified period. Open",
+      "VACANCY NOTICE/ ADVERTISEMENT NO. 03/2026"
     ],
     "jobsMissingOfficialLink": []
   },
