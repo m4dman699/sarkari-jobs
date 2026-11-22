@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "missing-doctype": "error",
+    "no-dup-attr": "error",
+    "element-permitted-content": "error",
+    "element-required-attributes": "error"
+  }
+}

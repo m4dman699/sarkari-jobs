@@ -606,7 +606,7 @@ for (const item of payload.jobs || []) {
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css?v=20261120-diagrams"><link rel="stylesheet" href="../../css/detail.css?v=d8">
+<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="../../css/detail.css?v=20261120-realistic-visuals">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -815,7 +815,7 @@ const stubPage = ({ kind, target }) => {
 <link rel="canonical" href="${canonicalUrl}">
 <meta http-equiv="refresh" content="0;url=${canonicalUrl}">
 <meta name="theme-color" content="#0a1128">
-<link rel="stylesheet" href="../../css/detail.css?v=d8">
+<link rel="stylesheet" href="../../css/detail.css?v=20261120-realistic-visuals">
 </head><body>
 ${iconSprite()}
 <div class="tricolor-strip"></div>
@@ -872,7 +872,7 @@ const indexHtml = `<!doctype html>
 <title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
-<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="css/style.css?v=20261120-diagrams"><link rel="stylesheet" href="css/detail.css?v=d8">
+<link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="css/detail.css?v=20261120-realistic-visuals">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>

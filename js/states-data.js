@@ -1,3 +1,4 @@
+/* exported STATES, CATEGORIES */
 /* SarkariJobs+ — States & Categories Data */
 
 const STATES = {

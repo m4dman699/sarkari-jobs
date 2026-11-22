@@ -31,8 +31,11 @@
   var links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
   if (!list || !links.length) return;
 
-  var cursor = document.createElement('span');
+  // Keep the indicator inside the list as an <li> so the list keeps valid
+  // semantics; it is decorative, so hide it from assistive technology.
+  var cursor = document.createElement('li');
   cursor.className = 'd-toc-cur';
+  cursor.setAttribute('aria-hidden', 'true');
   list.appendChild(cursor);
 
   var targets = links

@@ -1,0 +1,109 @@
+name: Frontend quality checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frontend-checks
+  cancel-in-progress: true
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: frontend-tools
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend-tools/package-lock.json
+      - name: Install frontend tools
+        run: npm ci
+      - name: Check CSS
+        run: npm run check:css
+      - name: Check HTML
+        run: npm run check:html
+      - name: Check JavaScript
+        run: npm run check:js
+      - name: Check toolkit formatting
+        run: npm run check:format
+
+  lighthouse:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend-tools/package-lock.json
+      - name: Install frontend tools
+        working-directory: frontend-tools
+        run: npm ci
+      - name: Start local site
+        run: |
+          ./frontend-tools/node_modules/.bin/http-server . -p 4173 -c-1 -s > http-server.log 2>&1 &
+          echo $! > http-server.pid
+          for attempt in {1..20}; do
+            if curl --fail --silent --show-error http://127.0.0.1:4173/ > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat http-server.log
+          exit 1
+      - name: Run Lighthouse CI
+        working-directory: frontend-tools
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: npm run audit
+      - name: Upload Lighthouse reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: frontend-tools/.lighthouseci
+          if-no-files-found: warn
+      - name: Stop local site
+        if: always()
+        run: kill "$(cat http-server.pid)" 2>/dev/null || true
+
+  visual-regression:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v5
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend-tools/package-lock.json
+      - name: Install frontend tools
+        working-directory: frontend-tools
+        run: npm ci
+      - name: Run visual and accessibility checks
+        working-directory: frontend-tools
+        run: npm run visual:check
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: frontend-tools/playwright-report
+          if-no-files-found: warn

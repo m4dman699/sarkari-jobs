@@ -29,5 +29,10 @@ These portal marks are copied from assets exposed by the listed government recru
 | `aai.png` | https://www.aai.aero/sites/default/files/logo_15042021.png |
 | `bsf.png` | https://d3t79nicn48uzj.cloudfront.net/bsf/custom/1746079135.png |
 | `bob.png` | https://bankofbaroda.bank.in/chat/bob/countrywebsite/india/build/logo/logo512.png |
+| `ncs-official.png` | https://ncs.gov.in/assets/logo/ncs-small-logo.png |
 
 Category cards use custom inline SVG icons, since a category such as Banking or Teaching has no single official recruiting-portal logo.
+
+## Display normalization on the homepage
+
+The homepage trust ribbon displays six of these marks (UPSC, SSC, Indian Railways, NCS, RBI and IBPS). The image files themselves are unchanged. Each mark sits in an identically sized tile, and CSS scales the image to a computed height based on its intrinsic width/height ratio; portrait marks are clamped so no single logo dominates the row. This follows the equal-area approach in 9elements' "Building the Perfect Logo Strip" and uses `object-fit: contain` (MDN) so nothing is cropped or distorted. The strip identifies source examples only — it is not a partner, sponsor or endorsement list.

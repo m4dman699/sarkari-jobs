@@ -4,3 +4,20 @@ Thumbs.db
 *.log
 .env
 .env.*
+.openrouter-key
+*.zip
+
+# Local scratch / recordings (never commit)
+_scratch/
+
+# Frontend quality tools
+frontend-tools/.lighthouseci/
+frontend-tools/playwright-report/
+frontend-tools/test-results/
+
+# Raw Canva exports stay local; optimised WebP files in assets/canva/ are published
+canva/exports/*
+!canva/exports/.gitkeep
+
+# Local draft - never commit
+drafts/sector-railways.html
