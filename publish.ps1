@@ -7,11 +7,18 @@ $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $repo
 
-$git = 'git'
-if (-not (Get-Command $git -ErrorAction SilentlyContinue)) {
-  $candidate = 'C:\Users\Arun\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe'
-  if (Test-Path $candidate) { $git = $candidate } else { throw 'git.exe not found' }
+$git = (Get-Command git.exe -ErrorAction SilentlyContinue).Source
+if (-not $git) {
+  foreach ($c in @(
+    'C:\Program Files\Git\cmd\git.exe',
+    'C:\Program Files (x86)\Git\cmd\git.exe',
+    "$env:LOCALAPPDATA\Programs\Git\cmd\git.exe",
+    "$env:USERPROFILE\tools\PortableGit\cmd\git.exe"
+  )) {
+    if (Test-Path $c) { $git = $c; break }
+  }
 }
+if (-not $git) { throw 'git.exe not found in PATH or any known install location.' }
 
 & $git add -A
 if ($LASTEXITCODE -ne 0) { throw 'git add failed' }

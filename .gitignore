@@ -4,3 +4,17 @@ Thumbs.db
 *.log
 .env
 .env.*
+.openrouter-key
+
+# Frontend quality tools
+frontend-tools/.lighthouseci/
+frontend-tools/playwright-report/
+frontend-tools/test-results/
+
+# Raw Canva exports stay local; optimised WebP files in assets/canva/ are published
+canva/exports/*
+!canva/exports/.gitkeep
+
+# Local scratch recordings and draft pages
+_scratch/
+drafts/

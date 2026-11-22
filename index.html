@@ -38,9 +38,14 @@
   <script src="js/analytics-config.js?v=20261022"></script>
   <script src="js/analytics.js?v=20261119" defer></script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/style.css?v=20261120-diagrams">
+  <!-- The hero background is the LCP image; make it discoverable in the initial
+       HTML at high priority instead of waiting for CSS to request it. -->
+  <link rel="preload" as="image" href="assets/realistic/hero-aspirants.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css?v=20261122-trust-refresh">
 </head>
 <body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <div class="tricolor-strip"></div>
 
@@ -65,19 +70,25 @@
     </div>
   </header>
 
+  <main id="main-content">
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="orb orb-1" aria-hidden="true"></div>
-    <div class="orb orb-2" aria-hidden="true"></div>
-    <div class="orb orb-3" aria-hidden="true"></div>
+    <div class="hero-bg" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/realistic/hero-aspirants.webp">
+        <source src="assets/motion/hero-drift.mp4" type="video/mp4">
+        <source src="assets/motion/hero-drift.webm" type="video/webm">
+      </video>
+    </div>
     <div class="container hero-grid">
-      <div>
-        <span class="hero-badge reveal d1">🇮🇳 All States &amp; UTs · Central · PSU Jobs</span>
-        <h1 class="reveal d2">Never Miss a<br><span class="grad">Sarkari Deadline</span> Again</h1>
+      <div class="flag-stage reveal d2" aria-hidden="true">
+        <div class="wave-flag" role="img" aria-label="3D waving Indian flag"></div>
+      </div>
+      <div class="hero-copy">
+        <h1 class="reveal d2">Government job notices, checked at the source</h1>
         <p class="sub reveal d3">
-          Browse government job notifications, application dates and source links
-          across states, union territories and central categories.
+          We read the recruiting authority's own notification, note the dates and eligibility,
+          and keep the original link on every listing. Central, state and PSU jobs across India —
+          updated as the feed changes.
         </p>
         <form class="search-bar reveal d4" id="job-search-form" role="search">
           <input type="search" id="job-search" name="q" placeholder="Search: SSC CGL, Bihar Police, RRB NTPC…" aria-label="Search government jobs" autocomplete="off">
@@ -89,27 +100,108 @@
           <div class="stat"><b data-count="36">0</b><span>States &amp; UTs listed</span></div>
           <div class="stat"><b id="category-count">0</b><span>Job categories</span></div>
         </div>
-      </div>
-      <div class="flag-stage reveal d3">
-        <div class="wave-flag" role="img" aria-label="3D waving Indian flag"></div>
+        <p class="hero-links reveal d5">
+          <a href="#jobs">Latest notifications</a>
+          <a href="#results">Results</a>
+          <a href="#admit-cards">Admit cards</a>
+          <a href="guides/">Sector guides</a>
+        </p>
       </div>
     </div>
   </section>
 
 
-  <section class="diagram-band" aria-labelledby="journey-heading">
+  <section class="source-trust" aria-labelledby="trust-heading">
     <div class="container">
-      <div class="diagram-frame">
-        <img src="assets/diagrams/journey-flow.webp" alt="Illustrated five-step recruitment journey: notification, application, exam, merit list, document verification and appointment" width="1344" height="768" loading="lazy" decoding="async">
+      <div class="trust-ribbon">
+        <div class="trust-copy">
+          <p class="trust-eyebrow">
+            <svg class="trust-check" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="9" fill="rgba(19,136,8,.13)"/><path d="M5.8 10.2l2.6 2.6 5.8-5.8" fill="none" stroke="#138808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Verified sources
+          </p>
+          <h2 id="trust-heading">Trusted by <span class="trust-count">40+</span></h2>
+          <p class="trust-desc">We check the official notice first, then link you to the authority that published it. Source-checked, never endorsed — SarkariJobs+ is independent of every recruiting department.</p>
+          <a class="trust-link" href="all-jobs.html">Browse all listings <span class="trust-arrow" aria-hidden="true">→</span></a>
+        </div>
+        <div class="trust-marks">
+          <p class="trust-marks-label">Official source marks we follow</p>
+          <ul class="trust-logos" aria-label="Examples of official source marks we follow">
+            <li class="trust-logo" style="--logo-h:36px"><img src="assets/portal-logos/upsc.png" alt="Union Public Service Commission" width="900" height="608" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:41px"><img src="assets/portal-logos/ssc.webp" alt="Staff Selection Commission" width="316" height="269" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:44px"><img src="assets/portal-logos/railways.png" alt="Indian Railways recruitment" width="156" height="155" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:33px"><img src="assets/portal-logos/ncs-official.png" alt="National Career Service" width="460" height="256" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:45px"><img src="assets/portal-logos/rbi.png" alt="Reserve Bank of India" width="67" height="105" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:44px"><img src="assets/portal-logos/webp/ibps.webp" alt="Institute of Banking Personnel Selection" width="80" height="80" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:34px"><img src="assets/portal-logos/webp/dsssb.webp" alt="Delhi Subordinate Services Selection Board" width="80" height="80" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:34px"><img src="assets/portal-logos/webp/rpsc.webp" alt="Rajasthan Public Service Commission" width="80" height="80" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:34px"><img src="assets/portal-logos/webp/hssc.webp" alt="Haryana Staff Selection Commission" width="80" height="80" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:34px"><img src="assets/portal-logos/webp/gpsc.webp" alt="Gujarat Public Service Commission" width="80" height="80" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:30px"><img src="assets/portal-logos/webp/supreme-court.webp" alt="Supreme Court of India" width="80" height="80" loading="lazy" decoding="async"></li>
+            <li class="trust-logo" style="--logo-h:34px"><img src="assets/portal-logos/webp/tpsc.webp" alt="Tripura Public Service Commission" width="80" height="80" loading="lazy" decoding="async"></li>
+          </ul>
+        </div>
       </div>
-      <h2 id="journey-heading" class="diagram-heading">How a government job recruitment works</h2>
-      <ol class="diagram-steps">
-        <li>Official notice with dates and eligibility</li>
-        <li>Application before the last date</li>
-        <li>Written or computer-based test</li>
-        <li>Merit list or result published</li>
-        <li>Verification and appointment</li>
-      </ol>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE SOURCE ============ -->
+  <section class="block method-band" aria-labelledby="method-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="method-heading">What happens before a listing goes live</h2>
+        <div class="line"></div>
+        <p>Three checks sit behind every notification on this site. The photos are illustrative; the wording below is ours.</p>
+      </div>
+      <div class="method-grid">
+        <figure class="method-card">
+          <div class="method-photo">
+            <img src="assets/realistic/source-notice.webp" alt="A person checking a notice on a phone at a desk" width="1360" height="768" loading="lazy" decoding="async">
+          </div>
+          <figcaption>
+            <span class="method-step" aria-hidden="true">01</span>
+            <b>Find the notice</b>
+            <p>We begin on the recruiting authority's own page. The original notice stays linked on the listing, so you can read the rules where they were published.</p>
+          </figcaption>
+        </figure>
+        <figure class="method-card">
+          <div class="method-photo">
+            <img src="assets/realistic/exam-centre.webp" alt="Students taking a computer-based test in an examination hall" width="1360" height="768" loading="lazy" decoding="async">
+          </div>
+          <figcaption>
+            <span class="method-step" aria-hidden="true">02</span>
+            <b>Read the rules</b>
+            <p>Dates, eligibility and selection stages come from that notice. Where the notice is silent on a detail, we leave the field blank rather than fill it in from memory.</p>
+          </figcaption>
+        </figure>
+        <figure class="method-card">
+          <div class="method-photo">
+            <img src="assets/realistic/government-office.webp" alt="The exterior of a modern government office building" width="1360" height="768" loading="lazy" decoding="async">
+          </div>
+          <figcaption>
+            <span class="method-step" aria-hidden="true">03</span>
+            <b>Point you to the authority</b>
+            <p>The listing sends you to the employer's portal to apply. We do not accept applications, collect fees or act on behalf of any department.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="diagram-band journey-hero" aria-labelledby="journey-heading">
+    <div class="container">
+      <div class="journey-hero-frame">
+        <img class="journey-art" src="assets/diagrams/gov-job-journey-hero.webp" alt="" aria-hidden="true" width="1344" height="768" loading="lazy" decoding="async">
+        <div class="journey-overlay">
+          <h2 id="journey-heading" class="journey-title">How a government job recruitment works</h2>
+          <ol class="journey-steps">
+            <li><b>01</b><strong>Official notice</strong><small>Dates, vacancies and eligibility</small></li>
+            <li><b>02</b><strong>Application</strong><small>Form, fee and documents</small></li>
+            <li><b>03</b><strong>Selection test</strong><small>Written or computer-based</small></li>
+            <li><b>04</b><strong>Merit or result</strong><small>Published by the authority</small></li>
+            <li><b>05</b><strong>Verification</strong><small>Documents, then appointment</small></li>
+          </ol>
+        </div>
+      </div>
       <p class="diagram-caption">This is the general process, not a promise for any one post. <b>Every date, fee and eligibility clause comes from the official notice linked on the listing.</b></p>
     </div>
   </section>
@@ -216,14 +308,37 @@
   <section class="block source-section" id="career-sources">
     <div class="container source-container">
       <div class="source-heading">
-        <span class="source-eyebrow">More places to check</span>
         <h2>Explore government career services</h2>
-        <p>A separate guide to the National Career Service and its government-sector job board.</p>
+        <p>The National Career Service is a Government of India portal for vacancies, career guidance and skills. These three tools are free to use; we link each one straight to the official NCS portal and explain what it is — and what it is not.</p>
       </div>
+      <div class="ncs-ribbon" aria-label="Official NCS tools explained visually">
+        <a class="ncs-ribbon-card" href="https://ncs.gov.in/" target="_blank" rel="noopener">
+          <span class="ncs-ribbon-media"><img src="assets/ncs-posters/skill-quotient.webp" alt="Illustrative poster with a skill gauge, open book and certificate seal" width="1200" height="870" loading="lazy" decoding="async"></span>
+          <span class="ncs-ribbon-body">
+            <b>Skill Quotient</b>
+            <span class="ncs-ribbon-text">Measure a skill before you shortlist a post. Treat the result as a starting point, not a recruitment decision.</span>
+          </span>
+        </a>
+        <a class="ncs-ribbon-card" href="https://ncs.gov.in/" target="_blank" rel="noopener">
+          <span class="ncs-ribbon-media"><img src="assets/ncs-posters/ai-interview.webp" alt="Illustrative poster with speech bubbles, a person silhouette and a webcam frame" width="1200" height="880" loading="lazy" decoding="async"></span>
+          <span class="ncs-ribbon-body">
+            <b>AI Interview Prep</b>
+            <span class="ncs-ribbon-text">Practise answers before a real call. Use it to structure your responses, not to script them.</span>
+          </span>
+        </a>
+        <a class="ncs-ribbon-card" href="https://ncs.gov.in/" target="_blank" rel="noopener">
+          <span class="ncs-ribbon-media"><img src="assets/ncs-posters/ai-resume.webp" alt="Illustrative poster with a resume sheet, laptop and checkmark" width="1200" height="870" loading="lazy" decoding="async"></span>
+          <span class="ncs-ribbon-body">
+            <b>Free AI Resume Builder</b>
+            <span class="ncs-ribbon-text">Build a recruiter-ready resume. NCS states that its job-seeker services are free.</span>
+          </span>
+        </a>
+      </div>
+      <p class="ncs-ribbon-note">Illustrative ribbon artwork; the three labels follow tools shown on the official <a href="https://ncs.gov.in/" target="_blank" rel="noopener">National Career Service portal</a>. SarkariJobs+ is independent and is not affiliated with NCS.</p>
       <div class="source-bento">
         <figure class="source-photo-tile">
-          <img src="assets/ncs-launch-modi.jpg" alt="Prime Minister Narendra Modi dedicating the National Career Service portal at the 46th Indian Labour Conference in New Delhi, 20 July 2015" loading="lazy" decoding="async">
-          <span class="source-photo-badge"><span aria-hidden="true">●</span> NCS portal launch · 2015</span>
+          <img src="assets/ncs-launch-modi.jpg" alt="Prime Minister Narendra Modi dedicating the National Career Service portal at the 46th Indian Labour Conference in New Delhi, 20 July 2015" width="1280" height="584" loading="lazy" decoding="async">
+          <span class="source-photo-badge"><span class="badge-dot" aria-hidden="true"></span>NCS portal launch · 2015</span>
           <figcaption>Photo: Prime Minister’s Office · <a href="https://commons.wikimedia.org/wiki/File:Narendra_Modi_dedicating_the_National_Career_Service_Portal_to_the_nation,_at_the_46th_session_of_Indian_Labour_Conference,_in_New_Delhi._The_Union_Minister_for_Finance,_Corporate_Affairs_and_Information_%26_Broadcasting.jpg" target="_blank" rel="noopener">GODL-India source and attribution</a></figcaption>
         </figure>
         <article class="source-bento-card source-main-tile">
@@ -242,33 +357,6 @@
     </div>
   </section>
 
-  <!-- ============ SOURCES WE FOLLOW ============ -->
-  <section class="block sources-block" id="sources">
-    <div class="container">
-      <div class="sources-card">
-        <div class="sources-label">
-          <span class="sources-dot"></span>
-          <span>Trusted by 40+ Government Recruiting Authorities</span>
-          <span class="sources-dot"></span>
-        </div>
-        <ul class="sources-logos" aria-label="Recruiting authorities tracked">
-          <li><img src="assets/portal-logos/webp/ssc.webp" alt="SSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/uppsc.webp" alt="UPPSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/railways.webp" alt="Railways" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/ibps.webp" alt="IBPS" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/rpsc.webp" alt="RPSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/mppsc.webp" alt="MPPSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/gpsc.webp" alt="GPSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/hpsc.webp" alt="HPSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/hssc.webp" alt="HSSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/dsssb.webp" alt="DSSSB" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/tpsc.webp" alt="TPSC" loading="lazy" decoding="async"></li>
-          <li><img src="assets/portal-logos/webp/supreme-court.webp" alt="Supreme Court" loading="lazy" decoding="async"></li>
-        </ul>
-        <p class="sources-note">Every listing links back to its official source. <a href="all-jobs.html">Browse all listings →</a></p>
-      </div>
-    </div>
-  </section>
 
   <!-- ============ NOTIFICATIONS ============ -->
   <section class="block" id="jobs">
@@ -280,15 +368,15 @@
       </div>
       <div class="jobs-grid" id="jobs-grid">
         <!-- home-jobs:start -->
-<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>Dr. RMLIMS Non Teaching Various Post Online Form 2026</h3></div><div class="job-meta"><span class="tag">Dr. Ram Manohar Lohia Institute of Medical</span></div><div class="dates"><span>Applications open: <b>19 Oct 2026</b></span><span>Last date: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/dr-rmlims-non-teaching-various-post-online-form-2026-e9d087f0/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>ISRO URSC Technician and Driver Online Form 2026</h3></div><div class="job-meta"><span class="tag">All India</span><span class="tag">ISRO URSC Technician and Driver</span></div><div class="dates"><span>Applications open: <b>24 Oct 2026</b></span><span>Last date: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/isro-ursc-technician-and-driver-online-form-2026-cff3f70a/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>RITES Assistant Manager Online Form 2026</h3></div><div class="job-meta"><span class="tag">Rail India Technical and Economic Service</span></div><div class="dates"><span>Applications open: <b>30 Oct 2026</b></span><span>Last date: <b>20 Nov 2026</b></span><span>Exam date: <b>29 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/rites-assistant-manager-online-form-2026-b6187d11/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>Supreme Court of India Senior Personal Assistant Online Form 2026</h3></div><div class="job-meta"><span class="tag">All India</span><span class="tag">Supreme Court of India SCI</span></div><div class="dates"><span>Applications open: <b>20 Oct 2026</b></span><span>Last date: <b>20 Nov 2026</b></span><span>Exam date: <b>2 Nov 2026</b></span><span>Result declared: <b>4 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/supreme-court-of-india-senior-personal-assistant-onlin-b0d9747f/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>SAINIK SCHOOL NAGROTA, SAINIK SCHOOLS SOCIETY, MINISTRY OF DEFENCE — TGT (COMPUTER SCIENCE) &amp; OTHERS</h3></div><div class="job-meta"><span class="tag">All India</span></div><div class="dates"><span>Last date: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/sainik-school-nagrota-sainik-schools-society-ministry--dadae0e9/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>AEES 254 PGT, TGT, PRT &amp; Other Online Form 2026</h3></div><div class="job-meta"><span class="tag">Atomic Energy Education Society (AEES)</span></div><div class="dates"><span>Applications open: <b>2 Nov 2026</b></span><span>Last date: <b>22 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/aees-254-pgt-tgt-prt-other-online-form-2026-687235ef/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>AEES Teaching Various Post Online Form 2026</h3></div><div class="job-meta"><span class="tag">Atomic Energy Education Society (AEES)</span></div><div class="dates"><span>Applications open: <b>2 Nov 2026</b></span><span>Last date: <b>22 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/aees-teaching-various-post-online-form-2026-ddc0b299/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group &#39;A&#39; - Gaz</h3></div><div class="job-meta"><span class="tag">Puducherry</span></div><div class="dates"><span>Last date: <b>22 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/chief-secretariat-works-filling-up-of-one-vacant-post--8b3409f7/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>Railway RRC NWR Apprentice Online Form 2026</h3></div><div class="job-meta"><span class="tag">Railway Recruitment Cell (RRC-NWR-Jaipur)</span></div><div class="dates"><span>Applications open: <b>23 Oct 2026</b></span><span>Last date: <b>22 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/railway-rrc-nwr-apprentice-online-form-2026-4a4de1a3/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>UPESSC UP Headmaster Online Form 2026</h3></div><div class="job-meta"><span class="tag">Uttar Pradesh</span><span class="tag">Uttar Pradesh Education Service Selection</span></div><div class="dates"><span>Applications open: <b>23 Oct 2026</b></span><span>Last date: <b>22 Nov 2026</b></span><span>Exam date: <b>7 Jan 2027</b></span></div><a class="announcement-guide" href="job-details/upessc-up-headmaster-online-form-2026-b8329b82/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>BCECEB Senior Resident and Tutor Online Form 2026</h3></div><div class="job-meta"><span class="tag">Bihar Combined Entrance Competitive</span></div><div class="dates"><span>Applications open: <b>2 Nov 2026</b></span><span>Last date: <b>23 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bceceb-senior-resident-and-tutor-online-form-2026-fef6656a/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>UPESSC UP TGT Online Form 2026</h3></div><div class="job-meta"><span class="tag">Uttar Pradesh</span><span class="tag">Uttar Pradesh Education Service Selection</span></div><div class="dates"><span>Applications open: <b>24 Oct 2026</b></span><span>Last date: <b>23 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/upessc-up-tgt-online-form-2026-7fa92836/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>Bank of Baroda 837 Professionals Online Form 2026</h3></div><div class="job-meta"><span class="tag">Bank of Baroda (BOB)</span></div><div class="dates"><span>Applications open: <b>4 Nov 2026</b></span><span>Last date: <b>24 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bank-of-baroda-837-professionals-online-form-2026-fc5f1dc9/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Job notification</span><div class="job-card-heading"><h3>Hindustan Copper Limited HCL Apprentice Online Form 2026</h3></div><div class="job-meta"><span class="tag">Hindustan Copper Limited HCL</span></div><div class="dates"><span>Applications open: <b>5 Nov 2026</b></span><span>Last date: <b>24 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/hindustan-copper-limited-hcl-apprentice-online-form-20-1c7772d6/">Read the full details &rarr;</a></article>
 <!-- home-jobs:end -->
       </div>
       <div style="text-align:center; margin-top:36px;">
@@ -306,18 +394,18 @@
       </div>
       <div class="jobs-grid" id="results-grid">
         <!-- home-results:start -->
-<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>16 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) /ASSISTANT PROFESSOR MICROBIOLOGY, S-08/128...</h3></div><div class="job-meta"><span class="tag">Teaching</span></div><div class="dates"><span>Published: <b>16 Dec 2026</b></span></div><a class="announcement-guide" href="job-details/16-dec-2026-result-of-advt-no-d-1-e-1-2026-medical-edu-b36aa6ef/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>20 Dec 2026 RESULT OF ADVT. NO. D-1/E-1/2026, MEDICAL EDUCATION DEPARTMENT U.P. (ALLOPATHY) / PROFESSOR GENERAL SURGERY, S-08/11...</h3></div><div class="job-meta"><span class="tag">Teaching</span></div><div class="dates"><span>Published: <b>20 Dec 2026</b></span></div><a class="announcement-guide" href="job-details/20-dec-2026-result-of-advt-no-d-1-e-1-2026-medical-edu-c5dbacac/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>GSRTC Conductor Provisional Merit List 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">GSRTC Conductor Provisional Merit List</span></div><div class="dates"><span>Applications open: <b>1 Sept 2026</b></span><span>Last date: <b>5 Oct 2026</b></span><span>Published: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/gsrtc-conductor-provisional-merit-list-2026-d9d5606e/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>OSSSC Nursing Officer Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Odisha Sub-ordinate Staff Selection</span></div><div class="dates"><span>Exam date: <b>23 Sept 2026</b></span><span>Result declared: <b>20 Nov 2026</b></span><span>Published: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/osssc-nursing-officer-result-2026-5b13169f/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>Bihar BPSC APO Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">BPSC APO</span></div><div class="dates"><span>Applications open: <b>27 Feb 2026</b></span><span>Last date: <b>20 Mar 2026</b></span><span>Exam date: <b>15 Jul 2026</b></span><span>Result declared: <b>19 Nov 2026</b></span><span>Published: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bihar-bpsc-apo-result-2026-e86fc57e/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>IBPS PO Mains Result 2026 Out Today</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">IBPS PO Mains</span></div><div class="dates"><span>Exam date: <b>4 Oct 2026</b></span><span>Result declared: <b>20 Nov 2026</b></span><span>Published: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/ibps-po-mains-result-2026-out-today-d66364e7/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>ISRO ISTRAC CBT Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">ISRO Telemetry Tracking &amp; Command Network</span></div><div class="dates"><span>Published: <b>19 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/isro-istrac-cbt-result-2026-89486a5a/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>PSSSB PMT PET Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">PSSSB PMT PET</span></div><div class="dates"><span>Result declared: <b>19 Nov 2026</b></span><span>Published: <b>19 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/psssb-pmt-pet-result-2026-3ffc3d30/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>UPSC NDA I Exam 2026 Marks</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Union Public Service Commission</span></div><div class="dates"><span>Applications open: <b>10 Dec 2025</b></span><span>Last date: <b>30 Dec 2025</b></span><span>Exam date: <b>12 Apr 2026</b></span><span>Result declared: <b>16 Apr 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/upsc-nda-i-exam-2026-marks-4da928b7/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>UPSSSC UP Vidhan Bhawan Guard / Fireman Eligibility Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Uttar Pradesh Subordinate Service</span></div><div class="dates"><span>Applications open: <b>9 Jun 2026</b></span><span>Last date: <b>29 Jun 2026</b></span><span>Result declared: <b>18 Nov 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/upsssc-up-vidhan-bhawan-guard-fireman-eligibility-resu-108021a3/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>WBSEDCL Score Card 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">West Bengal State Electricity Distribution</span></div><div class="dates"><span>Exam date: <b>27 Jan 2026</b></span><span>Result declared: <b>23 Nov 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/wbsedcl-score-card-2026-29717355/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>ISRO VSSC Technician B Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Indian Space Research Organisation (ISRO)</span></div><div class="dates"><span>Exam date: <b>16 Sept 2026</b></span><span>Result declared: <b>17 Nov 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/isro-vssc-technician-b-result-2026-a0c50ffe/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>NTA RIMCEE 2027 Class 8th Admissions Exam City Details 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">National Testing Agency NTA Rashtriya</span></div><div class="dates"><span>Applications open: <b>1 Sept 2026</b></span><span>Last date: <b>30 Sept 2026</b></span><span>Exam date: <b>6 Dec 2026</b></span><span>Result declared: <b>20 Feb 2027</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/nta-rimcee-2027-class-8th-admissions-exam-city-details-bccd64c2/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>Baramulla Anganwadi Helper Selection List 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Office of the Child Development Project</span></div><div class="dates"><span>Last date: <b>25 Nov 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/baramulla-anganwadi-helper-selection-list-2026-9226b38d/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>ACTREC Scientific Assistant B Result 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Tata Memorial Centre - Advanced Centre for</span></div><div class="dates"><span>Exam date: <b>22 Sept 2026</b></span><span>Result declared: <b>16 Nov 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/actrec-scientific-assistant-b-result-2026-5ddbbb9a/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>Budgam Anganwadi Worker Merit List 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Office of the Child Development Project</span></div><div class="dates"><span>Result declared: <b>16 Nov 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/budgam-anganwadi-worker-merit-list-2026-76ac96f2/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>KSLSA Section Officer Eligible List 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">Karnataka State Legal Service Authority</span></div><div class="dates"><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/kslsa-section-officer-eligible-list-2026-6314d4b0/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Result / merit list</span><div class="job-card-heading"><h3>Tiruppur DHS Staff Nurse Selection List 2026</h3></div><div class="job-meta"><span class="tag">Results</span><span class="tag">District Health Society, Tiruppur</span></div><div class="dates"><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/tiruppur-dhs-staff-nurse-selection-list-2026-64329585/">Read the full details &rarr;</a></article>
 <!-- home-results:end -->
       </div>
       <div class="announcement-more">
@@ -335,18 +423,18 @@
       </div>
       <div class="jobs-grid" id="admit-cards-grid">
         <!-- home-admit:start -->
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>NCRTC Supervisor and Junior Maintainer Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">NCRTC</span></div><div class="dates"><span>Applications open: <b>10 Sept 2026</b></span><span>Last date: <b>9 Oct 2026</b></span><span>Exam date: <b>1 Dec 2026</b></span><span>Published: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/ncrtc-supervisor-and-junior-maintainer-admit-card-2026-36536503/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>KEA KSP Hall Ticket 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">KEA KSP Hall Ticket 2026 Out - Download</span></div><div class="dates"><span>Published: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/kea-ksp-hall-ticket-2026-b16d1533/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>DAV Teaching and Non Teaching Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">DAV Teaching and Non Teaching</span></div><div class="dates"><span>Published: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/dav-teaching-and-non-teaching-admit-card-2026-e4acc04c/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>HP High Court Process Server Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">HP High Court Process Server</span></div><div class="dates"><span>Exam date: <b>22 Nov 2026</b></span><span>Published: <b>21 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/hp-high-court-process-server-admit-card-2026-8cc4f0c0/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>SKAU Kurukshetra Staff Nurse and More Post Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">SKAU Kurukshetra</span></div><div class="dates"><span>Applications open: <b>30 Jul 2026</b></span><span>Last date: <b>28 Aug 2026</b></span><span>Exam date: <b>22 Nov 2026</b></span><span>Result declared: <b>17 Oct 2026</b></span><span>Published: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/skau-kurukshetra-staff-nurse-and-more-post-admit-card--7dbc164a/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>SSC CPO SI CAPF Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">SSC CPO SI CAPF Paper-I</span></div><div class="dates"><span>Applications open: <b>10 Sept 2026</b></span><span>Last date: <b>30 Sept 2026</b></span><span>Exam date: <b>28 Nov 2026</b></span><span>Published: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/ssc-cpo-si-capf-admit-card-2026-15eb19a6/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>OSSSC Excise Constable PET Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Odisha Sub-ordinate Staff Selection</span></div><div class="dates"><span>Published: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/osssc-excise-constable-pet-admit-card-2026-710f2fc5/">Read the full details &rarr;</a></article>
+<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>OSSC CGLRE Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">OSSC CGLRE</span></div><div class="dates"><span>Exam date: <b>30 Nov 2026</b></span><span>Published: <b>20 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/ossc-cglre-admit-card-2026-5492c139/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>NTPC NGEL Engineer and Executive Post Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">NTPC Green Energy Limited (NGEL)</span></div><div class="dates"><span>Applications open: <b>18 Aug 2026</b></span><span>Last date: <b>7 Sept 2026</b></span><span>Exam date: <b>30 Nov 2026</b></span><span>Published: <b>19 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/ntpc-ngel-engineer-and-executive-post-admit-card-2026-fa91a7cd/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>Bank of India BOI Specialist Officers SO Recruitment For Exam Date 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Bank of India BOI Specialist Officers SO</span></div><div class="dates"><span>Applications open: <b>10 Sept 2026</b></span><span>Last date: <b>5 Oct 2026</b></span><span>Exam date: <b>27 Nov 2026</b></span><span>Published: <b>19 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bank-of-india-boi-specialist-officers-so-recruitment-f-6136643c/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>RPSC Protection Officer Exam City Details 2026 for 12 Post</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Rajasthan Public Service Commission (RPSC)</span></div><div class="dates"><span>Applications open: <b>24 Dec 2025</b></span><span>Last date: <b>22 Jan 2026</b></span><span>Exam date: <b>15 Nov 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/rpsc-protection-officer-exam-city-details-2026-for-12--5212fb7e/">Read the full details &rarr;</a></article>
 <article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>UPSSSC Havildar Instructor Admit Card 2026 Out</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">UPSSSC Havildar Instructor</span></div><div class="dates"><span>Applications open: <b>19 Jun 2026</b></span><span>Last date: <b>9 Jul 2026</b></span><span>Exam date: <b>22 Nov 2026</b></span><span>Result declared: <b>30 Sept 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/upsssc-havildar-instructor-admit-card-2026-out-ff1a58ce/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>RRB Paramedical Staff Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">RRB Paramedical Staff</span></div><div class="dates"><span>Applications open: <b>15 Sept 2026</b></span><span>Last date: <b>14 Oct 2026</b></span><span>Exam date: <b>25 Nov 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/rrb-paramedical-staff-admit-card-2026-e915e3e3/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>AIBE XXII All India Bar Exam Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">All India Bar Examination AIBE 22nd</span></div><div class="dates"><span>Applications open: <b>19 Aug 2026</b></span><span>Last date: <b>27 Oct 2026</b></span><span>Exam date: <b>29 Nov 2026</b></span><span>Published: <b>18 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/aibe-xxii-all-india-bar-exam-admit-card-2026-f1b77211/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>CISF Constable Tradesman 2024 Exam City Details</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">CISF Constable Tradesman</span></div><div class="dates"><span>Applications open: <b>5 Mar 2025</b></span><span>Last date: <b>3 Apr 2025</b></span><span>Exam date: <b>1 Dec 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/cisf-constable-tradesman-2024-exam-city-details-7dce3805/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>BSF Constable Tradesman 2025 CBT Exam Admit Card</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Border Security Force (BSF)</span></div><div class="dates"><span>Applications open: <b>25 Jul 2025</b></span><span>Last date: <b>23 Aug 2025</b></span><span>Exam date: <b>2 Dec 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bsf-constable-tradesman-2025-cbt-exam-admit-card-83186897/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>RSSB Common Eligibility Test CET 10+2 Senior Secondary Level 2026 Exam Date</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Rajasthan Staff Selection Board (RSSB)</span></div><div class="dates"><span>Applications open: <b>24 Jun 2026</b></span><span>Last date: <b>23 Jul 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/rssb-common-eligibility-test-cet-10-2-senior-secondary-64d6a79f/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>Bihar School Librarian Eligibility Test SLET Admit Card 2026</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Bihar School Examination Board (BSEB)</span></div><div class="dates"><span>Applications open: <b>1 Oct 2026</b></span><span>Last date: <b>31 Oct 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bihar-school-librarian-eligibility-test-slet-admit-car-7915f557/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>Bihar SLET Admit Card 2026 Out</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Bihar SLET</span></div><div class="dates"><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/bihar-slet-admit-card-2026-out-7e9b2b72/">Read the full details &rarr;</a></article>
-<article class="job-card announcement-card"><span class="tag saff">Admit card / hall ticket</span><div class="job-card-heading"><h3>HPRCA Patwari Admit Card 2026 Out</h3></div><div class="job-meta"><span class="tag">Admit cards</span><span class="tag">Himachal Pradesh Rajya Chayan Aayog (HPRCA)</span></div><div class="dates"><span>Exam date: <b>30 Nov 2026</b></span><span>Published: <b>17 Nov 2026</b></span></div><a class="announcement-guide" href="job-details/hprca-patwari-admit-card-2026-out-99b297b5/">Read the full details &rarr;</a></article>
 <!-- home-admit:end -->
       </div>
       <div class="announcement-more">
@@ -354,6 +442,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- ============ FOOTER ============ -->
   <footer>

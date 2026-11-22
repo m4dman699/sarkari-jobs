@@ -1,0 +1,35 @@
+{
+  "name": "sarkari-jobs-frontend-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local and CI quality checks for the SarkariJobs+ static frontend",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "npm run check:css && npm run check:html && npm run check:js && npm run check:format",
+    "check:css": "stylelint --config stylelint.config.json \"../css/**/*.css\"",
+    "check:html": "html-validate --config htmlvalidate.json ../index.html ../category.html ../state.html ../results.html ../admit-cards.html ../about.html ../editorial-policy.html ../privacy.html ../contact.html ../all-jobs.html \"../guides/**/*.html\"",
+    "check:js": "cd .. && node frontend-tools/node_modules/eslint/bin/eslint.js --config eslint.config.mjs js",
+    "check:format": "prettier --config .prettierrc.json --check README.md .prettierrc.json stylelint.config.json htmlvalidate.json lighthouserc.json playwright.config.js scripts/*.js tests/*.js",
+    "format": "prettier --config .prettierrc.json --write README.md .prettierrc.json stylelint.config.json htmlvalidate.json lighthouserc.json playwright.config.js scripts/*.js tests/*.js",
+    "audit": "lhci autorun --config=lighthouserc.json",
+    "visual:check": "playwright test --config=playwright.config.js",
+    "visual:baseline": "playwright test --config=playwright.config.js --update-snapshots",
+    "canva:prepare": "node scripts/prepare-canva-assets.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "@eslint/js": "9.35.0",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.55.0",
+    "eslint": "9.35.0",
+    "globals": "16.4.0",
+    "html-validate": "9.6.0",
+    "http-server": "14.1.1",
+    "prettier": "3.6.2",
+    "sharp": "0.34.4",
+    "stylelint": "16.23.1"
+  }
+}

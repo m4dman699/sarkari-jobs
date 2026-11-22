@@ -248,7 +248,7 @@ ${icon('shield', 'g-ic g-point-ic')}
 ${jsonLd}
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../../css/guide.css?v=20261120-sector-art">
+<link rel="stylesheet" href="../../css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="../../css/guide.css?v=20261120-sector-art">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -450,7 +450,7 @@ function renderHub(sectors, helpers) {
   }).replace(/</g, '\\u003c')}</script>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../js/analytics-config.js?v=20261022"></script><script src="../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../css/style.css?v=20261119-guides"><link rel="stylesheet" href="../css/guide.css?v=20261120-sector-art">
+<link rel="stylesheet" href="../css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="../css/guide.css?v=20261120-sector-art">
 </head>
 <body>
 <div class="tricolor-strip"></div>
