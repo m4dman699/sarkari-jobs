@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 3,
+  "generatedAt": "2026-11-22T10:26:51.511Z",
+  "total": 6,
   "jobs": [
     {
       "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
@@ -40,6 +40,216 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-sarkariresult-113887bedaee51c1",
+      "type": "job",
+      "title": "NLC Graduate Executive Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Tamil Nadu",
+      "link": "https://web.nlcindia.in/rec102026/index.php",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/nlc-graduate-executive-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-14",
+      "organization": "NLC Graduate Executive",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-13",
+      "vacancies": "143",
+      "ageLimit": "Maximum 30 years",
+      "eligibility": "BA, B.Sc., B.Tech. and other relevant degrees/trades, as per post-wise eligibility criteria. Candidates must hold the required qualification from a recognized university and must have qualified GATE 2025 in the relevant paper/code.",
+      "applicationFee": "General / OBC / EWS : 854/- SC / ST / PH : 354/-",
+      "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+      "officialLinks": [
+        {
+          "url": "https://web.nlcindia.in/rec102026/index.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bseh.org.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://web.nlcindia.in/rec102026/index.php",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 10:29 AM"
+        },
+        {
+          "label": "Application start Date",
+          "date": "2026-11-13",
+          "dateText": "13/11/2026"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-14",
+          "dateText": "14/12/2026"
+        },
+        {
+          "label": "upto 05 PM Only Pay Exam Fee Last Date",
+          "date": "2026-12-14",
+          "dateText": "14/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-9b1c3a8af3127fa2",
+      "type": "job",
+      "title": "NLC India Executive Posts Online Form 2026 (145 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Tamil Nadu",
+      "link": "https://www.nlcindia.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nlc-india-executive-recruitment-2026-3081657",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "organization": "NLC India Limited (NLCIL)",
+      "publishedDate": "2026-11-17",
+      "openDate": "2026-11-20",
+      "vacancies": "145",
+      "eligibility": "Relevant Engineering Degree, M.Sc., Law Degree, Graduation with prescribed PG qualification or other notified qualifications",
+      "officialLinks": [
+        {
+          "url": "https://www.nlcindia.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.nlcindia.in/website/en/careers/jobs/currentopenings.html",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/97260",
+          "label": "Download Notification"
+        }
+      ],
+      "officialLink": "https://www.nlcindia.in/",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Registration Last Date",
+          "date": "2026-12-19",
+          "dateText": "19 December 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Last Date for Online Registration",
+          "date": "2026-12-19",
+          "dateText": "19 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-12-19",
+          "dateText": "19 December 2026, 11:45 PM"
+        }
+      ],
+      "lastDate": "2026-12-19",
+      "applicationFee": "General / OBC / EWS : 854/- SC / ST / PH : 354/-",
+      "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/97260"
+    },
+    {
+      "id": "competitor-freejobalert-893859e78d2017b5",
+      "type": "job",
+      "title": "NLC India 143 GET Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Tamil Nadu",
+      "link": "https://www.nlcindia.in/website/en/careers/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nlc-india-get-recruitment-2026-3078755",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-05",
+      "organization": "NLC India Limited (NLCIL)",
+      "publishedDate": "2026-11-05",
+      "vacancies": "143",
+      "eligibility": "Relevant Bachelor's Degree in Engineering",
+      "applicationFee": "Rs. 854 / Rs. 354",
+      "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+      "officialLinks": [
+        {
+          "url": "https://www.nlcindia.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.nlcindia.in/website/en/careers/",
+          "label": "Apply Online (From 13 November 2026)"
+        },
+        {
+          "url": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/96733",
+          "label": "Detailed Notification - Advertisement No. 10/2026"
+        },
+        {
+          "url": "https://gate2025.iitr.ac.in/",
+          "label": "GATE 2025 Information"
+        }
+      ],
+      "officialLink": "https://www.nlcindia.in/website/en/careers/",
+      "milestones": [
+        {
+          "label": "Eligibility Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Registration Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026"
+        },
+        {
+          "label": "Registration Last Date",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Final Submission Deadline for Eligible Registered and Paid Candidates",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Age and Qualification Cut-Off Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-11-13",
+          "dateText": "13 November 2026, 10:00 AM"
+        },
+        {
+          "label": "Online Registration Last Date",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Last Date for Online Fee Payment",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026, 11:45 PM"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ]
     }
   ]
 }

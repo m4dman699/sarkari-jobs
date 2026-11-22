@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 4,
+  "generatedAt": "2026-11-22T10:26:51.511Z",
+  "total": 6,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
@@ -27,6 +27,76 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-0c8526d97accbcb4",
+      "type": "job",
+      "title": "DTU 219 Assistant Professor Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Teaching",
+      "state": "Delhi",
+      "link": "https://recruitment.dtu.ac.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dtu-assistant-professor-recruitment-2026-3075190",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "organization": "Delhi Technological University (DTU)",
+      "publishedDate": "2026-10-22",
+      "openDate": "2026-10-23",
+      "lastDate": "2026-12-07",
+      "vacancies": "219",
+      "ageLimit": "No Upper Age Limit",
+      "eligibility": "Relevant degree and other conditions as prescribed in discipline-specific recruitment rules",
+      "applicationFee": "₹2,000 for UR/OBC; ₹1,000 for eligible EWS/SC/ST; PwBD exempt",
+      "notificationLink": "https://dtu.ac.in/Web/upload/jobs/2026/oct/file1010.pdf",
+      "officialLinks": [
+        {
+          "url": "https://recruitment.dtu.ac.in/",
+          "label": "Apply Online / Recruitment Updates"
+        },
+        {
+          "url": "https://dtu.ac.in/Web/upload/jobs/2026/oct/file1010.pdf",
+          "label": "Detailed Notification"
+        },
+        {
+          "url": "https://www.dtu.ac.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://recruitment.dtu.ac.in/",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026, 11:00 AM"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026, 11:00 AM"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Eligibility Reckoning Date",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026"
+        }
+      ]
     },
     {
       "id": "competitor-freejobalert-927375c38591b27b",
@@ -159,6 +229,54 @@
           "label": "Pay Exam Fee Last Date",
           "date": "2026-12-11",
           "dateText": "11/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-ac9ae3449ef37174",
+      "type": "job",
+      "title": "RRC NR Various Posts Online Form 2026 (4651 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Delhi",
+      "link": "https://www.rrcnr.org",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/rrc-nr-recruitment-2026-act-apprentice-3079404",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "Railway Recruitment Cell, Northern Railway (RRC NR), New Delhi, Delhi",
+      "publishedDate": "2026-11-07",
+      "ageLimit": "Should have completed 15 years of age and should not have completed 24 years of age (as on 11 December 2026)",
+      "eligibility": "10th class (10+2 system) with minimum 50% marks in aggregate from a recognised Board, and ITI in the relevant trade (NCVT/SCVT), passed by 06/11/2026",
+      "applicationFee": "for this recruitment? Others: Rs. 100 (non-refundable). SC/ST/PwBD/Women: No fee. Q5. What is the",
+      "notificationLink": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.rrcnr.org",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://www.rrcnr.org",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Notification date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
         }
       ]
     }

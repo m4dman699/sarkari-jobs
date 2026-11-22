@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 8,
+  "generatedAt": "2026-11-22T10:26:51.511Z",
+  "total": 9,
   "jobs": [
     {
-      "id": "aHR0cHM6Ly9yZWduLmhwc2MuZ292LmluLw",
+      "id": "aHR0cHM6Ly9ocHNjLmdvdi5pbi9Qb3J0YWxzLzAvQW5uX1Bvc3Rwb25lX1NUX0ZTT18xMl8xMV8yMDI2LnBkZg",
       "type": "job",
-      "title": "Click here to apply online for Advt. No. 25 of 2026 - Food Safety Officer (Group-B) in Food and Drugs Administration Department, Haryana",
+      "title": "Announcement dated 12.11.2026 regarding postponement of Screening Test for the posts of Food Safety Officer (Advt. No. 25/2026), scheduled to be held on 06.12.2026",
       "source": "HPSC/HSSC",
       "category": "State PSC",
       "state": "Haryana",
-      "link": "https://regn.hpsc.gov.in/",
+      "link": "https://hpsc.gov.in/Portals/0/Ann_Postpone_ST_FSO_12_11_2026.pdf",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
-      "publishedDate": null
+      "publishedDate": "2026-11-12"
     },
     {
       "id": "aHR0cHM6Ly9ocHNjLmdvdi5pbi9Qb3J0YWxzLzAvQW5uX0FEQV8yMV8xMF8yMDI2LnBkZg",
@@ -105,6 +105,59 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": "2026-09-21"
+    },
+    {
+      "id": "competitor-sarkariresult-270d96f12c053fea",
+      "type": "job",
+      "title": "Haryana TET HTET Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Haryana",
+      "link": "https://htet2026.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/haryana-htet-dec2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "organization": "Board of Secondary Education, BSEH Haryana",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-18",
+      "lastDate": "2026-11-27",
+      "eligibility": "18 November 2026 | 03:25 PM",
+      "applicationFee": "For Single Paper Only : Gen / OBC / Other State : 1200/- SC / PH : 700/- For Double Paper : Gen / OBC / Other State : 2000/- SC / PH : 1100/- For Triple Paper : Gen / OBC / Other State : 2600/- SC / PH : 1400/-",
+      "notificationLink": "https://htet2026.org/htet2023/Information_Bulletin%20HTET-2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://htet2026.org/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://htet2026.org/htet2023/Information_Bulletin%20HTET-2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bseh.org.in/uploads/files/ca4d5721ceac080d7bc160f37ec6967e.pdf",
+          "label": "Download Exam Date Notice"
+        }
+      ],
+      "officialLink": "https://htet2026.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 03:25 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        }
+      ]
     }
   ]
 }

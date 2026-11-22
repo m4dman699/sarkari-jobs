@@ -1,7 +1,20 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 2,
+  "generatedAt": "2026-11-22T10:26:51.511Z",
+  "total": 3,
   "jobs": [
+    {
+      "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA0XzExXzIwMjYucGRm",
+      "type": "job",
+      "title": "Recruitment Advertisement for Law Officer Exam 2026 (Madhya Pradesh Public Service Commission - Government of Madhya Pradesh) (Advt. No./14/2026), Dated 04/11/2026",
+      "source": "MPPSC",
+      "category": "State PSC",
+      "state": "Madhya Pradesh",
+      "link": "https://mppsc.mp.gov.in/uploads/advertisement/Advt_Law_Officer_Exam_2026_Dated_04_11_2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-11-04"
+    },
     {
       "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA4XzEwXzIwMjYucGRm",
       "type": "job",

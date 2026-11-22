@@ -1,5 +1,74 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-22T10:26:51.511Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-freejobalert-528a91fdc16a0917",
+      "type": "job",
+      "title": "DVC Executive Trainee Online Form 2026 (108 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "West Bengal",
+      "link": "https://www.dvc.gov.in/cms-web/recruitment_dvc",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dvc-recruitment-2026-executive-trainee-3079288",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-07",
+      "organization": "Damodar Valley Corporation (DVC), Kolkata, West Bengal",
+      "publishedDate": "2026-11-06",
+      "openDate": "2026-11-06",
+      "ageLimit": "Maximum 29 years (as on closing date of online application)",
+      "eligibility": "Full-time Bachelor's Degree in Engineering or Technology in the post's discipline from an AICTE / appropriate statutory authority approved University/Institution, with 65% marks (Gen/OBC(NCL)/EWS) or 60% marks (SC/ST/PwD) in aggregate; valid GATE-2025 score in the corresponding paper.",
+      "applicationFee": "6 December 2026",
+      "notificationLink": "https://www.dvc.gov.in/storage/app/notice_qr/notice_5819639c38e595d23131b6afea0d29f2295.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.dvc.gov.in/storage/app/notice_qr/notice_5819639c38e595d23131b6afea0d29f2295.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.dvc.gov.in/cms-web/recruitment_dvc",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.dvc.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.dvc.gov.in/cms-web/recruitment_dvc",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Advertisement Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-06",
+          "dateText": "6 November 2026"
+        },
+        {
+          "label": "Last Date of Online Application (till 23:59 hrs)",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Last Date for Payment of Application Fee",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        }
+      ]
+    }
+  ]
 }

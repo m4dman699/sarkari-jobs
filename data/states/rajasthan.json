@@ -1,5 +1,60 @@
 {
-  "generatedAt": "2026-11-19T10:24:23.470Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-22T10:26:51.511Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-sarkariresult-c61d8c707a4628c2",
+      "type": "job",
+      "title": "RSSB Junior Engineer JE Online Form 2026 (Re Open)",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Defence",
+      "state": "Rajasthan",
+      "link": "https://sso.rajasthan.gov.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/rajasthan-rssb-je-august26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-17",
+      "organization": "Rajasthan Staff Selection Board (RSSB)",
+      "publishedDate": "2026-11-18",
+      "vacancies": "1909",
+      "ageLimit": "18–40 years",
+      "eligibility": "Engineering Diploma or Degree in Related Trade / Branch from any Recognized Institute in India. More Eligibility Details Read the Notification",
+      "applicationFee": "(OTR) General / OBC / Other State : 600/- OBC NCL / MBC / EWS / SC / ST / PH (Rajasthan) : 400/- Correction Charge : 300/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/1794922282.pdf",
+      "officialLinks": [
+        {
+          "url": "https://sso.rajasthan.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/1794922282.pdf",
+          "label": "Download Reopen Notification"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://sso.rajasthan.gov.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 10:55 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-17",
+          "dateText": "17/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-17",
+          "dateText": "17/12/2026"
+        }
+      ]
+    }
+  ]
 }
