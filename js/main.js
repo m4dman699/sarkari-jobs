@@ -238,10 +238,27 @@ function fmtDate(d, opts = { day: 'numeric', month: 'short', year: 'numeric' }) 
 
 // Authority marks are matched on the organisation name, not the URL host: feeds
 // routinely link a state portal or a republisher, so host matching shows the
-// wrong logo — or a 404 favicon. This is the same verified list as
-// scraper/org-marks.js, kept in sync by hand because this file runs in the
-// browser and cannot require a CommonJS module.
+// wrong logo — or a 404 favicon. This is the same list as scraper/org-marks.js,
+// kept in sync by hand because this file runs in the browser and cannot require
+// a CommonJS module.
 const PORTAL_LOGOS = [
+  [/\bUPSSSC\b|Uttar Pradesh Subordinate Service/i, 'portal-logos/upsssc.png'],
+  [/\bUPESSC\b|Uttar Pradesh Education Service/i, 'portal-logos/upessc.jpg'],
+  [/\bBPSC\b|Bihar Public Service/i, 'portal-logos/bpsc.png'],
+  [/\bBSEB\b|Bihar School Examination/i, 'portal-logos/bseb.jpg'],
+  [/State Bank of India|\bSBI\b/i, 'portal-logos/sbi.svg'],
+  [/Central Selection Board of Constable|\bCSBC\b/i, 'portal-logos/csbc.png'],
+  [/Sashastra Seema Bal|\bSSB\b/i, 'portal-logos/ssb.png'],
+  [/High Court of Delhi|Delhi High Court/i, 'portal-logos/delhi-high-court.png'],
+  [/\bBPSSC\b|Bihar Police Subordinate/i, 'portal-logos/bpssc.png'],
+  [/Indian Bank/i, 'portal-logos/indian-bank.jpg'],
+  [/\bOSSSC\b|Odisha Sub.?ordinate Staff Selection/i, 'portal-logos/osssc.png'],
+  [/Central Industrial Security Force|\bCISF\b/i, 'portal-logos/cisf.png'],
+  [/\bBHU\b|Banaras Hindu University/i, 'portal-logos/bhu.png'],
+  [/Ministry of Home Affairs|\bMHA\b/i, 'portal-logos/mha.png'],
+  [/\bAEES\b|Atomic Energy Education Society/i, 'portal-logos/aees.png'],
+  [/Rojgar Sangam|Sewayojan/i, 'portal-logos/sewayojan.png'],
+  [/\bRECPDCL\b|REC Power Development/i, 'portal-logos/recpdcl.png'],
   [/\bRPSC\b|Rajasthan Public Service/i, 'portal-logos/rpsc.png'],
   [/\bUPPSC\b|Uttar Pradesh Public Service/i, 'portal-logos/uppsc-official.png'],
   [/\bMPPSC\b|Madhya Pradesh Public Service/i, 'portal-logos/mppsc.png'],

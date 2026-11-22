@@ -41,7 +41,9 @@
   <!-- The hero background is the LCP image; make it discoverable in the initial
        HTML at high priority instead of waiting for CSS to request it. -->
   <link rel="preload" as="image" href="assets/realistic/hero-aspirants.webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=20261122-trust-refresh">
+  <link rel="stylesheet" href="css/style.css?v=20261122-local-redesign">
+  <link rel="stylesheet" href="css/ncs-spotlight.css?v=20261122-career-tools">
+  <script src="js/ncs-spotlight.js?v=20261122-career-tools" defer></script>
 </head>
 <body>
 
@@ -119,8 +121,8 @@
             <svg class="trust-check" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="9" fill="rgba(19,136,8,.13)"/><path d="M5.8 10.2l2.6 2.6 5.8-5.8" fill="none" stroke="#138808" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Verified sources
           </p>
-          <h2 id="trust-heading">Trusted by <span class="trust-count">40+</span></h2>
-          <p class="trust-desc">We check the official notice first, then link you to the authority that published it. Source-checked, never endorsed — SarkariJobs+ is independent of every recruiting department.</p>
+          <h2 id="trust-heading">Source-first. <span class="trust-count">Never sponsored.</span></h2>
+          <p class="trust-desc">We track the recruiting authority’s public notice and link back to it. These are examples of source marks we follow—not endorsements, partnerships or claims of affiliation.</p>
           <a class="trust-link" href="all-jobs.html">Browse all listings <span class="trust-arrow" aria-hidden="true">→</span></a>
         </div>
         <div class="trust-marks">
@@ -305,55 +307,106 @@
     </div>
   </section>
 
-  <section class="block source-section" id="career-sources">
+  <section class="block source-section ncs-spotlight" id="career-sources">
     <div class="container source-container">
-      <div class="source-heading">
-        <h2>Explore government career services</h2>
-        <p>The National Career Service is a Government of India portal for vacancies, career guidance and skills. These three tools are free to use; we link each one straight to the official NCS portal and explain what it is — and what it is not.</p>
+      <div class="ncs-section-heading">
+        <div>
+          <p class="ncs-eyebrow"><span aria-hidden="true"></span>Career tools, source attached</p>
+          <h2>More than a list of job links.</h2>
+        </div>
+        <p>Prepare your application, then verify the actual vacancy on the National Career Service portal and the recruiting authority’s own notice.</p>
       </div>
-      <div class="ncs-ribbon" aria-label="Official NCS tools explained visually">
-        <a class="ncs-ribbon-card" href="https://ncs.gov.in/" target="_blank" rel="noopener">
-          <span class="ncs-ribbon-media"><img src="assets/ncs-posters/skill-quotient.webp" alt="Illustrative poster with a skill gauge, open book and certificate seal" width="1200" height="870" loading="lazy" decoding="async"></span>
-          <span class="ncs-ribbon-body">
-            <b>Skill Quotient</b>
-            <span class="ncs-ribbon-text">Measure a skill before you shortlist a post. Treat the result as a starting point, not a recruitment decision.</span>
-          </span>
-        </a>
-        <a class="ncs-ribbon-card" href="https://ncs.gov.in/" target="_blank" rel="noopener">
-          <span class="ncs-ribbon-media"><img src="assets/ncs-posters/ai-interview.webp" alt="Illustrative poster with speech bubbles, a person silhouette and a webcam frame" width="1200" height="880" loading="lazy" decoding="async"></span>
-          <span class="ncs-ribbon-body">
-            <b>AI Interview Prep</b>
-            <span class="ncs-ribbon-text">Practise answers before a real call. Use it to structure your responses, not to script them.</span>
-          </span>
-        </a>
-        <a class="ncs-ribbon-card" href="https://ncs.gov.in/" target="_blank" rel="noopener">
-          <span class="ncs-ribbon-media"><img src="assets/ncs-posters/ai-resume.webp" alt="Illustrative poster with a resume sheet, laptop and checkmark" width="1200" height="870" loading="lazy" decoding="async"></span>
-          <span class="ncs-ribbon-body">
-            <b>Free AI Resume Builder</b>
-            <span class="ncs-ribbon-text">Build a recruiter-ready resume. NCS states that its job-seeker services are free.</span>
-          </span>
-        </a>
-      </div>
-      <p class="ncs-ribbon-note">Illustrative ribbon artwork; the three labels follow tools shown on the official <a href="https://ncs.gov.in/" target="_blank" rel="noopener">National Career Service portal</a>. SarkariJobs+ is independent and is not affiliated with NCS.</p>
-      <div class="source-bento">
-        <figure class="source-photo-tile">
+
+      <div class="ncs-feature-grid">
+        <article class="ncs-feature-intro">
+          <img class="ncs-modi-art" src="assets/generated/ncs-modi-style.webp" alt="" width="1216" height="896" loading="eager" decoding="async" aria-hidden="true">
+          <p class="ncs-feature-kicker">Official service · independent tracker</p>
+          <h3>One portal.<br>Three ways to get ready.</h3>
+          <p class="ncs-feature-description">The National Career Service offers vacancies and career-support tools. Pick a tool below, see what it does, then open the official portal.</p>
+          <div class="ncs-feature-actions">
+            <a class="ncs-action ncs-action--primary" href="https://ncs.gov.in/job-listing?isGovernmentJob=true" target="_blank" rel="noopener">Find vacancies on NCS <span aria-hidden="true">↗</span></a>
+            <a class="ncs-action ncs-action--quiet" href="https://ncs.gov.in/" target="_blank" rel="noopener">Open NCS portal</a>
+          </div>
+          <p class="ncs-feature-note"><span class="ncs-note-check" aria-hidden="true">✓</span>NCS is a job-search service, not the recruiting authority.</p>
+        </article>
+
+        <figure class="ncs-history-card">
           <img src="assets/ncs-launch-modi.jpg" alt="Prime Minister Narendra Modi dedicating the National Career Service portal at the 46th Indian Labour Conference in New Delhi, 20 July 2015" width="1280" height="584" loading="lazy" decoding="async">
-          <span class="source-photo-badge"><span class="badge-dot" aria-hidden="true"></span>NCS portal launch · 2015</span>
-          <figcaption>Photo: Prime Minister’s Office · <a href="https://commons.wikimedia.org/wiki/File:Narendra_Modi_dedicating_the_National_Career_Service_Portal_to_the_nation,_at_the_46th_session_of_Indian_Labour_Conference,_in_New_Delhi._The_Union_Minister_for_Finance,_Corporate_Affairs_and_Information_%26_Broadcasting.jpg" target="_blank" rel="noopener">GODL-India source and attribution</a></figcaption>
+          <span class="ncs-history-badge">From the source archive <span>2015</span></span>
+          <figcaption>
+            <span class="ncs-history-label">The NCS portal launch</span>
+            <span class="ncs-history-meta">20 July 2015 · New Delhi</span>
+            <span class="ncs-history-credit">Photo: Prime Minister’s Office · <a href="https://commons.wikimedia.org/wiki/File:Narendra_Modi_dedicating_the_National_Career_Service_Portal_to_the_nation,_at_the_46th_session_of_Indian_Labour_Conference,_in_New_Delhi._The_Union_Minister_for_Finance,_Corporate_Affairs_and_Information_%26_Broadcasting.jpg" target="_blank" rel="noopener">GODL-India source and attribution ↗</a></span>
+          </figcaption>
         </figure>
-        <article class="source-bento-card source-main-tile">
-          <div class="source-card-topline"><span class="source-mini-icon" aria-hidden="true">N</span><span>Government of India service</span></div>
-          <h3>National Career Service</h3>
-          <p>Find government-sector vacancies, career guidance and other employment services on the official NCS portal.</p>
-          <a class="btn btn-primary source-cta" href="https://ncs.gov.in/job-listing?isGovernmentJob=true" target="_blank" rel="noopener">Browse government jobs <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="source-bento-card source-check-tile">
-          <div class="source-card-topline"><span class="source-mini-icon source-check-icon" aria-hidden="true">✓</span><span>Before you apply</span></div>
-          <h3>Verify each opening</h3>
-          <p>NCS is a job-search service, not the recruiting authority. Confirm the employer, dates and application route in the employer’s own notice. NCS says job-seeker services are free.</p>
-          <p class="source-disclaimer">SarkariJobs+ is independent and is not affiliated with NCS or the Government of India.</p>
-        </article>
       </div>
+
+      <section class="ncs-toolkit" aria-labelledby="ncs-toolkit-heading">
+        <div class="ncs-toolkit-header">
+          <div>
+            <p class="ncs-toolkit-kicker">A useful next step</p>
+            <h3 id="ncs-toolkit-heading">Choose a career-support tool</h3>
+          </div>
+          <p>Select a service to see what it does and where to open it.</p>
+        </div>
+
+        <div class="ncs-tool-workspace" data-ncs-tools>
+          <div class="ncs-tool-choices" role="group" aria-label="Choose an NCS service">
+            <button class="ncs-tool-choice is-active" type="button" aria-pressed="true" data-tool-choice="skill">
+              <span class="ncs-tool-index" aria-hidden="true">01</span>
+              <span class="ncs-tool-choice-copy"><b>Employability Assessment</b><span>Check where you stand</span></span>
+              <span class="ncs-tool-choice-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="ncs-tool-choice" type="button" aria-pressed="false" data-tool-choice="interview">
+              <span class="ncs-tool-index" aria-hidden="true">02</span>
+              <span class="ncs-tool-choice-copy"><b>Interview Coach</b><span>Practise your answers</span></span>
+              <span class="ncs-tool-choice-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="ncs-tool-choice" type="button" aria-pressed="false" data-tool-choice="resume">
+              <span class="ncs-tool-index" aria-hidden="true">03</span>
+              <span class="ncs-tool-choice-copy"><b>AI Resume Builder</b><span>Shape your application</span></span>
+              <span class="ncs-tool-choice-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+
+          <div class="ncs-tool-panels">
+            <article class="ncs-tool-panel" data-tool-panel="skill">
+              <figure class="ncs-tool-poster"><img src="assets/generated/guide-hub-study.webp" alt="A student comparing career options at a desk" width="1344" height="768" loading="eager" decoding="async"><figcaption>AI-generated editorial image</figcaption></figure>
+              <div class="ncs-tool-copy">
+                <p class="ncs-tool-step">01 · Measure</p>
+                <h4>Start with your strengths.</h4>
+                <p>Check your current skill level before you shortlist a post. Use the result to decide what to practise next, not as proof of eligibility or a recruitment decision.</p>
+                <ul class="ncs-tool-points"><li>Use it for self-assessment</li><li>Compare the result with the notice</li><li>Keep the official job criteria first</li></ul>
+                <a class="ncs-tool-link" href="https://ncs.gov.in/" target="_blank" rel="noopener">Open NCS resources <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="ncs-tool-panel" data-tool-panel="interview">
+              <figure class="ncs-tool-poster"><img src="assets/generated/ncs-students-style.webp" alt="Indian students comparing application checklists at a career centre" width="1344" height="768" loading="eager" decoding="async"><figcaption>AI-generated editorial image</figcaption></figure>
+              <div class="ncs-tool-copy">
+                <p class="ncs-tool-step">02 · Prepare</p>
+                <h4>Practise the conversation.</h4>
+                <p>Use interview preparation to organise your answers around the job, your experience and the selection process. It is practice support, not an official evaluation.</p>
+                <ul class="ncs-tool-points"><li>Structure answers with examples</li><li>Read the selection stages first</li><li>Do not script a different identity</li></ul>
+                <a class="ncs-tool-link" href="https://ncs.gov.in/" target="_blank" rel="noopener">Open NCS career tools <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="ncs-tool-panel" data-tool-panel="resume">
+              <figure class="ncs-tool-poster"><img src="assets/generated/ncs-resume-style.webp" alt="A student reviewing a printed resume beside a laptop" width="1216" height="896" loading="eager" decoding="async"><figcaption>AI-generated editorial image</figcaption></figure>
+              <div class="ncs-tool-copy">
+                <p class="ncs-tool-step">03 · Apply</p>
+                <h4>Make the application legible.</h4>
+                <p>Build a recruiter-ready resume and review every detail against your certificates and the actual vacancy. A polished layout cannot replace eligibility.</p>
+                <ul class="ncs-tool-points"><li>Match experience to the notice</li><li>Check names, dates and documents</li><li>Review the export before sharing</li></ul>
+                <a class="ncs-tool-link" href="https://ncs.gov.in/cvbuilder" target="_blank" rel="noopener">Open the AI Resume Builder on NCS <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="ncs-toolkit-footnote">Images are AI-generated illustrations in this site's editorial style. Tool names follow the official <a href="https://ncs.gov.in/" target="_blank" rel="noopener">National Career Service portal</a>. SarkariJobs+ is independent and is not affiliated with NCS or the Government of India.</p>
+      </section>
     </div>
   </section>
 

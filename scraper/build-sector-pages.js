@@ -160,24 +160,29 @@ function renderPage(sector, listings, helpers) {
   }).join('');
 
   // Matrix archetype: qualification columns, post cards inside.
-  const matrix = (sector.levels || []).map(level => `
-<div class="g-col">
+  const matrix = (sector.levels || []).map((level, index) => `
+<div class="g-col" data-role-level="${index}">
 <div class="g-col-head">${icon('graduation-cap', 'g-ic g-ic--sm')}<h3>${escapeHTML(level.level)}</h3></div>
 <ul class="g-posts">
 ${(level.posts || []).map(post => `<li class="g-post"><span class="g-post-name">${escapeHTML(post.name)}</span><span class="g-post-code">${escapeHTML(post.code || '')}</span><span class="g-post-note">${escapeHTML(post.note || '')}</span></li>`).join('\n')}
 </ul>
 <p class="g-col-note">${escapeHTML(level.note || '')}</p>
 </div>`).join('');
+  const levelOptions = (sector.levels || []).map((level, index) =>
+    `<option value="${index}">${escapeHTML(level.level)}</option>`).join('');
 
-  // Stepper archetype: numbered rail, drawn by CSS on the container.
+  // Each stage is an accessible disclosure: its title stays visible while
+  // detailed tests and notes open only when a reader asks for them.
   const stages = (sector.stages || []).map((stage, index) => `
 <li class="g-step">
 <span class="g-step-num" aria-hidden="true">${index + 1}</span>
-<div class="g-step-body">
-<h3 class="g-step-name">${escapeHTML(stage.name)}</h3>
+<details class="g-stage-detail"${index === 0 ? ' open' : ''}>
+<summary class="g-stage-summary"><h3 class="g-step-name">${escapeHTML(stage.name)}</h3><span class="g-stage-toggle" aria-hidden="true"></span></summary>
+<div class="g-stage-body">
 <p class="g-step-tests">${escapeHTML(stage.tests)}</p>
 <p class="g-step-note">${escapeHTML(stage.note)}</p>
 </div>
+</details>
 </li>`).join('');
 
   // Ladder archetype: ordered list with a spine.
@@ -248,7 +253,8 @@ ${icon('shield', 'g-ic g-point-ic')}
 ${jsonLd}
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../../css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="../../css/guide.css?v=20261120-sector-art">
+<script src="../../js/guide.js?v=20261122-interactive-guides" defer></script>
+<link rel="stylesheet" href="../../css/style.css?v=20261122-local-redesign"><link rel="stylesheet" href="../../css/guide.css?v=20261122-photo-led-guides">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -265,68 +271,71 @@ ${jsonLd}
 </div></header>
 
 <main>
-<section class="g-hero" style="--g-accent:${escapeHTML(sector.accent || '#FF9933')}">
+<section class="g-hero g-hero--sector" style="--g-accent:${escapeHTML(sector.accent || '#FF9933')}">
 <div class="container">
 <nav class="g-crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><a href="../">Sector guides</a><span aria-hidden="true">/</span><span>${escapeHTML(name)}</span></nav>
+<div class="g-sector-hero-grid">
+<div class="g-sector-hero-copy">
 ${heroLogo}
 <p class="g-kicker">${icon(sector.icon, 'g-ic g-hero-ic')}Sector guide</p>
 <h1>${escapeHTML(name)} jobs: who can apply, and how selection works</h1>
 <p class="g-lede">${escapeHTML(name)} recruitment explained in diagrams: which qualification unlocks which post, every selection stage, and live listings pulled from the official feed.</p>
-<figure class="g-sector-art">
-<img src="../../assets/sector-art/${sector.slug}.webp" alt="Illustration of ${escapeHTML(name)} government jobs: the tools and symbols of this sector" width="1344" height="768" loading="lazy" decoding="async">
-<figcaption>Illustrative artwork for the ${escapeHTML(name)} guide. <b>Selection rules, dates and vacancies come only from the official notice linked on each listing.</b></figcaption>
-</figure>
 <div class="g-statrow">${stats}</div>
 <div class="g-pictograms">
 ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-icon">${icon(p.icon, 'g-ic g-picto-ic')}</span><span class="g-picto-label">${escapeHTML(p.label)}</span></div>`).join('')}
 </div>
 <p class="g-hero-note">${icon('landmark', 'g-ic g-ic--sm')}Not a recruiting authority. Confirm every date, fee and eligibility clause on the official notice linked from each listing.</p>
+<div class="g-hero-actions"><a class="g-hero-action-primary" href="#live">See ${listings.length} tracked listing${listings.length === 1 ? '' : 's'} <span aria-hidden="true">↓</span></a><a class="g-hero-action-secondary" href="#who-can-apply">Check qualification</a></div>
+</div>
+<figure class="g-sector-art">
+<img src="../../assets/sector-art/${sector.slug}.webp" alt="Illustrative image for the ${escapeHTML(name)} government jobs guide" width="1344" height="768" loading="eager" fetchpriority="high" decoding="async">
+<figcaption>Illustrative image for the ${escapeHTML(name)} guide. <b>Selection rules, dates and vacancies come only from the official notice linked on each listing.</b></figcaption>
+</figure>
+</div>
 </div>
 </section>
 
 <nav class="g-jump container" aria-label="Jump to a section">
+<span class="g-jump-label">On this page</span>
 <a href="#who-can-apply">Who can apply</a>
 <a href="#selection">Selection stages</a>
-<a href="#apply">Apply</a>
-<a href="#documents">Documents</a>
-<a href="#syllabus">Syllabus</a>
-<a href="#career">Career path</a>
-<a href="#reality">Reality check</a>
 <a href="#live">Live listings (${listings.length})</a>
-<a href="#faq">FAQ</a>
+<a href="#apply">Apply</a>
+<a href="#more-guides">More guidance</a>
 </nav>
-
-<section class="diagram-band g-diagram" aria-labelledby="ladder-heading">
-<div class="container">
-<div class="diagram-frame">
-<img src="../../assets/diagrams/eligibility-ladder.webp" alt="Four-step qualification ladder from school pass to graduate" width="1344" height="768" loading="lazy" decoding="async">
-</div>
-<h2 id="ladder-heading" class="diagram-heading">Qualification decides the post you can target</h2>
-<ol class="diagram-steps">
-<li>10th pass — entry-level posts</li>
-<li>12th pass — clerk and operating posts</li>
-<li>ITI or diploma — technician and engineer posts</li>
-<li>Graduate — officer and specialist posts</li>
-</ol>
-<p class="diagram-caption">This ladder is a starting point. Confirm the <b>exact educational clause, age limit and relaxations in the official notice</b> before you apply.</p>
-</div>
-</section>
 
 <section class="g-block container" id="who-can-apply">
 <h2 class="g-h2">${icon('graduation-cap', 'g-ic g-h2-ic')}Who can apply: qualification → post</h2>
-<p class="g-sub">Find your qualification on the left. Every post it unlocks is listed under it, with the pay level and what the job actually involves.</p>
+<p class="g-sub">Filter by qualification or search for a post. Confirm exact age, subject and certificate rules in the linked notice.</p>
+<div class="g-role-tools">
+<label class="g-role-search"><span>Search posts</span><input type="search" data-role-search placeholder="e.g. clerk, engineer, officer" autocomplete="off"></label>
+<label class="g-role-level"><span>Your qualification</span><select data-role-level-filter><option value="all">All qualifications</option>${levelOptions}</select></label>
+<button class="g-role-reset" type="button" data-role-reset>Reset</button>
+<p class="g-role-count" data-role-count aria-live="polite">${(sector.levels || []).reduce((count, level) => count + (level.posts || []).length, 0)} role paths</p>
+</div>
+<p class="g-role-empty" data-role-empty hidden>No matching posts. Try a broader search or choose all qualifications.</p>
 <div class="g-matrix">${matrix}</div>
 </section>
 
 <section class="g-block container" id="selection">
 <h2 class="g-h2">${icon('book-open', 'g-ic g-h2-ic')}How selection works, stage by stage</h2>
-<p class="g-sub">Each stage below is a real gate. Only the last one leads to an appointment letter.</p>
+<p class="g-sub">Open a stage for what it checks. The exact order and tests can vary by notification.</p>
 <ol class="g-flow">${stages}</ol>
 </section>
 
-<section class="g-block container" id="apply">
-<h2 class="g-h2">${icon('clipboard-check', 'g-ic g-h2-ic')}How to apply, in five steps</h2>
-<p class="g-sub">Almost every central and state portal follows this order. Complete each step before moving on — most portals stop letting you edit once the fee is paid.</p>
+<section class="g-block container" id="live">
+<h2 class="g-h2">${icon('briefcase', 'g-ic g-h2-ic')}${escapeHTML(name)} listings tracked right now</h2>
+<p class="g-sub">${listings.length ? `${listings.length} listings matched to this sector. Open a detail page to check its source link and current notice.` : 'Nothing matched to this sector right now. Browse all listings while the feed refreshes.'}</p>
+${renderListings(listings, helpers)}
+</section>
+
+<details class="g-more-card g-block container" id="apply">
+<summary class="g-more-summary">
+<span class="g-more-title"><span class="g-more-kicker">Application checklist</span><span class="g-more-heading">${icon('clipboard-check', 'g-ic g-h2-ic')}Apply in five steps</span></span>
+<span class="g-more-toggle">Open checklist <span aria-hidden="true"></span></span>
+</summary>
+<div class="g-more-content">
+<p class="g-sub">Use the recruiting authority’s instructions as the final word. Many portals stop allowing edits after fee payment.</p>
 <ol class="g-apply">
 <li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">1</span><span class="g-apply-ic">${icon('file-text', 'g-ic')}</span><h3>Read the official notice</h3><p>Confirm qualification, age as on the notice's cut-off date, fee and the last date before you register.</p></li>
 <li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">2</span><span class="g-apply-ic">${icon('clipboard-check', 'g-ic')}</span><h3>Register on the official portal</h3><p>Use the link on the notice, not a search result. Keep the registration number and password it gives you.</p></li>
@@ -334,11 +343,14 @@ ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-
 <li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">4</span><span class="g-apply-ic">${icon('credit-card', 'g-ic')}</span><h3>Pay the fee</h3><p>Pay online and save the receipt. If you claim a fee waiver, the category certificate must already be in the prescribed format.</p></li>
 <li class="g-apply-step"><span class="g-apply-num" aria-hidden="true">5</span><span class="g-apply-ic">${icon('check-circle', 'g-ic')}</span><h3>Download the confirmation</h3><p>Save the submitted application PDF and the payment receipt. Check the portal again after a day to confirm the form was accepted.</p></li>
 </ol>
-</section>
+</div>
+</details>
 
-<section class="g-block container" id="documents">
-<h2 class="g-h2">${icon('folder', 'g-ic g-h2-ic')}Documents to keep ready</h2>
-<p class="g-sub">Scan these before the form opens. A missing certificate is the most common reason an otherwise eligible application is rejected at verification.</p>
+<section class="g-block container g-more-guide" id="more-guides">
+<div class="g-more-guide-heading"><p class="g-more-kicker">Optional detail</p><h2 class="g-h2">More sector guidance</h2><p class="g-sub">Open only the section you need; keep the main route short and easy to scan.</p></div>
+<details class="g-disclosure" id="documents">
+<summary><h3>${icon('folder', 'g-ic g-h2-ic')}Documents to keep ready</h3><span class="g-disclosure-mark" aria-hidden="true"></span></summary>
+<div class="g-disclosure-content"><p class="g-sub">Check the official notice for exact formats, dimensions, validity dates and category-specific requirements.</p>
 <ul class="g-docs">
 <li class="g-doc"><span class="g-doc-ic">${icon('camera', 'g-ic')}</span><b>Passport photograph</b><p>Recent, plain light background, within the portal's file-size limit.</p></li>
 <li class="g-doc"><span class="g-doc-ic">${icon('pen-line', 'g-ic')}</span><b>Signature</b><p>Signed in black ink on white paper, scanned at the size the portal asks for.</p></li>
@@ -349,60 +361,63 @@ ${(sector.pictograms || []).map(p => `<div class="g-picto"><span class="g-picto-
 <li class="g-doc"><span class="g-doc-ic">${icon('id-card', 'g-ic')}</span><b>Photo ID</b><p>Aadhaar, PAN, passport or voter card — the name must match the application.</p></li>
 <li class="g-doc"><span class="g-doc-ic">${icon('credit-card', 'g-ic')}</span><b>Fee payment proof</b><p>UPI or bank receipt, kept until the admit card is issued.</p></li>
 </ul>
-</section>
+</div>
+</details>
 
-<section class="g-block container" id="syllabus">
-<h2 class="g-h2">${icon('file-text', 'g-ic g-h2-ic')}Exam syllabus &amp; pattern</h2>
-<p class="g-sub">Official syllabus and exam pattern for this sector. Always verify on the recruiting authority's website.</p>
+<details class="g-disclosure" id="syllabus">
+<summary><h3>${icon('file-text', 'g-ic g-h2-ic')}Syllabus and preparation</h3><span class="g-disclosure-mark" aria-hidden="true"></span></summary>
+<div class="g-disclosure-content"><p class="g-sub">Use official syllabus links where available; verify the current pattern on the recruiting authority’s site.</p>
 <div class="g-syllabus">
 ${(sector.syllabus || []).map(s => `<div class="g-syl-card"><h3>${escapeHTML(s.exam)}</h3><p>${escapeHTML(s.pattern)}</p>${s.topics ? `<ul class="g-syl-topics">${s.topics.map(t => `<li><b>${escapeHTML(t.group)}</b> — ${escapeHTML(t.items)}</li>`).join('')}</ul>` : ''}${s.link ? `<a href="${escapeHTML(s.link)}" target="_blank" rel="noopener noreferrer">Official syllabus →</a>` : ''}${s.books ? `<div class="g-syl-books"><span class="g-syl-books-label">Recommended books:</span> ${s.books}</div>` : ''}</div>`).join('\n')}
 </div>
 ${(sector.prepPlan && sector.prepPlan.length) ? `<div class="g-plan"><h3 class="g-plan-h">${icon('clock', 'g-ic g-ic--sm')} When and how to prepare</h3><ol class="g-plan-list">${sector.prepPlan.map((p, i) => `<li class="g-plan-step"><span class="g-plan-num">${i + 1}</span><div class="g-plan-body"><b>${escapeHTML(p.phase)}</b><p>${escapeHTML(p.what)}</p></div></li>`).join('')}</ol></div>` : ''}
-</section>
+</div>
+</details>
 
-<section class="g-block container" id="career">
-<h2 class="g-h2">${icon('user-round-cog', 'g-ic g-h2-ic')}Career path after joining</h2>
-<p class="g-sub">Promotions run on seniority plus departmental exams. The rung you enter on depends on the post you clear.</p>
+<details class="g-disclosure" id="career">
+<summary><h3>${icon('user-round-cog', 'g-ic g-h2-ic')}Career path after joining</h3><span class="g-disclosure-mark" aria-hidden="true"></span></summary>
+<div class="g-disclosure-content"><p class="g-sub">Progression depends on cadre, service rules, seniority and departmental exams. Confirm details for the specific post.</p>
 <ol class="g-ladder">${ladder}</ol>
-</section>
+</div>
+</details>
 
-<section class="g-block container" id="reality">
-<h2 class="g-h2">${icon('shield', 'g-ic g-h2-ic')}What the notification does not tell you</h2>
-<p class="g-sub">The parts candidates usually discover too late.</p>
+<details class="g-disclosure" id="reality">
+<summary><h3>${icon('shield', 'g-ic g-h2-ic')}Practical details to verify</h3><span class="g-disclosure-mark" aria-hidden="true"></span></summary>
+<div class="g-disclosure-content"><p class="g-sub">These checks vary by recruitment; follow the current notification where it differs.</p>
 <ul class="g-points">${reality}</ul>
-</section>
+</div>
+</details>
 
-<section class="g-block container" id="live">
-<h2 class="g-h2">${icon('briefcase', 'g-ic g-h2-ic')}${escapeHTML(name)} listings tracked right now</h2>
-<p class="g-sub">${listings.length ? `${listings.length} live listing${listings.length === 1 ? '' : 's'} matched to this sector. Each opens the summary and the official source link.` : 'Nothing live in this sector at this moment.'}</p>
-${renderListings(listings, helpers)}
-</section>
-
-<section class="g-block container" id="faq">
-<h2 class="g-h2">Frequently asked questions</h2>
+<details class="g-disclosure" id="faq">
+<summary><h3>Frequently asked questions</h3><span class="g-disclosure-mark" aria-hidden="true"></span></summary>
+<div class="g-disclosure-content">
 ${faqHtml}
-</section>
+</div>
+</details>
 
-<section class="g-block container g-attrib">
-<h2 class="g-h2">About this guide</h2>
+<details class="g-disclosure" id="about-guide">
+<summary><h3>About this guide</h3><span class="g-disclosure-mark" aria-hidden="true"></span></summary>
+<div class="g-disclosure-content">
 <p>SarkariJobs+ is an independent tracker, not a recruiting authority. The post structure, pay levels and selection stages above are summarised from published recruitment notifications for this sector; where a notification differs, the notification wins. Listing dates, vacancy counts and fees are taken from the feed and credited to the source page.</p>
 <p class="g-attrib-links">More sectors: ${loadSectors().filter(other => other.slug !== sector.slug).map(other => `<a href="../${other.slug}/">${escapeHTML(other.name)}</a>`).join(' · ') || '<a href="../">all sector guides</a>'}</p>
+</div>
+</details>
 </section>
 </main>
 
 <footer class="g-foot"><div class="container foot-grid">
 <div class="foot-brand"><a class="logo" href="../../" style="color:#fff"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
 <p class="foot-note">Independent tracker for government job notifications, results and admit cards across India — always linking the recruiting authority's own portal.</p></div>
-<div><h4>Explore</h4><ul>
+<div><h3>Explore</h3><ul>
 <li><a href="../../category.html">Notifications</a></li>
 <li><a href="../../results.html">Results</a></li>
 <li><a href="../../admit-cards.html">Admit cards</a></li>
 <li><a href="../../all-jobs.html">All listings (A–Z)</a></li>
 </ul></div>
-<div><h4>Sector guides</h4><ul>
+<div><h3>Sector guides</h3><ul>
 ${loadSectors().map(other => `<li><a href="${other.slug === sector.slug ? './' : '../' + other.slug + '/'}">${escapeHTML(other.name)}</a></li>`).join('\n')}
 </ul></div>
-<div><h4>Information</h4><ul>
+<div><h3>Information</h3><ul>
 <li><a href="../../about.html">About</a></li>
 <li><a href="../../editorial-policy.html">Editorial policy</a></li>
 <li><a href="../../privacy.html">Privacy</a></li>
@@ -419,11 +434,13 @@ function renderHub(sectors, helpers) {
   const { escapeHTML } = helpers;
   const cards = sectors.map(sector => {
     const listings = sector._listings || [];
+    const art = `assets/sector-art/${sector.slug}.webp`;
     return `<a class="g-card" href="${sector.slug}/" style="--g-accent:${escapeHTML(sector.accent || '#FF9933')}">
-<span class="g-card-icon">${logoImg(sector, 'g-card-logo', '../')}</span>
+<span class="g-card-art" aria-hidden="true"><img src="../${art}" alt="" width="1344" height="768" loading="lazy" decoding="async"></span>
+<span class="g-card-top"><span class="g-card-icon">${logoImg(sector, 'g-card-logo', '../')}</span><span class="g-card-count">${listings.length} tracked</span></span>
 <span class="g-card-name">${escapeHTML(sector.name)}</span>
-<span class="g-card-meta">${(sector.levels || []).length} qualification paths · ${listings.length} live listing${listings.length === 1 ? '' : 's'}</span>
-<span class="g-card-cta">Open guide ${icon('landmark', 'g-ic g-ic--sm')}</span>
+<span class="g-card-meta">${(sector.levels || []).length} qualification routes · ${listings.length} tracked listing${listings.length === 1 ? '' : 's'}</span>
+<span class="g-card-cta">Explore guide <span aria-hidden="true">↗</span></span>
 </a>`;
   }).join('\n');
 
@@ -450,7 +467,7 @@ function renderHub(sectors, helpers) {
   }).replace(/</g, '\\u003c')}</script>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../js/analytics-config.js?v=20261022"></script><script src="../js/analytics.js" defer></script>
-<link rel="stylesheet" href="../css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="../css/guide.css?v=20261120-sector-art">
+<link rel="stylesheet" href="../css/style.css?v=20261122-local-redesign"><link rel="stylesheet" href="../css/guide.css?v=20261122-photo-led-guides">
 </head>
 <body>
 <div class="tricolor-strip"></div>
@@ -464,22 +481,27 @@ function renderHub(sectors, helpers) {
 </ul></nav>
 </div></header>
 <main>
-<section class="g-hero" style="--g-accent:#FF9933"><div class="container">
+<section class="g-hero g-hero--hub" style="--g-accent:#FF9933">
+<div class="container g-hub-hero-grid">
+<div class="g-hub-hero-copy">
 <nav class="g-crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span>Sector guides</span></nav>
-<p class="g-kicker">${icon('landmark', 'g-ic g-hero-ic')}Sector guides</p>
-<h1>Which government job fits your qualification</h1>
-<p class="g-lede">Every sector has its own ladder, its own exam pattern and its own traps. Pick one to see the qualification that unlocks each post, the stages you have to clear, and the live listings tracked from the official portals.</p>
-</div></section>
-<section class="diagram-band" aria-labelledby="sector-heading">
-<div class="container">
-<div class="diagram-frame">
-<img src="../assets/diagrams/sector-map.webp" alt="Map of twelve government job sectors covered by SarkariJobs+ guides" width="1344" height="768" loading="lazy" decoding="async">
+<p class="g-kicker">${icon('landmark', 'g-ic g-hero-ic')}Career guides</p>
+<h1>Choose a career path, not just a job title.</h1>
+<p class="g-lede">Start with your qualification. See the roles it can lead to, the selection stages to expect, and current listings linked to their source notices.</p>
+<div class="g-hub-facts"><span><b>${sectors.length}</b> sector guides</span><span><b>Source-linked</b> listings</span><span><b>Plain-language</b> eligibility paths</span></div>
 </div>
-<h2 id="sector-heading" class="diagram-heading">Pick a sector, then follow its ladder</h2>
-<p class="diagram-caption">Each guide has its own illustration and covers <b>qualification → post → selection stages → live listings</b>. The portal mark on each guide is the real logo of that organisation; this artwork is only a map of the sectors we cover.</p>
+<figure class="g-hub-hero-art">
+<img src="../assets/generated/guide-hub-study.webp" alt="An adult job seeker comparing career options at a desk" width="1344" height="768" fetchpriority="high" decoding="async">
+<figcaption>Use the guide to plan. Use the official notice to decide.</figcaption>
+</figure>
 </div>
 </section>
-<section class="g-block container">
+<section class="g-block container g-guide-index" aria-labelledby="sector-heading">
+<div class="g-index-heading">
+<p class="g-index-eyebrow">Find your route</p>
+<h2 id="sector-heading">Explore by sector</h2>
+<p>Each guide connects qualification → roles → selection stages → current listings.</p>
+</div>
 <div class="g-cards">${cards}</div>
 </section>
 <section class="g-block container g-attrib">
@@ -490,13 +512,13 @@ function renderHub(sectors, helpers) {
 <footer class="g-foot"><div class="container foot-grid">
 <div class="foot-brand"><a class="logo" href="../" style="color:#fff"><span class="logo-flag"></span>Sarkari<span style="color:var(--saffron)">Jobs</span><span style="color:var(--green)">+</span></a>
 <p class="foot-note">Independent tracker for government job notifications, results and admit cards across India.</p></div>
-<div><h4>Explore</h4><ul>
+<div><h3>Explore</h3><ul>
 <li><a href="../category.html">Notifications</a></li>
 <li><a href="../results.html">Results</a></li>
 <li><a href="../admit-cards.html">Admit cards</a></li>
 <li><a href="../all-jobs.html">All listings (A–Z)</a></li>
 </ul></div>
-<div><h4>Information</h4><ul>
+<div><h3>Information</h3><ul>
 <li><a href="../about.html">About</a></li>
 <li><a href="../editorial-policy.html">Editorial policy</a></li>
 <li><a href="../privacy.html">Privacy</a></li>
