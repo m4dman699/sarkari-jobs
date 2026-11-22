@@ -18,3 +18,7 @@ canva/exports/*
 # Local scratch recordings and draft pages
 _scratch/
 drafts/
+
+# Local-only (added)
+*.zip
+drafts/sector-railways.html
