@@ -1,7 +1,98 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 4,
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 12,
   "jobs": [
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vd2ViL25vdGlmaWNhdGlvbnMtcHJhY3RpY2UtZGlyZWN0aW9ucw",
+      "type": "job",
+      "title": "Notifications & Practice Directions",
+      "source": "Delhi High Court",
+      "category": "Judiciary",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/web/notifications-practice-directions",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vZmlsZXMvMjAyNi0xMS9hbm5vdW5jZW1lbnRzL2NoaGF0aF9wdWphX2NvdXJ0X2hvbGlkYXlfbm90aWZpY2F0aW9uLnBkZg",
+      "type": "job",
+      "title": "Notification for information of all concerned that Monday, the 16th November, 2026 has been declared as a holiday for this Court and the Courts subordinate to this Court on account",
+      "source": "Delhi High Court",
+      "category": "Judiciary",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/files/2026-11/announcements/chhath_puja_court_holiday_notification.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-11-16"
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vZmlsZXMvMjAyNi0xMS9hbm5vdW5jZW1lbnRzL3ZhY2FuY3lfY2lyY3VsYXJfY2VzdGF0XzAyLjExLjIwMjYucGRm",
+      "type": "job",
+      "title": "Vacancy Circular for the posts of Member (Judicial) and Member (Technical) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT). (2.57 MB)",
+      "source": "Delhi High Court",
+      "category": "Judiciary",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/files/2026-11/announcements/vacancy_circular_cestat_02.11.2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vZmlsZXMvMjAyNi0xMS9hbm5vdW5jZW1lbnRzL2xhd19jbGVyay5wZGY",
+      "type": "job",
+      "title": "Notice regarding Engagement of Law Clerk-cum-Research Assistant(on short-term contractual basis) in Delhi State Legal Services Authority. (3.19 MB)",
+      "source": "Delhi High Court",
+      "category": "Banking",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/files/2026-11/announcements/law_clerk.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vZmlsZXMvMjAyNi0xMS9hbm5vdW5jZW1lbnRzL2xldHRlci5wZGY",
+      "type": "job",
+      "title": "Circular regarding extension of the last date of filling up of fifteen (15) tentative vacant posts of Court Master (Shorthand) in the Supreme Court of India, on deputation basis. (",
+      "source": "Delhi High Court",
+      "category": "Judiciary",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/files/2026-11/announcements/letter.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vZmlsZXMvMjAyNi0xMS9yZWN1cml0bWVudC92YWNhbmN5X2NpcmN1bGFyX2Nlc3RhdF8wMi4xMS4yMDI2LnBkZg",
+      "type": "job",
+      "title": "Vacancy Circular for the posts of Member (Judicial) and Member (Technical) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT).2.57 MB",
+      "source": "Delhi High Court",
+      "category": "Judiciary",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/files/2026-11/recuritment/vacancy_circular_cestat_02.11.2026.pdf",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vd2ViL2h1bW91ci1pbi1jb3VydA",
+      "type": "job",
+      "title": "Click to view current posts",
+      "source": "Delhi High Court",
+      "category": "Judiciary",
+      "state": "Delhi",
+      "link": "https://delhihighcourt.nic.in/web/humour-in-court",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
     {
       "id": "aHR0cHM6Ly9kc3NzYi5kZWxoaS5nb3YuaW4vZHNzc2IvdmFjYW5jeS1ub3RpY2UtYWR2ZXJ0aXNlbWVudC1uby0wMzIwMjYtdmFyaW91cy1wb3N0cy1wb3N0LWNvZGUtMjEyNi00NTI2LWNsb3NpbmctZGF0ZS0w",
       "type": "job",
@@ -27,6 +118,76 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-0c8526d97accbcb4",
+      "type": "job",
+      "title": "DTU 219 Assistant Professor Online Form 2026",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Teaching",
+      "state": "Delhi",
+      "link": "https://recruitment.dtu.ac.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/dtu-assistant-professor-recruitment-2026-3075190",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-10-23",
+      "organization": "Delhi Technological University (DTU)",
+      "publishedDate": "2026-10-22",
+      "openDate": "2026-10-23",
+      "lastDate": "2026-12-07",
+      "vacancies": "219",
+      "ageLimit": "No Upper Age Limit",
+      "eligibility": "Relevant degree and other conditions as prescribed in discipline-specific recruitment rules",
+      "applicationFee": "₹2,000 for UR/OBC; ₹1,000 for eligible EWS/SC/ST; PwBD exempt",
+      "notificationLink": "https://dtu.ac.in/Web/upload/jobs/2026/oct/file1010.pdf",
+      "officialLinks": [
+        {
+          "url": "https://recruitment.dtu.ac.in/",
+          "label": "Apply Online / Recruitment Updates"
+        },
+        {
+          "url": "https://dtu.ac.in/Web/upload/jobs/2026/oct/file1010.pdf",
+          "label": "Detailed Notification"
+        },
+        {
+          "url": "https://www.dtu.ac.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://recruitment.dtu.ac.in/",
+      "milestones": [
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026, 11:00 AM"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-10-22",
+          "dateText": "22 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-23",
+          "dateText": "23 October 2026, 11:00 AM"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Eligibility Reckoning Date",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026"
+        }
+      ]
     },
     {
       "id": "competitor-freejobalert-927375c38591b27b",

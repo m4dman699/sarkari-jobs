@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 2,
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 1,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL2NhdGVnb3J5L25vdGlmaWNhdGlvbnM",
@@ -10,19 +10,6 @@
       "category": "State PSC",
       "state": "Mizoram",
       "link": "https://mpsc.mizoram.gov.in/category/notifications",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL3Bvc3Qvbm90aWZpY2F0aW9uLWZvci1ncm91cC1ibmctcGVyc29uYWwtaW50ZXJ2aWV3LW1hcmtz",
-      "type": "job",
-      "title": "Notification for Group B(NG) Personal Interview Marks",
-      "source": "Mizoram PSC",
-      "category": "State PSC",
-      "state": "Mizoram",
-      "link": "https://mpsc.mizoram.gov.in/post/notification-for-group-bng-personal-interview-marks",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

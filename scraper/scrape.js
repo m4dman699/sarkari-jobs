@@ -13,8 +13,8 @@ const { fetchPage, extractJobs, extractMeghalayaJobs, extractEmploymentNewsJobs,
 
 const OUT = path.join(__dirname, '..', 'data', 'jobs.json');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const CONCURRENCY = 4;
-const REQUEST_GAP_MS = 400;
+const CONCURRENCY = 6;
+const REQUEST_GAP_MS = 300;
 
 async function main() {
   const startedAt = Date.now();
@@ -23,7 +23,7 @@ async function main() {
   const announcementsBySource = new Map();
 
   const tasks = SOURCES.flatMap(src => src.urls.map(url => ({ src, url })));
-  console.log(`Starting one-pass scrape: ${tasks.length} official source pages, ${CONCURRENCY} workers, 6.5s request timeout, retries disabled.`);
+  console.log(`Starting one-pass scrape: ${tasks.length} official source pages, ${CONCURRENCY} workers, 10s request timeout, retries disabled.`);
   let nextTask = 0;
   async function worker() {
     while (nextTask < tasks.length) {

@@ -1,5 +1,77 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-freejobalert-f12cb06e6cea471f",
+      "type": "job",
+      "title": "WCL Clerk, Jr DEO & More Online Form 2026 (514 Vacancy)",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "Maharashtra",
+      "link": "https://www.westerncoal.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/wcl-recruitment-2026-clerk-jr-data-entry-operator-t-s-3081692",
+      "discoveredVia": "https://www.freejobalert.com/government-jobs/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "organization": "Western Coalfields Limited (WCL), Nagpur, Maharashtra",
+      "publishedDate": "2026-11-17",
+      "eligibility": "Matriculation or equivalent examination and 03 years of service in the company (only permanent employees of WCL)",
+      "notificationLink": "https://docs.westerncoal.in/strapi/uploads/2971_CLERK_DEO_STORE_CLERK_NOTIFICATION_16112026_80527043a0.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.westerncoal.in/strapi/uploads/2971_CLERK_DEO_STORE_CLERK_NOTIFICATION_16112026_80527043a0.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.westerncoal.in",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://www.westerncoal.in",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Notification date",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Opening date for online application (11:00 AM onwards)",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026"
+        },
+        {
+          "label": "Last date for filling and submitting the online application",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Cut-off date for the Minimum Qualification and Eligibility",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Last date for forwarding by Unit-In-Charge / SE section to AGM or HOD",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Last date for forwarding by AGM/HOD to IR Department WCL HQ",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        }
+      ]
+    }
+  ]
 }

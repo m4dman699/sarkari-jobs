@@ -1,7 +1,63 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 1,
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 2,
   "jobs": [
+    {
+      "id": "competitor-sarkariresult-86649077cd8c613b",
+      "type": "job",
+      "title": "BCECEB Senior Resident and Tutor Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Bihar",
+      "link": "https://bceceboard.bihar.gov.in/HEALTH22_Index.php",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/bceceb-sr-resident-tutor-oct26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-03",
+      "lastDate": "2026-11-23",
+      "organization": "Bihar Combined Entrance Competitive Examination Board (BCECEB)",
+      "publishedDate": "2026-08-25",
+      "openDate": "2026-11-02",
+      "vacancies": "575",
+      "ageLimit": "Minimum 21 years",
+      "eligibility": "For Post Wise Eligibility Details Must Read the Notification.",
+      "applicationFee": "General / BC / EWS / EBC : 2250/- SC / ST / : 2250/-",
+      "notificationLink": "https://bceceboard.bihar.gov.in/pdf_Pros/PROS_3SR26.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bceceboard.bihar.gov.in/HEALTH22_Index.php",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://bceceboard.bihar.gov.in/pdf_Pros/PROS_3SR26.pdf",
+          "label": "Download Notification"
+        }
+      ],
+      "officialLink": "https://bceceboard.bihar.gov.in/HEALTH22_Index.php",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-08-25",
+          "dateText": "25 August 2026 | 08:30 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Form Correction Date",
+          "date": "2026-11-24",
+          "dateText": "24/11/2026"
+        }
+      ]
+    },
     {
       "id": "competitor-sarkariresult-52384a915537c97f",
       "type": "job",

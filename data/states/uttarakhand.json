@@ -1,5 +1,61 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-sarkariresult-753ca2c63adc971f",
+      "type": "job",
+      "title": "UKSSSC Constable and Other Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Police",
+      "state": "Uttarakhand",
+      "link": "https://sssc.uk.gov.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uksssc-various-post-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-25",
+      "organization": "UKSSSC Uttarakhand Constable & Other Post",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-25",
+      "examDate": "2027-04-04",
+      "eligibility": "10+2 Intermediate Exam from Any Recognized Board in India. Height : 165 CMS for Male & 152 CMS for Female Chest Male Only : 78.8-83.8 CMS Running : 5 Km for Male & 2 Km for Female Cricket Ball Through, Long Jump, Chining Up, & Other PET Details Read the Notification.",
+      "applicationFee": "Details? Candidates can pay the application fee up to 25 December 2026. 7. How can I apply for UKSSSC Constable and Other Post Exam 2026? Candidates can apply online through the official recruitment link available on",
+      "notificationLink": "https://doc.sarkariresults.org.in/UKSSSC_Constable_OtherPost_Nov2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://sssc.uk.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UKSSSC_Constable_OtherPost_Nov2026.pdf",
+          "label": "Download Notification"
+        }
+      ],
+      "officialLink": "https://sssc.uk.gov.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 11:37 AM"
+        },
+        {
+          "label": "Last Date for Apply",
+          "date": "2026-12-25",
+          "dateText": "25/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-25",
+          "dateText": "25/12/2026"
+        },
+        {
+          "label": "December 2026 UKSSSC Exam Date",
+          "date": "2027-04-04",
+          "dateText": "04/04/2027"
+        }
+      ]
+    }
+  ]
 }

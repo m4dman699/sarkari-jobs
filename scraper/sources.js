@@ -13,7 +13,7 @@ const UA = 'Mozilla/5.0 (compatible; SarkariJobsPlusBot/1.0; +https://github.com
 const MAX_REDIRECTS = 5;
 const MAX_RESPONSE_BYTES = 10 * 1024 * 1024;
 
-async function fetchPage(url, timeoutMs = 6500, redirects = 0) {
+async function fetchPage(url, timeoutMs = 10000, redirects = 0, retries = 2) {
   const parsed = new URL(url);
   if (parsed.protocol === 'http:') parsed.protocol = 'https:';
   if (parsed.protocol !== 'https:') throw new Error('Unsupported URL protocol');
@@ -21,13 +21,16 @@ async function fetchPage(url, timeoutMs = 6500, redirects = 0) {
   if (redirects > MAX_REDIRECTS) throw new Error('Too many redirects');
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeoutMs);
+  const agent = new https.Agent({ rejectUnauthorized: false });
   const opts = {
     headers: {
       'User-Agent': UA,
       'Accept-Language': 'en-IN,en;q=0.9',
       'Accept': 'text/html,application/xhtml+xml,*/*;q=0.8'
     },
-    signal: ctrl.signal
+    signal: ctrl.signal,
+    rejectUnauthorized: false,
+    agent
   };
   try {
     const mod = https;
@@ -69,7 +72,13 @@ async function fetchPage(url, timeoutMs = 6500, redirects = 0) {
           }
         });
       });
-      req.on('error', reject);
+      req.on('error', err => {
+        if (retries > 0 && (err.code === 'ECONNRESET' || err.code === 'ETIMEDOUT' || err.code === 'ECONNREFUSED' || /timeout/i.test(err.message))) {
+          setTimeout(() => fetchPage(url, timeoutMs, redirects, retries - 1).then(resolve).catch(reject), 500);
+          return;
+        }
+        reject(err);
+      });
       ctrl.signal.addEventListener('abort', () => req.destroy(new Error('Request timed out')), { once: true });
       req.setTimeout(timeoutMs, () => req.destroy(new Error('timeout')));
     });
@@ -438,7 +447,33 @@ const CENTRAL_SOURCES = [
   { name: 'Supreme Court of India', category: 'Judiciary', state: 'All India', urls: ['https://www.sci.gov.in/recruitments/'] },
   { name: 'Calcutta High Court', category: 'Judiciary', state: 'West Bengal', urls: ['https://www.calcuttahighcourt.gov.in/'] },
   // NIC's official e-Pariksha portal carries recruitment notices and exam updates.
-  { name: 'NIC e-Pariksha', category: 'Central', state: 'All India', urls: ['https://pariksha.nic.in/'] }
+  { name: 'NIC e-Pariksha', category: 'Central', state: 'All India', urls: ['https://pariksha.nic.in/'] },
+  // ---- Additional PSUs ----
+  { name: 'BHEL', category: 'PSU', state: 'All India', urls: ['https://careers.bhel.in/'] },
+  { name: 'ONGC', category: 'PSU', state: 'All India', urls: ['https://www.ongcindia.com/web/eng/careers'] },
+  { name: 'IOCL', category: 'PSU', state: 'All India', urls: ['https://iocl.com/careers'] },
+  { name: 'HPCL', category: 'PSU', state: 'All India', urls: ['https://www.hpcl.in/careers'] },
+  { name: 'BPCL', category: 'PSU', state: 'All India', urls: ['https://www.bharatpetroleum.in/careers'] },
+  { name: 'GAIL', category: 'PSU', state: 'All India', urls: ['https://www.gailonline.com/HR.html'] },
+  { name: 'Coal India', category: 'PSU', state: 'All India', urls: ['https://www.coalindia.in/careers'] },
+  { name: 'BEL', category: 'PSU', state: 'All India', urls: ['https://bel-india.in/careers/'] },
+  { name: 'HAL', category: 'PSU', state: 'All India', urls: ['https://hal-india.co.in/career'] },
+  // ---- Additional Banking ----
+  { name: 'SBI', category: 'Banking', state: 'All India', urls: ['https://sbi.co.in/web/careers'] },
+  { name: 'RBI', category: 'Banking', state: 'All India', urls: ['https://www.rbi.org.in/scripts/Opportunities.aspx'] },
+  // ---- Additional Teaching ----
+  { name: 'UGC NET / NTA', category: 'Teaching', state: 'All India', urls: ['https://ugcnet.nta.ac.in/'] },
+  { name: 'CTET', category: 'Teaching', state: 'All India', urls: ['https://ctet.nic.in/'] },
+  // ---- Additional Defence ----
+  { name: 'Coast Guard', category: 'Defence', state: 'All India', urls: ['https://joinindiancoastguard.gov.in/'] },
+  // ---- Additional Judiciary ----
+  { name: 'Delhi High Court', category: 'Judiciary', state: 'Delhi', urls: ['https://delhihighcourt.nic.in/'] },
+  { name: 'Bombay High Court', category: 'Judiciary', state: 'Maharashtra', urls: ['https://bombayhighcourt.nic.in/'] },
+  // ---- More Central ----
+  { name: 'NTA', category: 'Central', state: 'All India', urls: ['https://www.nta.ac.in/'] },
+  { name: 'EPFO', category: 'Central', state: 'All India', urls: ['https://www.epfindia.gov.in/site_en/careers.php'] },
+  { name: 'ESIC', category: 'Central', state: 'All India', urls: ['https://www.esic.nic.in/recruitments'] },
+  { name: 'India Post', category: 'Central', state: 'All India', urls: ['https://www.indiapost.gov.in/VAS/Pages/Recruitment.aspx'] }
 ];
 
 // One entry per State PSC / recruitment board — scraped daily.
@@ -479,7 +514,15 @@ const STATE_SOURCES = [
   { slug: 'bihar',           name: 'CSBC (Bihar Police)', category: 'Police', state: 'Bihar',        urls: ['https://csbc.bih.nic.in/'] },
   { slug: 'west-bengal',     name: 'WB Police',   category: 'Police', state: 'West Bengal',       urls: ['https://wbpolice.gov.in/'] },
   { slug: 'rajasthan',       name: 'Rajasthan Police', category: 'Police', state: 'Rajasthan',     urls: ['https://police.rajasthan.gov.in/'] },
-  { slug: 'tamil-nadu',      name: 'TNUSRB',      category: 'Police', state: 'Tamil Nadu',        urls: ['https://www.tnusrb.tn.gov.in/'] }
+  { slug: 'tamil-nadu',      name: 'TNUSRB',      category: 'Police', state: 'Tamil Nadu',        urls: ['https://www.tnusrb.tn.gov.in/'] },
+  // ---- Additional state police boards ----
+  { slug: 'uttar-pradesh',   name: 'UP Police',   category: 'Police', state: 'Uttar Pradesh', urls: ['https://uppolice.gov.in/'] },
+  { slug: 'maharashtra',     name: 'Maharashtra Police', category: 'Police', state: 'Maharashtra', urls: ['https://mahapolice.gov.in/'] },
+  { slug: 'karnataka',       name: 'Karnataka Police', category: 'Police', state: 'Karnataka', urls: ['https://ksp.gov.in/'] },
+  { slug: 'gujarat',         name: 'Gujarat Police', category: 'Police', state: 'Gujarat', urls: ['https://police.gujarat.gov.in/'] },
+  { slug: 'punjab',          name: 'Punjab Police', category: 'Police', state: 'Punjab', urls: ['https://punjabpolice.gov.in/'] },
+  { slug: 'haryana',         name: 'Haryana Police', category: 'Police', state: 'Haryana', urls: ['https://haryanapolice.gov.in/'] },
+  { slug: 'delhi',           name: 'Delhi Police', category: 'Police', state: 'Delhi', urls: ['https://delhipolice.gov.in/'] }
 ];
 
 // Generic sources (Central / Employment News) get re-classified by title keywords

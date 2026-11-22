@@ -30,9 +30,9 @@ const FEED = path.join(ROOT, 'data', 'jobs.json');
 const DETAIL_CACHE = path.join(__dirname, 'competitor-detail-cache.json');
 const GAP_REPORT = path.join(__dirname, 'competitor-gap-report.json');
 
-const DETAIL_WORKERS = 5;
-const DETAIL_TIMEOUT_MS = 10000;
-const DETAIL_BUDGET = Number(process.env.COMPETITOR_DETAIL_BUDGET || 220);
+const DETAIL_WORKERS = 8;
+const DETAIL_TIMEOUT_MS = 12000;
+const DETAIL_BUDGET = Number(process.env.COMPETITOR_DETAIL_BUDGET || 400);
 const CACHE_TTL_MS = 20 * 60 * 60 * 1000;
 
 const COMPETITOR_SOURCES = [

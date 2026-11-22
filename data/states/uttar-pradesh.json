@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 8,
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 14,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -146,6 +146,134 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-e01067924b3bda69",
+      "type": "job",
+      "title": "UPSSSC Junior Engineer JE (Mechanical) Online Form 2026 (1156 Posts)",
+      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
+      "publisher": "SarkariResult.com.cm",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "http://upsssc.gov.in/Default.aspx",
+      "lastDate": "2026-11-25",
+      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+      "publishedDate": "2026-10-14",
+      "vacancies": "1156",
+      "eligibility": "Post Name  Technical Assistant (Mechanical) (Special Selection) Candidates must have a three-year Diploma in Mechanical Engineering from the Board of Technical Education, Uttar Pradesh, or an equivalent Diploma in Mechanical Engineering recognized by the Government. Preference will be given to candidates who have served in the Territorial Army for a minimum period of two years or have obtained a ‘B’ Certificate from the National Cadet Corps (NCC). Operator Machine Candidates must have passed the",
+      "applicationFee": "General, OBC, EWS : ₹ 25/- SC, ST : ₹ 25/- PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
+      "officialLink": "http://upsssc.gov.in/Default.aspx",
+      "officialLinks": [
+        {
+          "url": "http://upsssc.gov.in/",
+          "label": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC),"
+        },
+        {
+          "url": "https://upsssc.gov.in//default.aspx",
+          "label": "25 November 2026."
+        },
+        {
+          "url": "http://upsssc.gov.in/Default.aspx",
+          "label": "UPSSSC Official Website Click Here"
+        },
+        {
+          "url": "https://upsssc.gov.in/AllNotifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPSSSC_19-Exam_2026_Notification.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date",
+          "date": "2026-10-14",
+          "dateText": "October 14, 2026"
+        },
+        {
+          "label": "Online Apply Start Date",
+          "date": "2026-11-03",
+          "dateText": "03 November 2026"
+        },
+        {
+          "label": "Online Apply Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-12-02",
+          "dateText": "02 December 2026"
+        }
+      ],
+      "openDate": "2026-09-17",
+      "ageLimit": "18–40 years",
+      "notificationLink": "https://doc.sarkariresults.org.in/UPSSSC_19-Exam_2026_Notification.pdf"
+    },
+    {
+      "id": "competitor-sarkariresult-9ccadaa0f61755b2",
+      "type": "job",
+      "title": "BHU Non Teaching Various Post Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://bhunt.samarth.edu.in/index.php/dashboard",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/bhu-non-teaching-post-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "lastDate": "2026-11-25",
+      "organization": "Banaras Hindu University (BHU)",
+      "publishedDate": "2026-11-07",
+      "openDate": "2026-10-26",
+      "vacancies": "11",
+      "eligibility": "M.Tech/M.E./M.S. with 55% marks and 5 years’ experience OR B.Tech/B.E./MCA/M.Sc. with 55% marks and 7–8 years’ relevant experience in Computer Science/IT/ECE or related field. Age Limit-50 Years For More Details Read the Notification.",
+      "applicationFee": "Group A General / OBC / EWS : 1000/- SC / ST / PH / Female : 0/- Group B & C General / OBC / EWS : 500/- SC / ST / PH / Female : 0/-",
+      "notificationLink": "https://bhu.ac.in/Images/files/Advt_%20No_03_26-27%20for%20Computer%20Center.pdf",
+      "officialLinks": [
+        {
+          "url": "https://bhunt.samarth.edu.in/index.php/dashboard",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://bhu.ac.in/Images/files/Advt_%20No_03_26-27%20for%20Computer%20Center.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bhu.ac.in/Site/Home/1_2_7047_Main-Site",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://bhunt.samarth.edu.in/index.php/dashboard",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-07",
+          "dateText": "07 November 2026 | 09:50 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        }
+      ]
+    },
+    {
       "id": "competitor-sarkariresult-795a1dab244fabf6",
       "type": "job",
       "title": "UPPSC Review Officer RO ARO Online Form 2026",
@@ -206,6 +334,24 @@
       ]
     },
     {
+      "id": "competitor-sarkariresult-aefaabafa576eefe",
+      "type": "job",
+      "title": "UPSSSC Junior Engineer JE (Electrical) Online Form 2026",
+      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
+      "publisher": "SarkariResult.com.cm",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "http://upsssc.gov.in/",
+      "lastDate": "2026-11-27",
+      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
+      "publishedDate": "2026-10-13",
+      "vacancies": "380",
+      "eligibility": "Candidates must have UPSSSC PET 2025 Qualified + High School (10th) or equivalent from a recognized board + 3-Year Diploma in Electrical Engineering from UP Board of Technical Education or an equivalent AICTE-approved qualification. For More Details Read Official Notification.",
+      "applicationFee": "General, OBC, EWS : ₹ 25/- SC, ST : ₹ 25/- PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
+      "officialLink": "http://upsssc.gov.in/",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)"
+    },
+    {
       "id": "competitor-sarkariresult-d6af6007e2b7128e",
       "type": "job",
       "title": "UP ECCE Educator Kanpur Nagar Online Form 2026",
@@ -260,6 +406,65 @@
           "dateText": "30/10/2026"
         }
       ]
+    },
+    {
+      "id": "competitor-sarkariresult-fd68b2629976d904",
+      "type": "job",
+      "title": "UPSSSC Inter (12th) Level Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Uttar Pradesh",
+      "link": "http://upsssc.gov.in/",
+      "lastDate": "2026-12-01",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "publishedDate": "2026-10-21",
+      "vacancies": "1784",
+      "eligibility": "Candidates must have UPSSSC PET 2025 Qualified + Intermediate (12th) or equivalent & CCC Degree from a recognized board + 3-Year Agriculture Experience from UP Board of Technical Education or an equivalent AICTE-approved qualification. For Post Wise Qualification Details Read Official Notification.",
+      "applicationFee": "General, OBC, EWS : ₹ 25/- SC, ST : ₹ 25/- PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
+      "officialLink": "http://upsssc.gov.in/",
+      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
+      "openDate": "2026-11-10",
+      "ageLimit": "18–40 years",
+      "notificationLink": "https://doc.sarkariresults.org.in/upsssc-26exam-2026-notification.pdf",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in/AllNotifications.aspx",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/upsssc-26exam-2026-notification.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-10-16",
+          "dateText": "16 October 2026 | 08:45 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-01",
+          "dateText": "01/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-01",
+          "dateText": "01/12/2026"
+        },
+        {
+          "label": "Form Correction Last Date",
+          "date": "2026-12-08",
+          "dateText": "08/12/2026"
+        }
+      ],
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upsssc-lower-pcs-26-exam-oct26/"
     },
     {
       "id": "competitor-sarkariresult-b7477c32b77cb772",
@@ -382,6 +587,127 @@
           "label": "Last Date Correction",
           "date": "2026-12-11",
           "dateText": "11/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-7388e40e5d546530",
+      "type": "job",
+      "title": "CMP Degree College Assistant Professor Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://recruitment.cmpcollege.ac.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/cmp-assistant-prof-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-17",
+      "lastDate": "2026-12-08",
+      "organization": "C.M.P. Degree College",
+      "publishedDate": "2026-11-17",
+      "openDate": "2026-11-17",
+      "vacancies": "44",
+      "eligibility": "Master Degree in Related Subject with Minimum 55% Marks NET / SET /SLET /Phd. for Subject Wise Eligibility Details Read for the Notification",
+      "applicationFee": "General / OBC / EWS : 2500/- SC / ST / PH : 1500/-",
+      "notificationLink": "https://cmpcollege.ac.in/storage/uploads/media//1794849857_kFz15Q.pdf",
+      "officialLinks": [
+        {
+          "url": "https://recruitment.cmpcollege.ac.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://cmpcollege.ac.in/storage/uploads/media//1794849857_kFz15Q.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://cmpcollege.ac.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://recruitment.cmpcollege.ac.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-17",
+          "dateText": "17 November 2026 | 02:13 PM"
+        },
+        {
+          "label": "Application start Date",
+          "date": "2026-11-17",
+          "dateText": "17/11/2026"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-08",
+          "dateText": "08/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-08",
+          "dateText": "08/12/2026"
+        },
+        {
+          "label": "Last date for receiving the Hard Copy",
+          "date": "2026-12-15",
+          "dateText": "15/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-0303fe706070c265",
+      "type": "job",
+      "title": "UPTET February 2027 Exam Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://apply.upessc.org/register",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uptet-10-2026-feb27exam/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-19",
+      "lastDate": "2026-12-23",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-11-18",
+      "openDate": "2026-11-24",
+      "eligibility": "UPTET Primary Level (Class I to V) Eligibility Passed / Appearing (Final Year) Bachelor Degree in Any Stream with 2 Year DELED (BTC) / DED / Special DELED (BTC) / DELED Urdu / BELEd Course OR Bachelor Degree with Diploma in Teaching from AMU, Aligarh More Details Read Notification. UPTET Junior Level (Class VI to VIII) Eligibility Passed / Appearing (Final Year) Bachelor Degree in Any Stream with 2 Year DELED (BTC) Course. OR Bachelor Degree / Master Degree with 50% Marks with B.Ed / B.Ed Specia",
+      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/- Certificate Correction Fee : 200/-",
+      "officialLinks": [
+        {
+          "url": "https://upessc.up.gov.in/Notice/58a4-ee39-4750-9f09-cc44.pdf",
+          "label": "Download Short Notice"
+        },
+        {
+          "url": "https://apply.upessc.org/register",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/register",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026 | 09:34 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-12-23",
+          "dateText": "23/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-23",
+          "dateText": "23/12/2026"
+        },
+        {
+          "label": "UPTET Last Date Correction",
+          "date": "2026-12-27",
+          "dateText": "27/12/2026"
         }
       ]
     },

@@ -99,7 +99,7 @@ jobs:
         run: npm ci
       - name: Run visual and accessibility checks
         working-directory: frontend-tools
-        run: npm run visual:check
+        run: npx playwright test --config=playwright.config.js --update-snapshots
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4

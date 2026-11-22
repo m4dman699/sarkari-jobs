@@ -1,5 +1,84 @@
 {
-  "generatedAt": "2026-11-22T09:49:30.265Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "total": 6,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9jYWxjdXR0YWhpZ2hjb3VydC5nb3YuaW4vTm90aWNlLUZpbGVzL2dlbmVyYWwtbm90aWNlLzExMjA0",
+      "type": "job",
+      "title": "Notification Related to Cause List",
+      "source": "Calcutta High Court",
+      "category": "Judiciary",
+      "state": "West Bengal",
+      "link": "https://calcuttahighcourt.gov.in/Notice-Files/general-notice/11204",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluL05vdGljZS1GaWxlcy9yZWNydWltZW50LW5vdGljZS8xODU3NQ",
+      "type": "job",
+      "title": "Notification regarding recruitment to the posts of Member (Judicial) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT) Uploaded:21-Nov-2026 12:36:38",
+      "source": "Calcutta High Court",
+      "category": "Judiciary",
+      "state": "West Bengal",
+      "link": "https://www.calcuttahighcourt.gov.in/Notice-Files/recruiment-notice/18575",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-11-23"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluL05vdGljZXMvZ2F6ZXR0ZS1ub3RpZmljYXRpb24",
+      "type": "job",
+      "title": "Gazette Notifications",
+      "source": "Calcutta High Court",
+      "category": "Judiciary",
+      "state": "West Bengal",
+      "link": "https://www.calcuttahighcourt.gov.in/Notices/gazette-notification",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluL05vdGljZXMvZ2VuZXJhbC1ub3RpY2U",
+      "type": "job",
+      "title": "General Notifications / Circulars",
+      "source": "Calcutta High Court",
+      "category": "Judiciary",
+      "state": "West Bengal",
+      "link": "https://www.calcuttahighcourt.gov.in/Notices/general-notice",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluL05vdGljZXMvZGlzdHJpY3QtcmVjcnVpbWVudC1ub3RpY2U",
+      "type": "job",
+      "title": "Recruitment (District Judiciary)",
+      "source": "Calcutta High Court",
+      "category": "Judiciary",
+      "state": "West Bengal",
+      "link": "https://www.calcuttahighcourt.gov.in/Notices/district-recruiment-notice",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluLyNtZW51",
+      "type": "job",
+      "title": "Latest Notifications",
+      "source": "Calcutta High Court",
+      "category": "Judiciary",
+      "state": "West Bengal",
+      "link": "https://www.calcuttahighcourt.gov.in/#menu",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    }
+  ]
 }
