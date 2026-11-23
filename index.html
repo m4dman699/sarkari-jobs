@@ -106,6 +106,11 @@
           updated as the feed changes.
         </p>
         <form class="search-bar reveal d4" id="job-search-form" role="search">
+          <div class="search-segments" role="group" aria-label="Search across the tracker">
+            <button class="seg is-active" type="button" data-seg="jobs" aria-pressed="true">Jobs</button>
+            <button class="seg" type="button" data-seg="results" aria-pressed="false">Results</button>
+            <button class="seg" type="button" data-seg="admit" aria-pressed="false">Admit cards</button>
+          </div>
           <input type="search" id="job-search" name="q" placeholder="Search: SSC CGL, Bihar Police, RRB NTPC…" aria-label="Search government jobs" autocomplete="off">
           <button class="btn btn-primary" type="submit">Search</button>
         </form>
@@ -561,6 +566,6 @@
   </footer>
 
   <script src="js/states-data.js"></script>
-  <script src="js/main.js?v=20261123-ticker-fix"></script>
+  <script src="js/main.js?v=20261124-search"></script>
 </body>
 </html>

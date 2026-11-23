@@ -385,6 +385,9 @@ let visibleAnnouncementCount = 12;
 let announcementPageType = '';
 let announcementPageGeneratedAt = '';
 let announcementPagePartial = false;
+// Hub search (?q) arriving from the homepage segmented search or from
+// Google's sitelinks box. Empty means "show everything".
+let hubSearchQuery = '';
 
 function renderAnnouncementSections(items, generatedAt, partial = false) {
   announcementPageType = document.body.dataset.announcementType || '';
@@ -394,19 +397,32 @@ function renderAnnouncementSections(items, generatedAt, partial = false) {
     { type: 'result', grid: 'results-grid', status: 'results-status', empty: 'No result links were found in the latest scrape.' },
     { type: 'admit-card', grid: 'admit-cards-grid', status: 'admit-cards-status', empty: 'No admit-card links were found in the latest scrape.' }
   ].forEach(section => {
-    const matching = items.filter(item => item.type === section.type)
+    let matching = items.filter(item => item.type === section.type)
       .sort((a, b) => String(b.publishedDate || '').localeCompare(String(a.publishedDate || '')));
     const grid = document.getElementById(section.grid);
     const status = document.getElementById(section.status);
     const isFullListingPage = announcementPageType === section.type;
     const listingLimit = isFullListingPage ? 24 : 12;
+    const queryNeedle = isFullListingPage && hubSearchQuery ? hubSearchQuery.toLowerCase() : '';
+    if (queryNeedle) {
+      matching = matching.filter(item =>
+        `${item.title || ''} ${item.organization || ''} ${item.state || ''}`.toLowerCase().includes(queryNeedle));
+    }
     if (isFullListingPage) {
       allAnnouncementItems = matching;
       visibleAnnouncementCount = listingLimit;
     }
-    if (status) status.textContent = matching.length
-      ? `${isFullListingPage ? `Showing ${Math.min(visibleAnnouncementCount, matching.length)} of ${matching.length} listings · ` : `${matching.length} listings · `}${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
-      : section.empty;
+    if (status) {
+      if (queryNeedle) {
+        status.innerHTML = matching.length
+          ? `${matching.length} match${matching.length === 1 ? '' : 'es'} for “${escapeHTML(hubSearchQuery)}” · <a href="${window.location.pathname}">clear search</a>`
+          : `No matches for “${escapeHTML(hubSearchQuery)}” in this feed · <a href="${window.location.pathname}">clear search</a>`;
+      } else {
+        status.textContent = matching.length
+          ? `${isFullListingPage ? `Showing ${Math.min(visibleAnnouncementCount, matching.length)} of ${matching.length} listings · ` : `${matching.length} listings · `}${feedUpdatedLabel({ generatedAt })}${partial ? ' Some portals could not be reached.' : ''}`
+          : section.empty;
+      }
+    }
     if (grid) grid.innerHTML = matching.length
       ? matching.slice(0, listingLimit).map(announcementCardHTML).join('')
       : `<p class="jobs-message">${escapeHTML(section.empty)} Check the relevant official board for updates.</p>`;
@@ -426,7 +442,13 @@ function showMoreAnnouncements() {
   visibleAnnouncementCount = Math.min(visibleAnnouncementCount + 24, allAnnouncementItems.length);
   grid.innerHTML = allAnnouncementItems.slice(0, visibleAnnouncementCount).map(announcementCardHTML).join('');
   const status = document.getElementById(section.status);
-  if (status) status.textContent = `Showing ${visibleAnnouncementCount} of ${allAnnouncementItems.length} listings · ${feedUpdatedLabel({ generatedAt: announcementPageGeneratedAt })}${announcementPagePartial ? ' Some portals could not be reached.' : ''}`;
+  if (status) {
+    if (hubSearchQuery) {
+      status.innerHTML = `Showing ${visibleAnnouncementCount} of ${allAnnouncementItems.length} matches for “${escapeHTML(hubSearchQuery)}” · <a href="${window.location.pathname}">clear search</a>`;
+    } else {
+      status.textContent = `Showing ${visibleAnnouncementCount} of ${allAnnouncementItems.length} listings · ${feedUpdatedLabel({ generatedAt: announcementPageGeneratedAt })}${announcementPagePartial ? ' Some portals could not be reached.' : ''}`;
+    }
+  }
   const more = document.getElementById('show-more-announcements');
   if (more) more.hidden = visibleAnnouncementCount >= allAnnouncementItems.length;
 }
@@ -507,8 +529,28 @@ function initSearch() {
   const form = document.getElementById('job-search-form');
   const input = document.getElementById('job-search');
   if (!form || !input) return;
+  // Segmented search target: Jobs filters this page (existing behaviour),
+  // Results and Admit cards carry the query to their hub, which filters its
+  // own grid from ?q — the same URL Google's sitelinks search box uses.
+  let segment = 'jobs';
+  const segments = form.querySelector('.search-segments');
+  if (segments) {
+    segments.addEventListener('click', event => {
+      const seg = event.target.closest('.seg');
+      if (!seg) return;
+      segment = seg.dataset.seg || 'jobs';
+      segments.querySelectorAll('.seg').forEach(node => {
+        const active = node === seg;
+        node.classList.toggle('is-active', active);
+        node.setAttribute('aria-pressed', String(active));
+      });
+    });
+  }
   const search = () => {
-    searchQuery = input.value.trim();
+    const query = input.value.trim();
+    if (segment === 'results') { window.location.href = `results.html${query ? `?q=${encodeURIComponent(query)}` : ''}`; return; }
+    if (segment === 'admit') { window.location.href = `admit-cards.html${query ? `?q=${encodeURIComponent(query)}` : ''}`; return; }
+    searchQuery = query;
     showAllJobs = false;
     displayJobs();
     document.getElementById('jobs')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -528,6 +570,17 @@ function initSearch() {
     showAllJobs = true;
     displayJobs();
   });
+}
+
+// Hub search entry: results.html and admit-cards.html receive ?q from the
+// homepage segmented search — and from Google's sitelinks search box, whose
+// SearchAction target already carries this parameter.
+function readHubSearchFromURL() {
+  try {
+    hubSearchQuery = (new URLSearchParams(window.location.search).get('q') || '').trim().slice(0, 120);
+  } catch {
+    hubSearchQuery = '';
+  }
 }
 
 function renderJobs() {
@@ -613,6 +666,7 @@ function animateCounts() {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-current-year]').forEach(el => { el.textContent = String(new Date().getFullYear()); });
+  readHubSearchFromURL();
   initSearch();
   initMap();
   renderCategories([]);

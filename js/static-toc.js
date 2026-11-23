@@ -5,6 +5,44 @@
   'use strict';
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // --- ?q search ---------------------------------------------------------
+  // all-jobs.html is the target of the homepage segmented search and of the
+  // SearchAction sitelinks box, so a query in the URL filters the A-Z rows in
+  // place. Without it the param silently did nothing.
+  (function () {
+    var params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return; }
+    var q = params ? (params.get('q') || '').trim() : '';
+    if (!q) return;
+    var needle = q.toLowerCase();
+    var groups = Array.prototype.slice.call(document.querySelectorAll('.d-index-group'));
+    if (!groups.length) return;
+    var shown = 0;
+    groups.forEach(function (group) {
+      var groupShown = 0;
+      Array.prototype.slice.call(group.querySelectorAll('.d-rel')).forEach(function (row) {
+        var hit = (row.textContent || '').toLowerCase().indexOf(needle) !== -1;
+        row.style.display = hit ? '' : 'none';
+        if (hit) groupShown++;
+      });
+      group.style.display = groupShown ? '' : 'none';
+      shown += groupShown;
+    });
+    var lead = document.querySelector('.d-lead');
+    if (lead) {
+      var note = document.createElement('p');
+      note.className = 'd-lead';
+      note.style.marginTop = '12px';
+      var clean = document.createElement('a');
+      clean.href = window.location.pathname;
+      clean.textContent = 'clear search';
+      note.appendChild(document.createTextNode(shown + ' match' + (shown === 1 ? '' : 'es') + ' for “' + q + '” — '));
+      note.appendChild(clean);
+      lead.parentNode.insertBefore(note, lead.nextSibling);
+      if (shown) window.scrollTo(0, Math.min(220, lead.getBoundingClientRect().top + window.scrollY + 40));
+    }
+  })();
+
   // --- gentle reveal of prose sections below the fold -----------------
   var prose = document.querySelector('.d-prose');
   if (prose && !reduce && 'IntersectionObserver' in window) {

@@ -381,8 +381,32 @@ nav a:hover::after { width: 100%; }
   border-radius: 14px;
   padding: 6px;
   box-shadow: 0 14px 40px rgba(0,0,0,.35);
-  max-width: 540px;
+  max-width: 680px;
   transition: box-shadow .2s ease;
+}
+/* Segmented target control (Jobs / Results / Admit cards) riding inside the
+   hero search: one command bar instead of three scattered entry points. */
+.search-segments { display: inline-flex; align-self: center; gap: 2px; padding: 3px; border-radius: 10px; background: #eef2f9; flex-shrink: 0; }
+.search-segments .seg {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 13px;
+  background: transparent;
+  color: #52617a;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition: background .16s, color .16s, box-shadow .16s;
+  white-space: nowrap;
+}
+.search-segments .seg:hover { color: #14213b; }
+.search-segments .seg.is-active { background: #fff; color: #14213b; box-shadow: 0 2px 7px rgba(15, 26, 48, .14); }
+.search-segments .seg:focus-visible { outline: 3px solid rgba(255, 153, 51, .65); outline-offset: 2px; }
+@media (max-width: 560px) {
+  .search-bar { flex-wrap: wrap; }
+  .search-segments { order: 3; width: 100%; display: flex; }
+  .search-segments .seg { flex: 1; text-align: center; }
 }
 /* Visible keyboard focus on the whole composite control, not just the input. */
 .search-bar:focus-within { box-shadow: var(--focus-ring), 0 14px 40px rgba(0,0,0,.35); }
