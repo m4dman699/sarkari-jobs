@@ -22,6 +22,8 @@ let lastmodState = {};
 try { lastmodState = JSON.parse(fs.readFileSync(lastmodStatePath, 'utf8')); } catch { }
 const nextLastmodState = {};
 const feedDate = String(payload.generatedAt || '').slice(0, 10) || new Date().toISOString().slice(0, 10);
+// Real wall-clock date: expiry checks must not inherit a stale feed date.
+const today = new Date().toISOString().slice(0, 10);
 const sitemapPath = path.join(ROOT, 'sitemap.xml');
 const rawSitemap = fs.readFileSync(sitemapPath, 'utf8');
 
@@ -442,7 +444,9 @@ const markFor = item => {
   return `<span class="d-org-mark d-org-mark--mono" data-len="${mono.initials.length}" style="--mono-h:${mono.hue}" aria-hidden="true">${escapeHTML(mono.initials)}</span>`;
 };
 
-const urls = [];
+const jobUrls = [];
+const admitUrls = [];
+const resultUrls = [];
 for (const item of payload.jobs || []) {
   if (!item?.title || !item.id || isNonRecruitmentPage(item)) continue;
   const slug = slugFor(item);
@@ -564,6 +568,13 @@ for (const item of payload.jobs || []) {
     .map(entry => `<section class="d-related d-guide-link"><h2 class="d-section-title">${icon('info', 'd-ic d-index-h-ic')}Deeper guide</h2><div class="d-related-list"><a class="d-rel" href="../../${entry.href}"><span class="d-rel-tag">${icon('folder', 'd-ic d-rel-ic')}<b>Guide</b></span>${escapeHTML(entry.label)}</a></div></section>`)
     .join('');
   const thin = isThin(item);
+  // Search Console showed Google sinking crawl budget into expired application
+  // pages (280 "crawled - currently not indexed"). A job whose closing date has
+  // passed can no longer be acted on, so it is noindexed and kept out of the
+  // sitemap while the page itself stays online for anyone holding an old link.
+  // Results and admit cards keep their reference value and stay indexable.
+  const expired = type === 'job' && item.lastDate && item.lastDate < today;
+  const keepOutOfIndex = thin || expired;
   // Type-specific illustrated checklists. These are action guides, not decoration:
   // admit-card pages get an exam-day checklist and result pages get a merit-list
   // reading guide. Both are paired with real HTML labels and a source caveat.
@@ -613,7 +624,7 @@ for (const item of payload.jobs || []) {
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
 <meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+"><meta property="og:image" content="${ogImage}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title} | SarkariJobs+"><meta name="twitter:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta name="twitter:image" content="${ogImage}">
-<link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css?v=20261124-unified-b"><link rel="stylesheet" href="../../css/detail.css?v=20261123-modern-refresh">
+<link rel="canonical" href="${canonical}">${keepOutOfIndex ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css?v=20261124-unified-b"><link rel="stylesheet" href="../../css/detail.css?v=20261123-modern-refresh">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -706,7 +717,15 @@ ${relatedHtml}
   else if (rawSitemap.includes(`/job-details/${slug}/`)) lastmod = item.publishedDate || null;
   else lastmod = feedDate;
   nextLastmodState[slug] = { hash: pageHash, lastmod };
-  if (!canonicalOf.has(slug) && !thin) urls.push(`<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`);
+  if (!canonicalOf.has(slug) && !keepOutOfIndex) {
+    const urlBlock = `<url><loc>${canonical}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`;
+    // Segmented sitemaps: Google reads each type's URL set separately, so a
+    // fresh batch of results does not wait behind hundreds of evergreen job
+    // pages in one big file. The sitemap index at sitemap.xml ties them up.
+    if (type === 'job') jobUrls.push(urlBlock);
+    else if (type === 'admit') admitUrls.push(urlBlock);
+    else resultUrls.push(urlBlock);
+  }
 }
 
 // ---- Remove pages that should never have been published ----
@@ -1260,12 +1279,13 @@ const shellUrls = [
   'https://sarkarijobsplus.com/admit-cards.html',
   'https://sarkarijobsplus.com/upsc-cds-2-2026/'
 ];
+// Segmented sitemaps. sitemap.xml becomes a sitemap index and Google reads each
+// segment independently: a fresh batch of results no longer queues behind
+// hundreds of evergreen job pages inside one big file, and each segment's
+// lastmod tells the crawler which segment actually changed today.
 const sitemapRescape = value => value.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&');
-let sitemap = rawSitemap.replace(/\s*<url>\s*<loc>https:\/\/sarkarijobsplus\.com\/job-details\/[^<]+<\/loc>[\s\S]*?<\/url>/g, '');
-for (const loc of shellUrls) {
-  const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
-  if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, `<url><loc>${loc}</loc><lastmod>${feedDate}</lastmod></url>`);
-}
+const coreUrls = [];
+for (const loc of shellUrls) coreUrls.push(`<url><loc>${loc}</loc><lastmod>${feedDate}</lastmod></url>`);
 // First-party static prose pages (About, Content/Editorial policy, Privacy,
 // Contact) join the sitemap under their own change-aware keys in
 // page-hashes.json, so <lastmod> moves only when the page content actually
@@ -1278,8 +1298,6 @@ for (const rel of ['about.html', 'editorial-policy.html', 'privacy.html', 'conta
   const lastmod = prevState && prevState.hash === fileHash ? (prevState.lastmod || null) : feedDate;
   nextLastmodState[`page:${rel}`] = { hash: fileHash, lastmod };
   const loc = `https://sarkarijobsplus.com/${rel}`;
-  const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
-  if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, '');
   if (lastmod) staticPageBlocks.push(`<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`);
 }
 // Sector guide pages (guides/*). Generated from scraper/sectors/*.json and
@@ -1290,7 +1308,7 @@ const guidePages = buildGuides({
   helpers: { escapeHTML, date, feedDate, typeOf, listingType, isNonRecruitmentPage, slugFor }
 });
 
-sitemap = sitemap.replace('</urlset>', `${urls.join('\n')}${staticPageBlocks.length ? '\n' + staticPageBlocks.join('\n') : ''}\n</urlset>`);
+coreUrls.push(...staticPageBlocks);
 
 // Guide pages get the same change-aware treatment as the prose pages: <lastmod>
 // moves only when the generated HTML actually changes, so a rebuild that pulled
@@ -1304,21 +1322,28 @@ for (const page of guidePages) {
   nextLastmodState[key] = { hash: fileHash, lastmod };
   if (!lastmod) continue;
   const loc = `https://sarkarijobsplus.com/${page.rel}`;
-  const pattern = new RegExp(`<url>\\s*<loc>${sitemapRescape(loc)}</loc>\\s*(?:<lastmod>[\\d-]{10}</lastmod>\\s*)?</url>`);
-  if (pattern.test(sitemap)) sitemap = sitemap.replace(pattern, '');
-  guidePageBlocks.push(`<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`);
+  if (lastmod) guidePageBlocks.push(`<url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`);
 }
-if (guidePageBlocks.length) {
-  sitemap = sitemap.replace('</urlset>', `${guidePageBlocks.join('\n')}\n</urlset>`);
-}
+coreUrls.push(...guidePageBlocks);
 
-// Canonical serialization independent of the previous file's formatting:
-// every <url> block on its own compact line, so repeated builds are
-// byte-stable and the deployed file equals the committed one. Stray CR bytes
-// from CRLF checkouts are dropped so every line ends uniformly in LF.
-const opening = rawSitemap.slice(0, rawSitemap.indexOf('<url>')).replace(/\s+$/, '\n').replace(/\r/g, '');
-const blocks = (sitemap.replace(/\r/g, '').match(/<url>[\s\S]*?<\/url>/g) || []);
-fs.writeFileSync(sitemapPath, `${opening}${blocks.join('\n')}\n</urlset>\n`);
+// Canonical serialization: every segment and the index are written fresh, so
+// repeated builds are byte-stable regardless of the previous file's format.
+// Stray CR bytes from CRLF checkouts are dropped.
+const URLSET_OPEN = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+const writeUrlset = (file, blocks) => {
+  fs.writeFileSync(path.join(ROOT, file), `${URLSET_OPEN}${blocks.join('\n')}\n</urlset>\n`);
+};
+writeUrlset('sitemap-core.xml', coreUrls);
+writeUrlset('sitemap-jobs.xml', jobUrls);
+writeUrlset('sitemap-results.xml', resultUrls);
+writeUrlset('sitemap-admit-cards.xml', admitUrls);
+const segmentEntry = (file, count) => count
+  ? `<sitemap><loc>https://sarkarijobsplus.com/${file}</loc><lastmod>${feedDate}</lastmod></sitemap>`
+  : '';
+fs.writeFileSync(sitemapPath, '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+  + [segmentEntry('sitemap-core.xml', coreUrls.length), segmentEntry('sitemap-jobs.xml', jobUrls.length), segmentEntry('sitemap-results.xml', resultUrls.length), segmentEntry('sitemap-admit-cards.xml', admitUrls.length)]
+    .filter(Boolean).join('\n')
+  + '\n</sitemapindex>\n');
 // Retired slugs no longer produce a page, so keeping their lastmod entry would
 // only grow the state file forever.
 for (const slug of stubSlugs) delete nextLastmodState[slug];
@@ -1333,4 +1358,4 @@ fs.writeFileSync(retiredStatePath, JSON.stringify(nextRetiredState, null, 2) + '
 const retiredPrivacyPage = path.join(output, 'privacy-policy-1f1c4eba');
 fs.mkdirSync(retiredPrivacyPage, { recursive: true });
 fs.writeFileSync(path.join(retiredPrivacyPage, 'index.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><link rel="canonical" href="https://sarkarijobsplus.com/privacy.html"><meta http-equiv="refresh" content="0;url=../../privacy.html"><title>Privacy policy | SarkariJobs+</title></head><body><p>This page has moved to our <a href="../../privacy.html">privacy policy</a>.</p></body></html>`);
-console.log(`Generated ${urls.length} individual detail pages and updated sitemap.xml.`);
+console.log(`Generated ${jobUrls.length + admitUrls.length + resultUrls.length} individual detail pages and updated the sitemap index.`);
