@@ -1155,7 +1155,7 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
   font-size: .72rem;
 }
 .diagram-frame--side { border-radius: 20px; box-shadow: 0 14px 34px rgba(10, 17, 40, .09); }
-.diagram-frame--side img { aspect-ratio: 4 / 3; object-fit: cover; }
+.diagram-frame--side img { aspect-ratio: 16 / 10; object-fit: cover; }
 @media (max-width: 900px) {
   .diagram-split,
   .diagram-split--flip { grid-template-columns: 1fr; gap: 22px; }
@@ -1305,56 +1305,6 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
   .method-photo img, .method-card:hover .method-photo img { transition: none; transform: none; }
 }
 
-.journey-hero { margin-top: 22px; }
-.journey-hero-frame {
-  position: relative;
-  overflow: hidden;
-  min-height: 360px;
-  border: 1px solid #e6ecf6;
-  border-radius: 22px;
-  background: #fff8ee;
-  box-shadow: 0 10px 30px rgba(10, 17, 40, .07);
-}
-/* Edge-fade blend: a radial alpha mask dissolves the diagram into the cream
-   panel instead of showing a hard rectangular cut. This is the mask-image
-   technique — no extra element, no blending cost. */
-.journey-art {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; opacity: .2;
-  -webkit-mask-image: radial-gradient(ellipse 88% 92% at 50% 50%, #000 52%, transparent 100%);
-  mask-image: radial-gradient(ellipse 88% 92% at 50% 50%, #000 52%, transparent 100%);
-}
-.journey-overlay { position: relative; z-index: 1; padding: 32px 34px 34px; }
-.journey-title { margin: 0; color: var(--navy); font-size: clamp(1.2rem, 2.5vw, 1.6rem); line-height: 1.25; }
-.journey-steps {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-.journey-steps li {
-  position: relative;
-  min-height: 104px;
-  padding: 14px 12px 13px;
-  border: 1px solid rgba(20, 33, 59, .1);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, .93);
-  box-shadow: 0 8px 20px rgba(10, 17, 40, .08);
-}
-.journey-steps b {
-  display: inline-grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #000080;
-  color: #fff;
-  font-size: .72rem;
-}
-.journey-steps strong { display: block; margin-top: 9px; color: #14213b; font-size: .9rem; line-height: 1.25; }
-.journey-steps small { display: block; margin-top: 5px; color: #52617a; font-size: .74rem; line-height: 1.35; }
 @media (max-width: 1000px) {
   .trust-ribbon { grid-template-columns: 1fr; gap: 18px; }
   .trust-logos {
@@ -1363,15 +1313,64 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
     border-top: 1px solid rgba(20, 33, 59, .09);
     border-left: 0;
   }
-  .journey-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
   .trust-logos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .journey-hero-frame { border-radius: 14px; }
-  .journey-overlay { padding: 24px 18px; }
-  .journey-art { opacity: .24; }
-  .journey-steps { grid-template-columns: 1fr; }
 }
+/* ---------- Modern interface layer (2026 refresh) ----------
+   Progressive enhancement only: cross-page view transitions, scroll-linked
+   reveals, balanced type, tabular figures, anchor offsets. Unsupported
+   browsers keep exactly the behaviour they had before this block. */
+@view-transition { navigation: auto; }
+
+::selection { background: rgba(255, 153, 51, .3); color: #14213b; }
+
+/* Anchor jumps clear the sticky header instead of hiding beneath it. */
+[id] { scroll-margin-top: 92px; }
+
+/* Dates, counts and countdowns align digit-for-digit. */
+.dates, .countdown, .ticker, [data-count] { font-variant-numeric: tabular-nums; }
+
+/* Balanced headline ragging; prettier paragraph wrapping where supported. */
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+/* One quiet focus ring for the whole site; components may still override. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid rgba(255, 153, 51, .65);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Sections settle in as they scroll into view — CSS scroll-timeline API,
+   no JS, transform/opacity only so no layout shift. The reduced-motion
+   catch-all at the end of this file collapses it to the final state. */
+@keyframes section-settle {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@supports (animation-timeline: view()) {
+  main .block,
+  .diagram-band {
+    animation: section-settle linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 22%;
+  }
+}
+
+/* Header gains depth with scroll (scroll-timeline API). */
+@keyframes header-depth {
+  from { box-shadow: 0 1px 0 rgba(15, 26, 48, .06); }
+  to { box-shadow: 0 14px 34px rgba(15, 26, 48, .16); }
+}
+@supports (animation-timeline: scroll()) {
+  header {
+    animation: header-depth linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 180px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .trust-logo, .trust-logo img, .trust-logo::after, .trust-arrow { transition: none; }
   .trust-logo:hover, .trust-logo:hover img, .trust-link:hover .trust-arrow { transform: none; }
