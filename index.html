@@ -54,7 +54,7 @@
   <!-- The hero background is the LCP image; make it discoverable in the initial
        HTML at high priority instead of waiting for CSS to request it. -->
   <link rel="preload" as="image" href="assets/realistic/hero-aspirants.webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=20261124-unified-b">
+  <link rel="stylesheet" href="css/style.css?v=20261125-steps">
   <link rel="stylesheet" href="css/ncs-spotlight.css?v=20261123-ncs-tidy">
   <script src="js/ncs-spotlight.js?v=20261122-career-tools" defer></script>
 </head>
@@ -207,23 +207,21 @@
     </div>
   </section>
 
-  <section class="diagram-band" aria-labelledby="journey-heading">
-    <div class="container diagram-split">
+  
+  <section class="diagram-band steps-band" aria-labelledby="journey-heading">
+    <div class="container">
       <div class="diagram-copy">
         <p class="diagram-eyebrow">The process</p>
         <h2 id="journey-heading" class="diagram-heading">How a government job recruitment works</h2>
-        <p class="diagram-caption">Five stages from notice to joining — and the same rule at every stage: <b>the official notice is the source, everything else is a pointer.</b></p>
-        <ol class="diagram-steps">
-          <li>Official notice with dates, vacancies and eligibility</li>
-          <li>Application form, fee and documents before the last date</li>
-          <li>Written or computer-based selection test</li>
-          <li>Merit list or result published by the authority</li>
-          <li>Document verification, then appointment</li>
-        </ol>
+        <p class="diagram-caption">This is the general process, not a promise for any one post. <b>Every date, fee and eligibility clause comes from the official notice linked on the listing.</b></p>
       </div>
-      <div class="diagram-frame diagram-frame--side">
-        <img src="assets/diagrams/journey-flow.webp?v=3d1" alt="Five-stage journey through a government recruitment: official notice, application, selection test, merit list, verification and appointment" width="1024" height="1024" loading="lazy" decoding="async">
-      </div>
+      <ol class="steps-track">
+        <li class="step"><p>Official notice with dates, vacancies and eligibility</p></li>
+        <li class="step"><p>Application form, fee and documents before the last date</p></li>
+        <li class="step"><p>Written or computer-based selection test</p></li>
+        <li class="step"><p>Merit list or result published by the authority</p></li>
+        <li class="step"><p>Document verification, then appointment</p></li>
+      </ol>
     </div>
   </section>
 

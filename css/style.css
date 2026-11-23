@@ -1210,16 +1210,10 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
   .diagram-steps { grid-template-columns: 1fr; }
 }
 
-/* ---------- Split process band (revamped "how it works") ---------- */
-.diagram-band { container-type: inline-size; }
-.diagram-split {
-  display: grid;
-  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  gap: clamp(24px, 3.5vw, 46px);
-  align-items: center;
-}
-.diagram-split--flip { grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); }
-.diagram-copy { min-width: 0; }
+/* ---------- Typographic process band ----------
+   The editorial answer to a process section: no illustration, a hairline
+   progress rail and oversized outlined numerals — the section reads as
+   finished because the type does the work. */
 .diagram-eyebrow {
   display: inline-flex;
   align-items: center;
@@ -1239,195 +1233,79 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
   line-height: 1.12;
   text-wrap: balance;
 }
-.diagram-copy .diagram-caption { margin: 14px 0 0; }
-.diagram-split .diagram-steps { margin-top: 18px; grid-template-columns: 1fr; gap: 8px; }
-.diagram-split .diagram-steps li {
-  display: flex;
-  align-items: baseline;
-  gap: 11px;
-  padding: 11px 14px 11px 42px;
-  font-size: .86rem;
-  line-height: 1.5;
-}
-.diagram-split .diagram-steps li::before {
-  left: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 21px;
-  height: 21px;
-  font-size: .72rem;
-}
-.diagram-frame--side { border-radius: 20px; box-shadow: 0 14px 34px rgba(10, 17, 40, .09); }
-.diagram-frame--side img { aspect-ratio: 16 / 10; object-fit: cover; }
-@media (max-width: 900px) {
-  .diagram-split,
-  .diagram-split--flip { grid-template-columns: 1fr; gap: 22px; }
-  .diagram-split--flip .diagram-frame--side { order: 2; }
-  .diagram-frame--side img { aspect-ratio: 16 / 9; }
-}
-/* Narrow columns (article layouts with a side TOC) stack too — decided by the
-   band's own measured width, not the viewport. */
-@container (max-width: 720px) {
-  .diagram-split,
-  .diagram-split--flip { grid-template-columns: 1fr; gap: 20px; }
-  .diagram-split--flip .diagram-frame--side { order: 2; }
-  .diagram-frame--side img { aspect-ratio: 16 / 9; }
-}
-
-/* ---------- Source-trust ribbon and readable journey hero ---------- */
-.source-trust { margin: 26px 0 4px; }
-.trust-ribbon {
+.steps-band { padding: 4px 0 2px; }
+.steps-band .diagram-copy { max-width: 640px; margin-bottom: 26px; }
+.steps-track {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
-  gap: 34px;
-  align-items: center;
-  padding: 30px 32px;
-  /* Gradient hairline border (Linear-style): transparent border + two clipped
-     backgrounds, so the top edge picks up a warm-to-green tint, not a flat grey. */
-  border: 1px solid transparent;
-  border-radius: 20px;
-  background: linear-gradient(#fff, #fff) padding-box,
-              linear-gradient(120deg, rgba(255,153,51,.55), #e7edf6 38%, rgba(19,136,8,.45)) border-box;
-  box-shadow: 0 16px 38px rgba(10, 17, 40, .07);
-}
-/* Tricolor accent tucked just under the top edge of the ribbon. */
-.trust-ribbon::before {
-  content: '';
-  position: absolute; top: -1px; left: 30px; right: 30px; height: 3px;
-  background: linear-gradient(90deg, var(--saffron), rgba(255,255,255,.9) 50%, var(--green));
-  border-radius: 0 0 3px 3px;
-}
-.trust-eyebrow {
-  display: flex; align-items: center; gap: 8px;
-  margin: 0 0 10px;
-  color: #8a4b00;
-  font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
-}
-.trust-check { width: 18px; height: 18px; flex: 0 0 auto; }
-.trust-copy h2 {
-  margin: 0; color: var(--navy);
-  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
-  line-height: 1.2; letter-spacing: -.03em;
-  text-wrap: balance;
-}
-.trust-count { font-size: 1.32em; letter-spacing: -.055em; color: #a85a00; }
-.trust-desc { margin: 10px 0 0; color: #52617a; font-size: .9rem; line-height: 1.6; max-width: 46ch; }
-.trust-link {
-  display: inline-flex; align-items: center; gap: 7px;
-  margin-top: 14px; padding-bottom: 3px;
-  color: var(--navy); font-size: .88rem; font-weight: 750;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(10,17,40,.25);
-  transition: color .2s ease, border-color .2s ease;
-}
-.trust-link:hover { color: #a85a00; border-bottom-color: #a85a00; }
-.trust-link:focus-visible { outline: 2px solid var(--saffron); outline-offset: 4px; border-radius: 2px; }
-.trust-arrow { transition: transform .2s var(--ease-out); }
-.trust-link:hover .trust-arrow { transform: translateX(4px); }
-.trust-marks {
-  min-width: 0; padding: 16px 16px 18px;
-  border: 1px solid rgba(20, 33, 59, .06);
-  border-radius: 16px;
-  background: radial-gradient(680px 220px at 50% -30%, rgba(255,153,51,.07), transparent 72%), #fbfcfe;
-}
-.trust-marks-label {
-  margin: 0 0 13px;
-  color: #7b879c; font-size: .68rem; font-weight: 800;
-  letter-spacing: .11em; text-transform: uppercase; text-align: center;
-}
-.trust-logos {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 10px;
-  margin: 0; padding: 0; list-style: none;
-}
-/* Identical tiles, plus a per-mark height derived from its intrinsic aspect
-   ratio using the equal-area method from 9elements' "Building the Perfect
-   Logo Strip". Wide marks shrink a little; the portrait RBI mark is clamped
-   so it cannot tower over the row. */
-.trust-logo {
-  position: relative;
-  display: grid; place-items: center;
-  min-width: 0; height: 76px; padding: 10px 8px;
-  border: 1px solid #e8edf5;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
-  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
-}
-.trust-logo::after {
-  content: '';
-  position: absolute; left: 14px; right: 14px; bottom: 8px; height: 2px;
-  border-radius: 2px;
-  background: linear-gradient(90deg, var(--saffron), var(--green));
-  transform: scaleX(0); transform-origin: left;
-  transition: transform .3s var(--ease-out);
-}
-.trust-logo:hover {
-  border-color: #d9e2f0; transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(10,17,40,.08);
-}
-.trust-logo:hover::after { transform: scaleX(1); }
-.trust-logo img {
-  display: block; width: auto; height: var(--logo-h, 40px);
-  max-width: 100%; object-fit: contain;
-  filter: grayscale(1) contrast(.96);
-  opacity: .66;
-  transition: filter .2s ease, opacity .2s ease, transform .2s ease;
-}
-.trust-logo:hover img { filter: none; opacity: 1; transform: scale(1.04); }
-
-/* ---------- Sourcing method photo band ---------- */
-.method-band { margin-top: 20px; }
-.method-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.method-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  counter-reset: step;
   margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--surface-border);
-  border-radius: var(--radius-card);
-  background: #fff;
-  box-shadow: var(--shadow-card);
+  padding: 26px 0 8px;
+  list-style: none;
 }
-.method-card::before {
+.steps-track::before {
+  content: '';
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--saffron) 0%, #dfe7f2 34%, #dfe7f2 100%);
+}
+.step {
+  position: relative;
+  padding: 0 22px 8px 0;
+}
+.step::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #dfe7f2;
+  color: #14213b;
+  font-size: .72rem;
+  font-weight: 850;
+  margin-bottom: 14px;
+}
+.step::after {
   content: '';
   position: absolute;
   z-index: 2;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--saffron), var(--navy), var(--green));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .35s var(--ease-out);
+  top: 9px;
+  left: 38px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--saffron);
+  opacity: 0;
 }
-.method-card:hover::before { transform: scaleX(1); }
-.method-photo { aspect-ratio: 16 / 8; overflow: hidden; background: #eef2f8; }
-.method-photo img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
-.method-card:hover .method-photo img { transform: scale(1.04); }
-.method-card figcaption { flex: 1; padding: 20px 21px 23px; }
-.method-step { display: block; margin-bottom: 7px; color: #52617a; font-size: .74rem; font-weight: 800; letter-spacing: .09em; }
-.method-card figcaption b { display: block; color: var(--navy); font-size: 1.02rem; line-height: 1.3; text-wrap: balance; }
-.method-card figcaption p { margin: 8px 0 0; color: var(--text-grey); font-size: .87rem; line-height: 1.55; }
-@media (max-width: 900px) { .method-grid { grid-template-columns: 1fr; } .method-photo { aspect-ratio: 16 / 7; } }
-@media (prefers-reduced-motion: reduce) {
-  .method-photo img, .method-card:hover .method-photo img { transition: none; transform: none; }
+.step:first-child::before { background: #0a1128; border-color: #0a1128; color: #fff; }
+.step:first-child::after { opacity: 1; }
+.step p {
+  margin: 0;
+  color: #41547a;
+  font-size: .88rem;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 24ch;
 }
-
-@media (max-width: 1000px) {
-  .trust-ribbon { grid-template-columns: 1fr; gap: 18px; }
-  .trust-logos {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    padding: 16px 0 0;
-    border-top: 1px solid rgba(20, 33, 59, .09);
-    border-left: 0;
-  }
+@media (max-width: 900px) {
+  .steps-track { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 8px; }
+  .steps-track::before { display: none; }
 }
-@media (max-width: 640px) {
-  .trust-logos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 560px) {
+  .steps-track { grid-template-columns: 1fr; }
+  .step { padding: 0 0 4px 46px; }
+  .step::before { position: absolute; left: 0; top: -2px; }
 }
+.diagram-band { container-type: inline-size; }
 /* ---------- Modern interface layer (2026 refresh) ----------
    Progressive enhancement only: cross-page view transitions, scroll-linked
    reveals, balanced type, tabular figures, anchor offsets. Unsupported
