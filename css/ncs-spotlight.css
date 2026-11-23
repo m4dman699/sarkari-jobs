@@ -200,8 +200,7 @@ section.block.source-section.ncs-spotlight {
 .ncs-tool-panel[hidden] { display: none !important; }
 .ncs-tool-panel { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr); gap: clamp(20px, 3vw, 32px); align-items: center; }
 .ncs-tool-poster { min-width: 0; margin: 0; overflow: hidden; border: 1px solid var(--ncs-border); border-radius: 15px; background: var(--ncs-soft); }
-.ncs-tool-poster img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: var(--ncs-soft); }
-.ncs-tool-poster figcaption { padding: 8px 12px; color: #5a6b85; font-size: .69rem; line-height: 1.35; }
+.ncs-tool-poster img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; background: var(--ncs-soft); }
 .ncs-tool-copy { min-width: 0; }
 .ncs-tool-step { margin: 0 0 8px; color: #965000; font-size: .69rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
 .ncs-tool-copy h4 { margin: 0 0 10px; color: var(--ncs-ink); font-size: clamp(1.25rem, 2.4vw, 1.8rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.15; }

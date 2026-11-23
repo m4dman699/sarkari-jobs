@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22T11:19:44.787Z",
-  "total": 14,
+  "generatedAt": "2026-11-23T07:02:22.725Z",
+  "total": 15,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -651,6 +651,66 @@
           "label": "Last date for receiving the Hard Copy",
           "date": "2026-12-15",
           "dateText": "15/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-334dfe62669d656b",
+      "type": "job",
+      "title": "UPPSC Civil Judge PCS J Pre Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Judiciary",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/uppsc-civil-judge-pcs-j-nov-26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-23",
+      "lastDate": "2026-12-21",
+      "organization": "Uttar Pradesh Public Service Commission UPPSC",
+      "publishedDate": "2026-11-21",
+      "openDate": "2026-11-20",
+      "vacancies": "365",
+      "ageLimit": "22–35 years",
+      "eligibility": "Bachelor Degree in Law (LLB) in Any Recognized University in India. Candidate Must be Advocate Enrolled. 1 Year Legal Practice More Eligibility Details Read the Notification",
+      "applicationFee": "General / OBC / EWS : 125/- SC / ST : 65/- PH Candidates : 25/-",
+      "notificationLink": "https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=406&flag=E&FID=954",
+      "officialLinks": [
+        {
+          "url": "https://uppsc.up.nic.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPPSC_Civil_Judge_PCS_J_Pre_Mains_Syllabus_2026.pdf",
+          "label": "Download Syllabus (Pre/Mains)"
+        },
+        {
+          "url": "https://uppsc.up.nic.in/OuterPages/View_Enclosure.aspx?ID=406&flag=E&FID=954",
+          "label": "Download Notification"
+        }
+      ],
+      "officialLink": "https://uppsc.up.nic.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026 | 10:45 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-21",
+          "dateText": "21/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-21",
+          "dateText": "21/12/2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-12-28",
+          "dateText": "28/12/2026"
         }
       ]
     },

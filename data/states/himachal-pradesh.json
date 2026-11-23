@@ -1,5 +1,19 @@
 {
-  "generatedAt": "2026-11-22T11:19:44.787Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-23T07:02:22.725Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "aHR0cHM6Ly9ocHBzYy5ocC5nb3YuaW4vSG9tZS9Db250ZW50UGFnZT9xcz1oJTJGeWhtMW1Lam5DOW1wek5KZk9mTGJxRXhsJTJCUUdNejhMUUtMYkQ1OCUyQjAzb0VKM2Nac3Njc0dsNkdSTjNCRGlh",
+      "type": "job",
+      "title": "Recruitment Methods",
+      "source": "HPPSC",
+      "category": "State PSC",
+      "state": "Himachal Pradesh",
+      "link": "https://hppsc.hp.gov.in/Home/ContentPage?qs=h%2Fyhm1mKjnC9mpzNJfOfLbqExl%2BQGMz8LQKLbD58%2B03oEJ3cZsscsGl6GRN3BDia",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    }
+  ]
 }

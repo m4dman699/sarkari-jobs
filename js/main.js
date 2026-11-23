@@ -583,7 +583,7 @@ function renderTicker(jobs = [], generatedAt) {
     const days = daysUntil(job.lastDate);
     return days !== null && days >= 0 && days <= 21;
   })()).slice(0, 6).map(job =>
-    `<span>⏰ <b>${escapeHTML(cleanText(job.title))}</b> closes ${escapeHTML(fmtDate(job.lastDate, { day: 'numeric', month: 'short' }))}</span>`
+    `<span><b>${escapeHTML(cleanText(job.title))}</b> closes ${escapeHTML(fmtDate(job.lastDate, { day: 'numeric', month: 'short' }))}</span>`
   ).join('');
   if (wrap) wrap.hidden = !items;
   if (!items) {

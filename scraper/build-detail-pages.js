@@ -533,6 +533,7 @@ for (const item of payload.jobs || []) {
   ].filter(Boolean).join('');
   const kindId = type;
   const ribbonCls = kindId === 'admit' ? ' d-ribbon--admit' : kindId === 'result' ? ' d-ribbon--result' : '';
+  const ogImage = `https://sarkarijobsplus.com/assets/realistic/${type === 'admit' ? 'source-notice' : type === 'result' ? 'government-office' : 'exam-centre'}.webp`;
   // Breadcrumb structured data mirroring the visible d-crumbs navigation.
   const breadcrumbLd = `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
@@ -605,7 +606,7 @@ for (const item of payload.jobs || []) {
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | SarkariJobs+</title><meta name="description" content="${escapeHTML(descriptionFor(item, kind))}">
 <meta name="theme-color" content="#0a1128">
-<meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+">
+<meta property="og:title" content="${title} | SarkariJobs+"><meta property="og:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="SarkariJobs+"><meta property="og:image" content="${ogImage}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title} | SarkariJobs+"><meta name="twitter:description" content="${escapeHTML(descriptionFor(item, kind))}"><meta name="twitter:image" content="${ogImage}">
 <link rel="canonical" href="${canonical}">${thin ? '<meta name="robots" content="noindex, follow">' : ''}${faqLd}${breadcrumbLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="../../css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="../../css/detail.css?v=20261120-realistic-visuals">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
@@ -871,7 +872,7 @@ const indexHtml = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>All government job listings, admit cards and results | SarkariJobs+</title><meta name="description" content="Complete index of every live government job notification, admit card and result tracked by SarkariJobs+ — ${entries.length} listings, each with key dates and the official source link.">
 <meta name="theme-color" content="#0a1128">
-<meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+">
+<meta property="og:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta property="og:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta property="og:url" content="${indexCanonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="SarkariJobs+"><meta property="og:image" content="https://sarkarijobsplus.com/assets/realistic/hero-aspirants.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="All government job listings, admit cards and results | SarkariJobs+"><meta name="twitter:description" content="Complete index of ${entries.length} live listings — jobs, admit cards and results — with key dates and official source links."><meta name="twitter:image" content="https://sarkarijobsplus.com/assets/realistic/hero-aspirants.webp">
 <link rel="canonical" href="${indexCanonical}">${indexLd}<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><script src="js/analytics-config.js?v=20261022"></script><script src="js/analytics.js?v=20261119" defer></script><link rel="stylesheet" href="css/style.css?v=20261120-realistic-visuals"><link rel="stylesheet" href="css/detail.css?v=20261120-realistic-visuals">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='7' fill='%23FF9933'/%3E%3Crect y='7' width='30' height='6' fill='%23fff'/%3E%3Crect y='13' width='30' height='7' fill='%23138808'/%3E%3Ccircle cx='15' cy='10' r='2.4' fill='none' stroke='%2306038D' stroke-width='1'/%3E%3C/svg%3E">
 </head>
@@ -959,6 +960,18 @@ const hubDate = value => {
   if (Number.isNaN(d.getTime())) return '';
   return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
 };
+const markCellFor = (item, prefix = 'assets/') => {
+  const mark = markPathFor(item);
+  if (mark && fs.existsSync(path.join(ROOT, 'assets', mark))) {
+    return `<span class="portal-mark" aria-hidden="true"><img src="${escapeHTML(prefix)}${escapeHTML(mark)}" alt="" width="44" height="44" loading="lazy" decoding="async" onerror="this.hidden=true"></span>`;
+  }
+  const mono = monogramFor(item);
+  if (mono) {
+    return `<span class="portal-mark" aria-hidden="true" style="--mono-h:${mono.hue}"><span class="portal-monogram" data-len="${mono.initials.length}">${escapeHTML(mono.initials)}</span></span>`;
+  }
+  return '';
+};
+
 const hubCard = (entry, hub) => {
   const item = entry.item;
   const title = String(item.title || '').replace(/\s+/g, ' ').trim();
@@ -972,7 +985,7 @@ const hubCard = (entry, hub) => {
     .filter(value => value && !/^see linked notice$/i.test(value))
     .map(value => `<span class="tag">${escapeHTML(value)}</span>`)
     .join('');
-  return `<article class="job-card announcement-card ${hub.cardClass}"><span class="tag saff">${escapeHTML(hub.label)}</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
+  return `<article class="job-card announcement-card ${hub.cardClass}"><span class="tag saff">${escapeHTML(hub.label)}</span><div class="job-card-heading">${markCellFor(item)}<h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
 };
 for (const hub of hubPages) {
   const hubPath = path.join(ROOT, hub.file);
@@ -1068,7 +1081,7 @@ const indexCard = (entry, secondary, label = 'Job notification', showPublished =
     .filter(value => value && !/^see linked notice$/i.test(value))
     .map(value => `<span class="tag">${escapeHTML(clampText(value, 44))}</span>`)
     .join('');
-  return `<article class="job-card announcement-card"><span class="tag saff">${escapeHTML(label)}</span><div class="job-card-heading"><h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
+  return `<article class="job-card announcement-card"><span class="tag saff">${escapeHTML(label)}</span><div class="job-card-heading">${markCellFor(item)}<h3>${escapeHTML(title)}</h3></div>${tags ? `<div class="job-meta">${tags}</div>` : ''}${facts ? `<div class="dates">${facts}</div>` : ''}<a class="announcement-guide" href="job-details/${entry.slug}/">Read the full details &rarr;</a></article>`;
 };
 
 const feedDay = String(feedDate || '').slice(0, 10);

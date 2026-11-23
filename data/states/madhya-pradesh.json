@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-22T11:19:44.787Z",
-  "total": 3,
+  "generatedAt": "2026-11-23T07:02:22.725Z",
+  "total": 4,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHBzYy5tcC5nb3YuaW4vdXBsb2Fkcy9hZHZlcnRpc2VtZW50L0FkdnRfTGF3X09mZmljZXJfRXhhbV8yMDI2X0RhdGVkXzA0XzExXzIwMjYucGRm",
@@ -40,6 +40,66 @@
       "lastDate": null,
       "examDate": "2026-04-10",
       "publishedDate": null
+    },
+    {
+      "id": "competitor-sarkariresult-4e6301db40cf9d1b",
+      "type": "job",
+      "title": "MP NHM Contract Staff Nurse Online Form 2026-27",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Government jobs",
+      "state": "Madhya Pradesh",
+      "link": "https://iforms.mponline.gov.in/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/mp-nhm-staff-nurse-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-22",
+      "lastDate": "2026-12-05",
+      "organization": "Madhya Pradesh NHM Contract Staff Nurse",
+      "publishedDate": "2026-11-21",
+      "openDate": "2026-11-20",
+      "vacancies": "301",
+      "ageLimit": "21–40 years",
+      "eligibility": "10+2 Intermediate with Physics, Chemistry & Biology (PCB) as a Subject with 4 Year B.Sc Nursing / GNM / Post B.SC and Registration in MP Nursing Council. More Eligibility Details Read the Notification.",
+      "applicationFee": "General / OBC / EWS : NA SC / ST : NA PH Candidates : NA–",
+      "notificationLink": "https://iforms.mponline.gov.in/Form/ViewDocs?rt=RuleBooks/288",
+      "officialLinks": [
+        {
+          "url": "https://iforms.mponline.gov.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://iforms.mponline.gov.in/Form/ViewDocs?rt=RuleBooks/288",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://www.nhmmp.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://iforms.mponline.gov.in/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026 | 12:14 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-05",
+          "dateText": "05/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-05",
+          "dateText": "05/12/2026"
+        },
+        {
+          "label": "Correction Last Date",
+          "date": "2026-11-28",
+          "dateText": "28/11/2026"
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T11:19:44.787Z",
+  "generatedAt": "2026-11-23T07:02:22.725Z",
   "total": 6,
   "jobs": [
     {
@@ -14,19 +14,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluL05vdGljZS1GaWxlcy9yZWNydWltZW50LW5vdGljZS8xODU3NQ",
-      "type": "job",
-      "title": "Notification regarding recruitment to the posts of Member (Judicial) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT) Uploaded:21-Nov-2026 12:36:38",
-      "source": "Calcutta High Court",
-      "category": "Judiciary",
-      "state": "West Bengal",
-      "link": "https://www.calcuttahighcourt.gov.in/Notice-Files/recruiment-notice/18575",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-11-23"
     },
     {
       "id": "aHR0cHM6Ly93d3cuY2FsY3V0dGFoaWdoY291cnQuZ292LmluL05vdGljZXMvZ2F6ZXR0ZS1ub3RpZmljYXRpb24",
@@ -75,6 +62,19 @@
       "category": "Judiciary",
       "state": "West Bengal",
       "link": "https://www.calcuttahighcourt.gov.in/#menu",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93YnBvbGljZS5nb3YuaW4vd2JwL2NvbW1vbi9XQlBfUmVjcnVpdG1lbnROZXcuYXNweA",
+      "type": "job",
+      "title": "Engagement of Contractual Drivers under different district / units of West Bengal Police",
+      "source": "WB Police",
+      "category": "Police",
+      "state": "West Bengal",
+      "link": "https://wbpolice.gov.in/wbp/common/WBP_RecruitmentNew.aspx",
       "openDate": null,
       "lastDate": null,
       "examDate": null,

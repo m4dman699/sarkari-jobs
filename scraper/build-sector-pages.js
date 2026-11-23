@@ -249,7 +249,7 @@ ${icon('shield', 'g-ic g-point-ic')}
 <meta property="og:title" content="${escapeHTML(name)} government jobs: eligibility and selection stages">
 <meta property="og:description" content="${escapeHTML(description)}">
 <meta property="og:url" content="https://sarkarijobsplus.com/guides/${sector.slug}/">
-<meta property="og:site_name" content="SarkariJobs+">
+<meta property="og:site_name" content="SarkariJobs+"><meta property="og:image" content="https://sarkarijobsplus.com/assets/sector-art/${sector.slug}.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escapeHTML(name)} government jobs: eligibility and selection stages"><meta name="twitter:description" content="${escapeHTML(description)}"><meta name="twitter:image" content="https://sarkarijobsplus.com/assets/sector-art/${sector.slug}.webp">
 ${jsonLd}
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 <script src="../../js/analytics-config.js?v=20261022"></script><script src="../../js/analytics.js" defer></script>
@@ -453,7 +453,7 @@ function renderHub(sectors, helpers) {
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sector-by-sector government job guides | SarkariJobs+">
 <meta property="og:description" content="Which qualification unlocks which post, every selection stage, and live listings per sector.">
-<meta property="og:url" content="https://sarkarijobsplus.com/guides/">
+<meta property="og:url" content="https://sarkarijobsplus.com/guides/"><meta property="og:image" content="https://sarkarijobsplus.com/assets/generated/guide-hub-study.webp"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sector-by-sector government job guides | SarkariJobs+"><meta name="twitter:description" content="Which qualification unlocks which post, every selection stage, and live listings per sector."><meta name="twitter:image" content="https://sarkarijobsplus.com/assets/generated/guide-hub-study.webp">
 <script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',

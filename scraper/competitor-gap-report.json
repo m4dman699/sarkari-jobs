@@ -1,27 +1,11 @@
 {
-  "generatedAt": "2026-11-22T11:19:53.779Z",
-  "durationSeconds": 3,
+  "generatedAt": "2026-11-23T07:01:03.956Z",
+  "durationSeconds": 23,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 745,
-    "jobs": 193,
-    "admitCards": 174,
-    "results": 378,
-    "jobsMissingPublicationDate": 119,
-    "jobsMissingClosingDate": 146,
-    "jobsMissingOrganization": 142,
-    "jobsMissingVacancies": 154,
-    "jobsMissingEligibility": 144,
-    "jobsMissingApplicationFee": 150,
-    "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 25,
-    "resultsMissingPublishedDate": 68,
-    "resultsMissingResultDate": 181
-  },
-  "after": {
     "total": 755,
     "jobs": 196,
     "admitCards": 179,
@@ -37,35 +21,38 @@
     "resultsMissingPublishedDate": 68,
     "resultsMissingResultDate": 181
   },
-  "imported": {
-    "job": 5,
-    "admit-card": 4,
-    "result": 3
+  "after": {
+    "total": 865,
+    "jobs": 198,
+    "admitCards": 199,
+    "results": 468,
+    "jobsMissingPublicationDate": 116,
+    "jobsMissingClosingDate": 143,
+    "jobsMissingOrganization": 139,
+    "jobsMissingVacancies": 152,
+    "jobsMissingEligibility": 141,
+    "jobsMissingApplicationFee": 147,
+    "jobsMissingOfficialLink": 0,
+    "admitCardsMissingPublishedDate": 24,
+    "resultsMissingPublishedDate": 75,
+    "resultsMissingResultDate": 199
   },
-  "matchedExisting": 210,
-  "filledItems": 46,
+  "imported": {
+    "job": 2,
+    "admit-card": 26,
+    "result": 82
+  },
+  "matchedExisting": 266,
+  "filledItems": 103,
   "removedStale": 0,
   "removedUncertain": 0,
-  "skippedClosed": 271,
-  "removedNavigation": 2,
-  "removalLog": [
-    {
-      "reason": "navigation/non-recruitment",
-      "type": "job",
-      "publisher": "(official)",
-      "title": "Find International Jobs E-migrate"
-    },
-    {
-      "reason": "navigation/non-recruitment",
-      "type": "job",
-      "publisher": "(official)",
-      "title": "Jobs for Ex-Servicemen"
-    }
-  ],
+  "skippedClosed": 272,
+  "removedNavigation": 0,
+  "removalLog": [],
   "detailPages": {
-    "targets": 114,
-    "fetched": 108,
-    "cacheHits": 6
+    "targets": 273,
+    "fetched": 156,
+    "cacheHits": 117
   },
   "remainingGaps": {
     "jobsMissingDate": [
