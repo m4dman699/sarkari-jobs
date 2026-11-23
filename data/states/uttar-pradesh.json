@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T07:02:22.725Z",
-  "total": 15,
+  "generatedAt": "2026-11-23T10:49:47.261Z",
+  "total": 16,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -10,6 +10,19 @@
       "category": "Judiciary",
       "state": "Uttar Pradesh",
       "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBvbGljZS5nb3YuaW4vZnJtY2lyY3VsYXIuYXNweD9zbHVnTmFtZT10cyZjZD1OQUEwQURNQU9RQSUzRA",
+      "type": "job",
+      "title": "Recruitment Comp. Operator",
+      "source": "UP Police",
+      "category": "Police",
+      "state": "Uttar Pradesh",
+      "link": "https://uppolice.gov.in/frmcircular.aspx?slugName=ts&cd=NAA0ADMAOQA%3D",
       "openDate": null,
       "lastDate": null,
       "examDate": null,
