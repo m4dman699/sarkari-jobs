@@ -434,11 +434,21 @@ nav a:hover::after { width: 100%; }
 
 .hero-stats {
   display: flex;
-  gap: 36px;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 34px;
 }
-.stat b { font-size: 1.5rem; display: block; }
-.stat span { color: #93a1bf; font-size: .85rem; }
+.stat {
+  background: rgba(255, 255, 255, .07);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 16px;
+  padding: 13px 20px;
+  min-width: 128px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.stat b { font-size: 1.65rem; display: block; letter-spacing: -.02em; line-height: 1.1; }
+.stat span { color: #93a1bf; font-size: .78rem; display: block; margin-top: 3px; }
 .stat:nth-child(1) b { color: #ffb066; }
 .stat:nth-child(2) b { color: #7ee27e; }
 .stat:nth-child(3) b { color: #9db8ff; }
@@ -750,14 +760,20 @@ section.block { padding: 78px 0; }
 .job-meta { display: flex; flex-wrap: wrap; gap: 8px; }
 .job-meta .tag { max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
 .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: #eef3fb;
   color: #41547a;
   font-size: .74rem;
   font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 6px;
+  padding: 4px 11px;
+  border-radius: 999px;
 }
 .tag.saff { background: #fff2df; color: #8a4b00; }
+/* Tinted soft chip for secondary facts: state, source, organisation. */
+.tag.tag-soft { background: #f4f7fc; color: #5a6b85; }
+.tag-dot { width: 6px; height: 6px; border-radius: 50%; background: #97a9c7; flex-shrink: 0; }
 .dates {
   display: flex;
   justify-content: space-between;
@@ -768,11 +784,15 @@ section.block { padding: 78px 0; }
   border-top: 1px dashed #e3e9f4;
 }
 .countdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-weight: 800;
-  padding: 3px 10px;
-  border-radius: 6px;
+  padding: 3px 11px;
+  border-radius: 999px;
   font-size: .78rem;
 }
+.countdown::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .cd-ok   { background: #e5f7e5; color: var(--green-dark); }
 .cd-warn { background: #fff2df; color: #b26a10; }
 .cd-crit { background: #fde8e8; color: #c62f35; }

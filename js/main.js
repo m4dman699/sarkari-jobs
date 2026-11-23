@@ -224,8 +224,8 @@ function countdownBadge(d) {
   const n = daysUntil(d);
   if (n === null) return '<span class="countdown cd-ok">TBA</span>';
   if (n < 0)   return '<span class="countdown cd-crit">Closed</span>';
-  if (n === 0) return '<span class="countdown cd-crit">Closes today ⏰</span>';
-  if (n <= 7)  return `<span class="countdown cd-crit">${n}d left ⏰</span>`;
+  if (n === 0) return '<span class="countdown cd-crit">Closes today</span>';
+  if (n <= 7)  return `<span class="countdown cd-crit">${n}d left</span>`;
   if (n <= 21) return `<span class="countdown cd-warn">${n}d left</span>`;
   return `<span class="countdown cd-ok">${n}d left</span>`;
 }
@@ -321,10 +321,10 @@ function jobCardHTML(j) {
       <div class="job-card-heading">${portalMarkHTML(j)}<h3>${escapeHTML(cleanText(j.title))}</h3></div>
       <div class="job-meta">
         <span class="tag saff">${escapeHTML(cleanText(j.category))}</span>
-        <span class="tag">📍 ${escapeHTML(cleanText(j.state))}</span>
+        <span class="tag tag-soft"><i class="tag-dot" aria-hidden="true"></i>${escapeHTML(cleanText(j.state))}</span>
         ${j.publisher
-          ? `<span class="tag">🔗 From ${escapeHTML(cleanText(j.publisher))}</span><span class="tag">🏢 ${escapeHTML(cleanText(j.organization || j.source))}</span>`
-          : `<span class="tag">🔗 ${escapeHTML(cleanText(j.source))}</span>`}
+          ? `<span class="tag tag-soft">From ${escapeHTML(cleanText(j.publisher))}</span><span class="tag tag-soft"><i class="tag-dot" aria-hidden="true"></i>${escapeHTML(cleanText(j.organization || j.source))}</span>`
+          : `<span class="tag tag-soft"><i class="tag-dot" aria-hidden="true"></i>${escapeHTML(cleanText(j.source))}</span>`}
       </div>
       ${j.openDate ? `<div class="dates"><span>Applications open: <b>${escapeHTML(fmtDate(j.openDate))}</b></span></div>` : ''}
       ${close ? `<div class="dates"><span>Form closes: <b>${escapeHTML(fmtDate(close))}</b></span>${countdownBadge(close)}</div>`
@@ -351,10 +351,10 @@ function announcementCardHTML(item) {
       <div class="job-card-heading">${portalMarkHTML(item)}<h3>${escapeHTML(cleanText(item.title))}</h3></div>
       <div class="job-meta">
         <span class="tag">${escapeHTML(cleanText(item.category))}</span>
-        <span class="tag">📍 ${escapeHTML(cleanText(item.state))}</span>
+        <span class="tag tag-soft"><i class="tag-dot" aria-hidden="true"></i>${escapeHTML(cleanText(item.state))}</span>
         ${item.publisher
-          ? `<span class="tag">🔗 From ${escapeHTML(cleanText(item.publisher))}</span><span class="tag">🏢 ${escapeHTML(cleanText(item.organization || item.source))}</span>`
-          : `<span class="tag">🔗 ${escapeHTML(cleanText(item.source))}</span>`}
+          ? `<span class="tag tag-soft">From ${escapeHTML(cleanText(item.publisher))}</span><span class="tag tag-soft"><i class="tag-dot" aria-hidden="true"></i>${escapeHTML(cleanText(item.organization || item.source))}</span>`
+          : `<span class="tag tag-soft"><i class="tag-dot" aria-hidden="true"></i>${escapeHTML(cleanText(item.source))}</span>`}
       </div>
       ${item.publishedDate ? `<div class="dates"><span>Published: <b>${escapeHTML(fmtDate(item.publishedDate))}</b></span></div>` : ''}
       ${item.resultDate ? `<div class="dates"><span>Result declared: <b>${escapeHTML(fmtDate(item.resultDate))}</b></span></div>` : ''}
