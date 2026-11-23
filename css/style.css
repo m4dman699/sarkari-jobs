@@ -1109,6 +1109,7 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
 }
 
 /* ---------- Split process band (revamped "how it works") ---------- */
+.diagram-band { container-type: inline-size; }
 .diagram-split {
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
@@ -1159,6 +1160,14 @@ section.block.source-section { position: relative; overflow: hidden; padding: 68
 @media (max-width: 900px) {
   .diagram-split,
   .diagram-split--flip { grid-template-columns: 1fr; gap: 22px; }
+  .diagram-split--flip .diagram-frame--side { order: 2; }
+  .diagram-frame--side img { aspect-ratio: 16 / 9; }
+}
+/* Narrow columns (article layouts with a side TOC) stack too — decided by the
+   band's own measured width, not the viewport. */
+@container (max-width: 720px) {
+  .diagram-split,
+  .diagram-split--flip { grid-template-columns: 1fr; gap: 20px; }
   .diagram-split--flip .diagram-frame--side { order: 2; }
   .diagram-frame--side img { aspect-ratio: 16 / 9; }
 }
