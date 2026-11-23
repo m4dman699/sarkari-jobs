@@ -42,8 +42,9 @@ const COMPETITOR_SOURCES = [
     publisher: 'SarkariResult.com',
     sections: [
       { type: 'job', url: 'https://www.sarkariresult.com/latestjob/', max: 350 },
-      { type: 'admit-card', url: 'https://www.sarkariresult.com/admitcard/', max: 100 },
-      { type: 'result', url: 'https://www.sarkariresult.com/result/', max: 100 }
+      { type: 'admit-card', url: 'https://www.sarkariresult.com/admitcard/', max: 250 },
+      { type: 'result', url: 'https://www.sarkariresult.com/result/', max: 250 },
+      { type: 'feed', url: 'https://www.sarkariresult.com/feed/', max: 100 }
     ]
   },
   {
@@ -51,9 +52,11 @@ const COMPETITOR_SOURCES = [
     name: 'FreeJobAlert.com',
     publisher: 'FreeJobAlert',
     sections: [
-      { type: 'job', url: 'https://www.freejobalert.com/government-jobs/', max: 60 },
-      { type: 'admit-card', url: 'https://www.freejobalert.com/admit-card/', max: 15 },
-      { type: 'result', url: 'https://www.freejobalert.com/exam-results/', max: 15 }
+      { type: 'job', url: 'https://www.freejobalert.com/government-jobs/', max: 200 },
+      { type: 'admit-card', url: 'https://www.freejobalert.com/admit-card/', max: 100 },
+      { type: 'result', url: 'https://www.freejobalert.com/exam-results/', max: 100 },
+      { type: 'job', url: 'https://www.freejobalert.com/latest-notifications/', max: 200 },
+      { type: 'feed', url: 'https://www.freejobalert.com/feed/', max: 100 }
     ]
   }
 ];
@@ -93,6 +96,12 @@ function parseDate(text) {
 
 function todayISO() {
   return new Date().toISOString().slice(0, 10);
+}
+
+function parseRssDate(text) {
+  const value = String(text || '');
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString().slice(0, 10);
 }
 
 function normalizeTitle(value) {
@@ -580,6 +589,32 @@ function extractSarkariResultListings($, section) {
   return listings;
 }
 
+function extractFeedListings($, source, section) {
+  const listings = [];
+  $('item').each((_, entry) => {
+    const $item = $(entry);
+    const title = cleanListingTitle(plain($item.find('title').first().text()));
+    const linkRaw = plain($item.find('link').first().text())
+      || plain($item.find('guid').first().text());
+    if (!title || title.length < 12) return;
+    let url;
+    try { url = new URL(linkRaw, section.url); } catch { return; }
+    if (!isCompetitorHost(hostOf(url.href))) return;
+    const type = listingType(title);
+    if (section.type !== 'feed' && type !== section.type) return;
+    const pubRaw = plain($item.find('pubDate').first().text());
+    const publishedDate = pubRaw ? parseRssDate(pubRaw) : null;
+    listings.push({
+      title,
+      url: url.href,
+      type,
+      lastDate: type === 'job' ? lastDateFromListing(title) : null,
+      publishedDate
+    });
+  });
+  return listings;
+}
+
 function extractFreeJobAlertListings($, section) {
   const listings = [];
   const selector = section.type === 'job'
@@ -680,28 +715,30 @@ function priorityFor(target) {
     if (target.item.publisher === 'SarkariResult.com.cm') return 80;
     return 50;
   }
-  if (target.section.type === 'job') return target.listing.lastDate ? 70 : 60;
+  const listingType = target.recordType || target.section.type;
+  if (listingType === 'job') return target.listing.lastDate ? 70 : 60;
   return 40;
 }
 
-function createPlaceholder(listing, source, section) {
+function createPlaceholder(listing, source, section, type = section.type) {
   const id = `competitor-${source.id}-${crypto.createHash('sha256').update(listing.url).digest('hex').slice(0, 16)}`;
   const item = {
     id,
-    type: section.type,
+    type,
     title: listing.title,
     source: `${source.name} listing (recruiting authority named in notice)`,
     publisher: source.publisher,
-    category: section.type === 'job' ? 'Government jobs' : section.type === 'admit-card' ? 'Admit cards' : 'Results',
+    category: type === 'job' ? 'Government jobs' : type === 'admit-card' ? 'Admit cards' : 'Results',
     state: inferState(listing.title),
     link: null,
     sourceListingUrl: listing.url,
     discoveredVia: section.url,
     factSource: `${source.name} listing and linked notice; verify with the recruiting authority`,
     factCheckedAt: todayISO(),
-    ...(listing.lastDate ? { lastDate: listing.lastDate } : {})
+    ...(listing.lastDate ? { lastDate: listing.lastDate } : {}),
+    ...(listing.publishedDate ? { publishedDate: listing.publishedDate } : {})
   };
-  if (section.type === 'job') classifyJob(item);
+  if (type === 'job') classifyJob(item);
   return item;
 }
 
@@ -925,9 +962,11 @@ async function main() {
     for (const section of source.sections) {
       try {
         const $ = cheerio.load(await fetchHTML(section.url, 15000));
-        const extracted = source.id === 'sarkariresult'
-          ? extractSarkariResultListings($, section)
-          : extractFreeJobAlertListings($, section);
+        const extracted = section.type === 'feed'
+          ? extractFeedListings($, source, section)
+          : source.id === 'sarkariresult'
+            ? extractSarkariResultListings($, section)
+            : extractFreeJobAlertListings($, section);
         const seen = new Set();
         const listings = extracted
           .filter(listing => !seen.has(listing.url) && seen.add(listing.url))
@@ -935,7 +974,11 @@ async function main() {
         console.log(`${source.name} ${section.type}: parsed ${extracted.length} links, retained ${listings.length}`);
 
         for (const listing of listings) {
-          const match = findMatch(listing.title, section.type, index);
+          // Feed sections carry mixed types; every downstream decision (match,
+          // placeholder, filters) keys on the listing's own type, never on the
+          // section bucket.
+          const recordType = listing.type || section.type;
+          const match = findMatch(listing.title, recordType, index);
           if (match) {
             const item = match.entry.item;
             // The listing matched a record created earlier in this same pass
@@ -958,10 +1001,14 @@ async function main() {
               item.lastDate = listing.lastDate;
               filledIds.add(item.id);
             }
+            if (listing.publishedDate && !item.publishedDate) {
+              item.publishedDate = listing.publishedDate;
+              filledIds.add(item.id);
+            }
 
             if (needsDetails(item)) {
               const key = `existing:${item.id}`;
-              const candidate = { kind: 'existing', item, listing, source, section, score: match.score };
+              const candidate = { kind: 'existing', item, listing, source, section, score: match.score, recordType };
               candidate.priority = priorityFor(candidate);
               if (!detailTargets.has(key) || detailTargets.get(key).priority < candidate.priority) {
                 detailTargets.set(key, candidate);
@@ -972,12 +1019,12 @@ async function main() {
 
           // A listing whose closing date has already passed cannot become a new
           // open job, but it was still available above to fill an existing record.
-          if (section.type === 'job' && listing.lastDate && listing.lastDate < today) {
+          if (recordType === 'job' && listing.lastDate && listing.lastDate < today) {
             skippedClosed++;
             continue;
           }
 
-          const item = createPlaceholder(listing, source, section);
+          const item = createPlaceholder(listing, source, section, recordType);
           if (byId.has(item.id)) {
             if (process.env.DEBUG_COMPETITOR) {
               console.log(`COLLISION ${source.name} ${section.type}: id exists as ${byId.get(item.id).type || 'job'} / ${(byId.get(item.id).title || '').slice(0, 60)}  vs  new ${(listing.title || '').slice(0, 60)}`);
@@ -992,7 +1039,7 @@ async function main() {
             }
             byId.set(item.id, fresh);
             index = index.map(entry => (entry.item.id === fresh.id ? buildEntry(fresh) : entry));
-            const candidate = { kind: 'existing', item: fresh, listing, source, section, score: 0.95 };
+            const candidate = { kind: 'existing', item: fresh, listing, source, section, score: 0.95, recordType };
             candidate.priority = priorityFor(candidate);
             detailTargets.set(`existing:${fresh.id}`, candidate);
             continue;
@@ -1000,7 +1047,7 @@ async function main() {
           byId.set(item.id, item);
           index.push(buildEntry(item));
           plannedIds.add(item.id);
-          const candidate = { kind: 'new', item, listing, source, section, score: 1 };
+          const candidate = { kind: 'new', item, listing, source, section, score: 1, recordType };
           candidate.priority = priorityFor(candidate);
           detailTargets.set(`new:${item.id}`, candidate);
         }
@@ -1029,7 +1076,7 @@ async function main() {
       }
       detailsFetched++;
       try {
-        const details = await enrichListing({ title: target.listing.title, link: target.listing.url, type: target.section.type });
+        const details = await enrichListing({ title: target.listing.title, link: target.listing.url, type: target.recordType || target.section.type });
         cache[target.listing.url] = { attemptedAt: new Date().toISOString(), parser: 'v2', details };
         target.details = details;
       } catch (error) {
@@ -1144,6 +1191,7 @@ module.exports = {
   parseDetail,
   parseDate,
   extractMilestones,
+  extractFeedListings,
   normalizeTitle,
   isNonRecruitmentPage,
   cleanListingTitle,
