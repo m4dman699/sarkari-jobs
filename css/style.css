@@ -774,6 +774,48 @@ section.block { padding: 78px 0; }
 /* Tinted soft chip for secondary facts: state, source, organisation. */
 .tag.tag-soft { background: #f4f7fc; color: #5a6b85; }
 .tag-dot { width: 6px; height: 6px; border-radius: 50%; background: #97a9c7; flex-shrink: 0; }
+
+/* Chip rail above the homepage jobs grid: one scrollable row of category
+   chips with live feed counts — instant filtering, no page jump. */
+.cat-chip-rail {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 2px 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #c8d4e6 transparent;
+  margin: 14px 0 6px;
+}
+.cat-chip-rail::-webkit-scrollbar { height: 6px; }
+.cat-chip-rail::-webkit-scrollbar-thumb { background: #c8d4e6; border-radius: 999px; }
+.cat-chip-rail .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  border: 1px solid #e2e9f3;
+  border-radius: 999px;
+  background: #fff;
+  color: #41547a;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 700;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: background .16s, border-color .16s, color .16s, transform .16s;
+}
+.cat-chip-rail .chip b {
+  font-weight: 800;
+  font-size: .72rem;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #eef3fb;
+  color: #5a6b85;
+}
+.cat-chip-rail .chip:hover { border-color: #f3c98e; background: #fff9f0; transform: translateY(-1px); }
+.cat-chip-rail .chip.is-active { background: #0a1128; border-color: #0a1128; color: #fff; }
+.cat-chip-rail .chip.is-active b { background: rgba(255, 255, 255, .16); color: #ffc47b; }
+.cat-chip-rail .chip:focus-visible { outline: 3px solid rgba(255, 153, 51, .65); outline-offset: 2px; }
 .dates {
   display: flex;
   justify-content: space-between;

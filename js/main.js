@@ -462,6 +462,47 @@ function renderJobList(list, gridId) {
 let allJobs = [];
 let searchQuery = '';
 let showAllJobs = false;
+// Chip-rail category filter (homepage jobs grid). Empty string = All.
+let categoryFilter = '';
+const categoryFilterLabel = () => (categoryFilter || '').replace(/\b\w/g, c => c.toUpperCase()) || 'All';
+
+function renderCategoryChips(jobs = []) {
+  const rail = document.getElementById('cat-chip-rail');
+  if (!rail) return;
+  const counts = new Map();
+  jobs.forEach(job => {
+    if (job.type && job.type !== 'job') return;
+    const name = String(job.category || '').toLowerCase();
+    if (!name) return;
+    counts.set(name, (counts.get(name) || 0) + 1);
+  });
+  const top = CATEGORIES
+    .map(c => ({ name: c.name.toLowerCase(), label: c.name, count: counts.get(c.name.toLowerCase()) || 0 }))
+    .filter(c => c.count > 0)
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 9);
+  const chip = (name, label, count) => `
+    <button class="chip${name === categoryFilter ? ' is-active' : ''}" type="button"
+      data-category="${escapeHTML(name)}" aria-pressed="${name === categoryFilter}">
+      ${escapeHTML(label)} <b>${count.toLocaleString('en-IN')}</b>
+    </button>`;
+  rail.innerHTML = chip('', 'All', jobs.filter(job => !job.type || job.type === 'job').length)
+    + top.map(c => chip(c.name, c.label, c.count)).join('');
+}
+
+function initCategoryChips() {
+  const rail = document.getElementById('cat-chip-rail');
+  if (!rail) return;
+  rail.addEventListener('click', event => {
+    const chip = event.target.closest('.chip');
+    if (!chip) return;
+    const name = chip.dataset.category || '';
+    categoryFilter = name === categoryFilter ? '' : name;
+    renderCategoryChips(allJobs);
+    displayJobs();
+    document.getElementById('jobs-heading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
 
 function setJobsMessage(message) {
   const grid = document.getElementById('jobs-grid');
@@ -493,10 +534,12 @@ function displayJobs() {
   if (!grid) return;
 
   const query = searchQuery.trim();
-  const jobItems = allJobs.filter(job => !job.type || job.type === 'job');
+  const category = categoryFilter.trim();
+  let jobItems = allJobs.filter(job => !job.type || job.type === 'job');
+  if (category) jobItems = jobItems.filter(job => String(job.category || '').toLowerCase() === category);
   let visible;
   if (query) {
-    visible = matchingJobs(query);
+    visible = matchingJobs(query).filter(job => !category || String(job.category || '').toLowerCase() === category);
     if (heading) heading.textContent = `Search results for “${query}”`;
     if (status) status.textContent = `${visible.length} matching notifications.`;
   } else {
@@ -509,8 +552,12 @@ function displayJobs() {
       .sort((a, b) => String(b.lastDate).localeCompare(String(a.lastDate)));
     const available = [...validDated, ...undated];
     visible = showAllJobs ? [...available, ...expired] : available.slice(0, 9);
-    if (heading) heading.textContent = showAllJobs ? 'All available notifications' : 'Available notifications';
-    if (status) status.textContent = `${jobItems.length} job notifications in the current feed.`;
+    if (heading) heading.textContent = category
+      ? `${categoryFilterLabel()} notifications`
+      : showAllJobs ? 'All available notifications' : 'Available notifications';
+    if (status) status.textContent = category
+      ? `${jobItems.length} ${categoryFilterLabel().toLowerCase()} in the current feed.`
+      : `${jobItems.length} job notifications in the current feed.`;
   }
 
   if (more) {
@@ -519,7 +566,7 @@ function displayJobs() {
   }
 
   if (!visible.length) {
-    setJobsMessage(query ? 'No notifications match that search.' : 'No notifications are available in the feed.');
+    setJobsMessage(query ? 'No notifications match that search.' : category ? `No open notifications in ${categoryFilterLabel()} right now — check back after the next feed update.` : 'No notifications are available in the feed.');
     return;
   }
   renderJobList(visible, 'jobs-grid');
@@ -594,6 +641,8 @@ function renderJobs() {
       const status = document.getElementById('jobs-status');
       if (status) status.textContent = `${jobCount.toLocaleString('en-IN')} jobs · ${allJobs.length - jobCount} results/admit cards · ${feedUpdatedLabel({ generatedAt: payload.jobsGeneratedAt || payload.generatedAt })}${payload.partial ? ' Some portals could not be reached this run.' : ''}`;
       renderCategories(allJobs);
+      renderCategoryChips(allJobs);
+      initCategoryChips();
       displayJobs();
       renderAnnouncementSections(allJobs, payload.generatedAt, payload.partial);
       renderTicker(allJobs, payload.jobsGeneratedAt || payload.generatedAt);
