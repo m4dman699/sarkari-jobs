@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-11-23T10:49:47.261Z",
+  "generatedAt": "2026-11-24T12:32:37.782Z",
   "total": 2,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wd2QxMjEwMjAyNnJlYy5wZGY",
-      "type": "job",
-      "title": "Chief Secretariat (Works) - Filling up of one vacant post of Chief Engineer in Public Works Department, Puducherry which is classified as General Central Services - Group 'A' - Gaz",
-      "source": "Government of Puducherry",
-      "category": "State PSC",
-      "state": "Puducherry",
-      "link": "https://py.gov.in/sites/default/files/pwd12102026rec.pdf",
-      "openDate": null,
-      "lastDate": "2026-11-22",
-      "examDate": null,
-      "publishedDate": "2026-10-12"
-    },
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wYWphbmNvYTE2MTEyMDI2cm4ucGRm",
       "type": "job",
@@ -27,6 +14,43 @@
       "lastDate": "2026-11-26",
       "examDate": null,
       "publishedDate": "2026-11-16"
+    },
+    {
+      "id": "competitor-freejobalert-d2072d2ea40f941a",
+      "type": "job",
+      "title": "Pondicherry University Guest Faculty (Health and Wellness) Recruitment 2026 – Apply Online",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Puducherry",
+      "link": "https://www.pondiuni.edu.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/pondicherry-university-guest-faculty-health-recruitment-2026-3083724",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "organization": "Pondicherry University, Karaikal Campus (a Central University)",
+      "lastDate": "2026-11-30",
+      "vacancies": "1",
+      "notificationLink": "https://www.pondiuni.edu.in/wp-content/uploads/2026/11/NEPUG-GUESTFACULTYPUKaraikalCampus23112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.pondiuni.edu.in/wp-content/uploads/2026/11/NEPUG-GUESTFACULTYPUKaraikalCampus23112026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.pondiuni.edu.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.pondiuni.edu.in",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026, 5:00 p.m."
+        }
+      ]
     }
   ]
 }

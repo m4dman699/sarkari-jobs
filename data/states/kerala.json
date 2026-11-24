@@ -1,5 +1,41 @@
 {
-  "generatedAt": "2026-11-23T10:49:47.261Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-24T12:32:37.782Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-freejobalert-277e99123a3d283c",
+      "type": "job",
+      "title": "University of Kerala Guest Faculty Recruitment 2026 – Walkin",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Kerala",
+      "link": "https://keralauniversity.ac.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/university-of-kerala-guest-faculty-recruitment-2026-3083760",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "organization": "University of Kerala, Department of German",
+      "notificationLink": "https://keralauniversity.ac.in/pdfs/jobNoti/Notification1795416952.pdf",
+      "officialLinks": [
+        {
+          "url": "https://keralauniversity.ac.in/pdfs/jobNoti/Notification1795416952.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://keralauniversity.ac.in",
+          "label": "University of Kerala Official Website"
+        }
+      ],
+      "officialLink": "https://keralauniversity.ac.in",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-07",
+          "dateText": "07.12.2026"
+        }
+      ]
+    }
+  ]
 }

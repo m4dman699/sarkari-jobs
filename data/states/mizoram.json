@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T10:49:47.261Z",
-  "total": 1,
+  "generatedAt": "2026-11-24T12:32:37.782Z",
+  "total": 2,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9tcHNjLm1pem9yYW0uZ292LmluL2NhdGVnb3J5L25vdGlmaWNhdGlvbnM",
@@ -14,6 +14,53 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-cce4f95352fe9795",
+      "type": "job",
+      "title": "Mizoram Law and Judicial Department Deputy Secretary Recruitment 2026 – Apply Offline",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Judiciary",
+      "state": "Mizoram",
+      "link": "https://landj.mizoram.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/mizoram-law-and-judicial-department-deputy-secretary-recruitment-2026-3083795",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "organization": "Law and Judicial Department, Government of Mizoram",
+      "vacancies": "1",
+      "eligibility": "Member of the Judicial Service, IAS/IPS or any State service cadre of appropriate grade with at least a Bachelor's Degree in Law",
+      "notificationLink": "https://landj.mizoram.gov.in/uploads/attachments/2026/11/e764dbe77a25bca2a422f9fd033d5859/posts-170-vacancy-circular.pdf",
+      "officialLinks": [
+        {
+          "url": "https://landj.mizoram.gov.in/uploads/attachments/2026/11/e764dbe77a25bca2a422f9fd033d5859/posts-170-vacancy-circular.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://landj.mizoram.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://landj.mizoram.gov.in/",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026"
+        },
+        {
+          "label": "Date of Vacancy Circular",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Last date for submission of application",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026"
+        }
+      ]
     }
   ]
 }

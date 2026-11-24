@@ -1,7 +1,55 @@
 {
-  "generatedAt": "2026-11-23T10:49:47.261Z",
-  "total": 1,
+  "generatedAt": "2026-11-24T12:32:37.782Z",
+  "total": 2,
   "jobs": [
+    {
+      "id": "competitor-freejobalert-60834b1b1e8d8e22",
+      "type": "job",
+      "title": "Uttarakhand High Court Recruitment 2026 – Apply Offline for 18 Counsellor, General Counsellor and More Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Judiciary",
+      "state": "Uttarakhand",
+      "link": "https://highcourtofuttarakhand.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/uttarakhand-high-court-recruitment-2026-counsellor-3083583",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-23",
+      "publishedDate": "2026-11-23",
+      "organization": "High Court of Uttarakhand at Nainital",
+      "lastDate": "2026-12-11",
+      "vacancies": "18",
+      "eligibility": "Therapy certificate, or Psychologist/Psychiatrist, or MSW, or 10 years of combined experience (post-wise details below)",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3bc7f621451b4f5df308a8e098112185d/uploads/2026/11/202611211444857266.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3bc7f621451b4f5df308a8e098112185d/uploads/2026/11/202611211444857266.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://highcourtofuttarakhand.gov.in",
+          "label": "High Court of Uttarakhand Official Website"
+        }
+      ],
+      "officialLink": "https://highcourtofuttarakhand.gov.in",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-11",
+          "dateText": "11.12.2026 till 05:00 PM (applications received after the last date and time are not enter"
+        },
+        {
+          "label": "Date of advertisement",
+          "date": "2026-11-21",
+          "dateText": "21.11.2026"
+        },
+        {
+          "label": "Last date for submission of applications",
+          "date": "2026-12-11",
+          "dateText": "11.12.2026 till 05:00 PM"
+        }
+      ]
+    },
     {
       "id": "competitor-sarkariresult-753ca2c63adc971f",
       "type": "job",

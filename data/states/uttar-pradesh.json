@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-23T10:49:47.261Z",
-  "total": 16,
+  "generatedAt": "2026-11-24T12:32:37.782Z",
+  "total": 15,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -27,72 +27,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-52e3e1e350d0d2f7",
-      "type": "job",
-      "title": "UPESSC UP Headmaster Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://apply.upessc.org/",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-headmaster-09-2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-24",
-      "lastDate": "2026-11-22",
-      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
-      "publishedDate": "2026-10-23",
-      "openDate": "2026-10-23",
-      "examDate": "2027-01-07",
-      "vacancies": "1172",
-      "ageLimit": "30–62 years",
-      "eligibility": "Post Name Total Post UPESS UP Headmaster Eligibility 2026 Headmaster (Balak) 1037 Master Degree with Minimum 50% Marks. B.Ed / B.PED Exam Passed 4 Year Experience. Headmaster (Balika) 135",
-      "applicationFee": "General / OBC / EWS: 1500/- SC / ST : 1500/- PH (Divyang) : 1500/-",
-      "notificationLink": "https://doc.sarkariresults.org.in/UPESSC_Head_Master_Notification_2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://apply.upessc.org/",
-          "label": "Apply Online (OTR)"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/UPESSC_Head_Master_Notification_2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://upessc.up.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://apply.upessc.org/",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-23",
-          "dateText": "23 October 2026 | 09:33 PM"
-        },
-        {
-          "label": "Last Date for Registration",
-          "date": "2026-11-22",
-          "dateText": "22/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-22",
-          "dateText": "22/11/2026"
-        },
-        {
-          "label": "Last Date Correction",
-          "date": "2026-11-25",
-          "dateText": "25/11/2026"
-        },
-        {
-          "label": "UPESSC Headmaster 2026 Exam Date",
-          "date": "2027-01-07",
-          "dateText": "07/01/2027"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-5f851aa971f1ad65",
