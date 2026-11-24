@@ -54,7 +54,7 @@
   <!-- The hero background is the LCP image; make it discoverable in the initial
        HTML at high priority instead of waiting for CSS to request it. -->
   <link rel="preload" as="image" href="assets/realistic/hero-aspirants.webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=20261125-steps">
+  <link rel="stylesheet" href="css/style.css?v=20261125-complete">
   <link rel="stylesheet" href="css/ncs-spotlight.css?v=20261123-ncs-tidy">
   <script src="js/ncs-spotlight.js?v=20261122-career-tools" defer></script>
 </head>
@@ -87,23 +87,14 @@
 
   <main id="main-content">
   <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/realistic/hero-aspirants.webp">
-        <source src="assets/motion/hero-drift.mp4" type="video/mp4">
-        <source src="assets/motion/hero-drift.webm" type="video/webm">
-      </video>
-    </div>
+  <section class="hero hero--editorial">
     <div class="container hero-grid">
-      <div class="flag-stage reveal d2" aria-hidden="true">
-        <div class="wave-flag" role="img" aria-label="3D waving Indian flag"></div>
-      </div>
       <div class="hero-copy">
-        <h1 class="reveal d2">Government job <span class="h1-chip" aria-hidden="true"><img src="assets/portal-logos/rbi.png" alt="" loading="eager" decoding="async"></span> notices, checked <span class="h1-chip" aria-hidden="true"><img src="assets/portal-logos/mha.png" alt="" loading="eager" decoding="async"></span> at the source</h1>
+        <p class="hero-kicker"><span aria-hidden="true"></span> Independent tracker · official sources</p>
+        <h1 class="reveal d2">Government job notices, <em>checked at the source.</em></h1>
         <p class="sub reveal d3">
-          We read the recruiting authority's own notification, note the dates and eligibility,
-          and keep the original link on every listing. Central, state and PSU jobs across India —
-          updated as the feed changes.
+          Find current jobs, results and admit cards. Every listing shows its source,
+          key dates and a direct link to the recruiting authority's notice.
         </p>
         <form class="search-bar reveal d4" id="job-search-form" role="search">
           <div class="search-segments" role="group" aria-label="Search across the tracker">
@@ -127,6 +118,10 @@
           <a href="guides/">Sector guides</a>
         </p>
       </div>
+      <figure class="hero-art reveal d3">
+        <img src="assets/realistic/hero-aspirants.webp" alt="Indian candidates preparing for government recruitment exams together at a study table" width="1360" height="768" fetchpriority="high" decoding="async">
+        <figcaption><span class="hero-art-mark" aria-hidden="true">✓</span><span><b>Source checked</b><small>Dates and links trace back to the recruiting authority</small></span></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -565,6 +560,6 @@
   </footer>
 
   <script src="js/states-data.js"></script>
-  <script src="js/main.js?v=20261124-chips"></script>
+  <script src="js/main.js?v=20261125-complete"></script>
 </body>
 </html>

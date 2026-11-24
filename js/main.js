@@ -165,6 +165,19 @@ function initMap() {
 function renderCategories(jobs = []) {
   const grid = document.getElementById('cat-grid');
   if (!grid) return;
+  const categoryArt = {
+    upsc: 'upsc',
+    ssc: 'ssc',
+    banking: 'banking',
+    railways: 'railways',
+    defence: 'defence',
+    police: 'police',
+    teaching: 'teaching',
+    psu: 'it-technical',
+    judiciary: 'judiciary',
+    'state psc': 'upsc',
+    central: 'employment'
+  };
   const counts = new Map();
   jobs.forEach(job => {
     if (job.type && job.type !== 'job') return;
@@ -173,6 +186,7 @@ function renderCategories(jobs = []) {
   });
   grid.innerHTML = CATEGORIES.map(c => `
     <a class="cat-card" href="category.html#${encodeURIComponent(c.name.toLowerCase())}">
+      <span class="cat-card-art" aria-hidden="true"><img src="assets/sector-art/${categoryArt[c.name.toLowerCase()] || 'employment'}.webp" alt="" loading="lazy" decoding="async"></span>
       <div class="ico">${categoryIconHTML(c.name)}</div>
       <h3>${escapeHTML(c.name)}</h3>
       <p>${escapeHTML(c.desc)}</p>

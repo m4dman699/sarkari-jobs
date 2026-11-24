@@ -52,16 +52,6 @@ function renderStatePage() {
   document.getElementById('state-desc').textContent = s.desc ||
     `Recruitment notifications from ${s.psc} and state-level boards, with available form deadlines, exam dates and official links.`;
 
-  // Hero image if generated art exists for this state (assets/states/<slug>.png);
-  // otherwise the animated tricolor gradient stays as the hero.
-  const img = new Image();
-  img.onload = () => {
-    const bg = document.getElementById('hero-bg');
-    bg.style.backgroundImage = `url('assets/states/${s.slug}.png')`;
-    bg.classList.add('loaded');
-  };
-  img.src = `assets/states/${s.slug}.png`;
-
   // Priority: per-state scraped file → filter main feed by this state →
   // clearly-labelled central jobs → curated samples. Never mismatched filler.
   fetch(`data/states/${s.slug}.json`)
