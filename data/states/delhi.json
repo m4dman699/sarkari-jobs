@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
-  "total": 12,
+  "generatedAt": "2026-11-25T11:21:02.669Z",
+  "total": 14,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vd2ViL25vdGlmaWNhdGlvbnMtcHJhY3RpY2UtZGlyZWN0aW9ucw",
@@ -320,6 +320,119 @@
           "label": "Pay Exam Fee Last Date",
           "date": "2026-12-11",
           "dateText": "11/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-ba34245fd300de81",
+      "type": "job",
+      "title": "Delhi Nursery Admission 2027-28 - Direct Link to Apply Online @ edudel.nic.in",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Delhi",
+      "link": "https://www.edudel.nic.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/delhi-nursery-admission-2027-28-direct-link-to-apply-online-3084204",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-11-24",
+      "organization": "Delhi Nursery Admission 2027-28 - Direct Link to",
+      "openDate": "2026-12-01",
+      "lastDate": "2026-12-28",
+      "officialLinks": [
+        {
+          "url": "https://www.edudel.nic.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.edudel.nic.in/",
+      "milestones": [
+        {
+          "label": "Official Notification Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-28",
+          "dateText": "28 December 2026"
+        },
+        {
+          "label": "Age Calculation Date",
+          "date": "2027-03-31",
+          "dateText": "31 March 2027"
+        },
+        {
+          "label": "Last Date for Schools to Upload Admission Criteria and Seat Details",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Application Forms Available",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Last Date to Submit Application Forms",
+          "date": "2026-12-28",
+          "dateText": "28 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-1d7137c9098acbb1",
+      "type": "job",
+      "title": "NIELIT Delhi Recruitment 2026 – Apply Online for Data Analyst, Cloud Administrator Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Delhi",
+      "link": "https://www.nielit.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nielit-delhi-recruitment-2026-apply-online-for-data-analyst-cloud-administrator-posts-3084177",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-11-24",
+      "organization": "National Institute of Electronics and Information Technology (NIELIT Delhi), New Delhi, Maharashtra",
+      "eligibility": "B.E/B.Tech, M.Tech, MCA, PG Degree in Statistics/Mathematics/Economics",
+      "notificationLink": "https://www.nielit.gov.in/blog?blogName=Empanelment-of-IT-Resource-Persons-Data-Analyst-and-Cloud-Administrator-Advertisement-vide-no-07-354-2026-NDL-FM-to-be-10958&center=DEL",
+      "officialLinks": [
+        {
+          "url": "https://www.nielit.gov.in/blog?blogName=Empanelment-of-IT-Resource-Persons-Data-Analyst-and-Cloud-Administrator-Advertisement-vide-no-07-354-2026-NDL-FM-to-be-10958&center=DEL",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.nielit.gov.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://www.nielit.gov.in/",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
+        },
+        {
+          "label": "Online Registration Start Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Online Registration Last Date",
+          "date": "2026-12-06",
+          "dateText": "6 December 2026"
         }
       ]
     }

@@ -1,5 +1,59 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-25T11:21:02.669Z",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "competitor-freejobalert-89919da80085447c",
+      "type": "job",
+      "title": "NHM Meghalaya Adolescent Health Counsellor Recruitment 2026 – Apply Online for 55 Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Meghalaya",
+      "link": "https://nhmmeghalaya.nic.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nhm-meghalaya-adolescent-health-counsellor-recruitment-2026-3084086",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-11-24",
+      "organization": "NHM Meghalaya Adolescent Health Counsellor",
+      "lastDate": "2026-11-30",
+      "vacancies": "55",
+      "eligibility": "Clinical Psychologist, or MSc/MA in Psychology, Masters in Social Work with specialization in counselling from a recognized institution",
+      "notificationLink": "https://nhmmeghalaya.nic.in/recruitment/DHS-MCH&FW-NHM-HRH-_COM-94-Pt.2-2021-22_(XLII).pdf",
+      "officialLinks": [
+        {
+          "url": "https://nhmmeghalaya.nic.in/recruitment/DHS-MCH&FW-NHM-HRH-_COM-94-Pt.2-2021-22_(XLII).pdf",
+          "label": "NHM Meghalaya Official Notification PDF"
+        },
+        {
+          "url": "https://nhmmeghalaya.nic.in",
+          "label": "NHM Meghalaya Official Website"
+        }
+      ],
+      "officialLink": "https://nhmmeghalaya.nic.in",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-21",
+          "dateText": "21.11.2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-30",
+          "dateText": "5:00 PM, 30 November 2026"
+        },
+        {
+          "label": "Advertisement dated",
+          "date": "2026-11-21",
+          "dateText": "21.11.2026"
+        },
+        {
+          "label": "Last date to submit the Google form",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026, 5:00 PM"
+        }
+      ]
+    }
+  ]
 }

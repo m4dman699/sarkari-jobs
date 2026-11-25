@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
-  "total": 7,
+  "generatedAt": "2026-11-25T11:21:02.669Z",
+  "total": 8,
   "jobs": [
     {
       "id": "aHR0cHM6Ly90cHNjLnRyaXB1cmEuZ292LmluL3NpdGVzL2RlZmF1bHQvZmlsZXMvTm90aWZfY2FuY2VsX0Rpcl9EeS5EaXJfMTkxMTI2LnBkZg",
@@ -92,6 +92,47 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-bc8270097bb541c0",
+      "type": "job",
+      "title": "Tripura High Court Group D Exam Pattern 2026 Revised - Check MCQ Format for 13 December Written Exam",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Judiciary",
+      "state": "Tripura",
+      "link": "https://thc.tripura.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/tripura-high-court-group-d-exam-pattern-revised-2026-3084138",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-11-24",
+      "organization": "High Court of Tripura, Agartala",
+      "examDate": "2026-12-13",
+      "notificationLink": "https://thc.tripura.gov.in/page/Noticedettc.aspx?NoticeId=26858",
+      "officialLinks": [
+        {
+          "url": "https://thc.tripura.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://thc.tripura.gov.in/page/Noticedettc.aspx?NoticeId=26858",
+          "label": "Group D Exam Pattern Change Notification PDF"
+        }
+      ],
+      "officialLink": "https://thc.tripura.gov.in/",
+      "milestones": [
+        {
+          "label": "Written Exam Date",
+          "date": "2026-12-13",
+          "dateText": "13.12.2026"
+        },
+        {
+          "label": "Group-D Written Examination",
+          "date": "2026-12-13",
+          "dateText": "13.12.2026"
+        }
+      ]
     }
   ]
 }

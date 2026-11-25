@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
-  "total": 15,
+  "generatedAt": "2026-11-25T11:21:02.669Z",
+  "total": 14,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -27,70 +27,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-5f851aa971f1ad65",
-      "type": "job",
-      "title": "UPESSC UP TGT Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Teaching",
-      "state": "Uttar Pradesh",
-      "link": "https://apply.upessc.org/",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-tgt-07-2026/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-10-24",
-      "lastDate": "2026-11-23",
-      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
-      "publishedDate": "2026-10-23",
-      "openDate": "2026-10-24",
-      "vacancies": "17735",
-      "ageLimit": "21–62 years",
-      "eligibility": "Post Name General EWS OBC SC ST Total UPESS UP TGT Eligibility 2026 Trained Graduate Teacher TGT (Balak) 6057 2660 4069 3394 13 16193 Bachelor / Master Degree with Related Subject. B.Ed Exam Passed Class 6-8 TET Exam Passed For Subject Wise Eligibility Details Read the Notification. Trained Graduate Teacher TGT (Balika) 647 222 369 304 0 1542 UP TGT Teacher Online Form 2026 : Subject Wise Vacancy Details Subject Name Varg General EWS OBC SC ST Total Hindi Balak 961 477 566 531 04 2539 Balika 115",
-      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
-      "notificationLink": "https://doc.sarkariresults.org.in/UPESSC_TGT_NOtification_2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://apply.upessc.org/",
-          "label": "Apply Online (OTR)"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/UPESSC_TGT_NOtification_2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://upessc.up.gov.in/",
-          "label": "Official Website"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/UPESSC_TGT_Subject_Wise_Eligibility_2026.pdf",
-          "label": "Subject Wise Eligibility Details"
-        }
-      ],
-      "officialLink": "https://apply.upessc.org/",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-23",
-          "dateText": "23 October 2026 | 09:00 PM"
-        },
-        {
-          "label": "Last Date for Registration",
-          "date": "2026-11-23",
-          "dateText": "23/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-23",
-          "dateText": "23/11/2026"
-        },
-        {
-          "label": "Last Date Correction",
-          "date": "2026-11-26",
-          "dateText": "26/11/2026"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-e01067924b3bda69",

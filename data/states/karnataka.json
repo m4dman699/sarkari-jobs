@@ -1,5 +1,194 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
-  "total": 0,
-  "jobs": []
+  "generatedAt": "2026-11-25T11:21:02.669Z",
+  "total": 2,
+  "jobs": [
+    {
+      "id": "competitor-freejobalert-d415966b216315dd",
+      "type": "job",
+      "title": "KEA FDA SDA Recruitment 2026 Notification Out - Apply Online for 5,431 Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Karnataka",
+      "link": "https://cetonline.karnataka.gov.in/kea/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/kea-fda-sda-recruitment-2026-3077035",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-10-29",
+      "organization": "Karnataka Examinations Authority (KEA)",
+      "openDate": "2026-10-30",
+      "lastDate": "2026-11-30",
+      "vacancies": "5,431",
+      "ageLimit": "Category-wise Upper Age Limit: 40–45 Years",
+      "eligibility": "Second PUC / Graduation / Relevant Specialised Qualification",
+      "applicationFee": "₹750",
+      "notificationLink": "https://cetonline.karnataka.gov.in/keawebentry456/gpcfdasdarpc2026/RPC_FDAenglish.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/keawebentry456/gpcfdasdarpc2026/RPC_FDAenglish.pdf",
+          "label": "RPC Degree-Level Notification - 2,163 Posts"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/keawebentry456/gpcfdasdarpc2026/RPC_SDAenglish.pdf",
+          "label": "RPC PUC-Level Notification - 2,070 Posts"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/keawebentry456/gpcfdasdakk2026/KK_FDAenglish.pdf",
+          "label": "Kalyana Karnataka Degree-Level Notification - 563 Posts"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/keawebentry456/gpcfdasdakk2026/KK_SDAenglish.pdf",
+          "label": "Kalyana Karnataka PUC-Level Notification - 635 Posts"
+        }
+      ],
+      "officialLink": "https://cetonline.karnataka.gov.in/kea/",
+      "milestones": [
+        {
+          "label": "Advertisement Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-10-29",
+          "dateText": "29 October 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-10-30",
+          "dateText": "30 October 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "KK FDA Examination",
+          "date": "2027-01-09",
+          "dateText": "09 January 2027"
+        },
+        {
+          "label": "RPC FDA Examination",
+          "date": "2027-01-10",
+          "dateText": "10 January 2027"
+        },
+        {
+          "label": "KK SDA Examination",
+          "date": "2027-01-16",
+          "dateText": "16 January 2027"
+        },
+        {
+          "label": "RPC SDA Examination",
+          "date": "2027-01-17",
+          "dateText": "17 January 2027"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-71bbc9f37d5141b7",
+      "type": "job",
+      "title": "Karnataka High Court Civil Judge Recruitment 2026 - Apply Online for 91 Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Judiciary",
+      "state": "Karnataka",
+      "link": "https://judiciary.karnataka.gov.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/karnataka-high-court-civil-judge-recruitment-2026-3084099",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-11-23",
+      "organization": "Karnataka High Court Civil Judge",
+      "openDate": "2026-11-26",
+      "lastDate": "2026-12-25",
+      "vacancies": "91",
+      "eligibility": "Degree in Law (LLB) from a Recognised Indian University",
+      "applicationFee": "26 December 2026",
+      "notificationLink": "https://judiciary.karnataka.gov.in/common_folder/notification//HCRB_9_2026_SUP_SUPPLEMENTARY_NOTIFICATION_23112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://judiciary.karnataka.gov.in/common_folder/notification//HCRB_9_2026_SUP_SUPPLEMENTARY_NOTIFICATION_23112026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://judiciary.karnataka.gov.in/",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://judiciary.karnataka.gov.in/",
+      "milestones": [
+        {
+          "label": "Supplementary Notification Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Earlier Notification Date",
+          "date": "2026-04-16",
+          "dateText": "16 April 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
+        },
+        {
+          "label": "Last Date for Fee Payment",
+          "date": "2026-12-26",
+          "dateText": "26 December 2026"
+        },
+        {
+          "label": "Supplementary Notification Release Date",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date to Upload Documents",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
+        },
+        {
+          "label": "Last Date for Application Fee Payment",
+          "date": "2026-12-26",
+          "dateText": "26 December 2026"
+        }
+      ]
+    }
+  ]
 }

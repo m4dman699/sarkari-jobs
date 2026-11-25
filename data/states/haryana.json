@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
-  "total": 12,
+  "generatedAt": "2026-11-25T11:21:02.669Z",
+  "total": 13,
   "jobs": [
     {
       "id": "competitor-sarkariresult-270d96f12c053fea",
@@ -52,6 +52,54 @@
           "label": "Pay Exam Fee Last Date",
           "date": "2026-11-27",
           "dateText": "27/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-d65f2615bffec7d4",
+      "type": "job",
+      "title": "Central University of Haryana Recruitment 2026 – Apply Online for Junior Research Fellow / Project Associate I Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Haryana",
+      "link": "https://cuh.ac.in/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/central-university-of-haryana-recruitment-2026-3084103",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-24",
+      "publishedDate": "2026-11-24",
+      "organization": "Central University of Haryana",
+      "lastDate": "2026-12-14",
+      "vacancies": "1",
+      "ageLimit": "As per ANRF norms",
+      "notificationLink": "https://file.cuh.ac.in/recruitment/advt_no_6b043acc91b5c.pdf",
+      "officialLinks": [
+        {
+          "url": "https://file.cuh.ac.in/recruitment/advt_no_6b043acc91b5c.pdf",
+          "label": "CUH Official Notification PDF"
+        },
+        {
+          "url": "https://cuh.ac.in/",
+          "label": "Central University of Haryana Official Website"
+        }
+      ],
+      "officialLink": "https://cuh.ac.in/",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-14",
+          "dateText": "14 December 2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Interview and reporting time",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026, 10.00 A.M."
         }
       ]
     },

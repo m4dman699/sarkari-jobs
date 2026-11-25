@@ -1,46 +1,7 @@
 {
-  "generatedAt": "2026-11-24T12:32:37.782Z",
+  "generatedAt": "2026-11-25T11:21:02.669Z",
   "total": 14,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
-      "type": "job",
-      "title": "Recruitment Requisition",
-      "source": "TNPSC",
-      "category": "State PSC",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnpsc.gov.in/Hod/RecruitmentRequisition.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvcHJlc3NfcmVsZWFzZXMuYXNweA",
-      "type": "job",
-      "title": "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
-      "source": "TNPSC",
-      "category": "UPSC",
-      "state": "Tamil Nadu",
-      "link": "https://www.tnpsc.gov.in/english/press_releases.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": "2026-10-06"
-    },
-    {
-      "id": "aHR0cHM6Ly90bnBzYy5nb3YuaW4vZXhhbWRhc2hib2FyZC93ZWIvaW5kZXguYXNweD9rZXk9a3NvanMyZWZyZTNXRkRzdzU",
-      "type": "job",
-      "title": "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
-      "source": "TNPSC",
-      "category": "UPSC",
-      "state": "Tamil Nadu",
-      "link": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
     {
       "id": "competitor-sarkariresult-113887bedaee51c1",
       "type": "job",
@@ -164,6 +125,45 @@
       "lastDate": "2026-12-19",
       "applicationFee": "General / OBC / EWS : 854/- SC / ST / PH : 354/-",
       "notificationLink": "https://www.nlcindia.in/nlcilapi/cmp/static/downloadfile/97260"
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL0hvZC9SZWNydWl0bWVudFJlcXVpc2l0aW9uLmFzcHg",
+      "type": "job",
+      "title": "Recruitment Requisition",
+      "source": "TNPSC",
+      "category": "State PSC",
+      "state": "Tamil Nadu",
+      "link": "https://www.tnpsc.gov.in/Hod/RecruitmentRequisition.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cudG5wc2MuZ292LmluL2VuZ2xpc2gvcHJlc3NfcmVsZWFzZXMuYXNweA",
+      "type": "job",
+      "title": "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
+      "source": "TNPSC",
+      "category": "UPSC",
+      "state": "Tamil Nadu",
+      "link": "https://www.tnpsc.gov.in/english/press_releases.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": "2026-10-06"
+    },
+    {
+      "id": "aHR0cHM6Ly90bnBzYy5nb3YuaW4vZXhhbWRhc2hib2FyZC93ZWIvaW5kZXguYXNweD9rZXk9a3NvanMyZWZyZTNXRkRzdzU",
+      "type": "job",
+      "title": "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
+      "source": "TNPSC",
+      "category": "UPSC",
+      "state": "Tamil Nadu",
+      "link": "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "aHR0cHM6Ly93d3cudG51c3JiLnRuLmdvdi5pbi9yZWNydWl0bWVudC10bnVzcmIucGhw",
