@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 1,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 2,
   "jobs": [
+    {
+      "id": "competitor-freejobalert-2822a5ae0696de21",
+      "type": "job",
+      "title": "VISL CMD Kerala Recruitment 2026 – Apply Online for 5 Accounts Clerk, Assistant Manager and More Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "Kerala",
+      "link": "https://www.cmd.kerala.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/cmd-recruitment-2026-accounts-clerk-assistant-manager-3084350",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "publishedDate": "2026-11-25",
+      "organization": "Centre for Management Development (CMD), on behalf of Vizhinjam International Seaport Limited (VISL), Thiruvananthapuram, Kerala",
+      "openDate": "2026-11-25",
+      "lastDate": "2026-12-09",
+      "ageLimit": "Varies by post - see the table below",
+      "eligibility": "Post-wise: B.E./B.Tech in Civil Engineering plus M.Tech/MBA/PGDM (Assistant Manager); B.Com plus CA Inter (Finance Officer); B.Tech or Diploma in Civil Engineering (Junior Project Officer); B.Com with Tally (Accounts Clerk); B.E/B.Tech or Diploma in Civil Engineering (Field Engineer).",
+      "applicationFee": "is mentioned in the notification",
+      "notificationLink": "https://cmd.kerala.gov.in/wp-content/uploads/2026/11/VISL-Notification-4.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cmd.kerala.gov.in/wp-content/uploads/2026/11/VISL-Notification-4.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.cmd.kerala.gov.in",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://www.cmd.kerala.gov.in",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        },
+        {
+          "label": "Notification Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Online Application Last Date (5:00 pm)",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        },
+        {
+          "label": "Cut-off date for age and experience",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        }
+      ]
+    },
     {
       "id": "competitor-freejobalert-277e99123a3d283c",
       "type": "job",

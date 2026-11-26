@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 14,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 16,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vd2ViL25vdGlmaWNhdGlvbnMtcHJhY3RpY2UtZGlyZWN0aW9ucw",
@@ -118,6 +118,49 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-40e5cb80f5294040",
+      "type": "job",
+      "title": "AIIMS Delhi Recruitment 2026 – Apply Online for Project Research Scientist, Project Technical Support Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Delhi",
+      "link": "https://www.aiims.edu",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/aiims-delhi-recruitment-2026-apply-online-for-project-research-scientist-project-technical-support-posts-3084389",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "publishedDate": "2026-11-25",
+      "organization": "All India Institute of Medical Sciences (AIIMS), New Delhi",
+      "lastDate": "2026-11-30",
+      "vacancies": "1",
+      "ageLimit": "Varies by post",
+      "officialLinks": [
+        {
+          "url": "https://www.aiims.edu",
+          "label": "AIIMS New Delhi Official Website"
+        }
+      ],
+      "officialLink": "https://www.aiims.edu",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-30",
+          "dateText": "30/11/2026"
+        },
+        {
+          "label": "Date of vacancy notice",
+          "date": "2026-11-16",
+          "dateText": "16/11/2026"
+        },
+        {
+          "label": "Last date for submission of CV",
+          "date": "2026-11-30",
+          "dateText": "30/11/2026"
+        }
+      ]
     },
     {
       "id": "competitor-freejobalert-0c8526d97accbcb4",
@@ -310,6 +353,61 @@
           "label": "Post Date / Update",
           "date": "2026-11-12",
           "dateText": "12 November 2026 | 08:59 AM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-12-11",
+          "dateText": "11/12/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-12-11",
+          "dateText": "11/12/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-015dac35253c47f1",
+      "type": "job",
+      "title": "Railway RRC NR Delhi Apprentices Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Railways",
+      "state": "Delhi",
+      "link": "https://app.rrcnr.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/rrc-nr-delhi-apprentices-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "lastDate": "2026-12-11",
+      "organization": "Northern Railway NR Railway Recruitment Cell RRC NR Delhi Region",
+      "publishedDate": "2026-11-11",
+      "openDate": "2026-11-11",
+      "vacancies": "4651",
+      "ageLimit": "15–24 years",
+      "eligibility": "Class 10 High School / Matric with ITI Certificate in Related Trade. for Trade Wise Eligibility Details Read the Notification.",
+      "applicationFee": "Gen / OBC / EWS: 100/- SC / ST / PH : 0/- All Category Female : 0/-",
+      "notificationLink": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://app.rrcnr.org/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://rrcnr.org/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://app.rrcnr.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-11",
+          "dateText": "11 November 2026 | 04:53 PM"
         },
         {
           "label": "Last Date for Apply Online",

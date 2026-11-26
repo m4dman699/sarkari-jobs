@@ -1,52 +1,52 @@
 {
-  "generatedAt": "2026-11-25T11:21:52.923Z",
-  "durationSeconds": 50,
+  "generatedAt": "2026-11-26T10:57:32.035Z",
+  "durationSeconds": 4,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 1178,
-    "jobs": 350,
-    "admitCards": 213,
-    "results": 615,
-    "jobsMissingPublicationDate": 146,
-    "jobsMissingClosingDate": 249,
+    "total": 1276,
+    "jobs": 422,
+    "admitCards": 224,
+    "results": 630,
+    "jobsMissingPublicationDate": 145,
+    "jobsMissingClosingDate": 287,
     "jobsMissingOrganization": 174,
-    "jobsMissingVacancies": 226,
-    "jobsMissingEligibility": 240,
-    "jobsMissingApplicationFee": 285,
+    "jobsMissingVacancies": 254,
+    "jobsMissingEligibility": 272,
+    "jobsMissingApplicationFee": 329,
     "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 23,
-    "resultsMissingPublishedDate": 78,
-    "resultsMissingResultDate": 321
+    "admitCardsMissingPublishedDate": 22,
+    "resultsMissingPublishedDate": 77,
+    "resultsMissingResultDate": 329
   },
   "after": {
-    "total": 1285,
-    "jobs": 424,
+    "total": 1364,
+    "jobs": 491,
     "admitCards": 226,
-    "results": 635,
+    "results": 647,
     "jobsMissingPublicationDate": 143,
-    "jobsMissingClosingDate": 285,
-    "jobsMissingOrganization": 171,
-    "jobsMissingVacancies": 253,
-    "jobsMissingEligibility": 270,
-    "jobsMissingApplicationFee": 327,
-    "jobsMissingOfficialLink": 1,
+    "jobsMissingClosingDate": 317,
+    "jobsMissingOrganization": 172,
+    "jobsMissingVacancies": 274,
+    "jobsMissingEligibility": 308,
+    "jobsMissingApplicationFee": 378,
+    "jobsMissingOfficialLink": 2,
     "admitCardsMissingPublishedDate": 22,
-    "resultsMissingPublishedDate": 83,
+    "resultsMissingPublishedDate": 77,
     "resultsMissingResultDate": 333
   },
   "imported": {
-    "job": 76,
-    "admit-card": 13,
-    "result": 20
+    "job": 72,
+    "admit-card": 2,
+    "result": 17
   },
-  "matchedExisting": 335,
-  "filledItems": 126,
+  "matchedExisting": 27,
+  "filledItems": 6,
   "removedStale": 0,
-  "removedUncertain": 0,
-  "skippedClosed": 276,
+  "removedUncertain": 1,
+  "skippedClosed": 0,
   "removedNavigation": 2,
   "removalLog": [
     {
@@ -60,12 +60,18 @@
       "type": "job",
       "publisher": "(official)",
       "title": "Jobs for Ex-Servicemen"
+    },
+    {
+      "reason": "stale competitor job without dates",
+      "type": "job",
+      "publisher": "FreeJobAlert",
+      "title": "BSF Various Posts Online Form 2026 (1167 Vacancy)"
     }
   ],
   "detailPages": {
-    "targets": 302,
-    "fetched": 297,
-    "cacheHits": 5
+    "targets": 99,
+    "fetched": 99,
+    "cacheHits": 0
   },
   "remainingGaps": {
     "jobsMissingDate": [
@@ -75,7 +81,9 @@
       "Circular regarding extension of the last date of filling up of fifteen (15) tentative vacant posts of Court Master (Shorthand) in the Supreme Court of India, on deputation basis. (",
       "Vacancy Circular for the posts of Member (Judicial) and Member (Technical) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT).2.57 MB",
       "Click to view current posts",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
+      "Recruitment Requisition",
+      "DEPARTMENTAL EXAMINATIONS - DECEMBER 2026 (Notification)",
+      "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
@@ -86,9 +94,7 @@
       "Recruitment of Drug Inspector Advt.No.-12/2025",
       "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
       "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
-      "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
-      "Recruitment of Director Advt.No.-07/2025",
-      "Recruitment of Boiler Inspector Advt.No.-02/2025"
+      "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025"
     ],
     "jobsMissingClosingDate": [
       "Notifications & Practice Directions",
@@ -98,7 +104,10 @@
       "Circular regarding extension of the last date of filling up of fifteen (15) tentative vacant posts of Court Master (Shorthand) in the Supreme Court of India, on deputation basis. (",
       "Vacancy Circular for the posts of Member (Judicial) and Member (Technical) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT).2.57 MB",
       "Click to view current posts",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
+      "Recruitment Requisition",
+      "DEPARTMENTAL EXAMINATIONS - DECEMBER 2026 (Notification)",
+      "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
+      "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
@@ -107,10 +116,7 @@
       "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
       "Recruitment of Drug Inspector Advt.No.-12/2025",
-      "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
-      "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025",
-      "Recruitment of Non-Teaching Posts in Universities of Jharkhand. Advt. No. 09/2025",
-      "Recruitment of Director Advt.No.-07/2025"
+      "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025"
     ],
     "jobsMissingOrganization": [
       "PAJANCOA&RI, KKL - Engagement of Consultant orr contract Basis in the grade of Junior Accounts Ofticer - Applications From the Retired Oflicials - Called for - Reg.",
@@ -122,20 +128,19 @@
       "Circular regarding extension of the last date of filling up of fifteen (15) tentative vacant posts of Court Master (Shorthand) in the Supreme Court of India, on deputation basis. (",
       "Vacancy Circular for the posts of Member (Judicial) and Member (Technical) in Customs, Excise and Service Tax Appellate Tribunal (CESTAT).2.57 MB",
       "Click to view current posts",
-      "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
+      "Recruitment Requisition",
+      "DEPARTMENTAL EXAMINATIONS - DECEMBER 2026 (Notification)",
+      "PRESS RELEASE REGARDING THE PUBLICATION OF NOTIFICATION TO THE POSTS IN COMBINED CIVIL SERVICES EXAMINATION-IV (GROUP-IV SERVICES) (NOTIFICATION NO. 11/2026 DATED 06.10.2026) (Pres",
+      "COMBINED CIVIL SERVICES EXAMINATION - IV (GROUP IV SERVICES) (Notification)",
       "Notice regarding recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026 (29-07-2026)",
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
       "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
       "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
       "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026",
-      "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026",
-      "Recruitment of Drug Inspector Advt.No.-12/2025",
-      "Recruitment of Assistant Director/Senior Scientific Officer (Regular), Advt. No. 11/2025",
-      "Recruitment of Assistant Director/Senior Scientific Officer (Backlog), Advt. No. 10/2025"
+      "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026"
     ],
     "jobsMissingVacancies": [
-      "Agniveer Apprentice",
       "PAJANCOA&RI, KKL - Engagement of Consultant orr contract Basis in the grade of Junior Accounts Ofticer - Applications From the Retired Oflicials - Called for - Reg.",
       "SDSC SHAR Apprentice Online Form 2026 (400 Vacancy)",
       "Katihar District Administration Surveyor/Volunteer Recruitment 2026 – Apply Offline",
@@ -147,29 +152,41 @@
       "NTA SHRESTHA (NETS) Admission Online Form 2027",
       "Mirzapur District Court Oath Commissioner Recruitment 2026 – Apply Offline",
       "Alagappa University Junior Research Fellow Recruitment 2026 – Apply Online",
+      "Delhi University Recruitment 2026 – Apply Online for 8 Trained Graduate Teacher, Assistant Teacher Posts",
+      "State CET Cell Assistant Law Recruitment 2026 – Walkin",
+      "IIT Hyderabad Research Associate I Recruitment 2026 – Apply Online",
       "NARDES GNFC Trainer Recruitment 2026 – Apply Online",
+      "APS Kota Recruitment 2026 – Apply Online for UDC, LDC and More Posts",
       "PAU Young Professional II Recruitment 2026 – Apply Offline",
-      "VJTI Recruitment 2026 – Apply Online for 9 Hall Manager, Resident Matron Posts",
-      "VJTI Recruitment 2026 – Apply Online for 5 Head Chef, Mess Manager and More Posts",
-      "VISL CMD Kerala Recruitment 2026 – Apply Online for 5 Accounts Clerk, Assistant Manager and More Posts",
-      "MNNIT Allahabad JRA Recruitment 2026 – Apply Online",
-      "PU Clerk Recruitment 2026 – Apply Offline",
-      "UPTET February 2027 Exam Online Form 2026"
+      "ZP Kolhapur Recruitment 2026 – Apply Offline for 11 Sports Coach, Rector and More Posts",
+      "C-DIT Consultant Recruitment 2026 – Apply Offline",
+      "VJTI Recruitment 2026 – Apply Online for 9 Hall Manager, Resident Matron Posts"
     ],
     "jobsMissingOfficialLink": [
-      "Kerala University Time Table 2026 Out - Check UG and PG Exam Schedule and Rescheduling Notice @ keralauniversity.ac.in"
+      "Ordnance Factory Badmal Graduate/Diploma Project Engineer Recruitment 2026 – Apply Offline",
+      "Chowgule College Time Table 2026-27 Out - Check Even Semester Dates Online @ chowgules.ac.in"
     ]
   },
   "errors": [
     {
       "source": "Competitor: SarkariResult.com",
-      "url": "https://old.sarkariresult.com/?p=14052",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.sarkariresult.com/latestjob/",
+      "error": "HTTP 403"
     },
     {
       "source": "Competitor: SarkariResult.com",
-      "url": "https://old.sarkariresult.com/?p=13602",
-      "error": "The operation was aborted due to timeout"
+      "url": "https://www.sarkariresult.com/admitcard/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/result/",
+      "error": "HTTP 403"
+    },
+    {
+      "source": "Competitor: SarkariResult.com",
+      "url": "https://www.sarkariresult.com/feed/",
+      "error": "HTTP 403"
     }
   ]
 }

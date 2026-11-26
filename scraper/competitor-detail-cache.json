@@ -24455,7 +24455,7 @@
     }
   },
   "https://www.freejobalert.com/articles/aees-teaching-recruitment-2026-3075950": {
-    "attemptedAt": "2026-11-25T11:21:20.254Z",
+    "attemptedAt": "2026-11-26T10:57:29.843Z",
     "parser": "v2",
     "details": {
       "organization": "Atomic Energy Education Society (AEES)",
@@ -27268,13 +27268,13 @@
     }
   },
   "https://www.freejobalert.com/articles/bob-recruitment-2026-senior-relationship-manager-3078340": {
-    "attemptedAt": "2026-11-04T09:16:15.607Z",
+    "attemptedAt": "2026-11-26T10:57:29.888Z",
     "parser": "v2",
     "details": {
       "organization": "Bank of Baroda (BOB)",
       "publishedDate": "2026-11-04",
       "openDate": "2026-11-04",
-      "lastDate": "2026-11-24",
+      "lastDate": "2026-12-07",
       "examDate": null,
       "resultDate": null,
       "admitCardDate": null,
@@ -27300,9 +27300,9 @@
           "dateText": "4 November 2026"
         },
         {
-          "label": "Application Last Date",
-          "date": "2026-11-24",
-          "dateText": "24 November 2026"
+          "label": "Application Last Date (Extended)",
+          "date": "2026-12-07",
+          "dateText": "07 December 2026"
         },
         {
           "label": "Notification Release Date",
@@ -27316,13 +27316,13 @@
         },
         {
           "label": "Last Date to Apply Online",
-          "date": "2026-11-24",
-          "dateText": "24 November 2026"
+          "date": "2026-12-07",
+          "dateText": "07 December 2026"
         },
         {
           "label": "Last Date for Application Fee Payment",
-          "date": "2026-11-24",
-          "dateText": "24 November 2026"
+          "date": "2026-12-07",
+          "dateText": "07 December 2026"
         },
         {
           "label": "Age, Qualification and Experience Cut-Off Date",
@@ -27344,6 +27344,10 @@
         {
           "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-10/Advertisement-Contractual-04-11-2026-03-18.pdf",
           "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/shareholders-corner2/2026/26-11/Online-Application-Payment-of-Fees-24-01.pdf",
+          "label": "Bank of Baroda Recruitment 2026 Addendum"
         },
         {
           "url": "https://bankofbaroda.bank.in/career/current-opportunities/wealth-management-services-department-bob-hrm-rec-advt-2026-20",
@@ -46736,7 +46740,7 @@
     }
   },
   "https://www.freejobalert.com/articles/ssc-chsl-city-intimation-slip-2026-3083812": {
-    "attemptedAt": "2026-11-25T11:21:13.792Z",
+    "attemptedAt": "2026-11-26T10:57:29.808Z",
     "parser": "v2",
     "details": {
       "organization": "SSC CHSL City Intimation Slip 2026 Out - Check Tier 1",
@@ -60912,7 +60916,7 @@
     }
   },
   "https://www.freejobalert.com/articles/iocl-executive-final-result-2026-3084258": {
-    "attemptedAt": "2026-11-25T11:21:41.114Z",
+    "attemptedAt": "2026-11-26T10:57:31.781Z",
     "parser": "v2",
     "details": {
       "organization": "IOCL Executive Final",
@@ -61904,5 +61908,4564 @@
     "parser": "v2",
     "error": "The operation was aborted due to timeout",
     "details": {}
+  },
+  "https://www.freejobalert.com/articles/icar-ciba-young-professional-recruitment-2026-apply-online-3084753": {
+    "attemptedAt": "2026-11-26T10:57:29.911Z",
+    "parser": "v2",
+    "details": {
+      "organization": "ICAR-Central Institute of Brackishwater Aquaculture, Chennai",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Lower age limit: 21 years; Upper age limit: 45 Years",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-06",
+          "dateText": "06.12.2026"
+        },
+        {
+          "label": "Date of notification",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        },
+        {
+          "label": "Last Date for submission of biodata",
+          "date": "2026-12-06",
+          "dateText": "06.12.2026"
+        }
+      ],
+      "officialLink": "http://www.ciba.res.in",
+      "notificationLink": "https://ciba.res.in/test/media/notices/Rec._Notification_of_YP-I.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ciba.res.in/test/media/notices/Rec._Notification_of_YP-I.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "http://www.ciba.res.in",
+          "label": "ICAR-CIBA Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-guwahati-technical-assistant-recruitment-2026-3084799": {
+    "attemptedAt": "2026-11-26T10:57:29.930Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology Guwahati, Research and Development Section",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-11-27",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-04",
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026, 5 PM (scanned CV)"
+        },
+        {
+          "label": "Last date to send scanned CV",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026, by 5 PM"
+        },
+        {
+          "label": "Shortlisted candidates informed via email",
+          "date": "2026-12-03",
+          "dateText": "3 December 2026"
+        },
+        {
+          "label": "Online Interview (Webex)",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026, 3:00 PM"
+        }
+      ],
+      "officialLink": "https://iitg.ac.in/rndproj/recruitment/",
+      "notificationLink": "https://www.iitg.ac.in/pdf/1c4801f2115bef9fa1026481485dd5bb.pdf",
+      "officialLinks": [
+        {
+          "url": "https://iitg.ac.in/rndproj/recruitment/",
+          "label": "Apply Online – Recruitment Portal"
+        },
+        {
+          "url": "https://www.iitg.ac.in/pdf/1c4801f2115bef9fa1026481485dd5bb.pdf",
+          "label": "Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/niftem-k-junior-research-fellow-jrf-recruitment-2026-3084843": {
+    "attemptedAt": "2026-11-26T10:57:29.951Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Institute of Food Technology Entrepreneurship and Management, Kundli",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Maximum 35 years",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Date of notice",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        }
+      ],
+      "officialLink": "http://career.droniftem.com",
+      "notificationLink": "https://niftem.ac.in/storage/careers/openings/zMGH6C5iZsvvQ7K5kJtWvVmqjhHg73bHkd3ZxbeZ.pdf",
+      "officialLinks": [
+        {
+          "url": "https://niftem.ac.in/storage/careers/openings/zMGH6C5iZsvvQ7K5kJtWvVmqjhHg73bHkd3ZxbeZ.pdf",
+          "label": "NIFTEM-K JRF Official Notification PDF"
+        },
+        {
+          "url": "http://career.droniftem.com",
+          "label": "NIFTEM-K Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aiims-patna-recruitment-2026-project-research-scientist-3084847": {
+    "attemptedAt": "2026-11-26T10:57:29.971Z",
+    "parser": "v2",
+    "details": {
+      "organization": "All India Institute of Medical Sciences Patna (AIIMS Patna), Bihar",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Maximum 35 years (as on last date of application)",
+      "eligibility": "Project research Scientist - I: Post Graduate Degree, including integrated PG degrees. Project Technical Support - III: Three-year Graduate degree in Social Work or Sociology or any other relevant discipline with three years of work experience in the relevant field, OR Postgraduate degree in Social Work or Sociology or any other relevant discipline.",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Date of Advertisement",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last Date (approx: 15 days from publication)",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        }
+      ],
+      "officialLink": "https://www.aiimspatna.edu.in",
+      "notificationLink": "https://api.aiimspatna.edu.in/advertisement/AdvtGynae-various-posts-409AIIMSPatGynae2026-26112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://api.aiimspatna.edu.in/advertisement/AdvtGynae-various-posts-409AIIMSPatGynae2026-26112026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.aiimspatna.edu.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/esic-recruitment-2026-senior-resident-specialist-3084792": {
+    "attemptedAt": "2026-11-26T10:57:29.993Z",
+    "parser": "v2",
+    "details": {
+      "organization": "ESIC",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "37",
+      "ageLimit": "Varies by post",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-04",
+          "dateText": "04 December 2026"
+        }
+      ],
+      "officialLink": "https://www.esic.gov.in",
+      "notificationLink": "https://esic.gov.in/attachments/recruitmentfile/WALK_IN_INTERVIEW_ON_04TH_DECEMBER_2026_FOR_THE_POST_OF_CONTRACTUAL_SENIOR_RESIDENT_3_YEARS_TENURE_AND_FULL_TIME_PART_TIME_CONTRACTUAL_SPECIALISTSAT_ESIC_HOSPITAL_SONAGIRI_BHOPAL_462022_M_P_1795672407.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.esic.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://esic.gov.in/attachments/recruitmentfile/WALK_IN_INTERVIEW_ON_04TH_DECEMBER_2026_FOR_THE_POST_OF_CONTRACTUAL_SENIOR_RESIDENT_3_YEARS_TENURE_AND_FULL_TIME_PART_TIME_CONTRACTUAL_SPECIALISTSAT_ESIC_HOSPITAL_SONAGIRI_BHOPAL_462022_M_P_1795672407.pdf",
+          "label": "ESIC Bhopal Advertisement No 04/2026 Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/mygov-researcher-recruitment-2026-3084876": {
+    "attemptedAt": "2026-11-26T10:57:30.026Z",
+    "parser": "v2",
+    "details": {
+      "organization": "MyGov (Independent Business Division under Digital India Corporation)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "4",
+      "ageLimit": "",
+      "eligibility": "Bachelors or Master's degree in any discipline",
+      "applicationFee": "",
+      "milestones": [],
+      "officialLink": "https://MyGov.in",
+      "notificationLink": "https://negd-media.digitalindiacorporation.in/wp-content/uploads/2026/11/Researcher_JD_2-3-years.pdf",
+      "officialLinks": [
+        {
+          "url": "https://negd-media.digitalindiacorporation.in/wp-content/uploads/2026/11/Researcher_JD_2-3-years.pdf",
+          "label": "MyGov Researcher Official Notification PDF"
+        },
+        {
+          "url": "https://MyGov.in",
+          "label": "MyGov Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/araria-civil-court-recruitment-2026-stenographer-clerk-peon-orderly-3084849": {
+    "attemptedAt": "2026-11-26T10:57:30.119Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Office of the Principal District & Sessions Judge, Araria",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-16",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-16",
+          "dateText": "16.12.2026 (applications must reach the office on or before this date)"
+        },
+        {
+          "label": "Date of Notice",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt)",
+          "date": "2026-12-16",
+          "dateText": "16.12.2026"
+        }
+      ],
+      "officialLink": "https://araria.dcourts.gov.in/",
+      "officialLinks": [
+        {
+          "url": "https://araria.dcourts.gov.in/",
+          "label": "Araria Judgeship Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/echs-recruitment-2026-ayurveda-pharmacist-safaiwala-3084875": {
+    "attemptedAt": "2026-11-26T10:57:30.139Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Ex-Servicemen Contributory Health Scheme (ECHS), Station HQ Chennai, Ministry of Defence, Tamil Nadu",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Varies by post - see the table below",
+      "eligibility": "Ayurveda Doctor: BAMS (NCISM-recognised college) with valid registration and 3 years' experience after internship; Ayurveda Pharmacist: B.Pharma or D.Pharma (Ayurveda) with valid registration and 3 years' experience; Safaiwala: Literate with 5 years' experience.",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        },
+        {
+          "label": "Last date of receipt of application",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        }
+      ],
+      "officialLink": "https://www.echs.gov.in",
+      "notificationLink": "https://www.echs.gov.in/assets/advertisement/ADVT%20OF%20CHENNAI.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.echs.gov.in/assets/advertisement/ADVT%20OF%20CHENNAI.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.echs.gov.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/hssc-pst-schedule-2026-3082672": {
+    "attemptedAt": "2026-11-26T10:57:30.160Z",
+    "parser": "v2",
+    "details": {
+      "organization": "HSSC PST Schedule 2026 Out - Check Forest Guard, Forester and Deputy Ranger Physical Test Dates",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-19",
+      "admitCardDate": "2026-11-19",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Original PST Notice Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Regular PST Dates",
+          "date": "2026-11-30",
+          "dateText": "23 to 30 November 2026"
+        },
+        {
+          "label": "Latest Absentee PST Notice Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Male Absentee PST Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        },
+        {
+          "label": "PST Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        },
+        {
+          "label": "Original PMT Result and PST Notice",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "PST Admit Card Available From",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026, 5:00 PM"
+        },
+        {
+          "label": "Scheduled Female PST Dates",
+          "date": "2026-11-30",
+          "dateText": "29-30 November 2026, as Applicable"
+        }
+      ],
+      "officialLink": "https://hssc.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://hssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-a1e2-1e66-81a2-167701160013/publicNotice",
+          "label": "HSSC Male Absentee PST Notice 2026"
+        },
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-a1e2-1e66-81a1-f2fb4f520008/publicNotice",
+          "label": "HSSC Original PST Schedule 2026"
+        },
+        {
+          "url": "https://www.hssc.gov.in/",
+          "label": "HSSC Official Website"
+        },
+        {
+          "url": "https://www.hssc.gov.in/index.php/file/ac1f23cd-a1e2-1e66-81a2-167701160013/publicNotice",
+          "label": "HSSC Male Absentee PST Notice 2026"
+        },
+        {
+          "url": "https://www.hssc.gov.in/applyOnline",
+          "label": "HSSC PST Admit Card 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ordnance-factory-badmal-graduate-diploma-project-engineer-recruitment-2026-3084866": {
+    "attemptedAt": "2026-11-26T10:57:30.177Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Ordnance Factory Badmal, Munitions India Limited",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "4",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "Nil",
+      "milestones": [],
+      "officialLinks": []
+    }
+  },
+  "https://www.freejobalert.com/articles/nhsrc-consultant-adolescent-health-recruitment-2026-3084873": {
+    "attemptedAt": "2026-11-26T10:57:30.198Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Health Systems Resource Centre (NHSRC), New Delhi, on behalf of the Ministry of Health & Family Welfare",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Upper limit is 40 years as on the date of application",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [],
+      "officialLink": "http://nhsrcindia.org",
+      "notificationLink": "https://recruitment.nhsrcindia.org/web/content/2991675?download=true",
+      "officialLinks": [
+        {
+          "url": "http://nhsrcindia.org",
+          "label": "Apply Online – NHSRC Consultant - Adolescent Health"
+        },
+        {
+          "url": "https://recruitment.nhsrcindia.org/web/content/2991675?download=true",
+          "label": "Official Notification PDF (Terms of Reference)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nbrc-project-associate-i-project-recruitment-2026-3084827": {
+    "attemptedAt": "2026-11-26T10:57:30.222Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Brain Research Centre (Deemed University)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-17",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "01",
+      "ageLimit": "Maximum 35 years (as on the last date of receipt of application)",
+      "eligibility": "",
+      "applicationFee": "Gen/OBC ₹200; SC/ST/PwD ₹100",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        },
+        {
+          "label": "Date of advertisement",
+          "date": "2026-11-26",
+          "dateText": "26.11.2026"
+        },
+        {
+          "label": "Last date for receipt of application",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        }
+      ],
+      "officialLink": "https://www.nbrc.ac.in",
+      "notificationLink": "https://www.nbrc.ac.in/storage/CareerDocument/Career_17956746156b07d1f77ad0e.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.nbrc.ac.in/storage/CareerDocument/Career_17956746156b07d1f77ad0e.pdf",
+          "label": "NBRC Official Notification PDF"
+        },
+        {
+          "url": "https://www.nbrc.ac.in",
+          "label": "NBRC Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/panjab-university-recruitment-2026-part-time-clerk-3084870": {
+    "attemptedAt": "2026-11-26T10:57:30.242Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Panjab University",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "7",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026"
+        }
+      ],
+      "officialLink": "https://puchd.ac.in/",
+      "officialLinks": [
+        {
+          "url": "https://jobs.puchd.ac.in/includes/jobs/2026/20261126142727-Advertisement-Patti.pdf",
+          "label": "Panjab University Walk-in Interview Notice PDF"
+        },
+        {
+          "url": "https://puchd.ac.in/",
+          "label": "Panjab University Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iim-udaipur-manager-marketing-executive-education-recruitment-2026-3084825": {
+    "attemptedAt": "2026-11-26T10:57:30.262Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Management Udaipur",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-26",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "FreeJobAlert WhatsApp channel",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-26",
+          "dateText": "26 December 2026"
+        }
+      ],
+      "officialLink": "https://careers.iimu.ac.in/",
+      "notificationLink": "https://www.iimu.ac.in/applications-are-invited-for-the-position-of-manager-marketing-executive-education-on-contract-nov-2026/",
+      "officialLinks": [
+        {
+          "url": "https://careers.iimu.ac.in/",
+          "label": "Apply Online – IIM Udaipur Manager Marketing"
+        },
+        {
+          "url": "https://www.iimu.ac.in/applications-are-invited-for-the-position-of-manager-marketing-executive-education-on-contract-nov-2026/",
+          "label": "IIM Udaipur Official Notification"
+        },
+        {
+          "url": "https://www.iimu.ac.in",
+          "label": "IIM Udaipur Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iimu-assistant-manager-accounts-recruitment-2026-3084823": {
+    "attemptedAt": "2026-11-26T10:57:30.280Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Management Udaipur (IIMU)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-21",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Not exceeding 40 years as on the closing date of the notification",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-21",
+          "dateText": "21 December 2026"
+        }
+      ],
+      "officialLink": "https://careers.iimu.ac.in/",
+      "notificationLink": "https://www.iimu.ac.in/applications-are-invited-for-the-position-of-assistant-manager-accounts-on-contract-nov-2026/",
+      "officialLinks": [
+        {
+          "url": "https://careers.iimu.ac.in/",
+          "label": "Apply Online for IIMU Assistant Manager-Accounts"
+        },
+        {
+          "url": "https://www.iimu.ac.in/applications-are-invited-for-the-position-of-assistant-manager-accounts-on-contract-nov-2026/",
+          "label": "Official Notification"
+        },
+        {
+          "url": "https://www.iimu.ac.in",
+          "label": "IIM Udaipur Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/allahabad-high-court-recruitment-2026-member-3084821": {
+    "attemptedAt": "2026-11-26T10:57:30.306Z",
+    "parser": "v2",
+    "details": {
+      "organization": "High Court of Judicature at Allahabad (Allahabad High Court), Uttar Pradesh",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "2",
+      "ageLimit": "",
+      "eligibility": "Willing and eligible Judicial Officers (as per the Vacancy Circular) who have retired or are going to retire within the next six months, i.e. up to 31.05.2027",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-05",
+          "dateText": "5 December 2026"
+        },
+        {
+          "label": "Vacancy Circular (Department of Revenue) dated",
+          "date": "2026-11-02",
+          "dateText": "2 November 2026"
+        },
+        {
+          "label": "High Court letter dated",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Last date for District Judges to send applications to the High Court",
+          "date": "2026-12-05",
+          "dateText": "5 December 2026"
+        },
+        {
+          "label": "Retirement cut-off for eligible Judicial Officers",
+          "date": "2027-05-31",
+          "dateText": "31 May 2027"
+        }
+      ],
+      "officialLink": "https://kanpurnagar.dcourts.gov.in/",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3ec017c78335a8924215ea5c22fda1aac/uploads/2026/11/2026112628.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec017c78335a8924215ea5c22fda1aac/uploads/2026/11/2026112628.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://kanpurnagar.dcourts.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/mplun-recruitment-2026-peon-assistant-3082804": {
+    "attemptedAt": "2026-11-26T10:57:30.323Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Madhya Pradesh Laghu Udyog Nigam Maryadit (MPLUN), Bhopal",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "18 to 45 years; maximum age limit not more than 45 years for any category including all (as on 1 January 2026)",
+      "eligibility": "Assistant Grade-3: 10+2 passed from Madhyamik Shiksha Mandal board, CPCT passed, knowledge of Computer Application/Internet/Browsing Surfing compulsory. Peon (Class IV): 8th passed.",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-18",
+          "dateText": "18 December 2026"
+        },
+        {
+          "label": "Date of Advertisement",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Last Date for Receipt of Application (4.00 o'clock)",
+          "date": "2026-12-18",
+          "dateText": "18 December 2026"
+        }
+      ],
+      "officialLink": "http://mplun.mpmsme.gov.in",
+      "notificationLink": "https://mplun.mpmsme.gov.in/uploads/files/Class-3%20and%204.pdf",
+      "officialLinks": [
+        {
+          "url": "https://mplun.mpmsme.gov.in/uploads/files/Class-3%20and%204.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://mplun.mpmsme.gov.in/uploads/files/Corrigendum(1).pdf",
+          "label": "Corrigendum (25 Nov 2026)"
+        },
+        {
+          "url": "http://mplun.mpmsme.gov.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/prsc-ludhiana-sweeper-screening-list-2026-3084862": {
+    "attemptedAt": "2026-11-26T10:57:30.346Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Punjab Remote Sensing Centre, Ludhiana",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notice Date",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        },
+        {
+          "label": "Screening List Notice Date",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        }
+      ],
+      "officialLink": "https://prsc.punjab.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://prsc.punjab.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://prsc.punjab.gov.in/images/Advertisements/Sweeper_List26112026.pdf",
+          "label": "Sweeper Screened IN and Screened Out List PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aps-kota-recruitment-2026-apply-online-for-udc-ldc-and-more-posts-3084271": {
+    "attemptedAt": "2026-11-26T10:57:30.373Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Army Public School, Kota (Private Unaided School)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Varies by post",
+      "eligibility": "",
+      "applicationFee": "Rs 250/- (send the screenshot of the payment by post with the documents)",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-06",
+          "dateText": "06 Dec 2026 (hard copies of documents with the screenshot of the Rs 250/- payment by post)"
+        }
+      ],
+      "officialLink": "https://apskota.in",
+      "notificationLink": "https://apskota.in/wp-content/uploads/2026/11/LSB-Qualification-2027-1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://apskota.in",
+          "label": "APS Kota online application form"
+        },
+        {
+          "url": "https://apskota.in/wp-content/uploads/2026/11/LSB-Qualification-2027-1.pdf",
+          "label": "APS Kota Recruitment 2026 notification PDF"
+        },
+        {
+          "url": "https://apskota.in/wp-content/uploads/2026/11/LSB-QUAL-JAN-2027.pdf",
+          "label": "APS Kota Recruitment 2026 revised notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/tafcofed-social-mobilization-domain-expert-recruitment-2026-3084860": {
+    "attemptedAt": "2026-11-26T10:57:30.394Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Tamil Nadu State Apex Fisheries Cooperative Federation Ltd. (TAFCOFED)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-15",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "5",
+      "ageLimit": "Minimum 25 years to 35 years as on 01.07.2026",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-15",
+          "dateText": "15.12.2026 by 5 PM"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        }
+      ],
+      "officialLink": "https://fisheries.tn.gov.in/",
+      "notificationLink": "https://fisheries.tn.gov.in/frontend/whatsnews/20261126045154_6b07baea85973.pdf",
+      "officialLinks": [
+        {
+          "url": "https://fisheries.tn.gov.in/frontend/whatsnews/20261126045154_6b07baea85973.pdf",
+          "label": "TAFCOFED Official Notification PDF"
+        },
+        {
+          "url": "https://fisheries.tn.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/delhi-university-recruitment-2026-apply-online-for-8-trained-graduate-teacher-assistant-teacher-posts-3077141": {
+    "attemptedAt": "2026-11-26T10:57:30.414Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Delhi University",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-11-30",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Maximum 35 years (as on closing date of advertisement)",
+      "eligibility": "Bachelor's Degree or Master's Degree with B.Ed / 4-year integrated B.Ed-M.Ed / B.El.Ed / Diploma in Elementary Education / Special Education, and CTET.",
+      "applicationFee": "for this recruitment? General/Unreserved: Rs. 1,000. OBC (NCL), EWS, Female: Rs. 800. SC, ST, PwBD: Rs. 600. Q5. What is the",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026 (extended) for Trained Graduate Teacher (TGT); 18 November 2026 for Assis"
+        },
+        {
+          "label": "Date of Advertisement",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        },
+        {
+          "label": "Last Date of Application",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026 (extended) for Trained Graduate Teacher (TGT); 18 November 2026 for Assis"
+        }
+      ],
+      "officialLink": "https://www.du.ac.in",
+      "notificationLink": "https://www.du.ac.in/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=19103&cntnt01returnid=219",
+      "officialLinks": [
+        {
+          "url": "https://www.du.ac.in/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=19103&cntnt01returnid=219",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.du.ac.in/uploads/new-web/16112026-1Advt.%20No.-%20324%20Addendum.pdf",
+          "label": "Addendum (16 Nov 2026)"
+        },
+        {
+          "url": "https://www.du.ac.in/uploads/new-web/18112026-Notification%20for%20TGT%20Advt.%20324%20(1).pdf",
+          "label": "Last Date Extension Notice PDF (18 Nov 2026)"
+        },
+        {
+          "url": "https://www.du.ac.in",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/college-of-agriculture-vellayani-hostel-manager-grade-recruitment-2026-3084857": {
+    "attemptedAt": "2026-11-26T10:57:30.432Z",
+    "parser": "v2",
+    "details": {
+      "organization": "College of Agriculture, Vellayani, Kerala",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-05",
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Graduation from a recognised university and at least two years' experience in maintaining and handling stores and accounts in Government or Government-recognized educational institutions or public sector undertakings, as Matron or Hostel Manager. Desirable: Pass in Account Test (Lower) of Government of Kerala.",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-05",
+          "dateText": "5 December 2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Walk-in interview (10.00 AM)",
+          "date": "2026-12-05",
+          "dateText": "5 December 2026"
+        }
+      ],
+      "officialLink": "https://www.kau.in",
+      "notificationLink": "https://www.kau.in/sites/default/files/announcements/interview_notification.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.kau.in/sites/default/files/announcements/interview_notification.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.kau.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/igims-driver-ordinary-grade-recruitment-2026-3084855": {
+    "attemptedAt": "2026-11-26T10:57:30.459Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indira Gandhi Institute of Medical Science (IGIMS), Patna, Bihar",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "18 to 30 years (as on 20 December 2026)",
+      "eligibility": "Valid Driving License for driving heavy vehicles, knowledge of Motor Mechanism and 03 years' experience. Desirable: 8th passed with 03 years' service as Home Guard/Civil Volunteer.",
+      "applicationFee": "is Rs. 250 for EBC, SC, ST. Selection is by written Test (Objective/Multiple Choice Questions) and skill Test. Eligibility, dates and the steps to apply are given below. Key Points Last date: 20 December 2026 Vacancies: 5 How to apply: Offline, by post or in person as the notification says Fee: EBC, SC, ST: Rs. 250; Ot",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-20",
+          "dateText": "20 December 2026"
+        },
+        {
+          "label": "Date of notice (Memo No. 5242/Adm.)",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last date of receipt of application (till 4:30 PM)",
+          "date": "2026-12-20",
+          "dateText": "20 December 2026"
+        }
+      ],
+      "officialLink": "https://www.igims.org",
+      "notificationLink": "https://www.igims.org/resources/uploads/TenderManagement/179567950832.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.igims.org/resources/uploads/TenderManagement/179567950832.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.igims.org",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/jau-recruitment-2026-field-worker-young-professional-3084814": {
+    "attemptedAt": "2026-11-26T10:57:30.478Z",
+    "parser": "v2",
+    "details": {
+      "organization": "JAU",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "4",
+      "ageLimit": "Varies by post",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-10",
+          "dateText": "10 December 2026"
+        }
+      ],
+      "officialLink": "https://www.jau.in",
+      "notificationLink": "https://www.jau.in/storage/document/dynamic_document//ars_amreli_srf_yp_fw_2026_20261126_2106.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.jau.in/storage/document/dynamic_document//ars_amreli_srf_yp_fw_2026_20261126_2106.pdf",
+          "label": "JAU Recruitment 2026 Official Notification PDF"
+        },
+        {
+          "url": "https://www.jau.in",
+          "label": "Junagadh Agricultural University Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nalsa-consultant-legal-recruitment-2026-3084853": {
+    "attemptedAt": "2026-11-26T10:57:30.503Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Legal Services Authority, Government of India",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-16",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Not more than 50 years as on 16/12/2026",
+      "eligibility": "Graduate in Law (Post-Graduate in Law desirable)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-16",
+          "dateText": "16/12/2026 (receipt)"
+        },
+        {
+          "label": "Date of Vacancy Circular",
+          "date": "2026-11-26",
+          "dateText": "26.11.2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt by email)",
+          "date": "2026-12-16",
+          "dateText": "16/12/2026"
+        }
+      ],
+      "officialLink": "https://www.nalsa.gov.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2026/11/20261126756303430.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s32e45f93088c7db59767efef516b306aa/uploads/2026/11/20261126756303430.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.nalsa.gov.in",
+          "label": "NALSA Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-ism-dhanbad-long-term-research-internship-recruitment-2026-3084851": {
+    "attemptedAt": "2026-11-26T10:57:30.520Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology (ISM) Dhanbad, Office of the Dean (Research & Development)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-11-26",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "02",
+      "ageLimit": "As per the norms of the Govt. of India for recruitment of internship",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026 (Thursday)"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-17",
+          "dateText": "17/11/2026"
+        },
+        {
+          "label": "Last date to apply by email",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026 (Thursday)"
+        },
+        {
+          "label": "Shortlisted candidates informed by email (tentative)",
+          "date": "2026-11-27",
+          "dateText": "By 27 November 2026"
+        }
+      ],
+      "officialLink": "https://www.iitism.ac.in",
+      "officialLinks": [
+        {
+          "url": "https://www.iitism.ac.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ncrl-ncrl-srf-recruitment-2026-3084809": {
+    "attemptedAt": "2026-11-26T10:57:30.537Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Networking & Communication Research Lab (NCRL)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-25",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
+        }
+      ],
+      "officialLink": "https://www.iiitb.ac.in/includefiles/userfiles/files/srf_iot_Nov2026_ver2.pdf",
+      "notificationLink": "https://www.iiitb.ac.in/includefiles/userfiles/files/srf_iot_Nov2026_ver2.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.iiitb.ac.in/includefiles/userfiles/files/srf_iot_Nov2026_ver2.pdf",
+          "label": "NCRL SRF Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/kerala-psc-recruitment-2026-apply-online-for-39-field-supervisor-ld-clerk-and-more-posts-3084858": {
+    "attemptedAt": "2026-11-26T10:57:30.560Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Kerala Public Service Commission (KPSC)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-16",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "39",
+      "ageLimit": "18–50 Years and Other Post-Specific Ranges, Before Applicable Concessions",
+      "eligibility": "SSLC / Plus Two / ITI / Diploma / Degree / Engineering / MBA / Medical Postgraduate Qualifications, Post-Wise",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        }
+      ],
+      "officialLink": "https://thulasi.psc.kerala.gov.in/thulasi/",
+      "notificationLink": "https://www.keralapsc.gov.in/extra-ordinary-gazette-date-16112026",
+      "officialLinks": [
+        {
+          "url": "https://www.keralapsc.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://thulasi.psc.kerala.gov.in/thulasi/",
+          "label": "Apply Online - Kerala PSC Thulasi"
+        },
+        {
+          "url": "https://www.keralapsc.gov.in/extra-ordinary-gazette-date-16112026",
+          "label": "Official Recruitment Notifications"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/state-cet-cell-assistant-law-recruitment-2026-3084839": {
+    "attemptedAt": "2026-11-26T10:57:30.578Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Maharashtra State Common Entrance Test (CET) Cell (State CET Cell), Mumbai",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-11-30",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-11-30",
+      "vacancies": "",
+      "ageLimit": "Maximum 45 years (at the time of appointment)",
+      "eligibility": "LLB degree or LLM post-graduate degree in Law from a recognised university, holding a Sanad; knowledge of all types of laws; adequate Marathi, Hindi and English; computer work experience; minimum 5 years' experience handling court cases or 5 years' advocacy practice in any court in Maharashtra",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Date of Notice",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026"
+        },
+        {
+          "label": "Walk-in interview (candidates present up to this date)",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        }
+      ],
+      "officialLink": "http://www.mahacet.org",
+      "notificationLink": "https://cetcell.mahacet.org/wp-content/uploads/2026/11/20261126002820.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cetcell.mahacet.org/wp-content/uploads/2026/11/20261126002820.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "http://www.mahacet.org",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/icmr-nirt-recruitment-2026-library-science-apprentice-3084845": {
+    "attemptedAt": "2026-11-26T10:57:30.594Z",
+    "parser": "v2",
+    "details": {
+      "organization": "ICMR–National Institute for Research in Tuberculosis, Chennai",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "5",
+      "ageLimit": "",
+      "eligibility": "Trade-wise; freshers can also apply (see below)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-10",
+          "dateText": "10.12.2026, by 5:00 PM (application should reach)"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        },
+        {
+          "label": "Last date for receipt of application",
+          "date": "2026-12-10",
+          "dateText": "10.12.2026, by 5:00 PM"
+        }
+      ],
+      "officialLink": "https://nirt.res.in/",
+      "notificationLink": "https://nirt.res.in/media/vacancy_documents/Vacancy_Notification_-_Apprenticeship_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://nirt.res.in/media/vacancy_documents/Vacancy_Notification_-_Apprenticeship_2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://nirt.res.in/",
+          "label": "ICMR-NIRT Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ofbl-danger-building-worker-dbw-recruitment-2026-3084841": {
+    "attemptedAt": "2026-11-26T10:57:30.612Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Ordnance Factory Badmal (OFBL), Balangir, Odisha",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-17",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Between 18 and 40 years for General Candidates (as on the closing date of receipt of application)",
+      "eligibility": "National Apprenticeship Certificate (NAC) from NCVT in AOCP (Attendant Operator Chemical Plant) trade; feeder trades (IMCP, MMCP, LACP, PPO, Fitter General, Machinist, Turner, Sheet Metal Worker, Electrician, Electronic Mechanic, Boiler Attendant, Mechanic Industrial Electronics, Refrigeration and Air Conditioning Mechanic) considered only if AOCP candidates are not available.",
+      "applicationFee": "for this recruitment? All candidates: NIL. Q5. What is the",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        },
+        {
+          "label": "Date of forwarding letter / notice",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        }
+      ],
+      "officialLink": "https://munitionsindia.in",
+      "notificationLink": "https://munitionsindia.in/wp-content/uploads/No.1002-Tenure-BasedDBW-PERRC-OFBL-2026-DTD.26.11.2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://munitionsindia.in/wp-content/uploads/No.1002-Tenure-BasedDBW-PERRC-OFBL-2026-DTD.26.11.2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://munitionsindia.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/zp-kolhapur-recruitment-2026-sports-coach-rector-3084837": {
+    "attemptedAt": "2026-11-26T10:57:30.632Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Zilla Parishad Kolhapur (ZP Kolhapur), Maharashtra",
+      "publishedDate": "2026-11-26",
+      "openDate": "2026-11-24",
+      "lastDate": "2026-12-08",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Coaches: NIS diploma (1 year) with B.P.Ed/M.P.Ed and 3 years' coaching experience, or B.P.Ed/M.P.Ed with national medal or state-level participation and 3 years' experience; Wrestling: listed titles/awards or state participation with 3 years' experience; Rugby: B.P.Ed/M.P.Ed/Rugby diploma or World Rugby exam, international senior player, 3 years' experience; Rector: B.P.Ed/M.P.Ed preferred.",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-08",
+          "dateText": "8 December 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-08",
+          "dateText": "8 December 2026"
+        }
+      ],
+      "officialLink": "https://www.zpkolhapur.gov.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s387fc87983167155bc333219c2abf239f/uploads/2026/11/202611262057682954.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s387fc87983167155bc333219c2abf239f/uploads/2026/11/202611262057682954.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.zpkolhapur.gov.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/ncrl-senior-research-fellow-srf-recruitment-2026-3084797": {
+    "attemptedAt": "2026-11-26T10:57:30.648Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Networking & Communication Research Lab (NCRL)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-25",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "or the selection process. About NCRL The Networking & Communication Research Lab (NCRL) is the research lab named in the notice. The post is a research position in experimental 5G/6G networks, communication protocols and cybersecurity. The notice does not print the lab's address or parent institute.",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
+        }
+      ],
+      "officialLink": "https://www.iiitb.ac.in",
+      "notificationLink": "https://www.iiitb.ac.in/includefiles/userfiles/files/SRF_networking_Cybersecurity(1).pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.iiitb.ac.in/includefiles/userfiles/files/SRF_networking_Cybersecurity(1).pdf",
+          "label": "NCRL SRF Official Notification PDF"
+        },
+        {
+          "url": "https://www.iiitb.ac.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/irel-consultant-csr-pr-recruitment-2026-3084833": {
+    "attemptedAt": "2026-11-26T10:57:30.668Z",
+    "parser": "v2",
+    "details": {
+      "organization": "IREL Consultant",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Between 55 years and 65 years",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Opening date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026 (10:00 Hrs.)"
+        },
+        {
+          "label": "Last date",
+          "date": "2026-12-06",
+          "dateText": "06 December 2026 (by 18:00 hrs)"
+        },
+        {
+          "label": "Opening date for online registration of applications",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026 (10:00 Hrs.)"
+        },
+        {
+          "label": "Last date of submission of applications",
+          "date": "2026-12-06",
+          "dateText": "06 December 2026 (18:00 Hrs.)"
+        }
+      ],
+      "officialLink": "https://www.irel.co.in",
+      "notificationLink": "https://www.irel.co.in/documents/20126/167125/Advt.+39+for+IREL+webite+%281%29.pdf/df7a6d89-bc72-5ce6-d85a-6d3f4abdea83?t=1795680922138",
+      "officialLinks": [
+        {
+          "url": "https://www.irel.co.in/documents/20126/167125/Advt.+39+for+IREL+webite+%281%29.pdf/df7a6d89-bc72-5ce6-d85a-6d3f4abdea83?t=1795680922138",
+          "label": "Official notification (PDF)"
+        },
+        {
+          "url": "https://www.irel.co.in",
+          "label": "Official website of IREL (India) Limited"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nilgiris-district-health-society-recruitment-2026-audiologist-3084829": {
+    "attemptedAt": "2026-11-26T10:57:30.687Z",
+    "parser": "v2",
+    "details": {
+      "organization": "District Health Society, Nilgiris District",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-07",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "33",
+      "ageLimit": "Varies by post",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-07",
+          "dateText": "07-12-2026, 5 PM"
+        }
+      ],
+      "officialLink": "https://nilgiris.nic.in",
+      "notificationLink": "https://cdn.s3waas.gov.in/s339461a19e9eddfb385ea76b26521ea48/uploads/2026/11/17955238162960.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn.s3waas.gov.in/s339461a19e9eddfb385ea76b26521ea48/uploads/2026/11/17955238162960.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://nilgiris.nic.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iiitdm-kancheepuram-lady-medical-officer-lmo-recruitment-2026-3084795": {
+    "attemptedAt": "2026-11-26T10:57:30.705Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Information Technology, Design and Manufacturing (IIITDM) Kancheepuram",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-10",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-10",
+          "dateText": "10 December 2026"
+        }
+      ],
+      "officialLink": "https://www.iiitdm.ac.in",
+      "notificationLink": "http://old.iiitdm.ac.in/img/Recruitment/2026/LMO_Advertisement_IIITDM.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.iiitdm.ac.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "http://old.iiitdm.ac.in/img/Recruitment/2026/LMO_Advertisement_IIITDM.pdf",
+          "label": "Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/chowgule-college-time-table-2026-27-out-check-even-semester-dates-online-3084819": {
+    "attemptedAt": "2026-11-26T10:57:30.727Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Chowgule College Time Table 2026-27 Out - Check Even Semester Dates Online @ chowgules.ac.in",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Date of notice",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLinks": []
+    }
+  },
+  "https://www.freejobalert.com/articles/iiest-shibpur-senior-research-fellow-electronic-recruitment-2026-3084835": {
+    "attemptedAt": "2026-11-26T10:57:30.743Z",
+    "parser": "v2",
+    "details": {
+      "organization": "IIEST Shibpur Senior Research Fellow (Electronic and Telecommunication Engineering)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-01",
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last date to email documents",
+          "date": "2026-11-30",
+          "dateText": "30.11.2026, 5:00 PM"
+        },
+        {
+          "label": "Walk-in interview",
+          "date": "2026-12-01",
+          "dateText": "01.12.2026, 1:00 PM"
+        },
+        {
+          "label": "Advertisement date",
+          "date": "2026-11-23",
+          "dateText": "23.11.2026"
+        }
+      ],
+      "officialLink": "https://www.iiests.ac.in",
+      "notificationLink": "https://data.iiests.ac.in/uploads/announcements/files/1795680771_a6fM0C_website-copy-chirasree-roychaudhuri-etcpair-23112026-srf-1.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.iiests.ac.in/en/updates?type=Employment&tab=notifications&category=Employment",
+          "label": "Website"
+        },
+        {
+          "url": "https://data.iiests.ac.in/uploads/announcements/files/1795680771_a6fM0C_website-copy-chirasree-roychaudhuri-etcpair-23112026-srf-1.pdf",
+          "label": "Official notification"
+        },
+        {
+          "url": "https://www.iiests.ac.in",
+          "label": "Official website of Indian Institute of Engineering Science & Technology (IIEST), Shibpur"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/calicut-university-joint-director-clinical-recruitment-2026-3084791": {
+    "attemptedAt": "2026-11-26T10:57:30.761Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Date",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4pm)"
+        }
+      ],
+      "officialLink": "https://www.uoc.ac.in",
+      "officialLinks": [
+        {
+          "url": "https://www.uoc.ac.in",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/calicut-university-physiotherapist-recruitment-2026-3084788": {
+    "attemptedAt": "2026-11-26T10:57:30.777Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut, Department of Psychology – Community Based Disability Management and Rehabilitation Programme (CDMRP)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "2",
+      "ageLimit": "",
+      "eligibility": "Bachelor of Physiotherapy (BPT)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm) – application must reach by then"
+        },
+        {
+          "label": "Date of Vacancy Notification",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt)",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm)"
+        }
+      ],
+      "officialLink": "https://www.uoc.ac.in",
+      "notificationLink": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:37:26_vac2155.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:37:26_vac2155.pdf",
+          "label": "Calicut University Physiotherapist Notification PDF"
+        },
+        {
+          "url": "https://www.uoc.ac.in",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/gate-2027-mock-test-links-out-check-paper-wise-free-practice-links-online-3084815": {
+    "attemptedAt": "2026-11-26T10:57:30.808Z",
+    "parser": "v2",
+    "details": {
+      "organization": "GATE 2027 Mock Test Links Out - Check Paper-Wise Free Practice Links Online @ gate2027.iitm.ac.in",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2027-02-21",
+      "resultDate": "2027-03-19",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Mock Test Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "GATE 2027 Exam Dates",
+          "date": "2027-02-21",
+          "dateText": "6, 7, 13, 14, 20 and 21 February 2027"
+        },
+        {
+          "label": "GATE Result Date",
+          "date": "2027-03-19",
+          "dateText": "19 March 2027"
+        },
+        {
+          "label": "Official Mock Test Links Released",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Examination City Allotment Notification",
+          "date": "2027-01-04",
+          "dateText": "4 January 2027"
+        },
+        {
+          "label": "GATE 2027 Examination",
+          "date": "2027-02-21",
+          "dateText": "6, 7, 13, 14, 20 and 21 February 2027"
+        },
+        {
+          "label": "GATE 2027 Result Declaration",
+          "date": "2027-03-19",
+          "dateText": "19 March 2027"
+        }
+      ],
+      "officialLink": "https://gate2027.iitm.ac.in/",
+      "notificationLink": "https://gate2027.iitm.ac.in/notifications",
+      "officialLinks": [
+        {
+          "url": "https://gate2027.iitm.ac.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://gate2027.iitm.ac.in/notifications",
+          "label": "GATE 2027 Mock Test Release Notification"
+        },
+        {
+          "url": "https://goaps.iitm.ac.in/",
+          "label": "GATE 2027 Online Application Portal"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/cbi-suaps-recruitment-2026-office-assistant-attendant-3084786": {
+    "attemptedAt": "2026-11-26T10:57:30.830Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Central Bank of India Samajik Utthan Avam Prashikshan Sansthan (CBI-SUAPS), a Society/Trust sponsored by Central Bank of India",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-15",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "5",
+      "ageLimit": "22-40 years with sound health",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-15",
+          "dateText": "15.12.2026 (last date of receipt of application)"
+        }
+      ],
+      "officialLink": "https://www.centralbankofindia.co.in",
+      "notificationLink": "https://centralbank.bank.in/sites/default/files/RECRUITMENT%20OF%20STAFF%20FOR%20RSETI%20_0.doc",
+      "officialLinks": [
+        {
+          "url": "https://centralbank.bank.in/sites/default/files/RECRUITMENT%20OF%20STAFF%20FOR%20RSETI%20_0.doc",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.centralbankofindia.co.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/akola-nagar-parishad-recruitment-2026-peon-driver-fitter-3084817": {
+    "attemptedAt": "2026-11-26T10:57:30.849Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Municipal Council Administration (Nagar Parishad Prashasan), Collector Office, Akola (Akola Nagar Parishad), Maharashtra",
+      "publishedDate": "2026-11-26",
+      "openDate": "2026-11-26",
+      "lastDate": "2026-12-17",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "10th, B.Sc, Graduate, ITI, depending on the post",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        },
+        {
+          "label": "Date of advertisement",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Online application last date",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        },
+        {
+          "label": "Last date to pay exam fee online",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        }
+      ],
+      "officialLink": "https://akola.gov.in",
+      "notificationLink": "https://cdn.s3waas.gov.in/s3f0e52b27a7a5d6a1a87373dffa53dbe5/uploads/2026/11/17956715891686.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn.s3waas.gov.in/s3f0e52b27a7a5d6a1a87373dffa53dbe5/uploads/2026/11/17956715891686.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://akola.gov.in",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/district-programme-officer-mirzapur-recruitment-2026-anganwadi-3084782": {
+    "attemptedAt": "2026-11-26T10:57:30.867Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Office of the District Programme Officer, Mirzapur, Uttar Pradesh",
+      "publishedDate": "2026-11-26",
+      "openDate": "2026-11-26",
+      "lastDate": "2026-12-16",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "18 to 35 years (as on 1 July 2026)",
+      "eligibility": "Minimum Intermediate (12th) or equivalent. Merit is prepared on the marks of qualifications from Intermediate up to a maximum of Post Graduation. Women only. Must be a permanent resident of the Gram Sabha or urban ward of the vacancy.",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Online application last date (till midnight 12:00)",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        }
+      ],
+      "officialLink": "https://upanganwadibharti.in",
+      "notificationLink": "https://upanganwadibharti.in/helper-v2/uploadOrder/ordercopy1795602456.pdf",
+      "officialLinks": [
+        {
+          "url": "https://upanganwadibharti.in/helper-v2/uploadOrder/ordercopy1795602456.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://upanganwadibharti.in",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/msebhcl-company-secretary-recruitment-2026-3084780": {
+    "attemptedAt": "2026-11-26T10:57:30.885Z",
+    "parser": "v2",
+    "details": {
+      "organization": "MSEB Holding Company Ltd.",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Graduate Degree from a recognized University with Membership of the Institute of Company Secretaries of India, with computer literacy",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-15",
+          "dateText": "15/12/2026 (application must reach the office)"
+        },
+        {
+          "label": "Last date for the application to reach the office",
+          "date": "2026-12-15",
+          "dateText": "15/12/2026"
+        }
+      ],
+      "officialLink": "https://www.msebindia.com",
+      "officialLinks": [
+        {
+          "url": "https://www.msebindia.com",
+          "label": "MSEB Holding Company official website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/university-of-calicut-speech-language-pathologist-recruitment-2026-3084778": {
+    "attemptedAt": "2026-11-26T10:57:30.904Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut, Department of Psychology – CDMRP",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3",
+      "ageLimit": "",
+      "eligibility": "BASLP with valid RCI certificate",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm) – applications must reach by this time"
+        },
+        {
+          "label": "Vacancy Notification Date",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt)",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm)"
+        }
+      ],
+      "officialLink": "https://uoc.ac.in/",
+      "notificationLink": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:42:47_vac2156.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:42:47_vac2156.pdf",
+          "label": "Calicut University CDMRP Vacancy Notification PDF"
+        },
+        {
+          "url": "https://uoc.ac.in/",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dr-subhash-university-time-table-2026-out-check-ug-and-pg-final-exam-schedule-3084810": {
+    "attemptedAt": "2026-11-26T10:57:30.923Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Dr. Subhash University Time Table 2026 Out - Check UG and PG Final",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Time Table Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLink": "https://dsuni.ac.in/",
+      "officialLinks": [
+        {
+          "url": "https://dsuni.ac.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://dsuni.ac.in/circular/",
+          "label": "M.Sc. (All Branches)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/icar-cazri-young-professional-i-recruitment-2026-3084776": {
+    "attemptedAt": "2026-11-26T10:57:30.941Z",
+    "parser": "v2",
+    "details": {
+      "organization": "ICAR-CAZRI Young Professional I (Plant Improvement and Pest Management)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-03",
+          "dateText": "03.12.2026"
+        }
+      ],
+      "officialLink": "https://cazri.res.in/",
+      "notificationLink": "https://cazri.res.in/English/jobs/1yp1-2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cazri.res.in/English/jobs/1yp1-2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://cazri.res.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/coep-tech-junior-research-fellow-jrf-recruitment-2026-3084811": {
+    "attemptedAt": "2026-11-26T10:57:30.958Z",
+    "parser": "v2",
+    "details": {
+      "organization": "COEP Technological University Pune (COEP Tech)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Date of the notice",
+          "date": "2026-11-25",
+          "dateText": "25-11-2026"
+        }
+      ],
+      "officialLink": "https://www.coeptech.ac.in",
+      "notificationLink": "https://www.coeptech.ac.in/wp-content/uploads/2026/11/Rolling-advertisements_COEP-TU_ANRF-PAIR_Project-UID-01-JRF-Position_Nov-2026_updated-on-25-11-2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.coeptech.ac.in/wp-content/uploads/2026/11/Rolling-advertisements_COEP-TU_ANRF-PAIR_Project-UID-01-JRF-Position_Nov-2026_updated-on-25-11-2026.pdf",
+          "label": "COEP Tech JRF Official Notification PDF"
+        },
+        {
+          "url": "https://www.coeptech.ac.in",
+          "label": "COEP Technological University Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/calicut-university-training-psychologist-recruitment-2026-3084803": {
+    "attemptedAt": "2026-11-26T10:57:30.973Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut, Department of Psychology – CDMRP",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "M.Sc. Psychology from University of Calicut or its equivalent (1 Year Experience)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4pm) – application must reach by this date"
+        },
+        {
+          "label": "Date of vacancy notification",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last date for receipt of applications",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4pm)"
+        }
+      ],
+      "officialLink": "https://www.uoc.ac.in",
+      "notificationLink": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:13:11_vac2151.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:13:11_vac2151.pdf",
+          "label": "Calicut University Training Psychologist Notification PDF"
+        },
+        {
+          "url": "https://www.uoc.ac.in",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/calicut-university-special-educator-recruitment-2026-3084801": {
+    "attemptedAt": "2026-11-26T10:57:30.990Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut, Department of Psychology – CDMRP",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "D.Ed. in Special Education (ID/ASD)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm) – applications must reach by this time"
+        },
+        {
+          "label": "Vacancy notification dated",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last date for receipt of applications",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm)"
+        }
+      ],
+      "officialLink": "https://uoc.ac.in/",
+      "notificationLink": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:14:34_vac2152.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:14:34_vac2152.pdf",
+          "label": "Calicut University Special Educator Notification PDF"
+        },
+        {
+          "url": "https://uoc.ac.in/",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/vvcmc-recruitment-2026-apply-online-for-156-clerk-typist-junior-engineer-and-more-posts-3084807": {
+    "attemptedAt": "2026-11-26T10:57:31.020Z",
+    "parser": "v2",
+    "details": {
+      "organization": "VVCMC",
+      "publishedDate": "2026-11-25",
+      "openDate": "2026-11-26",
+      "lastDate": "2026-12-17",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "156",
+      "ageLimit": "",
+      "eligibility": "SSC, HSC, ITI, Diploma, Graduate or Postgraduate Degree, as applicable",
+      "applicationFee": "17 December 2026",
+      "milestones": [
+        {
+          "label": "Age Calculation Date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Notification Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Application Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026 (11:55 PM)"
+        },
+        {
+          "label": "Notification Release Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Starting Date to Apply Online",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026 (11:55 PM)"
+        },
+        {
+          "label": "Last Date for Application Fee Payment",
+          "date": "2026-12-17",
+          "dateText": "17 December 2026"
+        }
+      ],
+      "officialLink": "https://www.vvcmc.in/",
+      "notificationLink": "https://vvcmc.in/wp-content/uploads/2026/11/%E0%A4%9C%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%B0%E0%A4%BE%E0%A4%A4.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.vvcmc.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://vvcmc.in/wp-content/uploads/2026/11/%E0%A4%9C%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%B0%E0%A4%BE%E0%A4%A4.pdf",
+          "label": "Official Recruitment Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-guwahati-assistant-project-scientist-recruitment-2026-3084766": {
+    "attemptedAt": "2026-11-26T10:57:31.038Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology Guwahati, Research and Development Section",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-11-30",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-01",
+      "vacancies": "01",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026, 5.00 PM"
+        },
+        {
+          "label": "Last Date of Application",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026, 5.00 PM"
+        },
+        {
+          "label": "Date of Interview (Online)",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026, 3.00 PM"
+        }
+      ],
+      "officialLink": "https://iitg.ac.in/rndproj/recruitment/",
+      "notificationLink": "https://www.iitg.ac.in/pdf/c67153cf1bf6dbc6c8d383fe2f87b76a.pdf",
+      "officialLinks": [
+        {
+          "url": "https://iitg.ac.in/rndproj/recruitment/",
+          "label": "Apply Online – IIT Guwahati Recruitment Portal"
+        },
+        {
+          "url": "https://www.iitg.ac.in/pdf/c67153cf1bf6dbc6c8d383fe2f87b76a.pdf",
+          "label": "IIT Guwahati Assistant Project Scientist Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/pau-teaching-and-non-teaching-recruitment-2026-3084773": {
+    "attemptedAt": "2026-11-26T10:57:31.057Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Punjab Agricultural University (PAU), Ludhiana",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "18 to 37 years (as on 1st January of the year in which the post is being advertised)",
+      "eligibility": "Ph.D, Master's degree, M.Sc, MBBS, Diploma, Graduate, depending on the post",
+      "applicationFee": "for PAU Recruitment 2026? Additional Director Communication: Rs. 1298. Sanitary Inspector: Rs. 590. Packer: Rs. 118. Q4. What is the",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        },
+        {
+          "label": "Opening date for online registration",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last date for online registration",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        },
+        {
+          "label": "Last date for submission of hard copy",
+          "date": "2026-12-09",
+          "dateText": "9 December 2026"
+        }
+      ],
+      "officialLink": "https://pau.edu",
+      "notificationLink": "https://pau.edu/index.php?_act=manageVacancy&DO=viewVacancyDetail&intID=7678",
+      "officialLinks": [
+        {
+          "url": "https://pau.edu/index.php?_act=manageVacancy&DO=viewVacancyDetail&intID=7678",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://pau.edu",
+          "label": "Apply Online"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-guwahati-associate-project-scientist-chemistry-recruitment-2026-3084770": {
+    "attemptedAt": "2026-11-26T10:57:31.073Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology Guwahati",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-04",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-07",
+      "vacancies": "01",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026 (5:00 PM)"
+        },
+        {
+          "label": "Last date to apply online",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026 (5:00 PM)"
+        },
+        {
+          "label": "Interview (offline)",
+          "date": "2026-12-07",
+          "dateText": "7 December 2026 (Monday), 10.00 am"
+        }
+      ],
+      "officialLink": "https://iitg.ac.in/rndproj/recruitment",
+      "notificationLink": "https://www.iitg.ac.in/pdf/d9fd493a1cf20143b6bfe7ad3c7a6ab2.pdf",
+      "officialLinks": [
+        {
+          "url": "https://iitg.ac.in/rndproj/recruitment",
+          "label": "Apply Online on the Recruitment Portal"
+        },
+        {
+          "url": "https://www.iitg.ac.in/pdf/d9fd493a1cf20143b6bfe7ad3c7a6ab2.pdf",
+          "label": "IIT Guwahati Associate Project Scientist Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dafw-member-secretary-recruitment-2027-3082880": {
+    "attemptedAt": "2026-11-26T10:57:31.089Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Department of Agriculture and Farmers Welfare (post in the Commission for Agricultural Costs & Prices)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Not exceeding 56 years as on the closing date of receipt of applications",
+      "eligibility": "IES/ISS officers, or Government/University/Research Institute officers with Ph.D. in Agricultural Economics or Agricultural Statistics (see eligibility)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Date of circular",
+          "date": "2026-11-04",
+          "dateText": "04 November 2026"
+        }
+      ],
+      "officialLink": "https://agriwelfare.gov.in/",
+      "notificationLink": "https://cacp.da.gov.in/Document/EnglishReports/BP-50M45_20261119_182309_20261119160637808.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cacp.da.gov.in/Document/EnglishReports/BP-50M45_20261119_182309_20261119160637808.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://agriwelfare.gov.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/calicut-university-developmental-psychotherapist-recruitment-2026-3084768": {
+    "attemptedAt": "2026-11-26T10:57:31.108Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut, Department of Psychology – CDMRP",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-06",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3",
+      "ageLimit": "",
+      "eligibility": "M.Phil. in Clinical Psychology / M.Phil. in Rehabilitation Psychology / Post Graduate Diploma in Rehabilitation Psychology, and a Valid RCI Certificate",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4pm) – last date for receipt"
+        },
+        {
+          "label": "Vacancy Notification Dated",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt)",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4pm)"
+        }
+      ],
+      "officialLink": "https://uoc.ac.in/",
+      "notificationLink": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:45:58_vac2159.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:45:58_vac2159.pdf",
+          "label": "Calicut University Developmental Psychotherapist Notification PDF"
+        },
+        {
+          "url": "https://uoc.ac.in/",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/university-of-calicut-disability-management-officer-recruitment-2026-3084784": {
+    "attemptedAt": "2026-11-26T10:57:31.124Z",
+    "parser": "v2",
+    "details": {
+      "organization": "University of Calicut, Department of Psychology (CDMRP)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "2",
+      "ageLimit": "",
+      "eligibility": "M.Sc. Psychology/Applied Psychology, M.Phil Clinical Psychology with valid RCI Registration, PhD, UGC-NET in Psychology (see full list below)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm) – application must reach by this time"
+        },
+        {
+          "label": "Vacancy notification dated",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last date for receipt of application",
+          "date": "2026-12-06",
+          "dateText": "06-12-2026 (4 pm)"
+        }
+      ],
+      "officialLink": "https://uoc.ac.in/",
+      "notificationLink": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:43:34_vac2157.pdf",
+      "officialLinks": [
+        {
+          "url": "https://docs.uoc.ac.in/website/vacancies/2026-11-26%2011:43:34_vac2157.pdf",
+          "label": "Calicut University CDMRP Vacancy Notification PDF"
+        },
+        {
+          "url": "https://uoc.ac.in/",
+          "label": "University of Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-indore-research-associate-mechanical-engineering-recruitment-2026-3084730": {
+    "attemptedAt": "2026-11-26T10:57:31.142Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology Indore",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-11-29",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-16",
+          "dateText": "16 November 2026"
+        },
+        {
+          "label": "Last date to send applications by email",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        }
+      ],
+      "officialLink": "https://iiti.ac.in/",
+      "notificationLink": "https://www.iiti.ac.in/uploads/career/2026/Nov/4d525d1881982a209763c451f7c27b71.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.iiti.ac.in/uploads/career/2026/Nov/4d525d1881982a209763c451f7c27b71.pdf",
+          "label": "IIT Indore Research Associate Official Notification PDF"
+        },
+        {
+          "url": "https://iiti.ac.in/",
+          "label": "IIT Indore Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/psdm-yoga-trainer-recruitment-2026-3084761": {
+    "attemptedAt": "2026-11-26T10:57:31.157Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Punjab Skill Development Mission (Punjab Hunar Vikas Mission), District Programme Management Unit, Pathankot (PSDM)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Minimum 21 years (as on 1 November 2026)",
+      "eligibility": "Diploma in Yoga Training or a 200-hour certified course in Yoga Training, and one year of experience in yoga training; Punjabi passed at matriculation (10th) level is compulsory.",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026"
+        },
+        {
+          "label": "Notice date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Age cut-off date",
+          "date": "2026-11-01",
+          "dateText": "1 November 2026"
+        },
+        {
+          "label": "Last date to submit application (5 PM)",
+          "date": "2026-11-27",
+          "dateText": "27 November 2026"
+        }
+      ],
+      "officialLink": "https://pathankot.nic.in/",
+      "notificationLink": "https://cdn.s3waas.gov.in/s320f07591c6fcb220ffe637cda29bb3f6/uploads/2026/11/17956698741968.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdn.s3waas.gov.in/s320f07591c6fcb220ffe637cda29bb3f6/uploads/2026/11/17956698741968.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://pathankot.nic.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/csir-imtech-project-technical-support-ii-pts-ii-recruitment-2026-3084763": {
+    "attemptedAt": "2026-11-26T10:57:31.176Z",
+    "parser": "v2",
+    "details": {
+      "organization": "CSIR-Institute of Microbial Technology, Chandigarh",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "01",
+      "ageLimit": "Upper age limit 30 years",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [],
+      "officialLink": "https://imtech.res.in/",
+      "notificationLink": "https://www.imtech.res.in/storage/app/uploads/admin/job-opening/advt%202026-11-06_6b07bd45a66b9.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.imtech.res.in/storage/app/uploads/admin/job-opening/advt%202026-11-06_6b07bd45a66b9.pdf",
+          "label": "CSIR-IMTECH Rolling Advt. No. 2026-11-06 Notification PDF"
+        },
+        {
+          "url": "https://imtech.res.in/",
+          "label": "CSIR-IMTECH Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/jncasr-research-associate-new-chemistry-unit-recruitment-2026-3084684": {
+    "attemptedAt": "2026-11-26T10:57:31.194Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Jawaharlal Nehru Centre for Advanced Scientific Research (JNCASR)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-08",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "Maximum 35 years",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026"
+        },
+        {
+          "label": "Date of Advertisement",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last Date to Apply by Email",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026"
+        }
+      ],
+      "officialLink": "https://www.jncasr.ac.in",
+      "notificationLink": "https://www.jncasr.ac.in/sites/default/files/Join_Us/Opportunities/2026-11/NCU-EMR-184.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.jncasr.ac.in/sites/default/files/Join_Us/Opportunities/2026-11/NCU-EMR-184.pdf",
+          "label": "JNCASR Research Associate Notification PDF (Advt. No. NCU/EMR/184)"
+        },
+        {
+          "url": "https://www.jncasr.ac.in",
+          "label": "JNCASR Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-hyderabad-research-associate-i-recruitment-2026-3084707": {
+    "attemptedAt": "2026-11-26T10:57:31.205Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology Hyderabad",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-04",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Not more than 35 years as on the last day of application",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-04",
+          "dateText": "4 December 2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        }
+      ],
+      "officialLink": "https://iith.ac.in/",
+      "notificationLink": "https://iith.ac.in/assets/files/careers/staff/Research%20Associate-I-26112026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://iith.ac.in/assets/files/careers/staff/Research%20Associate-I-26112026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://iith.ac.in/",
+          "label": "IIT Hyderabad Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aiims-jodhpur-project-research-scientist-ii-recruitment-2026-3084727": {
+    "attemptedAt": "2026-11-26T10:57:31.222Z",
+    "parser": "v2",
+    "details": {
+      "organization": "AIIMS Jodhpur, Rajasthan",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-02",
+      "vacancies": "",
+      "ageLimit": "Maximum 40 years (as on the last date of the advertisement)",
+      "eligibility": "BAMS with Post Graduate Degree in Relevant Subject with one-year experience",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-02",
+          "dateText": "2 December 2026"
+        },
+        {
+          "label": "Date of Notice",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Walk-in Interview (reporting 09:00 AM to 09:30 AM)",
+          "date": "2026-12-02",
+          "dateText": "2 December 2026"
+        }
+      ],
+      "officialLink": "https://www.aiimsjodhpur.edu.in",
+      "notificationLink": "https://aiimsjodhpur.edu.in/recruitment/Research/2026/1795668795_Recruitment%20Notice%20Research%20Scientist%20%E2%80%93%20II.pdf",
+      "officialLinks": [
+        {
+          "url": "https://aiimsjodhpur.edu.in/recruitment/Research/2026/1795668795_Recruitment%20Notice%20Research%20Scientist%20%E2%80%93%20II.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.aiimsjodhpur.edu.in",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-ism-dhanbad-project-associate-i-electrical-recruitment-2026-3084664": {
+    "attemptedAt": "2026-11-26T10:57:31.241Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology (ISM) Dhanbad, Office of the Dean (Research & Development)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-05",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "01",
+      "ageLimit": "Upper age limit 35 years as on the closing date of the application",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Sanction No. and Date",
+          "date": "2026-10-21",
+          "dateText": "ISRO/RES/3/1151/26-27, dated 21.10.2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-05",
+          "dateText": "5 December 2026, 5:00 PM"
+        },
+        {
+          "label": "Sanction date",
+          "date": "2026-10-21",
+          "dateText": "21.10.2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-23",
+          "dateText": "23/11/2026"
+        },
+        {
+          "label": "Last date and time to apply",
+          "date": "2026-12-05",
+          "dateText": "5 December 2026, 5:00 PM"
+        }
+      ],
+      "officialLink": "https://iitism.ac.in/",
+      "notificationLink": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1415/Project%20Associate_2026-11-26_09-17-23.pdf",
+      "officialLinks": [
+        {
+          "url": "https://people.iitism.ac.in/~download/projectOpening//uploads/pdfprj/1415/Project%20Associate_2026-11-26_09-17-23.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://iitism.ac.in/",
+          "label": "IIT (ISM) Dhanbad Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/mpkv-recruitment-2026-electrician-skilled-helper-3084662": {
+    "attemptedAt": "2026-11-26T10:57:31.257Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Mahatma Phule Krishi Vidyapeeth, Rahuri (MPKV), Maharashtra",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-11",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Skilled Helper: Diploma/degree in Agriculture with 2 year's experience. Electrician: Electrical Diploma/ITI in Electric with 2 years experience.",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        },
+        {
+          "label": "Date of Notification",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-11",
+          "dateText": "11 December 2026"
+        }
+      ],
+      "officialLink": "https://mpkv.ac.in/",
+      "notificationLink": "https://mpkv.ac.in/Uploads/AKMU/20261126_092630_a97ff38ed21ddd1849b0ea7e17e50990.pdf",
+      "officialLinks": [
+        {
+          "url": "https://mpkv.ac.in/Uploads/AKMU/20261126_092630_a97ff38ed21ddd1849b0ea7e17e50990.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://mpkv.ac.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/c-dit-recruitment-2026-apply-online-for-30-junior-machine-operator-production-coordinator-and-more-posts-3084757": {
+    "attemptedAt": "2026-11-26T10:57:31.282Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Centre for Development of Imaging Technology (C-DIT)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-08",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "30",
+      "ageLimit": "Varies by post",
+      "eligibility": "",
+      "applicationFee": "Rs. 300/- (incl. GST) for each post; SC/ST exempted",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026, 5 PM"
+        },
+        {
+          "label": "Date of notification",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Closing date of online application",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026, 5 PM"
+        }
+      ],
+      "officialLink": "https://careers.cdit.org",
+      "notificationLink": "https://careers.cdit.org/2026Con/OIPNotification24.pdf",
+      "officialLinks": [
+        {
+          "url": "https://careers.cdit.org",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://careers.cdit.org/2026Con/OIPNotification24.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://cdit.kerala.gov.in/",
+          "label": "C-DIT Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/c-dit-consultant-fund-realisation-recruitment-2026-3084635": {
+    "attemptedAt": "2026-11-26T10:57:31.299Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Centre for Development of Imaging Technology (C-DIT)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-08",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Below 65 years on the date of notification",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026, Tuesday, 5 pm"
+        },
+        {
+          "label": "Notification date",
+          "date": "2026-11-24",
+          "dateText": "24.11.2026"
+        },
+        {
+          "label": "Last date for submission of applications",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026, Tuesday, 5 pm"
+        }
+      ],
+      "officialLink": "https://www.cdit.org",
+      "notificationLink": "https://careers.cdit.org/2026Con/Notification-HR1-23.pdf",
+      "officialLinks": [
+        {
+          "url": "https://careers.cdit.org/2026Con/Notification-HR1-23.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.cdit.org",
+          "label": "C-DIT Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aps-sukna-recruitment-2026-tgt-prt-3084638": {
+    "attemptedAt": "2026-11-26T10:57:31.327Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Army Public School Sukna, Darjeeling, West Bengal",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-11-28",
+          "dateText": "28 Nov 2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-23",
+          "dateText": "23 Nov 2026"
+        },
+        {
+          "label": "Last date to submit application",
+          "date": "2026-11-28",
+          "dateText": "28 Nov 2026"
+        },
+        {
+          "label": "Existing tenure date mentioned for another term-based tenure",
+          "date": "2027-03-31",
+          "dateText": "31 Mar 2027"
+        }
+      ],
+      "officialLink": "https://apssukna.com",
+      "officialLinks": [
+        {
+          "url": "https://apssukna.com",
+          "label": "APS Sukna Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nit-puducherry-project-associate-recruitment-2026-apply-online-3084755": {
+    "attemptedAt": "2026-11-26T10:57:31.387Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Institute of Technology Puducherry",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-04",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-04",
+          "dateText": "04-12-2026"
+        }
+      ],
+      "officialLink": "https://www.nitpy.ac.in",
+      "notificationLink": "https://www.nitpy.ac.in/assets/docs/opportunities/2026/PAIITG2026/Updated_Project_Associate_Recruitment_Advertisement.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.nitpy.ac.in",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.nitpy.ac.in/assets/docs/opportunities/2026/PAIITG2026/Updated_Project_Associate_Recruitment_Advertisement.pdf",
+          "label": "Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/district-court-kurnool-special-judicial-magistrate-recruitment-2026-3084633": {
+    "attemptedAt": "2026-11-26T10:57:31.454Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Office of the Principal District Judge, Kurnool (District Court Kurnool), Andhra Pradesh",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "Non-practicing Advocate: above 45 years and below 65 years; retired persons: at least one and half years to complete 65 years of age (on the date of notification)",
+      "eligibility": "Any one of the following: retired or resigned AP State Judicial Service officer; AP Judicial Ministerial Subordinate Service post not below Superintendent with a Law Degree; Section Officer or above in AP High Court Service with a Law Degree; Advocate with at least 5 years' practice and not on the rolls of the Bar Council at present; retired Gazetted Officer with a Law Degree or who passed the Criminal Judicial Test in full and exercised Magisterial Powers for not less than three years.",
+      "applicationFee": "is mentioned in the notification",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-21",
+          "dateText": "21 December 2026"
+        },
+        {
+          "label": "Notification date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last date for receiving application (below 5 P.M.)",
+          "date": "2026-12-21",
+          "dateText": "21 December 2026"
+        }
+      ],
+      "officialLink": "http://ecourts.gov.in/kurnool",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3ec030b6ace9e8971cf36f1782aa982a7/uploads/2026/11/2026112541.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s3ec030b6ace9e8971cf36f1782aa982a7/uploads/2026/11/2026112541.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "http://ecourts.gov.in/kurnool",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/angrau-teaching-associate-recruitment-2026-walkin-3084747": {
+    "attemptedAt": "2026-11-26T10:57:31.512Z",
+    "parser": "v2",
+    "details": {
+      "organization": "ANGRAU Teaching Associate",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-05",
+          "dateText": "05.12.2026"
+        }
+      ],
+      "officialLink": "https://angrau.ac.in",
+      "officialLinks": [
+        {
+          "url": "https://angrau.ac.in",
+          "label": "ANGRAU Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/iit-kharagpur-project-research-assistant-research-recruitment-2026-3084631": {
+    "attemptedAt": "2026-11-26T10:57:31.570Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Indian Institute of Technology Kharagpur (Sponsored Research and Industrial Consultancy)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-31",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "1",
+      "ageLimit": "35 years",
+      "eligibility": "",
+      "applicationFee": "Rs. 0 (General / Male / OBC, Female, SC/ST)",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        },
+        {
+          "label": "Advertisement dated",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Last date of application",
+          "date": "2026-12-31",
+          "dateText": "31 December 2026"
+        }
+      ],
+      "officialLink": "https://iitkgp.ac.in/",
+      "notificationLink": "https://erp.iitkgp.ac.in/SricWeb/showAdvtFilePdf.htm?ref_no=IIT/SRIC/R/VDC/2026/101",
+      "officialLinks": [
+        {
+          "url": "https://iitkgp.ac.in/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://erp.iitkgp.ac.in/SricWeb/showAdvtFilePdf.htm?ref_no=IIT/SRIC/R/VDC/2026/101",
+          "label": "Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/nit-calicut-junior-research-fellow-recruitment-2026-apply-online-3084744": {
+    "attemptedAt": "2026-11-26T10:57:31.588Z",
+    "parser": "v2",
+    "details": {
+      "organization": "National Institute of Technology Calicut (Office of Research and Consultancy)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-10",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-14",
+      "vacancies": "01",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-10",
+          "dateText": "10/12/2026"
+        },
+        {
+          "label": "Last Date for application Submission (by email)",
+          "date": "2026-12-10",
+          "dateText": "10/12/2026"
+        },
+        {
+          "label": "Date for Interview (hybrid mode)",
+          "date": "2026-12-14",
+          "dateText": "14/12/2026"
+        }
+      ],
+      "officialLink": "https://nitc.ac.in",
+      "notificationLink": "https://nitc.ac.in/imgserver/uploads/attachments/Ed__d56bc823-5833-414d-9433-59dcbdba4185_.pdf",
+      "officialLinks": [
+        {
+          "url": "https://nitc.ac.in/imgserver/uploads/attachments/Ed__d56bc823-5833-414d-9433-59dcbdba4185_.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://nitc.ac.in",
+          "label": "NIT Calicut Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aiims-new-delhi-nursing-staff-recruitment-2026-apply-online-3084739": {
+    "attemptedAt": "2026-11-26T10:57:31.621Z",
+    "parser": "v2",
+    "details": {
+      "organization": "All India Institute of Medical Sciences, New Delhi",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": "2026-12-04",
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-07",
+      "vacancies": "01",
+      "ageLimit": "Below 35 years",
+      "eligibility": "B.Sc. Nursing / GNM / Post Basic B.Sc. Nursing from a recognised institution",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-04",
+          "dateText": "04 December 2026 (receipt of applications)"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-23",
+          "dateText": "23-11-2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt of applications)",
+          "date": "2026-12-04",
+          "dateText": "04 December 2026"
+        },
+        {
+          "label": "Interview Date",
+          "date": "2026-12-07",
+          "dateText": "07 December 2026"
+        }
+      ],
+      "officialLink": "https://www.aiims.edu",
+      "notificationLink": "https://www.aiims.edu/images/pdf/recruitment/advertisement/neuroradio-26-11-26.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.aiims.edu/images/pdf/recruitment/advertisement/neuroradio-26-11-26.pdf",
+          "label": "AIIMS New Delhi Nursing Staff Notification PDF"
+        },
+        {
+          "url": "https://www.aiims.edu",
+          "label": "AIIMS New Delhi Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/angrau-teaching-associate-recruitment-2026-walk-in-for-2-posts-3084745": {
+    "attemptedAt": "2026-11-26T10:57:31.640Z",
+    "parser": "v2",
+    "details": {
+      "organization": "ANGRAU Teaching Associate",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "2",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Walk-in Date",
+          "date": "2026-12-04",
+          "dateText": "04.12.2026"
+        }
+      ],
+      "officialLink": "https://angrau.ac.in/",
+      "officialLinks": [
+        {
+          "url": "https://angrau.ac.in/",
+          "label": "ANGRAU Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/aiims-jodhpur-project-technical-support-iii-recruitment-2026-walkin-3084737": {
+    "attemptedAt": "2026-11-26T10:57:31.660Z",
+    "parser": "v2",
+    "details": {
+      "organization": "All India Institute of Medical Sciences (AIIMS), Jodhpur",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-03",
+      "vacancies": "1",
+      "ageLimit": "35 years",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Interview Date",
+          "date": "2026-12-03",
+          "dateText": "03.12.2026, reporting 09:30 AM"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        },
+        {
+          "label": "Reporting for the in-person interview",
+          "date": "2026-12-03",
+          "dateText": "03.12.2026, 09:30 AM"
+        }
+      ],
+      "officialLink": "https://aiimsjodhpur.edu.in",
+      "notificationLink": "https://aiimsjodhpur.edu.in/recruitment/Research/2026/1795668870_TA3%20Endo.pdf",
+      "officialLinks": [
+        {
+          "url": "https://aiimsjodhpur.edu.in/recruitment/Research/2026/1795668870_TA3%20Endo.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://aiimsjodhpur.edu.in",
+          "label": "AIIMS Jodhpur Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/namo-hospital-daman-recruitment-2026-apply-offline-for-8-anaesthetist-paediatrician-and-more-posts-3084732": {
+    "attemptedAt": "2026-11-26T10:57:31.679Z",
+    "parser": "v2",
+    "details": {
+      "organization": "U. T. Administration of Dadra & Nagar Haveli and Daman & Diu, Department of Health & Family Welfare, O/o the Medical Superintendent, NAMO Hospital, Daman",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-08",
+      "vacancies": "8",
+      "ageLimit": "",
+      "eligibility": "MBBS with PG Degree or Diploma (MS/MD/DNB) in the respective subject, and NMC or SMC registration",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-04",
+          "dateText": "04.12.2026, 5:30 PM"
+        },
+        {
+          "label": "Interview Date",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        },
+        {
+          "label": "Last date for submission of application and presentation",
+          "date": "2026-12-04",
+          "dateText": "04.12.2026, 5:30 PM"
+        },
+        {
+          "label": "Reporting time for interview",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026, 09:00 AM"
+        },
+        {
+          "label": "Interview",
+          "date": "2026-12-08",
+          "dateText": "08.12.2026, 10:00 AM onwards"
+        }
+      ],
+      "officialLink": "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/11/202611261071675884.pdf",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/11/202611261071675884.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/11/202611261071675884.pdf",
+          "label": "Official Notification PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rssb-cet-12th-admit-card-2026-3084818": {
+    "attemptedAt": "2026-11-26T10:57:31.704Z",
+    "parser": "v2",
+    "details": {
+      "organization": "RSSB CET 12th",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-12-03",
+      "resultDate": null,
+      "admitCardDate": "2026-11-26",
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Senior Secondary (12th Level)",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Exam City Intimation Date",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "Exam Dates",
+          "date": "2026-12-03",
+          "dateText": "1, 2 and 3 December 2026"
+        },
+        {
+          "label": "Examination Programme Announcement",
+          "date": "2026-09-28",
+          "dateText": "28 September 2026"
+        },
+        {
+          "label": "Admit Card and Examination Instructions Notice",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Exam District Allotment Information",
+          "date": "2026-11-21",
+          "dateText": "21 November 2026"
+        },
+        {
+          "label": "Admit Card Scheduled Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Examination Day 1",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Examination Day 2",
+          "date": "2026-12-02",
+          "dateText": "2 December 2026"
+        },
+        {
+          "label": "Examination Day 3",
+          "date": "2026-12-03",
+          "dateText": "3 December 2026"
+        }
+      ],
+      "officialLink": "https://recruitment.rajasthan.gov.in/rectlogingetadmitcard",
+      "officialLinks": [
+        {
+          "url": "https://rssb.rajasthan.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://recruitment.rajasthan.gov.in/rectlogingetadmitcard",
+          "label": "RSSB CET 12th Admit Card 2026"
+        },
+        {
+          "url": "https://sso.rajasthan.gov.in/signin",
+          "label": "Rajasthan CET 12th Exam City Intimation"
+        },
+        {
+          "url": "https://rssb.rajasthan.gov.in/",
+          "label": "RSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/punjab-police-constable-pst-pmt-result-2026-3084804": {
+    "attemptedAt": "2026-11-26T10:57:31.724Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Punjab Police Constable PST PMT",
+      "publishedDate": "2026-11-26",
+      "openDate": "2026-03-10",
+      "lastDate": "2026-03-30",
+      "examDate": "2026-10-07",
+      "resultDate": "2026-10-07",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "3,298",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "CBT Examination Date",
+          "date": "2026-07-01",
+          "dateText": "1 July 2026"
+        },
+        {
+          "label": "CBT Marks Release",
+          "date": "2026-10-04",
+          "dateText": "4 October 2026"
+        },
+        {
+          "label": "CBT Result Date",
+          "date": "2026-10-07",
+          "dateText": "7 October 2026"
+        },
+        {
+          "label": "Stage III Shortlist and Cutoff Update",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Recruitment Notification Date",
+          "date": "2026-03-05",
+          "dateText": "5 March 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-03-10",
+          "dateText": "10 March 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-03-30",
+          "dateText": "30 March 2026"
+        },
+        {
+          "label": "CBT Marks Released",
+          "date": "2026-10-04",
+          "dateText": "4 October 2026"
+        },
+        {
+          "label": "CBT Result Declared",
+          "date": "2026-10-07",
+          "dateText": "7 October 2026"
+        },
+        {
+          "label": "Stage III Document Scrutiny Shortlist",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Stage III Cut Off Marks",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLink": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/8/2502833088.pdf",
+      "officialLinks": [
+        {
+          "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/8/2502833088.pdf",
+          "label": "Punjab Police Constable PST PMT Result 2026"
+        },
+        {
+          "url": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/8/2501301583.pdf",
+          "label": "Punjab Police Constable Stage III Cut Off 2026"
+        },
+        {
+          "url": "https://punjabpolice.gov.in/",
+          "label": "Punjab Police Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/sbi-junior-associate-final-result-2026-3084636": {
+    "attemptedAt": "2026-11-26T10:57:31.740Z",
+    "parser": "v2",
+    "details": {
+      "organization": "State Bank of India, Central Recruitment & Promotion Department, Corporate Centre, Mumbai State Bank of India, Central Recruitment & Promotion Department, Corporate Centre, Mumbai",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-25",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Release Date",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026 25.11.2026"
+        },
+        {
+          "label": "Special Drive Final Result",
+          "date": "2026-11-25",
+          "dateText": "25.11.2026"
+        }
+      ],
+      "officialLink": "https://sbi.bank.in/webfiles/uploads/files_2627/11/Junior_Associates-SPLDRIVE-2025-26-RESULT-15_FORMAT.pdf",
+      "officialLinks": [
+        {
+          "url": "https://sbi.bank.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/Junior_Associates-SPLDRIVE-2025-26-RESULT-15_FORMAT.pdf",
+          "label": "Special Drive Final Result PDF (CRPD/CR/SPLDRIVE/2026-27/16)"
+        },
+        {
+          "url": "https://sbi.bank.in/webfiles/uploads/files_2627/11/Junior_Associates-WL-2-2025-RESULT-15_FORMAT.pdf",
+          "label": "Second Wait List PDF (CRPD/CR/2025-26/06)"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/upsssc-junior-analyst-food-final-result-2026-3084704": {
+    "attemptedAt": "2026-11-26T10:57:31.762Z",
+    "parser": "v2",
+    "details": {
+      "organization": "UPSSSC Junior Analyst Food Final",
+      "publishedDate": "2026-11-26",
+      "openDate": "2024-04-15",
+      "lastDate": "2024-05-15",
+      "examDate": "2025-09-23",
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "417",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Main Examination Date",
+          "date": "2025-02-16",
+          "dateText": "16 February 2025"
+        },
+        {
+          "label": "Final Result Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2024-04-15",
+          "dateText": "15 April 2024"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2024-05-15",
+          "dateText": "15 May 2024"
+        },
+        {
+          "label": "Application Correction Last Date",
+          "date": "2024-05-22",
+          "dateText": "22 May 2024"
+        },
+        {
+          "label": "Main Written Examination",
+          "date": "2025-02-16",
+          "dateText": "16 February 2025"
+        },
+        {
+          "label": "Written Examination Shortlist for Document Verification",
+          "date": "2025-09-23",
+          "dateText": "23 September 2025"
+        }
+      ],
+      "officialLink": "https://upsssc.gov.in//ViewPdf.aspx?fLOxCwysx4IsP0rZdPoEsYfd1JDQJayXi2fuxP4aZRY=",
+      "officialLinks": [
+        {
+          "url": "https://upsssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://upsssc.gov.in//ViewPdf.aspx?fLOxCwysx4IsP0rZdPoEsYfd1JDQJayXi2fuxP4aZRY=",
+          "label": "UPSSSC Junior Analyst Food Final Result 2026"
+        },
+        {
+          "url": "https://upsssc.gov.in/",
+          "label": "UPSSSC Recruitment Results"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dsssb-junior-scientific-assistant-answer-key-2026-3084861": {
+    "attemptedAt": "2026-11-26T10:57:31.800Z",
+    "parser": "v2",
+    "details": {
+      "organization": "DSSSB Junior Scientific Assistant Answer Key 2026 Released - Download PDF & Raise Objections",
+      "publishedDate": "2026-11-26",
+      "openDate": "2026-06-16",
+      "lastDate": "2026-07-15",
+      "examDate": null,
+      "resultDate": "2026-11-24",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "14",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Examination Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Answer Key Notice Date",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Draft Answer Key Release Date",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Objection Start Date",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Objection Last Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        },
+        {
+          "label": "Recruitment Advertisement Date",
+          "date": "2026-05-29",
+          "dateText": "29 May 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2026-06-16",
+          "dateText": "16 June 2026"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2026-07-15",
+          "dateText": "15 July 2026"
+        },
+        {
+          "label": "Official Draft Answer Key Schedule Notice",
+          "date": "2026-11-04",
+          "dateText": "4 November 2026"
+        },
+        {
+          "label": "Junior Scientific Assistant (Photo) Examination",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Provisional Answer Key Release Date",
+          "date": "2026-11-24",
+          "dateText": "24 November 2026"
+        },
+        {
+          "label": "Last Date to Raise Objections",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        }
+      ],
+      "officialLink": "https://cdn.digialm.com/EForms/configuredHtml/1258/102944/9dlmYL0z4WFsfsU6zM/login.html",
+      "officialLinks": [
+        {
+          "url": "https://dsssb.delhi.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://cdn.digialm.com/EForms/configuredHtml/1258/102944/9dlmYL0z4WFsfsU6zM/login.html",
+          "label": "DSSSB Junior Scientific Assistant Answer Key 2026"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/objection_link.pdf",
+          "label": "DSSSB Draft Answer Key Official Notice PDF"
+        },
+        {
+          "url": "https://dsssb.delhi.gov.in/",
+          "label": "DSSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/jkssb-si-admit-card-2026-3083113": {
+    "attemptedAt": "2026-11-26T10:57:31.821Z",
+    "parser": "v2",
+    "details": {
+      "organization": "JKSSB SI",
+      "publishedDate": "2026-11-26",
+      "openDate": "2024-12-03",
+      "lastDate": "2025-01-02",
+      "examDate": "2026-11-29",
+      "resultDate": null,
+      "admitCardDate": "2026-11-26",
+      "interviewDate": null,
+      "vacancies": "669",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Admit Card Notice Date",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Admit Card Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Written Exam Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Exam Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        },
+        {
+          "label": "Online Application Start Date",
+          "date": "2024-12-03",
+          "dateText": "3 December 2024"
+        },
+        {
+          "label": "Online Application Last Date",
+          "date": "2025-01-02",
+          "dateText": "2 January 2025"
+        },
+        {
+          "label": "Written Exam Schedule Notice",
+          "date": "2026-08-01",
+          "dateText": "1 August 2026"
+        },
+        {
+          "label": "Admit Card Notice Issued",
+          "date": "2026-11-20",
+          "dateText": "20 November 2026"
+        },
+        {
+          "label": "Written Examination Date",
+          "date": "2026-11-29",
+          "dateText": "29 November 2026"
+        }
+      ],
+      "officialLink": "https://jkssb.nic.in/Pdf/AdmitCard_Notice_20112026.pdf",
+      "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+      "officialLinks": [
+        {
+          "url": "https://jkssb.nic.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://jkssb.nic.in/Pdf/AdmitCard_Notice_20112026.pdf",
+          "label": "JKSSB SI Admit Card 2026"
+        },
+        {
+          "url": "https://www.jkssb.nic.in/Whatsnew.html",
+          "label": "JKSSB SI Admit Card Official Notice"
+        },
+        {
+          "url": "https://jkssb.nic.in/Advertisement.html",
+          "label": "JKSSB SI Recruitment Notification No. 02/2024"
+        },
+        {
+          "url": "https://www.jkssb.nic.in/",
+          "label": "JKSSB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/hngu-bds-result-2026-out-check-1st-2nd-and-4th-year-result-online-3084871": {
+    "attemptedAt": "2026-11-26T10:57:31.838Z",
+    "parser": "v2",
+    "details": {
+      "organization": "HNGU B.D.S",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Date Shown on Website",
+          "date": "2026-11-26",
+          "dateText": "26-11-2026"
+        },
+        {
+          "label": "Result listed on official website",
+          "date": "2026-11-26",
+          "dateText": "26-11-2026"
+        }
+      ],
+      "officialLink": "https://ngu.ac.in",
+      "officialLinks": [
+        {
+          "url": "https://ngu.ac.in",
+          "label": "Official Results Page"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/dr-subhash-university-bams-result-2026-out-check-1st-year-remedial-result-3084789": {
+    "attemptedAt": "2026-11-26T10:57:31.849Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Dr. Subhash University BAMS",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "BAMS Year-1 Remedial Result Declared",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLink": "https://dsuni.ac.in/",
+      "officialLinks": [
+        {
+          "url": "https://dsuni.ac.in/",
+          "label": "Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/karnataka-neet-pg-2026-round-2-final-allotment-result-out-check-pdf-online-3084859": {
+    "attemptedAt": "2026-11-26T10:57:31.870Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Karnataka NEET PG 2026 Round 2 Final Allotment",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "Karnataka PGET Medical Counselling 2026",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Provisional Allotment Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Final Allotment Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Fee Payment Last Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026, 4:00 PM"
+        },
+        {
+          "label": "Original Document Submission",
+          "date": "2026-11-30",
+          "dateText": "26 to 30 November 2026"
+        },
+        {
+          "label": "College Reporting Last Date",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Round 2 Provisional Allotment Result",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026, After 5:00 PM"
+        },
+        {
+          "label": "Round 2 Final Allotment Result",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026, After 11:00 AM"
+        },
+        {
+          "label": "Original Document Submission at KEA, Bengaluru",
+          "date": "2026-11-30",
+          "dateText": "26 to 30 November 2026"
+        },
+        {
+          "label": "Last Date for Reporting",
+          "date": "2026-12-01",
+          "dateText": "1 December 2026"
+        },
+        {
+          "label": "Release Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026 26 November 2026"
+        },
+        {
+          "label": "Original Document Submission at KEA",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026"
+        }
+      ],
+      "officialLink": "https://cetonline.karnataka.gov.in/keawebentry456/pgetmed2026/PGNEET_MEDICAL_ALLOT_2026_R2_Final_26112026kannada.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "KEA Official Website"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/keawebentry456/pgetmed2026/PGNEET_MEDICAL_ALLOT_2026_R2_Final_26112026kannada.pdf",
+          "label": "Karnataka NEET PG Round 2 Final Allotment Result 2026"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/csir-iicb-mts-result-2026-3084812": {
+    "attemptedAt": "2026-11-26T10:57:31.892Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Council of Scientific and Industrial Research (CSIR)",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-09-27",
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "8",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Written Examination Date",
+          "date": "2026-09-27",
+          "dateText": "27 September 2026"
+        },
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Competitive Written Examination",
+          "date": "2026-09-27",
+          "dateText": "27 September 2026"
+        },
+        {
+          "label": "Final Result Notification Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Result Report Update",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLink": "https://iicb.res.in/sites/default/files/recruitment/2026/11/Final%20Result%20for%20the%20Post%20of%20Multi%20Tasking%20Staff%20%20MTS%20against%20Advertisement%20No.%20R%26C6152026.pdf",
+      "notificationLink": "https://iicb.res.in/direct-recruitment-for-the-post-of-multi-tasking-staff-mts-randc-615-2026",
+      "officialLinks": [
+        {
+          "url": "https://iicb.res.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://iicb.res.in/sites/default/files/recruitment/2026/11/Final%20Result%20for%20the%20Post%20of%20Multi%20Tasking%20Staff%20%20MTS%20against%20Advertisement%20No.%20R%26C6152026.pdf",
+          "label": "CSIR IICB MTS Result 2026 PDF"
+        },
+        {
+          "url": "https://iicb.res.in/direct-recruitment-for-the-post-of-multi-tasking-staff-mts-randc-615-2026",
+          "label": "CSIR IICB MTS Recruitment Notification"
+        },
+        {
+          "url": "https://iicb.res.in/",
+          "label": "CSIR IICB Official Website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/sggu-result-2026-out-check-ug-and-pg-result-online-3084774": {
+    "attemptedAt": "2026-11-26T10:57:31.919Z",
+    "parser": "v2",
+    "details": {
+      "organization": "SGGU",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Result notifications published",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        }
+      ],
+      "officialLink": "https://sggu.ac.in/Results.php",
+      "officialLinks": [
+        {
+          "url": "https://sggu.ac.in/Results.php",
+          "label": "Official Results Page"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/delhi-wcd-programme-officer-protection-officer-selection-list-2026-3084863": {
+    "attemptedAt": "2026-11-26T10:57:31.940Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Delhi WCD Selection List 2026 Out - Download Programme Officer, Protection Officer & Other Posts PDF",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "List Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        },
+        {
+          "label": "Selection List Date",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
+        }
+      ],
+      "officialLink": "https://wcd.delhi.gov.in/wcd/recruitment-and-results?page=0",
+      "officialLinks": [
+        {
+          "url": "https://wcd.delhi.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://wcd.delhi.gov.in/sites/default/files/WCD/generic_multiple_files/3688-3690_0001.pdf",
+          "label": "Selected Candidates List PDF"
+        },
+        {
+          "url": "https://wcd.delhi.gov.in/wcd/recruitment-and-results?page=0",
+          "label": "Recruitment and Results Page"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/central-university-of-kashmir-date-sheet-2026-out-check-ug-pg-diploma-and-certificate-exam-dates-3084764": {
+    "attemptedAt": "2026-11-26T10:57:31.960Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Central University of Kashmir Date Sheet 2026 Out - Check UG, PG, Diploma & Certificate",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-12-24",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notice date",
+          "date": "2026-11-25",
+          "dateText": "25-11-2026"
+        },
+        {
+          "label": "Exam period",
+          "date": "2026-11-27",
+          "dateText": "27-11-2026 to 24-12-2026"
+        },
+        {
+          "label": "Date sheet issued",
+          "date": "2026-11-25",
+          "dateText": "25-11-2026"
+        },
+        {
+          "label": "First exam date",
+          "date": "2026-11-27",
+          "dateText": "Friday, 27-11-2026"
+        },
+        {
+          "label": "Last exam date listed",
+          "date": "2026-12-24",
+          "dateText": "Thursday, 24-12-2026"
+        }
+      ],
+      "officialLink": "https://www.cukashmir.ac.in",
+      "officialLinks": [
+        {
+          "url": "https://www.cukashmir.ac.in",
+          "label": "Official website"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/rpsc-vice-principal-iti-sub-inspector-librarian-interview-date-2026-3084771": {
+    "attemptedAt": "2026-11-26T10:57:31.977Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Rajasthan Public Service Commission, Ajmer",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": "2026-12-18",
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Press Note Date",
+          "date": "2026-11-20",
+          "dateText": "20.11.2026"
+        },
+        {
+          "label": "Vice Principal/Superintendent ITI Interview",
+          "date": "2026-12-07",
+          "dateText": "07.12.2026 to 15.12.2026"
+        },
+        {
+          "label": "Sub Inspector / Platoon Commander, 2025 (4th Phase) Interview",
+          "date": "2026-12-01",
+          "dateText": "01.12.2026 to 29.12.2026"
+        },
+        {
+          "label": "Vice Principal/Superintendent I.T.I., 2024 Interview",
+          "date": "2026-12-07",
+          "dateText": "07.12.2026 to 15.12.2026"
+        },
+        {
+          "label": "Librarian, 2024 Interview",
+          "date": "2026-12-16",
+          "dateText": "16.12.2026 to 22.12.2026"
+        },
+        {
+          "label": "Deputy Commandant, 2025 Interview",
+          "date": "2026-12-18",
+          "dateText": "18.12.2026"
+        },
+        {
+          "label": "Assistant Professor - GPEM, 2025 Interview",
+          "date": "2026-12-18",
+          "dateText": "18.12.2026"
+        }
+      ],
+      "officialLink": "https://rpsc.rajasthan.gov.in",
+      "officialLinks": [
+        {
+          "url": "https://rpsc.rajasthan.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://rpsc.rajasthan.gov.in/Static/PressNotes/61EF76C1-4AE7-428D-93CE-D725F2B430A7.pdf",
+          "label": "RPSC Interview Schedule 2026 Press Note PDF"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/global-group-of-institutes-datesheet-2026-out-check-exam-dates-online-3084762": {
+    "attemptedAt": "2026-11-26T10:57:31.995Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Global Group of Institutes Datesheet 2026 Out - Check",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": "2026-12-28",
+      "resultDate": null,
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "First Exam Date",
+          "date": "2026-12-04",
+          "dateText": "04 December 2026"
+        },
+        {
+          "label": "Last Exam Date Listed",
+          "date": "2026-12-28",
+          "dateText": "28 December 2026 (MBA Semester 3)"
+        }
+      ],
+      "officialLinks": []
+    }
+  },
+  "https://www.freejobalert.com/articles/nirwan-university-result-2026-out-check-ba-and-fellowship-result-online-3084735": {
+    "attemptedAt": "2026-11-26T10:57:32.012Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Nirwan University",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-25",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Notification Dates",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        },
+        {
+          "label": "Result Declaration Date",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        },
+        {
+          "label": "BA Semester II (June 2026 Main) result declaration",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        },
+        {
+          "label": "Fellowship Programs (July 2026) result declaration",
+          "date": "2026-11-25",
+          "dateText": "25/11/2026"
+        }
+      ],
+      "officialLink": "https://nirwanuniversity.ac.in",
+      "officialLinks": [
+        {
+          "url": "https://nirwanuniversity.ac.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.nirwanuniversity.ac.in/Uploads/Files/ResultNotificationofFellowshipProgramsJuly2026.pdf",
+          "label": "Fellowship in Clinical Cosmetology"
+        }
+      ]
+    }
+  },
+  "https://www.freejobalert.com/articles/osmania-university-pgdca-results-2026-out-check-result-online-3084748": {
+    "attemptedAt": "2026-11-26T10:57:32.028Z",
+    "parser": "v2",
+    "details": {
+      "organization": "Osmania University PGDCA",
+      "publishedDate": "2026-11-26",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "resultDate": "2026-11-26",
+      "admitCardDate": null,
+      "interviewDate": null,
+      "vacancies": "",
+      "ageLimit": "",
+      "eligibility": "",
+      "applicationFee": "",
+      "milestones": [
+        {
+          "label": "Result Release Date",
+          "date": "2026-11-26",
+          "dateText": "26-11-2026"
+        },
+        {
+          "label": "Result Released",
+          "date": "2026-11-26",
+          "dateText": "26-11-2026"
+        }
+      ],
+      "officialLink": "https://www.osmania.ac.in/examination-results.php",
+      "officialLinks": [
+        {
+          "url": "https://www.osmania.ac.in/examination-results.php",
+          "label": "Official Results Page"
+        },
+        {
+          "url": "https://www.osmania.ac.in/res07/20261003.jsp",
+          "label": "Direct Result Link"
+        }
+      ]
+    }
   }
 }

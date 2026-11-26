@@ -1,7 +1,62 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 40,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 41,
   "jobs": [
+    {
+      "id": "competitor-sarkariresult-8a30f4bb55960b5a",
+      "type": "job",
+      "title": "JK Bank Ltd Banking Associate Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Banking",
+      "state": "Jammu & Kashmir",
+      "link": "https://ibpsreg.ibps.in/jkbvpocto26/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/jk-bank-banking-associate-nov26/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "organization": "JK Bank Limited Banking Associates",
+      "publishedDate": "2026-11-23",
+      "openDate": "2026-11-07",
+      "lastDate": "2026-11-26",
+      "vacancies": "1033",
+      "ageLimit": "20–30 years",
+      "eligibility": "Candidates must be permanent residents (Domicile) of Jammu & Kashmir Union Territory and must have completed Graduation from a recognized university. More Eligibility Details Read the Notification",
+      "applicationFee": "General / OBC /EWS/: 800/- SC / ST/ SEBC / PwBD / ESM : 600/-",
+      "notificationLink": "https://jkb.bank.in/sites/default/files/2026-11/J%26K%20Detailed%20Notification%20Banking%20Associate.pdf",
+      "officialLinks": [
+        {
+          "url": "https://ibpsreg.ibps.in/jkbvpocto26/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://jkb.bank.in/sites/default/files/2026-11/J%26K%20Detailed%20Notification%20Banking%20Associate.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://jkb.bank.in/",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://ibpsreg.ibps.in/jkbvpocto26/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-23",
+          "dateText": "23 November 2026 | 07:33 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        },
+        {
+          "label": "Pay the Exam Fee Last Date",
+          "date": "2026-11-26",
+          "dateText": "26/11/2026"
+        }
+      ]
+    },
     {
       "id": "aHR0cHM6Ly9qa3BzYy5uaWMuaW4vUGRmL0Rvd25sb2FkZXIxLmFzaHg_bmlkPTE4MDM5JnR5cGU9bg",
       "type": "job",

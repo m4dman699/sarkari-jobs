@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 13,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 14,
   "jobs": [
     {
       "id": "competitor-sarkariresult-270d96f12c053fea",
@@ -34,6 +34,10 @@
         {
           "url": "https://bseh.org.in/uploads/files/ca4d5721ceac080d7bc160f37ec6967e.pdf",
           "label": "Download Exam Date Notice"
+        },
+        {
+          "url": "https://bseh.org.in/uploads/files/5d5f28ccc38473cc674e737764ac8a8a.pdf",
+          "label": "Download Notice Dt 25/11/2026"
         }
       ],
       "officialLink": "https://htet2026.org/",
@@ -42,6 +46,63 @@
           "label": "Post Date / Update",
           "date": "2026-11-18",
           "dateText": "18 November 2026 | 03:25 PM"
+        },
+        {
+          "label": "Last Date for Apply Online",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-27",
+          "dateText": "27/11/2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-sarkariresult-35ff2691991646a5",
+      "type": "job",
+      "title": "Haryana Teacher Eligibility Test HTET Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Haryana",
+      "link": "https://htet2026.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/?p=34521",
+      "discoveredVia": "https://www.sarkariresult.com/feed/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "publishedDate": "2026-11-25",
+      "organization": "Board of Secondary Education, BSEH Haryana",
+      "openDate": "2026-11-18",
+      "lastDate": "2026-11-27",
+      "eligibility": "25 November 2026 | 10:20 AM",
+      "applicationFee": "For Single Paper Only : Gen / OBC / Other State : 1200/- SC / PH : 700/- For Double Paper : Gen / OBC / Other State : 2000/- SC / PH : 1100/- For Triple Paper : Gen / OBC / Other State : 2600/- SC / PH : 1400/-",
+      "notificationLink": "https://htet2026.org/htet2023/Information_Bulletin%20HTET-2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://htet2026.org/",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://htet2026.org/htet2023/Information_Bulletin%20HTET-2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://bseh.org.in/uploads/files/5d5f28ccc38473cc674e737764ac8a8a.pdf",
+          "label": "Download Notice Dt 25/11/2026"
+        },
+        {
+          "url": "https://bseh.org.in/uploads/files/ca4d5721ceac080d7bc160f37ec6967e.pdf",
+          "label": "Download Exam Date Notice"
+        }
+      ],
+      "officialLink": "https://htet2026.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026 | 10:20 AM"
         },
         {
           "label": "Last Date for Apply Online",

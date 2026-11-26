@@ -1,33 +1,7 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 14,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 15,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
-      "type": "job",
-      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
-      "source": "UPPSC",
-      "category": "Judiciary",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBvbGljZS5nb3YuaW4vZnJtY2lyY3VsYXIuYXNweD9zbHVnTmFtZT10cyZjZD1OQUEwQURNQU9RQSUzRA",
-      "type": "job",
-      "title": "Recruitment Comp. Operator",
-      "source": "UP Police",
-      "category": "Police",
-      "state": "Uttar Pradesh",
-      "link": "https://uppolice.gov.in/frmcircular.aspx?slugName=ts&cd=NAA0ADMAOQA%3D",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
     {
       "id": "competitor-sarkariresult-e01067924b3bda69",
       "type": "job",
@@ -233,6 +207,78 @@
       "applicationFee": "General, OBC, EWS : ₹ 25/- SC, ST : ₹ 25/- PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
       "officialLink": "http://upsssc.gov.in/",
       "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)"
+    },
+    {
+      "id": "competitor-sarkariresult-5f851aa971f1ad65",
+      "type": "job",
+      "title": "UPESSC UP TGT Online Form 2026",
+      "source": "SarkariResult.com listing (recruiting authority named in notice)",
+      "publisher": "SarkariResult.com",
+      "category": "Teaching",
+      "state": "Uttar Pradesh",
+      "link": "https://apply.upessc.org/",
+      "sourceListingUrl": "https://www.sarkariresult.com/2026/upessc-up-tgt-07-2026/",
+      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
+      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "lastDate": "2026-11-28",
+      "organization": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+      "publishedDate": "2026-11-04",
+      "openDate": "2026-10-24",
+      "vacancies": "17735",
+      "ageLimit": "21–62 years",
+      "eligibility": "Post Name General EWS OBC SC ST Total UPESS UP TGT Eligibility 2026 Trained Graduate Teacher TGT (Balak) 6057 2660 4069 3394 13 16193 Bachelor / Master Degree with Related Subject. B.Ed Exam Passed Class 6-8 Upper Primary Level TET certificate by 30 June 2027 For Subject Wise Eligibility Details Read the Notification. Trained Graduate Teacher TGT (Balika) 647 222 369 304 0 1542 UP TGT Teacher Online Form 2026 : Subject Wise Vacancy Details Subject Name Varg General EWS OBC SC ST Total Hindi Bala",
+      "applicationFee": "General / OBC / EWS: 1000/- SC / ST : 500/- PH (Divyang) : 300/-",
+      "notificationLink": "https://doc.sarkariresults.org.in/UPESSC_TGT_NOtification_2026.pdf",
+      "officialLinks": [
+        {
+          "url": "https://apply.upessc.org/",
+          "label": "Apply Online (OTR)"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/47ad-baf9-4893-45ef-1f16.pdf",
+          "label": "Download Date Extended Notice"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/1a99-45fb-4883-4b80-2663.pdf",
+          "label": "Download Qualification Related Notice"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPESSC_TGT_NOtification_2026.pdf",
+          "label": "Download Notification"
+        },
+        {
+          "url": "https://upessc.up.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://doc.sarkariresults.org.in/UPESSC_TGT_Subject_Wise_Eligibility_2026.pdf",
+          "label": "Subject Wise Eligibility Details"
+        }
+      ],
+      "officialLink": "https://apply.upessc.org/",
+      "milestones": [
+        {
+          "label": "Post Date / Update",
+          "date": "2026-11-04",
+          "dateText": "04 November 2026 | 09:37 PM"
+        },
+        {
+          "label": "Last Date for Registration",
+          "date": "2026-11-28",
+          "dateText": "28/11/2026"
+        },
+        {
+          "label": "Pay Exam Fee Last Date",
+          "date": "2026-11-28",
+          "dateText": "28/11/2026"
+        },
+        {
+          "label": "Last Date Correction",
+          "date": "2026-11-30",
+          "dateText": "30/11/2026"
+        }
+      ]
     },
     {
       "id": "competitor-sarkariresult-d6af6007e2b7128e",
@@ -628,6 +674,18 @@
         {
           "url": "https://upessc.up.gov.in/",
           "label": "Official Website"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/3b60-2875-44ae-ea9b-0d5f.pdf",
+          "label": "Download Full Notification"
+        },
+        {
+          "url": "https://www.upessc.up.gov.in/syllabus/ede204de-908b-435f-9028-5fe87a4d460c.pdf",
+          "label": "Download Syllabus"
+        },
+        {
+          "url": "https://upessc.up.gov.in/Notice/7f12-b8f3-4fc3-fc59-5e5a.pdf",
+          "label": "Download UPTET Notice"
         }
       ],
       "officialLink": "https://apply.upessc.org/register",
@@ -652,7 +710,34 @@
           "date": "2026-12-27",
           "dateText": "27/12/2026"
         }
-      ]
+      ],
+      "notificationLink": "https://upessc.up.gov.in/Notice/3b60-2875-44ae-ea9b-0d5f.pdf"
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
+      "type": "job",
+      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
+      "source": "UPPSC",
+      "category": "Judiciary",
+      "state": "Uttar Pradesh",
+      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
+    },
+    {
+      "id": "aHR0cHM6Ly91cHBvbGljZS5nb3YuaW4vZnJtY2lyY3VsYXIuYXNweD9zbHVnTmFtZT10cyZjZD1OQUEwQURNQU9RQSUzRA",
+      "type": "job",
+      "title": "Recruitment Comp. Operator",
+      "source": "UP Police",
+      "category": "Police",
+      "state": "Uttar Pradesh",
+      "link": "https://uppolice.gov.in/frmcircular.aspx?slugName=ts&cd=NAA0ADMAOQA%3D",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "competitor-sarkariresult-355cf57529ef0867",

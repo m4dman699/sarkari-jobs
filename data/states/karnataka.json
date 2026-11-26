@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 2,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 3,
   "jobs": [
     {
       "id": "competitor-freejobalert-d415966b216315dd",
@@ -187,6 +187,42 @@
           "label": "Last Date for Application Fee Payment",
           "date": "2026-12-26",
           "dateText": "26 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-7ffedf5bb08580b9",
+      "type": "job",
+      "title": "Bangalore University Time Table 2026 Out - Check Exam Schedule Online @ bangaloreuniversity.karnataka.gov.in",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Karnataka",
+      "link": "https://bangaloreuniversity.karnataka.gov.in/notifications/en",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/bangalore-university-time-table-2026-out-check-exam-schedule-online-3084345",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "publishedDate": "2026-11-25",
+      "organization": "Bangalore University Time Table 2026 Out - Check",
+      "notificationLink": "https://bangaloreuniversity.karnataka.gov.in/notifications/en",
+      "officialLinks": [
+        {
+          "url": "https://bangaloreuniversity.karnataka.gov.in/notifications/en",
+          "label": "Official notifications page"
+        }
+      ],
+      "officialLink": "https://bangaloreuniversity.karnataka.gov.in/notifications/en",
+      "milestones": [
+        {
+          "label": "Date on the MBA notification",
+          "date": "2026-11-18",
+          "dateText": "18 November 2026"
+        },
+        {
+          "label": "Last updated",
+          "date": "2026-11-25",
+          "dateText": "25 November 2026"
         }
       ]
     }

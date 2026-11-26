@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T11:21:02.669Z",
-  "total": 14,
+  "generatedAt": "2026-11-26T10:57:27.593Z",
+  "total": 15,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9ncHNjLmd1amFyYXQuZ292LmluL25ld3NldmVudGRldGFpbD9OZXdzSUQ9MjkwNTU",
@@ -183,6 +183,71 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-65078804ca947f66",
+      "type": "job",
+      "title": "Gujarat Vidyapith Recruitment 2026 (Cancelled) - Notification Withdrawn for 13 Stenographer, Driver and More Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Gujarat",
+      "link": "https://web.gujaratvidyapith.org/recruitment/kvk/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/gujarat-vidyapith-recruitment-2026-apply-online-for-13-stenographer-driver-and-more-posts-3054909",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-25",
+      "publishedDate": "2026-11-25",
+      "organization": "Gujarat Vidyapith",
+      "eligibility": "Master's degree, Bachelor's degree, 12th Class pass, Matriculation Pass",
+      "applicationFee": "Category Fee General/OBC 1000 SC/ST 800 PwBD Nil Gujarat Vidyapith Recruitment 2026 -",
+      "notificationLink": "https://www.gujaratvidyapith.org/flipbook/flipbook.php?f=aHR0cHM6Ly93d3cuZ3VqYXJhdHZpZHlhcGl0aC5vcmcvY29tbW9uL21lZGlhL3JlcG9ydF8yNjA2MTcwNTQwNDk3Ni5wZGY%3D",
+      "officialLinks": [
+        {
+          "url": "https://www.gujaratvidyapith.org/flipbook/flipbook.php?f=aHR0cHM6Ly93d3cuZ3VqYXJhdHZpZHlhcGl0aC5vcmcvY29tbW9uL21lZGlhL3JlcG9ydF8yNjA2MTcwNTQwNDk3Ni5wZGY%3D",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://web.gujaratvidyapith.org/recruitment/kvk/",
+          "label": "Apply Online (recruitment cancelled - applications no longer accepted)"
+        },
+        {
+          "url": "https://gujaratvidyapith.org",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://www.gujaratvidyapith.org/common/media/report_26112512060828.pdf",
+          "label": "Cancellation Notice (24 Nov 2026)"
+        }
+      ],
+      "officialLink": "https://web.gujaratvidyapith.org/recruitment/kvk/",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-07-19",
+          "dateText": "19 July 2026"
+        },
+        {
+          "label": "Date of Commencement of online Application",
+          "date": "2026-06-19",
+          "dateText": "19 June 2026"
+        },
+        {
+          "label": "Last date of online Application",
+          "date": "2026-07-19",
+          "dateText": "19 July 2026 (recruitment cancelled on 24 November 2026; applications are no longer accept"
+        },
+        {
+          "label": "Last date of receipt of hardcopy of online application",
+          "date": "2026-07-19",
+          "dateText": "19 July 2026"
+        },
+        {
+          "label": "Notification Date",
+          "date": "2026-06-16",
+          "dateText": "16 June 2026"
+        }
+      ]
     }
   ]
 }
