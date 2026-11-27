@@ -1,134 +1,32 @@
 {
-  "generatedAt": "2026-11-26T10:57:27.593Z",
-  "total": 15,
+  "generatedAt": "2026-11-27T10:54:45.889Z",
+  "total": 13,
   "jobs": [
     {
-      "id": "competitor-sarkariresult-e01067924b3bda69",
+      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
       "type": "job",
-      "title": "UPSSSC Junior Engineer JE (Mechanical) Online Form 2026 (1156 Posts)",
-      "source": "SarkariResult.com.cm listing (recruiting authority named in title/notice)",
-      "publisher": "SarkariResult.com.cm",
-      "category": "Government jobs",
+      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
+      "source": "UPPSC",
+      "category": "Judiciary",
       "state": "Uttar Pradesh",
-      "link": "http://upsssc.gov.in/Default.aspx",
-      "lastDate": "2026-11-25",
-      "discoveredVia": "https://sarkariresult.com.cm/LATEST-JOBS/",
-      "organization": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)",
-      "publishedDate": "2026-10-14",
-      "vacancies": "1156",
-      "eligibility": "Post Name  Technical Assistant (Mechanical) (Special Selection) Candidates must have a three-year Diploma in Mechanical Engineering from the Board of Technical Education, Uttar Pradesh, or an equivalent Diploma in Mechanical Engineering recognized by the Government. Preference will be given to candidates who have served in the Territorial Army for a minimum period of two years or have obtained a ‘B’ Certificate from the National Cadet Corps (NCC). Operator Machine Candidates must have passed the",
-      "applicationFee": "General, OBC, EWS : ₹ 25/- SC, ST : ₹ 25/- PH Candidates : ₹ 25/- Payment Mode (Online): You can make the payment using the following methods: Debit Card Credit Card Internet Banking IMPS Cash Card / Mobile Wallet",
-      "officialLink": "http://upsssc.gov.in/Default.aspx",
-      "officialLinks": [
-        {
-          "url": "http://upsssc.gov.in/",
-          "label": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC),"
-        },
-        {
-          "url": "https://upsssc.gov.in//default.aspx",
-          "label": "25 November 2026."
-        },
-        {
-          "url": "http://upsssc.gov.in/Default.aspx",
-          "label": "UPSSSC Official Website Click Here"
-        },
-        {
-          "url": "https://upsssc.gov.in/AllNotifications.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/UPSSSC_19-Exam_2026_Notification.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://upsssc.gov.in/",
-          "label": "Official Website"
-        }
-      ],
-      "milestones": [
-        {
-          "label": "Post Date",
-          "date": "2026-10-14",
-          "dateText": "October 14, 2026"
-        },
-        {
-          "label": "Online Apply Start Date",
-          "date": "2026-11-03",
-          "dateText": "03 November 2026"
-        },
-        {
-          "label": "Online Apply Last Date",
-          "date": "2026-11-25",
-          "dateText": "25 November 2026"
-        },
-        {
-          "label": "Fee Payment Last Date",
-          "date": "2026-11-25",
-          "dateText": "25 November 2026"
-        },
-        {
-          "label": "Correction Last Date",
-          "date": "2026-12-02",
-          "dateText": "02 December 2026"
-        }
-      ],
-      "openDate": "2026-09-17",
-      "ageLimit": "18–40 years",
-      "notificationLink": "https://doc.sarkariresults.org.in/UPSSSC_19-Exam_2026_Notification.pdf"
+      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
-      "id": "competitor-sarkariresult-9ccadaa0f61755b2",
+      "id": "aHR0cHM6Ly91cHBvbGljZS5nb3YuaW4vZnJtY2lyY3VsYXIuYXNweD9zbHVnTmFtZT10cyZjZD1OQUEwQURNQU9RQSUzRA",
       "type": "job",
-      "title": "BHU Non Teaching Various Post Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Teaching",
+      "title": "Recruitment Comp. Operator",
+      "source": "UP Police",
+      "category": "Police",
       "state": "Uttar Pradesh",
-      "link": "https://bhunt.samarth.edu.in/index.php/dashboard",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/bhu-non-teaching-post-nov26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-17",
-      "lastDate": "2026-11-25",
-      "organization": "Banaras Hindu University (BHU)",
-      "publishedDate": "2026-11-07",
-      "openDate": "2026-10-26",
-      "vacancies": "11",
-      "eligibility": "M.Tech/M.E./M.S. with 55% marks and 5 years’ experience OR B.Tech/B.E./MCA/M.Sc. with 55% marks and 7–8 years’ relevant experience in Computer Science/IT/ECE or related field. Age Limit-50 Years For More Details Read the Notification.",
-      "applicationFee": "Group A General / OBC / EWS : 1000/- SC / ST / PH / Female : 0/- Group B & C General / OBC / EWS : 500/- SC / ST / PH / Female : 0/-",
-      "notificationLink": "https://bhu.ac.in/Images/files/Advt_%20No_03_26-27%20for%20Computer%20Center.pdf",
-      "officialLinks": [
-        {
-          "url": "https://bhunt.samarth.edu.in/index.php/dashboard",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://bhu.ac.in/Images/files/Advt_%20No_03_26-27%20for%20Computer%20Center.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://bhu.ac.in/Site/Home/1_2_7047_Main-Site",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://bhunt.samarth.edu.in/index.php/dashboard",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-11-07",
-          "dateText": "07 November 2026 | 09:50 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-25",
-          "dateText": "25/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-25",
-          "dateText": "25/11/2026"
-        }
-      ]
+      "link": "https://uppolice.gov.in/frmcircular.aspx?slugName=ts&cd=NAA0ADMAOQA%3D",
+      "openDate": null,
+      "lastDate": null,
+      "examDate": null,
+      "publishedDate": null
     },
     {
       "id": "competitor-sarkariresult-795a1dab244fabf6",
@@ -712,32 +610,6 @@
         }
       ],
       "notificationLink": "https://upessc.up.gov.in/Notice/3b60-2875-44ae-ea9b-0d5f.pdf"
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
-      "type": "job",
-      "title": "CLICK HERE TO APPLY FOR ADVT.NO. A-6/E-1/2026, U.P. JUDICIAL SERVICE CIVIL JUDGE (JUNIOR DIVISION) EXAM.-2026.",
-      "source": "UPPSC",
-      "category": "Judiciary",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
-    },
-    {
-      "id": "aHR0cHM6Ly91cHBvbGljZS5nb3YuaW4vZnJtY2lyY3VsYXIuYXNweD9zbHVnTmFtZT10cyZjZD1OQUEwQURNQU9RQSUzRA",
-      "type": "job",
-      "title": "Recruitment Comp. Operator",
-      "source": "UP Police",
-      "category": "Police",
-      "state": "Uttar Pradesh",
-      "link": "https://uppolice.gov.in/frmcircular.aspx?slugName=ts&cd=NAA0ADMAOQA%3D",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": null,
-      "publishedDate": null
     },
     {
       "id": "competitor-sarkariresult-355cf57529ef0867",

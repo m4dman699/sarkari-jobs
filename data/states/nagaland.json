@@ -1,20 +1,7 @@
 {
-  "generatedAt": "2026-11-26T10:57:27.593Z",
-  "total": 2,
+  "generatedAt": "2026-11-27T10:54:45.889Z",
+  "total": 1,
   "jobs": [
-    {
-      "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9ub3RpZmljYXRpb24vMTc5NDgyNTA0Mzc3MDc2",
-      "type": "job",
-      "title": "Notification NO.NPSC/ADVT-1/04(VOL-1) dt.16.11.2026 (CTSE 2026 Re-exam) New",
-      "source": "NPSC",
-      "category": "State PSC",
-      "state": "Nagaland",
-      "link": "https://npsc.nagaland.gov.in/notification/179482504377076",
-      "openDate": null,
-      "lastDate": null,
-      "examDate": "2026-11-13",
-      "publishedDate": "2026-11-25"
-    },
     {
       "id": "aHR0cHM6Ly9ucHNjLm5hZ2FsYW5kLmdvdi5pbi9hcHBsaWNhbnQvb3Ry",
       "type": "job",

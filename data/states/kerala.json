@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T10:57:27.593Z",
-  "total": 2,
+  "generatedAt": "2026-11-27T10:54:45.889Z",
+  "total": 3,
   "jobs": [
     {
       "id": "competitor-freejobalert-2822a5ae0696de21",
@@ -59,6 +59,59 @@
           "label": "Cut-off date for age and experience",
           "date": "2026-11-01",
           "dateText": "1 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-897aa902055a3ec5",
+      "type": "job",
+      "title": "Kerala PSC Recruitment 2026 - Apply Online for 39 Field Supervisor, LD Clerk and More Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Banking",
+      "state": "Kerala",
+      "link": "https://thulasi.psc.kerala.gov.in/thulasi/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/kerala-psc-recruitment-2026-apply-online-for-39-field-supervisor-ld-clerk-and-more-posts-3084858",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-26",
+      "publishedDate": "2026-11-26",
+      "organization": "Kerala Public Service Commission (KPSC)",
+      "lastDate": "2026-12-16",
+      "vacancies": "39",
+      "ageLimit": "18–50 Years and Other Post-Specific Ranges, Before Applicable Concessions",
+      "eligibility": "SSLC / Plus Two / ITI / Diploma / Degree / Engineering / MBA / Medical Postgraduate Qualifications, Post-Wise",
+      "notificationLink": "https://www.keralapsc.gov.in/extra-ordinary-gazette-date-16112026",
+      "officialLinks": [
+        {
+          "url": "https://www.keralapsc.gov.in/",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://thulasi.psc.kerala.gov.in/thulasi/",
+          "label": "Apply Online - Kerala PSC Thulasi"
+        },
+        {
+          "url": "https://www.keralapsc.gov.in/extra-ordinary-gazette-date-16112026",
+          "label": "Official Recruitment Notifications"
+        }
+      ],
+      "officialLink": "https://thulasi.psc.kerala.gov.in/thulasi/",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Last Date to Apply Online",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
+        },
+        {
+          "label": "Application Last Date",
+          "date": "2026-12-16",
+          "dateText": "16 December 2026"
         }
       ]
     },

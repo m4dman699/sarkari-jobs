@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T10:57:27.593Z",
-  "total": 14,
+  "generatedAt": "2026-11-27T10:54:45.889Z",
+  "total": 15,
   "jobs": [
     {
       "id": "competitor-sarkariresult-270d96f12c053fea",
@@ -306,6 +306,92 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-0af27733f59d861e",
+      "type": "job",
+      "title": "HSSC PST Schedule 2026 Out - Check Forest Guard, Forester and Deputy Ranger Physical Test Dates",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Haryana",
+      "link": "https://hssc.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/hssc-pst-schedule-2026-3082672",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-26",
+      "publishedDate": "2026-11-26",
+      "organization": "HSSC PST Schedule 2026 Out - Check Forest Guard, Forester and Deputy Ranger Physical Test Dates",
+      "resultDate": "2026-11-19",
+      "officialLinks": [
+        {
+          "url": "https://hssc.gov.in",
+          "label": "Official Website"
+        },
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-a1e2-1e66-81a2-167701160013/publicNotice",
+          "label": "HSSC Male Absentee PST Notice 2026"
+        },
+        {
+          "url": "https://hssc.gov.in/file/ac1f23cd-a1e2-1e66-81a1-f2fb4f520008/publicNotice",
+          "label": "HSSC Original PST Schedule 2026"
+        },
+        {
+          "url": "https://www.hssc.gov.in/",
+          "label": "HSSC Official Website"
+        },
+        {
+          "url": "https://www.hssc.gov.in/index.php/file/ac1f23cd-a1e2-1e66-81a2-167701160013/publicNotice",
+          "label": "HSSC Male Absentee PST Notice 2026"
+        },
+        {
+          "url": "https://www.hssc.gov.in/applyOnline",
+          "label": "HSSC PST Admit Card 2026"
+        }
+      ],
+      "officialLink": "https://hssc.gov.in",
+      "milestones": [
+        {
+          "label": "Original PST Notice Date",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "Regular PST Dates",
+          "date": "2026-11-30",
+          "dateText": "23 to 30 November 2026"
+        },
+        {
+          "label": "Latest Absentee PST Notice Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Male Absentee PST Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        },
+        {
+          "label": "PST Date",
+          "date": "2026-11-28",
+          "dateText": "28 November 2026"
+        },
+        {
+          "label": "Original PMT Result and PST Notice",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026"
+        },
+        {
+          "label": "PST Admit Card Available From",
+          "date": "2026-11-19",
+          "dateText": "19 November 2026, 5:00 PM"
+        },
+        {
+          "label": "Scheduled Female PST Dates",
+          "date": "2026-11-30",
+          "dateText": "29-30 November 2026, as Applicable"
+        }
+      ]
     }
   ]
 }

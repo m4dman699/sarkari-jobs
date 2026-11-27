@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T10:57:27.593Z",
-  "total": 2,
+  "generatedAt": "2026-11-27T10:54:45.889Z",
+  "total": 3,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9weS5nb3YuaW4vc2l0ZXMvZGVmYXVsdC9maWxlcy9wYWphbmNvYTE2MTEyMDI2cm4ucGRm",
@@ -49,6 +49,43 @@
           "label": "Last Date to Apply",
           "date": "2026-11-30",
           "dateText": "30 November 2026, 5:00 p.m."
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-5213c2cd8182183e",
+      "type": "job",
+      "title": "NIT Puducherry Project Associate I Recruitment 2026 – Apply Online",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Puducherry",
+      "link": "https://www.nitpy.ac.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nit-puducherry-project-associate-recruitment-2026-apply-online-3084755",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-26",
+      "publishedDate": "2026-11-26",
+      "organization": "National Institute of Technology Puducherry",
+      "lastDate": "2026-12-04",
+      "vacancies": "1",
+      "notificationLink": "https://www.nitpy.ac.in/assets/docs/opportunities/2026/PAIITG2026/Updated_Project_Associate_Recruitment_Advertisement.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.nitpy.ac.in",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://www.nitpy.ac.in/assets/docs/opportunities/2026/PAIITG2026/Updated_Project_Associate_Recruitment_Advertisement.pdf",
+          "label": "Official Notification PDF"
+        }
+      ],
+      "officialLink": "https://www.nitpy.ac.in",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-04",
+          "dateText": "04-12-2026"
         }
       ]
     }

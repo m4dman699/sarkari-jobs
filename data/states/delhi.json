@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-26T10:57:27.593Z",
-  "total": 16,
+  "generatedAt": "2026-11-27T10:54:45.889Z",
+  "total": 18,
   "jobs": [
     {
       "id": "aHR0cHM6Ly9kZWxoaWhpZ2hjb3VydC5uaWMuaW4vd2ViL25vdGlmaWNhdGlvbnMtcHJhY3RpY2UtZGlyZWN0aW9ucw",
@@ -141,6 +141,14 @@
         {
           "url": "https://www.aiims.edu",
           "label": "AIIMS New Delhi Official Website"
+        },
+        {
+          "url": "https://api.aiimspatna.edu.in/advertisement/AdvtGynae-various-posts-409AIIMSPatGynae2026-26112026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.aiimspatna.edu.in",
+          "label": "Official Website"
         }
       ],
       "officialLink": "https://www.aiims.edu",
@@ -159,6 +167,120 @@
           "label": "Last date for submission of CV",
           "date": "2026-11-30",
           "dateText": "30/11/2026"
+        }
+      ],
+      "eligibility": "Project research Scientist - I: Post Graduate Degree, including integrated PG degrees. Project Technical Support - III: Three-year Graduate degree in Social Work or Sociology or any other relevant discipline with three years of work experience in the relevant field, OR Postgraduate degree in Social Work or Sociology or any other relevant discipline.",
+      "applicationFee": "is mentioned in the notification",
+      "notificationLink": "https://api.aiimspatna.edu.in/advertisement/AdvtGynae-various-posts-409AIIMSPatGynae2026-26112026.pdf"
+    },
+    {
+      "id": "competitor-freejobalert-8671f852e9dfd2d7",
+      "type": "job",
+      "title": "Delhi University Recruitment 2026 – Apply Online for 8 Trained Graduate Teacher, Assistant Teacher Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Teaching",
+      "state": "Delhi",
+      "link": "https://www.du.ac.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/delhi-university-recruitment-2026-apply-online-for-8-trained-graduate-teacher-assistant-teacher-posts-3077141",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-26",
+      "publishedDate": "2026-11-26",
+      "organization": "Delhi University",
+      "lastDate": "2026-11-30",
+      "ageLimit": "Maximum 35 years (as on closing date of advertisement)",
+      "eligibility": "Bachelor's Degree or Master's Degree with B.Ed / 4-year integrated B.Ed-M.Ed / B.El.Ed / Diploma in Elementary Education / Special Education, and CTET.",
+      "applicationFee": "for this recruitment? General/Unreserved: Rs. 1,000. OBC (NCL), EWS, Female: Rs. 800. SC, ST, PwBD: Rs. 600. Q5. What is the",
+      "notificationLink": "https://www.du.ac.in/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=19103&cntnt01returnid=219",
+      "officialLinks": [
+        {
+          "url": "https://www.du.ac.in/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=19103&cntnt01returnid=219",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://www.du.ac.in/uploads/new-web/16112026-1Advt.%20No.-%20324%20Addendum.pdf",
+          "label": "Addendum (16 Nov 2026)"
+        },
+        {
+          "url": "https://www.du.ac.in/uploads/new-web/18112026-Notification%20for%20TGT%20Advt.%20324%20(1).pdf",
+          "label": "Last Date Extension Notice PDF (18 Nov 2026)"
+        },
+        {
+          "url": "https://www.du.ac.in",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://www.du.ac.in",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026 (extended) for Trained Graduate Teacher (TGT); 18 November 2026 for Assis"
+        },
+        {
+          "label": "Date of Advertisement",
+          "date": "2026-10-28",
+          "dateText": "28 October 2026"
+        },
+        {
+          "label": "Last Date of Application",
+          "date": "2026-11-30",
+          "dateText": "30 November 2026 (extended) for Trained Graduate Teacher (TGT); 18 November 2026 for Assis"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-a80c44076e61cf68",
+      "type": "job",
+      "title": "AIIMS New Delhi Nursing Staff Recruitment 2026 – Apply Online",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Delhi",
+      "link": "https://www.aiims.edu",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/aiims-new-delhi-nursing-staff-recruitment-2026-apply-online-3084739",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-26",
+      "publishedDate": "2026-11-26",
+      "organization": "All India Institute of Medical Sciences, New Delhi",
+      "lastDate": "2026-12-04",
+      "vacancies": "01",
+      "ageLimit": "Below 35 years",
+      "eligibility": "B.Sc. Nursing / GNM / Post Basic B.Sc. Nursing from a recognised institution",
+      "notificationLink": "https://www.aiims.edu/images/pdf/recruitment/advertisement/neuroradio-26-11-26.pdf",
+      "officialLinks": [
+        {
+          "url": "https://www.aiims.edu/images/pdf/recruitment/advertisement/neuroradio-26-11-26.pdf",
+          "label": "AIIMS New Delhi Nursing Staff Notification PDF"
+        },
+        {
+          "url": "https://www.aiims.edu",
+          "label": "AIIMS New Delhi Official Website"
+        }
+      ],
+      "officialLink": "https://www.aiims.edu",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-04",
+          "dateText": "04 December 2026 (receipt of applications)"
+        },
+        {
+          "label": "Date of notice",
+          "date": "2026-11-23",
+          "dateText": "23-11-2026"
+        },
+        {
+          "label": "Last Date to Apply (receipt of applications)",
+          "date": "2026-12-04",
+          "dateText": "04 December 2026"
+        },
+        {
+          "label": "Interview Date",
+          "date": "2026-12-07",
+          "dateText": "07 December 2026"
         }
       ]
     },
