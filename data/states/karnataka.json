@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T10:54:45.889Z",
-  "total": 3,
+  "generatedAt": "2026-11-28T10:30:15.013Z",
+  "total": 6,
   "jobs": [
     {
       "id": "competitor-freejobalert-d415966b216315dd",
@@ -107,6 +107,82 @@
           "label": "RPC SDA Examination",
           "date": "2027-01-17",
           "dateText": "17 January 2027"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-5a06031861df16c5",
+      "type": "job",
+      "title": "NRLM Karnataka Cluster Supervisor Recruitment 2026 – Apply Online for 2 Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Karnataka",
+      "link": "https://jobsksrlps.karnataka.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nrlm-karnataka-cluster-supervisor-recruitment-2026-3085117",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-27",
+      "publishedDate": "2026-11-27",
+      "organization": "NRLM Karnataka",
+      "lastDate": "2026-12-12",
+      "vacancies": "2",
+      "ageLimit": "Minimum 18 years, maximum 45 years",
+      "notificationLink": "https://jobsksrlps.karnataka.gov.in/RecentJobs/Details/olhsoBZvH-q-Gb_wCJuTBQ",
+      "officialLinks": [
+        {
+          "url": "https://jobsksrlps.karnataka.gov.in",
+          "label": "Apply Online"
+        },
+        {
+          "url": "https://jobsksrlps.karnataka.gov.in/RecentJobs/Details/olhsoBZvH-q-Gb_wCJuTBQ",
+          "label": "Official Notification PDF"
+        }
+      ],
+      "officialLink": "https://jobsksrlps.karnataka.gov.in",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-1f14939c0378da17",
+      "type": "job",
+      "title": "NRLM Karnataka District Manager Recruitment 2026 – Apply Online",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Karnataka",
+      "link": "https://jobsksrlps.karnataka.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/nrlm-karnataka-district-manager-institutional-recruitment-2026-3085121",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-27",
+      "publishedDate": "2026-11-27",
+      "organization": "NRLM Karnataka",
+      "lastDate": "2026-12-12",
+      "vacancies": "1",
+      "ageLimit": "Minimum 18 years, maximum 45 years",
+      "notificationLink": "https://jobsksrlps.karnataka.gov.in/RecentJobs/Details/5j1QuzWm75aaFl7iFXvn1A",
+      "officialLinks": [
+        {
+          "url": "https://jobsksrlps.karnataka.gov.in/RecentJobs/Details/5j1QuzWm75aaFl7iFXvn1A",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://jobsksrlps.karnataka.gov.in",
+          "label": "Official Website"
+        }
+      ],
+      "officialLink": "https://jobsksrlps.karnataka.gov.in",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-12",
+          "dateText": "12 December 2026"
         }
       ]
     },
@@ -223,6 +299,65 @@
           "label": "Last updated",
           "date": "2026-11-25",
           "dateText": "25 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-d3355185adca2341",
+      "type": "job",
+      "title": "KEA Recruitment 2026 – Apply Online for 36 Lecturer, Kannada Lecturer and More Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Karnataka",
+      "link": "https://cetonline.karnataka.gov.in/kea/",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/kea-recruitment-2026-lecturer-3085133",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-27",
+      "publishedDate": "2026-11-27",
+      "organization": "Karnataka Examinations Authority, Bengaluru (KEA)",
+      "openDate": "2026-11-26",
+      "ageLimit": "Minimum 21 years; maximum 40 years (General Merit), 43 years (Category 2A, 2B, 3A and 3B), 45 years (SC/ST/Category-1) (as on the last date prescribed for submitting applications)",
+      "eligibility": "Second class Master's Degree with minimum 55% marks in the relevant subject with B.Ed. or equivalent (50% for SC/ST). Computer Science: Master's in MCA / M.Sc (Comp.Sc) / M.Tech / ME in CS / IS and Engineering, or second class BE in Computer Science / Information Science with 55%.",
+      "applicationFee": "for this recruitment? General Merit and Category-2A/2B/3A/3B: Rs. 750. SC/ST/Category-1/Ex-servicemen/Transgender: Rs. 500. Persons with disabilities: Rs. 250. Q5. What is the",
+      "notificationLink": "https://cetonline.karnataka.gov.in/keawebentry456/dsepuehk2026/PU_KK_NOTI_26112026kannada.pdf",
+      "officialLinks": [
+        {
+          "url": "https://cetonline.karnataka.gov.in/keawebentry456/dsepuehk2026/PU_KK_NOTI_26112026kannada.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://cetonline.karnataka.gov.in/kea/",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://cetonline.karnataka.gov.in/kea/",
+      "milestones": [
+        {
+          "label": "Start Date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
+        },
+        {
+          "label": "Notification date",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last date for online application",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
+        },
+        {
+          "label": "Last date for fee payment",
+          "date": "2026-12-25",
+          "dateText": "25 December 2026"
         }
       ]
     }

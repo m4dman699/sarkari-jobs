@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T10:54:45.889Z",
-  "total": 1,
+  "generatedAt": "2026-11-28T10:30:15.013Z",
+  "total": 2,
   "jobs": [
     {
       "id": "competitor-freejobalert-f12cb06e6cea471f",
@@ -70,6 +70,55 @@
           "label": "Last date for forwarding by AGM/HOD to IR Department WCL HQ",
           "date": "2026-12-01",
           "dateText": "1 December 2026"
+        }
+      ]
+    },
+    {
+      "id": "competitor-freejobalert-6509489d203db286",
+      "type": "job",
+      "title": "MPSC Stenographer Recruitment 2026 – Apply Online for 18 Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Maharashtra",
+      "link": "https://mpsc.meghalaya.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/mpsc-recruitment-2026-stenographer-grade-iii-3085093",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-27",
+      "publishedDate": "2026-11-27",
+      "organization": "Meghalaya Public Service Commission (MPSC), Shillong",
+      "vacancies": "10",
+      "ageLimit": "Should have attained the age of 18 yrs to 32 yrs (as on 1 January 2026)",
+      "eligibility": "Graduate in any discipline from any recognized university with minimum speed of 80 words per minute (W.P.M) in Short Hand.",
+      "applicationFee": "for this recruitment? For post at Sl. no.01: Rs. 320. SC/ST who are permanent residents of the State of Meghalaya: Half the rate. Persons with Benchmark Disabilities (PWDs): Exempted subject to furnishing of the Disability Certificate. Q5. What is the",
+      "notificationLink": "http://www.mpsc.meghalaya.gov.in/advt/Advt26Nov2026.pdf",
+      "officialLinks": [
+        {
+          "url": "http://www.mpsc.meghalaya.gov.in/advt/Advt26Nov2026.pdf",
+          "label": "Official Notification PDF"
+        },
+        {
+          "url": "https://mpsc.meghalaya.gov.in",
+          "label": "Apply Online"
+        }
+      ],
+      "officialLink": "https://mpsc.meghalaya.gov.in",
+      "milestones": [
+        {
+          "label": "Last Date",
+          "date": "2026-12-26",
+          "dateText": "26 December 2026"
+        },
+        {
+          "label": "Date of Advertisement",
+          "date": "2026-11-26",
+          "dateText": "26 November 2026"
+        },
+        {
+          "label": "Last Date for Online Application (17:00 hrs)",
+          "date": "2026-12-26",
+          "dateText": "26 December 2026"
         }
       ]
     }

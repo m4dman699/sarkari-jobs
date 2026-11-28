@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T10:54:45.889Z",
-  "total": 13,
+  "generatedAt": "2026-11-28T10:30:15.013Z",
+  "total": 12,
   "jobs": [
     {
       "id": "aHR0cHM6Ly91cHBzYy51cC5uaWMuaW4vQ2FuZGlkYXRlUGFnZXMvTm90aWZpY2F0aW9ucy5hc3B4",
@@ -27,66 +27,6 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
-    },
-    {
-      "id": "competitor-sarkariresult-795a1dab244fabf6",
-      "type": "job",
-      "title": "UPPSC Review Officer RO ARO Online Form 2026",
-      "source": "SarkariResult.com listing (recruiting authority named in notice)",
-      "publisher": "SarkariResult.com",
-      "category": "Government jobs",
-      "state": "Uttar Pradesh",
-      "link": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "sourceListingUrl": "https://www.sarkariresult.com/2026/uppsc-ro-aro-jun26/",
-      "discoveredVia": "https://www.sarkariresult.com/latestjob/",
-      "factSource": "SarkariResult.com listing and linked notice; verify with the recruiting authority",
-      "factCheckedAt": "2026-11-03",
-      "lastDate": "2026-11-26",
-      "organization": "Uttar Pradesh Public Service Commission (UPPSC)",
-      "publishedDate": "2026-10-26",
-      "openDate": "2026-10-26",
-      "vacancies": "501",
-      "ageLimit": "21–40 years",
-      "eligibility": "Bachelor Degree in Any Stream in Any Recognized University in India. More Eligibility Details Read the Notification",
-      "applicationFee": "General / OBC / EWS : 125/- SC / ST : 65/- PH Candidates : 25/-",
-      "notificationLink": "https://doc.sarkariresults.org.in/UPPSC_RO_ARO_English_2026.pdf",
-      "officialLinks": [
-        {
-          "url": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-          "label": "Apply Online"
-        },
-        {
-          "url": "https://doc.sarkariresults.org.in/UPPSC_RO_ARO_English_2026.pdf",
-          "label": "Download Notification"
-        },
-        {
-          "url": "https://uppsc.up.nic.in/",
-          "label": "Official Website"
-        }
-      ],
-      "officialLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "milestones": [
-        {
-          "label": "Post Date / Update",
-          "date": "2026-10-26",
-          "dateText": "26 October 2026 | 04:36 PM"
-        },
-        {
-          "label": "Last Date for Apply Online",
-          "date": "2026-11-26",
-          "dateText": "26/11/2026"
-        },
-        {
-          "label": "Pay Exam Fee Last Date",
-          "date": "2026-11-26",
-          "dateText": "26/11/2026"
-        },
-        {
-          "label": "Correction Date",
-          "date": "2026-12-03",
-          "dateText": "03/12/2026"
-        }
-      ]
     },
     {
       "id": "competitor-sarkariresult-aefaabafa576eefe",

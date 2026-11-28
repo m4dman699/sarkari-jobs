@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-27T10:54:45.889Z",
-  "total": 17,
+  "generatedAt": "2026-11-28T10:30:15.013Z",
+  "total": 18,
   "jobs": [
     {
       "id": "aHR0cHM6Ly93d3cuanBzYy5nb3YuaW4vZGF0YS9Ob3RpY2UucGRm",
@@ -222,6 +222,44 @@
       "lastDate": null,
       "examDate": null,
       "publishedDate": null
+    },
+    {
+      "id": "competitor-freejobalert-08b612b812d9e2d9",
+      "type": "job",
+      "title": "Jharkhand Finance Department Recruitment 2026 – Apply Online for 2 Program Director, Additional Program Director Posts",
+      "source": "FreeJobAlert.com listing (recruiting authority named in notice)",
+      "publisher": "FreeJobAlert",
+      "category": "Government jobs",
+      "state": "Jharkhand",
+      "link": "https://recruitment.jharkhand.gov.in",
+      "sourceListingUrl": "https://www.freejobalert.com/articles/jharkhand-finance-department-recruitment-2026-program-director-3085285",
+      "discoveredVia": "https://www.freejobalert.com/feed/",
+      "factSource": "FreeJobAlert.com listing and linked notice; verify with the recruiting authority",
+      "factCheckedAt": "2026-11-27",
+      "publishedDate": "2026-11-27",
+      "organization": "Finance Department, Government of Jharkhand",
+      "lastDate": "2026-12-25",
+      "vacancies": "2",
+      "applicationFee": "Rs. 100 (online)",
+      "notificationLink": "https://finance.jharkhand.gov.in/download%5Coth_updates%5C27112026_529.pdf",
+      "officialLinks": [
+        {
+          "url": "https://recruitment.jharkhand.gov.in",
+          "label": "Apply Online – JAP-IT Online Recruitment Portal"
+        },
+        {
+          "url": "https://finance.jharkhand.gov.in/download%5Coth_updates%5C27112026_529.pdf",
+          "label": "Official Notification PDF"
+        }
+      ],
+      "officialLink": "https://recruitment.jharkhand.gov.in",
+      "milestones": [
+        {
+          "label": "Last Date to Apply",
+          "date": "2026-12-25",
+          "dateText": "25.12.2026"
+        }
+      ]
     }
   ]
 }

@@ -1,52 +1,52 @@
 {
-  "generatedAt": "2026-11-27T10:54:49.399Z",
-  "durationSeconds": 3,
+  "generatedAt": "2026-11-28T10:30:54.889Z",
+  "durationSeconds": 40,
   "sources": [
     "SarkariResult.com",
     "FreeJobAlert.com"
   ],
   "before": {
-    "total": 1364,
-    "jobs": 484,
-    "admitCards": 228,
-    "results": 652,
+    "total": 1446,
+    "jobs": 555,
+    "admitCards": 231,
+    "results": 660,
     "jobsMissingPublicationDate": 146,
-    "jobsMissingClosingDate": 316,
-    "jobsMissingOrganization": 173,
-    "jobsMissingVacancies": 274,
-    "jobsMissingEligibility": 307,
-    "jobsMissingApplicationFee": 378,
-    "jobsMissingOfficialLink": 0,
-    "admitCardsMissingPublishedDate": 24,
-    "resultsMissingPublishedDate": 81,
-    "resultsMissingResultDate": 339
-  },
-  "after": {
-    "total": 1451,
-    "jobs": 560,
-    "admitCards": 232,
-    "results": 659,
-    "jobsMissingPublicationDate": 144,
-    "jobsMissingClosingDate": 353,
-    "jobsMissingOrganization": 171,
-    "jobsMissingVacancies": 296,
-    "jobsMissingEligibility": 342,
-    "jobsMissingApplicationFee": 436,
+    "jobsMissingClosingDate": 355,
+    "jobsMissingOrganization": 172,
+    "jobsMissingVacancies": 295,
+    "jobsMissingEligibility": 341,
+    "jobsMissingApplicationFee": 434,
     "jobsMissingOfficialLink": 0,
     "admitCardsMissingPublishedDate": 23,
-    "resultsMissingPublishedDate": 81,
-    "resultsMissingResultDate": 341
+    "resultsMissingPublishedDate": 82,
+    "resultsMissingResultDate": 342
+  },
+  "after": {
+    "total": 1536,
+    "jobs": 632,
+    "admitCards": 238,
+    "results": 666,
+    "jobsMissingPublicationDate": 144,
+    "jobsMissingClosingDate": 396,
+    "jobsMissingOrganization": 170,
+    "jobsMissingVacancies": 322,
+    "jobsMissingEligibility": 374,
+    "jobsMissingApplicationFee": 477,
+    "jobsMissingOfficialLink": 0,
+    "admitCardsMissingPublishedDate": 23,
+    "resultsMissingPublishedDate": 87,
+    "resultsMissingResultDate": 347
   },
   "imported": {
-    "job": 78,
-    "admit-card": 4,
+    "job": 79,
+    "admit-card": 6,
     "result": 7
   },
-  "matchedExisting": 33,
-  "filledItems": 10,
+  "matchedExisting": 363,
+  "filledItems": 136,
   "removedStale": 0,
   "removedUncertain": 0,
-  "skippedClosed": 0,
+  "skippedClosed": 287,
   "removedNavigation": 2,
   "removalLog": [
     {
@@ -63,9 +63,9 @@
     }
   ],
   "detailPages": {
-    "targets": 101,
-    "fetched": 101,
-    "cacheHits": 0
+    "targets": 294,
+    "fetched": 289,
+    "cacheHits": 5
   },
   "remainingGaps": {
     "jobsMissingDate": [
@@ -113,7 +113,6 @@
       "Recruitment of Jharkhand Combined Civil Services Examination-2025 Advt.No.-01/2026"
     ],
     "jobsMissingOrganization": [
-      "PAJANCOA&RI, KKL - Engagement of Consultant orr contract Basis in the grade of Junior Accounts Ofticer - Applications From the Retired Oflicials - Called for - Reg.",
       "INSTITUTE OF HOTEL MANAGEMENT AND CATERING TECHNOLOGY, MINISTRY OF TOURISM — LOWER DIVISION CLERK",
       "Notifications & Practice Directions",
       "Notification for information of all concerned that Monday, the 16th November, 2026 has been declared as a holiday for this Court and the Courts subordinate to this Court on account",
@@ -132,12 +131,10 @@
       "Recruitment of Assistant Professor in Medical Colleges(Super Specialist)Department Advt.No.-07/2026",
       "Recruitment of Jharkhand Combined Civil Services Examination (Backlog)-2025 Advt.No.-05/2026",
       "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Regular), Advt.No.-04/2026",
-      "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026"
+      "Recruitment of Lecturer in Govt. Polytechnic/Govt. Women's Polytechnic(Backlog),Advt.No.-03/2026",
+      "Recruitment of Assistant Professor in Government Engineering colleges (Backlog),Advt.No.-02/2026"
     ],
     "jobsMissingVacancies": [
-      "PAJANCOA&RI, KKL - Engagement of Consultant orr contract Basis in the grade of Junior Accounts Ofticer - Applications From the Retired Oflicials - Called for - Reg.",
-      "SDSC SHAR Apprentice Online Form 2026 (400 Vacancy)",
-      "Katihar District Administration Surveyor/Volunteer Recruitment 2026 – Apply Offline",
       "Haryana TET HTET Online Form 2026",
       "Haryana Teacher Eligibility Test HTET Online Form 2026",
       "HTET Exam 2026 - Application Form, Last Date, Eligibility, Syllabus and Exam Schedule",
@@ -145,39 +142,21 @@
       "UP ECCE Educator Kanpur Nagar Online Form 2026",
       "NTA SHRESTHA (NETS) Admission Online Form 2027",
       "Mirzapur District Court Oath Commissioner Recruitment 2026 – Apply Offline",
-      "Alagappa University Junior Research Fellow Recruitment 2026 – Apply Online",
       "Delhi University Recruitment 2026 – Apply Online for 8 Trained Graduate Teacher, Assistant Teacher Posts",
       "State CET Cell Assistant Law Recruitment 2026 – Walkin",
       "NIT Kurukshetra Research Fellow Recruitment 2026 – Apply Online",
       "IIT Hyderabad Research Associate I Recruitment 2026 – Apply Online",
       "Coimbatore Institute of Technology Assistant Professor Recruitment 2026 – Apply Online",
       "NARDES GNFC Trainer Recruitment 2026 – Apply Online",
+      "SJU Recruitment 2026 – Apply Online for 2 Admission Office Intern, Human Resources Intern Posts",
       "APS Kota Recruitment 2026 – Apply Online for UDC, LDC and More Posts",
       "IIT Indore Technical Assistant Recruitment 2026 – Apply Online",
-      "PAU Young Professional II Recruitment 2026 – Apply Offline"
+      "BAU Sabour Start-up Cell Coordinator Recruitment 2026 – Apply Online",
+      "PAU Young Professional II Recruitment 2026 – Apply Offline",
+      "JU Anoopshahr Recruitment 2026 – Apply Online for 6 Laboratory Technician, Professor and More Posts",
+      "ZP Kolhapur Recruitment 2026 – Apply Offline for 11 Sports Coach, Rector and More Posts"
     ],
     "jobsMissingOfficialLink": []
   },
-  "errors": [
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/latestjob/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/admitcard/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/result/",
-      "error": "HTTP 403"
-    },
-    {
-      "source": "Competitor: SarkariResult.com",
-      "url": "https://www.sarkariresult.com/feed/",
-      "error": "HTTP 403"
-    }
-  ]
+  "errors": []
 }
